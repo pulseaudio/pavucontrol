@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-12 21:13+0200\n"
+"POT-Creation-Date: 2009-10-14 21:09+0000\n"
+"PO-Revision-Date: 2009-10-14 23:25+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -291,6 +291,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ignorowanie odpływu-wejścia, ponieważ zostało wyznaczone jako zdarzenie, "
+"więc jest obsługiwane przez widget zdarzeń"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -385,6 +387,5 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() nie powiodło się"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Zakończ odtwarzanie"
+msgstr "Zakończ"
