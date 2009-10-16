@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-10 16:13+0200\n"
+"POT-Creation-Date: 2009-10-16 16:19+0000\n"
+"PO-Revision-Date: 2009-10-16 21:17+0200\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: nl <nl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -297,6 +297,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Negeer sink-input omdat het bestempeld is als een event en dus afgehandeld "
+"wordt door de Even widget"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -391,9 +393,8 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() mislukte"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Afspelen afbreken"
+msgstr "Afbreken"
 
 #~ msgid "Open menu"
 #~ msgstr "Menu openen"
