@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-30 21:33+0000\n"
-"PO-Revision-Date: 2009-10-15 13:58+0100\n"
+"POT-Creation-Date: 2009-10-17 04:45+0000\n"
+"PO-Revision-Date: 2009-10-17 09:12+0100\n"
 "Last-Translator: KAMI <kami911@gmail.com>\n"
 "Language-Team: Hungarian <gnome@fsf.hu>\n"
 "MIME-Version: 1.0\n"
@@ -298,7 +298,11 @@ msgstr "A megfigyelő adatfolyam létrehozása meghiúsult"
 msgid "Failed to connect monitoring stream"
 msgstr "A megfigyelő adatfolyam csatlakoztatása meghiúsult"
 
-#: ../src/mainwindow.cc:610
+#: ../src/mainwindow.cc:466
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "Az esemény számára kiválasztott nyelő bemenet figyelmen kívül hagyása. Ezt az Esemény szerkentyű kezeli."
+
+#: ../src/mainwindow.cc:618
 msgid "System Sounds"
 msgstr "Rendszerhangok"
 
@@ -389,6 +393,10 @@ msgstr "pa_context_set_default_source() meghiúsult"
 #: ../src/sourcewidget.cc:95
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() meghiúsult"
+
+#: ../src/streamwidget.cc:45
+msgid "Terminate"
+msgstr "Megszakítás"
 
 #~ msgid "Open menu"
 #~ msgstr "Menü megnyitása"
