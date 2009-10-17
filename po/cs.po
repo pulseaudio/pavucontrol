@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-30 20:16+0200\n"
+"POT-Creation-Date: 2009-10-17 09:50+0000\n"
+"PO-Revision-Date: 2009-10-17 17:06+0200\n"
 "Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -87,10 +87,10 @@ msgid ""
 "Monitors"
 msgstr ""
 "Všechna vstupní zařízení\n"
-"Všechna kromě monitorů\n"
+"Všechna kromě sledování\n"
 "Hardwarová vstupní zařízení\n"
 "Virtuální vstupní zařízení\n"
-"Monitory"
+"Sledování"
 
 #: ../src/pavucontrol.glade.h:19
 msgid ""
@@ -284,17 +284,20 @@ msgstr "Rozpoznání vrcholů"
 
 #: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
 msgid "Failed to create monitoring stream"
-msgstr "Nepodařilo se vytvořit monitorovací proud"
+msgstr "Nepodařilo se vytvořit sledovací proud"
 
 #: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
 msgid "Failed to connect monitoring stream"
-msgstr "Nepodařilo se připojit monitorovací proud"
+msgstr "Nepodařilo se připojit sledovací proud"
 
 #: ../src/mainwindow.cc:466
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ignoruje se sink-input, jelikož je navržen jako událost, a tím pádem "
+"obsluhován "
+"widgetem událostí"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -389,6 +392,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() selhalo"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Ukončit přehrávání"
+msgstr "Ukončit"
+
