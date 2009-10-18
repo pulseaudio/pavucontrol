@@ -2,16 +2,16 @@
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the pavucontrol package.
 #
-# Milo Casagrande <milo@ubuntu.com>, 2009.
 # mario_santagiuliana <mario at marionline.it>, 2009.
+# Milo Casagrande <milo@ubuntu.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-04-20 19:52+0200\n"
-"Last-Translator: mario_santagiuliana <mario at marionline.it>\n"
-"Language-Team: Italian <fedora-trans-it at redhat.com>\n"
+"POT-Creation-Date: 2009-10-18 05:22+0000\n"
+"PO-Revision-Date: 2009-10-18 11:56+0200\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,9 +36,8 @@ msgid "50%"
 msgstr "50%"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy
 msgid "<b>Port:</b>"
-msgstr "<b>Profilo:</b>"
+msgstr "<b>Porta:</b>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "<b>Profile:</b>"
@@ -125,12 +124,9 @@ msgstr ""
 msgid "Card Name"
 msgstr "Nome scheda"
 
-# (ndt) questi sono nomi di schede
-# forse è meglio stare sul corto
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
 msgid "Device"
-msgstr "_Ingressi"
+msgstr "Dispositivo"
 
 # (ndt) suggerimento
 #: ../src/pavucontrol.glade.h:28
@@ -144,7 +140,7 @@ msgstr "Esclude l'audio"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Set as fallback"
-msgstr ""
+msgstr "Impostare come ripiego"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Stream Title"
@@ -174,7 +170,7 @@ msgstr "_Registrazione"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "direction"
-msgstr ""
+msgstr "direzione"
 
 #: ../src/pavucontrol.cc:73
 msgid "Card callback failure"
@@ -278,9 +274,8 @@ msgid "<small>Silence</small>"
 msgstr "<small>Silenzio</small>"
 
 #: ../src/channelwidget.cc:104
-#, fuzzy
 msgid "<small>Min</small>"
-msgstr "<small>Max</small>"
+msgstr "<small>Min</small>"
 
 #: ../src/channelwidget.cc:105
 msgid "<small>Max</small>"
@@ -311,6 +306,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Sink di input ignorato poiché è impostato come evento e quindi gestito dal "
+"widget Event"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -320,18 +317,18 @@ msgstr "Suoni di sistema"
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() non riuscita"
 
+# (ndt) non ne ho la più pallida idea di cosa sia... ma non credo sia come in on/off e nel codice non c'è scritto un bel niente
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "su"
 
 #: ../src/sinkinputwidget.cc:38
-#, fuzzy
 msgid "Terminate Playback"
-msgstr "_Termina flusso"
+msgstr "Termina riproduzione"
 
 #: ../src/sinkinputwidget.cc:61
 msgid "Unknown output"
-msgstr ""
+msgstr "Uscita sconosciuta"
 
 #: ../src/sinkinputwidget.cc:72
 msgid "pa_context_set_sink_input_volume() failed"
@@ -366,22 +363,20 @@ msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() non riuscita"
 
 #: ../src/sinkwidget.cc:114
-#, fuzzy
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "pa_context_set_sink_mute_by_index() non riuscita"
+msgstr "pa_context_set_sink_port_by_index() non riuscita"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "da"
 
 #: ../src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "_Registrazione"
+msgstr "Termina registrazione"
 
 #: ../src/sourceoutputwidget.cc:61
 msgid "Unknown input"
-msgstr ""
+msgstr "Ingresso sconosciuto"
 
 #: ../src/sourceoutputwidget.cc:71
 msgid "pa_context_kill_source_output() failed"
@@ -404,21 +399,19 @@ msgid "pa_context_set_default_source() failed"
 msgstr "pa_context_set_default_source() non riuscita"
 
 #: ../src/sourcewidget.cc:95
-#, fuzzy
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_mute_by_index() non riuscita"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "_Termina flusso"
+msgstr "Termina"
 
 # (ndt) suggerimento
-#~ msgid "Open menu"
-#~ msgstr "Apre il menù"
+msgid "Open menu"
+msgstr "Apre il menù"
 
-#~ msgid "_Move Stream..."
-#~ msgstr "_Sposta flusso..."
+msgid "_Move Stream..."
+msgstr "_Sposta flusso..."
 
-#~ msgid "_Default"
-#~ msgstr "_Predefinito"
+msgid "_Default"
+msgstr "_Predefinito"
