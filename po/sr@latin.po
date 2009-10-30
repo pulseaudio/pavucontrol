@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-15 20:53+0100\n"
+"POT-Creation-Date: 2009-10-30 10:22+0000\n"
+"PO-Revision-Date: 2009-10-30 22:20+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -295,6 +295,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Zanemarujem ulaz slivnika jer je određen kao događaj i stoga ga obrađuje "
+"vidžet za događaje"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -389,6 +391,5 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "Neuspela funkcija pa_context_set_source_port_by_index()"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Prekini reprodukciju"
+msgstr "Prekini"
