@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-15 13:34+0300\n"
+"POT-Creation-Date: 2009-11-09 09:45+0000\n"
+"PO-Revision-Date: 2009-11-09 15:03+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
@@ -294,6 +294,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ohitetaan nielusisäänmeno, koska se on määrätty tapahtumaksi ja siksi sen "
+"käsittelee Event-elementti"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -388,9 +390,8 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() epäonnistui"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Lopeta toisto"
+msgstr "Lopeta"
 
 #~ msgid "Open menu"
 #~ msgstr "Avaa valikko"
