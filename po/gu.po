@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pulseaudio-volume\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-10 15:41+0530\n"
+"POT-Creation-Date: 2009-12-07 08:35+0000\n"
+"PO-Revision-Date: 2009-12-07 16:46+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -295,6 +295,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"તે ઘટના તરીકે ઓળખાય તે દરમ્યાન સિંક-ઇનપુટને અવગણી રહ્યા છે અને છતાં ઘટના વિજેટ "
+"દ્દારા સંભાળેલ છે"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -389,6 +391,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() નિષ્ફળ"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "પ્લેબેકનો અંત લાવો"
+msgstr "ેકનો અંત લાવો"
+
