@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-10 17:07+0530\n"
+"POT-Creation-Date: 2009-12-07 08:35+0000\n"
+"PO-Revision-Date: 2009-12-07 18:12+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
 "MIME-Version: 1.0\n"
@@ -295,7 +295,7 @@ msgstr "নিরীক্ষণের স্ট্রিম সংযুক্�
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "sink-input-কে ইভেন্টরূপে নির্ধারণ করা হয়েছে, এবং এটি Event উইজেট দ্বারা পরিচালিত হবে। এই কারণে এটি উপেক্ষা করা হবে।"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -390,6 +390,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() ব্যর্থ"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "প্লে-ব্যাক বন্ধ করুন"
+msgstr "বন্ধ করুন"
+
