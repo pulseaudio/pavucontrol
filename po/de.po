@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-08 02:51+0000\n"
-"PO-Revision-Date: 2009-12-08 13:49+1000\n"
+"PO-Revision-Date: 2009-12-08 14:01+1000\n"
 "Last-Translator: Hedda Peters <hpeters@redhat.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -171,7 +171,7 @@ msgstr "Callback-Fehler von Soundkarte"
 
 #: ../src/pavucontrol.cc:92
 msgid "Sink callback failure"
-msgstr "Callback-Fehler von Ziel"
+msgstr "Callback-Fehler von Sink"
 
 #: ../src/pavucontrol.cc:111
 msgid "Source callback failure"
@@ -179,7 +179,7 @@ msgstr "Callback-Fehler von Quelle"
 
 #: ../src/pavucontrol.cc:130
 msgid "Sink input callback failure"
-msgstr "Callback-Fehler von Ziel-Eingabe"
+msgstr "Callback-Fehler von Sink-Eingabe"
 
 #: ../src/pavucontrol.cc:149
 msgid "Source output callback failure"
@@ -298,7 +298,7 @@ msgstr "Verbindungsaufbau zum Beobachterdatenstrom gescheitert"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr "Ziel-Eingabe wird ignoriert, da es sich dabei um ein Ereignis handelt und somit vom Ereignis-Widget gehandhabt wird."
+msgstr "Sink-Eingabe wird ignoriert, da es sich dabei um ein Ereignis handelt und somit vom Ereignis-Widget gehandhabt wird."
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
