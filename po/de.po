@@ -1,22 +1,25 @@
+# translation of pavucontrol.master-tx.de.po to
 # German translation of pavucontrol
 # Copyright (C) 2008 pavucontrol
 # This file is distributed under the same license as the pavucontrol package.
-# Fabian Affolter <fab@fedoraproject.org>, 2008.
-# Florian Steinel <fsteinel@fedoraproject.org>, 2008
 #
+# Fabian Affolter <fab@fedoraproject.org>, 2008.
+# Florian Steinel <fsteinel@fedoraproject.org>, 2008.
+# Hedda Peters <hpeters@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: pavucontrol\n"
+"Project-Id-Version: pavucontrol.master-tx.de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-14 10:05+0100\n"
-"Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
-"Language-Team: German <fedora-trans-de@redhat.com>\n"
+"POT-Creation-Date: 2009-12-08 02:51+0000\n"
+"PO-Revision-Date: 2009-12-08 13:49+1000\n"
+"Last-Translator: Hedda Peters <hpeters@redhat.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: German\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/pavucontrol.desktop.in.h:1
 msgid "Adjust the volume level"
@@ -164,31 +167,31 @@ msgstr "Richtung"
 
 #: ../src/pavucontrol.cc:73
 msgid "Card callback failure"
-msgstr "Soundkarten Callback-Fehler"
+msgstr "Callback-Fehler von Soundkarte"
 
 #: ../src/pavucontrol.cc:92
 msgid "Sink callback failure"
-msgstr "Senke Callback-Fehler"
+msgstr "Callback-Fehler von Ziel"
 
 #: ../src/pavucontrol.cc:111
 msgid "Source callback failure"
-msgstr "Quellen Callback-Fehler"
+msgstr "Callback-Fehler von Quelle"
 
 #: ../src/pavucontrol.cc:130
 msgid "Sink input callback failure"
-msgstr "Senken-Eingabe Callback-Fehler"
+msgstr "Callback-Fehler von Ziel-Eingabe"
 
 #: ../src/pavucontrol.cc:149
 msgid "Source output callback failure"
-msgstr "Quellen-Ausgabe Callback-Fehler"
+msgstr "Callback-Fehler von Quellen-Ausgabe"
 
 #: ../src/pavucontrol.cc:183
 msgid "Client callback failure"
-msgstr "Client Callback-Fehler"
+msgstr "Callback-Fehler von Client"
 
 #: ../src/pavucontrol.cc:199
 msgid "Server info callback failure"
-msgstr "Server-Information Callback-Fehler"
+msgstr "Callback-Fehler von Serverinfo"
 
 #: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
 #, c-format
@@ -295,7 +298,7 @@ msgstr "Verbindungsaufbau zum Beobachterdatenstrom gescheitert"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "Ziel-Eingabe wird ignoriert, da es sich dabei um ein Ereignis handelt und somit vom Ereignis-Widget gehandhabt wird."
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -390,15 +393,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() gescheitert"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Wiedergabe beenden"
+msgstr "Beenden"
 
-#~ msgid "Open menu"
-#~ msgstr "Menü öffnen"
-
-#~ msgid "_Move Stream..."
-#~ msgstr "Spur _verschieben …"
-
-#~ msgid "_Default"
-#~ msgstr "_Vorgabe"
