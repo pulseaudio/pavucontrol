@@ -1,19 +1,23 @@
+# translation of ja.po to Japanese
 # PulseAudio Volume Control.
 # Copyright (C) 2009.
 # This file is distributed under the same license as the PulseAudio package.
-# Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2009.
 #
+# Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2009.
+# Kiyoto Hashida <khashida@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 19:56+0000\n"
-"PO-Revision-Date: 2009-09-22 13:01+0900\n"
-"Last-Translator: Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>\n"
-"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
+"POT-Creation-Date: 2009-12-08 02:51+0000\n"
+"PO-Revision-Date: 2009-12-08 16:47+0900\n"
+"Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <jp@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=1; plural=0;\n\n"
 
 #: ../src/pavucontrol.desktop.in.h:1
 msgid "Adjust the volume level"
@@ -288,7 +292,15 @@ msgstr "モニタリングストリームの生成に失敗"
 msgid "Failed to connect monitoring stream"
 msgstr "モニタリングストリームへの接続に失敗"
 
-#: ../src/mainwindow.cc:610
+#: ../src/mainwindow.cc:466
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"イベントとして指名されており、Event ウィジェットで処理されるため、sink-input を "
+"無視しています"
+
+#: ../src/mainwindow.cc:618
 msgid "System Sounds"
 msgstr "システム音"
 
@@ -379,3 +391,8 @@ msgstr "pa_context_set_default_source() 失敗"
 #: ../src/sourcewidget.cc:95
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() 失敗"
+
+#: ../src/streamwidget.cc:45
+msgid "Terminate"
+msgstr "終了"
+
