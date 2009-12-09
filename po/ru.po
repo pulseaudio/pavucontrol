@@ -1,20 +1,24 @@
+# translation of ru.po to Russian
 # Russian translation of PulseAudio.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pulseaudio package.
-# Sergey Danilov <stiletto@stiletto.name>, 2009.
 #
+# Sergey Danilov <stiletto@stiletto.name>, 2009.
+# Yulia <ypoyarko@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: pulseaudio\n"
+"Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Sergey Danilov <stiletto@stiletto.name>\n"
+"POT-Creation-Date: 2009-12-09 19:58+0000\n"
+"PO-Revision-Date: 2009-12-10 09:24+1100\n"
+"Last-Translator: Yulia <ypoyarko@redhat.com>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Russian\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/pavucontrol.desktop.in.h:1
 msgid "Adjust the volume level"
@@ -34,9 +38,8 @@ msgid "50%"
 msgstr "50%"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy
 msgid "<b>Port:</b>"
-msgstr "<b>Профиль:</b>"
+msgstr "<b>Порт:</b>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "<b>Profile:</b>"
@@ -118,9 +121,8 @@ msgid "Card Name"
 msgstr "Имя карты"
 
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
 msgid "Device"
-msgstr "Устройства В_вода"
+msgstr "Устройство"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "Lock channels together"
@@ -132,7 +134,7 @@ msgstr "Заглушить звук"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Set as fallback"
-msgstr ""
+msgstr "Настроить резерв"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Stream Title"
@@ -160,7 +162,7 @@ msgstr "_Запись"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "direction"
-msgstr ""
+msgstr "направление"
 
 #: ../src/pavucontrol.cc:73
 msgid "Card callback failure"
@@ -264,9 +266,8 @@ msgid "<small>Silence</small>"
 msgstr "<small>Тишина</small>"
 
 #: ../src/channelwidget.cc:104
-#, fuzzy
 msgid "<small>Min</small>"
-msgstr "<small>Максимум</small>"
+msgstr "<small>Минимум</small>"
 
 #: ../src/channelwidget.cc:105
 msgid "<small>Max</small>"
@@ -278,7 +279,7 @@ msgstr "<small><i>База</i></small>"
 
 #: ../src/mainwindow.cc:269
 msgid "Failed to read data from stream"
-msgstr "Не удается прочесть данные из потока"
+msgstr "Не удаётся прочесть данные из потока"
 
 #: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
 msgid "Peak detect"
@@ -286,11 +287,11 @@ msgstr "Детектирование пиков"
 
 #: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
 msgid "Failed to create monitoring stream"
-msgstr "Не удается создать поток мониторинга"
+msgstr "Не удаётся создать поток мониторинга"
 
 #: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
 msgid "Failed to connect monitoring stream"
-msgstr "Не удается присоединить поток мониторинга"
+msgstr "Не удаётся присоединить поток мониторинга"
 
 #: ../src/mainwindow.cc:466
 msgid ""
@@ -308,16 +309,15 @@ msgstr "Сбой pa_ext_stream_restore_write()"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "вкл."
 
 #: ../src/sinkinputwidget.cc:38
-#, fuzzy
 msgid "Terminate Playback"
-msgstr "П_рервать поток"
+msgstr "П_рервать проигрывание"
 
 #: ../src/sinkinputwidget.cc:61
 msgid "Unknown output"
-msgstr ""
+msgstr "Неизвестный вывод"
 
 #: ../src/sinkinputwidget.cc:72
 msgid "pa_context_set_sink_input_volume() failed"
@@ -352,22 +352,20 @@ msgid "pa_context_set_default_sink() failed"
 msgstr "Сбой pa_context_set_default_sink()"
 
 #: ../src/sinkwidget.cc:114
-#, fuzzy
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "Сбой pa_context_set_sink_mute_by_index()"
+msgstr "Сбой pa_context_set_sink_port_by_index()"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "из"
 
 #: ../src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "_Запись"
+msgstr "Прервать _запись"
 
 #: ../src/sourceoutputwidget.cc:61
 msgid "Unknown input"
-msgstr ""
+msgstr "Неизвестный ввод"
 
 #: ../src/sourceoutputwidget.cc:71
 msgid "pa_context_kill_source_output() failed"
@@ -390,20 +388,10 @@ msgid "pa_context_set_default_source() failed"
 msgstr "Сбой pa_context_set_default_source()"
 
 #: ../src/sourcewidget.cc:95
-#, fuzzy
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr "Сбой pa_context_set_source_mute_by_index()"
+msgstr "Сбой pa_context_set_source_port_by_index()"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "П_рервать поток"
+msgstr "Прервать"
 
-#~ msgid "Open menu"
-#~ msgstr "Открыть меню"
-
-#~ msgid "_Move Stream..."
-#~ msgstr "П_ереместить поток..."
-
-#~ msgid "_Default"
-#~ msgstr "_По умолчанию"
