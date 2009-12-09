@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-10 15:50+0530\n"
+"POT-Creation-Date: 2009-12-08 08:37+0000\n"
+"PO-Revision-Date: 2009-12-09 12:14+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -295,6 +295,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"ഈവന്റായതിനാല്‍ സിങ്ക്-ഇന്‍പുട്ട് അവഗണിക്കുന്നു, അങ്ങനെ ഇവന്റ് വിഡ്ജറ്റ് "
+"കൈകാര്യം ചെയ്യുന്നു"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -389,6 +391,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() പരാജയപ്പെട്ടു"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "പ്ലേബാക്ക് നിര്‍ത്തുക"
+msgstr "നിര്‍ത്തുക"
+
