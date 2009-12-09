@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-09 19:58+0000\n"
-"PO-Revision-Date: 2009-12-10 09:24+1100\n"
+"PO-Revision-Date: 2009-12-10 10:08+1100\n"
 "Last-Translator: Yulia <ypoyarko@redhat.com>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -134,7 +134,7 @@ msgstr "Заглушить звук"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Set as fallback"
-msgstr "Настроить резерв"
+msgstr "Сделать резервным"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Stream Title"
@@ -297,7 +297,7 @@ msgstr "Не удаётся присоединить поток монитори
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "Входные данные приёмника игнорируются, так как они рассматриваются как событие и будут обработаны виджетом событий"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -309,7 +309,7 @@ msgstr "Сбой pa_ext_stream_restore_write()"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr "вкл."
+msgstr "на"
 
 #: ../src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
