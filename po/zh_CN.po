@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-04-01 21:43+1000\n"
+"POT-Creation-Date: 2009-12-07 20:10+0000\n"
+"PO-Revision-Date: 2009-12-09 11:11+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,9 +35,8 @@ msgid "50%"
 msgstr "50%"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy
 msgid "<b>Port:</b>"
-msgstr "<b>侧写：</b>"
+msgstr "<b>端口：</b>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "<b>Profile:</b>"
@@ -119,9 +118,8 @@ msgid "Card Name"
 msgstr "声卡名称"
 
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
 msgid "Device"
-msgstr "输入设备(_I)"
+msgstr "设备"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "Lock channels together"
@@ -133,7 +131,7 @@ msgstr "音频静音"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Set as fallback"
-msgstr ""
+msgstr "设定为回放"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Stream Title"
@@ -161,7 +159,7 @@ msgstr "录音(_R)"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "direction"
-msgstr ""
+msgstr "方位"
 
 #: ../src/pavucontrol.cc:73
 msgid "Card callback failure"
@@ -192,9 +190,9 @@ msgid "Server info callback failure"
 msgstr "服务器信息回叫失败"
 
 #: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "无法初始化 stream_restore 扩展：%s"
+msgstr "初始化 stream_restore 扩展失败：%s"
 
 #: ../src/pavucontrol.cc:235
 msgid "pa_ext_stream_restore_read() failed"
@@ -262,19 +260,19 @@ msgstr "pa_context_set_card_profile_by_index() failed"
 
 #: ../src/channelwidget.cc:104
 msgid "<small>Silence</small>"
-msgstr ""
+msgstr "<small>静音</small>"
 
 #: ../src/channelwidget.cc:104
 msgid "<small>Min</small>"
-msgstr ""
+msgstr "<small>最小</small>"
 
 #: ../src/channelwidget.cc:105
 msgid "<small>Max</small>"
-msgstr ""
+msgstr "<small>最大</small>"
 
 #: ../src/channelwidget.cc:109
 msgid "<small><i>Base</i></small>"
-msgstr ""
+msgstr "<small><i>低音</i></small>"
 
 #: ../src/mainwindow.cc:269
 msgid "Failed to read data from stream"
@@ -296,7 +294,7 @@ msgstr "无法连接到监视流媒体"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "忽略漏输入，因为已将其指定为一个事件，所以由事件程序处理。"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -308,16 +306,15 @@ msgstr "pa_ext_stream_restore_write() 失败"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "打开"
 
 #: ../src/sinkinputwidget.cc:38
-#, fuzzy
 msgid "Terminate Playback"
-msgstr "结束流媒体(_T)"
+msgstr "终止回放"
 
 #: ../src/sinkinputwidget.cc:61
 msgid "Unknown output"
-msgstr ""
+msgstr "未知输出"
 
 #: ../src/sinkinputwidget.cc:72
 msgid "pa_context_set_sink_input_volume() failed"
@@ -352,22 +349,20 @@ msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() 失败"
 
 #: ../src/sinkwidget.cc:114
-#, fuzzy
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "pa_context_set_sink_mute_by_index() 失败"
+msgstr "pa_context_set_sink_port_by_index() 失败"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "来自"
 
 #: ../src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "录音(_R)"
+msgstr "终止录制"
 
 #: ../src/sourceoutputwidget.cc:61
 msgid "Unknown input"
-msgstr ""
+msgstr "未知输入"
 
 #: ../src/sourceoutputwidget.cc:71
 msgid "pa_context_kill_source_output() failed"
@@ -390,20 +385,10 @@ msgid "pa_context_set_default_source() failed"
 msgstr "pa_context_set_default_source() 失败"
 
 #: ../src/sourcewidget.cc:95
-#, fuzzy
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr "pa_context_set_source_mute_by_index() 失败"
+msgstr "pa_context_set_source_port_by_index() 失败"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "结束流媒体(_T)"
+msgstr "终止"
 
-#~ msgid "Open menu"
-#~ msgstr "打开菜单"
-
-#~ msgid "_Move Stream..."
-#~ msgstr "移动流媒体(_M)..."
-
-#~ msgid "_Default"
-#~ msgstr "默认(_D)"
