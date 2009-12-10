@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-22 15:34+0530\n"
+"POT-Creation-Date: 2009-12-07 02:45+0000\n"
+"PO-Revision-Date: 2009-12-08 11:42+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
-"Language-Team: Kannada <en@li.org>\n"
+"Language-Team: Kannada <kde-l10n-kn@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/pavucontrol.desktop.in.h:1
@@ -295,6 +295,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"ಇದರ ಕಾರಣದಿಂದಾಗಿ ಸಿಂಕ್-ಇನ್‌ಪುಟ್ ಅನ್ನು ಕಡೆಗಣಿಸುವಿಕೆಯನ್ನು ಒಂದು ಘಟನೆ ಎಂದು "
+"ಪರಿಗಣಿಸಲಾಗುವುದರಿಂದ ಅದನ್ನು ಒಂದು ಇವೆಂಟ್ ವಿಡ್ಗೆಟ್‌ನಿಂದ ನಿಭಾಯಿಸಲಾಗುತ್ತದೆ"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -389,6 +391,6 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() ವಿಫಲಗೊಂಡಿದೆ"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "ಪ್ಲೇಬ್ಯಾಕನ್ನು ಅಂತ್ಯಗೊಳಿಸು"
+msgstr "ಅಂತ್ಯಗೊಳಿಸು"
+
