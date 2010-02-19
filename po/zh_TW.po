@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-18 07:17+0000\n"
-"PO-Revision-Date: 2010-02-19 11:25+0800\n"
+"PO-Revision-Date: 2010-02-19 11:31+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -195,65 +195,65 @@ msgstr ""
 #: ../src/pavucontrol.cc:430
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr ""
+msgstr "初始化 stream_restore 擴充功能失敗: %s"
 
 #: ../src/pavucontrol.cc:235
 msgid "pa_ext_stream_restore_read() failed"
-msgstr ""
+msgstr "pa_ext_stream_restore_read() 失敗"
 
 #: ../src/pavucontrol.cc:252
 msgid "pa_context_get_sink_info_by_index() failed"
-msgstr ""
+msgstr "pa_context_get_sink_info_by_index() 失敗"
 
 #: ../src/pavucontrol.cc:265
 msgid "pa_context_get_source_info_by_index() failed"
-msgstr ""
+msgstr "pa_context_get_source_info_by_index() 失敗"
 
 #: ../src/pavucontrol.cc:278
 #: ../src/pavucontrol.cc:291
 msgid "pa_context_get_sink_input_info() failed"
-msgstr ""
+msgstr "pa_context_get_sink_input_info() 失敗"
 
 #: ../src/pavucontrol.cc:304
 msgid "pa_context_get_client_info() failed"
-msgstr ""
+msgstr "pa_context_get_client_info() 失敗"
 
 #: ../src/pavucontrol.cc:314
 #: ../src/pavucontrol.cc:371
 msgid "pa_context_get_server_info() failed"
-msgstr ""
+msgstr "pa_context_get_server_info() 失敗"
 
 #: ../src/pavucontrol.cc:327
 msgid "pa_context_get_card_info_by_index() failed"
-msgstr ""
+msgstr "pa_context_get_card_info_by_index() 失敗"
 
 #: ../src/pavucontrol.cc:362
 msgid "pa_context_subscribe() failed"
-msgstr ""
+msgstr "pa_context_subscribe() 失敗"
 
 #: ../src/pavucontrol.cc:378
 msgid "pa_context_client_info_list() failed"
-msgstr ""
+msgstr "pa_context_client_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:385
 msgid "pa_context_get_card_info_list() failed"
-msgstr ""
+msgstr "pa_context_get_card_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:392
 msgid "pa_context_get_sink_info_list() failed"
-msgstr ""
+msgstr "pa_context_get_sink_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:399
 msgid "pa_context_get_source_info_list() failed"
-msgstr ""
+msgstr "pa_context_get_source_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:406
 msgid "pa_context_get_sink_input_info_list() failed"
-msgstr ""
+msgstr "pa_context_get_sink_input_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:413
 msgid "pa_context_get_source_output_info_list() failed"
-msgstr ""
+msgstr "pa_context_get_source_output_info_list() 失敗"
 
 #: ../src/pavucontrol.cc:437
 msgid "Connection failed"
@@ -261,7 +261,7 @@ msgstr "連線失敗"
 
 #: ../src/cardwidget.cc:87
 msgid "pa_context_set_card_profile_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_card_profile_by_index() 失敗"
 
 #: ../src/channelwidget.cc:104
 msgid "<small>Silence</small>"
@@ -308,7 +308,7 @@ msgstr "系統音效"
 
 #: ../src/rolewidget.cc:71
 msgid "pa_ext_stream_restore_write() failed"
-msgstr ""
+msgstr "pa_ext_stream_restore_write() 失敗"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
@@ -324,23 +324,23 @@ msgstr "未知輸出"
 
 #: ../src/sinkinputwidget.cc:72
 msgid "pa_context_set_sink_input_volume() failed"
-msgstr ""
+msgstr "pa_context_set_sink_input_volume() 失敗"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_mute() failed"
-msgstr ""
+msgstr "pa_context_set_sink_input_mute() 失敗"
 
 #: ../src/sinkinputwidget.cc:97
 msgid "pa_context_kill_sink_input() failed"
-msgstr ""
+msgstr "pa_context_kill_sink_input() 失敗"
 
 #: ../src/sinkinputwidget.cc:133
 msgid "pa_context_move_sink_input_by_index() failed"
-msgstr ""
+msgstr "pa_context_move_sink_input_by_index() 失敗"
 
 #: ../src/sinkwidget.cc:48
 msgid "pa_context_set_sink_volume_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_sink_volume_by_index() 失敗"
 
 #: ../src/sinkwidget.cc:63
 msgid "Volume Control Feedback Sound"
@@ -348,15 +348,15 @@ msgstr "音量控制回饋音效"
 
 #: ../src/sinkwidget.cc:80
 msgid "pa_context_set_sink_mute_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_sink_mute_by_index() 失敗"
 
 #: ../src/sinkwidget.cc:94
 msgid "pa_context_set_default_sink() failed"
-msgstr ""
+msgstr "pa_context_set_default_sink() 失敗"
 
 #: ../src/sinkwidget.cc:114
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_sink_port_by_index() 失敗"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -372,27 +372,27 @@ msgstr "未知輸入"
 
 #: ../src/sourceoutputwidget.cc:71
 msgid "pa_context_kill_source_output() failed"
-msgstr ""
+msgstr "pa_context_kill_source_output() 失敗"
 
 #: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_move_source_output_by_index() failed"
-msgstr ""
+msgstr "pa_context_move_source_output_by_index() 失敗"
 
 #: ../src/sourcewidget.cc:44
 msgid "pa_context_set_source_volume_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_source_volume_by_index() 失敗"
 
 #: ../src/sourcewidget.cc:59
 msgid "pa_context_set_source_mute_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_source_mute_by_index() 失敗"
 
 #: ../src/sourcewidget.cc:73
 msgid "pa_context_set_default_source() failed"
-msgstr ""
+msgstr "pa_context_set_default_source() 失敗"
 
 #: ../src/sourcewidget.cc:95
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr ""
+msgstr "pa_context_set_source_port_by_index() 失敗"
 
 #: ../src/streamwidget.cc:45
 msgid "Terminate"
