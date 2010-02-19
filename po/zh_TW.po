@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-18 07:17+0000\n"
-"PO-Revision-Date: 2010-02-19 11:22+0800\n"
+"PO-Revision-Date: 2010-02-19 11:25+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -277,7 +277,7 @@ msgstr "<small>最大</small>"
 
 #: ../src/channelwidget.cc:109
 msgid "<small><i>Base</i></small>"
-msgstr "<small><i>基礎</i></small>"
+msgstr "<small><i>低音</i></small>"
 
 #: ../src/mainwindow.cc:269
 msgid "Failed to read data from stream"
