@@ -1,14 +1,14 @@
 # Danish translation of pavucontrol
 # Copyright (C) 2009
 # This file is distributed under the same license as the pavucontrol package.
-# Kris Thomsen <lakristho@gmail.com>, 2009.
+# Kris Thomsen <lakristho@gmail.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-15 19:22+0200\n"
+"POT-Creation-Date: 2009-10-15 21:14+0000\n"
+"PO-Revision-Date: 2010-02-24 23:21+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -293,6 +293,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ignorerer sink-input fordi det bliver udpeget som en begivenhed og derfor håndteret "
+"af begivenhedskontrollen"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -387,9 +389,8 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() fejlede"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Afslut afspilning"
+msgstr "Afslut"
 
 #~ msgid "Open menu"
 #~ msgstr "Åbn menu"
