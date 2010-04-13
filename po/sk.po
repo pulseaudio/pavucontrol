@@ -23,7 +23,7 @@ msgstr "Upraviť úroveň hlasitosti"
 #: ../src/pavucontrol.desktop.in.h:2
 #: ../src/pavucontrol.cc:476
 msgid "PulseAudio Volume Control"
-msgstr "Ovládanie hlasitosti PulseAudio"
+msgstr "PulseAudio - ovládanie hlasitosti"
 
 #: ../src/pavucontrol.desktop.in.h:3
 #: ../src/pavucontrol.glade.h:32
