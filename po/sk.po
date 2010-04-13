@@ -1,13 +1,13 @@
 # Slovak translations for pavucontrol package
 # This file is distributed under the same license as the pavucontrol package.
 #
-# Ondrej Šulek <feonsu@gmail.com>, 2008, 2009.
+# Ondrej Šulek <feonsu@gmail.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2009-09-20 18:09+0200\n"
+"POT-Creation-Date: 2010-04-13 08:52+0000\n"
+"PO-Revision-Date: 2010-04-13 11:55+0100\n"
 "Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,13 @@ msgstr ""
 msgid "Adjust the volume level"
 msgstr "Upraviť úroveň hlasitosti"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+#: ../src/pavucontrol.desktop.in.h:2
+#: ../src/pavucontrol.cc:476
 msgid "PulseAudio Volume Control"
 msgstr "Ovládanie hlasitosti PulseAudio"
 
-#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.desktop.in.h:3
+#: ../src/pavucontrol.glade.h:32
 msgid "Volume Control"
 msgstr "Ovládanie hlasitosti"
 
@@ -188,7 +190,8 @@ msgstr "Klientské spätné volanie zlyhalo"
 msgid "Server info callback failure"
 msgstr "Server info spätné volanie zlyhalo"
 
-#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
+#: ../src/pavucontrol.cc:217
+#: ../src/pavucontrol.cc:430
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Nepodarilo sa inicializovať stream_restore rozšírenie: %s"
@@ -205,7 +208,8 @@ msgstr "pa_context_get_sink_info_by_index() zlyhal"
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() zlyhal"
 
-#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+#: ../src/pavucontrol.cc:278
+#: ../src/pavucontrol.cc:291
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() zlyhal"
 
@@ -213,7 +217,8 @@ msgstr "pa_context_get_sink_input_info() zlyhal"
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() zlyhal"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+#: ../src/pavucontrol.cc:314
+#: ../src/pavucontrol.cc:371
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() zlyhal"
 
@@ -277,23 +282,24 @@ msgstr "<small><i>Základ</i></small>"
 msgid "Failed to read data from stream"
 msgstr "Nepodarilo sa prečítať dáta z prúdu"
 
-#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
+#: ../src/mainwindow.cc:304
+#: ../src/mainwindow.cc:341
 msgid "Peak detect"
 msgstr "Detekcia vrcholov"
 
-#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
+#: ../src/mainwindow.cc:305
+#: ../src/mainwindow.cc:342
 msgid "Failed to create monitoring stream"
 msgstr "Nepodarilo sa vytvoriť monitorovací prúd"
 
-#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
+#: ../src/mainwindow.cc:313
+#: ../src/mainwindow.cc:351
 msgid "Failed to connect monitoring stream"
 msgstr "Nepodarilo sa pripojiť monitorovací prúd"
 
 #: ../src/mainwindow.cc:466
-msgid ""
-"Ignoring sink-input due to it being designated as an event and thus handled "
-"by the Event widget"
-msgstr ""
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "Ignoruje sa sink-vstup, pretože bol navrhnutý ako udalosť a tým pádom obsluhovaný widgetom udalostí"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -388,9 +394,8 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() zlyhal"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Ukončiť prehrávanie"
+msgstr "Ukončiť"
 
 #~ msgid "Open menu"
 #~ msgstr "Otvoriť menu"
