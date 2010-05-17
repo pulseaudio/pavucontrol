@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
+"POT-Creation-Date: 2010-05-17 11:31+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rui Gouveia <rui.gouveia@globaltek.pt>\n"
 "Language-Team: pt <fedora-trans-pt@redhat.com>\n"
@@ -286,10 +287,8 @@ msgid "Failed to connect monitoring stream"
 msgstr "Falha ao ligar o fluxo de monitorização"
 
 #: ../src/mainwindow.cc:466
-msgid ""
-"Ignoring sink-input due to it being designated as an event and thus handled "
-"by the Event widget"
-msgstr ""
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "A ignorar entrada, devido ao facto de ser designado como um evento e, portanto, tratado pelo widget do evento"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -384,9 +383,8 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() falhou"
 
 #: ../src/streamwidget.cc:45
-#, fuzzy
 msgid "Terminate"
-msgstr "Terminar a reprodução"
+msgstr "Terminar"
 
 #~ msgid "Open menu"
 #~ msgstr "Abrir menu"
