@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-08 07:26+0000\n"
-"PO-Revision-Date: 2010-03-08 20:16+0800\n"
+"POT-Creation-Date: 2010-06-10 15:08+0000\n"
+"PO-Revision-Date: 2010-08-15 21:43+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: chinese-l10n <chinese-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -302,7 +302,7 @@ msgstr "連接到監控串流失敗"
 
 #: ../src/mainwindow.cc:466
 msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
-msgstr ""
+msgstr "由於 sink-input 被指定為事件，因此 sink-input 會由 Event 工具集處理而被忽略"
 
 #: ../src/mainwindow.cc:618
 msgid "System Sounds"
@@ -402,208 +402,309 @@ msgstr "終止"
 
 #~ msgid "Internal Audio"
 #~ msgstr "內部音效"
+
 #~ msgid "Modem"
 #~ msgstr "數據機"
+
 #~ msgid "Daemon not running"
 #~ msgstr "幕後程式沒有在執行中"
+
 #~ msgid "Front Center"
 #~ msgstr "前方中央"
+
 #~ msgid "Front Left"
 #~ msgstr "前方左側"
+
 #~ msgid "Front Right"
 #~ msgstr "前方右側"
+
 #~ msgid "Rear Center"
 #~ msgstr "後方中央"
+
 #~ msgid "Rear Left"
 #~ msgstr "後方左側"
+
 #~ msgid "Rear Right"
 #~ msgstr "後方右側"
+
 #~ msgid "Low Frequency Emmiter"
 #~ msgstr "低頻率揚聲器"
+
 #~ msgid "Front Left-of-center"
 #~ msgstr "前方中央偏左"
+
 #~ msgid "Front Right-of-center"
 #~ msgstr "前方中央偏右"
+
 #~ msgid "Side Left"
 #~ msgstr "左側"
+
 #~ msgid "Side Right"
 #~ msgstr "右側"
+
 #~ msgid "Auxiliary 0"
 #~ msgstr "輔助 0"
+
 #~ msgid "Auxiliary 1"
 #~ msgstr "輔助 1"
+
 #~ msgid "Auxiliary 2"
 #~ msgstr "輔助 2"
+
 #~ msgid "Auxiliary 3"
 #~ msgstr "輔助 3"
+
 #~ msgid "Auxiliary 4"
 #~ msgstr "輔助 4"
+
 #~ msgid "Auxiliary 5"
 #~ msgstr "輔助 5"
+
 #~ msgid "Auxiliary 6"
 #~ msgstr "輔助 6"
+
 #~ msgid "Auxiliary 7"
 #~ msgstr "輔助 7"
+
 #~ msgid "Auxiliary 8"
 #~ msgstr "輔助 8"
+
 #~ msgid "Auxiliary 9"
 #~ msgstr "輔助 9"
+
 #~ msgid "Auxiliary 10"
 #~ msgstr "輔助 10"
+
 #~ msgid "Auxiliary 11"
 #~ msgstr "輔助 11"
+
 #~ msgid "Auxiliary 12"
 #~ msgstr "輔助 12"
+
 #~ msgid "Auxiliary 13"
 #~ msgstr "輔助 13"
+
 #~ msgid "Auxiliary 14"
 #~ msgstr "輔助 14"
+
 #~ msgid "Auxiliary 15"
 #~ msgstr "輔助 15"
+
 #~ msgid "Auxiliary 16"
 #~ msgstr "輔助 16"
+
 #~ msgid "Auxiliary 17"
 #~ msgstr "輔助 17"
+
 #~ msgid "Auxiliary 18"
 #~ msgstr "輔助 18"
+
 #~ msgid "Auxiliary 19"
 #~ msgstr "輔助 19"
+
 #~ msgid "Auxiliary 20"
 #~ msgstr "輔助 20"
+
 #~ msgid "Auxiliary 21"
 #~ msgstr "輔助 21"
+
 #~ msgid "Auxiliary 22"
 #~ msgstr "輔助 22"
+
 #~ msgid "Auxiliary 23"
 #~ msgstr "輔助 23"
+
 #~ msgid "Auxiliary 24"
 #~ msgstr "輔助 24"
+
 #~ msgid "Auxiliary 25"
 #~ msgstr "輔助 25"
+
 #~ msgid "Auxiliary 26"
 #~ msgstr "輔助 26"
+
 #~ msgid "Auxiliary 27"
 #~ msgstr "輔助 27"
+
 #~ msgid "Auxiliary 28"
 #~ msgstr "輔助 28"
+
 #~ msgid "Auxiliary 29"
 #~ msgstr "輔助 29"
+
 #~ msgid "Auxiliary 30"
 #~ msgstr "輔助 30"
+
 #~ msgid "Auxiliary 31"
 #~ msgstr "輔助 31"
+
 #~ msgid "Top Center"
 #~ msgstr "頂端中央"
+
 #~ msgid "Top Front Center"
 #~ msgstr "頂端前方中央"
+
 #~ msgid "Top Front Left"
 #~ msgstr "頂端前方左側"
+
 #~ msgid "Top Front Right"
 #~ msgstr "頂端前方右側"
+
 #~ msgid "Top Rear Center"
 #~ msgstr "頂端後方中央"
+
 #~ msgid "Top Rear Left"
 #~ msgstr "頂端後方左側"
+
 #~ msgid "Top Rear Right"
 #~ msgstr "頂端後方右側"
+
 #~ msgid "(invalid)"
 #~ msgstr "(無效)"
+
 #~ msgid "Stereo"
 #~ msgstr "立體聲"
+
 #~ msgid "Surround 4.0"
 #~ msgstr "環繞聲 4.0"
+
 #~ msgid "Surround 4.1"
 #~ msgstr "環繞聲 4.1"
+
 #~ msgid "Surround 5.0"
 #~ msgstr "環繞聲 5.0"
+
 #~ msgid "Surround 5.1"
 #~ msgstr "環繞聲 5.1"
+
 #~ msgid "Surround 7.1"
 #~ msgstr "環繞聲 7.1"
+
 #~ msgid "OK"
 #~ msgstr "確定"
+
 #~ msgid "Off"
 #~ msgstr "關閉"
+
 #~ msgid "High Fidelity Playback (A2DP)"
 #~ msgstr "高傳真播放裝置 (A2DP)"
+
 #~ msgid "High Fidelity Capture (A2DP)"
 #~ msgstr "高傳真擷取裝置 (A2DP)"
+
 #~ msgid "Telephony Duplex (HSP/HFP)"
 #~ msgstr "電話雙絞線 (HSP/HFP)"
+
 #~ msgid "Audio on @HOSTNAME@"
 #~ msgstr "音效位於 @HOSTNAME@"
+
 #~ msgid "Input"
 #~ msgstr "輸入"
+
 #~ msgid "Line-In"
 #~ msgstr "線路輸入"
+
 #~ msgid "Microphone"
 #~ msgstr "麥克風"
+
 #~ msgid "External Microphone"
 #~ msgstr "外接麥克風"
+
 #~ msgid "Internal Microphone"
 #~ msgstr "內建麥克風"
+
 #~ msgid "Radio"
 #~ msgstr "無線電"
+
 #~ msgid "Video"
 #~ msgstr "視訊"
+
 #~ msgid "Analog Input"
 #~ msgstr "類比輸入"
+
 #~ msgid "Analog Microphone"
 #~ msgstr "類比麥克風"
+
 #~ msgid "Analog Line-In"
 #~ msgstr "類比線路輸入"
+
 #~ msgid "Analog Radio"
 #~ msgstr "類比無線電"
+
 #~ msgid "Analog Video"
 #~ msgstr "類比視訊"
+
 #~ msgid "Analog Output"
 #~ msgstr "類比輸出"
+
 #~ msgid "Analog Headphones"
 #~ msgstr "類比頭戴式麥克風"
+
 #~ msgid "Analog Output (LFE)"
 #~ msgstr "類比輸出 (LFE)"
+
 #~ msgid "Analog Mono Output"
 #~ msgstr "類比單聲道輸出"
+
 #~ msgid "Analog Mono"
 #~ msgstr "類比單聲道"
+
 #~ msgid "Analog Stereo"
 #~ msgstr "類比立體聲"
+
 #~ msgid "Analog Surround 2.1"
 #~ msgstr "類比環繞聲 2.1"
+
 #~ msgid "Analog Surround 3.0"
 #~ msgstr "類比環繞聲 3.0"
+
 #~ msgid "Analog Surround 3.1"
 #~ msgstr "類比環繞聲 3.1"
+
 #~ msgid "Analog Surround 4.0"
 #~ msgstr "類比環繞聲 4.0"
+
 #~ msgid "Analog Surround 4.1"
 #~ msgstr "類比環繞聲 4.1"
+
 #~ msgid "Analog Surround 5.0"
 #~ msgstr "類比環繞聲 5.0"
+
 #~ msgid "Analog Surround 5.1"
 #~ msgstr "類比環繞聲 5.1"
+
 #~ msgid "Analog Surround 6.0"
 #~ msgstr "類比環繞聲 6.0"
+
 #~ msgid "Analog Surround 6.1"
 #~ msgstr "類比環繞聲 6.1"
+
 #~ msgid "Analog Surround 7.0"
 #~ msgstr "類比環繞聲 7.0"
+
 #~ msgid "Analog Surround 7.1"
 #~ msgstr "類比環繞聲 7.1"
+
 #~ msgid "Digital Stereo (IEC958)"
 #~ msgstr "數位立體聲 (IEC958)"
+
 #~ msgid "Digital Surround 4.0 (IEC958)"
 #~ msgstr "數位環繞聲 4.0 (IEC958)"
+
 #~ msgid "Digital Surround 4.0 (IEC958/AC3)"
 #~ msgstr "數位環繞聲 4.0 (IEC958/AC3)"
+
 #~ msgid "Digital Surround 5.1 (IEC958/AC3)"
 #~ msgstr "數位環繞聲 5.1 (IEC958/AC3)"
+
 #~ msgid "Digital Stereo (HDMI)"
 #~ msgstr "數位立體聲 (HDMI)"
+
 #~ msgid "Analog Mono Duplex"
 #~ msgstr "類比單聲道雙絞線"
+
 #~ msgid "Analog Stereo Duplex"
 #~ msgstr "類比立體聲雙絞線"
+
 #~ msgid "Digital Stereo Duplex (IEC958)"
 #~ msgstr "數位立體聲雙絞線 (IEC958)"
-
