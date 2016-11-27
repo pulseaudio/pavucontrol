@@ -1,12 +1,14 @@
-# translation of pl.po to Polish
-# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015.
+# Polish translation for pavucontrol.
+# Copyright © 2008-2016 the pavucontrol authors.
+# This file is distributed under the same license as the pavucontrol package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2008-2009, 2015-2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-25 19:00+0100\n"
-"PO-Revision-Date: 2015-03-25 19:05+0100\n"
+"POT-Creation-Date: 2016-11-27 15:59+0100\n"
+"PO-Revision-Date: 2016-11-27 16:00+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "Language: pl\n"
@@ -18,32 +20,32 @@ msgstr ""
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:601
 msgid "PulseAudio Volume Control"
-msgstr "Kontrola głośności PulseAudio"
+msgstr "Sterowanie głośnością PulseAudio"
 
 #: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
 msgid "Volume Control"
-msgstr "Kontrola głośności"
+msgstr "Sterowanie głośnością"
 
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
 msgstr "Dostosowanie poziomu głośności"
 
 #: ../src/pavucontrol.glade.h:1
-msgid "Card Name"
-msgstr "Nazwa karty"
-
-#: ../src/pavucontrol.glade.h:2
-msgid "<b>Profile:</b>"
-msgstr "<b>Profil:</b>"
+msgid "<b>left-front</b>"
+msgstr "<b>lewy przedni</b>"
 
 #: ../src/pavucontrol.glade.h:3
-msgid "<b>left-front</b>"
-msgstr "<b>lewy-przedni</b>"
-
-#: ../src/pavucontrol.glade.h:5
 #, no-c-format
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "Nazwa karty"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "Device Title"
@@ -194,22 +196,26 @@ msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Brak kart dostępnych do konfiguracji</i>"
 
 #: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Wyświetlanie mierników głośności"
+
+#: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
 msgstr "_Konfiguracja"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Zmiana nazwy urządzenia na:</b>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
 msgstr "Nazwa strumienia"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:48
 msgid "direction"
 msgstr "kierunek"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:49
 msgid "Device"
 msgstr "Urządzenie"
 
@@ -244,7 +250,7 @@ msgstr "Oddzwonienie informacji serwera się nie powiodło"
 #: ../src/pavucontrol.cc:239 ../src/pavucontrol.cc:536
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "Zainicjowanie rozszerzenia stream_restore się nie powiodło: %s"
+msgstr "Zainicjowanie rozszerzenia „stream_restore” się nie powiodło: %s"
 
 #: ../src/pavucontrol.cc:257
 msgid "pa_ext_stream_restore_read() failed"
@@ -338,14 +344,14 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
-"Połączenie z usługą PulseAudio się nie powiodło. Automatyczne ponowienie "
+"Połączenie z usługą PulseAudio się nie powiodło. Automatyczne ponowienie "
 "nastąpi za 5 sekund\n"
 "\n"
-"W tym przypadku jest to najprawdopodobniej spowodowane błędną konfiguracją\n"
-"zmiennej PULSE_SERVER w środowisku/właściwościach głównego okna X11\n"
-"lub default-server w pliku client.conf.\n"
+"W tym przypadku jest to najprawdopodobniej spowodowane błędną konfiguracją\n"
+"zmiennej PULSE_SERVER w środowisku/właściwościach głównego okna X11\n"
+"lub default-server w pliku client.conf.\n"
 "Może to być też spowodowane awarią usługi PulseAudio, która pozostawiła\n"
-"poprzednie informacje w głównym oknie X11.\n"
+"poprzednie informacje w głównym oknie X11.\n"
 "Jeśli tak się stało, to usługa PulseAudio powinna ponownie się uruchomić.\n"
 "Jeśli automatyczne uruchamianie nie jest skonfigurowane, to należy ręcznie\n"
 "wykonać polecenie start-pulseaudio-x11."
@@ -356,15 +362,20 @@ msgstr "Wczytuje podaną kartę."
 
 #: ../src/pavucontrol.cc:664
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "Ponawia w nieskończoność, jeśli PA zakończy działanie (co 5 sekund)."
+msgstr ""
+"Ponawia w nieskończoność, jeśli PulseAudio zakończy działanie (co 5 sekund)."
 
 #: ../src/pavucontrol.cc:671
 msgid "Maximize the window."
 msgstr "Maksymalizuje okno."
 
-#: ../src/pavucontrol.cc:693
+#: ../src/pavucontrol.cc:677
+msgid "Show version"
+msgstr "Wyświetla wersję."
+
+#: ../src/pavucontrol.cc:704
 msgid "Fatal Error: Unable to connect to PulseAudio"
-msgstr "Błąd krytyczny: nie można połączyć z usługą PulseAudio"
+msgstr "Błąd krytyczny: nie można połączyć z usługą PulseAudio"
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -388,7 +399,7 @@ msgstr "<small><i>Podstawa</i></small>"
 
 #: ../src/devicewidget.cc:52
 msgid "Rename Device..."
-msgstr "Zmień nazwę urządzenia..."
+msgstr "Zmień nazwę urządzenia…"
 
 #: ../src/devicewidget.cc:165
 msgid "pa_context_set_port_latency_offset() failed"
@@ -403,70 +414,70 @@ msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
-"Należy wczytać module-device-manager w serwerze PulseAudio, aby zmienić "
+"Należy wczytać module-device-manager w serwerze PulseAudio, aby zmienić "
 "nazwę urządzenia"
 
 #: ../src/devicewidget.cc:274
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() się nie powiodło"
 
-#: ../src/mainwindow.cc:161
+#: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
 msgstr "Błąd podczas odczytywania pliku konfiguracji %s: %s"
 
-#: ../src/mainwindow.cc:246
+#: ../src/mainwindow.cc:257
 msgid "Error saving preferences"
 msgstr "Błąd podczas zapisywania preferencji"
 
-#: ../src/mainwindow.cc:254
+#: ../src/mainwindow.cc:265
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Błąd podczas zapisywania pliku konfiguracji %s"
 
-#: ../src/mainwindow.cc:312
+#: ../src/mainwindow.cc:323
 msgid " (plugged in)"
 msgstr " (podłączone)"
 
-#: ../src/mainwindow.cc:316
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:415
 msgid " (unavailable)"
 msgstr " (niedostępne)"
 
-#: ../src/mainwindow.cc:318 ../src/mainwindow.cc:401
+#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:412
 msgid " (unplugged)"
-msgstr " (rozłączone)"
+msgstr " (odłączone)"
 
-#: ../src/mainwindow.cc:532
+#: ../src/mainwindow.cc:547
 msgid "Failed to read data from stream"
 msgstr "Odczytanie danych ze strumienia się nie powiodło"
 
-#: ../src/mainwindow.cc:576
+#: ../src/mainwindow.cc:591
 msgid "Peak detect"
 msgstr "Wykrywanie szczytów"
 
-#: ../src/mainwindow.cc:577
+#: ../src/mainwindow.cc:592
 msgid "Failed to create monitoring stream"
 msgstr "Utworzenie strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:591
+#: ../src/mainwindow.cc:607
 msgid "Failed to connect monitoring stream"
 msgstr "Połączenie ze strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:726
+#: ../src/mainwindow.cc:743
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 "Ignorowanie sink-input, ponieważ jest ono oznaczone jako zdarzenie, więc "
-"jest jest obsługiwane przez widżet Zdarzenia"
+"jest obsługiwane przez widżet „Zdarzenia”"
 
-#: ../src/mainwindow.cc:899
+#: ../src/mainwindow.cc:918
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/mainwindow.cc:1235
+#: ../src/mainwindow.cc:1254
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr "Ustalanie połączenia z usługą PulseAudio. Proszę czekać..."
+msgstr "Nawiązywanie połączenia z usługą PulseAudio. Proszę czekać…"
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -506,7 +517,7 @@ msgstr "pa_context_set_sink_volume_by_index() się nie powiodło"
 
 #: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
-msgstr "Dźwięk kontrolny kontroli głośności"
+msgstr "Dźwięk kontrolny sterowania głośnością"
 
 #: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
@@ -568,6 +579,6 @@ msgstr "pa_context_set_default_source() się nie powiodło"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() się nie powiodło"
 
-#: ../src/streamwidget.cc:47
+#: ../src/streamwidget.cc:46
 msgid "Terminate"
 msgstr "Zakończ"
