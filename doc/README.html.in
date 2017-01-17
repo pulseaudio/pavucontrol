@@ -108,7 +108,7 @@ href="@PACKAGE_URL@pavucontrol-0.8.tar.gz">Version 0.8</a> released; initial rel
 
 <p>PulseAudio Volume Control (<tt>pavucontrol</tt>) is a simple GTK
 based volume control tool ("mixer") for the <a
-href="http://0pointer.de/lennart/projects/pulseaudio/">PulseAudio
+href="http://pulseaudio.org/">PulseAudio
 sound server</a>. In contrast to classic mixer tools this one allows
 you to control both the volume of hardware devices and of each
 playback stream separately.</p>
@@ -132,9 +132,9 @@ playback stream separately.</p>
 distributions (and maybe Unix versions) since it uses GNU autoconf for
 source code configuration.</p>
 
-<p><tt>pavucontrol</tt> requires <a href="http://gtkmm.sf.net/"><tt>gtkmm</tt></a> and <tt>glademmm</tt> installed.</p>
+<p><tt>pavucontrol</tt> requires <a href="http://www.gtkmm.org"><tt>gtkmm</tt></a> and <tt>glademmm</tt> installed.</p>
 
-<p>Obviously <tt>pavucontrol</tt> requires an installation of <a href="http://pulseaudio.org/">PulseAudio</a> (version 0.9.16).</p>
+<p>Obviously <tt>pavucontrol</tt> requires an installation of <a href="http://pulseaudio.org/">PulseAudio</a>.</p>
 
 <h2><a name="installation">Installation</a></h2>
 
