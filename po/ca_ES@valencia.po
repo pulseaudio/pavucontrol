@@ -1,0 +1,407 @@
+# Catalan translations for pavucontrol package.
+# Copyright (C) 2008 Red Hat, Inc.
+# This file is distributed under the same license as the
+# pavucontrol package.
+# Xavier Queralt Mateu <xqueralt@gmail.com>, 2008.
+# This file is translated according to the glossary and style guide of
+# Softcatalà. If you plan to modify this file, please read first the page
+# of the Catalan translation team for the Fedora project at:
+# http://www.softcatala.org/projectes/fedora/
+# and contact the previous translator
+# Aquest fitxer s'ha de traduir d'acord amb el recull de termes i la guia
+# d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
+# us plau la pàgina de catalanització del projecte Fedora a:
+# http://www.softcatala.org/projectes/fedora/
+# i contacteu l'anterior traductor/a.
+# Pilar Embid Giner <embid_mar@gva.es>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: pavucontrol\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-14 17:10+0200\n"
+"PO-Revision-Date: 2017-05-31 14:06+0200\n"
+"Last-Translator: Pilar Embid Giner <embid_mar@gva.es>\n"
+"Language-Team: LliureX\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../src/pavucontrol.desktop.in.h:1
+msgid "Adjust the volume level"
+msgstr "Ajusta el volum"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+msgid "PulseAudio Volume Control"
+msgstr "Control del volum del PulseAudio"
+
+#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+msgid "Volume Control"
+msgstr "Control del volum"
+
+#: ../src/pavucontrol.glade.h:2
+#, no-c-format
+msgid "50%"
+msgstr "50%"
+
+#: ../src/pavucontrol.glade.h:3
+msgid "<b>Port:</b>"
+msgstr "<b>Port:</b>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "<b>Profile:</b>"
+msgstr "<b>Perfil:</b>"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>S_how:</b>"
+msgstr "<b>_Mostra:</b>"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Mos_tra:</b>"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "<b>_Show:</b>"
+msgstr "<b>Mo_stra:</b>"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "<b>left-front</b>"
+msgstr "<b>esquerra-davant</b>"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>No hi ha cap aplicació reproduïnt àudio actualment</i>"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>No hi ha cap aplicació gravant àudio actualment.</i>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>No hi ha targetes disponibles per a configurar</i>"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "<i>No input devices available</i>"
+msgstr "<i>No hi ha cap dispositiu d'entrada disponible</i>"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "<i>No output devices available</i>"
+msgstr "<i>No hi ha cap dispositiu d'eixida disponible</i>"
+
+#: ../src/pavucontrol.glade.h:14
+msgid ""
+"All Input Devices\n"
+"All Except Monitors\n"
+"Hardware Input Devices\n"
+"Virtual Input Devices\n"
+"Monitors"
+msgstr ""
+"Tots els dispositius d'entrada\n"
+"Tots excepte els monitors\n"
+"Dispositius d'entrada físics\n"
+"Dispositius d'entrada virtuals\n"
+"Monitors"
+
+#: ../src/pavucontrol.glade.h:19
+msgid ""
+"All Output Devices\n"
+"Hardware Output Devices\n"
+"Virtual Output Devices"
+msgstr ""
+"Tots els dispositius d'eixida\n"
+"Dispositius d'eixida físics\n"
+"Dispositius d'eixida virtuals"
+
+#. Applications All streams
+#: ../src/pavucontrol.glade.h:23
+msgid ""
+"All Streams\n"
+"Applications\n"
+"Virtual Streams"
+msgstr ""
+"Tots els fluxos\n"
+"Aplicacions\n"
+"Fluxos virtuals"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "Card Name"
+msgstr "Nom de la targeta"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "Device"
+msgstr "Dispositiu"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Lock channels together"
+msgstr "Bloqueja els canals junts"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Mute audio"
+msgstr "Silencia"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Set as fallback"
+msgstr "Estableix com a predeterminat"
+
+#: ../src/pavucontrol.glade.h:31
+msgid "Stream Title"
+msgstr "Títol del flux"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "_Configuration"
+msgstr "_Configuració"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "_Input Devices"
+msgstr "D_ispositius d'entrada"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "_Output Devices"
+msgstr "Dispositius d'_eixida"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Playback"
+msgstr "Re_producció"
+
+#: ../src/pavucontrol.glade.h:37
+msgid "_Recording"
+msgstr "G_ravació"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "direction"
+msgstr "direcció"
+
+#: ../src/pavucontrol.cc:73
+msgid "Card callback failure"
+msgstr "Ha fallat la crida de retorn a la targeta"
+
+#: ../src/pavucontrol.cc:92
+msgid "Sink callback failure"
+msgstr "Ha fallat la crida de retorn del conducte"
+
+#: ../src/pavucontrol.cc:111
+msgid "Source callback failure"
+msgstr "Ha fallat la crida de retorn de l'origen"
+
+#: ../src/pavucontrol.cc:130
+msgid "Sink input callback failure"
+msgstr "Ha fallat la crida de retorn del conducte d'entrada"
+
+#: ../src/pavucontrol.cc:149
+msgid "Source output callback failure"
+msgstr "Ha fallat la crida de retorn de l'origen de l'eixida"
+
+#: ../src/pavucontrol.cc:183
+msgid "Client callback failure"
+msgstr "Ha fallat la crida de retorn del client"
+
+#: ../src/pavucontrol.cc:199
+msgid "Server info callback failure"
+msgstr "Ha fallat la crida de retorn de la informació del servidor"
+
+#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "Ha fallat la inicialització de l'extensió stream_restore: %s"
+
+#: ../src/pavucontrol.cc:235
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "Ha fallat pa_ext_stream_restore_read()"
+
+#: ../src/pavucontrol.cc:252
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "Ha fallat pa_context_get_sink_info_by_index()"
+
+#: ../src/pavucontrol.cc:265
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "Ha fallat pa_context_get_source_info_by_index()"
+
+#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "Ha fallat pa_context_get_sink_input_info()"
+
+#: ../src/pavucontrol.cc:304
+msgid "pa_context_get_client_info() failed"
+msgstr "Ha fallat pa_context_get_client_info()"
+
+#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+msgid "pa_context_get_server_info() failed"
+msgstr "Ha fallat pa_context_get_server_info()"
+
+#: ../src/pavucontrol.cc:327
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "Ha fallat pa_context_get_card_info_by_index()"
+
+#: ../src/pavucontrol.cc:362
+msgid "pa_context_subscribe() failed"
+msgstr "Ha fallat pa_context_subscribe()"
+
+#: ../src/pavucontrol.cc:378
+msgid "pa_context_client_info_list() failed"
+msgstr "Ha fallat pa_context_client_info_list()"
+
+#: ../src/pavucontrol.cc:385
+msgid "pa_context_get_card_info_list() failed"
+msgstr "Ha fallat pa_context_get_card_info_list()"
+
+#: ../src/pavucontrol.cc:392
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "Ha fallat pa_context_get_sink_info_list()"
+
+#: ../src/pavucontrol.cc:399
+msgid "pa_context_get_source_info_list() failed"
+msgstr "Ha fallat pa_context_get_source_info_list()"
+
+#: ../src/pavucontrol.cc:406
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "Ha fallat pa_context_get_sink_input_info_list()"
+
+#: ../src/pavucontrol.cc:413
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "Ha fallat pa_context_get_source_output_info_list()"
+
+#: ../src/pavucontrol.cc:437
+msgid "Connection failed"
+msgstr "Ha fallat la connexió"
+
+#: ../src/cardwidget.cc:87
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "Ha fallat pa_context_set_card_profile_by_index()"
+
+#: ../src/channelwidget.cc:104
+msgid "<small>Silence</small>"
+msgstr "<small>Silenci</small>"
+
+#: ../src/channelwidget.cc:104
+msgid "<small>Min</small>"
+msgstr "<small>Mín</small>"
+
+#: ../src/channelwidget.cc:105
+msgid "<small>Max</small>"
+msgstr "<small>Màx</small>"
+
+#: ../src/channelwidget.cc:109
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Base</i></small>"
+
+#: ../src/mainwindow.cc:269
+msgid "Failed to read data from stream"
+msgstr "Ha fallat la lectura del flux"
+
+#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
+msgid "Peak detect"
+msgstr "Detecta els pics"
+
+#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
+msgid "Failed to create monitoring stream"
+msgstr "Ha fallat la creació del flux de monitorització"
+
+#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
+msgid "Failed to connect monitoring stream"
+msgstr "Ha fallat la connexió al flux de monitorització"
+
+#: ../src/mainwindow.cc:466
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"S'ignora el conducte d'entrada perquè s'ha designat com un esdeveniment i, "
+"per tant, gestionat pel giny d'esdeveniments."
+
+#: ../src/mainwindow.cc:618
+msgid "System Sounds"
+msgstr "Sons del sistema"
+
+#: ../src/rolewidget.cc:71
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "Ha fallat pa_ext_stream_restore_write()"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "a"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "Finalitza la reproducció"
+
+#: ../src/sinkinputwidget.cc:61
+msgid "Unknown output"
+msgstr "Eixida desconeguda"
+
+#: ../src/sinkinputwidget.cc:72
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "Ha fallat pa_context_set_sink_input_volume()"
+
+#: ../src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "Ha fallat pa_context_set_sink_input_mute()"
+
+#: ../src/sinkinputwidget.cc:97
+msgid "pa_context_kill_sink_input() failed"
+msgstr "Ha fallat pa_context_kill_sink_input()"
+
+#: ../src/sinkinputwidget.cc:133
+msgid "pa_context_move_sink_input_by_index() failed"
+msgstr "Ha fallat pa_context_move_sink_input_by_index()"
+
+#: ../src/sinkwidget.cc:48
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "Ha fallat pa_context_set_sink_volume_by_index()"
+
+#: ../src/sinkwidget.cc:63
+msgid "Volume Control Feedback Sound"
+msgstr "Control del volum de la realimentació del so"
+
+#: ../src/sinkwidget.cc:80
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "Ha fallat pa_context_set_sink_mute_by_index()"
+
+#: ../src/sinkwidget.cc:94
+msgid "pa_context_set_default_sink() failed"
+msgstr "Ha fallat pa_context_set_default_sink()"
+
+#: ../src/sinkwidget.cc:114
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "Ha fallat pa_context_set_sink_port_by_index()"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "des de"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "Finalitza la gravació"
+
+#: ../src/sourceoutputwidget.cc:61
+msgid "Unknown input"
+msgstr "Entrada desconeguda"
+
+#: ../src/sourceoutputwidget.cc:71
+msgid "pa_context_kill_source_output() failed"
+msgstr "Ha fallat pa_context_kill_source_output()"
+
+#: ../src/sourceoutputwidget.cc:108
+msgid "pa_context_move_source_output_by_index() failed"
+msgstr "Ha fallat pa_context_move_source_output_by_index()"
+
+#: ../src/sourcewidget.cc:44
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "Ha fallat pa_context_set_source_volume_by_index()"
+
+#: ../src/sourcewidget.cc:59
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "Ha fallat pa_context_set_source_mute_by_index()"
+
+#: ../src/sourcewidget.cc:73
+msgid "pa_context_set_default_source() failed"
+msgstr "Ha fallat pa_context_set_default_source()"
+
+#: ../src/sourcewidget.cc:95
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "Ha fallat pa_context_set_source_port_by_index()"
+
+#: ../src/streamwidget.cc:45
+msgid "Terminate"
+msgstr "Finalitza"
