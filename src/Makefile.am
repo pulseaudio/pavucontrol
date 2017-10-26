@@ -37,6 +37,7 @@ pavucontrol_SOURCES= \
   rolewidget.h rolewidget.cc \
   mainwindow.h mainwindow.cc \
   pavucontrol.h pavucontrol.cc \
+  pavuapplication.cc pavuapplication.h \
   i18n.h
 
 pavucontrol_LDADD=$(AM_LDADD) $(GUILIBS_LIBS) $(PULSE_LIBS)

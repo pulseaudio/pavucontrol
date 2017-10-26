@@ -340,6 +340,22 @@ static void updatePorts(DeviceWidget *w, std::map<Glib::ustring, PortInfo> &port
     }
 }
 
+void MainWindow::selectBestTab() {
+    if (sinkInputWidgets.size() > 0)
+        notebook->set_current_page(0);
+    else if (sourceOutputWidgets.size() > 0)
+        notebook->set_current_page(1);
+    else if (sourceWidgets.size() > 0 && sinkWidgets.size() == 0)
+        notebook->set_current_page(3);
+    else
+        notebook->set_current_page(2);
+}
+
+void MainWindow::selectTab(int tab_number) {
+    if (tab_number > 0 && tab_number <= notebook->get_n_pages())
+        notebook->set_current_page(tab_number - 1);
+}
+
 void MainWindow::updateCard(const pa_card_info &info) {
     CardWidget *w;
     bool is_new = false;

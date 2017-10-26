@@ -23,7 +23,6 @@
 #endif
 
 #include <pulse/pulseaudio.h>
-#include <pulse/glib-mainloop.h>
 #include <pulse/ext-stream-restore.h>
 #include <pulse/ext-device-manager.h>
 
@@ -45,7 +44,7 @@
 static pa_context* context = NULL;
 static pa_mainloop_api* api = NULL;
 static int n_outstanding = 0;
-static int default_tab = 0;
+static int tab_number = 0;
 static bool retry = false;
 static int reconnect_timeout = 1;
 
@@ -171,20 +170,10 @@ void source_output_cb(pa_context *, const pa_source_output_info *i, int eol, voi
         if (n_outstanding > 0) {
             /* At this point all notebook pages have been populated, so
              * let's open one that isn't empty */
-            if (default_tab != -1) {
-                if (default_tab < 1 || default_tab > w->notebook->get_n_pages()) {
-                    if (w->sinkInputWidgets.size() > 0)
-                        w->notebook->set_current_page(0);
-                    else if (w->sourceOutputWidgets.size() > 0)
-                        w->notebook->set_current_page(1);
-                    else if (w->sourceWidgets.size() > 0 && w->sinkWidgets.size() == 0)
-                        w->notebook->set_current_page(3);
-                    else
-                        w->notebook->set_current_page(2);
-                } else {
-                    w->notebook->set_current_page(default_tab - 1);
-                }
-                default_tab = -1;
+            if (tab_number != 0) {
+                w->selectTab(tab_number);
+            } else {
+                w->selectBestTab();
             }
         }
 
@@ -636,82 +625,21 @@ gboolean connect_to_pulse(gpointer userdata) {
     return false;
 }
 
-int main(int argc, char *argv[]) {
+Gtk::Window* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool _retry, int _tab_number) {
 
-    /* Initialize the i18n stuff */
-    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
-    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
-    textdomain(GETTEXT_PACKAGE);
+    MainWindow* mainWindow = NULL;
 
-    signal(SIGPIPE, SIG_IGN);
+    tab_number = _tab_number;
+    retry = _retry;
 
+    ca_context_set_driver(ca_gtk_context_get(), "pulse");
 
-    Glib::OptionContext options;
-    options.set_summary("PulseAudio Volume Control");
-    options.set_help_enabled();
+    mainWindow = MainWindow::create(maximize);
 
-    Glib::OptionGroup group("pulseaudio", "PAVUControl");
+    api = pa_glib_mainloop_get_api(m);
+    g_assert(api);
 
-    Glib::OptionEntry entry;
-    entry.set_long_name("tab");
-    entry.set_short_name('t');
-    entry.set_description(_("Select a specific tab on load."));
-    group.add_entry(entry, default_tab);
+    connect_to_pulse(mainWindow);
 
-    Glib::OptionEntry entry2;
-    entry2.set_long_name("retry");
-    entry2.set_short_name('r');
-    entry2.set_description(_("Retry forever if pa quits (every 5 seconds)."));
-    group.add_entry(entry2, retry);
-
-    bool maximize = false;
-    Glib::OptionEntry entry3;
-    entry3.set_long_name("maximize");
-    entry3.set_short_name('m');
-    entry3.set_description(_("Maximize the window."));
-    group.add_entry(entry3, maximize);
-
-    bool version = false;
-    Glib::OptionEntry entry4;
-    entry4.set_long_name("version");
-    entry4.set_description(_("Show version"));
-    group.add_entry(entry4, version);
-
-    options.set_main_group(group);
-
-    try {
-        Gtk::Main kit(argc, argv, options);
-
-        if (version) {
-            printf("%s\n", PACKAGE_STRING);
-            return 0;
-        }
-
-        ca_context_set_driver(ca_gtk_context_get(), "pulse");
-
-        MainWindow* mainWindow = MainWindow::create(maximize);
-
-        pa_glib_mainloop *m = pa_glib_mainloop_new(g_main_context_default());
-        g_assert(m);
-        api = pa_glib_mainloop_get_api(m);
-        g_assert(api);
-
-        connect_to_pulse(mainWindow);
-        if (reconnect_timeout >= 0)
-            Gtk::Main::run(*mainWindow);
-
-        if (reconnect_timeout < 0)
-            show_error(_("Fatal Error: Unable to connect to PulseAudio"));
-
-        delete mainWindow;
-
-        if (context)
-            pa_context_unref(context);
-        pa_glib_mainloop_free(m);
-    } catch ( const Glib::OptionError & e ) {
-        fprintf(stderr, "%s", options.get_help().c_str());
-        return 1;
-    }
-
-    return 0;
+    return mainWindow;
 }

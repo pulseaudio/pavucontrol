@@ -12,3 +12,4 @@ src/sinkwidget.cc
 src/sourceoutputwidget.cc
 src/sourcewidget.cc
 src/streamwidget.cc
+src/pavuapplication.cc

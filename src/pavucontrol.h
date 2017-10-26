@@ -29,6 +29,7 @@
 #include <gtkmm.h>
 
 #include <pulse/pulseaudio.h>
+#include <pulse/glib-mainloop.h>
 
 #ifndef GLADE_FILE
 #define GLADE_FILE "pavucontrol.glade"
@@ -71,4 +72,5 @@ enum SourceType {
 pa_context* get_context(void);
 void show_error(const char *txt);
 
+Gtk::Window* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool retry, int tab_number);
 #endif
