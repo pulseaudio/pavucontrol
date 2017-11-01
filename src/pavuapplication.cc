@@ -42,7 +42,7 @@ MainWindow* PavuApplication::create_window()
     m = pa_glib_mainloop_new(g_main_context_default());
     g_assert(m);
 
-    MainWindow* pavucontrol_window = (MainWindow *)pavucontrol_get_window(m, maximize, retry, tab);
+    MainWindow* pavucontrol_window = pavucontrol_get_window(m, maximize, retry, tab);
 
     pavucontrol_window->signal_hide().connect(
                      sigc::bind<Gtk::Window*>(sigc::mem_fun(*this,

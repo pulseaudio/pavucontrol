@@ -625,7 +625,7 @@ gboolean connect_to_pulse(gpointer userdata) {
     return false;
 }
 
-Gtk::Window* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool _retry, int _tab_number) {
+MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool _retry, int _tab_number) {
 
     MainWindow* mainWindow = NULL;
 

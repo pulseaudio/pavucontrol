@@ -21,6 +21,8 @@
 #ifndef mainwindow_h
 #define mainwindow_h
 
+class MainWindow;
+
 #include "pavucontrol.h"
 #include <pulse/ext-stream-restore.h>
 #if HAVE_EXT_DEVICE_RESTORE_API
