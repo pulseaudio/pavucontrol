@@ -25,11 +25,8 @@
 #include "mainwindow.h"
 
 class PavuApplication : public Gtk::Application {
-protected:
-    PavuApplication();
-
 public:
-    static Glib::RefPtr<PavuApplication> create();
+    PavuApplication();
 
     /* Main window */
     MainWindow *mainWindow;
