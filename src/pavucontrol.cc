@@ -605,7 +605,7 @@ gboolean connect_to_pulse(gpointer userdata) {
             w->setConnectingMessage(_("Connection to PulseAudio failed. Automatic retry in 5s\n\n"
                 "In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
                 "or default-server in client.conf is misconfigured.\n"
-                "This situation can also arrise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
+                "This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
                 "If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
                 "run start-pulseaudio-x11 manually."));
             reconnect_timeout = 5;
