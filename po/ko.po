@@ -84,11 +84,11 @@ msgid ""
 "Virtual Input Devices\n"
 "Monitors"
 msgstr ""
-“모든 입력 장치\n”
-“모니터를 제외한 모든 장치\n”
-“하드웨어 입력 장치\n”
-“가상 입력 장치\n”
-“모니터”
+"모든 입력 장치\n"
+"모니터를 제외한 모든 장치\n"
+"하드웨어 입력 장치\n"
+"가상 입력 장치\n"
+"모니터"
 	
 #: ../src/pavucontrol.glade.h:19
 msgid ""
@@ -96,9 +96,9 @@ msgid ""
 "Hardware Output Devices\n"
 "Virtual Output Devices"
 msgstr ""
-“모든 출력 장치\n”
-“하드웨어 출력 장치\n”
-“가상 출력 장치“
+"모든 출력 장치\n"
+"하드웨어 출력 장치\n"
+"가상 출력 장치"
 	
 #. Applications All streams
 #: ../src/pavucontrol.glade.h:23
@@ -107,9 +107,9 @@ msgid ""
 "Applications\n"
 "Virtual Streams"
 msgstr ""
-“모든 스트림\n”
-“애플리케이션\n”
-“가상 스트림“
+"모든 스트림\n"
+"애플리케이션\n"
+"가상 스트림"
 	
 #: ../src/pavucontrol.glade.h:26
 msgid "Card Name"
