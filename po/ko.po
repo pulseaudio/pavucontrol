@@ -1,0 +1,394 @@
+# Korean translation for pavucontrol.
+# Copyright (C) 2018
+# This file is distributed under the same license as the pavucontrol package.
+# Jung-Kyu Park <bagjunggyu@gmail.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pavucontrol\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-02 08:57\n"
+"PO-Revision-Date: 2018-01-02 08:57\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
+"Language-Team: Korean <bagjunggyu@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+         
+#: ../src/pavucontrol.desktop.in.h:1
+msgid "Adjust the volume level"
+msgstr "볼륨 레벨 조절"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+msgid "PulseAudio Volume Control"
+msgstr "PulseAudio  볼륨 조절"	
+
+#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+msgid "Volume Control"
+msgstr "볼륨 조절"
+	
+#: ../src/pavucontrol.glade.h:2
+#, no-c-format
+msgid "50%"
+msgstr "50%"
+	
+#: ../src/pavucontrol.glade.h:3
+msgid "<b>Port:</b>"
+msgstr "<b>포트:</b>"
+	
+#: ../src/pavucontrol.glade.h:4
+msgid "<b>Profile:</b>"
+msgstr "<b>프로필:</b>"
+	
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>S_how:</b>"
+msgstr "<b>보기(_H):</b>"
+	
+#: ../src/pavucontrol.glade.h:6
+msgid "<b>Sho_w:</b>"
+msgstr "<b>보기(_W):</b>"
+	
+#: ../src/pavucontrol.glade.h:7
+msgid "<b>_Show:</b>"
+msgstr "<b>보기(_S):</b>"
+	
+#: ../src/pavucontrol.glade.h:8
+msgid "<b>left-front</b>"
+msgstr "<b>왼쪽-앞</b>"
+	
+#: ../src/pavucontrol.glade.h:9
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>오디오를 재생하는 애플리케이션이 없습니다.</i>"
+	
+#: ../src/pavucontrol.glade.h:10
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>오디오를 녹음하는 애플리케이션이 없습니다.</i>"
+	
+#: ../src/pavucontrol.glade.h:11
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>설정 가능한 카드가 없습니다</i>"
+	
+#: ../src/pavucontrol.glade.h:12
+msgid "<i>No input devices available</i>"
+msgstr "<i>입력 가능한 장치가 없습니다</i>"
+	
+#: ../src/pavucontrol.glade.h:13
+msgid "<i>No output devices available</i>"
+msgstr "<i>출력 가능한 장치가 없습니다</i>"
+	
+#: ../src/pavucontrol.glade.h:14
+msgid ""
+"All Input Devices\n"
+"All Except Monitors\n"
+"Hardware Input Devices\n"
+"Virtual Input Devices\n"
+"Monitors"
+msgstr ""
+"모든 입력 장치\n"
+"모니터를 제외한 모든 장치\n"
+"하드웨어 입력 장치\n"
+"가상 입력 장치\n"
+"모니터"
+	
+#: ../src/pavucontrol.glade.h:19
+msgid ""
+"All Output Devices\n"
+"Hardware Output Devices\n"
+"Virtual Output Devices"
+msgstr ""
+"모든 출력 장치\n"
+"하드웨어 출력 장치\n"
+"가상 출력 장치"
+	
+#. Applications All streams
+#: ../src/pavucontrol.glade.h:23
+msgid ""
+"All Streams\n"
+"Applications\n"
+"Virtual Streams"
+msgstr ""
+"모든 스트림\n"
+"애플리케이션\n"
+"가상 스트림"
+	
+#: ../src/pavucontrol.glade.h:26
+msgid "Card Name"
+msgstr "카드 이름"
+	
+#: ../src/pavucontrol.glade.h:27
+msgid "Device"
+msgstr "장치"
+	
+#: ../src/pavucontrol.glade.h:28
+msgid "Lock channels together"
+msgstr "채널 함께 잠금"
+	
+#: ../src/pavucontrol.glade.h:29
+msgid "Mute audio"
+msgstr "오디오 묵음"
+	
+#: ../src/pavucontrol.glade.h:30
+msgid "Set as fallback"
+msgstr "대체용으로 설정"
+	
+#: ../src/pavucontrol.glade.h:31
+msgid "Stream Title"
+msgstr "스트림 제목"
+	
+#: ../src/pavucontrol.glade.h:33
+msgid "_Configuration"
+msgstr "설정(_C)"
+	
+#: ../src/pavucontrol.glade.h:34
+msgid "_Input Devices"
+msgstr "입력 장치(_I)"
+	
+#: ../src/pavucontrol.glade.h:35
+msgid "_Output Devices"
+msgstr "출력 장치(_O)"
+	
+#: ../src/pavucontrol.glade.h:36
+msgid "_Playback"
+msgstr "재생(_P)"
+	
+#: ../src/pavucontrol.glade.h:37
+msgid "_Recording"
+msgstr "녹음(_R)"
+	
+#: ../src/pavucontrol.glade.h:38
+msgid "direction"
+msgstr "디렉션"
+	
+#: ../src/pavucontrol.cc:73
+msgid "Card callback failure"
+msgstr "카드 콜백 실패"
+	
+#: ../src/pavucontrol.cc:92
+msgid "Sink callback failure"
+msgstr "싱크 콜백 실패"
+	
+#: ../src/pavucontrol.cc:111
+msgid "Source callback failure"
+msgstr "소스 콜백 실패"
+	
+#: ../src/pavucontrol.cc:130
+msgid "Sink input callback failure"
+msgstr "싱크 입력 콜백 실패"
+	
+#: ../src/pavucontrol.cc:149
+msgid "Source output callback failure"
+msgstr "소스 출력 콜백 실패"
+	
+#: ../src/pavucontrol.cc:183
+msgid "Client callback failure"
+msgstr "클라이언트 콜백 실패"
+	
+#: ../src/pavucontrol.cc:199
+msgid "Server info callback failure"
+msgstr "서버 정보 콜백 실패"
+	
+#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "스트림 복원 확장 시동 실패(_R): %s"
+	
+#: ../src/pavucontrol.cc:235
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() 실패"
+	
+#: ../src/pavucontrol.cc:252
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() 실패"
+	
+#: ../src/pavucontrol.cc:265
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() 실패"
+	
+#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() 실패"
+	
+#: ../src/pavucontrol.cc:304
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() 실패"
+	
+#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() 실패"
+	
+#: ../src/pavucontrol.cc:327
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() 실패"
+	
+#: ../src/pavucontrol.cc:362
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() 실패"
+	
+#: ../src/pavucontrol.cc:378
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:385
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:392
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:399
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:406
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:413
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() 실패"
+	
+#: ../src/pavucontrol.cc:437
+msgid "Connection failed"
+msgstr "연결 실패"
+	
+#: ../src/cardwidget.cc:87
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() 실패"
+	
+#: ../src/channelwidget.cc:104
+msgid "<small>Silence</small>"
+msgstr "<small>조용히/small>"
+	
+#: ../src/channelwidget.cc:104
+msgid "<small>Min</small>"
+msgstr "<small>최소</small>"
+	
+#: ../src/channelwidget.cc:105
+msgid "<small>Max</small>"
+msgstr "<small>최대</small>"
+	
+#: ../src/channelwidget.cc:109
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>베이스</i></small>"
+	
+#: ../src/mainwindow.cc:269
+msgid "Failed to read data from stream"
+msgstr "스트림에서 데이터 읽어오기 실패"
+	
+#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
+msgid "Peak detect"
+msgstr "피크 검출"
+	
+#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
+msgid "Failed to create monitoring stream"
+msgstr "모니터링 스트림 생성 실패"
+	
+#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
+msgid "Failed to connect monitoring stream"
+msgstr "모니터링 스트림 연결 실패"
+	
+#: ../src/mainwindow.cc:466
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"이벤트로 지정되어 이벤트 위젯에 의해 처리되므로 "
+"싱크 입력을 무시합니다"
+	
+#: ../src/mainwindow.cc:618
+msgid "System Sounds"
+msgstr "시스템 사운드"
+	
+#: ../src/rolewidget.cc:71
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() 실패"
+	
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "켜짐"
+	
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "재생 마침"
+	
+#: ../src/sinkinputwidget.cc:61
+msgid "Unknown output"
+msgstr "모르는 출력"
+	
+#: ../src/sinkinputwidget.cc:72
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() 실패"
+	
+#: ../src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() 실패"
+	
+#: ../src/sinkinputwidget.cc:97
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() 실패"
+	
+#: ../src/sinkinputwidget.cc:133
+msgid "pa_context_move_sink_input_by_index() failed"
+msgstr "pa_context_move_sink_input_by_index() 실패"
+	
+#: ../src/sinkwidget.cc:48
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() 실패"
+	
+#: ../src/sinkwidget.cc:63
+msgid "Volume Control Feedback Sound"
+msgstr "볼륨 조절 피드백 사운드"
+	
+#: ../src/sinkwidget.cc:80
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() 실패"
+	
+#: ../src/sinkwidget.cc:94
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() 실패"
+	
+#: ../src/sinkwidget.cc:114
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() 실패"
+	
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "에서"
+	
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "녹음 마침"
+	
+#: ../src/sourceoutputwidget.cc:61
+msgid "Unknown input"
+msgstr "모르는 입력"
+	
+#: ../src/sourceoutputwidget.cc:71
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() 실패"
+	
+#: ../src/sourceoutputwidget.cc:108
+msgid "pa_context_move_source_output_by_index() failed"
+msgstr "pa_context_move_source_output_by_index() 실패"
+	
+#: ../src/sourcewidget.cc:44
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() 실패"
+	
+#: ../src/sourcewidget.cc:59
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() 실패"
+	
+#: ../src/sourcewidget.cc:73
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() 실패"
+	
+#: ../src/sourcewidget.cc:95
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() 실패"
+	
+#: ../src/streamwidget.cc:45
+#, fuzzy
+msgid "Terminate"
+msgstr "끝내기"
