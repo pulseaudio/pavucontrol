@@ -1,16 +1,19 @@
 # PulseAudio Volume Control.
-# Copyright (C) 2009.
+# Copyright (C) 2009-2017.
 # This file is distributed under the same license as the PulseAudio package.
+#
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2009.
+# Masato Hashimoto <cabezon.hashimoto@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 19:56+0000\n"
-"PO-Revision-Date: 2009-09-22 13:01+0900\n"
-"Last-Translator: Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>\n"
+"PO-Revision-Date: 2017-12-10 21:01+0900\n"
+"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,15 +45,15 @@ msgstr "<b>プロファイル:</b>"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "<b>S_how:</b>"
-msgstr "<b>見る(_H):</b>"
+msgstr "<b>表示(_H):</b>"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Sho_w:</b>"
-msgstr "<b>見る(_W):</b>"
+msgstr "<b>表示(_W):</b>"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "<b>_Show:</b>"
-msgstr "<b>見る(_S):</b>"
+msgstr "<b>表示(_S):</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "<b>left-front</b>"
@@ -133,7 +136,7 @@ msgstr "代替として設定"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Stream Title"
-msgstr "ストリームの題"
+msgstr "ストリームのタイトル"
 
 #: ../src/pavucontrol.glade.h:33
 msgid "_Configuration"
@@ -258,7 +261,7 @@ msgstr "pa_context_set_card_profile_by_index() 失敗"
 
 #: ../src/channelwidget.cc:104
 msgid "<small>Silence</small>"
-msgstr "<small>沈黙</small>"
+msgstr "<small>無音</small>"
 
 #: ../src/channelwidget.cc:104
 msgid "<small>Min</small>"
@@ -274,7 +277,7 @@ msgstr "<small><i>ベース</i></small>"
 
 #: ../src/mainwindow.cc:269
 msgid "Failed to read data from stream"
-msgstr "ストリームからのデータの読込みに失敗"
+msgstr "ストリームからのデータの読み込みに失敗"
 
 #: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
 msgid "Peak detect"
