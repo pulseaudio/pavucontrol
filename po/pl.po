@@ -1,14 +1,14 @@
 # Polish translation for pavucontrol.
-# Copyright © 2008-2016 the pavucontrol authors.
+# Copyright © 2008-2018 the pavucontrol authors.
 # This file is distributed under the same license as the pavucontrol package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2008-2009, 2015-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2008-2009, 2015-2016, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-27 15:59+0100\n"
-"PO-Revision-Date: 2016-11-27 16:00+0100\n"
+"POT-Creation-Date: 2018-04-27 16:37+0200\n"
+"PO-Revision-Date: 2018-04-27 16:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:601
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
 msgstr "Sterowanie głośnością PulseAudio"
 
@@ -219,127 +219,127 @@ msgstr "kierunek"
 msgid "Device"
 msgstr "Urządzenie"
 
-#: ../src/pavucontrol.cc:80
+#: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Oddzwonienie karty się nie powiodło"
 
-#: ../src/pavucontrol.cc:103
+#: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
 msgstr "Oddzwonienie odpływu się nie powiodło"
 
-#: ../src/pavucontrol.cc:127
+#: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
 msgstr "Oddzwonienie źródła się nie powiodło"
 
-#: ../src/pavucontrol.cc:146
+#: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
 msgstr "Oddzwonienie odpływu wejścia się nie powiodło"
 
-#: ../src/pavucontrol.cc:165
+#: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
 msgstr "Oddzwonienie odpływu wyjścia się nie powiodło"
 
-#: ../src/pavucontrol.cc:205
+#: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
 msgstr "Oddzwonienie klienta się nie powiodło"
 
-#: ../src/pavucontrol.cc:221
+#: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
 msgstr "Oddzwonienie informacji serwera się nie powiodło"
 
-#: ../src/pavucontrol.cc:239 ../src/pavucontrol.cc:536
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Zainicjowanie rozszerzenia „stream_restore” się nie powiodło: %s"
 
-#: ../src/pavucontrol.cc:257
+#: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() się nie powiodło"
 
-#: ../src/pavucontrol.cc:275 ../src/pavucontrol.cc:550
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr ""
 "Zainicjowanie rozszerzenia przywracania urządzenia się nie powiodło: %s"
 
-#: ../src/pavucontrol.cc:296
+#: ../src/pavucontrol.cc:285
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() się nie powiodło"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:563
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Zainicjowanie rozszerzenia menedżera urządzeń się nie powiodło: %s"
 
-#: ../src/pavucontrol.cc:333
+#: ../src/pavucontrol.cc:322
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() się nie powiodło"
 
-#: ../src/pavucontrol.cc:350
+#: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() się nie powiodło"
 
-#: ../src/pavucontrol.cc:363
+#: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() się nie powiodło"
 
-#: ../src/pavucontrol.cc:376 ../src/pavucontrol.cc:389
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() się nie powiodło"
 
-#: ../src/pavucontrol.cc:402
+#: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() się nie powiodło"
 
-#: ../src/pavucontrol.cc:412 ../src/pavucontrol.cc:477
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() się nie powiodło"
 
-#: ../src/pavucontrol.cc:425
+#: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() się nie powiodło"
 
-#: ../src/pavucontrol.cc:468
+#: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() się nie powiodło"
 
-#: ../src/pavucontrol.cc:484
+#: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:491
+#: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:498
+#: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:505
+#: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:512
+#: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:519
+#: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() się nie powiodło"
 
-#: ../src/pavucontrol.cc:578 ../src/pavucontrol.cc:629
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
 msgid "Connection failed, attempting reconnect"
 msgstr "Połączenie się nie powiodło, próba ponownego połączenia"
 
-#: ../src/pavucontrol.cc:616
+#: ../src/pavucontrol.cc:605
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
 "In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
 "Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arrise when PulseAudio crashed and left stale "
-"details in the X11 Root Window.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
 "If this is the case, then PulseAudio should autospawn again, or if this is "
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
@@ -356,27 +356,6 @@ msgstr ""
 "Jeśli automatyczne uruchamianie nie jest skonfigurowane, to należy ręcznie\n"
 "wykonać polecenie start-pulseaudio-x11."
 
-#: ../src/pavucontrol.cc:658
-msgid "Select a specific tab on load."
-msgstr "Wczytuje podaną kartę."
-
-#: ../src/pavucontrol.cc:664
-msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
-"Ponawia w nieskończoność, jeśli PulseAudio zakończy działanie (co 5 sekund)."
-
-#: ../src/pavucontrol.cc:671
-msgid "Maximize the window."
-msgstr "Maksymalizuje okno."
-
-#: ../src/pavucontrol.cc:677
-msgid "Show version"
-msgstr "Wyświetla wersję."
-
-#: ../src/pavucontrol.cc:704
-msgid "Fatal Error: Unable to connect to PulseAudio"
-msgstr "Błąd krytyczny: nie można połączyć z usługą PulseAudio"
-
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() się nie powiodło"
@@ -391,7 +370,7 @@ msgstr "<small>Minimum</small>"
 
 #: ../src/channelwidget.cc:108
 msgid "<small>100% (0dB)</small>"
-msgstr "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:112
 msgid "<small><i>Base</i></small>"
@@ -439,31 +418,31 @@ msgstr "Błąd podczas zapisywania pliku konfiguracji %s"
 msgid " (plugged in)"
 msgstr " (podłączone)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:415
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (niedostępne)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:412
+#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (odłączone)"
 
-#: ../src/mainwindow.cc:547
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "Odczytanie danych ze strumienia się nie powiodło"
 
-#: ../src/mainwindow.cc:591
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "Wykrywanie szczytów"
 
-#: ../src/mainwindow.cc:592
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "Utworzenie strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "Połączenie ze strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:743
+#: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -471,11 +450,11 @@ msgstr ""
 "Ignorowanie sink-input, ponieważ jest ono oznaczone jako zdarzenie, więc "
 "jest obsługiwane przez widżet „Zdarzenia”"
 
-#: ../src/mainwindow.cc:918
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/mainwindow.cc:1254
+#: ../src/mainwindow.cc:1270
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Nawiązywanie połączenia z usługą PulseAudio. Proszę czekać…"
 
@@ -582,3 +561,24 @@ msgstr "pa_context_set_source_port_by_index() się nie powiodło"
 #: ../src/streamwidget.cc:46
 msgid "Terminate"
 msgstr "Zakończ"
+
+#: ../src/pavuapplication.cc:145
+msgid "Select a specific tab on load."
+msgstr "Wczytuje podaną kartę."
+
+#: ../src/pavuapplication.cc:146
+msgid "number"
+msgstr "numer"
+
+#: ../src/pavuapplication.cc:151
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr ""
+"Ponawia w nieskończoność, jeśli PulseAudio zakończy działanie (co 5 sekund)."
+
+#: ../src/pavuapplication.cc:156
+msgid "Maximize the window."
+msgstr "Maksymalizuje okno."
+
+#: ../src/pavuapplication.cc:161
+msgid "Show version."
+msgstr "Wyświetla wersję."
