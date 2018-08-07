@@ -154,9 +154,9 @@ compilation and <tt>make install</tt> (as root) for installation of
 
 <p>The current release is <a href="@PACKAGE_URL@pavucontrol-@PACKAGE_VERSION@.tar.gz">@PACKAGE_VERSION@</a></p>
 
-<p>Get <tt>pavucontrol</tt>'s development sources from the git <a href="git://anongit.freedesktop.org/pulseaudio/pavucontrol">repository</a> (<a href="http://cgit.freedesktop.org/pulseaudio/pavucontrol">gitweb</a>): </p>
+<p>Get <tt>pavucontrol</tt>'s development sources from the git <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git">repository</a> (<a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>): </p>
 
-<pre>git clone git://anongit.freedesktop.org/pulseaudio/pavucontrol</pre>
+<pre>git clone https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git</pre>
 
 <hr/>
 <address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, October 2009</address>
