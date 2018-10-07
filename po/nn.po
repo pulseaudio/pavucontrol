@@ -1,0 +1,568 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Karl Ove Hufthammer <karl@huftis.org>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-07 14:03+0200\n"
+"PO-Revision-Date: 2018-10-07 14:46+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: NorwegianNynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+msgid "PulseAudio Volume Control"
+msgstr "Lydstyrkekontroll for PulseAudio"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
+msgid "Volume Control"
+msgstr "Lydstyrkekontroll"
+
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Juster lydstyrke"
+
+#: ../src/pavucontrol.glade.h:1
+msgid "<b>left-front</b>"
+msgstr "<b>framme-til-venstre</b>"
+
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50 %</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "Kortnamn"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "Einingstittel"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "Mute audio"
+msgstr "Demp lyd"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Lås kanalane saman"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "Set as fallback"
+msgstr "Bruk som reserve"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Port:</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr "AC3"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr "EAC3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Latentstid-tillegg:</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "Avansert"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "Alle straumar"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "Program"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "Virtuelle straumar"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "Alle uteiningar"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "Maskinvarebaserte uteiningar"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "Virtuelle uteiningar"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "Alle inneiningar"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "Alle utan avlyttingseiningar"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "Maskinvarebaserte inneiningar"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "Virtuelle inneiningar"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "Avlyttingseiningar"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Ingen program spelar av lyd nett no.</i>"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "<b>_Show:</b>"
+msgstr "<b>_Vis:</b>"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "_Playback"
+msgstr "_Avspeling"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Ingen program spelar inn lyd nett no.</i>"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Recording"
+msgstr "_Opptak"
+
+# Punktum for å vera konsistent med andre <i>-formaterte feilmeldingar.
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Ingen uteiningar er tilgjengelege.</i>"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>V_is:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "_Uteiningar"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>Ingen inneiningar er tilgjengelege.</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Vi_s:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "_Inneiningar"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Ingen kort er tilgjengelege for oppsett.</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Vis lydstyrke-målarar"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Oppsett"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Endra namn på eining til:</b>"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Straumtittel"
+
+#: ../src/pavucontrol.glade.h:48
+msgid "direction"
+msgstr "retning"
+
+#: ../src/pavucontrol.glade.h:49
+msgid "Device"
+msgstr "Eining"
+
+#: ../src/pavucontrol.cc:79
+msgid "Card callback failure"
+msgstr "Feil ved tilbakekall til kort"
+
+#: ../src/pavucontrol.cc:102
+msgid "Sink callback failure"
+msgstr "Feil ved tilbakekall til sluk"
+
+#: ../src/pavucontrol.cc:126
+msgid "Source callback failure"
+msgstr "Feil ved tilbakekall til kjelde"
+
+#: ../src/pavucontrol.cc:145
+msgid "Sink input callback failure"
+msgstr "Feil ved inneining-tilbakekall til sluk"
+
+#: ../src/pavucontrol.cc:164
+msgid "Source output callback failure"
+msgstr "Feil ved uteining-tilbakekall til kjelde"
+
+#: ../src/pavucontrol.cc:194
+msgid "Client callback failure"
+msgstr "Feil ved tilbakekall til klient"
+
+#: ../src/pavucontrol.cc:210
+msgid "Server info callback failure"
+msgstr "Feil ved tilbakekall til tenar"
+
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "Klarte ikkje starta utvidinga «stream_restore»: %s"
+
+#: ../src/pavucontrol.cc:246
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "Feil ved pa_ext_stream_restore_read()-kall"
+
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "Klarte ikkje starta utviding for einingsgjenoppretting: %s"
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "Feil ved pa_ext_device_restore_read_sink_formats()-kall"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Klarte ikkje starta utviding for einingshandsaming: %s"
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "Feil ved pa_ext_device_manager_read()-kall"
+
+#: ../src/pavucontrol.cc:339
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "Feil ved pa_context_get_sink_info_by_index()-kall"
+
+#: ../src/pavucontrol.cc:352
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "Feil ved pa_context_get_source_info_by_index()-kall"
+
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "Feil ved pa_context_get_sink_input_info()-kall"
+
+#: ../src/pavucontrol.cc:391
+msgid "pa_context_get_client_info() failed"
+msgstr "Feil ved pa_context_get_client_info()-kall"
+
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+msgid "pa_context_get_server_info() failed"
+msgstr "Feil ved pa_context_get_server_info()-kall"
+
+#: ../src/pavucontrol.cc:414
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "Feil ved pa_context_get_card_info_by_index()-kall"
+
+#: ../src/pavucontrol.cc:457
+msgid "pa_context_subscribe() failed"
+msgstr "Feil ved pa_context_subscribe()-kall"
+
+#: ../src/pavucontrol.cc:473
+msgid "pa_context_client_info_list() failed"
+msgstr "Feil ved pa_context_client_info_list()-kall"
+
+#: ../src/pavucontrol.cc:480
+msgid "pa_context_get_card_info_list() failed"
+msgstr "Feil ved pa_context_get_card_info_list()-kall"
+
+#: ../src/pavucontrol.cc:487
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "Feil ved pa_context_get_sink_info_list()-kall"
+
+#: ../src/pavucontrol.cc:494
+msgid "pa_context_get_source_info_list() failed"
+msgstr "Feil ved pa_context_get_source_info_list()-kall"
+
+#: ../src/pavucontrol.cc:501
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "Feil ved pa_context_get_sink_input_info_list()-kall"
+
+#: ../src/pavucontrol.cc:508
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "Feil ved pa_context_get_source_output_info_list()-kall"
+
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "Feil ved tilkopling – prøver på nytt"
+
+# skip-rule: server
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"Feil ved tilkopling til PulseAudio. Prøver på nytt om 5 sekund.\n"
+"\n"
+"Feilen kjem truleg av at «PULSE_SERVER» i «Environment/X11 Root Window Properties»\n"
+"eller «default-server» i «client.conf» er sett opp feil.\n"
+"Feilen kan òg oppstå dersom PulseAudio krasjar og legg att utdatert informasjon i X11-rotvindauget.\n"
+"I så fall vil PulseAudio starta på nytt automatisk, men viss automatisk gjenstart ikkje er sett opp,\n"
+"må du køyra «start-pulseaudio-x11» manuelt."
+
+#: ../src/cardwidget.cc:88
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "Feil ved pa_context_set_card_profile_by_index()-kall"
+
+#: ../src/channelwidget.cc:106
+msgid "<small>Silence</small>"
+msgstr "<small>Stille</small>"
+
+#: ../src/channelwidget.cc:106
+msgid "<small>Min</small>"
+msgstr "<small>Min</small>"
+
+#: ../src/channelwidget.cc:108
+msgid "<small>100% (0dB)</small>"
+msgstr "<small>100 % (0 dB)</small>"
+
+#: ../src/channelwidget.cc:112
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Grunn</i></small>"
+
+#: ../src/devicewidget.cc:52
+msgid "Rename Device..."
+msgstr "Endra namn på eining …"
+
+#: ../src/devicewidget.cc:165
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "Feil ved pa_context_set_port_latency_offset()-kall"
+
+#: ../src/devicewidget.cc:248
+msgid "Sorry, but device renaming is not supported."
+msgstr "Endring av namn på einingar er dessverre ikkje støtta."
+
+#: ../src/devicewidget.cc:253
+msgid "You need to load module-device-manager in the PulseAudio server in order to rename devices"
+msgstr "Du må lasta modulen «module-device-manager» på PulseAudio-tenaren for å kunna endra namn på einingar"
+
+#: ../src/devicewidget.cc:274
+msgid "pa_ext_device_manager_write() failed"
+msgstr "Feil ved pa_ext_device_manager_write()-kall"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "Feil ved lesing av oppsettfil %s: %s"
+
+#: ../src/mainwindow.cc:257
+msgid "Error saving preferences"
+msgstr "Feil ved lagring av innstillingar"
+
+#: ../src/mainwindow.cc:265
+#, c-format
+msgid "Error writing config file %s"
+msgstr "Feil ved lagring av oppsettfila %s"
+
+#: ../src/mainwindow.cc:323
+msgid " (plugged in)"
+msgstr " (kopla til)"
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+msgid " (unavailable)"
+msgstr " (ikkje tilgjengeleg)"
+
+#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+msgid " (unplugged)"
+msgstr " (kopla frå)"
+
+#: ../src/mainwindow.cc:563
+msgid "Failed to read data from stream"
+msgstr "Klarte ikkje lesa data frå straum"
+
+#: ../src/mainwindow.cc:607
+msgid "Peak detect"
+msgstr "Lydtopp-detektering"
+
+#: ../src/mainwindow.cc:608
+msgid "Failed to create monitoring stream"
+msgstr "Klarte ikkje starta avlyttingsstraum"
+
+#: ../src/mainwindow.cc:623
+msgid "Failed to connect monitoring stream"
+msgstr "Klarte ikkje kopla til avlyttingsstraum"
+
+#: ../src/mainwindow.cc:759
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "Ignorerer sluk-inneining, då ho er merkt som ei hending, og såleis handtert av hendingselementet"
+
+#: ../src/mainwindow.cc:934
+msgid "System Sounds"
+msgstr "Systemlydar"
+
+#: ../src/mainwindow.cc:1270
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "Koplar til PulseAudio. Vent litt …"
+
+#: ../src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "Feil ved pa_ext_stream_restore_write()-kall"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "på"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "Avslutt avspeling"
+
+#: ../src/sinkinputwidget.cc:62
+msgid "Unknown output"
+msgstr "Ukjend uteining"
+
+#: ../src/sinkinputwidget.cc:73
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "Feil ved pa_context_set_sink_input_volume()-kall"
+
+#: ../src/sinkinputwidget.cc:88
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "Feil ved pa_context_set_sink_input_mute()-kall"
+
+#: ../src/sinkinputwidget.cc:98
+msgid "pa_context_kill_sink_input() failed"
+msgstr "Feil ved pa_context_kill_sink_input()-kall"
+
+#: ../src/sinkinputwidget.cc:134
+msgid "pa_context_move_sink_input_by_index() failed"
+msgstr "Feil ved pa_context_move_sink_input_by_index()-kall"
+
+#: ../src/sinkwidget.cc:95
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "Feil ved pa_context_set_sink_volume_by_index()-kall"
+
+#: ../src/sinkwidget.cc:110
+msgid "Volume Control Feedback Sound"
+msgstr "Annonseringslyd for lydstyrkekontroll"
+
+#: ../src/sinkwidget.cc:127
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "Feil ved pa_context_set_sink_mute_by_index()-kall"
+
+#: ../src/sinkwidget.cc:141
+msgid "pa_context_set_default_sink() failed"
+msgstr "Feil ved pa_context_set_default_sink()-kall"
+
+#: ../src/sinkwidget.cc:161
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "Feil ved pa_context_set_sink_port_by_index()-kall"
+
+#: ../src/sinkwidget.cc:202
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "Feil ved pa_ext_device_restore_save_sink_formats()-kall"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "frå"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "Avslutt opptak"
+
+#: ../src/sourceoutputwidget.cc:68
+msgid "Unknown input"
+msgstr "Ukjend inneining"
+
+#: ../src/sourceoutputwidget.cc:80
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "Feil ved pa_context_set_source_output_volume()-kall"
+
+#: ../src/sourceoutputwidget.cc:95
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "Feil ved pa_context_set_source_output_mute()-kall"
+
+#: ../src/sourceoutputwidget.cc:106
+msgid "pa_context_kill_source_output() failed"
+msgstr "Feil ved pa_context_kill_source_output()-kall"
+
+#: ../src/sourceoutputwidget.cc:143
+msgid "pa_context_move_source_output_by_index() failed"
+msgstr "Feil ved pa_context_move_source_output_by_index()-kall"
+
+#: ../src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "Feil ved pa_context_set_source_volume_by_index()-kall"
+
+#: ../src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "Feil ved pa_context_set_source_mute_by_index()-kall"
+
+#: ../src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "Feil ved pa_context_set_default_source()-kall"
+
+#: ../src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "Feil ved pa_context_set_source_port_by_index()-kall"
+
+#: ../src/streamwidget.cc:46
+msgid "Terminate"
+msgstr "Avslutt"
+
+#: ../src/pavuapplication.cc:145
+msgid "Select a specific tab on load."
+msgstr "Vel oppgitt fane ved start."
+
+#: ../src/pavuapplication.cc:146
+msgid "number"
+msgstr "tal"
+
+#: ../src/pavuapplication.cc:151
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Prøv på nytt kvart femte sekund dersom PA vert avslutta."
+
+#: ../src/pavuapplication.cc:156
+msgid "Maximize the window."
+msgstr "Maksimer vindauget."
+
+#: ../src/pavuapplication.cc:161
+msgid "Show version."
+msgstr "Vis versjonsinformasjon."
