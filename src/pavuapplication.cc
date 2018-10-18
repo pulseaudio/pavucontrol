@@ -30,7 +30,14 @@
 #include "pavucontrol.h"
 #include "mainwindow.h"
 
-PavuApplication::PavuApplication() : Gtk::Application("org.pulseaudio.pavucontrol", Gio::ApplicationFlags::APPLICATION_HANDLES_COMMAND_LINE) {
+PavuApplication::PavuApplication() :
+    Gtk::Application("org.pulseaudio.pavucontrol", Gio::ApplicationFlags::APPLICATION_HANDLES_COMMAND_LINE),
+    mainWindow(NULL),
+    retry(false),
+    maximize(false),
+    tab(0),
+    version(false),
+    m(NULL) {
 }
 
 /*

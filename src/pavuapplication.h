@@ -45,7 +45,7 @@ private:
     MainWindow* create_window();
     void on_hide_window(Gtk::Window* window);
 
-    pa_glib_mainloop *m = NULL;
+    pa_glib_mainloop *m;
 };
 
 
