@@ -1,0 +1,578 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pavucontrol\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-02 22:23+0800\n"
+"PO-Revision-Date: 2018-11-02 23:06+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
+
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+msgid "PulseAudio Volume Control"
+msgstr "PulseAudio 音量控制"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
+msgid "Volume Control"
+msgstr "音量控制"
+
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "調整音量等級"
+
+#: ../src/pavucontrol.glade.h:1
+msgid "<b>left-front</b>"
+msgstr "<b>left-front</b>"
+
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "音效卡名稱"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>設定檔：</b>"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "裝置標題"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "Mute audio"
+msgstr "音訊靜音"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "亦鎖定頻道"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "Set as fallback"
+msgstr "設定為預設 (fallback) 裝置"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>埠：</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr "AC3"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr "EAC3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>延遲位移：</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "毫秒"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "進階"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "所有串流"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "應用程式"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "虛擬串流"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "所有輸出裝置"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "硬體輸出裝置"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "虛擬輸出裝置"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "所有輸入裝置"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "除了監視器以外的所有裝置"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "硬體輸入裝置"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "虛擬輸入裝置"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "監視器"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>目前沒有應用程式正在播放音訊。</i>"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "<b>_Show:</b>"
+msgstr "<b>顯示(_S)：</b>"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "_Playback"
+msgstr "回放(_P)"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>目前沒有應用程式正在錄製音訊。</i>"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Recording"
+msgstr "錄製(_R)"
+
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>沒有能使用的輸出裝置</i>"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>顯示(_H)：</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "輸出裝置(_O)"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>沒有能使用的輸入裝置</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>顯示(_W)：</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "輸入裝置(_I)"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>沒有能用來設定的音效卡</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "顯示音量量表"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "設定(_C)"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr "<b>重新命名裝置到：</b>"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "串流標題"
+
+#: ../src/pavucontrol.glade.h:48
+msgid "direction"
+msgstr "方向"
+
+#: ../src/pavucontrol.glade.h:49
+msgid "Device"
+msgstr "裝置"
+
+#: ../src/pavucontrol.cc:79
+msgid "Card callback failure"
+msgstr "音效卡回呼失敗"
+
+#: ../src/pavucontrol.cc:102
+msgid "Sink callback failure"
+msgstr "輸出介面 (sink) 回呼失敗"
+
+#: ../src/pavucontrol.cc:126
+msgid "Source callback failure"
+msgstr "輸入介面 (source) 回呼失敗"
+
+#: ../src/pavucontrol.cc:145
+msgid "Sink input callback failure"
+msgstr "輸出介面輸入 (sink input) 回呼失敗"
+
+#: ../src/pavucontrol.cc:164
+msgid "Source output callback failure"
+msgstr "輸入介面輸出 (source output) 回呼失敗"
+
+#: ../src/pavucontrol.cc:194
+msgid "Client callback failure"
+msgstr "客戶端回呼失敗"
+
+#: ../src/pavucontrol.cc:210
+msgid "Server info callback failure"
+msgstr "伺服器資訊回呼失敗"
+
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "無法初始化 stream_restore 附加元件：%s"
+
+#: ../src/pavucontrol.cc:246
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() 失敗"
+
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "無法初始化裝置還原附加元件：%s"
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() 失敗"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "無法初始化裝置管理員附加元件：%s"
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() 失敗"
+
+#: ../src/pavucontrol.cc:339
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() 失敗"
+
+#: ../src/pavucontrol.cc:352
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() 失敗"
+
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() 失敗"
+
+#: ../src/pavucontrol.cc:391
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() 失敗"
+
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() 失敗"
+
+#: ../src/pavucontrol.cc:414
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() 失敗"
+
+#: ../src/pavucontrol.cc:457
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() 失敗"
+
+#: ../src/pavucontrol.cc:473
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:480
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:487
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:494
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:501
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:508
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() 失敗"
+
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "連線失敗，正在嘗試重新連線"
+
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"連線到 PulseAudio 失敗。將在 5 秒後自動重新嘗試\n"
+"\n"
+"發生這問題的原因或許是因為在環境或 X11 根視窗屬性中的\n"
+"PULSE_SERVER 或 client.conf 中的 default-server 沒有設定。\n"
+"\n"
+"這種情況也可能出現在 PulseAudio 當機並在 X11 根視窗\n"
+"留下了過時詳細資訊。如果是這樣，那 PulseAudio 應該會在\n"
+"自動重新啟動一遍，如果其未自動設定，則請手動執行\n"
+"start-pulseaudio-x11。"
+
+#: ../src/cardwidget.cc:88
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() 失敗"
+
+#: ../src/channelwidget.cc:106
+msgid "<small>Silence</small>"
+msgstr "<small>靜音</small>"
+
+#: ../src/channelwidget.cc:106
+msgid "<small>Min</small>"
+msgstr "<small>最小</small>"
+
+#: ../src/channelwidget.cc:108
+msgid "<small>100% (0dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
+#: ../src/channelwidget.cc:112
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>基礎</i></small>"
+
+#: ../src/devicewidget.cc:52
+msgid "Rename Device..."
+msgstr "重新命名裝置…"
+
+#: ../src/devicewidget.cc:165
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() 失敗"
+
+#: ../src/devicewidget.cc:248
+msgid "Sorry, but device renaming is not supported."
+msgstr "抱歉，但不支援裝置重新命名。"
+
+#: ../src/devicewidget.cc:253
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"您需要在 PulseAudio 伺服器中載入 module-device-manager 才能重新命名裝置"
+
+#: ../src/devicewidget.cc:274
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() 失敗"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "讀取組態檔案 %s 失敗：%s"
+
+#: ../src/mainwindow.cc:257
+msgid "Error saving preferences"
+msgstr "儲存偏好設定失敗"
+
+#: ../src/mainwindow.cc:265
+#, c-format
+msgid "Error writing config file %s"
+msgstr "寫入組態檔案 %s 失敗"
+
+#: ../src/mainwindow.cc:323
+msgid " (plugged in)"
+msgstr " (已插入)"
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+msgid " (unavailable)"
+msgstr " (不能用)"
+
+#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+msgid " (unplugged)"
+msgstr " (未插入)"
+
+#: ../src/mainwindow.cc:563
+msgid "Failed to read data from stream"
+msgstr "無法從串流讀取資料"
+
+#: ../src/mainwindow.cc:607
+msgid "Peak detect"
+msgstr "偵測峰值"
+
+#: ../src/mainwindow.cc:608
+msgid "Failed to create monitoring stream"
+msgstr "無法建立監視串流"
+
+#: ../src/mainwindow.cc:623
+msgid "Failed to connect monitoring stream"
+msgstr "無法連線監視串流"
+
+#: ../src/mainwindow.cc:759
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"將忽略輸出介面的輸入 (sink-input)，因為其被指定為事件，因此其由事件元件來處理"
+
+#: ../src/mainwindow.cc:934
+msgid "System Sounds"
+msgstr "系統音效"
+
+#: ../src/mainwindow.cc:1270
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "正在建立對 PulseAudio 的連線，請等待…"
+
+#: ../src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() 失敗"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "開啟"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "終止回放"
+
+#: ../src/sinkinputwidget.cc:62
+msgid "Unknown output"
+msgstr "未知輸出"
+
+#: ../src/sinkinputwidget.cc:73
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() 失敗"
+
+#: ../src/sinkinputwidget.cc:88
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() 失敗"
+
+#: ../src/sinkinputwidget.cc:98
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() 失敗"
+
+#: ../src/sinkinputwidget.cc:134
+msgid "pa_context_move_sink_input_by_index() failed"
+msgstr "pa_context_move_sink_input_by_index() 失敗"
+
+#: ../src/sinkwidget.cc:95
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() 失敗"
+
+#: ../src/sinkwidget.cc:110
+msgid "Volume Control Feedback Sound"
+msgstr "音量控制回饋音效"
+
+#: ../src/sinkwidget.cc:127
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() 失敗"
+
+#: ../src/sinkwidget.cc:141
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() 失敗"
+
+#: ../src/sinkwidget.cc:161
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() 失敗"
+
+#: ../src/sinkwidget.cc:202
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() 失敗"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "從"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "終止錄製"
+
+#: ../src/sourceoutputwidget.cc:68
+msgid "Unknown input"
+msgstr "未知輸入"
+
+#: ../src/sourceoutputwidget.cc:80
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() 失敗"
+
+#: ../src/sourceoutputwidget.cc:95
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() 失敗"
+
+#: ../src/sourceoutputwidget.cc:106
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() 失敗"
+
+#: ../src/sourceoutputwidget.cc:143
+msgid "pa_context_move_source_output_by_index() failed"
+msgstr "pa_context_move_source_output_by_index() 失敗"
+
+#: ../src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() 失敗"
+
+#: ../src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() 失敗"
+
+#: ../src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() 失敗"
+
+#: ../src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() 失敗"
+
+#: ../src/streamwidget.cc:46
+msgid "Terminate"
+msgstr "終止"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "在載入時選擇一個特定的標籤頁。"
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "編號"
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "若 pa 退出則不斷重試 (每 5 秒)。"
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "最大化視窗。"
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr "顯示版本。"
