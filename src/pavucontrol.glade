@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkAdjustment" id="adjustment1">
     <property name="upper">100</property>
     <property name="value">44.2408370972</property>
@@ -12,6 +11,9 @@
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">window2</property>
     <child>
+      <placeholder/>
+    </child>
+    <child>
       <object class="GtkHBox" id="channelWidget">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -20,11 +22,11 @@
           <object class="GtkLabel" id="channelLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">0</property>
-            <property name="yalign">0</property>
             <property name="label" translatable="yes">&lt;b&gt;left-front&lt;/b&gt;</property>
             <property name="use_markup">True</property>
             <property name="width_chars">15</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -50,13 +52,13 @@
           <object class="GtkLabel" id="volumeLabel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">1</property>
-            <property name="yalign">0</property>
             <property name="xpad">8</property>
             <property name="label" translatable="yes">&lt;small&gt;50%&lt;/small&gt;</property>
             <property name="use_markup">True</property>
             <property name="justify">right</property>
             <property name="width_chars">9</property>
+            <property name="xalign">1</property>
+            <property name="yalign">0</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -71,6 +73,9 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">window1</property>
+    <child>
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkEventBox" id="cardWidgetBox">
         <property name="visible">True</property>
@@ -112,10 +117,10 @@
                           <object class="GtkLabel" id="cardNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
                             <property name="label" translatable="yes">Card Name</property>
                             <property name="use_markup">True</property>
                             <property name="ellipsize">middle</property>
+                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -146,9 +151,9 @@
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Profile:&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -202,6 +207,9 @@
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">window1</property>
     <child>
+      <placeholder/>
+    </child>
+    <child>
       <object class="GtkEventBox" id="deviceWidgetBox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -253,10 +261,10 @@
                           <object class="GtkLabel" id="deviceNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
                             <property name="label" translatable="yes">Device Title</property>
                             <property name="use_markup">True</property>
                             <property name="ellipsize">end</property>
+                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -288,7 +296,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="icon_name">audio-volume-muted</property>
-                                <property name="icon-size">1</property>
+                                <property name="icon_size">1</property>
                               </object>
                             </child>
                           </object>
@@ -311,7 +319,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="icon_name">changes-prevent</property>
-                                <property name="icon-size">1</property>
+                                <property name="icon_size">1</property>
                               </object>
                             </child>
                           </object>
@@ -364,9 +372,9 @@
                       <object class="GtkLabel" id="label2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Port:&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -520,9 +528,9 @@
                               <object class="GtkLabel" id="label3">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="xalign">0</property>
                                 <property name="label" translatable="yes">&lt;b&gt;Latency offset:&lt;/b&gt;</property>
                                 <property name="use_markup">True</property>
+                                <property name="xalign">0</property>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -537,8 +545,6 @@
                                 <property name="invisible_char">•</property>
                                 <property name="primary_icon_activatable">False</property>
                                 <property name="secondary_icon_activatable">False</property>
-                                <property name="primary_icon_sensitive">True</property>
-                                <property name="secondary_icon_sensitive">True</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -686,6 +692,9 @@
     <property name="default_height">400</property>
     <property name="icon_name">multimedia-volume-control</property>
     <child>
+      <placeholder/>
+    </child>
+    <child>
       <object class="GtkVBox" id="vbox20">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
@@ -705,8 +714,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="border_width">0</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <child>
                       <object class="GtkViewport" id="viewport1">
                         <property name="visible">True</property>
@@ -771,10 +778,10 @@
                           <object class="GtkLabel" id="label5">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">True</property>
                             <property name="use_underline">True</property>
+                            <property name="xalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -831,8 +838,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="border_width">0</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <child>
                       <object class="GtkViewport" id="viewport5">
                         <property name="visible">True</property>
@@ -897,10 +902,10 @@
                           <object class="GtkLabel" id="label8">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">True</property>
                             <property name="use_underline">True</property>
+                            <property name="xalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -961,8 +966,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="border_width">0</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <child>
                       <object class="GtkViewport" id="viewport4">
                         <property name="visible">True</property>
@@ -1027,11 +1030,11 @@
                           <object class="GtkLabel" id="label4826">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;b&gt;S_how:&lt;/b&gt;</property>
                             <property name="use_markup">True</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">sinkTypeComboBox</property>
+                            <property name="xalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -1092,8 +1095,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="border_width">0</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <child>
                       <object class="GtkViewport" id="viewport3">
                         <property name="visible">True</property>
@@ -1159,11 +1160,11 @@
                           <object class="GtkLabel" id="label4827">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
                             <property name="label" translatable="yes">&lt;b&gt;Sho_w:&lt;/b&gt;</property>
                             <property name="use_markup">True</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">sourceTypeComboBox</property>
+                            <property name="xalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -1224,8 +1225,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="border_width">0</property>
-                    <property name="hscrollbar_policy">automatic</property>
-                    <property name="vscrollbar_policy">automatic</property>
                     <child>
                       <object class="GtkViewport" id="viewport2">
                         <property name="visible">True</property>
@@ -1353,13 +1352,16 @@
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type_hint">normal</property>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox1">
+      <object class="GtkBox" id="dialog-vbox1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area1">
+          <object class="GtkButtonBox" id="dialog-action_area1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -1381,9 +1383,9 @@
           <object class="GtkLabel" id="label9">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">0</property>
             <property name="label" translatable="yes">&lt;b&gt;Rename device to:&lt;/b&gt;</property>
             <property name="use_markup">True</property>
+            <property name="xalign">0</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -1400,8 +1402,6 @@
             <property name="width_chars">60</property>
             <property name="primary_icon_activatable">False</property>
             <property name="secondary_icon_activatable">False</property>
-            <property name="primary_icon_sensitive">True</property>
-            <property name="secondary_icon_sensitive">True</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -1416,6 +1416,9 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">window1</property>
+    <child>
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkEventBox" id="streamWidgetBox">
         <property name="visible">True</property>
@@ -1469,10 +1472,10 @@
                           <object class="GtkLabel" id="streamNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
                             <property name="label" translatable="yes">Stream Title</property>
                             <property name="use_markup">True</property>
                             <property name="ellipsize">end</property>
+                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1484,10 +1487,10 @@
                           <object class="GtkLabel" id="directionLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
                             <property name="xpad">4</property>
                             <property name="label" translatable="yes">direction</property>
                             <property name="use_markup">True</property>
+                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1535,7 +1538,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="icon_name">audio-volume-muted</property>
-                                <property name="icon-size">1</property>
+                                <property name="icon_size">1</property>
                               </object>
                             </child>
                           </object>
@@ -1558,7 +1561,7 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="icon_name">changes-prevent</property>
-                                <property name="icon-size">1</property>
+                                <property name="icon_size">1</property>
                               </object>
                             </child>
                           </object>
