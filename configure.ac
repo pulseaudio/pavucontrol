@@ -41,26 +41,7 @@ AC_TYPE_SIGNAL
 AC_HEADER_STDC
 AX_CXX_COMPILE_STDCXX_11
 
-AC_ARG_ENABLE(gtk3,
-   [AS_HELP_STRING([--disable-gtk3],
-      [Whether to build or not against gtk3 [default=yes]])],
-   [enable_gtk3=$enableval],
-   [enable_gtk3="yes"])
-
-if test "x$enable_gtk3" = "xyes"; then
-   gtkmm_ver="3.0"
-   gtkmm_min_ver="2.99"
-   canberra_ver="3"
-   AC_DEFINE([HAVE_GTK3], [1], [Define if we are building against gtk3])
-   echo "***"
-   echo "*** Attempting build in GTK3 mode. Use --disable-gtk3 to build for GTK2"
-   echo "***"
-else
-   gtkmm_ver="2.4"
-   gtkmm_min_ver="2.16"
-   canberra_ver=""
-fi
-PKG_CHECK_MODULES(GUILIBS, [ gtkmm-$gtkmm_ver >= $gtkmm_min_ver sigc++-2.0 libcanberra-gtk$canberra_ver >= 0.16 ])
+PKG_CHECK_MODULES(GUILIBS, [ gtkmm-3.0 >= 3.0 sigc++-2.0 libcanberra-gtk3 >= 0.16 ])
 AC_SUBST(GUILIBS_CFLAGS)
 AC_SUBST(GUILIBS_LIBS)
 

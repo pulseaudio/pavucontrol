@@ -196,11 +196,7 @@ MainWindow* MainWindow::create(bool maximize) {
 void MainWindow::on_realize() {
     Gtk::Window::on_realize();
 
-#ifdef HAVE_GTK3
     get_window()->set_cursor(Gdk::Cursor::create(Gdk::WATCH));
-#else
-    get_window()->set_cursor(Gdk::Cursor(Gdk::WATCH));
-#endif /* HAVE_GTK3 */
 }
 
 bool MainWindow::on_key_press_event(GdkEventKey* event) {

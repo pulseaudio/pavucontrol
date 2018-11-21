@@ -70,13 +70,8 @@ DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     for (unsigned i = 0; i < PA_CHANNELS_MAX; i++)
         channelWidgets[i] = NULL;
 
-#ifdef HAVE_GTK3
     offsetAdjustment = Gtk::Adjustment::create(0.0, -2000.0, 5000.0, 10.0, 50.0, 0.0);
     offsetButton->configure(offsetAdjustment, 0, 2);
-#else
-    offsetAdjustment = new Gtk::Adjustment(0.0, -2000.0, 5000.0, 10.0, 50.0, 0.0);
-    offsetButton->configure(*offsetAdjustment, 0.0, 2);
-#endif  /* HAVE_GTK3 */
 }
 
 void DeviceWidget::init(MainWindow* mainWindow, Glib::ustring deviceType) {

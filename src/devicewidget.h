@@ -101,11 +101,7 @@ protected:
     Gtk::HBox *portSelect, *offsetSelect;
     Gtk::ComboBox *portList;
     Glib::RefPtr<Gtk::ListStore> treeModel;
-#ifdef HAVE_GTK3
     Glib::RefPtr<Gtk::Adjustment> offsetAdjustment;
-#else
-    Gtk::Adjustment *offsetAdjustment;
-#endif /* HAVE_GTK3 */
 
 private:
     Glib::ustring mDeviceType;
