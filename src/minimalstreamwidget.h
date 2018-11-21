@@ -25,11 +25,15 @@
 
 class MinimalStreamWidget : public Gtk::VBox {
 public:
-    MinimalStreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
+    MinimalStreamWidget(BaseObjectType* cobject);
 
+    /* Subclass constructors are expected to initialize these variables.
+     * MinimalStreamWidget can't initialize these, because the glade object
+     * id's depend on the subclass type. */
     Gtk::VBox *channelsVBox;
     Gtk::Label *nameLabel, *boldNameLabel;
     Gtk::Image *iconImage;
+
     Gtk::ProgressBar peakProgressBar;
     double lastPeak;
     pa_stream *peak;
@@ -44,6 +48,11 @@ public:
     void enableVolumeMeter();
     void updatePeak(double v);
     void setVolumeMeterVisible(bool v);
+
+protected:
+    /* Subclasses must call this after the constructor to finalize the initial
+     * layout. */
+    virtual void init();
 
 private :
     bool volumeMeterVisible;

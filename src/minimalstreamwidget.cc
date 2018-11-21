@@ -25,23 +25,31 @@
 #include "minimalstreamwidget.h"
 
 /*** MinimalStreamWidget ***/
-MinimalStreamWidget::MinimalStreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
+MinimalStreamWidget::MinimalStreamWidget(BaseObjectType* cobject) :
     Gtk::VBox(cobject),
+    channelsVBox(NULL),
+    nameLabel(NULL),
+    boldNameLabel(NULL),
+    iconImage(NULL),
     peakProgressBar(),
     lastPeak(0),
     peak(NULL),
     updating(false),
     volumeMeterEnabled(false),
     volumeMeterVisible(true) {
+}
 
-    x->get_widget("channelsVBox", channelsVBox);
-    x->get_widget("nameLabel", nameLabel);
-    x->get_widget("boldNameLabel", boldNameLabel);
-    x->get_widget("iconImage", iconImage);
+void MinimalStreamWidget::init() {
+    /* Set up the peak meter. This is not done in the constructor, because
+     * channelsVBox is initialized by the subclasses, so it's not yet available
+     * in the constructor. */
 
     peakProgressBar.set_size_request(-1, 10);
     channelsVBox->pack_end(peakProgressBar, false, false);
 
+    /* XXX: Why is the peak meter hidden by default? Maybe the idea is that if
+     * setting up the monitoring stream fails for whatever reason, then we
+     * shouldn't show the peak meter at all. */
     peakProgressBar.hide();
 }
 

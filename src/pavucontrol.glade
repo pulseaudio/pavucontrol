@@ -222,7 +222,7 @@
                     <property name="can_focus">False</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkImage" id="iconImage">
+                      <object class="GtkImage" id="deviceIconImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="stock">gtk-missing-image</property>
@@ -238,7 +238,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkLabel" id="boldNameLabel">
+                          <object class="GtkLabel" id="deviceBoldNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="use_markup">True</property>
@@ -250,7 +250,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="nameLabel">
+                          <object class="GtkLabel" id="deviceNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">0</property>
@@ -393,7 +393,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkVBox" id="channelsVBox">
+                  <object class="GtkVBox" id="deviceChannelsVBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">6</property>
@@ -1437,7 +1437,7 @@
                     <property name="can_focus">False</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkImage" id="iconImage">
+                      <object class="GtkImage" id="streamIconImage">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="stock">gtk-missing-image</property>
@@ -1454,7 +1454,7 @@
                         <property name="can_focus">False</property>
                         <property name="spacing">2</property>
                         <child>
-                          <object class="GtkLabel" id="boldNameLabel">
+                          <object class="GtkLabel" id="streamBoldNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="use_markup">True</property>
@@ -1466,7 +1466,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="nameLabel">
+                          <object class="GtkLabel" id="streamNameLabel">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">0</property>
@@ -1583,7 +1583,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkVBox" id="channelsVBox">
+                  <object class="GtkVBox" id="streamChannelsVBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">6</property>

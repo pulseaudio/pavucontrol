@@ -32,8 +32,14 @@
 
 /*** DeviceWidget ***/
 DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
-    MinimalStreamWidget(cobject, x),
+    MinimalStreamWidget(cobject),
     offsetButtonEnabled(false) {
+
+    /* MinimalStreamWidget member variables. */
+    x->get_widget("deviceChannelsVBox", channelsVBox);
+    x->get_widget("deviceNameLabel", nameLabel);
+    x->get_widget("deviceBoldNameLabel", boldNameLabel);
+    x->get_widget("deviceIconImage", iconImage);
 
     x->get_widget("lockToggleButton", lockToggleButton);
     x->get_widget("muteToggleButton", muteToggleButton);
@@ -76,6 +82,8 @@ DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
 void DeviceWidget::init(MainWindow* mainWindow, Glib::ustring deviceType) {
     mpMainWindow = mainWindow;
     mDeviceType = deviceType;
+
+    MinimalStreamWidget::init();
 }
 
 void DeviceWidget::setChannelMap(const pa_channel_map &m, bool can_decibel) {

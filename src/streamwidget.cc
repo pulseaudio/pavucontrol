@@ -30,8 +30,14 @@
 
 /*** StreamWidget ***/
 StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
-    MinimalStreamWidget(cobject, x),
+    MinimalStreamWidget(cobject),
     mpMainWindow(NULL) {
+
+    /* MinimalStreamWidget member variables. */
+    x->get_widget("streamChannelsVBox", channelsVBox);
+    x->get_widget("streamNameLabel", nameLabel);
+    x->get_widget("streamBoldNameLabel", boldNameLabel);
+    x->get_widget("streamIconImage", iconImage);
 
     x->get_widget("lockToggleButton", lockToggleButton);
     x->get_widget("muteToggleButton", muteToggleButton);
@@ -55,6 +61,8 @@ StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
 
 void StreamWidget::init(MainWindow* mainWindow) {
     mpMainWindow = mainWindow;
+
+    MinimalStreamWidget::init();
 }
 
 bool StreamWidget::onContextTriggerEvent(GdkEventButton* event) {
