@@ -30,9 +30,9 @@
 CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
     Gtk::VBox(cobject) {
 
-    x->get_widget("nameLabel", nameLabel);
+    x->get_widget("cardNameLabel", nameLabel);
     x->get_widget("profileList", profileList);
-    x->get_widget("iconImage", iconImage);
+    x->get_widget("cardIconImage", iconImage);
 
     treeModel = Gtk::ListStore::create(profileModel);
     profileList->set_model(treeModel);

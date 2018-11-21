@@ -39,8 +39,8 @@ StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     x->get_widget("streamBoldNameLabel", boldNameLabel);
     x->get_widget("streamIconImage", iconImage);
 
-    x->get_widget("lockToggleButton", lockToggleButton);
-    x->get_widget("muteToggleButton", muteToggleButton);
+    x->get_widget("streamLockToggleButton", lockToggleButton);
+    x->get_widget("streamMuteToggleButton", muteToggleButton);
     x->get_widget("directionLabel", directionLabel);
     x->get_widget("deviceButton", deviceButton);
 

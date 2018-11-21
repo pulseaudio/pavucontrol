@@ -41,8 +41,8 @@ DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     x->get_widget("deviceBoldNameLabel", boldNameLabel);
     x->get_widget("deviceIconImage", iconImage);
 
-    x->get_widget("lockToggleButton", lockToggleButton);
-    x->get_widget("muteToggleButton", muteToggleButton);
+    x->get_widget("deviceLockToggleButton", lockToggleButton);
+    x->get_widget("deviceMuteToggleButton", muteToggleButton);
     x->get_widget("defaultToggleButton", defaultToggleButton);
     x->get_widget("portSelect", portSelect);
     x->get_widget("portList", portList);
