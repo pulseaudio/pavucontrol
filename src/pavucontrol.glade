@@ -25,7 +25,7 @@
             <property name="label" translatable="yes">&lt;b&gt;left-front&lt;/b&gt;</property>
             <property name="use_markup">True</property>
             <property name="width_chars">15</property>
-            <property name="xalign">0</property>
+            <property name="xalign">1</property>
             <property name="yalign">0</property>
           </object>
           <packing>
