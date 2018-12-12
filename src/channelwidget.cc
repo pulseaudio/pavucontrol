@@ -67,10 +67,27 @@ ChannelWidget* ChannelWidget::createOne(MinimalStreamWidget *owner, int channelI
 }
 
 void ChannelWidget::create(MinimalStreamWidget *owner, const pa_channel_map &m, bool can_decibel, ChannelWidget *widgets[PA_CHANNELS_MAX]) {
-    for (int i = 0; i < m.channels; i++)
+    int maxLabelWidth = 0;
+
+    for (int i = 0; i < m.channels; i++) {
         widgets[i] = ChannelWidget::createOne(owner, i, m.map[i], can_decibel);
 
+        Gtk::Requisition minimumSize;
+        Gtk::Requisition naturalSize;
+        widgets[i]->channelLabel->get_preferred_size(minimumSize, naturalSize);
+        if (naturalSize.width > maxLabelWidth)
+            maxLabelWidth = naturalSize.width;
+    }
+
     widgets[m.channels - 1]->last = true;
+
+    /* The channel labels have different widths by default, which makes the
+     * volume slider widths different too. The volume sliders must have the
+     * same width, otherwise it's very hard to see how the volumes of different
+     * channels relate to each other, so we have to change all channel labels
+     * to have the same width. */
+    for (int i = 0; i < m.channels; i++)
+        widgets[i]->channelLabel->set_size_request(maxLabelWidth, -1);
 }
 
 void ChannelWidget::setVolume(pa_volume_t volume) {
