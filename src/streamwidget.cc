@@ -76,18 +76,14 @@ bool StreamWidget::onContextTriggerEvent(GdkEventButton* event) {
 void StreamWidget::setChannelMap(const pa_channel_map &m, bool can_decibel) {
     channelMap = m;
 
+    ChannelWidget::create(this, m, can_decibel, channelWidgets);
+
     for (int i = 0; i < m.channels; i++) {
-        ChannelWidget *cw = channelWidgets[i] = ChannelWidget::create();
-        cw->channel = i;
-        cw->can_decibel = can_decibel;
-        cw->minimalStreamWidget = this;
-        char text[64];
-        snprintf(text, sizeof(text), "<b>%s</b>", pa_channel_position_to_pretty_string(m.map[i]));
-        cw->channelLabel->set_markup(text);
+        ChannelWidget *cw = channelWidgets[i];
         channelsVBox->pack_start(*cw, false, false, 0);
         cw->unreference();
     }
-    channelWidgets[m.channels-1]->last = true;
+
     channelWidgets[m.channels-1]->setBaseVolume(PA_VOLUME_NORM);
 
     lockToggleButton->set_sensitive(m.channels > 1);

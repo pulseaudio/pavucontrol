@@ -47,14 +47,30 @@ ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Bu
     volumeScale->signal_value_changed().connect(sigc::mem_fun(*this, &ChannelWidget::onVolumeScaleValueChanged));
 }
 
-ChannelWidget* ChannelWidget::create() {
+ChannelWidget* ChannelWidget::createOne(MinimalStreamWidget *owner, int channelIndex, pa_channel_position channelPosition, bool can_decibel) {
     ChannelWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create();
     x->add_from_file(GLADE_FILE, "adjustment1");
     x->add_from_file(GLADE_FILE, "channelWidget");
     x->get_widget_derived("channelWidget", w);
     w->reference();
+
+    w->channel = channelIndex;
+    w->can_decibel = can_decibel;
+    w->minimalStreamWidget = owner;
+
+    char text[64];
+    snprintf(text, sizeof(text), "<b>%s</b>", pa_channel_position_to_pretty_string(channelPosition));
+    w->channelLabel->set_markup(text);
+
     return w;
+}
+
+void ChannelWidget::create(MinimalStreamWidget *owner, const pa_channel_map &m, bool can_decibel, ChannelWidget *widgets[PA_CHANNELS_MAX]) {
+    for (int i = 0; i < m.channels; i++)
+        widgets[i] = ChannelWidget::createOne(owner, i, m.map[i], can_decibel);
+
+    widgets[m.channels - 1]->last = true;
 }
 
 void ChannelWidget::setVolume(pa_volume_t volume) {
