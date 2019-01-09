@@ -201,10 +201,6 @@ void MainWindow::on_realize() {
 
 bool MainWindow::on_key_press_event(GdkEventKey* event) {
 
-    if (GDK_KEY_Escape == event->keyval) {
-        Gtk::Main::quit();
-        return true;
-    }
     if (event->state & GDK_CONTROL_MASK) {
         switch (event->keyval) {
             case GDK_KEY_KP_1:
