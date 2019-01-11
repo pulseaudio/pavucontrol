@@ -37,6 +37,32 @@ General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
+<div class="news-date">Soon: </div>
+<p class="news-text">
+<a href="@PACKAGE_URL@pavucontrol-4.0.tar.xz">Version 4.0</a> released.
+Changes:</p>
+<ul>
+<li>There can now be only one pavucontrol window open at a time. Trying to
+start pavucontrol for a second time brings the first window to foreground.</li>
+<li>Added a "Show volume meters" checkbox to the Configuration tab. Disabling
+the volume meters reduces CPU use.</li>
+<li>Improve the use of space (remove useless margins and paddings).</li>
+<li>Use a more appropriate icon for the channel lock button.</li>
+<li>Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay
+devices that often have higher latency than 2 seconds (this is not that useful
+on newer PulseAudio versions, though, because the latency is reported much more
+accurately than before).</li>
+<li>New --version command line option.</li>
+<li>New translations: Croatian, Korean, Norwegian Nynorsk, Lithuanian,
+Valencian.</li>
+<li>Updated translations: Chinese (Taiwan), Finnish, French, German, Italian,
+Japanese, Polish, Swedish.
+</li>
+<li>Dropped support for Gtk+ 2.</li>
+<li>Bumped the minimum supported libpulse version to 5.0.</li>
+<li>Improved compatibility with newer Glade versions.</li>
+</ul>
+
 <div class="news-date">Tue Mar 24
 2015: </div> <p class="news-text"><a href="@PACKAGE_URL@pavucontrol-3.0.tar.xz">Version
 3.0</a> released; improved error handling; remember device selection visibility; window sizing improvements.</p>
