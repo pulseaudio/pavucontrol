@@ -10,8 +10,6 @@
 <body>
 <h1><a name="top">PulseAudio Volume Control @PACKAGE_VERSION@</a></h1>
 
-<p><i>Copyright 2006-2009 Lennart Poettering, 2009-2011 Colin Guthrie &lt;@PACKAGE_BUGREPORT@&gt;</i></p>
-
 <ul class="toc">
     <li><a href="#license">License</a></li>
     <li><a href="#news">News</a></li>
