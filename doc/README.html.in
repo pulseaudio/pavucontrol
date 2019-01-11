@@ -20,6 +20,8 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#acks">Acknowledgements</a></li>
     <li><a href="#download">Download</a></li>
+    <li><a href="#bugs">Bug Reports</a></li>
+    <li><a href="#patches">Contributing Code</a></li>
 </ul>
 
 <h2><a name="license">License</a></h2>
@@ -155,6 +157,16 @@ compilation and <tt>make install</tt> (as root) for installation of
 <p>Get <tt>pavucontrol</tt>'s development sources from the git <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git">repository</a> (<a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>): </p>
 
 <pre>git clone https://gitlab.freedesktop.org/pulseaudio/pavucontrol.git</pre>
+
+<h2><a name="bugs">Bug Reports</a></h2>
+
+<p>Here's the list of open bug reports: <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues">https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues</a></p>
+
+<p>And here you can create a new bug report: <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues/new">https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues/new</a></p>
+
+<h2><a name="patches">Contributing Code</a></h2>
+
+<p>If you have patches for pavucontrol, the primary method for submitting them is by creating a merge request in <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>. Alternatively, you can send patches to the <a href="https://lists.freedesktop.org/mailman/listinfo/pulseaudio-discuss">PulseAudio mailing list</a> (requires subscription).</p>
 
 <hr/>
 <address class="grey">Lennart Poettering &lt;@PACKAGE_BUGREPORT@&gt;, October 2009</address>
