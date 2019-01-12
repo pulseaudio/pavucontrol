@@ -65,12 +65,12 @@ void ChannelWidget::setVolume(pa_volume_t volume) {
     if (can_decibel) {
         double dB = pa_sw_volume_to_dB(volume);
         if (dB > PA_DECIBEL_MININFTY)
-            snprintf(txt, sizeof(txt), "<small>%0.0f%% (%0.2fdB)</small>", v, dB);
+            snprintf(txt, sizeof(txt), _("<small>%0.0f%% (%0.2f dB)</small>"), v, dB);
         else
-            snprintf(txt, sizeof(txt), "<small>%0.0f%% (-&#8734;dB)</small>", v);
+            snprintf(txt, sizeof(txt), _("<small>%0.0f%% (-&#8734; dB)</small>"), v);
     }
     else
-        snprintf(txt, sizeof(txt), "%0.0f%%", v);
+        snprintf(txt, sizeof(txt), _("%0.0f%%"), v);
     volumeLabel->set_markup(txt);
 
     volumeScaleEnabled = false;
@@ -105,7 +105,7 @@ void ChannelWidget::setBaseVolume(pa_volume_t v) {
     gtk_scale_add_mark(GTK_SCALE(volumeScale->gobj()), (double)PA_VOLUME_MUTED, (GtkPositionType) GTK_POS_BOTTOM,
                        last ? (can_decibel ? _("<small>Silence</small>") : _("<small>Min</small>")) : NULL);
     gtk_scale_add_mark(GTK_SCALE(volumeScale->gobj()), (double)PA_VOLUME_NORM, (GtkPositionType) GTK_POS_BOTTOM,
-                       last ? _("<small>100% (0dB)</small>") : NULL);
+                       last ? _("<small>100% (0 dB)</small>") : NULL);
 
     if (v > PA_VOLUME_MUTED && v < PA_VOLUME_NORM) {
         gtk_scale_add_mark(GTK_SCALE(volumeScale->gobj()), (double)v, (GtkPositionType) GTK_POS_BOTTOM,
