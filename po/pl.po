@@ -1,14 +1,14 @@
 # Polish translation for pavucontrol.
-# Copyright © 2008-2018 the pavucontrol authors.
+# Copyright © 2008-2019 the pavucontrol authors.
 # This file is distributed under the same license as the pavucontrol package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2008-2009, 2015-2016, 2018.
+# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015, 2016, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-27 16:37+0200\n"
-"PO-Revision-Date: 2018-04-27 16:38+0200\n"
+"POT-Creation-Date: 2019-03-02 10:20+0100\n"
+"PO-Revision-Date: 2019-03-02 10:22+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "Language: pl\n"
@@ -360,35 +360,50 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() się nie powiodło"
 
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
 #: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Cisza</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
-#: ../src/channelwidget.cc:108
-msgid "<small>100% (0dB)</small>"
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100% (0 dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Podstawa</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:58
 msgid "Rename Device..."
 msgstr "Zmień nazwę urządzenia…"
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:162
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() się nie powiodło"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:245
 msgid "Sorry, but device renaming is not supported."
 msgstr "Zmiana nazwy urządzenia nie jest obsługiwana."
 
-#: ../src/devicewidget.cc:253
+#: ../src/devicewidget.cc:250
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -396,7 +411,7 @@ msgstr ""
 "Należy wczytać module-device-manager w serwerze PulseAudio, aby zmienić "
 "nazwę urządzenia"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:271
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() się nie powiodło"
 
@@ -405,44 +420,44 @@ msgstr "pa_ext_device_manager_write() się nie powiodło"
 msgid "Error reading config file %s: %s"
 msgstr "Błąd podczas odczytywania pliku konfiguracji %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Błąd podczas zapisywania preferencji"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Błąd podczas zapisywania pliku konfiguracji %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:315
 msgid " (plugged in)"
 msgstr " (podłączone)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:319 ../src/mainwindow.cc:423
 msgid " (unavailable)"
 msgstr " (niedostępne)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:321 ../src/mainwindow.cc:420
 msgid " (unplugged)"
 msgstr " (odłączone)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:555
 msgid "Failed to read data from stream"
 msgstr "Odczytanie danych ze strumienia się nie powiodło"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:599
 msgid "Peak detect"
 msgstr "Wykrywanie szczytów"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:600
 msgid "Failed to create monitoring stream"
 msgstr "Utworzenie strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:615
 msgid "Failed to connect monitoring stream"
 msgstr "Połączenie ze strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:751
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -450,11 +465,11 @@ msgstr ""
 "Ignorowanie sink-input, ponieważ jest ono oznaczone jako zdarzenie, więc "
 "jest obsługiwane przez widżet „Zdarzenia”"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:926
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/mainwindow.cc:1270
+#: ../src/mainwindow.cc:1262
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Nawiązywanie połączenia z usługą PulseAudio. Proszę czekać…"
 
@@ -558,27 +573,27 @@ msgstr "pa_context_set_default_source() się nie powiodło"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() się nie powiodło"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Zakończ"
 
-#: ../src/pavuapplication.cc:145
+#: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
 msgstr "Wczytuje podaną kartę."
 
-#: ../src/pavuapplication.cc:146
+#: ../src/pavuapplication.cc:153
 msgid "number"
 msgstr "numer"
 
-#: ../src/pavuapplication.cc:151
+#: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr ""
 "Ponawia w nieskończoność, jeśli PulseAudio zakończy działanie (co 5 sekund)."
 
-#: ../src/pavuapplication.cc:156
+#: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
 msgstr "Maksymalizuje okno."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Wyświetla wersję."
