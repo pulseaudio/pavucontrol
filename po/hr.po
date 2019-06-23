@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-24 16:53+0200\n"
-"PO-Revision-Date: 2017-04-24 17:30+0200\n"
+"POT-Creation-Date: 2019-06-23 14:30+0200\n"
+"PO-Revision-Date: 2019-06-23 14:32+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/lennart/pavucontrol/"
 "language/hr/)\n"
@@ -19,9 +19,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:601
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio upravitelj glasnoće zvuka"
 
@@ -222,126 +222,126 @@ msgstr "usmjerenje"
 msgid "Device"
 msgstr "Uređaj"
 
-#: ../src/pavucontrol.cc:80
+#: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Neuspješno vraćanje kartice"
 
-#: ../src/pavucontrol.cc:103
+#: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
 msgstr "Neuspješno vraćanje slivnika"
 
-#: ../src/pavucontrol.cc:127
+#: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
 msgstr "Neuspješno vraćanje izvora"
 
-#: ../src/pavucontrol.cc:146
+#: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
 msgstr "Neuspješno vraćanje ulaza"
 
-#: ../src/pavucontrol.cc:165
+#: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
 msgstr "Neuspješno vraćanje izlaza izvora"
 
-#: ../src/pavucontrol.cc:205
+#: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
 msgstr "Neuspješno vraćanje klijenta"
 
-#: ../src/pavucontrol.cc:221
+#: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
 msgstr "Neuspješno vraćanje informacija poslužitelja"
 
-#: ../src/pavucontrol.cc:239 ../src/pavucontrol.cc:536
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Neuspješno pokretanje proširenja _vraćanja strujanja: %s"
 
-#: ../src/pavucontrol.cc:257
+#: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() neuspješno"
 
-#: ../src/pavucontrol.cc:275 ../src/pavucontrol.cc:550
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Neuspješno pokretanje proširenja vraćanja uređaja: %s"
 
-#: ../src/pavucontrol.cc:296
+#: ../src/pavucontrol.cc:285
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() neuspješno"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:563
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Neuspješno pokretanje proširenja upravitelja uređaja: %s"
 
-#: ../src/pavucontrol.cc:333
+#: ../src/pavucontrol.cc:322
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() neuspješno"
 
-#: ../src/pavucontrol.cc:350
+#: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() neuspješno"
 
-#: ../src/pavucontrol.cc:363
+#: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() neuspješno"
 
-#: ../src/pavucontrol.cc:376 ../src/pavucontrol.cc:389
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() neuspješno"
 
-#: ../src/pavucontrol.cc:402
+#: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() neuspješno"
 
-#: ../src/pavucontrol.cc:412 ../src/pavucontrol.cc:477
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() neuspješno"
 
-#: ../src/pavucontrol.cc:425
+#: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() neuspješno"
 
-#: ../src/pavucontrol.cc:468
+#: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() neuspješno"
 
-#: ../src/pavucontrol.cc:484
+#: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:491
+#: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:498
+#: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:505
+#: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:512
+#: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:519
+#: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() neuspješno"
 
-#: ../src/pavucontrol.cc:578 ../src/pavucontrol.cc:629
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
 msgid "Connection failed, attempting reconnect"
 msgstr "Neuspješno povezivanje, pokušaj ponovnog povezianja"
 
-#: ../src/pavucontrol.cc:616
+#: ../src/pavucontrol.cc:605
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
 "In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
 "Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arrise when PulseAudio crashed and left stale "
-"details in the X11 Root Window.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
 "If this is the case, then PulseAudio should autospawn again, or if this is "
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
@@ -357,59 +357,54 @@ msgstr ""
 "ovo nije podešeno trebali bi\n"
 "pokrenuti start-pulseaudio-x11 ručno."
 
-#: ../src/pavucontrol.cc:658
-msgid "Select a specific tab on load."
-msgstr "Odaberi određenu karticu pri učitavanju."
-
-#: ../src/pavucontrol.cc:664
-msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "Trajno ponovno pokušaj ako pa odustane (svakih 5 sekundi)"
-
-#: ../src/pavucontrol.cc:671
-msgid "Maximize the window."
-msgstr "Uvećaj prozor."
-
-#: ../src/pavucontrol.cc:677
-msgid "Show version"
-msgstr "Prikaži inačicu"
-
-#: ../src/pavucontrol.cc:704
-msgid "Fatal Error: Unable to connect to PulseAudio"
-msgstr "Kobna greška: Nemoguće povezivanje s PulseAudiom"
-
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() neuspješno"
 
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
 #: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Utišano</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Najmanje</small>"
 
-#: ../src/channelwidget.cc:108
-msgid "<small>100% (0dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Osnovno</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:58
 msgid "Rename Device..."
 msgstr "Preimenuj uređaj..."
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:162
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() neuspješno"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:245
 msgid "Sorry, but device renaming is not supported."
 msgstr "Nažalost, preimenovanje uređaja nije podržano."
 
-#: ../src/devicewidget.cc:253
+#: ../src/devicewidget.cc:250
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -417,7 +412,7 @@ msgstr ""
 "Morate učitati modul-upravitelja-uređaja u PulseAudio poslužitelju kako bi "
 "preimenovali uređaje"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:271
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() neuspješno"
 
@@ -426,44 +421,44 @@ msgstr "pa_ext_device_manager_write() neuspješno"
 msgid "Error reading config file %s: %s"
 msgstr "Greška čitanja datoteke podešavanja %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Greška spremanja osobitosti"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Greška zapisivanja datoteke podešavanja %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:315
 msgid " (plugged in)"
 msgstr " (priključeno)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:415
+#: ../src/mainwindow.cc:319 ../src/mainwindow.cc:423
 msgid " (unavailable)"
 msgstr " (nedostupno)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:412
+#: ../src/mainwindow.cc:321 ../src/mainwindow.cc:420
 msgid " (unplugged)"
 msgstr " (isključeno)"
 
-#: ../src/mainwindow.cc:547
+#: ../src/mainwindow.cc:555
 msgid "Failed to read data from stream"
 msgstr "Neuspješno čitanje podataka iz strujanja"
 
-#: ../src/mainwindow.cc:591
+#: ../src/mainwindow.cc:599
 msgid "Peak detect"
 msgstr "Otkrivanje vrhunca"
 
-#: ../src/mainwindow.cc:592
+#: ../src/mainwindow.cc:600
 msgid "Failed to create monitoring stream"
 msgstr "Neuspješno stvaranje nadgledatelja strujanja"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:615
 msgid "Failed to connect monitoring stream"
 msgstr "Neuspješno povezivanje s nadgledateljem strujanja"
 
-#: ../src/mainwindow.cc:743
+#: ../src/mainwindow.cc:751
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -471,11 +466,11 @@ msgstr ""
 "Zanemarivanje slivnika-ulaza zato jer je označen kao događaj i zato je "
 "rukovan od strane widgeta događaja"
 
-#: ../src/mainwindow.cc:918
+#: ../src/mainwindow.cc:926
 msgid "System Sounds"
 msgstr "Zvukovi sustava"
 
-#: ../src/mainwindow.cc:1254
+#: ../src/mainwindow.cc:1262
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Uspostavljanje povezivanja s PulseAudiom. Pričekajte..."
 
@@ -579,9 +574,32 @@ msgstr "pa_context_set_default_source() neuspješno"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() neuspješno"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Zaustavi"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "Odaberi određenu karticu pri učitavanju."
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "broj"
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Trajno ponovno pokušaj ako pa odustane (svakih 5 sekundi)"
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "Uvećaj prozor."
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr "Prikaži inačicu."
+
+#~ msgid "Fatal Error: Unable to connect to PulseAudio"
+#~ msgstr "Kobna greška: Nemoguće povezivanje s PulseAudiom"
 
 #~ msgid "50%"
 #~ msgstr "50%"
