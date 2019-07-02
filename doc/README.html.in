@@ -184,7 +184,7 @@ compilation and <tt>make install</tt> (as root) for installation of
 
 <h2><a name="patches">Contributing Code</a></h2>
 
-<p>If you have patches for pavucontrol, the primary method for submitting them is by creating a merge request in <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>. Alternatively, you can send patches to the <a href="https://lists.freedesktop.org/mailman/listinfo/pulseaudio-discuss">PulseAudio mailing list</a> (requires subscription).</p>
+<p>If you have patches for pavucontrol, the primary method for submitting them is by creating a merge request in <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>.</p>
 
 </body>
 </html>
