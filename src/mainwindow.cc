@@ -283,17 +283,23 @@ static void set_icon_name_fallback(Gtk::Image *i, const char *name, Gtk::IconSiz
 
     try {
         pixbuf = theme->load_icon(name, width, Gtk::ICON_LOOKUP_GENERIC_FALLBACK | Gtk::ICON_LOOKUP_FORCE_SIZE);
+    } catch (Glib::Error &e) {
+        /* Ignore errors. */
+    }
 
-        if (pixbuf)
-            i->set(pixbuf);
-        else
-            i->set(name);
-    } catch (Gtk::IconThemeError &e) {
-        i->set(name);
-    } catch (Gio::Error &e) {
-        i->set(name);
-    } catch (Gdk::PixbufError &e) {
-        i->set(name);
+    if (!pixbuf) {
+        try {
+            pixbuf = Gdk::Pixbuf::create_from_file(name);
+        } catch (Glib::FileError &e) {
+            /* Ignore errors. */
+        } catch (Gdk::PixbufError &e) {
+            /* Ignore errors. */
+        }
+    }
+
+    if (pixbuf) {
+        pixbuf = pixbuf->scale_simple(width, height, Gdk::INTERP_BILINEAR);
+        i->set(pixbuf);
     }
 }
 
