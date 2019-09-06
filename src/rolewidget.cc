@@ -33,7 +33,7 @@ RoleWidget::RoleWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 
     lockToggleButton->hide();
     directionLabel->hide();
-    deviceButton->hide();
+    deviceComboBox->hide();
 }
 
 RoleWidget* RoleWidget::create() {

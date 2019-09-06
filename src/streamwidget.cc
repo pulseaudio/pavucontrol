@@ -42,12 +42,12 @@ StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     x->get_widget("streamLockToggleButton", lockToggleButton);
     x->get_widget("streamMuteToggleButton", muteToggleButton);
     x->get_widget("directionLabel", directionLabel);
-    x->get_widget("deviceButton", deviceButton);
+    x->get_widget("deviceComboBox", deviceComboBox);
 
     this->signal_button_press_event().connect(sigc::mem_fun(*this, &StreamWidget::onContextTriggerEvent));
     muteToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &StreamWidget::onMuteToggleButton));
     lockToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &StreamWidget::onLockToggleButton));
-    deviceButton->signal_clicked().connect(sigc::mem_fun(*this, &StreamWidget::onDeviceChangePopup));
+    deviceComboBox->signal_changed().connect(sigc::mem_fun(*this, &StreamWidget::onDeviceComboBoxChanged));
 
     terminate.set_label(_("Terminate"));
     terminate.signal_activate().connect(sigc::mem_fun(*this, &StreamWidget::onKill));
@@ -57,7 +57,6 @@ StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     for (unsigned i = 0; i < PA_CHANNELS_MAX; i++)
         channelWidgets[i] = NULL;
 }
-
 
 void StreamWidget::init(MainWindow* mainWindow) {
     mpMainWindow = mainWindow;
@@ -145,8 +144,8 @@ bool StreamWidget::timeoutEvent() {
 void StreamWidget::executeVolumeUpdate() {
 }
 
-void StreamWidget::onDeviceChangePopup() {
+void StreamWidget::onKill() {
 }
 
-void StreamWidget::onKill() {
+void StreamWidget::onDeviceComboBoxChanged() {
 }

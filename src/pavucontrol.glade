@@ -1496,13 +1496,9 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkButton" id="deviceButton">
-                            <property name="label" translatable="yes">Device</property>
+                          <object class="GtkComboBoxText" id="deviceComboBox">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="receives_default">True</property>
-                            <property name="relief">half</property>
-                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>

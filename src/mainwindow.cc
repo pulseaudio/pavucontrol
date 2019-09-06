@@ -1084,12 +1084,15 @@ void MainWindow::reallyUpdateDeviceVisibility() {
     for (std::map<uint32_t, SinkInputWidget*>::iterator i = sinkInputWidgets.begin(); i != sinkInputWidgets.end(); ++i) {
         SinkInputWidget* w = i->second;
 
+        w->updating = true;
+        w->updateDeviceComboBox();
+
         if (sinkWidgets.size() > 1) {
             w->directionLabel->show();
-            w->deviceButton->show();
+            w->deviceComboBox->show();
         } else {
             w->directionLabel->hide();
-            w->deviceButton->hide();
+            w->deviceComboBox->hide();
         }
 
         if (showSinkInputType == SINK_INPUT_ALL || w->type == showSinkInputType) {
@@ -1097,6 +1100,8 @@ void MainWindow::reallyUpdateDeviceVisibility() {
             is_empty = false;
         } else
             w->hide();
+
+        w->updating = false;
     }
 
     if (eventRoleWidget)
@@ -1112,12 +1117,15 @@ void MainWindow::reallyUpdateDeviceVisibility() {
     for (std::map<uint32_t, SourceOutputWidget*>::iterator i = sourceOutputWidgets.begin(); i != sourceOutputWidgets.end(); ++i) {
         SourceOutputWidget* w = i->second;
 
+        w->updating = true;
+        w->updateDeviceComboBox();
+
         if (sourceWidgets.size() > 1) {
             w->directionLabel->show();
-            w->deviceButton->show();
+            w->deviceComboBox->show();
         } else {
             w->directionLabel->hide();
-            w->deviceButton->hide();
+            w->deviceComboBox->hide();
         }
 
         if (showSourceOutputType == SOURCE_OUTPUT_ALL || w->type == showSourceOutputType) {
@@ -1125,6 +1133,8 @@ void MainWindow::reallyUpdateDeviceVisibility() {
             is_empty = false;
         } else
             w->hide();
+
+        w->updating = false;
     }
 
     if (is_empty)

@@ -44,26 +44,40 @@ SinkInputWidget* SinkInputWidget::create(MainWindow* mainWindow) {
     x->get_widget_derived("streamWidget", w);
     w->init(mainWindow);
     w->reference();
+
     return w;
 }
 
 SinkInputWidget::~SinkInputWidget(void) {
-    clearMenu();
 }
 
 void SinkInputWidget::setSinkIndex(uint32_t idx) {
     mSinkIndex = idx;
-
-    if (mpMainWindow->sinkWidgets.count(idx)) {
-        SinkWidget *w = mpMainWindow->sinkWidgets[idx];
-        deviceButton->set_label(w->description.c_str());
-    }
-    else
-        deviceButton->set_label(_("Unknown output"));
+    updateDeviceComboBox();
 }
 
 uint32_t SinkInputWidget::sinkIndex() {
     return mSinkIndex;
+}
+
+void SinkInputWidget::updateDeviceComboBox() {
+    Glib::ustring currentSinkName = UNKNOWN_DEVICE_NAME;
+
+    deviceComboBox->remove_all();
+
+    for (auto i = mpMainWindow->sinkWidgets.begin(); i != mpMainWindow->sinkWidgets.end(); i++) {
+        SinkWidget *sink = i->second;
+
+        deviceComboBox->append(sink->name, sink->description);
+
+        if (sink->index == mSinkIndex)
+            currentSinkName = sink->name;
+    }
+
+    if (currentSinkName == UNKNOWN_DEVICE_NAME)
+        deviceComboBox->append(UNKNOWN_DEVICE_NAME, _("Unknown output"));
+
+    deviceComboBox->set_active_id(currentSinkName);
 }
 
 void SinkInputWidget::executeVolumeUpdate() {
@@ -102,44 +116,13 @@ void SinkInputWidget::onKill() {
     pa_operation_unref(o);
 }
 
-void SinkInputWidget::clearMenu() {
-  while (!sinkMenuItems.empty()) {
-    std::map<uint32_t, SinkMenuItem*>::iterator i = sinkMenuItems.begin();
-    delete i->second;
-    sinkMenuItems.erase(i);
-  }
-}
+void SinkInputWidget::onDeviceComboBoxChanged() {
+    if (updating)
+        return;
 
-void SinkInputWidget::buildMenu() {
-  for (std::map<uint32_t, SinkWidget*>::iterator i = mpMainWindow->sinkWidgets.begin(); i != mpMainWindow->sinkWidgets.end(); ++i) {
-    SinkMenuItem *m;
-    sinkMenuItems[i->second->index] = m = new SinkMenuItem(this, i->second->description.c_str(), i->second->index, i->second->index == mSinkIndex);
-    menu.append(m->menuItem);
-  }
-  menu.show_all();
-}
+    Glib::ustring sinkName = deviceComboBox->get_active_id();
 
-void SinkInputWidget::SinkMenuItem::onToggle() {
-  if (widget->updating)
-    return;
-
-  if (!menuItem.get_active())
-    return;
-
-  /*if (!mpMainWindow->sinkWidgets.count(widget->index))
-    return;*/
-
-  pa_operation* o;
-  if (!(o = pa_context_move_sink_input_by_index(get_context(), widget->index, index, NULL, NULL))) {
-    show_error(_("pa_context_move_sink_input_by_index() failed"));
-    return;
-  }
-
-  pa_operation_unref(o);
-}
-
-void SinkInputWidget::onDeviceChangePopup() {
-    clearMenu();
-    buildMenu();
-    menu.popup(1, 0);
+    pa_operation *o = pa_context_move_sink_input_by_name(get_context(), index, sinkName.c_str(), NULL, NULL);
+    if (o)
+        pa_operation_unref(o);
 }

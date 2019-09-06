@@ -54,22 +54,35 @@ SourceOutputWidget* SourceOutputWidget::create(MainWindow* mainWindow) {
 }
 
 SourceOutputWidget::~SourceOutputWidget(void) {
-  clearMenu();
 }
 
 void SourceOutputWidget::setSourceIndex(uint32_t idx) {
     mSourceIndex = idx;
-
-    if (mpMainWindow->sourceWidgets.count(idx)) {
-      SourceWidget *w = mpMainWindow->sourceWidgets[idx];
-      deviceButton->set_label(w->description.c_str());
-    }
-    else
-      deviceButton->set_label(_("Unknown input"));
+    updateDeviceComboBox();
 }
 
 uint32_t SourceOutputWidget::sourceIndex() {
     return mSourceIndex;
+}
+
+void SourceOutputWidget::updateDeviceComboBox() {
+    Glib::ustring currentSourceName = UNKNOWN_DEVICE_NAME;
+
+    deviceComboBox->remove_all();
+
+    for (auto i = mpMainWindow->sourceWidgets.begin(); i != mpMainWindow->sourceWidgets.end(); i++) {
+        SourceWidget *source = i->second;
+
+        deviceComboBox->append(source->name, source->description);
+
+        if (source->index == mSourceIndex)
+            currentSourceName = source->name;
+    }
+
+    if (currentSourceName == UNKNOWN_DEVICE_NAME)
+        deviceComboBox->append(UNKNOWN_DEVICE_NAME, _("Unknown input"));
+
+    deviceComboBox->set_active_id(currentSourceName);
 }
 
 #if HAVE_SOURCE_OUTPUT_VOLUMES
@@ -110,45 +123,13 @@ void SourceOutputWidget::onKill() {
     pa_operation_unref(o);
 }
 
+void SourceOutputWidget::onDeviceComboBoxChanged() {
+    if (updating)
+        return;
 
-void SourceOutputWidget::clearMenu() {
-  while (!sourceMenuItems.empty()) {
-    std::map<uint32_t, SourceMenuItem*>::iterator i = sourceMenuItems.begin();
-    delete i->second;
-    sourceMenuItems.erase(i);
-  }
-}
+    Glib::ustring sourceName = deviceComboBox->get_active_id();
 
-void SourceOutputWidget::buildMenu() {
-  for (std::map<uint32_t, SourceWidget*>::iterator i = mpMainWindow->sourceWidgets.begin(); i != mpMainWindow->sourceWidgets.end(); ++i) {
-    SourceMenuItem *m;
-    sourceMenuItems[i->second->index] = m = new SourceMenuItem(this, i->second->description.c_str(), i->second->index, i->second->index == mSourceIndex);
-    menu.append(m->menuItem);
-  }
-  menu.show_all();
-}
-
-void SourceOutputWidget::SourceMenuItem::onToggle() {
-  if (widget->updating)
-    return;
-
-  if (!menuItem.get_active())
-    return;
-
-  /*if (!mpMainWindow->sourceWidgets.count(widget->index))
-    return;*/
-
-  pa_operation* o;
-  if (!(o = pa_context_move_source_output_by_index(get_context(), widget->index, index, NULL, NULL))) {
-    show_error(_("pa_context_move_source_output_by_index() failed"));
-    return;
-  }
-
-  pa_operation_unref(o);
-}
-
-void SourceOutputWidget::onDeviceChangePopup() {
-    clearMenu();
-    buildMenu();
-    menu.popup(1, 0);
+    pa_operation *o = pa_context_move_source_output_by_name(get_context(), index, sourceName.c_str(), NULL, NULL);
+    if (o)
+        pa_operation_unref(o);
 }

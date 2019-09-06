@@ -38,36 +38,14 @@ public:
     uint32_t index, clientIndex;
     void setSinkIndex(uint32_t idx);
     uint32_t sinkIndex();
+    void updateDeviceComboBox();
     virtual void executeVolumeUpdate();
     virtual void onMuteToggleButton();
-    virtual void onDeviceChangePopup();
     virtual void onKill();
+    virtual void onDeviceComboBoxChanged();
 
 private:
     uint32_t mSinkIndex;
-
-    void clearMenu();
-    void buildMenu();
-
-    Gtk::Menu menu;
-
-    struct SinkMenuItem {
-      SinkMenuItem(SinkInputWidget *w, const char *label, uint32_t i, bool active) :
-      widget(w),
-      menuItem(label),
-      index(i) {
-        menuItem.set_active(active);
-        menuItem.set_draw_as_radio(true);
-        menuItem.signal_toggled().connect(sigc::mem_fun(*this, &SinkMenuItem::onToggle));
-      }
-
-      SinkInputWidget *widget;
-      Gtk::CheckMenuItem menuItem;
-      uint32_t index;
-      void onToggle();
-    };
-
-    std::map<uint32_t, SinkMenuItem*> sinkMenuItems;
 };
 
 #endif

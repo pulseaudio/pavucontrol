@@ -28,6 +28,9 @@
 class MainWindow;
 class ChannelWidget;
 
+/* Used as the ID for the unknown device item in deviceComboBox. */
+#define UNKNOWN_DEVICE_NAME "#unknown#"
+
 class StreamWidget : public MinimalStreamWidget {
 public:
     StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
@@ -41,7 +44,7 @@ public:
 
     Gtk::ToggleButton *lockToggleButton, *muteToggleButton;
     Gtk::Label *directionLabel;
-    Gtk::Button *deviceButton;
+    Gtk::ComboBoxText *deviceComboBox;
 
     pa_channel_map channelMap;
     pa_cvolume volume;
@@ -50,7 +53,6 @@ public:
 
     virtual void onMuteToggleButton();
     virtual void onLockToggleButton();
-    virtual void onDeviceChangePopup();
     virtual bool onContextTriggerEvent(GdkEventButton*);
 
     sigc::connection timeoutConnection;
@@ -59,6 +61,7 @@ public:
 
     virtual void executeVolumeUpdate();
     virtual void onKill();
+    virtual void onDeviceComboBoxChanged();
 
 protected:
     MainWindow* mpMainWindow;
