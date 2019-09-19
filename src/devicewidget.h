@@ -78,6 +78,11 @@ public:
 protected:
     MainWindow *mpMainWindow;
 
+    /* Shows or hides the advanced options expander depending on whether it's
+     * useful or not. This is called always after ports or mDigital have been
+     * updated. */
+    void updateAdvancedOptionsVisibility();
+
     virtual void onPortChange() = 0;
 
     Gtk::Menu contextMenu;
@@ -102,6 +107,10 @@ protected:
     Gtk::ComboBox *portList;
     Glib::RefPtr<Gtk::ListStore> treeModel;
     Glib::RefPtr<Gtk::Adjustment> offsetAdjustment;
+
+    /* Set to true for "digital" sinks (in practice this means those sinks that
+     * support format configuration). */
+    bool mDigital;
 
 private:
     Glib::ustring mDeviceType;

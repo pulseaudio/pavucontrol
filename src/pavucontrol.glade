@@ -419,8 +419,6 @@
                 </child>
                 <child>
                   <object class="GtkExpander" id="advancedOptions">
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
                     <property name="can_focus">True</property>
                     <child>
                       <object class="GtkVBox" id="vbox1">

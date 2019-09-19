@@ -33,7 +33,8 @@
 /*** DeviceWidget ***/
 DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
     MinimalStreamWidget(cobject),
-    offsetButtonEnabled(false) {
+    offsetButtonEnabled(false),
+    mDigital(false) {
 
     /* MinimalStreamWidget member variables. */
     x->get_widget("deviceChannelsVBox", channelsVBox);
@@ -211,19 +212,17 @@ void DeviceWidget::prepareMenu() {
     if (ports.size() > 0) {
         portSelect->show();
 
-        if (pa_context_get_server_protocol_version(get_context()) >= 27) {
+        if (pa_context_get_server_protocol_version(get_context()) >= 27)
             offsetSelect->show();
-            advancedOptions->set_sensitive(true);
-        } else {
-            /* advancedOptions has sensitive=false by default */
+        else
             offsetSelect->hide();
-        }
 
     } else {
         portSelect->hide();
-        advancedOptions->set_sensitive(false);
         offsetSelect->hide();
     }
+
+    updateAdvancedOptionsVisibility();
 }
 
 bool DeviceWidget::onContextTriggerEvent(GdkEventButton* event) {
@@ -275,4 +274,23 @@ void DeviceWidget::renamePopup() {
         g_free(key);
     }
     delete dialog;
+}
+
+void DeviceWidget::updateAdvancedOptionsVisibility() {
+    bool visible = false;
+
+    if (mDigital) {
+        /* We need to show the format configuration options. */
+        visible = true;
+    }
+
+    if (ports.size() > 0) {
+        /* We need to show the latency offset spin button. */
+        visible = true;
+    }
+
+    if (visible)
+        advancedOptions->show();
+    else
+        advancedOptions->hide();
 }
