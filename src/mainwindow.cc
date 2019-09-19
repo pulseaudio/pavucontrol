@@ -535,12 +535,12 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
     w->setDigital(info.flags & PA_SINK_SET_FORMATS);
 #endif
 
-    w->updating = false;
-
     w->prepareMenu();
 
     if (is_new)
         updateDeviceVisibility();
+
+    w->updating = false;
 
     return is_new;
 }
@@ -698,12 +698,12 @@ void MainWindow::updateSource(const pa_source_info &info) {
     if (cw != cardWidgets.end())
         updatePorts(w, cw->second->ports);
 
-    w->updating = false;
-
     w->prepareMenu();
 
     if (is_new)
         updateDeviceVisibility();
+
+    w->updating = false;
 }
 
 void MainWindow::setIconFromProplist(Gtk::Image *icon, pa_proplist *l, const char *def) {
