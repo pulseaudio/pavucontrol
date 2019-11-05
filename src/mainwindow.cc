@@ -374,7 +374,9 @@ void MainWindow::updateCard(const pa_card_info &info) {
 
     description = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_DESCRIPTION);
     w->name = description ? description : info.name;
-    w->nameLabel->set_markup(w->name.c_str());
+    gchar *txt;
+    w->nameLabel->set_markup(txt = g_markup_printf_escaped("%s", w->name.c_str()));
+    g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
     set_icon_name_fallback(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
