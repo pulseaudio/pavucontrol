@@ -8,3 +8,4 @@ Icon=multimedia-volume-control
 StartupNotify=true
 Type=Application
 Categories=AudioVideo;Audio;Mixer;GTK;
+_Keywords=pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;
