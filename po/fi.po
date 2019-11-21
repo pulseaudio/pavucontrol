@@ -4,303 +4,465 @@
 # Timo Jyrinki <timo.jyrinki@iki.fi>
 # Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2009
 # Tuure Savuoja <tuure+oss@tuuresavuoja.net>, 2018
+# Ammuu5 <ammuu5@tutanota.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2018-05-24 01:30+0300\n"
-"Last-Translator: Tuure Savuoja <tuure+oss@tuuresavuoja.net>\n"
+"PO-Revision-Date: 2019-11-21 04:28+0200\n"
+"Last-Translator: Ammuu5\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/pavucontrol.desktop.in.h:1
-msgid "Adjust the volume level"
-msgstr "Säädä äänenvoimakkuutta"
-
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudion äänenvoimakkuuden hallinta"
 
-#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
 msgid "Volume Control"
 msgstr "Äänenvoimakkuus"
 
-#: ../src/pavucontrol.glade.h:2
-#, no-c-format
-msgid "50%"
-msgstr "50%"
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Säädä äänenvoimakkuutta"
 
-#: ../src/pavucontrol.glade.h:3
-msgid "<b>Port:</b>"
-msgstr "<b>Portti:</b>"
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
 
-#: ../src/pavucontrol.glade.h:4
-msgid "<b>Profile:</b>"
-msgstr "<b>Profiili:</b>"
-
-#: ../src/pavucontrol.glade.h:5
-msgid "<b>S_how:</b>"
-msgstr "<b>N_äytä:</b>"
-
-#: ../src/pavucontrol.glade.h:6
-msgid "<b>Sho_w:</b>"
-msgstr "<b>Nä_ytä:</b>"
-
-#: ../src/pavucontrol.glade.h:7
-msgid "<b>_Show:</b>"
-msgstr "<b>_Näytä:</b>"
-
-#: ../src/pavucontrol.glade.h:8
+#: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>vasen-etu</b>"
 
-#: ../src/pavucontrol.glade.h:9
-msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Yksikään sovellus ei tällä hetkellä toista ääntä.</i>"
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
 
-#: ../src/pavucontrol.glade.h:10
-msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Yksikään sovellus ei tällä hetkellä nauhoita ääntä.</i>"
-
-#: ../src/pavucontrol.glade.h:11
-msgid "<i>No cards available for configuration</i>"
-msgstr "<i>Yhtäkään äänikorttia ei ole käytettävissä</i>"
-
-#: ../src/pavucontrol.glade.h:12
-msgid "<i>No input devices available</i>"
-msgstr "<i>Sisääntulolaitteita ei saatavilla</i>"
-
-#: ../src/pavucontrol.glade.h:13
-msgid "<i>No output devices available</i>"
-msgstr "<i>Ulostulolaitteita ei saatavilla</i>"
-
-#: ../src/pavucontrol.glade.h:14
-msgid ""
-"All Input Devices\n"
-"All Except Monitors\n"
-"Hardware Input Devices\n"
-"Virtual Input Devices\n"
-"Monitors"
-msgstr ""
-"Kaikki sisääntulolaitteet\n"
-"Kaikki paitsi tarkkailulaitteet\n"
-"Laitteistosisääntulolaitteet\n"
-"Näennäissisääntulolaitteet\n"
-"Tarkkailulaitteet"
-
-#: ../src/pavucontrol.glade.h:19
-msgid ""
-"All Output Devices\n"
-"Hardware Output Devices\n"
-"Virtual Output Devices"
-msgstr ""
-"Kaikki ulostulolaitteet\n"
-"Laitteistoulostulolaitteet\n"
-"Näennäisulostulolaitteet"
-
-#. Applications All streams
-#: ../src/pavucontrol.glade.h:23
-msgid ""
-"All Streams\n"
-"Applications\n"
-"Virtual Streams"
-msgstr ""
-"Kaikki virrat\n"
-"Sovellukset\n"
-"Näennäisvirrat"
-
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
 msgstr "Kortin nimi"
 
-#: ../src/pavucontrol.glade.h:27
-msgid "Device"
-msgstr "Laite"
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profiili:</b>"
 
-#: ../src/pavucontrol.glade.h:28
-msgid "Lock channels together"
-msgstr "Lukitse kanavat yhteen"
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "Laitteen otsikko"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
 msgstr "Vaimenna äänet"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Lukitse kanavat yhteen"
+
+#: ../src/pavucontrol.glade.h:9
 msgid "Set as fallback"
 msgstr "Aseta oletukseksi"
 
-#: ../src/pavucontrol.glade.h:31
-msgid "Stream Title"
-msgstr "Virran otsikko"
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Portti:</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr "AC3"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr "EAC3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Viiveen poikkeama:</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "Lisäasetukset"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "Kaikki virrat"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "Näennäisvirrat"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "Kaikki ulostulolaitteet"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "Laitteistoulostulolaitteet"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "Näennäisulostulolaitteet"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "Kaikki sisääntulolaitteet"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "Kaikki paitsi tarkkailulaitteet"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "Laitteistosisääntulolaitteet"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "Näennäissisääntulolaitteet"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "Tarkkailulaitteet"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Yksikään sovellus ei tällä hetkellä toista ääntä.</i>"
 
 #: ../src/pavucontrol.glade.h:33
-msgid "_Configuration"
-msgstr "_Asetukset"
+msgid "<b>_Show:</b>"
+msgstr "<b>_Näytä:</b>"
 
 #: ../src/pavucontrol.glade.h:34
-msgid "_Input Devices"
-msgstr "S_isääntulolaitteet"
-
-#: ../src/pavucontrol.glade.h:35
-msgid "_Output Devices"
-msgstr "Ul_ostulolaitteet"
-
-#: ../src/pavucontrol.glade.h:36
 msgid "_Playback"
 msgstr "_Toisto"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Yksikään sovellus ei tällä hetkellä nauhoita ääntä.</i>"
+
+#: ../src/pavucontrol.glade.h:36
 msgid "_Recording"
 msgstr "_Nauhoitus"
 
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Sisääntulolaitteita ei saatavilla</i>"
+
 #: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>N_äytä:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "Ul_ostulolaitteet"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Nä_ytä:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "S_isääntulolaitteet"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Yhtäkään äänikorttia ei ole käytettävissä</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Näytä äänenvoimakkuusmittarit"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Asetukset"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Virran otsikko"
+
+#: ../src/pavucontrol.glade.h:48
 msgid "direction"
 msgstr "suunta"
 
-#: ../src/pavucontrol.cc:73
+#: ../src/pavucontrol.glade.h:49
+msgid "Device"
+msgstr "Laite"
+
+#: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Kortin takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:92
+#: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
 msgstr "Nielun takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:111
+#: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
 msgstr "Lähteen takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:130
+#: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
 msgstr "Nielun sisääntulon takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:149
+#: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
 msgstr "Lähteen ulostulon takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:183
+#: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
 msgstr "Asiakkaan takaisinkutsu"
 
-#: ../src/pavucontrol.cc:199
+#: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
 msgstr "Palvelintietojen takaisinkutsu epäonnistui"
 
-#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "stream_restore-laajennoksen alustus epäonnistui: %s"
 
-#: ../src/pavucontrol.cc:235
+#: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() epäonnistui"
 
-#: ../src/pavucontrol.cc:252
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr ""
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() epäonnistui"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr ""
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() epäonnistui"
+
+#: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() epäonnistui"
 
-#: ../src/pavucontrol.cc:265
+#: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() epäonnistui"
 
-#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() epäonnistui"
 
-#: ../src/pavucontrol.cc:304
+#: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() epäonnistui"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() epäonnistui"
 
-#: ../src/pavucontrol.cc:327
+#: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() epäonnistui"
 
-#: ../src/pavucontrol.cc:362
+#: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() epäonnistui"
 
-#: ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:385
+#: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:392
+#: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:399
+#: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:406
+#: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:413
+#: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() epäonnistui"
 
-#: ../src/pavucontrol.cc:437
-msgid "Connection failed"
-msgstr "Yhteys epäonnistui"
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "Yhdistäminen epäonnistui, yritetään muodostaa yhteys uudelleen"
 
-#: ../src/cardwidget.cc:87
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+
+#: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() epäonnistui"
 
-#: ../src/channelwidget.cc:104
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Hiljaisuus</small>"
 
-#: ../src/channelwidget.cc:104
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Minimi</small>"
 
-#: ../src/channelwidget.cc:105
-msgid "<small>Max</small>"
-msgstr "<small>Maksimi</small>"
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
 
-#: ../src/channelwidget.cc:109
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Perus</i></small>"
 
-#: ../src/mainwindow.cc:269
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "Nimeä laite uudelleen..."
+
+#: ../src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() epäonnistui"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "Anteeksi, mutta laitteen uudelleennimeämistä ei tueta."
+
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+
+#: ../src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() epäonnistui"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr ""
+
+#: ../src/mainwindow.cc:249
+msgid "Error saving preferences"
+msgstr ""
+
+#: ../src/mainwindow.cc:257
+#, c-format
+msgid "Error writing config file %s"
+msgstr ""
+
+#: ../src/mainwindow.cc:321
+msgid " (plugged in)"
+msgstr " (liitetty)"
+
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+msgid " (unavailable)"
+msgstr " (ei saatavilla)"
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+msgid " (unplugged)"
+msgstr " (irrotettu)"
+
+#: ../src/mainwindow.cc:561
 msgid "Failed to read data from stream"
 msgstr "Datan lukeminen virrasta epäonnistui"
 
-#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
+#: ../src/mainwindow.cc:605
 msgid "Peak detect"
 msgstr "Huipun tunnistus"
 
-#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
+#: ../src/mainwindow.cc:606
 msgid "Failed to create monitoring stream"
 msgstr "Tarkkailuvirran luonti epäonnistui"
 
-#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
+#: ../src/mainwindow.cc:621
 msgid "Failed to connect monitoring stream"
 msgstr "Tarkkailuvirtaan yhdistäminen epäonnistui"
 
-#: ../src/mainwindow.cc:466
+#: ../src/mainwindow.cc:757
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:618
+#: ../src/mainwindow.cc:932
 msgid "System Sounds"
 msgstr "Järjestelmän äänet"
 
-#: ../src/rolewidget.cc:71
+#: ../src/mainwindow.cc:1268
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr ""
+
+#: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() epäonnistui"
 
@@ -312,45 +474,49 @@ msgstr "päällä"
 msgid "Terminate Playback"
 msgstr "Lopeta toisto"
 
-#: ../src/sinkinputwidget.cc:61
+#: ../src/sinkinputwidget.cc:62
 msgid "Unknown output"
 msgstr "Tuntematon ulostulo"
 
-#: ../src/sinkinputwidget.cc:72
+#: ../src/sinkinputwidget.cc:73
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() epäonnistui"
 
-#: ../src/sinkinputwidget.cc:87
+#: ../src/sinkinputwidget.cc:88
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() epäonnistui"
 
-#: ../src/sinkinputwidget.cc:97
+#: ../src/sinkinputwidget.cc:98
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() epäonnistui"
 
-#: ../src/sinkinputwidget.cc:133
+#: ../src/sinkinputwidget.cc:134
 msgid "pa_context_move_sink_input_by_index() failed"
 msgstr "pa_context_move_sink_input_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:48
+#: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:63
+#: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
 msgstr "Äänenvoimakkuuden säädön palauteääni"
 
-#: ../src/sinkwidget.cc:80
+#: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:94
+#: ../src/sinkwidget.cc:141
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() epäonnistui"
 
-#: ../src/sinkwidget.cc:114
+#: ../src/sinkwidget.cc:161
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() epäonnistui"
+
+#: ../src/sinkwidget.cc:203
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() epäonnistui"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -360,38 +526,105 @@ msgstr "lähteestä"
 msgid "Terminate Recording"
 msgstr "Lopeta nauhoitus"
 
-#: ../src/sourceoutputwidget.cc:61
+#: ../src/sourceoutputwidget.cc:68
 msgid "Unknown input"
 msgstr "Tuntematon sisääntulo"
 
-#: ../src/sourceoutputwidget.cc:71
+#: ../src/sourceoutputwidget.cc:80
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() epäonnistui"
+
+#: ../src/sourceoutputwidget.cc:95
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() epäonnistui"
+
+#: ../src/sourceoutputwidget.cc:106
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() epäonnistui"
 
-#: ../src/sourceoutputwidget.cc:108
+#: ../src/sourceoutputwidget.cc:143
 msgid "pa_context_move_source_output_by_index() failed"
 msgstr "pa_context_move_source_output_by_index() epäonnistui"
 
-#: ../src/sourcewidget.cc:44
+#: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
 msgstr "pa_context_set_source_volume_by_index() epäonnistui"
 
-#: ../src/sourcewidget.cc:59
+#: ../src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
 msgstr "pa_context_set_source_mute_by_index() epäonnistui"
 
-#: ../src/sourcewidget.cc:73
+#: ../src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
 msgstr "pa_context_set_default_source() epäonnistui"
 
-#: ../src/sourcewidget.cc:95
+#: ../src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() epäonnistui"
 
-#: ../src/streamwidget.cc:45
-#, fuzzy
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Lopeta toisto"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "Valitse tietty välilehti käynnistyksessä."
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "numero"
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Yritä uudelleen ikuisesti jos pa sulkeutuu (joka 5. sekunti)."
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "Suurenna ikkuna."
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr "Näytä versio."
+
+#~ msgid "50%"
+#~ msgstr "50%"
+
+#~ msgid ""
+#~ "All Input Devices\n"
+#~ "All Except Monitors\n"
+#~ "Hardware Input Devices\n"
+#~ "Virtual Input Devices\n"
+#~ "Monitors"
+#~ msgstr ""
+#~ "Kaikki sisääntulolaitteet\n"
+#~ "Kaikki paitsi tarkkailulaitteet\n"
+#~ "Laitteistosisääntulolaitteet\n"
+#~ "Näennäissisääntulolaitteet\n"
+#~ "Tarkkailulaitteet"
+
+#~ msgid ""
+#~ "All Output Devices\n"
+#~ "Hardware Output Devices\n"
+#~ "Virtual Output Devices"
+#~ msgstr ""
+#~ "Kaikki ulostulolaitteet\n"
+#~ "Laitteistoulostulolaitteet\n"
+#~ "Näennäisulostulolaitteet"
+
+#~ msgid ""
+#~ "All Streams\n"
+#~ "Applications\n"
+#~ "Virtual Streams"
+#~ msgstr ""
+#~ "Kaikki virrat\n"
+#~ "Sovellukset\n"
+#~ "Näennäisvirrat"
+
+#~ msgid "Connection failed"
+#~ msgstr "Yhteys epäonnistui"
+
+#~ msgid "<small>Max</small>"
+#~ msgstr "<small>Maksimi</small>"
 
 #~ msgid "Open menu"
 #~ msgstr "Avaa valikko"
