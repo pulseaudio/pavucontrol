@@ -3,411 +3,583 @@
 # This file is distributed under the same license as the pavucontrol package.
 #
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2008.
+# Gökhan Gökkaya <wirelessanten@gmail.com>, 2019
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pavucontrol trunk\n"
+"Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2008-09-22 01:14+0200\n"
-"Last-Translator: Ozan Çağlayan <ozan@pardus.org.tr>\n"
+"PO-Revision-Date: 2019-11-28 18:12+0300\n"
+"Last-Translator: Gökhan Gökkaya <wirelessanten@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: tr\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../src/pavucontrol.desktop.in.h:1
-msgid "Adjust the volume level"
-msgstr "Ses şiddetini ayarla"
-
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio Ses Denetimi"
 
-#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
 msgid "Volume Control"
 msgstr "Ses Denetimi"
 
-#: ../src/pavucontrol.glade.h:2
-#, no-c-format
-msgid "50%"
-msgstr "50%"
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Ses seviyesini ayarla"
 
-#: ../src/pavucontrol.glade.h:3
-#, fuzzy
-msgid "<b>Port:</b>"
-msgstr "<b>Gö_ster:</b>"
+#: ../src/pavucontrol.desktop.in.h:4
+msgid "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr "pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
 
-#: ../src/pavucontrol.glade.h:4
-#, fuzzy
-msgid "<b>Profile:</b>"
-msgstr "<b>Gö_ster:</b>"
-
-#: ../src/pavucontrol.glade.h:5
-msgid "<b>S_how:</b>"
-msgstr "<b>Gö_ster:</b>"
-
-#: ../src/pavucontrol.glade.h:6
-msgid "<b>Sho_w:</b>"
-msgstr "<b>Gös_ter:</b>"
-
-#: ../src/pavucontrol.glade.h:7
-msgid "<b>_Show:</b>"
-msgstr "<b>_Göster:</b>"
-
-#: ../src/pavucontrol.glade.h:8
+#: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>sol-ön</b>"
 
-#: ../src/pavucontrol.glade.h:9
-msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Şu anda hiçbir uygulama ses çalmıyor.</i>"
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
 
-#: ../src/pavucontrol.glade.h:10
-msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Şu anda hiçbir uygulama ses kaydetmiyor.</i>"
-
-#: ../src/pavucontrol.glade.h:11
-msgid "<i>No cards available for configuration</i>"
-msgstr ""
-
-#: ../src/pavucontrol.glade.h:12
-msgid "<i>No input devices available</i>"
-msgstr "<i>Giriş aygıtı bulunamadı</i>"
-
-#: ../src/pavucontrol.glade.h:13
-msgid "<i>No output devices available</i>"
-msgstr "<i>Çıkış aygıtı bulunamadı</i>"
-
-#: ../src/pavucontrol.glade.h:14
-msgid ""
-"All Input Devices\n"
-"All Except Monitors\n"
-"Hardware Input Devices\n"
-"Virtual Input Devices\n"
-"Monitors"
-msgstr ""
-"Tüm Giriş Aygıtları\n"
-"Monitörler Dışındaki Tüm Aygıtlar\n"
-"Donanımsal Giriş Aygıtları\n"
-"Sanal Giriş Aygıtları\n"
-"Monitörler"
-
-#: ../src/pavucontrol.glade.h:19
-msgid ""
-"All Output Devices\n"
-"Hardware Output Devices\n"
-"Virtual Output Devices"
-msgstr ""
-"Tüm Çıkış Aygıtları\n"
-"Donanımsal Çıkış Aygıtları\n"
-"Sanal Çıkış Aygıtları"
-
-#. Applications All streams
-#: ../src/pavucontrol.glade.h:23
-msgid ""
-"All Streams\n"
-"Applications\n"
-"Virtual Streams"
-msgstr ""
-"Tüm Ses Akışları\n"
-"Uygulamalar\n"
-"Sanal Ses Akışları"
-
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
-msgstr ""
+msgstr "Kart Adı"
 
-#: ../src/pavucontrol.glade.h:27
-#, fuzzy
-msgid "Device"
-msgstr "_Giriş Aygıtları"
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
 
-#: ../src/pavucontrol.glade.h:28
-msgid "Lock channels together"
-msgstr "Kanalları birbirine kilitle"
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "Aygıt Başlığı"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
 msgstr "Sesi kapat"
 
-#: ../src/pavucontrol.glade.h:30
-msgid "Set as fallback"
-msgstr ""
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Kanalları birbirine kilitle"
 
-#: ../src/pavucontrol.glade.h:31
-msgid "Stream Title"
-msgstr "Akış Adı"
+#: ../src/pavucontrol.glade.h:9
+msgid "Set as fallback"
+msgstr "Geri uyumlu olarak ayarla"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Giriş:</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr "AC3"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr "EAC3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Gecikme dengelemesi:</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "Tüm Akışlar"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "Sanal Akışlar"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "Tüm Çıkış Aygıtları"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "Donanımsal Çıkış Aygıtları"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "Sanal Çıkış Aygıtları"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "Tüm Giriş Aygıtları"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "Monitörler Dışındaki Tüm Aygıtlar"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "Donanımsal Giriş Aygıtları"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "Sanal Giriş Aygıtları"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "Monitörler"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Şu anda hiçbir uygulama ses çalmıyor.</i>"
 
 #: ../src/pavucontrol.glade.h:33
-msgid "_Configuration"
-msgstr ""
+msgid "<b>_Show:</b>"
+msgstr "<b>_Göster:</b>"
 
 #: ../src/pavucontrol.glade.h:34
-msgid "_Input Devices"
-msgstr "_Giriş Aygıtları"
-
-#: ../src/pavucontrol.glade.h:35
-msgid "_Output Devices"
-msgstr "Çı_kış Aygıtları"
-
-#: ../src/pavucontrol.glade.h:36
 msgid "_Playback"
 msgstr "Ça_lma"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Şu anda hiçbir uygulama ses kaydetmiyor.</i>"
+
+#: ../src/pavucontrol.glade.h:36
 msgid "_Recording"
 msgstr "_Kayıt"
 
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Çıkış aygıtı bulunamadı</i>"
+
 #: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>Gö_ster:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "Çı_kış Aygıtları"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>Giriş aygıtı bulunamadı</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Gös_ter:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "_Giriş Aygıtları"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Yapılandırma için kart yok</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Ses ölçeri göster"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Yapılandırma"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Aygıtı yeniden adlandır:</b>"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Akış Adı"
+
+#: ../src/pavucontrol.glade.h:48
 msgid "direction"
-msgstr ""
+msgstr "yön"
 
-#: ../src/pavucontrol.cc:73
-#, fuzzy
+#: ../src/pavucontrol.glade.h:49
+msgid "Device"
+msgstr "Aygıt"
+
+#: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
-msgstr "Kaynak geri-çağırma hatası"
+msgstr "Kart geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:92
+#: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
 msgstr "Sink geri-çağırma hatası"
 
-#: ../src/pavucontrol.cc:111
+#: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
-msgstr "Kaynak geri-çağırma hatası"
+msgstr "Kaynak geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:130
+#: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
-msgstr "Sink girdisi geri-çağırma hatası"
+msgstr "Sink girdisi geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:149
+#: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
-msgstr "Kaynak çıkışı geri-çağırma hatası"
+msgstr "Kaynak çıkışı geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:183
+#: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
-msgstr "İstemci geri-çağırma hatası"
+msgstr "İstemci geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:199
+#: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
-msgstr "Sunucu bilgisi geri-çağırma hatası"
+msgstr "Sunucu bilgisi geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
-#, fuzzy, c-format
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "stream_restore eklentisi başlatılamadı: %s"
+msgstr "akış sıfırlama eklentisini başlatma başarısız: %s"
 
-#: ../src/pavucontrol.cc:235
+#: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
-msgstr "pa_ext_stream_restore_read() hatası"
+msgstr "pa_ext_stream_restore_read() başarısız"
 
-#: ../src/pavucontrol.cc:252
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "aygıt sıfırlama eklentisini başlatma başarısız: %s"
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() başarısız"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Aygıt yönetici eklentisini başlatma başarısız: %s"
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() başarısız"
+
+#: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
-msgstr "pa_context_get_sink_info_by_index() hatası"
+msgstr "pa_context_get_sink_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:265
+#: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
-msgstr "pa_context_get_source_info_by_index() hatası"
+msgstr "pa_context_get_source_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
-msgstr "pa_context_get_sink_input_info() hatası"
+msgstr "pa_context_get_sink_input_info() başarısız"
 
-#: ../src/pavucontrol.cc:304
+#: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
-msgstr "pa_context_get_client_info() hatası"
+msgstr "pa_context_get_client_info() başarısız"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
-msgstr "pa_context_get_server_info() hatası"
+msgstr "pa_context_get_server_info() başarısız"
 
-#: ../src/pavucontrol.cc:327
-#, fuzzy
+#: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
-msgstr "pa_context_get_source_info_by_index() hatası"
+msgstr "pa_context_get_card_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:362
+#: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
-msgstr "pa_context_subscribe() hatası"
+msgstr "pa_context_subscribe() başarısız"
 
-#: ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
-msgstr "pa_context_client_info_list() hatası"
+msgstr "pa_context_client_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:385
-#, fuzzy
+#: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
-msgstr "pa_context_get_source_info_list() hatası"
+msgstr "pa_context_get_card_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:392
+#: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
-msgstr "pa_context_get_sink_info_list() hatası"
+msgstr "pa_context_get_sink_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:399
+#: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
-msgstr "pa_context_get_source_info_list() hatası"
+msgstr "pa_context_get_source_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:406
+#: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
-msgstr "pa_context_get_sink_input_info_list() hatası"
+msgstr "pa_context_get_sink_input_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:413
+#: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
-msgstr "pa_context_get_source_output_info_list() hatası"
+msgstr "pa_context_get_source_output_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:437
-msgid "Connection failed"
-msgstr "Bağlantı başarısız"
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "Bağlantı başarısız, yeniden bağlanmaya çalışılıyor"
 
-#: ../src/cardwidget.cc:87
-#, fuzzy
-msgid "pa_context_set_card_profile_by_index() failed"
-msgstr "pa_context_get_source_info_by_index() hatası"
-
-#: ../src/channelwidget.cc:104
-msgid "<small>Silence</small>"
-msgstr ""
-
-#: ../src/channelwidget.cc:104
-msgid "<small>Min</small>"
-msgstr ""
-
-#: ../src/channelwidget.cc:105
-msgid "<small>Max</small>"
-msgstr ""
-
-#: ../src/channelwidget.cc:109
-msgid "<small><i>Base</i></small>"
-msgstr ""
-
-#: ../src/mainwindow.cc:269
-msgid "Failed to read data from stream"
-msgstr "Ses akışından veri okunamıyor"
-
-#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
-msgid "Peak detect"
-msgstr "Tepe noktası tespiti"
-
-#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
-msgid "Failed to create monitoring stream"
-msgstr "Monitör akışı yaratılamadı"
-
-#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
-msgid "Failed to connect monitoring stream"
-msgstr "Monitör akışına bağlanılamadı"
-
-#: ../src/mainwindow.cc:466
+#: ../src/pavucontrol.cc:605
 msgid ""
-"Ignoring sink-input due to it being designated as an event and thus handled "
-"by the Event widget"
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
+"run start-pulseaudio-x11 manually."
 msgstr ""
+"PulseAudio'ya bağlantı başarısız oldu. 5 saniyede otomatik yeniden dene\n"
+"\n"
+"Bu durum, Ortam/X11 Kök Pencere Özellikleri'ndeki PULSE_SERVER veya \n"
+"client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı olabilir."
 
-#: ../src/mainwindow.cc:618
+#: ../src/cardwidget.cc:88
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() başarısız"
+
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Silence</small>"
+msgstr "<small>Sessiz</small>"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Min</small>"
+msgstr "<small>En-az</small>"
+
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
+
+#: ../src/channelwidget.cc:145
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Taban</i></small>"
+
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "Aygıtı Yeniden Adlandır..."
+
+#: ../src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() başarısız"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "Maalesef, cihaz yeniden adlandırılma desteklemiyor."
+
+#: ../src/devicewidget.cc:249
+msgid "You need to load module-device-manager in the PulseAudio server in order to rename devices"
+msgstr "Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-manager yüklemeniz gerekir"
+
+#: ../src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() başarısız"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "Yapılandırma %s dosyası okuma hatası: %s"
+
+#: ../src/mainwindow.cc:249
+msgid "Error saving preferences"
+msgstr "Tercihler kaydedilirken hata oluştu"
+
+#: ../src/mainwindow.cc:257
+#, c-format
+msgid "Error writing config file %s"
+msgstr "Yapılandırma dosyası %s için yazma hatası"
+
+#: ../src/mainwindow.cc:321
+msgid " (plugged in)"
+msgstr " (takılı)"
+
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+msgid " (unavailable)"
+msgstr " (kullanılamaz)"
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+msgid " (unplugged)"
+msgstr " (takılı değil)"
+
+#: ../src/mainwindow.cc:561
+msgid "Failed to read data from stream"
+msgstr "Akıştan veri okuma başarısız oldu"
+
+#: ../src/mainwindow.cc:605
+msgid "Peak detect"
+msgstr "Üst algılama"
+
+#: ../src/mainwindow.cc:606
+msgid "Failed to create monitoring stream"
+msgstr "Akış izleme oluşturulması başarısız"
+
+#: ../src/mainwindow.cc:621
+msgid "Failed to connect monitoring stream"
+msgstr "Akış izleme bağlantısı başarısız"
+
+#: ../src/mainwindow.cc:757
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi nedeniyle sink-girişi yoksayılıyor"
+
+#: ../src/mainwindow.cc:932
 msgid "System Sounds"
 msgstr "Sistem Sesleri"
 
-#: ../src/rolewidget.cc:71
+#: ../src/mainwindow.cc:1268
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "PulseAudio ile bağlantı kuruluyor. Lütfen bekleyin..."
+
+#: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
-msgstr "pa_ext_stream_restore_write() hatası"
+msgstr "pa_ext_stream_restore_write() başarısız"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "üstünde"
 
 #: ../src/sinkinputwidget.cc:38
-#, fuzzy
 msgid "Terminate Playback"
-msgstr "Ses Akışını _Sonlandır..."
+msgstr "Oynatımı Sonlandır"
 
-#: ../src/sinkinputwidget.cc:61
+#: ../src/sinkinputwidget.cc:62
 msgid "Unknown output"
-msgstr ""
+msgstr "Bilinmeyen çıkış"
 
-#: ../src/sinkinputwidget.cc:72
+#: ../src/sinkinputwidget.cc:73
 msgid "pa_context_set_sink_input_volume() failed"
-msgstr "pa_context_set_sink_input_volume() hatası"
+msgstr "pa_context_set_sink_input_volume() başarısız"
 
-#: ../src/sinkinputwidget.cc:87
+#: ../src/sinkinputwidget.cc:88
 msgid "pa_context_set_sink_input_mute() failed"
-msgstr "pa_context_set_sink_input_mute() hatası"
+msgstr "pa_context_set_sink_input_mute() başarısız"
 
-#: ../src/sinkinputwidget.cc:97
+#: ../src/sinkinputwidget.cc:98
 msgid "pa_context_kill_sink_input() failed"
-msgstr "pa_context_kill_sink_input() hatası"
+msgstr "pa_context_kill_sink_input() başarısız"
 
-#: ../src/sinkinputwidget.cc:133
+#: ../src/sinkinputwidget.cc:134
 msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() hatası"
+msgstr "pa_context_move_sink_input_by_index() başarısız"
 
-#: ../src/sinkwidget.cc:48
+#: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
-msgstr "pa_context_set_sink_volume_by_index() hatası"
+msgstr "pa_context_set_sink_volume_by_index() başarısız"
 
-#: ../src/sinkwidget.cc:63
+#: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
 msgstr "Ses Şiddeti Denetimi Geri Besleme Sesi"
 
-#: ../src/sinkwidget.cc:80
+#: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
-msgstr "pa_context_set_sink_mute_by_index() hatası"
+msgstr "pa_context_set_sink_mute_by_index() başarısız"
 
-#: ../src/sinkwidget.cc:94
+#: ../src/sinkwidget.cc:141
 msgid "pa_context_set_default_sink() failed"
-msgstr "pa_context_set_default_sink() hatası"
+msgstr "pa_context_set_default_sink() başarısız"
 
-#: ../src/sinkwidget.cc:114
-#, fuzzy
+#: ../src/sinkwidget.cc:161
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "pa_context_set_sink_mute_by_index() hatası"
+msgstr "pa_context_set_sink_port_by_index() başarısız"
+
+#: ../src/sinkwidget.cc:203
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() başarısız"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "şundan"
 
 #: ../src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "_Kayıt"
+msgstr "Kaydı Sonlandır"
 
-#: ../src/sourceoutputwidget.cc:61
+#: ../src/sourceoutputwidget.cc:68
 msgid "Unknown input"
-msgstr ""
+msgstr "Bilinmeyen giriş"
 
-#: ../src/sourceoutputwidget.cc:71
+#: ../src/sourceoutputwidget.cc:80
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() başarısız"
+
+#: ../src/sourceoutputwidget.cc:95
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() başarısız"
+
+#: ../src/sourceoutputwidget.cc:106
 msgid "pa_context_kill_source_output() failed"
-msgstr "pa_context_kill_source_output() hatası"
+msgstr "pa_context_kill_source_output() başarısız"
 
-#: ../src/sourceoutputwidget.cc:108
+#: ../src/sourceoutputwidget.cc:143
 msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() hatası"
+msgstr "pa_context_move_source_output_by_index() başarısız"
 
-#: ../src/sourcewidget.cc:44
+#: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
-msgstr "pa_context_set_source_volume_by_index() hatası"
+msgstr "pa_context_set_source_volume_by_index() başarısız"
 
-#: ../src/sourcewidget.cc:59
+#: ../src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
-msgstr "pa_context_set_source_mute_by_index() hatası"
+msgstr "pa_context_set_source_mute_by_index() başarısız"
 
-#: ../src/sourcewidget.cc:73
+#: ../src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
-msgstr "pa_context_set_default_source() hatası"
+msgstr "pa_context_set_default_source() başarısız"
 
-#: ../src/sourcewidget.cc:95
-#, fuzzy
+#: ../src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr "pa_context_set_source_mute_by_index() hatası"
+msgstr "pa_context_set_source_port_by_index() başarısız"
 
-#: ../src/streamwidget.cc:45
-#, fuzzy
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
-msgstr "Ses Akışını _Sonlandır..."
+msgstr "Sonlandır"
 
-#~ msgid "Open menu"
-#~ msgstr "Menüyü aç"
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "Özel bir yükleme sekmesi seçin."
 
-#~ msgid "_Move Stream..."
-#~ msgstr "Ses Akışını _Taşı..."
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "sayı"
 
-#~ msgid "_Default"
-#~ msgstr "Ön_tanımlı"
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Eğer pa sonlandırılırsa sürekli yeniden dene (her 5 saniyede bir)."
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "Pencereyi büyüt."
+
+#: ../src/pavuapplication.cc:161
+msgid "Show version."
+msgstr "Sürümü göster."
