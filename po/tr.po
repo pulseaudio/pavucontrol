@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-14 17:10+0200\n"
-"PO-Revision-Date: 2019-11-28 17:45+0300\n"
+"PO-Revision-Date: 2019-11-28 18:12+0300\n"
 "Last-Translator: Gökhan Gökkaya <wirelessanten@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,10 +33,8 @@ msgid "Adjust the volume level"
 msgstr "Ses seviyesini ayarla"
 
 #: ../src/pavucontrol.desktop.in.h:4
-msgid ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
-msgstr ""
-"pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
+msgid "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr "pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -342,20 +340,16 @@ msgstr "Bağlantı başarısız, yeniden bağlanmaya çalışılıyor"
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
-"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
-"Window Properties\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arise when PulseAudio crashed and left stale details "
-"in the X11 Root Window.\n"
-"If this is the case, then PulseAudio should autospawn again, or if this is "
-"not configured you should\n"
+"This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
 "PulseAudio'ya bağlantı başarısız oldu. 5 saniyede otomatik yeniden dene\n"
 "\n"
 "Bu durum, Ortam/X11 Kök Pencere Özellikleri'ndeki PULSE_SERVER veya \n"
-"client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı "
-"olabilir."
+"client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı olabilir."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -405,12 +399,8 @@ msgid "Sorry, but device renaming is not supported."
 msgstr "Maalesef, cihaz yeniden adlandırılma desteklemiyor."
 
 #: ../src/devicewidget.cc:249
-msgid ""
-"You need to load module-device-manager in the PulseAudio server in order to "
-"rename devices"
-msgstr ""
-"Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-"
-"manager yüklemeniz gerekir"
+msgid "You need to load module-device-manager in the PulseAudio server in order to rename devices"
+msgstr "Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-manager yüklemeniz gerekir"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -459,12 +449,8 @@ msgid "Failed to connect monitoring stream"
 msgstr "Akış izleme bağlantısı başarısız"
 
 #: ../src/mainwindow.cc:757
-msgid ""
-"Ignoring sink-input due to it being designated as an event and thus handled "
-"by the Event widget"
-msgstr ""
-"Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi "
-"nedeniyle sink-girişi yoksayılıyor"
+msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
+msgstr "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi nedeniyle sink-girişi yoksayılıyor"
 
 #: ../src/mainwindow.cc:932
 msgid "System Sounds"
@@ -594,54 +580,6 @@ msgstr "Eğer pa sonlandırılırsa sürekli yeniden dene (her 5 saniyede bir)."
 msgid "Maximize the window."
 msgstr "Pencereyi büyüt."
 
-#: ../src/pavuapplication.cc:168
+#: ../src/pavuapplication.cc:161
 msgid "Show version."
 msgstr "Sürümü göster."
-
-#~ msgid "50%"
-#~ msgstr "50%"
-
-#~ msgid ""
-#~ "All Input Devices\n"
-#~ "All Except Monitors\n"
-#~ "Hardware Input Devices\n"
-#~ "Virtual Input Devices\n"
-#~ "Monitors"
-#~ msgstr ""
-#~ "Tüm Giriş Aygıtları\n"
-#~ "Monitörler Haricindekilerin Tümü\n"
-#~ "Donanımsal Giriş Aygıtları\n"
-#~ "Sanal Giriş Aygıtları\n"
-#~ "Monitörler"
-
-#~ msgid ""
-#~ "All Output Devices\n"
-#~ "Hardware Output Devices\n"
-#~ "Virtual Output Devices"
-#~ msgstr ""
-#~ "Tüm Çıkış Aygıtları\n"
-#~ "Donanımsal Çıkış Aygıtları\n"
-#~ "Sanal Çıkış Aygıtları"
-
-#~ msgid ""
-#~ "All Streams\n"
-#~ "Applications\n"
-#~ "Virtual Streams"
-#~ "Tüm Ses Akışları\n"
-#~ "Uygulamalar\n"
-#~ "Sanal Ses Akışları"
-
-#~ msgid "Connection failed"
-#~ msgstr "Bağlantı başarısız"
-
-#~ msgid "<small>Max</small>"
-#~ msgstr "<small>En-çok</small>"
-
-#~ msgid "Open menu"
-#~ msgstr "Menüyü aç"
-
-#~ msgid "_Move Stream..."
-#~ msgstr "Ses Akışını _Taşı..."
-
-#~ msgid "_Default"
-#~ msgstr "Ön_tanımlı"
