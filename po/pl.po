@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 10:20+0100\n"
-"PO-Revision-Date: 2019-03-02 10:22+0100\n"
+"POT-Creation-Date: 2019-12-21 15:35+0100\n"
+"PO-Revision-Date: 2019-12-21 15:58+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "Language: pl\n"
@@ -29,6 +29,14 @@ msgstr "Sterowanie głośnością"
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
 msgstr "Dostosowanie poziomu głośności"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
+"pavucontrol;Mikrofon;Głośność;Oddalenie;Balans;Zestaw słuchawkowy;Headset;"
+"Słuchawki;Głośniki;Dźwięk;Audio;Mikser;Mixer;Wyjście;Wejście;Odtwarzanie;"
+"Nagrywanie;Mono;Stereo;Surround;Dookolny;PCM;S/PDIF;HDMI;DTS;Dolby;Digital;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -215,10 +223,6 @@ msgstr "Nazwa strumienia"
 msgid "direction"
 msgstr "kierunek"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Urządzenie"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Oddzwonienie karty się nie powiodło"
@@ -391,19 +395,19 @@ msgstr "<small>100% (0 dB)</small>"
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Podstawa</i></small>"
 
-#: ../src/devicewidget.cc:58
+#: ../src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Zmień nazwę urządzenia…"
 
-#: ../src/devicewidget.cc:162
+#: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() się nie powiodło"
 
-#: ../src/devicewidget.cc:245
+#: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
 msgstr "Zmiana nazwy urządzenia nie jest obsługiwana."
 
-#: ../src/devicewidget.cc:250
+#: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -411,7 +415,7 @@ msgstr ""
 "Należy wczytać module-device-manager w serwerze PulseAudio, aby zmienić "
 "nazwę urządzenia"
 
-#: ../src/devicewidget.cc:271
+#: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() się nie powiodło"
 
@@ -429,35 +433,35 @@ msgstr "Błąd podczas zapisywania preferencji"
 msgid "Error writing config file %s"
 msgstr "Błąd podczas zapisywania pliku konfiguracji %s"
 
-#: ../src/mainwindow.cc:315
+#: ../src/mainwindow.cc:321
 msgid " (plugged in)"
 msgstr " (podłączone)"
 
-#: ../src/mainwindow.cc:319 ../src/mainwindow.cc:423
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
 msgid " (unavailable)"
 msgstr " (niedostępne)"
 
-#: ../src/mainwindow.cc:321 ../src/mainwindow.cc:420
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
 msgid " (unplugged)"
 msgstr " (odłączone)"
 
-#: ../src/mainwindow.cc:555
+#: ../src/mainwindow.cc:561
 msgid "Failed to read data from stream"
 msgstr "Odczytanie danych ze strumienia się nie powiodło"
 
-#: ../src/mainwindow.cc:599
+#: ../src/mainwindow.cc:605
 msgid "Peak detect"
 msgstr "Wykrywanie szczytów"
 
-#: ../src/mainwindow.cc:600
+#: ../src/mainwindow.cc:606
 msgid "Failed to create monitoring stream"
 msgstr "Utworzenie strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:615
+#: ../src/mainwindow.cc:621
 msgid "Failed to connect monitoring stream"
 msgstr "Połączenie ze strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:751
+#: ../src/mainwindow.cc:757
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -465,11 +469,11 @@ msgstr ""
 "Ignorowanie sink-input, ponieważ jest ono oznaczone jako zdarzenie, więc "
 "jest obsługiwane przez widżet „Zdarzenia”"
 
-#: ../src/mainwindow.cc:926
+#: ../src/mainwindow.cc:932
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/mainwindow.cc:1262
+#: ../src/mainwindow.cc:1278
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Nawiązywanie połączenia z usługą PulseAudio. Proszę czekać…"
 
@@ -485,25 +489,21 @@ msgstr "na"
 msgid "Terminate Playback"
 msgstr "Zakończ odtwarzanie"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Nieznane wyjście"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() się nie powiodło"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() się nie powiodło"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() się nie powiodło"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() się nie powiodło"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -525,7 +525,7 @@ msgstr "pa_context_set_default_sink() się nie powiodło"
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() się nie powiodło"
 
-#: ../src/sinkwidget.cc:202
+#: ../src/sinkwidget.cc:203
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() się nie powiodło"
 
@@ -537,25 +537,21 @@ msgstr "z"
 msgid "Terminate Recording"
 msgstr "Zakończ nagrywanie"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Nieznane wejście"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() się nie powiodło"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() się nie powiodło"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() się nie powiodło"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() się nie powiodło"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
