@@ -30,6 +30,14 @@
 #include "pavucontrol.h"
 #include "mainwindow.h"
 
+static PavuApplication globalInstance;
+
+PavuApplication&
+PavuApplication::get_instance()
+{
+    return globalInstance;
+}
+
 PavuApplication::PavuApplication() :
     Gtk::Application("org.pulseaudio.pavucontrol", Gio::ApplicationFlags::APPLICATION_HANDLES_COMMAND_LINE),
     mainWindow(NULL),
@@ -143,26 +151,26 @@ int main(int argc, char *argv[]) {
     signal(SIGPIPE, SIG_IGN);
 
     /* Create the application */
-    PavuApplication app;
+    globalInstance = PavuApplication();
 
     /* Add command-line options */
-    app.add_main_option_entry(
+    globalInstance.add_main_option_entry(
         Gio::Application::OptionType::OPTION_TYPE_INT,
         "tab", 't',
         _("Select a specific tab on load."),
         _("number"));
 
-    app.add_main_option_entry(
+    globalInstance.add_main_option_entry(
         Gio::Application::OptionType::OPTION_TYPE_BOOL,
         "retry", 'r',
         _("Retry forever if pa quits (every 5 seconds)."));
 
-    app.add_main_option_entry(
+    globalInstance.add_main_option_entry(
         Gio::Application::OptionType::OPTION_TYPE_BOOL,
         "maximize", 'm',
         _("Maximize the window."));
 
-    app.add_main_option_entry(
+    globalInstance.add_main_option_entry(
         Gio::Application::OptionType::OPTION_TYPE_BOOL,
         "version", 'v',
         _("Show version."));
@@ -170,7 +178,7 @@ int main(int argc, char *argv[]) {
     /* Connect to the "on_command_line" signal which is fired
      * when the application receives command-line arguments
      */
-    app.signal_command_line().connect(sigc::bind(sigc::ptr_fun(&on_command_line), &app), false);
+    globalInstance.signal_command_line().connect(sigc::bind(sigc::ptr_fun(&on_command_line), &globalInstance), false);
 
     /* Run the application.
      * In the first launched instance, this will return when its window is
@@ -179,5 +187,5 @@ int main(int argc, char *argv[]) {
      * Handling a new request consists of presenting the existing window (and
      * optionally, select a tab).
      */
-    return app.run(argc, argv);
+    return globalInstance.run(argc, argv);
 }

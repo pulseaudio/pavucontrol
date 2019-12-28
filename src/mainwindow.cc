@@ -95,11 +95,11 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     x->get_widget("notebook", notebook);
     x->get_widget("showVolumeMetersCheckButton", showVolumeMetersCheckButton);
 
-    cardsVBox->set_reallocate_redraws(true);
-    sourcesVBox->set_reallocate_redraws(true);
-    streamsVBox->set_reallocate_redraws(true);
-    recsVBox->set_reallocate_redraws(true);
-    sinksVBox->set_reallocate_redraws(true);
+    sourcesVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ sourcesVBox->queue_draw(); });
+    cardsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ cardsVBox->queue_draw(); });
+    streamsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ streamsVBox->queue_draw(); });
+    recsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ recsVBox->queue_draw(); });
+    sinksVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ sinksVBox->queue_draw(); });
 
     sinkInputTypeComboBox->set_active((int) showSinkInputType);
     sourceOutputTypeComboBox->set_active((int) showSourceOutputType);
@@ -222,7 +222,7 @@ bool MainWindow::on_key_press_event(GdkEventKey* event) {
             case GDK_KEY_Q:
             case GDK_KEY_w:
             case GDK_KEY_q:
-                Gtk::Main::quit();
+                this->get_application()->quit();
                 return true;
         }
     }

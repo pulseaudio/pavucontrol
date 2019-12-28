@@ -40,6 +40,7 @@
 #include "sourceoutputwidget.h"
 #include "rolewidget.h"
 #include "mainwindow.h"
+#include "pavuapplication.h"
 
 static pa_context* context = NULL;
 static pa_mainloop_api* api = NULL;
@@ -56,7 +57,7 @@ void show_error(const char *txt) {
     Gtk::MessageDialog dialog(buf, false, Gtk::MESSAGE_ERROR, Gtk::BUTTONS_CLOSE, true);
     dialog.run();
 
-    Gtk::Main::quit();
+    PavuApplication::get_instance().quit();
 }
 
 static void dec_outstanding(MainWindow *w) {
@@ -571,7 +572,7 @@ void context_state_callback(pa_context *c, void *userdata) {
 
         case PA_CONTEXT_TERMINATED:
         default:
-            Gtk::Main::quit();
+            w->get_application()->quit();
             return;
     }
 }
@@ -613,7 +614,7 @@ gboolean connect_to_pulse(gpointer userdata) {
         else {
             if(!retry) {
                 reconnect_timeout = -1;
-                Gtk::Main::quit();
+                w->get_application()->quit();
             } else {
                 g_debug(_("Connection failed, attempting reconnect"));
                 reconnect_timeout = 5;

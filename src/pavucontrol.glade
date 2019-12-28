@@ -425,10 +425,10 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkTable" id="encodingSelect">
+                          <object class="GtkGrid" id="encodingSelect">
                             <property name="can_focus">False</property>
-                            <property name="n_rows">2</property>
-                            <property name="n_columns">3</property>
+                            <property name="row_homogeneous">True</property>
+                            <property name="column_homogeneous">True</property>
                             <child>
                               <object class="GtkCheckButton" id="encodingFormatPCM">
                                 <property name="label" translatable="yes">PCM</property>
@@ -439,6 +439,10 @@
                                 <property name="active">True</property>
                                 <property name="draw_indicator">True</property>
                               </object>
+                              <packing>
+                                <property name="left_attach">0</property>
+                                <property name="top_attach">0</property>
+                              </packing>
                             </child>
                             <child>
                               <object class="GtkCheckButton" id="encodingFormatAC3">
@@ -450,7 +454,7 @@
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
-                                <property name="right_attach">2</property>
+                                <property name="top_attach">0</property>
                               </packing>
                             </child>
                             <child>
@@ -462,8 +466,8 @@
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
-                                <property name="top_attach">1</property>
-                                <property name="bottom_attach">2</property>
+                                <property name="left_attach">2</property>
+                                <property name="top_attach">0</property>
                               </packing>
                             </child>
                             <child>
@@ -475,8 +479,8 @@
                                 <property name="draw_indicator">True</property>
                               </object>
                               <packing>
-                                <property name="left_attach">2</property>
-                                <property name="right_attach">3</property>
+                                <property name="left_attach">0</property>
+                                <property name="top_attach">1</property>
                               </packing>
                             </child>
                             <child>
@@ -489,9 +493,7 @@
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
-                                <property name="right_attach">2</property>
                                 <property name="top_attach">1</property>
-                                <property name="bottom_attach">2</property>
                               </packing>
                             </child>
                             <child>
@@ -504,9 +506,7 @@
                               </object>
                               <packing>
                                 <property name="left_attach">2</property>
-                                <property name="right_attach">3</property>
                                 <property name="top_attach">1</property>
-                                <property name="bottom_attach">2</property>
                               </packing>
                             </child>
                           </object>

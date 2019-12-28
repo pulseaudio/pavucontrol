@@ -38,7 +38,7 @@ public:
 
     Gtk::Label *channelLabel;
     Gtk::Label *volumeLabel;
-    Gtk::HScale *volumeScale;
+    Gtk::Scale *volumeScale;
 
     int channel;
     MinimalStreamWidget *minimalStreamWidget;

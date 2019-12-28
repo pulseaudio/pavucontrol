@@ -37,6 +37,8 @@ public:
     gint32 tab;
     bool version;
 
+    static PavuApplication& get_instance();
+
 protected:
     // Override default signal handlers:
     void on_activate() override;

@@ -227,7 +227,7 @@ void DeviceWidget::prepareMenu() {
 
 bool DeviceWidget::onContextTriggerEvent(GdkEventButton* event) {
     if (GDK_BUTTON_PRESS == event->type && 3 == event->button) {
-        contextMenu.popup(event->button, event->time);
+        contextMenu.popup_at_pointer((GdkEvent*)event);
         return true;
     }
 
@@ -259,8 +259,8 @@ void DeviceWidget::renamePopup() {
     x->get_widget("renameText", renameText);
 
     renameText->set_text(description);
-    dialog->add_button(Gtk::Stock::CANCEL, Gtk::RESPONSE_CANCEL);
-    dialog->add_button(Gtk::Stock::OK, Gtk::RESPONSE_OK);
+    dialog->add_button("_Cancel", Gtk::RESPONSE_CANCEL);
+    dialog->add_button("_OK", Gtk::RESPONSE_OK);
     dialog->set_default_response(Gtk::RESPONSE_OK);
     if (Gtk::RESPONSE_OK == dialog->run()) {
         pa_operation* o;

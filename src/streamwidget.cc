@@ -66,7 +66,7 @@ void StreamWidget::init(MainWindow* mainWindow) {
 
 bool StreamWidget::onContextTriggerEvent(GdkEventButton* event) {
     if (GDK_BUTTON_PRESS == event->type && 3 == event->button) {
-        contextMenu.popup(event->button, event->time);
+        contextMenu.popup_at_pointer((GdkEvent*)event);
         return true;
     }
     return false;
