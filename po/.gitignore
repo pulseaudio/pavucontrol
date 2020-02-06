@@ -7,7 +7,6 @@ boldquot.sed
 en@boldquot.header
 en@quot.header
 insert-header.sin
-pavucontrol.pot
 quot.sed
 remove-potcdate.sin
 *.gmo
