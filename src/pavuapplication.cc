@@ -143,7 +143,7 @@ int main(int argc, char *argv[]) {
     signal(SIGPIPE, SIG_IGN);
 
     /* Create the application */
-    auto app = PavuApplication();
+    PavuApplication app;
 
     /* Add command-line options */
     app.add_main_option_entry(
