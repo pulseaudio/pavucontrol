@@ -21,6 +21,7 @@
     <li><a href="#download">Download</a></li>
     <li><a href="#bugs">Bug Reports</a></li>
     <li><a href="#patches">Contributing Code</a></li>
+    <li><a href="#translations">Contributing Translations</a></li>
 </ul>
 
 <h2><a name="license">License</a></h2>
@@ -185,6 +186,10 @@ compilation and <tt>make install</tt> (as root) for installation of
 <h2><a name="patches">Contributing Code</a></h2>
 
 <p>If you have patches for pavucontrol, the primary method for submitting them is by creating a merge request in <a href="https://gitlab.freedesktop.org/pulseaudio/pavucontrol">GitLab</a>.</p>
+
+<h2><a name="translations">Contributing Translations</a></h2>
+
+<p>Translations can be contributed in <a href="https://translate.fedoraproject.org/projects/pulseaudio/pavucontrol/">Fedora's Weblate translation service</a>. Pavucontrol isn't affiliated with Fedora otherwise, but Fedora kindly offered to host the translation service for us.</p>
 
 </body>
 </html>
