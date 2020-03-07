@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the pavucontrol package.
 # Daniel Nylander <po@danielnylander.se>, 2008, 2009.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
-#
+# Göran Uddeborg <goeran@uddeborg.se>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2017-12-16 22:15+0100\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
-"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"PO-Revision-Date: 2020-02-25 16:38+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -34,6 +36,8 @@ msgstr "Justera volymnivån"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"pavucontrol;Mikrofon;Volym;Uttoning;Balans;Hörlur;Audio;Mixer;Utmatning;Inmat"
+"ning;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -360,21 +364,19 @@ msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() misslyckades"
 
 #: ../src/channelwidget.cc:101
-#, fuzzy, c-format
-#| msgid "<small>100% (0dB)</small>"
+#, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>%0.0f %% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
-#, fuzzy, c-format
-#| msgid "<small>100% (0dB)</small>"
+#, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>%0.0f %% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f %%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -385,10 +387,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Min</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>100% (0dB)</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>100 % (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
