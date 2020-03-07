@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 15:35+0100\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2019-12-21 15:58+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
@@ -437,31 +437,31 @@ msgstr "Błąd podczas zapisywania pliku konfiguracji %s"
 msgid " (plugged in)"
 msgstr " (podłączone)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (niedostępne)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (odłączone)"
 
-#: ../src/mainwindow.cc:561
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "Odczytanie danych ze strumienia się nie powiodło"
 
-#: ../src/mainwindow.cc:605
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "Wykrywanie szczytów"
 
-#: ../src/mainwindow.cc:606
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "Utworzenie strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:621
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "Połączenie ze strumienia monitorowania się nie powiodło"
 
-#: ../src/mainwindow.cc:757
+#: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -469,11 +469,11 @@ msgstr ""
 "Ignorowanie sink-input, ponieważ jest ono oznaczone jako zdarzenie, więc "
 "jest obsługiwane przez widżet „Zdarzenia”"
 
-#: ../src/mainwindow.cc:932
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/mainwindow.cc:1278
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Nawiązywanie połączenia z usługą PulseAudio. Proszę czekać…"
 

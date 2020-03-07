@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2019-11-28 18:12+0300\n"
 "Last-Translator: Gökhan Gökkaya <wirelessanten@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: tr\n"
 "X-Generator: Poedit 2.0.6\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
@@ -33,8 +33,10 @@ msgid "Adjust the volume level"
 msgstr "Ses seviyesini ayarla"
 
 #: ../src/pavucontrol.desktop.in.h:4
-msgid "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
-msgstr "pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
+"pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -221,10 +223,6 @@ msgstr "Akış Adı"
 msgid "direction"
 msgstr "yön"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Aygıt"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Kart geri-çağırma başarısız"
@@ -340,16 +338,20 @@ msgstr "Bağlantı başarısız, yeniden bağlanmaya çalışılıyor"
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
-"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
-"If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
 "PulseAudio'ya bağlantı başarısız oldu. 5 saniyede otomatik yeniden dene\n"
 "\n"
 "Bu durum, Ortam/X11 Kök Pencere Özellikleri'ndeki PULSE_SERVER veya \n"
-"client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı olabilir."
+"client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı "
+"olabilir."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -399,8 +401,12 @@ msgid "Sorry, but device renaming is not supported."
 msgstr "Maalesef, cihaz yeniden adlandırılma desteklemiyor."
 
 #: ../src/devicewidget.cc:249
-msgid "You need to load module-device-manager in the PulseAudio server in order to rename devices"
-msgstr "Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-manager yüklemeniz gerekir"
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-"
+"manager yüklemeniz gerekir"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -424,39 +430,43 @@ msgstr "Yapılandırma dosyası %s için yazma hatası"
 msgid " (plugged in)"
 msgstr " (takılı)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (kullanılamaz)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (takılı değil)"
 
-#: ../src/mainwindow.cc:561
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "Akıştan veri okuma başarısız oldu"
 
-#: ../src/mainwindow.cc:605
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "Üst algılama"
 
-#: ../src/mainwindow.cc:606
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "Akış izleme oluşturulması başarısız"
 
-#: ../src/mainwindow.cc:621
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "Akış izleme bağlantısı başarısız"
 
-#: ../src/mainwindow.cc:757
-msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
-msgstr "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi nedeniyle sink-girişi yoksayılıyor"
+#: ../src/mainwindow.cc:759
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi "
+"nedeniyle sink-girişi yoksayılıyor"
 
-#: ../src/mainwindow.cc:932
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Sistem Sesleri"
 
-#: ../src/mainwindow.cc:1268
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "PulseAudio ile bağlantı kuruluyor. Lütfen bekleyin..."
 
@@ -472,25 +482,21 @@ msgstr "üstünde"
 msgid "Terminate Playback"
 msgstr "Oynatımı Sonlandır"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Bilinmeyen çıkış"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() başarısız"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() başarısız"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() başarısız"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() başarısız"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -524,25 +530,21 @@ msgstr "şundan"
 msgid "Terminate Recording"
 msgstr "Kaydı Sonlandır"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Bilinmeyen giriş"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() başarısız"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() başarısız"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() başarısız"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() başarısız"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -580,6 +582,15 @@ msgstr "Eğer pa sonlandırılırsa sürekli yeniden dene (her 5 saniyede bir)."
 msgid "Maximize the window."
 msgstr "Pencereyi büyüt."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Sürümü göster."
+
+#~ msgid "Device"
+#~ msgstr "Aygıt"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() başarısız"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() başarısız"

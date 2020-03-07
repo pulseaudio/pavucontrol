@@ -7,300 +7,487 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 17:10+0200\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2009-09-15 20:53+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../src/pavucontrol.desktop.in.h:1
-msgid "Adjust the volume level"
-msgstr "Подесите ниво јачине звука"
-
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.cc:476
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio контрола јачине звука"
 
-#: ../src/pavucontrol.desktop.in.h:3 ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
 msgid "Volume Control"
 msgstr "Контрола јачине звука"
 
-#: ../src/pavucontrol.glade.h:2
-#, no-c-format
-msgid "50%"
-msgstr "50%"
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Подесите ниво јачине звука"
 
-#: ../src/pavucontrol.glade.h:3
-msgid "<b>Port:</b>"
-msgstr "<b>Порт:</b>"
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
 
-#: ../src/pavucontrol.glade.h:4
-msgid "<b>Profile:</b>"
-msgstr "<b>Профил:</b>"
-
-#: ../src/pavucontrol.glade.h:5
-msgid "<b>S_how:</b>"
-msgstr "<b>П_рикажи:</b>"
-
-#: ../src/pavucontrol.glade.h:6
-msgid "<b>Sho_w:</b>"
-msgstr "<b>При_кажи:</b>"
-
-#: ../src/pavucontrol.glade.h:7
-msgid "<b>_Show:</b>"
-msgstr "<b>_Прикажи:</b>"
-
-#: ../src/pavucontrol.glade.h:8
+#: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>леви-предњи</b>"
 
-#: ../src/pavucontrol.glade.h:9
-msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Нема програма који тренутно репродукује звук.</i>"
+#: ../src/pavucontrol.glade.h:3
+#, fuzzy, no-c-format
+#| msgid "<small>Min</small>"
+msgid "<small>50%</small>"
+msgstr "<small>Мин</small>"
 
-#: ../src/pavucontrol.glade.h:10
-msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Нема програма који тренутно снима звук.</i>"
-
-#: ../src/pavucontrol.glade.h:11
-msgid "<i>No cards available for configuration</i>"
-msgstr "<i>Нема доступних картица за подешавање</i>"
-
-#: ../src/pavucontrol.glade.h:12
-msgid "<i>No input devices available</i>"
-msgstr "<i>Нема доступних улазних уређаја</i>"
-
-#: ../src/pavucontrol.glade.h:13
-msgid "<i>No output devices available</i>"
-msgstr "<i>Нема доступних излазних уређаја</i>"
-
-#: ../src/pavucontrol.glade.h:14
-msgid ""
-"All Input Devices\n"
-"All Except Monitors\n"
-"Hardware Input Devices\n"
-"Virtual Input Devices\n"
-"Monitors"
-msgstr ""
-"Сви улазни уређаји\n"
-"Сви осим надзорника\n"
-"Хардверски улазни уређаји\n"
-"Виртуелни улазни уређаји\n"
-"Надзорници"
-
-#: ../src/pavucontrol.glade.h:19
-msgid ""
-"All Output Devices\n"
-"Hardware Output Devices\n"
-"Virtual Output Devices"
-msgstr ""
-"Сви излазни уређаји\n"
-"Хардверски излазни уређаји\n"
-"Виртуелни излазни уређаји"
-
-#. Applications All streams
-#: ../src/pavucontrol.glade.h:23
-msgid ""
-"All Streams\n"
-"Applications\n"
-"Virtual Streams"
-msgstr ""
-"Сви токови\n"
-"Програми\n"
-"Виртуелни токови"
-
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
 msgstr "Име картице"
 
-#: ../src/pavucontrol.glade.h:27
-msgid "Device"
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Профил:</b>"
+
+#: ../src/pavucontrol.glade.h:6
+#, fuzzy
+#| msgid "Device"
+msgid "Device Title"
 msgstr "Уређај"
 
-#: ../src/pavucontrol.glade.h:28
-msgid "Lock channels together"
-msgstr "Закључај канале заједно"
-
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
 msgstr "Нечујно"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Закључај канале заједно"
+
+#: ../src/pavucontrol.glade.h:9
 msgid "Set as fallback"
 msgstr "Постави као замену"
 
-#: ../src/pavucontrol.glade.h:31
-msgid "Stream Title"
-msgstr "Назив тока"
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Порт:</b>"
 
-#: ../src/pavucontrol.glade.h:33
-msgid "_Configuration"
-msgstr "_Подешавања"
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr ""
 
-#: ../src/pavucontrol.glade.h:34
-msgid "_Input Devices"
-msgstr "_Улазни уређаји"
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr ""
 
-#: ../src/pavucontrol.glade.h:35
-msgid "_Output Devices"
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:23
+#, fuzzy
+#| msgid "_Output Devices"
+msgid "All Output Devices"
 msgstr "_Излазни уређаји"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:24
+#, fuzzy
+#| msgid "_Output Devices"
+msgid "Hardware Output Devices"
+msgstr "_Излазни уређаји"
+
+#: ../src/pavucontrol.glade.h:25
+#, fuzzy
+#| msgid "_Output Devices"
+msgid "Virtual Output Devices"
+msgstr "_Излазни уређаји"
+
+#: ../src/pavucontrol.glade.h:26
+#, fuzzy
+#| msgid "_Input Devices"
+msgid "All Input Devices"
+msgstr "_Улазни уређаји"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:28
+#, fuzzy
+#| msgid "_Input Devices"
+msgid "Hardware Input Devices"
+msgstr "_Улазни уређаји"
+
+#: ../src/pavucontrol.glade.h:29
+#, fuzzy
+#| msgid "_Input Devices"
+msgid "Virtual Input Devices"
+msgstr "_Улазни уређаји"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Нема програма који тренутно репродукује звук.</i>"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "<b>_Show:</b>"
+msgstr "<b>_Прикажи:</b>"
+
+#: ../src/pavucontrol.glade.h:34
 msgid "_Playback"
 msgstr "_Репродукција"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Нема програма који тренутно снима звук.</i>"
+
+#: ../src/pavucontrol.glade.h:36
 msgid "_Recording"
 msgstr "_Снимање"
 
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Нема доступних излазних уређаја</i>"
+
 #: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>П_рикажи:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "_Излазни уређаји"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>Нема доступних улазних уређаја</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>При_кажи:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "_Улазни уређаји"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Нема доступних картица за подешавање</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Подешавања"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Назив тока"
+
+#: ../src/pavucontrol.glade.h:48
 msgid "direction"
 msgstr "смер"
 
-#: ../src/pavucontrol.cc:73
+#: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Неуспешан опозив картице"
 
-#: ../src/pavucontrol.cc:92
+#: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
 msgstr "Неуспешан опозив сливника"
 
-#: ../src/pavucontrol.cc:111
+#: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
 msgstr "Неуспешан опозив извора"
 
-#: ../src/pavucontrol.cc:130
+#: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
 msgstr "Неуспешан опозив сливника улаза"
 
-#: ../src/pavucontrol.cc:149
+#: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
 msgstr "Неуспешан опозив извора излаза"
 
-#: ../src/pavucontrol.cc:183
+#: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
 msgstr "Неуспешан опозив клијента"
 
-#: ../src/pavucontrol.cc:199
+#: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
 msgstr "Неуспешан опозив информација о серверу"
 
-#: ../src/pavucontrol.cc:217 ../src/pavucontrol.cc:430
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Неуспешна иницијализација проширења stream_restore: %s"
 
-#: ../src/pavucontrol.cc:235
+#: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "Неуспела функција pa_ext_stream_restore_read()"
 
-#: ../src/pavucontrol.cc:252
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, fuzzy, c-format
+#| msgid "Failed to initialize stream_restore extension: %s"
+msgid "Failed to initialize device restore extension: %s"
+msgstr "Неуспешна иницијализација проширења stream_restore: %s"
+
+#: ../src/pavucontrol.cc:285
+#, fuzzy
+#| msgid "pa_ext_stream_restore_read() failed"
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "Неуспела функција pa_ext_stream_restore_read()"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, fuzzy, c-format
+#| msgid "Failed to initialize stream_restore extension: %s"
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Неуспешна иницијализација проширења stream_restore: %s"
+
+#: ../src/pavucontrol.cc:322
+#, fuzzy
+#| msgid "pa_ext_stream_restore_read() failed"
+msgid "pa_ext_device_manager_read() failed"
+msgstr "Неуспела функција pa_ext_stream_restore_read()"
+
+#: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "Неуспела функција pa_context_get_sink_info_by_index()"
 
-#: ../src/pavucontrol.cc:265
+#: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "Неуспела функција pa_context_get_source_info_by_index()"
 
-#: ../src/pavucontrol.cc:278 ../src/pavucontrol.cc:291
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "Неуспела функција pa_context_get_sink_input_info()"
 
-#: ../src/pavucontrol.cc:304
+#: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
 msgstr "Неуспела функција pa_context_get_client_info()"
 
-#: ../src/pavucontrol.cc:314 ../src/pavucontrol.cc:371
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
 msgstr "Неуспела функција pa_context_get_server_info()"
 
-#: ../src/pavucontrol.cc:327
+#: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "Неуспела функција pa_context_get_card_info_by_index()"
 
-#: ../src/pavucontrol.cc:362
+#: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
 msgstr "Неуспела функција pa_context_subscribe()"
 
-#: ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
 msgstr "Неуспела функција pa_context_client_info_list()"
 
-#: ../src/pavucontrol.cc:385
+#: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
 msgstr "Није успело извршавање функције pa_context_get_card_info_list()"
 
-#: ../src/pavucontrol.cc:392
+#: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "Неуспела функција pa_context_get_sink_info_list()"
 
-#: ../src/pavucontrol.cc:399
+#: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
 msgstr "Неуспела функција pa_context_get_source_info_list()"
 
-#: ../src/pavucontrol.cc:406
+#: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "Неуспела функција pa_context_get_sink_input_info_list()"
 
-#: ../src/pavucontrol.cc:413
+#: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "Неуспела функција pa_context_get_source_output_info_list()"
 
-#: ../src/pavucontrol.cc:437
-msgid "Connection failed"
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+#, fuzzy
+#| msgid "Connection failed"
+msgid "Connection failed, attempting reconnect"
 msgstr "Повезивање није успело"
 
-#: ../src/cardwidget.cc:87
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+
+#: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "Неуспела функција pa_context_set_card_profile_by_index()"
 
-#: ../src/channelwidget.cc:104
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr ""
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr ""
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr ""
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Тишина</small>"
 
-#: ../src/channelwidget.cc:104
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Мин</small>"
 
-#: ../src/channelwidget.cc:105
-msgid "<small>Max</small>"
-msgstr "<small>Макс</small>"
+#: ../src/channelwidget.cc:141
+#, fuzzy
+#| msgid "<small>Min</small>"
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>Мин</small>"
 
-#: ../src/channelwidget.cc:109
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Основа</i></small>"
 
-#: ../src/mainwindow.cc:269
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr ""
+
+#: ../src/devicewidget.cc:163
+#, fuzzy
+#| msgid "pa_context_set_sink_port_by_index() failed"
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "Неуспела функција pa_context_set_sink_port_by_index()"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr ""
+
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+
+#: ../src/devicewidget.cc:270
+#, fuzzy
+#| msgid "pa_ext_stream_restore_write() failed"
+msgid "pa_ext_device_manager_write() failed"
+msgstr "Неуспела функција pa_ext_stream_restore_write()"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr ""
+
+#: ../src/mainwindow.cc:249
+msgid "Error saving preferences"
+msgstr ""
+
+#: ../src/mainwindow.cc:257
+#, c-format
+msgid "Error writing config file %s"
+msgstr ""
+
+#: ../src/mainwindow.cc:321
+msgid " (plugged in)"
+msgstr ""
+
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+msgid " (unavailable)"
+msgstr ""
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+msgid " (unplugged)"
+msgstr ""
+
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "Неуспело очитавање података са тока"
 
-#: ../src/mainwindow.cc:304 ../src/mainwindow.cc:341
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "Откривање максималног нивоа"
 
-#: ../src/mainwindow.cc:305 ../src/mainwindow.cc:342
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "Неуспело прављење надзорног тока"
 
-#: ../src/mainwindow.cc:313 ../src/mainwindow.cc:351
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "Неуспело повезивање са надзорним током"
 
-#: ../src/mainwindow.cc:466
+#: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:618
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Системски звуци"
 
-#: ../src/rolewidget.cc:71
+#: ../src/mainwindow.cc:1280
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr ""
+
+#: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "Неуспела функција pa_ext_stream_restore_write()"
 
@@ -312,45 +499,47 @@ msgstr "на"
 msgid "Terminate Playback"
 msgstr "Прекини репродукцију"
 
-#: ../src/sinkinputwidget.cc:61
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Непознат излаз"
 
-#: ../src/sinkinputwidget.cc:72
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "Неуспела функција pa_context_set_sink_input_volume()"
 
-#: ../src/sinkinputwidget.cc:87
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "Неуспела функција pa_context_set_sink_input_mute()"
 
-#: ../src/sinkinputwidget.cc:97
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "Неуспела функција pa_context_kill_sink_input()"
 
-#: ../src/sinkinputwidget.cc:133
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "Неуспела функција pa_context_move_sink_input_by_index()"
-
-#: ../src/sinkwidget.cc:48
+#: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "Неуспела функција pa_context_set_sink_volume_by_index()"
 
-#: ../src/sinkwidget.cc:63
+#: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
 msgstr "Контрола јачине одзива звука"
 
-#: ../src/sinkwidget.cc:80
+#: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "Неуспела функција pa_context_set_sink_mute_by_index()"
 
-#: ../src/sinkwidget.cc:94
+#: ../src/sinkwidget.cc:141
 msgid "pa_context_set_default_sink() failed"
 msgstr "Неуспела функција pa_context_set_default_sink()"
 
-#: ../src/sinkwidget.cc:114
+#: ../src/sinkwidget.cc:161
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "Неуспела функција pa_context_set_sink_port_by_index()"
+
+#: ../src/sinkwidget.cc:203
+#, fuzzy
+#| msgid "pa_ext_stream_restore_read() failed"
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "Неуспела функција pa_ext_stream_restore_read()"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -360,35 +549,106 @@ msgstr "са"
 msgid "Terminate Recording"
 msgstr "Прекини снимање"
 
-#: ../src/sourceoutputwidget.cc:61
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Непознат улаз"
 
-#: ../src/sourceoutputwidget.cc:71
+#: ../src/sourceoutputwidget.cc:93
+#, fuzzy
+#| msgid "pa_context_get_source_output_info_list() failed"
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "Неуспела функција pa_context_get_source_output_info_list()"
+
+#: ../src/sourceoutputwidget.cc:108
+#, fuzzy
+#| msgid "pa_context_get_source_output_info_list() failed"
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "Неуспела функција pa_context_get_source_output_info_list()"
+
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "Неуспела функција pa_context_kill_source_output()"
 
-#: ../src/sourceoutputwidget.cc:108
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "Неуспела функција pa_context_move_source_output_by_index()"
-
-#: ../src/sourcewidget.cc:44
+#: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
 msgstr "Неуспела функција pa_context_set_source_volume_by_index()"
 
-#: ../src/sourcewidget.cc:59
+#: ../src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
 msgstr "Неуспела функција pa_context_set_source_mute_by_index()"
 
-#: ../src/sourcewidget.cc:73
+#: ../src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
 msgstr "Неуспела функција pa_context_set_default_source()"
 
-#: ../src/sourcewidget.cc:95
+#: ../src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "Неуспела функција pa_context_set_source_port_by_index()"
 
-#: ../src/streamwidget.cc:45
+#: ../src/streamwidget.cc:52
 #, fuzzy
 msgid "Terminate"
 msgstr "Прекини репродукцију"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr ""
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr ""
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr ""
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr ""
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr ""
+
+#~ msgid "50%"
+#~ msgstr "50%"
+
+#~ msgid ""
+#~ "All Input Devices\n"
+#~ "All Except Monitors\n"
+#~ "Hardware Input Devices\n"
+#~ "Virtual Input Devices\n"
+#~ "Monitors"
+#~ msgstr ""
+#~ "Сви улазни уређаји\n"
+#~ "Сви осим надзорника\n"
+#~ "Хардверски улазни уређаји\n"
+#~ "Виртуелни улазни уређаји\n"
+#~ "Надзорници"
+
+#~ msgid ""
+#~ "All Output Devices\n"
+#~ "Hardware Output Devices\n"
+#~ "Virtual Output Devices"
+#~ msgstr ""
+#~ "Сви излазни уређаји\n"
+#~ "Хардверски излазни уређаји\n"
+#~ "Виртуелни излазни уређаји"
+
+#~ msgid ""
+#~ "All Streams\n"
+#~ "Applications\n"
+#~ "Virtual Streams"
+#~ msgstr ""
+#~ "Сви токови\n"
+#~ "Програми\n"
+#~ "Виртуелни токови"
+
+#~ msgid "<small>Max</small>"
+#~ msgstr "<small>Макс</small>"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "Неуспела функција pa_context_move_sink_input_by_index()"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "Неуспела функција pa_context_move_source_output_by_index()"

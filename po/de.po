@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-24 03:17+0200\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2018-08-29 21:36+0200\n"
 "Last-Translator: Thomas Lange <thomas-lange2@gmx.de>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
@@ -31,11 +31,17 @@ msgstr "Lautstärkeregler"
 msgid "Adjust the volume level"
 msgstr "Lautstärke anpassen"
 
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
+
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>vorne links</b>"
 
 #: ../src/pavucontrol.glade.h:3
+#, no-c-format
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
@@ -215,10 +221,6 @@ msgstr "Spurtitel"
 msgid "direction"
 msgstr "Richtung"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Gerät"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Soundkarten Callback-Fehler"
@@ -257,14 +259,17 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() gescheitert"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Initialisierung der Gerätewiederherstellung-Erweiterung gescheitert: %s"
+msgstr ""
+"Initialisierung der Gerätewiederherstellung-Erweiterung gescheitert: %s"
 
 #: ../src/pavucontrol.cc:285
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() gescheitert"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Initialisierung der Gerätemanager-Erweiterung gescheitert: %s"
 
@@ -341,7 +346,8 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
-"Verbindung zu PulseAudio fehlgeschlagen. Erneuter automatischer Versuch in 5s.\n"
+"Verbindung zu PulseAudio fehlgeschlagen. Erneuter automatischer Versuch in "
+"5s.\n"
 "\n"
 "Dies ist wahrscheinlich durch eine falsche Konfiguration verursacht.\n"
 "Entweder die PULSE_SERVER Umgebungsvariable/X11 Root Window Eigenschaft\n"
@@ -356,43 +362,63 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() gescheitert"
 
+#: ../src/channelwidget.cc:101
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
 #: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr ""
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Stumm</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
-#: ../src/channelwidget.cc:108
-msgid "<small>100% (0dB)</small>"
+#: ../src/channelwidget.cc:141
+#, fuzzy
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100% (0dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Basis</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Gerät umbenennen..."
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() gescheitert"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "Entschuldigung, aber das Umbenennen von Geräten wird nicht unterstützt."
+msgstr ""
+"Entschuldigung, aber das Umbenennen von Geräten wird nicht unterstützt."
 
-#: ../src/devicewidget.cc:253
+#: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
-"Sie müssen den module-device-manager im PulseAudio Server laden, "
-"um Geräte umbenennen zu können"
+"Sie müssen den module-device-manager im PulseAudio Server laden, um Geräte "
+"umbenennen zu können"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() gescheitert"
 
@@ -401,24 +427,24 @@ msgstr "pa_ext_device_manager_write() gescheitert"
 msgid "Error reading config file %s: %s"
 msgstr "Fehler beim Lesen der Konfigurationsdatei %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Fehler beim Speichern der Einstellungen"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Fehler beim Schreiben der Konfigurationsdatei %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:321
 msgid " (plugged in)"
 msgstr " (eingesteckt)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (nicht verfügbar)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (ausgesteckt)"
 
@@ -443,14 +469,14 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
-"Ignoriere die Sink-Eingabe, da sie als ein Ereignis bezeichnet und daher "
-"vom Event-Widget behandelt wurde"
+"Ignoriere die Sink-Eingabe, da sie als ein Ereignis bezeichnet und daher vom "
+"Event-Widget behandelt wurde"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Systemklänge"
 
-#: ../src/mainwindow.cc:1270
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Baue Verbindung zu PulseAudio auf. Bitte warten..."
 
@@ -466,25 +492,21 @@ msgstr "ein"
 msgid "Terminate Playback"
 msgstr "Wiedergabe beenden"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Unbekannte Ausgabe"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() gescheitert"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() gescheitert"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() gescheitert"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() gescheitert"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -506,7 +528,7 @@ msgstr "pa_context_set_default_sink() gescheitert"
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() gescheitert"
 
-#: ../src/sinkwidget.cc:202
+#: ../src/sinkwidget.cc:203
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() gescheitert"
 
@@ -518,25 +540,21 @@ msgstr "von"
 msgid "Terminate Recording"
 msgstr "Aufnahme beenden"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Unbekannte Eingabe"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() gescheitert"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() gescheitert"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() gescheitert"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() gescheitert"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -554,26 +572,37 @@ msgstr "pa_context_set_default_source() gescheitert"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() gescheitert"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Beenden"
 
-#: ../src/pavuapplication.cc:145
+#: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
 msgstr "Spezifischen Tab beim Laden auswählen."
 
-#: ../src/pavuapplication.cc:146
+#: ../src/pavuapplication.cc:153
 msgid "number"
 msgstr "Nummer"
 
-#: ../src/pavuapplication.cc:151
+#: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "Immer wieder erneut versuchen, wenn PulseAudio sich beendet (alle 5 Sekunden)."
+msgstr ""
+"Immer wieder erneut versuchen, wenn PulseAudio sich beendet (alle 5 "
+"Sekunden)."
 
-#: ../src/pavuapplication.cc:156
+#: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
 msgstr "Fenster maximieren."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Version anzeigen."
+
+#~ msgid "Device"
+#~ msgstr "Gerät"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() gescheitert"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() gescheitert"

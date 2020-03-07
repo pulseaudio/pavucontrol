@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 01:12+0800\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2009-04-01 21:43+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -29,6 +29,11 @@ msgstr "音量控制"
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
 msgstr "调节音量水平"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -214,10 +219,6 @@ msgstr "流媒体标题"
 #: ../src/pavucontrol.glade.h:48
 msgid "direction"
 msgstr "方向"
-
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "设备"
 
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
@@ -419,41 +420,41 @@ msgstr "写配置文件 %s 时出错"
 msgid " (plugged in)"
 msgstr "（已插入）"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr "（不可用）"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr "（未插入）"
 
-#: ../src/mainwindow.cc:561
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "无法从流媒体中读取数据"
 
-#: ../src/mainwindow.cc:605
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "尖峰探测"
 
-#: ../src/mainwindow.cc:606
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "无法常见监视流媒体"
 
-#: ../src/mainwindow.cc:621
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "无法连接到监视流媒体"
 
-#: ../src/mainwindow.cc:757
+#: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:932
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "系统声音"
 
-#: ../src/mainwindow.cc:1268
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "正在建立到 PulseAudio 的连接，请稍候……"
 
@@ -469,25 +470,21 @@ msgstr "开"
 msgid "Terminate Playback"
 msgstr "结束回放"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "未知输出"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() 失败"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() 失败"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() 失败"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() 失败"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -521,25 +518,21 @@ msgstr "来自"
 msgid "Terminate Recording"
 msgstr "结束录音"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "未知输入"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() 失败"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() 失败"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() 失败"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() 失败"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -580,3 +573,12 @@ msgstr ""
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr ""
+
+#~ msgid "Device"
+#~ msgstr "设备"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() 失败"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() 失败"

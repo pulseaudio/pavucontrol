@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-24 03:17+0200\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2019-04-09 00:37+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : n%10>=2 && "
-"n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : n"
+"%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
 "X-Generator: Poedit 2.2.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
@@ -31,11 +31,17 @@ msgstr "Garsio reguliavimas"
 msgid "Adjust the volume level"
 msgstr "Reguliuoti garsio lygį"
 
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
+
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>kairioji priekinė</b>"
 
 #: ../src/pavucontrol.glade.h:3
+#, no-c-format
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
@@ -215,10 +221,6 @@ msgstr "Srauto pavadinimas"
 msgid "direction"
 msgstr "kryptis"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Įrenginys"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Plokštės atgalinės iškvietos nesėkmė"
@@ -257,6 +259,7 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() patyrė nesėkmę"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Nepavyko inicijuoti įrenginio atkūrimo plėtinio: %s"
 
@@ -265,6 +268,7 @@ msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() patyrė nesėkmę"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Nepavyko inicijuoti įrenginių tvarkytuvės plėtinio: %s"
 
@@ -332,67 +336,88 @@ msgstr "Susijungimas nepavyko, bandoma jungtis iš naujo"
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
-"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window "
-"Properties\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arise when PulseAudio crashed and left stale details in the "
-"X11 Root Window.\n"
-"If this is the case, then PulseAudio should autospawn again, or if this is not "
-"configured you should\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
 "Ryšys su PulseAudio patyrė nesėkmę. Automatinis bandymas iš naujo po 5 sek.\n"
 "\n"
-"Šiuo atveju, taip, tikriausiai, yra dėl to, kad PULSE_SERVER, esantis aplinkos/X11 "
-"šaknies lango savybėse,\n"
-"ar default-server, esantis client.conf faile, yra neteisingai sukonfigūruotas.\n"
-"Ši situacija taip pat gali atsirasti kai PulseAudio užstrigo ir paliko pasenusią "
-"informaciją X11 šaknies lange.\n"
-"Jeigu tai yra tas atvejis, tuomet PulseAudio turėtų vėl automatiškai pasileisti arba "
-"jeigu tai nėra\n"
-"sukonfigūruota, tuomet turėtumėte rankiniu būdu paleisti start-pulseaudio-x11."
+"Šiuo atveju, taip, tikriausiai, yra dėl to, kad PULSE_SERVER, esantis "
+"aplinkos/X11 šaknies lango savybėse,\n"
+"ar default-server, esantis client.conf faile, yra neteisingai "
+"sukonfigūruotas.\n"
+"Ši situacija taip pat gali atsirasti kai PulseAudio užstrigo ir paliko "
+"pasenusią informaciją X11 šaknies lange.\n"
+"Jeigu tai yra tas atvejis, tuomet PulseAudio turėtų vėl automatiškai "
+"pasileisti arba jeigu tai nėra\n"
+"sukonfigūruota, tuomet turėtumėte rankiniu būdu paleisti start-pulseaudio-"
+"x11."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() patyrė nesėkmę"
 
+#: ../src/channelwidget.cc:101
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
 #: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr ""
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Tyla</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Min.</small>"
 
-#: ../src/channelwidget.cc:108
-msgid "<small>100% (0dB)</small>"
+#: ../src/channelwidget.cc:141
+#, fuzzy
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100% (0dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Pagrindas</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Pervadinti įrenginį..."
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() patyrė nesėkmę"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
 msgstr "Atleiskite, tačiau įrenginių pervadinimas yra nepalaikomas."
 
-#: ../src/devicewidget.cc:253
+#: ../src/devicewidget.cc:249
 msgid ""
-"You need to load module-device-manager in the PulseAudio server in order to rename "
-"devices"
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
 msgstr ""
-"Norėdami pervadinti įrenginius, turite PulseAudio serveryje įkelti module-device-"
-"manager"
+"Norėdami pervadinti įrenginius, turite PulseAudio serveryje įkelti module-"
+"device-manager"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() patyrė nesėkmę"
 
@@ -401,24 +426,24 @@ msgstr "pa_ext_device_manager_write() patyrė nesėkmę"
 msgid "Error reading config file %s: %s"
 msgstr "Klaida skaitant konfigūracijos failą %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Klaida įrašant nuostatas"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Klaida rašant konfigūracijos failą %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:321
 msgid " (plugged in)"
 msgstr " (prijungta)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (neprieinama)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (neprijungta)"
 
@@ -440,17 +465,17 @@ msgstr "Nepavyko prijungti monitorinio srauto"
 
 #: ../src/mainwindow.cc:759
 msgid ""
-"Ignoring sink-input due to it being designated as an event and thus handled by the "
-"Event widget"
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
 msgstr ""
-"Rinktuvo įvesties nepaisoma, kadangi ji pažymėta kaip įvykis ir todėl apdorojama "
-"įvykių valdiklio"
+"Rinktuvo įvesties nepaisoma, kadangi ji pažymėta kaip įvykis ir todėl "
+"apdorojama įvykių valdiklio"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Sistemos garsai"
 
-#: ../src/mainwindow.cc:1270
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Užmezgiamas ryšys su PulseAudio. Palaukite..."
 
@@ -466,25 +491,21 @@ msgstr "per"
 msgid "Terminate Playback"
 msgstr "Nutraukti atkūrimą"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Nežinoma išvestis"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() patyrė nesėkmę"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() patyrė nesėkmę"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() patyrė nesėkmę"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() patyrė nesėkmę"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -506,7 +527,7 @@ msgstr "pa_context_set_default_sink() patyrė nesėkmę"
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() patyrė nesėkmę"
 
-#: ../src/sinkwidget.cc:202
+#: ../src/sinkwidget.cc:203
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() patyrė nesėkmę"
 
@@ -518,25 +539,21 @@ msgstr "iš"
 msgid "Terminate Recording"
 msgstr "Nutraukti įrašymą"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Nežinoma įvestis"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() patyrė nesėkmę"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() patyrė nesėkmę"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() patyrė nesėkmę"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() patyrė nesėkmę"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -554,26 +571,35 @@ msgstr "pa_context_set_default_source() patyrė nesėkmę"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() patyrė nesėkmę"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Nutraukti"
 
-#: ../src/pavuapplication.cc:145
+#: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
 msgstr "Įkėlimo metu pasirinkti tam tikrą kortelę."
 
-#: ../src/pavuapplication.cc:146
+#: ../src/pavuapplication.cc:153
 msgid "number"
 msgstr "numeris"
 
-#: ../src/pavuapplication.cc:151
+#: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Be galo bandyti dar kartą, jei pa išeina (kas 5 sekundes)."
 
-#: ../src/pavuapplication.cc:156
+#: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
 msgstr "Išskleisti langą."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Rodyti versiją."
+
+#~ msgid "Device"
+#~ msgstr "Įrenginys"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() patyrė nesėkmę"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() patyrė nesėkmę"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-16 22:11+0100\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2017-12-16 22:15+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -29,6 +29,11 @@ msgstr "Volymkontroll"
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
 msgstr "Justera volymnivån"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -215,10 +220,6 @@ msgstr "Strömtitel"
 msgid "direction"
 msgstr "riktning"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Enhet"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Kortåterkoppling misslyckades"
@@ -358,35 +359,54 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() misslyckades"
 
+#: ../src/channelwidget.cc:101
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, fuzzy, c-format
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>100% (0dB)</small>"
+
 #: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr ""
+
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Tystnad</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Min</small>"
 
-#: ../src/channelwidget.cc:108
-msgid "<small>100% (0dB)</small>"
+#: ../src/channelwidget.cc:141
+#, fuzzy
+#| msgid "<small>100% (0dB)</small>"
+msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100% (0dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Bas</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Byt namn på enhet…"
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() misslyckades"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
 msgstr "Namnbyten för enheter stöds tyvärr inte."
 
-#: ../src/devicewidget.cc:253
+#: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -394,7 +414,7 @@ msgstr ""
 "Du behöver läsa in module-device-manager i PulseAudio-servern för att byta "
 "namn på enheter"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() misslyckades"
 
@@ -403,24 +423,24 @@ msgstr "pa_ext_device_manager_write() misslyckades"
 msgid "Error reading config file %s: %s"
 msgstr "Fel vid läsning av konfigurationsfilen %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Fel vid sparande av inställningar"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Fel vid skrivning av konfigurationsfilen %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:321
 msgid " (plugged in)"
 msgstr " (inpluggad)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (ej tillgänglig)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (ej inpluggad)"
 
@@ -452,7 +472,7 @@ msgstr ""
 msgid "System Sounds"
 msgstr "Systemljud"
 
-#: ../src/mainwindow.cc:1270
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerar en anslutning till PulseAudio. Vänta…"
 
@@ -468,25 +488,21 @@ msgstr "på"
 msgid "Terminate Playback"
 msgstr "Terminera uppspelning"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Okänd utgång"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() misslyckades"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() misslyckades"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() misslyckades"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() misslyckades"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -508,7 +524,7 @@ msgstr "pa_context_set_default_sink() misslyckades"
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() misslyckades"
 
-#: ../src/sinkwidget.cc:202
+#: ../src/sinkwidget.cc:203
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() misslyckades"
 
@@ -520,25 +536,21 @@ msgstr "från"
 msgid "Terminate Recording"
 msgstr "Terminera inspelning"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Okänd ingång"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() misslyckades"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() misslyckades"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() misslyckades"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() misslyckades"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -556,29 +568,38 @@ msgstr "pa_context_set_default_source() misslyckades"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() misslyckades"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Terminera"
 
-#: ../src/pavuapplication.cc:145
+#: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
 msgstr "Välj en viss flik vid inläsning."
 
-#: ../src/pavuapplication.cc:146
+#: ../src/pavuapplication.cc:153
 msgid "number"
 msgstr "nummer"
 
-#: ../src/pavuapplication.cc:151
+#: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Försök igen för alltid om pa avslutar (var 5 sekund)."
 
-#: ../src/pavuapplication.cc:156
+#: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
 msgstr "Maximera fönstret."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Visa version."
+
+#~ msgid "Device"
+#~ msgstr "Enhet"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() misslyckades"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() misslyckades"
 
 #~ msgid "50%"
 #~ msgstr "50%"

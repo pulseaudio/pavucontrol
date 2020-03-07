@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-10 14:32+0100\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2019-11-10 14:39+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/lennart/pavucontrol/"
@@ -225,10 +225,6 @@ msgstr "Naslov strujanja"
 msgid "direction"
 msgstr "usmjerenje"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Uređaj"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Neuspješno vraćanje kartice"
@@ -441,31 +437,31 @@ msgstr "Greška zapisivanja datoteke podešavanja %s"
 msgid " (plugged in)"
 msgstr " (priključeno)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:429
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (nedostupno)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:426
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (isključeno)"
 
-#: ../src/mainwindow.cc:561
+#: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
 msgstr "Neuspješno čitanje podataka iz strujanja"
 
-#: ../src/mainwindow.cc:605
+#: ../src/mainwindow.cc:607
 msgid "Peak detect"
 msgstr "Otkrivanje vrhunca"
 
-#: ../src/mainwindow.cc:606
+#: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
 msgstr "Neuspješno stvaranje nadgledatelja strujanja"
 
-#: ../src/mainwindow.cc:621
+#: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
 msgstr "Neuspješno povezivanje s nadgledateljem strujanja"
 
-#: ../src/mainwindow.cc:757
+#: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -473,11 +469,11 @@ msgstr ""
 "Zanemarivanje slivnika-ulaza zato jer je označen kao događaj i zato je "
 "rukovan od strane widgeta događaja"
 
-#: ../src/mainwindow.cc:932
+#: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Zvukovi sustava"
 
-#: ../src/mainwindow.cc:1268
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Uspostavljanje povezivanja s PulseAudiom. Pričekajte..."
 
@@ -493,25 +489,21 @@ msgstr "na"
 msgid "Terminate Playback"
 msgstr "Zaustavi reprodukciju"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Nepoznat izlaz"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() neuspješno"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() neuspješno"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() neuspješno"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "pa_context_move_sink_input_by_index() neuspješno"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -545,25 +537,21 @@ msgstr "iz"
 msgid "Terminate Recording"
 msgstr "Zaustavi snimanje"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Nepoznat ulaz"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() neuspješno"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() neuspješno"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() neuspješno"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "pa_context_move_source_output_by_index() neuspješno"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -604,6 +592,15 @@ msgstr "Uvećaj prozor."
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Prikaži inačicu."
+
+#~ msgid "Device"
+#~ msgstr "Uređaj"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "pa_context_move_sink_input_by_index() neuspješno"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "pa_context_move_source_output_by_index() neuspješno"
 
 #~ msgid "Fatal Error: Unable to connect to PulseAudio"
 #~ msgstr "Kobna greška: Nemoguće povezivanje s PulseAudiom"

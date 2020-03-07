@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-12 13:59+0100\n"
+"POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2019-01-12 14:25+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -28,6 +28,11 @@ msgstr "Lydstyrkekontroll"
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
 msgstr "Juster lydstyrke"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -215,10 +220,6 @@ msgstr "Straumtittel"
 msgid "direction"
 msgstr "retning"
 
-#: ../src/pavucontrol.glade.h:49
-msgid "Device"
-msgstr "Eining"
-
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
 msgstr "Feil ved tilbakekall til kort"
@@ -335,72 +336,82 @@ msgstr "Feil ved tilkopling – prøver på nytt"
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
-"In this case this is likely because PULSE_SERVER in the Environment/X11 Root Window Properties\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
 "or default-server in client.conf is misconfigured.\n"
-"This situation can also arise when PulseAudio crashed and left stale details in the X11 Root Window.\n"
-"If this is the case, then PulseAudio should autospawn again, or if this is not configured you should\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
 "Feil ved tilkopling til PulseAudio. Prøver på nytt om 5 sekund.\n"
 "\n"
-"Feilen kjem truleg av at «PULSE_SERVER» i «Environment/X11 Root Window Properties»\n"
+"Feilen kjem truleg av at «PULSE_SERVER» i «Environment/X11 Root Window "
+"Properties»\n"
 "eller «default-server» i «client.conf» er sett opp feil.\n"
-"Feilen kan òg oppstå dersom PulseAudio krasjar og legg att utdatert informasjon i X11-rotvindauget.\n"
-"I så fall vil PulseAudio starta på nytt automatisk, men viss automatisk gjenstart ikkje er sett opp,\n"
+"Feilen kan òg oppstå dersom PulseAudio krasjar og legg att utdatert "
+"informasjon i X11-rotvindauget.\n"
+"I så fall vil PulseAudio starta på nytt automatisk, men viss automatisk "
+"gjenstart ikkje er sett opp,\n"
 "må du køyra «start-pulseaudio-x11» manuelt."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "Feil ved pa_context_set_card_profile_by_index()-kall"
 
-#: ../src/channelwidget.cc:68
+#: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
 msgstr "<small>%0.0f %% (%0.2f dB)</small>"
 
-#: ../src/channelwidget.cc:70
+#: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
 msgstr "<small>%0.0f %% (−&#8734; dB)</small>"
 
-#: ../src/channelwidget.cc:73
+#: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
 msgstr "%0.0f %%"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Stille</small>"
 
-#: ../src/channelwidget.cc:106
+#: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Min</small>"
 
-#: ../src/channelwidget.cc:108
+#: ../src/channelwidget.cc:141
 msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100 % (0 dB)</small>"
 
-#: ../src/channelwidget.cc:112
+#: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Grunn</i></small>"
 
-#: ../src/devicewidget.cc:52
+#: ../src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Endra namn på eining …"
 
-#: ../src/devicewidget.cc:165
+#: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "Feil ved pa_context_set_port_latency_offset()-kall"
 
-#: ../src/devicewidget.cc:248
+#: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
 msgstr "Endring av namn på einingar er dessverre ikkje støtta."
 
-#: ../src/devicewidget.cc:253
-msgid "You need to load module-device-manager in the PulseAudio server in order to rename devices"
-msgstr "Du må lasta modulen «module-device-manager» på PulseAudio-tenaren for å kunna endra namn på einingar"
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"Du må lasta modulen «module-device-manager» på PulseAudio-tenaren for å "
+"kunna endra namn på einingar"
 
-#: ../src/devicewidget.cc:274
+#: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "Feil ved pa_ext_device_manager_write()-kall"
 
@@ -409,24 +420,24 @@ msgstr "Feil ved pa_ext_device_manager_write()-kall"
 msgid "Error reading config file %s: %s"
 msgstr "Feil ved lesing av oppsettfil %s: %s"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
 msgstr "Feil ved lagring av innstillingar"
 
-#: ../src/mainwindow.cc:265
+#: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Feil ved lagring av oppsettfila %s"
 
-#: ../src/mainwindow.cc:323
+#: ../src/mainwindow.cc:321
 msgid " (plugged in)"
 msgstr " (kopla til)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
 msgstr " (ikkje tilgjengeleg)"
 
-#: ../src/mainwindow.cc:329 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
 msgstr " (kopla frå)"
 
@@ -447,14 +458,18 @@ msgid "Failed to connect monitoring stream"
 msgstr "Klarte ikkje kopla til avlyttingsstraum"
 
 #: ../src/mainwindow.cc:759
-msgid "Ignoring sink-input due to it being designated as an event and thus handled by the Event widget"
-msgstr "Ignorerer sluk-inneining, då ho er merkt som ei hending, og såleis handtert av hendingselementet"
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"Ignorerer sluk-inneining, då ho er merkt som ei hending, og såleis handtert "
+"av hendingselementet"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
 msgstr "Systemlydar"
 
-#: ../src/mainwindow.cc:1270
+#: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Koplar til PulseAudio. Vent litt …"
 
@@ -470,25 +485,21 @@ msgstr "på"
 msgid "Terminate Playback"
 msgstr "Avslutt avspeling"
 
-#: ../src/sinkinputwidget.cc:62
+#: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Ukjend uteining"
 
-#: ../src/sinkinputwidget.cc:73
+#: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "Feil ved pa_context_set_sink_input_volume()-kall"
 
-#: ../src/sinkinputwidget.cc:88
+#: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "Feil ved pa_context_set_sink_input_mute()-kall"
 
-#: ../src/sinkinputwidget.cc:98
+#: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "Feil ved pa_context_kill_sink_input()-kall"
-
-#: ../src/sinkinputwidget.cc:134
-msgid "pa_context_move_sink_input_by_index() failed"
-msgstr "Feil ved pa_context_move_sink_input_by_index()-kall"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
@@ -510,7 +521,7 @@ msgstr "Feil ved pa_context_set_default_sink()-kall"
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "Feil ved pa_context_set_sink_port_by_index()-kall"
 
-#: ../src/sinkwidget.cc:202
+#: ../src/sinkwidget.cc:203
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "Feil ved pa_ext_device_restore_save_sink_formats()-kall"
 
@@ -522,25 +533,21 @@ msgstr "frå"
 msgid "Terminate Recording"
 msgstr "Avslutt opptak"
 
-#: ../src/sourceoutputwidget.cc:68
+#: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Ukjend inneining"
 
-#: ../src/sourceoutputwidget.cc:80
+#: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "Feil ved pa_context_set_source_output_volume()-kall"
 
-#: ../src/sourceoutputwidget.cc:95
+#: ../src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "Feil ved pa_context_set_source_output_mute()-kall"
 
-#: ../src/sourceoutputwidget.cc:106
+#: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "Feil ved pa_context_kill_source_output()-kall"
-
-#: ../src/sourceoutputwidget.cc:143
-msgid "pa_context_move_source_output_by_index() failed"
-msgstr "Feil ved pa_context_move_source_output_by_index()-kall"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
@@ -558,26 +565,35 @@ msgstr "Feil ved pa_context_set_default_source()-kall"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "Feil ved pa_context_set_source_port_by_index()-kall"
 
-#: ../src/streamwidget.cc:46
+#: ../src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Avslutt"
 
-#: ../src/pavuapplication.cc:145
+#: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
 msgstr "Vel oppgitt fane ved start."
 
-#: ../src/pavuapplication.cc:146
+#: ../src/pavuapplication.cc:153
 msgid "number"
 msgstr "tal"
 
-#: ../src/pavuapplication.cc:151
+#: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Prøv på nytt kvart femte sekund dersom PA vert avslutta."
 
-#: ../src/pavuapplication.cc:156
+#: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
 msgstr "Maksimer vindauget."
 
-#: ../src/pavuapplication.cc:161
+#: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Vis versjonsinformasjon."
+
+#~ msgid "Device"
+#~ msgstr "Eining"
+
+#~ msgid "pa_context_move_sink_input_by_index() failed"
+#~ msgstr "Feil ved pa_context_move_sink_input_by_index()-kall"
+
+#~ msgid "pa_context_move_source_output_by_index() failed"
+#~ msgstr "Feil ved pa_context_move_source_output_by_index()-kall"
