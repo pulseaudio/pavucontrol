@@ -2,23 +2,25 @@
 # Dutch translation of PulseAudio volume control
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pavucontrol package.
-#
+# 
 # Reinout van Schouwen <reinouts@gnome.org>, 2008.
 # R.E. van der Luit <nippur@fedoraproject.org>, 2009.
-# Geert Warrink <geert.warrink@onsnet.nu>, 2009.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.nl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2009-09-10 16:13+0200\n"
+"PO-Revision-Date: 2020-02-25 16:38+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
-"Language-Team: nl <nl@li.org>\n"
-"Language: \n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding:  \n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -36,16 +38,17 @@ msgstr "Geluidsniveau aanpassen"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"pavucontrol;Microfoon;Volume;Vervagen;Balans;Koptelefoon;Audio;Mixer;Output;I"
+"nput;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>linksvoor</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -56,10 +59,8 @@ msgid "<b>Profile:</b>"
 msgstr "<b>Profiel:</b>"
 
 #: ../src/pavucontrol.glade.h:6
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Apparaat"
+msgstr "Apparaattitel"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
@@ -79,95 +80,83 @@ msgstr "<b>Poort:</b>"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC3"
-msgstr ""
+msgstr "AC3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "EAC3"
-msgstr ""
+msgstr "EAC3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Latentie offset:</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "Advanced"
-msgstr ""
+msgstr "Geavanceerd"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "All Streams"
-msgstr ""
+msgstr "Alle stromen"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Applications"
-msgstr ""
+msgstr "Toepassingen"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Virtuele stromen"
 
 #: ../src/pavucontrol.glade.h:23
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "Uit_voerapparaten"
+msgstr "Alle uitvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Uit_voerapparaten"
+msgstr "Hardware uitvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Uit_voerapparaten"
+msgstr "Virtuele uitvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "I_nvoerapparaten"
+msgstr "Alle invoerapparaten"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Alles behalve monitoren"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "I_nvoerapparaten"
+msgstr "Hardware invoerapparaten"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "I_nvoerapparaten"
+msgstr "Virtuele invoerapparaten"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Monitors"
-msgstr ""
+msgstr "Monitoren"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "<i>No application is currently playing audio.</i>"
@@ -219,7 +208,7 @@ msgstr "<i>Geen kaarten beschikbaar om te configureren</i>"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "Show volume meters"
-msgstr ""
+msgstr "Toon volumemeters"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
@@ -227,7 +216,7 @@ msgstr "_Configuratie"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Apparaatnaam wijzigen in:</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
@@ -275,28 +264,22 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() mislukte"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Stream_restore-uitbreiding initialiseren mislukte: %s"
+msgstr "Apparaat_restore-uitbreiding initialiseren mislukte: %s"
 
 #: ../src/pavucontrol.cc:285
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() mislukte"
+msgstr "pa_ext_device_restore_read_sink_formats() mislukte"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Stream_restore-uitbreiding initialiseren mislukte: %s"
+msgstr "Apparaat_manager-uitbreiding initialiseren mislukte: %s"
 
 #: ../src/pavucontrol.cc:322
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "pa_ext_stream_restore_read() mislukte"
+msgstr "pa_ext_device_manager_read() mislukte"
 
 #: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -351,10 +334,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() mislukte"
 
 #: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Verbinding is mislukt"
+msgstr "Verbinding is mislukt, opnieuw verbinden"
 
 #: ../src/pavucontrol.cc:605
 msgid ""
@@ -369,6 +350,17 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Verbinding met PulseAudio is mislukt. Automatisch opnieuw proberen over 5 "
+"seconden\n"
+"\n"
+"In dit geval is dit waarschijnlijk omdat PULSE_SERVER in de Environment / "
+"X11-hoofdvenster eigenschappen\n"
+"of standaardserver in client.conf verkeerd is geconfigureerd.\n"
+"Deze situatie kan ook optreden wanneer PulseAudio crashte en verouderde "
+"details in het X11-hoofdvenster achterliet.\n"
+"Als dit het geval is, zou PulseAudio opnieuw automatisch moeten verschijnen, "
+"of als dit niet is geconfigureerd, zou je\n"
+"start-pulseaudio-x11 handmatig moeten uitvoeren."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -377,17 +369,17 @@ msgstr "pa_context_set_card_profile_by_index() mislukte"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -398,10 +390,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Min</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -409,55 +399,53 @@ msgstr "<small><i>Basis</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Apparaatnaam wijzigen..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() mislukte"
+msgstr "pa_context_set_port_latency_offset() mislukte"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Sorry, maar apparaat hernoemen wordt niet ondersteund."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Je moet module-device-manager in de PulseAudio-server laden om apparaten te "
+"hernoemen"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() mislukte"
+msgstr "pa_ext_device_manager_write() mislukte"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Fout bij het lezen van configuratiebestand %s: %s"
 
 #: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Fout bij het opslaan van voorkeuren"
 
 #: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Fout bij het schrijven van configuratiebestand %s"
 
 #: ../src/mainwindow.cc:321
 msgid " (plugged in)"
-msgstr ""
+msgstr " (ingeplugd)"
 
 #: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
-msgstr ""
+msgstr " (niet beschikbaar)"
 
 #: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
-msgstr ""
+msgstr " .(stekker uitgetrokken)"
 
 #: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
@@ -480,6 +468,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Negeren van sink-invoer omdat deze wordt aangemerkt als een gebeurtenis en "
+"dus wordt afgehandeld door de gebeurteniswidget"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
@@ -487,7 +477,7 @@ msgstr "Systeemgeluiden"
 
 #: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Verbinding maken met PulseAudio. Wacht alsjeblieft..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -538,10 +528,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() mislukte"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() mislukte"
+msgstr "pa_ext_device_restore_save_sink_formats() mislukte"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -556,16 +544,12 @@ msgid "Unknown input"
 msgstr "Onbekende input"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "pa_context_get_source_output_info_list() mislukte"
+msgstr "pa_context_set_source_output_volume() mislukte"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "pa_context_get_source_output_info_list() mislukte"
+msgstr "pa_context_set_source_output_mute() mislukte"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -588,29 +572,28 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() mislukte"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "Afspelen afbreken"
+msgstr "Beëindigen"
 
 #: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Selecteer een specifiek tabblad bij het laden."
 
 #: ../src/pavuapplication.cc:153
 msgid "number"
-msgstr ""
+msgstr "nummer"
 
 #: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Probeer het voor altijd opnieuw als pa stopt (om de 5 seconden)."
 
 #: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
-msgstr ""
+msgstr "Maximaliseer het venster."
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr ""
+msgstr "Toon versie."
 
 #~ msgid "50%"
 #~ msgstr "50%"
