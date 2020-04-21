@@ -1,21 +1,23 @@
 # Slovak translations for pavucontrol package
 # This file is distributed under the same license as the pavucontrol package.
-#
+# 
 # Ondrej Šulek <feonsu@gmail.com>, 2008, 2009.
+# Ondrej Sulek <feonsu@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2009-09-20 18:09+0200\n"
-"Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
-"Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
+"PO-Revision-Date: 2020-03-20 11:38+0000\n"
+"Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
+"Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural= (n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -33,16 +35,17 @@ msgstr "Upraviť úroveň hlasitosti"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"pavucontrol;Mikrofón;Hlasitosť;Slabnutie;Vyváženie;Slúchadlá;Zvuk;Zmiešavač;V"
+"ýstup;Vstup;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>ľavý-predný</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Minimum</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -53,10 +56,8 @@ msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:6
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Zariadenie"
+msgstr "Názov zariadenia"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
@@ -76,95 +77,83 @@ msgstr "<b>Port:</b>"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC3"
-msgstr ""
+msgstr "AC3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "EAC3"
-msgstr ""
+msgstr "EAC3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Posun latencie:</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "Advanced"
-msgstr ""
+msgstr "Rozšírené"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "All Streams"
-msgstr ""
+msgstr "Všetky prúdy"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Applications"
-msgstr ""
+msgstr "Aplikácie"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Virtuálne prúdy"
 
 #: ../src/pavucontrol.glade.h:23
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "_Výstupné zariadenia"
+msgstr "Všetky výstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "_Výstupné zariadenia"
+msgstr "Hardvérové výstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "_Výstupné zariadenia"
+msgstr "Virtuálne výstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "Vstupné zar_iadenia"
+msgstr "Všetky vstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Všetky okrem monitorov"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "Vstupné zar_iadenia"
+msgstr "Hardvérové vstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "Vstupné zar_iadenia"
+msgstr "Virtuálne vstupné zariadenia"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Monitors"
-msgstr ""
+msgstr "Monitory"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "<i>No application is currently playing audio.</i>"
@@ -216,7 +205,7 @@ msgstr "<i>Žiadne karty nie sú dostupné na konfiguráciu</i>"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "Show volume meters"
-msgstr ""
+msgstr "Zobraziť stupnice hlasitosti"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
@@ -224,7 +213,7 @@ msgstr "_Nastavenie"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Premenovať zariadenie na:</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
@@ -272,28 +261,22 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() zlyhal"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Nepodarilo sa inicializovať stream_restore rozšírenie: %s"
+msgstr "Nepodarilo sa inicializovať rozšírenie obnovenie zariadenia: %s"
 
 #: ../src/pavucontrol.cc:285
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() zlyhal"
+msgstr "pa_ext_device_restore_read_sink_formats() zhyhal"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Nepodarilo sa inicializovať stream_restore rozšírenie: %s"
+msgstr "Nepodarilo sa inicializovať rozšírenie správca zariadenia: %s"
 
 #: ../src/pavucontrol.cc:322
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "pa_ext_stream_restore_read() zlyhal"
+msgstr "pa_ext_device_manager_read() zlyhal"
 
 #: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -348,10 +331,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() zlyhal"
 
 #: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Spojenie zlyhalo"
+msgstr "Pripojenie zlyhalo, pokus o znovu pripojenie"
 
 #: ../src/pavucontrol.cc:605
 msgid ""
@@ -366,6 +347,16 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Pripojenie k PulseAudio zlyhalo. Automatický pokus za 5s\n"
+"\n"
+"V tomto prípade je to pravdepodobne spôsobené chybnou konfiguráciou "
+"PULSE_SERVER vo vlastnostiach Prostredia/X11 koreňového okna\n"
+"alebo default-server v client.conf.\n"
+"Takáto situácia môže nastať aj v prípade, že PulseAudio zhavarovalo a "
+"zostali v X11 koreňovom okne zastarané informácie.\n"
+"Ak je toto ten prípad, potom by sa malo PulseAudio automaticky spustiť "
+"znovu, alebo ak to nie je nakonfigurované, musíte \n"
+"spustiť start-pulseaudio-x11 ručne."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -374,17 +365,17 @@ msgstr "pa_context_set_card_profile_by_index() zlyhal"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -395,10 +386,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Minimum</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -406,55 +395,53 @@ msgstr "<small><i>Základ</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Premenovať zariadenie..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() zlyhal"
+msgstr "pa_context_set_port_latency_offset() zlyhal"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Prepáčte, ale premenovanie zariadenia nie je podporované."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Ak chcete premenovať zariadenia musíte načítať module-device-manager v "
+"PulseAudio serveri"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() zlyhal"
+msgstr "pa_ext_device_manager_write() zlyhal"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Chyba pri čítaní konfiguračného súboru %s:%s"
 
 #: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Chyba pri ukladaní predvolieb"
 
 #: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Chyba pri zapisovaní konfiguračného súboru %s"
 
 #: ../src/mainwindow.cc:321
 msgid " (plugged in)"
-msgstr ""
+msgstr " (pripojené)"
 
 #: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
-msgstr ""
+msgstr " (nedostupné)"
 
 #: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
-msgstr ""
+msgstr " (odpojené)"
 
 #: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
@@ -477,6 +464,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ignoruje sa sink-input pretože je navrhnutý ako udalosť a teda spracovaný "
+"widgetom udalosť"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
@@ -484,7 +473,7 @@ msgstr "Systémové zvuky"
 
 #: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Vytvára sa pripojenie k PulseAudio, čakajte..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -535,10 +524,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() zlyhal"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() zlyhal"
+msgstr "pa_ext_device_restore_save_sink_formats() zlyhal"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -553,16 +540,12 @@ msgid "Unknown input"
 msgstr "Neznámy vstup"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "pa_context_get_source_output_info_list() zlyhal"
+msgstr "pa_context_set_source_output_volume() zlyhal"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "pa_context_get_source_output_info_list() zlyhal"
+msgstr "pa_context_set_source_output_mute() zlyhal"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -585,29 +568,28 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() zlyhal"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "Ukončiť prehrávanie"
+msgstr "Ukončiť"
 
 #: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Vyberie konkrétnu záložku pri načítaní."
 
 #: ../src/pavuapplication.cc:153
 msgid "number"
-msgstr ""
+msgstr "číslo"
 
 #: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Opakovať navždy ak pa skončí (každých 5 sekúnd)."
 
 #: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
-msgstr ""
+msgstr "Maximalizovať okno."
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr ""
+msgstr "Zobraziť verziu."
 
 #~ msgid "50%"
 #~ msgstr "50%"
