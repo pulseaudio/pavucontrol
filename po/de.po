@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the pavucontrol package.
 # Fabian Affolter <fab@fedoraproject.org>, 2008.
 # Florian Steinel <fsteinel@fedoraproject.org>, 2008
-#
+# Tobias Weise <tobias.weise@web.de>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2018-08-29 21:36+0200\n"
-"Last-Translator: Thomas Lange <thomas-lange2@gmx.de>\n"
-"Language-Team: German <fedora-trans-de@redhat.com>\n"
+"PO-Revision-Date: 2020-04-18 22:40+0000\n"
+"Last-Translator: Tobias Weise <tobias.weise@web.de>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.1\n"
 "X-Poedit-Language: German\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
@@ -363,21 +365,19 @@ msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() gescheitert"
 
 #: ../src/channelwidget.cc:101
-#, fuzzy, c-format
-#| msgid "<small>100% (0dB)</small>"
+#, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
-#, fuzzy, c-format
-#| msgid "<small>100% (0dB)</small>"
+#, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -388,10 +388,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>100% (0dB)</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
