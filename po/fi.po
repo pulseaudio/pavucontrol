@@ -5,19 +5,22 @@
 # Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2009
 # Tuure Savuoja <tuure+oss@tuuresavuoja.net>, 2018
 # Ammuu5 <ammuu5@tutanota.com>, 2019
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2019-11-21 04:28+0200\n"
-"Last-Translator: Ammuu5\n"
-"Language-Team: Finnish <laatu@lokalisointi.org>\n"
+"PO-Revision-Date: 2020-03-22 20:38+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -187,7 +190,7 @@ msgstr "Ul_ostulolaitteet"
 
 #: ../src/pavucontrol.glade.h:40
 msgid "<i>No input devices available</i>"
-msgstr ""
+msgstr "<i>Sisääntulolaitteita ei ole saatavilla</i>"
 
 #: ../src/pavucontrol.glade.h:41
 msgid "<b>Sho_w:</b>"
@@ -211,7 +214,7 @@ msgstr "_Asetukset"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Muuta laitteen nimeksi:</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
@@ -406,16 +409,16 @@ msgstr "pa_ext_device_manager_write() epäonnistui"
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Virhe luettaessa asetustiedostoa %s: %s"
 
 #: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Virhe asetuksia tallennettaessa"
 
 #: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Virhe kirjoittaessa asetustiedostoon %s"
 
 #: ../src/mainwindow.cc:321
 msgid " (plugged in)"
@@ -457,7 +460,7 @@ msgstr "Järjestelmän äänet"
 
 #: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Muodostetaan yhteyttä PulseAudioon, odota hetki..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
