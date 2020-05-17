@@ -442,7 +442,7 @@
                             </child>
                             <child>
                               <object class="GtkCheckButton" id="encodingFormatAC3">
-                                <property name="label" translatable="yes">AC3</property>
+                                <property name="label" translatable="yes">AC-3</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
@@ -468,7 +468,7 @@
                             </child>
                             <child>
                               <object class="GtkCheckButton" id="encodingFormatEAC3">
-                                <property name="label" translatable="yes">EAC3</property>
+                                <property name="label" translatable="yes">E-AC-3</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
