@@ -34,8 +34,8 @@ msgstr "Juster lydstyrken"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;Mikrofon;Lydstyrke;Uttoning;Balanse;Hodesett;Hodetelefoner;Lyd;Mi"
-"kser;Utgang;Inngang;"
+"pavucontrol;Mikrofon;Lydstyrke;Uttoning;Balanse;Hodesett;Hodetelefoner;Lyd;"
+"Mikser;Utgang;Inngang;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -257,7 +257,7 @@ msgid "Server info callback failure"
 msgstr "Kunne ikke utføre tilbakekall av tjenerinfo"
 
 #: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr ""
 "Klarte ikke å igangsette programtillegget for lydstrømsgjenoppretting: %s"
@@ -267,7 +267,7 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() mislyktes"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Klarte ikke å igangsette programtillegget for enhetsgjenoppretting: %s"
 
@@ -277,7 +277,7 @@ msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() mislyktes"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Klarte ikke å igangsette enhetshåndteringstillegg: %s"
 

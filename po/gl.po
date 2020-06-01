@@ -34,8 +34,8 @@ msgstr "Axustar o nivel de volume"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;Micrófono;Volume;Esvaece;Balance;Auriculares;Son;Mesturador;Produ"
-"ción;Entrada;"
+"pavucontrol;Micrófono;Volume;Esvaece;Balance;Auriculares;Son;Mesturador;"
+"Produción;Entrada;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"

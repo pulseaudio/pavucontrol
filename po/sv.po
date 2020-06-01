@@ -37,8 +37,8 @@ msgstr "Justera volymnivån"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;Mikrofon;Volym;Uttoning;Balans;Hörlur;Audio;Mixer;Utmatning;Inmat"
-"ning;"
+"pavucontrol;Mikrofon;Volym;Uttoning;Balans;Hörlur;Audio;Mixer;Utmatning;"
+"Inmatning;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"

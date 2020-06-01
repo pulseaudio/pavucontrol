@@ -1,6 +1,6 @@
 # Slovak translations for pavucontrol package
 # This file is distributed under the same license as the pavucontrol package.
-# 
+#
 # Ondrej Šulek <feonsu@gmail.com>, 2008, 2009.
 # Ondrej Sulek <feonsu@gmail.com>, 2020.
 msgid ""
@@ -35,8 +35,8 @@ msgstr "Upraviť úroveň hlasitosti"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;Mikrofón;Hlasitosť;Slabnutie;Vyváženie;Slúchadlá;Zvuk;Zmiešavač;V"
-"ýstup;Vstup;"
+"pavucontrol;Mikrofón;Hlasitosť;Slabnutie;Vyváženie;Slúchadlá;Zvuk;Zmiešavač;"
+"Výstup;Vstup;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
