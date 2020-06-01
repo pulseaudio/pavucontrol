@@ -4,21 +4,22 @@
 #
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2008.
 # Gökhan Gökkaya <wirelessanten@gmail.com>, 2019
-#
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2019-11-28 18:12+0300\n"
-"Last-Translator: Gökhan Gökkaya <wirelessanten@gmail.com>\n"
-"Language-Team: Turkish <tr@li.org>\n"
+"PO-Revision-Date: 2020-05-13 20:40+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -254,7 +255,7 @@ msgstr "Sunucu bilgisi geri-çağırma başarısız"
 #: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "akış sıfırlama eklentisini başlatma başarısız: %s"
+msgstr "Akış sıfırlama eklentisini başlatma başarısız: %s"
 
 #: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
@@ -263,7 +264,7 @@ msgstr "pa_ext_stream_restore_read() başarısız"
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "aygıt sıfırlama eklentisini başlatma başarısız: %s"
+msgstr "Aygıt sıfırlama eklentisini başlatma başarısız: %s"
 
 #: ../src/pavucontrol.cc:285
 msgid "pa_ext_device_restore_read_sink_formats() failed"
@@ -351,7 +352,12 @@ msgstr ""
 "\n"
 "Bu durum, Ortam/X11 Kök Pencere Özellikleri'ndeki PULSE_SERVER veya \n"
 "client.conf dosyasındaki default-server yanlış yapılandırılmasından kaynaklı "
-"olabilir."
+"olabilir.\n"
+"Bu durum, PulseAudio çöktüğünde ve X11 Kök Penceresinde eski ayrıntıları "
+"bıraktığında da ortaya çıkabilir.\n"
+"Eğer öyleyse, PulseAudio otomatik olarak tekrar başlayacaktır, veya bu "
+"yapılandırılmamışsa start-pulseaudio-x11\n"
+"komutunu elle çalıştırmalısınız."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -415,7 +421,7 @@ msgstr "pa_ext_device_manager_write() başarısız"
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr "Yapılandırma %s dosyası okuma hatası: %s"
+msgstr "%s yapılandırma dosyasını okurken hata oluştu: %s"
 
 #: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
@@ -424,7 +430,7 @@ msgstr "Tercihler kaydedilirken hata oluştu"
 #: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
-msgstr "Yapılandırma dosyası %s için yazma hatası"
+msgstr "%s yapılandırma dosyası yazılırken hata oluştu"
 
 #: ../src/mainwindow.cc:321
 msgid " (plugged in)"
@@ -460,7 +466,7 @@ msgid ""
 "by the Event widget"
 msgstr ""
 "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi "
-"nedeniyle sink-girişi yoksayılıyor"
+"nedeniyle sink-girişi yok sayılıyor"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
@@ -504,7 +510,7 @@ msgstr "pa_context_set_sink_volume_by_index() başarısız"
 
 #: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
-msgstr "Ses Şiddeti Denetimi Geri Besleme Sesi"
+msgstr "Ses Denetimi Geri Besleme Sesi"
 
 #: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
