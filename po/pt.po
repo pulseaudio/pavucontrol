@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: 2020-05-26 13:21+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-05-27 14:40+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/pt/>\n"
 "Language: pt\n"
@@ -34,6 +34,8 @@ msgstr "Ajustar o nível do volume"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"controlo de pavu;Microfone;Volume;Fade;Balanço;Auscultadores;Áudio;Misturador"
+";Saída;Entrada;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -46,17 +48,15 @@ msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
-msgstr "Nome da placa"
+msgstr "Nome da Placa"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "<b>Profile:</b>"
-msgstr "<b>Perfil</b>"
+msgstr "<b>Perfil:</b>"
 
 #: ../src/pavucontrol.glade.h:6
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Dispositivos"
+msgstr "Título do Dispositivo"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
@@ -64,27 +64,27 @@ msgstr "Silenciar áudio"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Lock channels together"
-msgstr "Trancar juntos os canais"
+msgstr "Bloquear ambos os canais"
 
 #: ../src/pavucontrol.glade.h:9
 msgid "Set as fallback"
-msgstr "Definir como solução de recurso"
+msgstr "Definir como ''fallback''"
 
 #: ../src/pavucontrol.glade.h:10
 msgid "<b>Port:</b>"
-msgstr "<b>Porto:</b>"
+msgstr "<b>Porta:</b>"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC3"
-msgstr ""
+msgstr "AC3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "EAC3"
@@ -135,50 +135,44 @@ msgid "Virtual Output Devices"
 msgstr "Dispositivos de Saída Virtuais"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "Dispositivos de _Entrada"
+msgstr "Todos os Dispositivos de Entrada"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Todos, Exceto Monitores"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "Dispositivos de _Entrada"
+msgstr "Dispositivos de Entrada de Hardware"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "Dispositivos de _Entrada"
+msgstr "Dispositivos de Entrada Virtuais"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Monitors"
-msgstr ""
+msgstr "Monitores"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Nenhuma aplicação está actualmente a reproduzir áudio.</i>"
+msgstr "<i>Atualmente, não está nenhuma aplicação a reproduzir áudio.</i>"
 
 #: ../src/pavucontrol.glade.h:33
 msgid "<b>_Show:</b>"
-msgstr "<b>_Apresentar</b>"
+msgstr "<b>_Mostrar:</b>"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "_Playback"
-msgstr "_Reprodução"
+msgstr "_Reproduzir"
 
 #: ../src/pavucontrol.glade.h:35
 msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Nenhuma aplicação está actualmente a gravar áudio.</i>"
+msgstr "<i>Atualmente, não está nenhuma aplicação a gravar áudio.</i>"
 
 #: ../src/pavucontrol.glade.h:36
 msgid "_Recording"
-msgstr "A _Gravar"
+msgstr "_Gravar"
 
 #: ../src/pavucontrol.glade.h:37
 msgid "<i>No output devices available</i>"
@@ -186,7 +180,7 @@ msgstr "<i>Não está disponível nenhum dispositivo de saída</i>"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "<b>S_how:</b>"
-msgstr "<b>A_presentar:</b>"
+msgstr "<b>M_ostrar:</b>"
 
 #: ../src/pavucontrol.glade.h:39
 msgid "_Output Devices"
@@ -198,7 +192,7 @@ msgstr "<i>Não está disponível nenhum dispositivo de entrada</i>"
 
 #: ../src/pavucontrol.glade.h:41
 msgid "<b>Sho_w:</b>"
-msgstr "<b>_Apresentar:</b>"
+msgstr "<b>_Mostrar:</b>"
 
 #: ../src/pavucontrol.glade.h:42
 msgid "_Input Devices"
@@ -210,7 +204,7 @@ msgstr "<i>Não está disponível nenhuma placa para configuração</i>"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "Show volume meters"
-msgstr ""
+msgstr "Mostrar medidores de volume"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
@@ -218,48 +212,48 @@ msgstr "_Configuração"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Renomear dispositivo para:</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
-msgstr "Título do fluxo"
+msgstr "Título da Transmissão"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "direction"
-msgstr "direcção"
+msgstr "direção"
 
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
-msgstr "Falha no callback da placa"
+msgstr "Falha na ''callback'' da placa"
 
 #: ../src/pavucontrol.cc:102
 msgid "Sink callback failure"
-msgstr "Sincronização 'callback' falhou"
+msgstr "Falha na sincronização de ''callback''"
 
 #: ../src/pavucontrol.cc:126
 msgid "Source callback failure"
-msgstr "Falhou 'callback' do código"
+msgstr "Falha na ''callback'' da fonte"
 
 #: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
-msgstr "Falhou entrada de sincronização 'callback'"
+msgstr "Falha na ''callback'' de entrada"
 
 #: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
-msgstr "Falhou 'callback' de saída"
+msgstr "Falha na ''callback'' de saída da fonte"
 
 #: ../src/pavucontrol.cc:194
 msgid "Client callback failure"
-msgstr "Falhou 'callback' do cliente"
+msgstr "Falha na ''callback'' de cliente"
 
 #: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
-msgstr "Falha de ''callback'' da informação do servidor"
+msgstr "Falha na ''callback'' da informação do servidor"
 
 #: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "Falha ao inicializar a extensão de \"stream_restore\": %s"
+msgstr "Não foi possível inicializar a extensão de \"stream_restore\": %s"
 
 #: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
@@ -271,22 +265,17 @@ msgid "Failed to initialize device restore extension: %s"
 msgstr "Não foi possível inicializar a extensão de restauro do sistema: %s"
 
 #: ../src/pavucontrol.cc:285
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() falhou"
+msgstr "pa_ext_device_restore_read_sink_formats() falhou"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Falha ao inicializar a extensão de \"stream_restore\": %s"
+msgstr "Não foi possível inicializar a extensão do gestor de dispositivos: %s"
 
 #: ../src/pavucontrol.cc:322
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "pa_ext_stream_restore_read() falhou"
+msgstr "pa_ext_device_manager_read() falhou"
 
 #: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -341,10 +330,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() falhou"
 
 #: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Ligação falhou"
+msgstr "A ligação falhou, a tentar religar"
 
 #: ../src/pavucontrol.cc:605
 msgid ""
@@ -359,6 +346,17 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"A ligação a PulseAudio falhou. Tentrar automaticamente em 5s\n"
+"\n"
+"Neste caso, isto provavelmente ocorre porque PULSE_SERVER nas Propriedades "
+"da Janela Raiz\n"
+" de Environment / X11 ou o servidor predefinido no client.conf está mal "
+"configurado.\n"
+"Esta situação também pode acontecer quando o PulseAudio crachou e deixou "
+"detalhes obsoletos na\n"
+"Janela Raiz do X11. Se for este o caso, então PulseAudio deverá "
+"''autospawn'' novamente, ou se não\n"
+"estiver configurado deveria executar manualmente start-pulseaudio-x11."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -367,17 +365,17 @@ msgstr "pa_context_set_card_profile_by_index() falhou"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -385,13 +383,11 @@ msgstr "<small>Silêncio</small>"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>Mín.</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -399,77 +395,77 @@ msgstr "<small><i>Baixos</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Renomear Dispositivo..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() falhou"
+msgstr "pa_context_set_port_latency_offset() falhou"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Desculpe, mas a renomeação do dispositivo não é suportada."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Precisa de carregar o gestor-de-dispositivos-do-módulo no servidor de "
+"PulseAudio para poder renomear os dispositivos"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() falhou"
+msgstr "pa_ext_device_manager_write() falhou"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Erro ao ler o ficheiro de configuração %s: %s"
 
 #: ../src/mainwindow.cc:249
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Erro ao guardar as preferências"
 
 #: ../src/mainwindow.cc:257
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Erro ao gravar o ficheiro de configuração %s"
 
 #: ../src/mainwindow.cc:321
 msgid " (plugged in)"
-msgstr ""
+msgstr " (ligado)"
 
 #: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
 msgid " (unavailable)"
-msgstr ""
+msgstr " (indisponível)"
 
 #: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
 msgid " (unplugged)"
-msgstr ""
+msgstr " (desligado)"
 
 #: ../src/mainwindow.cc:563
 msgid "Failed to read data from stream"
-msgstr "Falha ao ler dados do fluxo"
+msgstr "Não foi possível ler dados da transmissão"
 
 #: ../src/mainwindow.cc:607
 msgid "Peak detect"
-msgstr "Detectado pico"
+msgstr "Detetado pico"
 
 #: ../src/mainwindow.cc:608
 msgid "Failed to create monitoring stream"
-msgstr "Falha ao criar um stream de monitorização"
+msgstr "Não foi possível criar a transmissão de monitorização"
 
 #: ../src/mainwindow.cc:623
 msgid "Failed to connect monitoring stream"
-msgstr "Falha ao ligar o fluxo de monitorização"
+msgstr "Não foi possível ao ligar à transmissão de monitorização"
 
 #: ../src/mainwindow.cc:759
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"A ignorar a entrada do coletor devido ao facto de ser designada como um "
+"evento e, portanto, manipulada pelo ''widget'' Evento"
 
 #: ../src/mainwindow.cc:934
 msgid "System Sounds"
@@ -477,7 +473,7 @@ msgstr "Sons do Sistema"
 
 #: ../src/mainwindow.cc:1280
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "A estabelecer a ligação a PulseAudio. Por favor, aguarde..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -489,11 +485,11 @@ msgstr "ligado"
 
 #: ../src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
-msgstr "Terminar a reprodução"
+msgstr "Terminar Reprodução"
 
 #: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
-msgstr "Resultado desconhecido"
+msgstr "Saída desconhecida"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
@@ -513,7 +509,7 @@ msgstr "pa_context_set_sink_volume_by_index() falhou"
 
 #: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
-msgstr "Controlo de Volume Som Feedbak"
+msgstr "Controlo de Volume do Som de \"Feedbak\""
 
 #: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
@@ -528,10 +524,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() falhou"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() falhou"
+msgstr "pa_ext_device_restore_save_sink_formats() falhou"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -539,23 +533,19 @@ msgstr "de"
 
 #: ../src/sourceoutputwidget.cc:38
 msgid "Terminate Recording"
-msgstr "Terminar a Gravação"
+msgstr "Terminar Gravação"
 
 #: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Entrada desconhecida"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "pa_context_get_source_output_info_list() falhou"
+msgstr "pa_context_set_source_output_volume() falhou"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "pa_context_get_source_output_info_list() falhou"
+msgstr "pa_context_set_source_output_mute() falhou"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -578,29 +568,28 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() falhou"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "Terminar a reprodução"
+msgstr "Terminar"
 
 #: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Selecione um separador específico ao carregar."
 
 #: ../src/pavuapplication.cc:153
 msgid "number"
-msgstr ""
+msgstr "número"
 
 #: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Repita para sempre se o \"pa\" for encerrado (a cada 5 segundos)."
 
 #: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
-msgstr ""
+msgstr "Maximize a janela."
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr "Mostrar versão"
+msgstr "Mostrar versão."
 
 #~ msgid "50%"
 #~ msgstr "50%"
