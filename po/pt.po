@@ -1,11 +1,12 @@
 # Manuela Silva <mmsrs@sky.com>, 2020.
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
 "PO-Revision-Date: 2020-05-26 13:21+0000\n"
-"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/pt/>\n"
 "Language: pt\n"
@@ -599,7 +600,7 @@ msgstr ""
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr ""
+msgstr "Mostrar versão"
 
 #~ msgid "50%"
 #~ msgstr "50%"
