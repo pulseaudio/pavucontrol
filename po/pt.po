@@ -1,15 +1,19 @@
+# Manuela Silva <mmsrs@sky.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 09:18+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Rui Gouveia <rui.gouveia@globaltek.pt>\n"
-"Language-Team: pt <fedora-trans-pt@redhat.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-05-26 13:21+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
+"Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.0.4\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 
@@ -35,10 +39,9 @@ msgid "<b>left-front</b>"
 msgstr "<b>frontal esquerda</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -84,57 +87,51 @@ msgstr ""
 
 #: ../src/pavucontrol.glade.h:14
 msgid "EAC3"
-msgstr ""
+msgstr "EAC3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Offset da latência:</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "Advanced"
-msgstr ""
+msgstr "Avançado"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "All Streams"
-msgstr ""
+msgstr "Todas as Transmissões"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Transmissões Virtuais"
 
 #: ../src/pavucontrol.glade.h:23
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "Dispositivos de _Saída"
+msgstr "Todos os Dispositivos de Saída"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Dispositivos de _Saída"
+msgstr "Dispositivos de Saída de Hardware"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Dispositivos de _Saída"
+msgstr "Dispositivos de Saída Virtuais"
 
 #: ../src/pavucontrol.glade.h:26
 #, fuzzy
@@ -244,7 +241,7 @@ msgstr "Falhou 'callback' do código"
 
 #: ../src/pavucontrol.cc:145
 msgid "Sink input callback failure"
-msgstr "Falhou entrada de sincronização 'callback' "
+msgstr "Falhou entrada de sincronização 'callback'"
 
 #: ../src/pavucontrol.cc:164
 msgid "Source output callback failure"
@@ -256,7 +253,7 @@ msgstr "Falhou 'callback' do cliente"
 
 #: ../src/pavucontrol.cc:210
 msgid "Server info callback failure"
-msgstr " Falhou 'callback' de informação do servidor"
+msgstr "Falha de ''callback'' da informação do servidor"
 
 #: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
@@ -268,10 +265,9 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() falhou"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Falha ao inicializar a extensão de \"stream_restore\": %s"
+msgstr "Não foi possível inicializar a extensão de restauro do sistema: %s"
 
 #: ../src/pavucontrol.cc:285
 #, fuzzy
