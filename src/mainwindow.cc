@@ -188,6 +188,7 @@ MainWindow* MainWindow::create(bool maximize) {
     x->add_from_file(GLADE_FILE, "liststore4");
     x->add_from_file(GLADE_FILE, "mainWindow");
     x->get_widget_derived("mainWindow", w);
+    w->get_style_context()->add_class("pavucontrol-window");
     if (w && maximize)
         w->maximize();
     return w;
