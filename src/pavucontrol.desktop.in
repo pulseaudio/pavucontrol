@@ -8,4 +8,4 @@ Icon=multimedia-volume-control
 StartupNotify=true
 Type=Application
 Categories=AudioVideo;Audio;Mixer;GTK;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
-_Keywords=pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;
+_Keywords=pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settings;Preferences;
