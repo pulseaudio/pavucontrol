@@ -7,5 +7,5 @@ Exec=pavucontrol
 Icon=multimedia-volume-control
 StartupNotify=true
 Type=Application
-Categories=AudioVideo;Audio;Mixer;GTK;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+Categories=AudioVideo;Audio;Mixer;GTK;Settings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
 _Keywords=pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settings;Preferences;
