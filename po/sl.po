@@ -1,0 +1,592 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nejc Bertoncelj <nbert@siol.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
+"PO-Revision-Date: 2020-06-16 20:16+0000\n"
+"Last-Translator: Nejc Bertoncelj <nbert@siol.net>\n"
+"Language-Team: Slovenian <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/sl/>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 4.0.4\n"
+
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+msgid "PulseAudio Volume Control"
+msgstr "Nastavitev glasnost PulseAudio"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
+msgid "Volume Control"
+msgstr "Nastavitev glasnosti"
+
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Nastavi glasnost"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+msgstr ""
+"pavucontrol;mikrofon;glasnost;pojemanje;ravnovesje;slušalke;zvok;mešalnik;izh"
+"od;vhod;"
+
+#: ../src/pavucontrol.glade.h:1
+msgid "<b>left-front</b>"
+msgstr "<b>levo-spredaj</b>"
+
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "Ime kartice"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "Ime naprave"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "Mute audio"
+msgstr "Utišaj zvok"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Skupaj zakleni kanala"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "Set as fallback"
+msgstr "Nastavi kot zasilni"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Vrata:</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC3"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "EAC3"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Odmik latence:</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "Napredno"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "Vsi pretoki"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "Programi"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "Navidezni pretoki"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "Vse izhodne naprave"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "Strojne izhodne naprave"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "Navidezne izhodne naprave"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "Vse vhodne naprave"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "Vsi razen zvočni nadzorniki"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "Strojne vhodne naprave"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "Navidezne vhodne naprave"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "Zvočni nadzorniki"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Programi trenutno ne predvajajo zvoka.</i>"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "<b>_Show:</b>"
+msgstr "<b>Prik_aži:</b>"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "_Playback"
+msgstr "_Predvajanje"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Programi trenutno ne snemajo zvoka.</i>"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Recording"
+msgstr "_Snemanje"
+
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Ni izhodnih naprav</i>"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>Pri_kaži:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "_Izhodne naprave"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>Ni vhodnih naprav</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Prika_ži:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "_Vhodne naprave"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Ni kartic, primernih za nastavitev</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Prikaži merilnike glasnosti"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Nastavitve"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Preimenuj napravo na:</b>"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Naslov pretoka"
+
+#: ../src/pavucontrol.glade.h:48
+msgid "direction"
+msgstr "smer"
+
+#: ../src/pavucontrol.cc:79
+msgid "Card callback failure"
+msgstr "Card callback failure"
+
+#: ../src/pavucontrol.cc:102
+msgid "Sink callback failure"
+msgstr "Sink callback failure"
+
+#: ../src/pavucontrol.cc:126
+msgid "Source callback failure"
+msgstr "Source callback failure"
+
+#: ../src/pavucontrol.cc:145
+msgid "Sink input callback failure"
+msgstr "Sink input callback failure"
+
+#: ../src/pavucontrol.cc:164
+msgid "Source output callback failure"
+msgstr "Source output callback failure"
+
+#: ../src/pavucontrol.cc:194
+msgid "Client callback failure"
+msgstr "Client callback failure"
+
+#: ../src/pavucontrol.cc:210
+msgid "Server info callback failure"
+msgstr "Server info callback failure"
+
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "Failed to initialize stream_restore extension: %s"
+
+#: ../src/pavucontrol.cc:246
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() spodletel"
+
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "Failed to initialize device restore extension: %s"
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() spodletel"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Failed to initialize device manager extension: %s"
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() spodletel"
+
+#: ../src/pavucontrol.cc:339
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() spodletel"
+
+#: ../src/pavucontrol.cc:352
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() spodletel"
+
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() spodletel"
+
+#: ../src/pavucontrol.cc:391
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() spodletel"
+
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() spodletel"
+
+#: ../src/pavucontrol.cc:414
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() spodletel"
+
+#: ../src/pavucontrol.cc:457
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() spodletel"
+
+#: ../src/pavucontrol.cc:473
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:480
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:487
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:494
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:501
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:508
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() spodletel"
+
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "Povezava spodletela, poskušam znova"
+
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"Vzpostavitev povezave s storitvijo PulseAudio je spodletela. Znova poskušam "
+"čez 5 sekund.\n"
+"\n"
+"To se lahko pojavi zaradi neustrezno nastavljene spremenljivke PULSE_SERVER "
+"v nastavitvah\n"
+"Environment/X11 Root Window Properties, ali pa spremenljivke default-server "
+"v datoteki client.conf.\n"
+"Težava je lahko tudi morebitno predhodno sesutje storitve PulseAudio, ki ni "
+"počistila vseh nastavitev\n"
+"v oknu X11 Root Window. Če tu ni težave, se bo storitev PulseAudio poskusila "
+"zagnati samodejno\n"
+"(v redkih primerih pa morate ročno izvesti ukaz start-pulseaudio-x11)."
+
+#: ../src/cardwidget.cc:88
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() spodletel"
+
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Silence</small>"
+msgstr "<small>Tišina</small>"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Min</small>"
+msgstr "<small>Min</small>"
+
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
+
+#: ../src/channelwidget.cc:145
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Osnova</i></small>"
+
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "Preimenuj napravo..."
+
+#: ../src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() spodletel"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "Oprostite, a preimenovanje naprav ni podprto."
+
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"Za preimenovanje naprav morate naložiti modul module-devices-manager v "
+"nastavitvah strežnika PulseAudio"
+
+#: ../src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() spodletel"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "Napaka pri branju nastavitvene datoteke %s: %s"
+
+#: ../src/mainwindow.cc:249
+msgid "Error saving preferences"
+msgstr "Napaka pri shranjevanju nastavitev"
+
+#: ../src/mainwindow.cc:257
+#, c-format
+msgid "Error writing config file %s"
+msgstr "Napaka pri pisanju nastavitvene datoteke %s"
+
+#: ../src/mainwindow.cc:321
+msgid " (plugged in)"
+msgstr " (vtaknjen)"
+
+#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+msgid " (unavailable)"
+msgstr " (ni na voljo)"
+
+#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+msgid " (unplugged)"
+msgstr " (iztaknjen)"
+
+#: ../src/mainwindow.cc:563
+msgid "Failed to read data from stream"
+msgstr "Failed to read data from stream"
+
+#: ../src/mainwindow.cc:607
+msgid "Peak detect"
+msgstr "Zaznava vrhov"
+
+#: ../src/mainwindow.cc:608
+msgid "Failed to create monitoring stream"
+msgstr "Failed to create monitoring stream"
+
+#: ../src/mainwindow.cc:623
+msgid "Failed to connect monitoring stream"
+msgstr "Failed to connect monitoring stream"
+
+#: ../src/mainwindow.cc:759
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr "Vhod sink-input je bil prezrt, saj je obravnavan v gradniku Dogodek"
+
+#: ../src/mainwindow.cc:934
+msgid "System Sounds"
+msgstr "Sistemski zvoki"
+
+#: ../src/mainwindow.cc:1280
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "Vzpostavljam povezavo s storitvijo PulseAudio. Prosimo, počakajte..."
+
+#: ../src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() spodletel"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "na"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "Zaustavi predvajanje"
+
+#: ../src/sinkinputwidget.cc:78
+msgid "Unknown output"
+msgstr "Neznan izhod"
+
+#: ../src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() spodletel"
+
+#: ../src/sinkinputwidget.cc:102
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() spodletel"
+
+#: ../src/sinkinputwidget.cc:112
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() spodletel"
+
+#: ../src/sinkwidget.cc:95
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() spodletel"
+
+#: ../src/sinkwidget.cc:110
+msgid "Volume Control Feedback Sound"
+msgstr "Glasnost povratne zanke"
+
+#: ../src/sinkwidget.cc:127
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() spodletel"
+
+#: ../src/sinkwidget.cc:141
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() spodletel"
+
+#: ../src/sinkwidget.cc:161
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() spodletel"
+
+#: ../src/sinkwidget.cc:203
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() spodletel"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "od"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "Zaustavi snemanje"
+
+#: ../src/sourceoutputwidget.cc:83
+msgid "Unknown input"
+msgstr "Neznan vhod"
+
+#: ../src/sourceoutputwidget.cc:93
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() spodletel"
+
+#: ../src/sourceoutputwidget.cc:108
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() spodletel"
+
+#: ../src/sourceoutputwidget.cc:119
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() spodletel"
+
+#: ../src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() spodletel"
+
+#: ../src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() spodletel"
+
+#: ../src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() spodletel"
+
+#: ../src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() spodletel"
+
+#: ../src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Zaustavi"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "Izberite zavihek ob nalaganju."
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "številka"
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Ponavljaj v neskončnost, če se PA zapre (vsakih 5 sekund)."
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "Razpni okno."
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr "Prikaži različico."
