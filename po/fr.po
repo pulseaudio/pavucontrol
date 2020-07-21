@@ -40,8 +40,8 @@ msgstr "Régler le niveau du volume"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;Microphone;Volume;Fondu;Balance;Casque;Audio;Mixeur;Sortie;Entrée"
-";"
+"pavucontrol;Microphone;Volume;Fondu;Balance;Casque;Audio;Mixeur;Sortie;"
+"Entrée;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
