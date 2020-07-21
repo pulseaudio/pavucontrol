@@ -1,22 +1,23 @@
 # Polish translation for pavucontrol.
 # Copyright © 2008-2019 the pavucontrol authors.
 # This file is distributed under the same license as the pavucontrol package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015, 2016, 2018, 2019.
-#
+# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015, 2016, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-07 15:06+0300\n"
-"PO-Revision-Date: 2019-12-21 15:58+0100\n"
+"PO-Revision-Date: 2020-06-23 16:51+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -81,7 +82,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
@@ -89,7 +90,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
