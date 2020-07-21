@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-07 15:06+0300\n"
-"PO-Revision-Date: 2020-05-13 20:40+0000\n"
+"PO-Revision-Date: 2020-06-25 17:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/tr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -82,7 +82,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
@@ -90,7 +90,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
