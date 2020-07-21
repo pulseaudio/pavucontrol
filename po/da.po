@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2020-04-15 14:40+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/"
@@ -81,16 +81,16 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
-msgstr "AC3"
+msgid "AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
-msgstr "EAC3"
+msgid "E-AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -424,44 +424,44 @@ msgstr "pa_ext_device_manager_write() mislykkedes"
 msgid "Error reading config file %s: %s"
 msgstr "Fejl ved læsning af konfigurationsfilen %s: %s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Fejl da præferencerne blev forsøgt gemt"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Fejl ved skrivning af konfigurationsfilen %s"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (sat i)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr " (utilgængelig)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr " (taget ud)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "Kunne ikke læse data fra strøm"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "Registrer spidspunkt"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "Kunne ikke oprette overvågningsstrøm"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "Kunne ikke forbinde overvågningsstrøm"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -469,11 +469,11 @@ msgstr ""
 "Ingorerer sinkinput da den er udpeget som en hændelse og derfor håndteres af "
 "hændelseswidgeten"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "Systemlyde"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerer forbindelse til PulseAudio. Vent venligst ..."
 
@@ -592,6 +592,12 @@ msgstr "Maksimer vinduet."
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Vis version."
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "EAC3"
+#~ msgstr "EAC3"
 
 #~ msgid "50%"
 #~ msgstr "50%"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pulseaudio-volume\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2009-09-10 15:41+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -80,7 +80,7 @@ msgid "PCM"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
+msgid "AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
@@ -88,7 +88,7 @@ msgid "DTS"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
+msgid "E-AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
@@ -436,54 +436,54 @@ msgstr "pa_ext_stream_restore_write() નિષ્ફળ"
 msgid "Error reading config file %s: %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr ""
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr ""
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr ""
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr ""
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "સ્ટ્રીમમાંથી માહિતી વાંચવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "શોધની ટોચ"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "મોનિટરીંગ સ્ટ્રીમને બનાવવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "મોનિટરીંગ સ્ટ્રીમને જોડવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "સિસ્ટમ સાઉન્ડો"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 

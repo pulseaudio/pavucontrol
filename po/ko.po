@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2018-01-02 08:57\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <bagjunggyu@gmail.com>\n"
@@ -78,7 +78,7 @@ msgid "PCM"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
+msgid "AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
@@ -86,7 +86,7 @@ msgid "DTS"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
+msgid "E-AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
@@ -434,54 +434,54 @@ msgstr "pa_ext_stream_restore_write() 실패"
 msgid "Error reading config file %s: %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr ""
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr ""
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr ""
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr ""
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "스트림에서 데이터 읽어오기 실패"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "피크 검출"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "모니터링 스트림 생성 실패"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "모니터링 스트림 연결 실패"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr "이벤트로 지정되어 이벤트 위젯에 의해 처리되므로 싱크 입력을 무시합니다"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "시스템 사운드"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 

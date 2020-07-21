@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2020-02-22 15:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -82,16 +82,16 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
-msgstr "AC3"
+msgid "AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
-msgstr "EAC3"
+msgid "E-AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -431,44 +431,44 @@ msgstr "Спроба виконання pa_ext_device_manager_write() була �
 msgid "Error reading config file %s: %s"
 msgstr "Помилка під час читання файла налаштувань %s: %s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Помилка під час спроби зберегти налаштування"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Помилка під час спроби записати файл налаштувань %s"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (з'єднано)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr " (недоступний)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr " (від'єднано)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "Спроба читання даних з потоку була невдалою"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "Визначення максимумів"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "Не вдалося створити потік для спостереження"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "Не вдалося з’єднатися з потоком для спостереження"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -476,11 +476,11 @@ msgstr ""
 "Ігноруємо вхідний потік, оскільки його позначено як подію, тому його обробку "
 "здійснює віджет подій"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "Системні звуки"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Встановлюємо з'єднання із PulseAudio. Будь ласка, зачекайте…"
 
@@ -600,6 +600,12 @@ msgstr "Максимізувати вікно."
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Вивести дані щодо версії."
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "EAC3"
+#~ msgstr "EAC3"
 
 #~ msgid "50%"
 #~ msgstr "50%"

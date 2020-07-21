@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2020-03-20 11:38+0000\n"
 "Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
@@ -80,16 +80,16 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
-msgstr "AC3"
+msgid "AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
-msgstr "EAC3"
+msgid "E-AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -422,44 +422,44 @@ msgstr "pa_ext_device_manager_write() zlyhal"
 msgid "Error reading config file %s: %s"
 msgstr "Chyba pri čítaní konfiguračného súboru %s:%s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Chyba pri ukladaní predvolieb"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Chyba pri zapisovaní konfiguračného súboru %s"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (pripojené)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr " (nedostupné)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr " (odpojené)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "Nepodarilo sa prečítať dáta z prúdu"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "Detekcia vrcholov"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "Nepodarilo sa vytvoriť monitorovací prúd"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "Nepodarilo sa pripojiť monitorovací prúd"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -467,11 +467,11 @@ msgstr ""
 "Ignoruje sa sink-input pretože je navrhnutý ako udalosť a teda spracovaný "
 "widgetom udalosť"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "Systémové zvuky"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Vytvára sa pripojenie k PulseAudio, čakajte..."
 
@@ -590,6 +590,12 @@ msgstr "Maximalizovať okno."
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "Zobraziť verziu."
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "EAC3"
+#~ msgstr "EAC3"
 
 #~ msgid "50%"
 #~ msgstr "50%"

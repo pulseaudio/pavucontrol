@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2009-04-01 21:43+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -77,16 +77,16 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
-msgstr "AC3"
+msgid "AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
-msgstr "EAC3"
+msgid "E-AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -407,54 +407,54 @@ msgstr "pa_ext_device_manager_write() 失败"
 msgid "Error reading config file %s: %s"
 msgstr "读取配置文件 %s 时出错：%s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "保存配置时出错"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "写配置文件 %s 时出错"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr "（已插入）"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr "（不可用）"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr "（未插入）"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "无法从流媒体中读取数据"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "尖峰探测"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "无法常见监视流媒体"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "无法连接到监视流媒体"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "系统声音"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "正在建立到 PulseAudio 的连接，请稍候……"
 
@@ -573,6 +573,12 @@ msgstr ""
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr ""
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "EAC3"
+#~ msgstr "EAC3"
 
 #~ msgid "Device"
 #~ msgstr "设备"

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2017-05-31 14:06+0200\n"
 "Last-Translator: Pilar Embid Giner <embid_mar@gva.es>\n"
 "Language-Team: LliureX\n"
@@ -91,7 +91,7 @@ msgid "PCM"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
+msgid "AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
@@ -99,7 +99,7 @@ msgid "DTS"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
+msgid "E-AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
@@ -447,44 +447,44 @@ msgstr "Ha fallat pa_ext_stream_restore_write()"
 msgid "Error reading config file %s: %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr ""
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr ""
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr ""
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr ""
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "Ha fallat la lectura del flux"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "Detecta els pics"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "Ha fallat la creació del flux de monitorització"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "Ha fallat la connexió al flux de monitorització"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -492,11 +492,11 @@ msgstr ""
 "S'ignora el conducte d'entrada perquè s'ha designat com un esdeveniment i, "
 "per tant, gestionat pel giny d'esdeveniments."
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "Sons del sistema"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 

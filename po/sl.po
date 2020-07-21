@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 4.0.4\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
@@ -35,8 +35,8 @@ msgstr "Nastavi glasnost"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
-"pavucontrol;mikrofon;glasnost;pojemanje;ravnovesje;slušalke;zvok;mešalnik;izh"
-"od;vhod;"
+"pavucontrol;mikrofon;glasnost;pojemanje;ravnovesje;slušalke;zvok;mešalnik;"
+"izhod;vhod;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -80,7 +80,7 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
+msgid "AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
@@ -88,7 +88,7 @@ msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
+msgid "E-AC-3"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
@@ -424,54 +424,54 @@ msgstr "pa_ext_device_manager_write() spodletel"
 msgid "Error reading config file %s: %s"
 msgstr "Napaka pri branju nastavitvene datoteke %s: %s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Napaka pri shranjevanju nastavitev"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Napaka pri pisanju nastavitvene datoteke %s"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (vtaknjen)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr " (ni na voljo)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr " (iztaknjen)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "Failed to read data from stream"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "Zaznava vrhov"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "Failed to create monitoring stream"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "Failed to connect monitoring stream"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr "Vhod sink-input je bil prezrt, saj je obravnavan v gradniku Dogodek"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "Sistemski zvoki"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Vzpostavljam povezavo s storitvijo PulseAudio. Prosimo, počakajte..."
 

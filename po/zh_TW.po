@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:18+0200\n"
+"POT-Creation-Date: 2020-06-07 15:06+0300\n"
 "PO-Revision-Date: 2020-01-20 19:02+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -80,16 +80,16 @@ msgid "PCM"
 msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
-msgid "AC3"
-msgstr "AC3"
+msgid "AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
 msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
-msgid "EAC3"
-msgstr "EAC3"
+msgid "E-AC-3"
+msgstr ""
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -420,55 +420,55 @@ msgstr "pa_ext_device_manager_write() 失敗"
 msgid "Error reading config file %s: %s"
 msgstr "讀取 %s 組態設定檔時發生錯誤：%s"
 
-#: ../src/mainwindow.cc:249
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "儲存偏好設定失敗"
 
-#: ../src/mainwindow.cc:257
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "寫入 %s 組態設定檔時發生錯誤"
 
-#: ../src/mainwindow.cc:321
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (已插入)"
 
-#: ../src/mainwindow.cc:325 ../src/mainwindow.cc:431
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
 msgstr " (不能用)"
 
-#: ../src/mainwindow.cc:327 ../src/mainwindow.cc:428
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
 msgstr " (未插入)"
 
-#: ../src/mainwindow.cc:563
+#: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
 msgstr "無法從串流讀取資料"
 
-#: ../src/mainwindow.cc:607
+#: ../src/mainwindow.cc:608
 msgid "Peak detect"
 msgstr "偵測峰值"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
 msgstr "無法建立監視串流"
 
-#: ../src/mainwindow.cc:623
+#: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
 msgstr "無法連線監視串流"
 
-#: ../src/mainwindow.cc:759
+#: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 "將忽略輸出介面的輸入 (sink-input)，因為其被指定為事件，因此其由事件元件來處理"
 
-#: ../src/mainwindow.cc:934
+#: ../src/mainwindow.cc:935
 msgid "System Sounds"
 msgstr "系統音效"
 
-#: ../src/mainwindow.cc:1280
+#: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "正在建立對 PulseAudio 的連線，請稍候…"
 
@@ -587,6 +587,12 @@ msgstr "最大化視窗。"
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
 msgstr "顯示版本。"
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "EAC3"
+#~ msgstr "EAC3"
 
 #~ msgid "Device"
 #~ msgstr "裝置"
