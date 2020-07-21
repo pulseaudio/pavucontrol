@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-07 15:06+0300\n"
-"PO-Revision-Date: 2020-03-07 05:38+0000\n"
+"PO-Revision-Date: 2020-06-29 17:40+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -40,16 +40,17 @@ msgstr "Régler le niveau du volume"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"pavucontrol;Microphone;Volume;Fondu;Balance;Casque;Audio;Mixeur;Sortie;Entrée"
+";"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>avant-gauche</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>50 %</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -60,10 +61,8 @@ msgid "<b>Profile:</b>"
 msgstr "<b>Profil :</b>"
 
 #: ../src/pavucontrol.glade.h:6
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Périphérique"
+msgstr "Titre du périphérique"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
@@ -83,95 +82,83 @@ msgstr "<b>Port :</b>"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Compensation de la latence :</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "Advanced"
-msgstr ""
+msgstr "Avancé"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "All Streams"
-msgstr ""
+msgstr "Tous les flux"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Flux virtuels"
 
 #: ../src/pavucontrol.glade.h:23
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "Périphériques de _sortie"
+msgstr "Tous les périphériques de sortie"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Périphériques de _sortie"
+msgstr "Périphériques de sortie matériels"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Périphériques de _sortie"
+msgstr "Périphériques de sortie virtuels"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "Périphériques d'_entrée"
+msgstr "Tous les périphériques d’entrée"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Tout sauf les moniteurs"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "Périphériques d'_entrée"
+msgstr "Périphériques d’entrée matériels"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "Périphériques d'_entrée"
+msgstr "Périphériques d’entrée virtuels"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Monitors"
-msgstr ""
+msgstr "Moniteurs"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "<i>No application is currently playing audio.</i>"
@@ -223,7 +210,7 @@ msgstr "<i>Aucune carte n’est disponible pour la configuration</i>"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "Show volume meters"
-msgstr ""
+msgstr "Afficher les jauges de volume"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
@@ -231,7 +218,7 @@ msgstr "_Configuration"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Renommer le périphérique en :</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
@@ -279,28 +266,22 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "Échec de pa_ext_stream_restore_read()"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Impossible d'initialiser l'extension stream_restore : %s"
+msgstr "Impossible d’initialiser l’extension device restore : %s"
 
 #: ../src/pavucontrol.cc:285
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "Échec de pa_ext_stream_restore_read()"
+msgstr "Échec de pa_ext_device_restore_read_sink_formats()"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Impossible d'initialiser l'extension stream_restore : %s"
+msgstr "Impossible d’initialiser l’extension device manager : %s"
 
 #: ../src/pavucontrol.cc:322
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "Échec de pa_ext_stream_restore_read()"
+msgstr "Échec de pa_ext_device_manager_read()"
 
 #: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -355,10 +336,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "Échec de pa_context_get_source_output_info_list()"
 
 #: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Échec de la connexion"
+msgstr "Échec de la connexion, tentative de reconnexion"
 
 #: ../src/pavucontrol.cc:605
 msgid ""
@@ -373,6 +352,16 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Échec de la connexion à PulseAudio. Réessai automatique dans 5 s\n"
+"\n"
+"Dans le cas présent, cela est probablement dû au fait que PULSE_SERVER de "
+"Environnement/X11 Root Window Properties\n"
+"ou default-server dans client.conf est mal configuré.\n"
+"Cette situation peut également se produire lorsque PulseAudio a planté et a "
+"laissé des détails périmés dans X11 Root Window.\n"
+"Si c’est le cas, PulseAudio doit se relancer automatiquement, ou si ce n’est "
+"pas configuré, vous devez\n"
+"lancez manuellement le programme start-pulseaudio-x11."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -381,17 +370,17 @@ msgstr "Échec de pa_context_set_card_profile_by_index()"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f %%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -402,10 +391,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Min</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>100 % (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -413,55 +400,53 @@ msgstr "<small><i>Base</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Renommer le périphérique…"
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "Échec de pa_context_set_sink_port_by_index()"
+msgstr "Échec de pa_context_set_port_latency_offset()"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Désolé, mais le renommage des périphériques n’est pas pris en charge."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Vous devez charger module-device-manager dans le serveur PulseAudio afin de "
+"renommer les appareils"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "Échec de pa_ext_stream_restore_write()"
+msgstr "Échec de pa_ext_device_manager_write()"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Erreur de lecture du fichier de configuration %s : %s"
 
 #: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Erreur d’enregistrement des préférences"
 
 #: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Erreur d’écriture du fichier de configuration %s"
 
 #: ../src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr ""
+msgstr " (branché)"
 
 #: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
-msgstr ""
+msgstr " (non disponible)"
 
 #: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
-msgstr ""
+msgstr " (non branché)"
 
 #: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
@@ -493,7 +478,7 @@ msgstr "Sons système"
 
 #: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Connexion à PulseAudio. Veuillez patienter…"
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -544,10 +529,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "Échec de pa_context_set_sink_port_by_index()"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "Échec de pa_ext_stream_restore_read()"
+msgstr "Échec de pa_ext_device_restore_save_sink_formats()"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -562,16 +545,12 @@ msgid "Unknown input"
 msgstr "Entrée inconnue"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "Échec de pa_context_get_source_output_info_list()"
+msgstr "Échec de pa_context_set_source_output_volume()"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "Échec de pa_context_get_source_output_info_list()"
+msgstr "Échec de pa_context_set_source_output_mute()"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -599,23 +578,23 @@ msgstr "Terminé"
 
 #: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Sélectionne un onglet spécifique au chargement."
 
 #: ../src/pavuapplication.cc:153
 msgid "number"
-msgstr ""
+msgstr "nombre"
 
 #: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Réessayez indéfiniment si pa quitte (toutes les 5 secondes)."
 
 #: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
-msgstr ""
+msgstr "Maximise la fenêtre."
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr ""
+msgstr "Affiche la version."
 
 #~ msgid "50%"
 #~ msgstr "50%"
