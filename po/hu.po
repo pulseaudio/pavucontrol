@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the pulseaudio package.
 #
 # Gabor Kelemen <kelemeng@gnome.hu>, 2008, 2009.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-07 15:06+0300\n"
-"PO-Revision-Date: 2009-10-04 12:41+0100\n"
-"Last-Translator: KAMI <kami911@gmail.com>\n"
-"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"PO-Revision-Date: 2020-07-21 15:28+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
+"Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -34,16 +36,17 @@ msgstr "Hangerő beállítása"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
 msgstr ""
+"pavucontrol;mikrofon;hangerő;elhalkulás;egyensúly;headset;fejhallgató;hang;mi"
+"xer;keverő;kimenet;bemenet;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>bal első</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Minimum</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -54,10 +57,8 @@ msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:6
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Eszköz"
+msgstr "Eszköz címe"
 
 #: ../src/pavucontrol.glade.h:7
 msgid "Mute audio"
@@ -77,95 +78,83 @@ msgstr "<b>Port:</b>"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Késleltetés eltolása:</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "Advanced"
-msgstr ""
+msgstr "Speciális"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "All Streams"
-msgstr ""
+msgstr "Összes adatfolyam"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Applications"
-msgstr ""
+msgstr "Alkalmazások"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Virtuális adatfolyamok"
 
 #: ../src/pavucontrol.glade.h:23
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "_Kimeneti eszközök"
+msgstr "Összes kimeneti eszköz"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "_Kimeneti eszközök"
+msgstr "Hardveres kimeneti eszközök"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "_Kimeneti eszközök"
+msgstr "Virtuális kimeneti eszközök"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "B_emeneti eszközök"
+msgstr "Összes bemeneti eszköz"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Összes, kivéve a monitorok"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "B_emeneti eszközök"
+msgstr "Hardveres bemeneti eszközök"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "B_emeneti eszközök"
+msgstr "Virtuális bemeneti eszközök"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Monitors"
-msgstr ""
+msgstr "Monitorok"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "<i>No application is currently playing audio.</i>"
@@ -217,7 +206,7 @@ msgstr "<i>Nem érhetők el beállítható kártyák</i>"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "Show volume meters"
-msgstr ""
+msgstr "Hangerőjelzők megjelenítése"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "_Configuration"
@@ -225,7 +214,7 @@ msgstr "_Beállítások"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Eszköz átnevezése erre:</b>"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "Stream Title"
@@ -233,7 +222,7 @@ msgstr "Adatfolyam címe"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "direction"
-msgstr "irány:"
+msgstr "irány"
 
 #: ../src/pavucontrol.cc:79
 msgid "Card callback failure"
@@ -266,99 +255,85 @@ msgstr "Függvényvisszatérési hiba a kiszolgálóinformációkban"
 #: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr ""
-"Az adatfolyam visszaállítása (stream_restore) kiterjesztés előkészítése "
-"meghiúsult: %s"
+msgstr "A stream_restore kiterjesztés előkészítése sikertelen: %s"
 
 #: ../src/pavucontrol.cc:246
 msgid "pa_ext_stream_restore_read() failed"
-msgstr "A „pa_ext_stream_restore_read()” függvényhívás meghiúsult"
+msgstr "A pa_ext_stream_restore_read() sikertelen"
 
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr ""
-"Az adatfolyam visszaállítása (stream_restore) kiterjesztés előkészítése "
-"meghiúsult: %s"
+msgstr "Az eszköz-visszaállítási kiterjesztés előkészítése sikertelen: %s"
 
 #: ../src/pavucontrol.cc:285
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "A „pa_ext_stream_restore_read()” függvényhívás meghiúsult"
+msgstr "A pa_ext_stream_restore_read() sikertelen"
 
 #: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr ""
-"Az adatfolyam visszaállítása (stream_restore) kiterjesztés előkészítése "
-"meghiúsult: %s"
+msgstr "Az eszközkezelő kiterjesztés előkészítése sikertelen: %s"
 
 #: ../src/pavucontrol.cc:322
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "A „pa_ext_stream_restore_read()” függvényhívás meghiúsult"
+msgstr "A pa_ext_stream_restore_read() sikertelen"
 
 #: ../src/pavucontrol.cc:339
 msgid "pa_context_get_sink_info_by_index() failed"
-msgstr "A „pa_context_get_sink_info_by_index()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_sink_info_by_index() sikertelen"
 
 #: ../src/pavucontrol.cc:352
 msgid "pa_context_get_source_info_by_index() failed"
-msgstr "A „pa_context_get_source_info_by_index()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_source_info_by_index() sikertelen"
 
 #: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
 msgid "pa_context_get_sink_input_info() failed"
-msgstr "A „pa_context_get_sink_input_info()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_sink_input_info() sikertelen"
 
 #: ../src/pavucontrol.cc:391
 msgid "pa_context_get_client_info() failed"
-msgstr "A „pa_context_get_client_info()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_client_info() sikertelen"
 
 #: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
 msgid "pa_context_get_server_info() failed"
-msgstr "A „pa_context_get_server_info()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_server_info() sikertelen"
 
 #: ../src/pavucontrol.cc:414
 msgid "pa_context_get_card_info_by_index() failed"
-msgstr "A „pa_context_get_card_info_by_index()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_card_info_by_index() sikertelen"
 
 #: ../src/pavucontrol.cc:457
 msgid "pa_context_subscribe() failed"
-msgstr "A „pa_context_subscribe()” függvényhívás meghiúsult"
+msgstr "a pa_context_subscribe() sikertelen"
 
 #: ../src/pavucontrol.cc:473
 msgid "pa_context_client_info_list() failed"
-msgstr "A „pa_context_client_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_client_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:480
 msgid "pa_context_get_card_info_list() failed"
-msgstr "A „pa_context_get_card_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_card_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:487
 msgid "pa_context_get_sink_info_list() failed"
-msgstr "A „pa_context_get_sink_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_sink_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:494
 msgid "pa_context_get_source_info_list() failed"
-msgstr "A „pa_context_get_source_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_source_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:501
 msgid "pa_context_get_sink_input_info_list() failed"
-msgstr "A „pa_context_get_sink_input_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_sink_input_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:508
 msgid "pa_context_get_source_output_info_list() failed"
-msgstr "A „pa_context_get_source_output_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_source_output_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "A kapcsolatfelvétel nem sikerült"
+msgstr "A kapcsolódás sikertelen, újrakapcsolódás kísérlete"
 
 #: ../src/pavucontrol.cc:605
 msgid ""
@@ -373,25 +348,36 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"A PulseAudióhoz kapcsolódás sikertelen. Automatikus újrapróbálkozás 5 mp "
+"múlva\n"
+"\n"
+"Ebben az esetben valószínű, hogy a PULSE_SERVER hibásan van beállítva a Kö"
+"rnyezet/X11 gyökérablak tulajdonságaiban\n"
+"vagy a default-server helytelen a client.conf fájlban.\n"
+"Ez a helyzet akkor is fennállhat, ha a PulseAudio összeomlott és elavult "
+"részletek maradtak az X11 gyökérablakban.\n"
+"Ebben az esetben a PulseAudiónak automatikusa újra kellene indulnia, vagy ha "
+"ez nincs beállítva, akkor\n"
+"indítsa el kézzel a start-pulseaudio-x11 paranccsal."
 
 #: ../src/cardwidget.cc:88
 msgid "pa_context_set_card_profile_by_index() failed"
-msgstr "A „pa_context_set_card_profile_by_index()” függvényhívás meghiúsult"
+msgstr "a pa_context_set_card_profile_by_index() sikertelen"
 
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -402,10 +388,8 @@ msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Minimum</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -413,59 +397,57 @@ msgstr "<small><i>Alapbeállítás</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Eszköz átnevezése…"
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() meghiúsult"
+msgstr "a pa_context_set_sink_port_by_index() sikertelen"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Sajnáljuk, az eszközátnevezés nem támogatott."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Az eszközök átnevezéséhez be kell tölteni a module-device-manager modult a "
+"PulseAudio kiszolgálóba"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() meghiúsult"
+msgstr "a pa_ext_stream_restore_write() sikertelen"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Hiba a(z) %s konfigurációs fájl olvasásakor: %s"
 
 #: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Hiba a beállítások mentésekor"
 
 #: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Hiba a(z) %s konfigurációs fájl írásakor"
 
 #: ../src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr ""
+msgstr " (bedugva)"
 
 #: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
 msgid " (unavailable)"
-msgstr ""
+msgstr " (nem érhető el)"
 
 #: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
 msgid " (unplugged)"
-msgstr ""
+msgstr " (kihúzva)"
 
 #: ../src/mainwindow.cc:564
 msgid "Failed to read data from stream"
-msgstr "Az adatok olvasása meghiúsult az adatfolyamból"
+msgstr "Az adatok olvasása az adatfolyamból sikertelen"
 
 #: ../src/mainwindow.cc:608
 msgid "Peak detect"
@@ -473,17 +455,19 @@ msgstr "Csúcsérzékelés"
 
 #: ../src/mainwindow.cc:609
 msgid "Failed to create monitoring stream"
-msgstr "A megfigyelő adatfolyam létrehozása meghiúsult"
+msgstr "A monitor-adatfolyam létrehozása sikertelen"
 
 #: ../src/mainwindow.cc:624
 msgid "Failed to connect monitoring stream"
-msgstr "A megfigyelő adatfolyam csatlakoztatása meghiúsult"
+msgstr "A monitor-adatfolyamhoz kapcsolódás sikertelen"
 
 #: ../src/mainwindow.cc:760
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"A nyelőbemenet figyelmen kívül hagyása, mert eseményként jelölt, és így az "
+"Esemény felületi elem kezeli"
 
 #: ../src/mainwindow.cc:935
 msgid "System Sounds"
@@ -491,15 +475,15 @@ msgstr "Rendszerhangok"
 
 #: ../src/mainwindow.cc:1281
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Kapcsolat felépítése a PulseAudióval. Kis türelmet…"
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
-msgstr "pa_ext_stream_restore_write() meghiúsult"
+msgstr "a pa_ext_stream_restore_write() sikertelen"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr "eszköz:"
+msgstr "ezen:"
 
 #: ../src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
@@ -511,19 +495,19 @@ msgstr "Ismeretlen kimenet"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
-msgstr "pa_context_set_sink_input_volume() meghiúsult"
+msgstr "a pa_context_set_sink_input_volume() sikertelen"
 
 #: ../src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
-msgstr "pa_context_set_sink_input_mute() meghiúsult"
+msgstr "a pa_context_set_sink_input_mute() sikertelen"
 
 #: ../src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
-msgstr "pa_context_kill_sink_input() meghiúsult"
+msgstr "a pa_context_kill_sink_input() sikertelen"
 
 #: ../src/sinkwidget.cc:95
 msgid "pa_context_set_sink_volume_by_index() failed"
-msgstr "pa_context_set_sink_volume_by_index() meghiúsult"
+msgstr "a pa_context_set_sink_volume_by_index() sikertelen"
 
 #: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
@@ -531,25 +515,23 @@ msgstr "Hangerőszabályzó visszajelzési hang"
 
 #: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
-msgstr "pa_context_set_sink_mute_by_index() meghiúsult"
+msgstr "a pa_context_set_sink_mute_by_index() sikertelen"
 
 #: ../src/sinkwidget.cc:141
 msgid "pa_context_set_default_sink() failed"
-msgstr "pa_context_set_default_sink() meghiúsult"
+msgstr "a pa_context_set_default_sink() sikertelen"
 
 #: ../src/sinkwidget.cc:161
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "pa_context_set_sink_port_by_index() meghiúsult"
+msgstr "a pa_context_set_sink_port_by_index() sikertelen"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "A „pa_ext_stream_restore_read()” függvényhívás meghiúsult"
+msgstr "a pa_ext_stream_restore_read() sikertelen"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr "bemenet:"
+msgstr "innen:"
 
 #: ../src/sourceoutputwidget.cc:38
 msgid "Terminate Recording"
@@ -560,61 +542,56 @@ msgid "Unknown input"
 msgstr "Ismeretlen bemenet"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "A „pa_context_get_source_output_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_source_output_volume() sikertelen"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "A „pa_context_get_source_output_info_list()” függvényhívás meghiúsult"
+msgstr "a pa_context_get_source_output_mute() sikertelen"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
-msgstr "pa_context_kill_source_output() meghiúsult"
+msgstr "a pa_context_kill_source_output() sikertelen"
 
 #: ../src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
-msgstr "pa_context_set_source_volume_by_index() meghiúsult"
+msgstr "a pa_context_set_source_volume_by_index() sikertelen"
 
 #: ../src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
-msgstr "pa_context_set_source_mute_by_index() meghiúsult"
+msgstr "a pa_context_set_source_mute_by_index() sikertelen"
 
 #: ../src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
-msgstr "pa_context_set_default_source() meghiúsult"
+msgstr "a pa_context_set_default_source() sikertelen"
 
 #: ../src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr "pa_context_set_source_port_by_index() meghiúsult"
+msgstr "a pa_context_set_source_port_by_index() sikertelen"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "Lejátszás befejezése"
+msgstr "Megszakítás"
 
 #: ../src/pavuapplication.cc:152
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Egy adott lap kiválasztása betöltéskor."
 
 #: ../src/pavuapplication.cc:153
 msgid "number"
-msgstr ""
+msgstr "szám"
 
 #: ../src/pavuapplication.cc:158
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Újrapróbálkozás a végtelenségig ha a pa kilép (minden 5 másodpercben)."
 
 #: ../src/pavuapplication.cc:163
 msgid "Maximize the window."
-msgstr ""
+msgstr "Az ablak teljes méretűvé állítása."
 
 #: ../src/pavuapplication.cc:168
 msgid "Show version."
-msgstr ""
+msgstr "Verzió megjelenítése."
 
 #~ msgid "50%"
 #~ msgstr "50%"
