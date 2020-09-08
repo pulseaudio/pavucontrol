@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-07 15:06+0300\n"
+"POT-Creation-Date: 2020-08-13 22:06+0300\n"
 "PO-Revision-Date: 2017-12-10 21:01+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -32,7 +32,9 @@ msgstr "音量レベルを調整する"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:1

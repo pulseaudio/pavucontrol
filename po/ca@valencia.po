@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-07 15:06+0300\n"
+"POT-Creation-Date: 2020-08-13 22:06+0300\n"
 "PO-Revision-Date: 2017-05-31 14:06+0200\n"
 "Last-Translator: Pilar Embid Giner <embid_mar@gva.es>\n"
 "Language-Team: LliureX\n"
@@ -43,7 +43,9 @@ msgstr "Ajusta el volum"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:1

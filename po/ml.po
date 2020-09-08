@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-07 15:06+0300\n"
+"POT-Creation-Date: 2020-08-13 22:06+0300\n"
 "PO-Revision-Date: 2009-09-10 15:50+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -32,7 +32,9 @@ msgstr "ശബ്ദ ലവല്‍ ഉ‍ചിതമാക്കുക"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:1
