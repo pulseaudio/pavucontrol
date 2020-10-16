@@ -3,13 +3,14 @@
 #
 # Ondrej Šulek <feonsu@gmail.com>, 2008, 2009.
 # Ondrej Sulek <feonsu@gmail.com>, 2020.
+# Dusan Kazik <prescott66@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-13 22:06+0300\n"
-"PO-Revision-Date: 2020-09-01 09:29+0000\n"
-"Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
+"PO-Revision-Date: 2020-10-07 02:48+0000\n"
+"Last-Translator: Dusan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/sk/>\n"
 "Language: sk\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Weblate 4.2.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
 msgid "PulseAudio Volume Control"
@@ -269,7 +270,7 @@ msgstr "pa_ext_stream_restore_read() zlyhal"
 #: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Nepodarilo sa inicializovať rozšírenie obnovenie zariadenia: %s"
+msgstr "Nepodarilo sa inicializovať rozšírenie obnovy zariadenia: %s"
 
 #: ../src/pavucontrol.cc:285
 msgid "pa_ext_device_restore_read_sink_formats() failed"
