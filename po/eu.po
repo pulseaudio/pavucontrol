@@ -1,0 +1,597 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Porrumentzio <porrumentzio@riseup.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-13 22:06+0300\n"
+"PO-Revision-Date: 2020-09-29 16:29+0000\n"
+"Last-Translator: Porrumentzio <porrumentzio@riseup.net>\n"
+"Language-Team: Basque <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/eu/>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.2\n"
+
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+msgid "PulseAudio Volume Control"
+msgstr "PulseAudio Bolumen Kontrola"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
+msgid "Volume Control"
+msgstr "Bolumen kontrola"
+
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Doitu bolumen-maila"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
+msgstr ""
+"pavucontrol;Microphone;Mikrofonoa;Volume;Bolumena;Fade;Balance;Headset;Speake"
+"rs;Bozgorailuak;Headphones;Aurikularrak;Audioa;Mixer;Nahasgailua;Output;Irtee"
+"ra;Input;Sarrera;Devices;Gailuak;Playback;Erreprodukzioa;Recording;Grabazioa;"
+"System Sounds;Sistemaren soinuak;Sound Card;Soinu "
+"txartelak;Settings;Ezarpenak;Preferences;Hobespenak;"
+
+#: ../src/pavucontrol.glade.h:1
+msgid "<b>left-front</b>"
+msgstr "<b>ezker-aurrealdea</b>"
+
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>%50</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "Txartel-izenak"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "<b>Profile:</b>"
+msgstr "<b>Profila:</b>"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "Device Title"
+msgstr "Gailuaren izenburua"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "Mute audio"
+msgstr "Mututu audioa"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "Lock channels together"
+msgstr "Lotu kanalak elkarri"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "Set as fallback"
+msgstr "Ezarri alternatibatzat"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "<b>Port:</b>"
+msgstr "<b>Ataka:</b>"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "AC-3"
+msgstr "AC-3"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Atzerapen-konpentsazioa:</b>"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "All Streams"
+msgstr "Fluxu guztiak"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Applications"
+msgstr "Aplikazioak"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "Virtual Streams"
+msgstr "Fluxu birtualak"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "All Output Devices"
+msgstr "Irteera gailu guztiak"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Hardware Output Devices"
+msgstr "Hardware irteera gailuak"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "Virtual Output Devices"
+msgstr "Irteera gailu birtualak"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "All Input Devices"
+msgstr "Sarrera gailu guztiak"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "All Except Monitors"
+msgstr "Guztiak monitoreak izan ezik"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "Hardware Input Devices"
+msgstr "Hardware sarrera gailuak"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "Virtual Input Devices"
+msgstr "Sarrera gailu birtualak"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Monitors"
+msgstr "Monitoreak"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Aplikaziorik ez dabil audiorik erreproduzitzen.</i>"
+
+#: ../src/pavucontrol.glade.h:33
+msgid "<b>_Show:</b>"
+msgstr "<b>_Erakutsi:</b>"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "_Playback"
+msgstr "_Erreprodukzioa"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Aplikaziorik ez dabil audiorik grabatzen.</i>"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Recording"
+msgstr "_Grabatzen"
+
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No output devices available</i>"
+msgstr "<i>Irteera gailurik ez erabilgarri</i>"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "<b>S_how:</b>"
+msgstr "<b>E_rakutsi:</b>"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "_Output Devices"
+msgstr "_Irteera gailuak"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<i>No input devices available</i>"
+msgstr "<i>Sarrera gailurik ez erabilgarri</i>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Erakuts_i:</b>"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "_Input Devices"
+msgstr "_Sarrera gailuak"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Txartelik ez erabilgarri konfiguratzeko</i>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "Show volume meters"
+msgstr "Erakutsi bolumen neurgailuak"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "_Configuration"
+msgstr "_Konfigurazioa"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Berrizendatu gailua honela:</b>"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "Stream Title"
+msgstr "Fluxuaren izenburua"
+
+#: ../src/pavucontrol.glade.h:48
+msgid "direction"
+msgstr "norabidea"
+
+#: ../src/pavucontrol.cc:79
+msgid "Card callback failure"
+msgstr "Txartel-atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:102
+msgid "Sink callback failure"
+msgstr "Hondoratze-atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:126
+msgid "Source callback failure"
+msgstr "Iturburu-atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:145
+msgid "Sink input callback failure"
+msgstr "Hondoratze-sarrera atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:164
+msgid "Source output callback failure"
+msgstr "Iturburu-irteera atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:194
+msgid "Client callback failure"
+msgstr "Bezero-atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:210
+msgid "Server info callback failure"
+msgstr "Morroi-informazio atzeradeian akatsa"
+
+#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "Huts stream_restore hedapena abiaraztean: %s"
+
+#: ../src/pavucontrol.cc:246
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() funtzioak huts"
+
+#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "Huts device restore hedapena abiaraztean: %s"
+
+#: ../src/pavucontrol.cc:285
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() funtzioak huts"
+
+#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Huts device manager hedapena abiaraztean: %s"
+
+#: ../src/pavucontrol.cc:322
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() funtzioak huts"
+
+#: ../src/pavucontrol.cc:339
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() funtzioak huts"
+
+#: ../src/pavucontrol.cc:352
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() funtzioak huts"
+
+#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() funtzioak huts"
+
+#: ../src/pavucontrol.cc:391
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() funtzioak huts"
+
+#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() funtzioak huts"
+
+#: ../src/pavucontrol.cc:414
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() funtzioak huts"
+
+#: ../src/pavucontrol.cc:457
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() funtzioak huts"
+
+#: ../src/pavucontrol.cc:473
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:480
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:487
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:494
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:501
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:508
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() funtzioak huts"
+
+#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+msgid "Connection failed, attempting reconnect"
+msgstr "Konexioak huts egin du, berriz konektatzen saiatzen"
+
+#: ../src/pavucontrol.cc:605
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"PulseAudiora konektatzeak huts egin du. Saiakera automatikoa 5s barru\n"
+"\n"
+"Kasu honetan, litekeena da PULSE_SERVER Environment/X11 Root Window "
+"Properties-en edo\n"
+"default-server client.conf-en gaizki konfiguratuta egotea.\n"
+"Egoera hori PulseAudio kraskatu eta X11 Root Window-en xehetasun zaharkituak "
+"utzi dituenean\n"
+"gerta daiteke.\n"
+"Hori gertatzen bada, PulseAudiok berriro abiarazi behar du, edo hau "
+"konfiguratu gabe badago, zuk\n"
+"eskuz exekutatu start-pulseaudio-x11."
+
+#: ../src/cardwidget.cc:88
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() funtzioak huts"
+
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%%%0.0f (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%%%0.0f (-&#8734; dB)</small>"
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%%%0.0f"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Silence</small>"
+msgstr "<small>Isiltasuna</small>"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Min</small>"
+msgstr "<small>Gutx</small>"
+
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>%100 (0 dB)</small>"
+
+#: ../src/channelwidget.cc:145
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Oinarria</i></small>"
+
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "Berrizendatu gailua..."
+
+#: ../src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() funtzioak huts"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "Ez dago gailuak berrizendatzeko euskarririk."
+
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"module-device-manager kargatu behar duzu PulseAudio morroian gailuak "
+"berrizendatu ahal izateko"
+
+#: ../src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() funtzioak huts"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "Errorea %s konfigurazio-fitxategia irakurtzean: %s"
+
+#: ../src/mainwindow.cc:250
+msgid "Error saving preferences"
+msgstr "Errorea hobespenak gordetzean"
+
+#: ../src/mainwindow.cc:258
+#, c-format
+msgid "Error writing config file %s"
+msgstr "Errorea %s konfigurazio-fitxategia idaztean"
+
+#: ../src/mainwindow.cc:322
+msgid " (plugged in)"
+msgstr " (konektatuta)"
+
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
+msgid " (unavailable)"
+msgstr " (ez-erabilgarri)"
+
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
+msgid " (unplugged)"
+msgstr " (deskonektatuta)"
+
+#: ../src/mainwindow.cc:564
+msgid "Failed to read data from stream"
+msgstr "Huts fluxutik datuak irakurtzean"
+
+#: ../src/mainwindow.cc:608
+msgid "Peak detect"
+msgstr "Gailur-detekzioa"
+
+#: ../src/mainwindow.cc:609
+msgid "Failed to create monitoring stream"
+msgstr "Huts monitorizazio-fluxua sortzean"
+
+#: ../src/mainwindow.cc:624
+msgid "Failed to connect monitoring stream"
+msgstr "Huts monitorizazio-fluxura konektatzean"
+
+#: ../src/mainwindow.cc:760
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"Hondoratze-sarrera alde batera uzten, gertaera gisa diseinatu zelako eta "
+"beraz Event widgeten esku geratzen delako"
+
+#: ../src/mainwindow.cc:935
+msgid "System Sounds"
+msgstr "Sistemaren soinuak"
+
+#: ../src/mainwindow.cc:1281
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "PulseAudiorekin konexioa sortzen. Itxaron, mesedez..."
+
+#: ../src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() funtzioak huts"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "piztuta"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "Eten erreprodukzioa"
+
+#: ../src/sinkinputwidget.cc:78
+msgid "Unknown output"
+msgstr "Irteera ezezaguna"
+
+#: ../src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() funtzioak huts"
+
+#: ../src/sinkinputwidget.cc:102
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() funtzioak huts"
+
+#: ../src/sinkinputwidget.cc:112
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() funtzioak huts"
+
+#: ../src/sinkwidget.cc:95
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() funtzioak huts"
+
+#: ../src/sinkwidget.cc:110
+msgid "Volume Control Feedback Sound"
+msgstr "Soinuaren atzeraelikaduraren bolumen kontrola"
+
+#: ../src/sinkwidget.cc:127
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() funtzioak huts"
+
+#: ../src/sinkwidget.cc:141
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() funtzioak huts"
+
+#: ../src/sinkwidget.cc:161
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() funtzioak huts"
+
+#: ../src/sinkwidget.cc:203
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() funtzioak huts"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "hemendik"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "Eten grabazioa"
+
+#: ../src/sourceoutputwidget.cc:83
+msgid "Unknown input"
+msgstr "Sarrera ezezaguna"
+
+#: ../src/sourceoutputwidget.cc:93
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() funtzioak huts"
+
+#: ../src/sourceoutputwidget.cc:108
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() funtzioak huts"
+
+#: ../src/sourceoutputwidget.cc:119
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() funtzioak huts"
+
+#: ../src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() funtzioak huts"
+
+#: ../src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() funtzioak huts"
+
+#: ../src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() funtzioak huts"
+
+#: ../src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() funtzioak huts"
+
+#: ../src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Eten"
+
+#: ../src/pavuapplication.cc:152
+msgid "Select a specific tab on load."
+msgstr "Hautatu fitxa zehatz bat abioan."
+
+#: ../src/pavuapplication.cc:153
+msgid "number"
+msgstr "zenbakia"
+
+#: ../src/pavuapplication.cc:158
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Saiatu etengabe pa kraskatzen bada (5 segundoro)."
+
+#: ../src/pavuapplication.cc:163
+msgid "Maximize the window."
+msgstr "Maximizatu leihoa."
+
+#: ../src/pavuapplication.cc:168
+msgid "Show version."
+msgstr "Erakutsi bertsioa."
