@@ -222,7 +222,7 @@ bool MainWindow::on_key_press_event(GdkEventKey* event) {
             case GDK_KEY_Q:
             case GDK_KEY_w:
             case GDK_KEY_q:
-                this->get_application()->quit();
+                close();
                 return true;
         }
     }
