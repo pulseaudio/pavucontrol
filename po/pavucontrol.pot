@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-21 19:54+0200\n"
+"POT-Creation-Date: 2020-12-08 13:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -397,6 +397,14 @@ msgstr ""
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
+msgstr ""
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr ""
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
 msgstr ""
 
 #: ../src/devicewidget.cc:270
