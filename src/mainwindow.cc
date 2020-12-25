@@ -522,6 +522,28 @@ void MainWindow::setActiveCodec(const std::string& card_name, const std::string&
     w->updating = false;
 }
 
+void MainWindow::setCardProfileIsSticky(const std::string& card_name, gboolean profile_is_sticky) {
+    CardWidget *w = NULL;
+
+    for (auto c : cardWidgets) {
+        if (card_name.compare(c.second->pulse_card_name) == 0)
+            w = c.second;
+    }
+
+    if (!w)
+        return;
+
+    w->updating = true;
+
+    /* make sure that profile lock toggle button is visible */
+    w->hasProfileLock = true;
+    w->profileLockToggleButton->set_active(profile_is_sticky);
+
+    w->prepareMenu();
+
+    w->updating = false;
+}
+
 bool MainWindow::updateSink(const pa_sink_info &info) {
     SinkWidget *w;
     bool is_new = false;

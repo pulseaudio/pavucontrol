@@ -79,6 +79,7 @@ void show_error(const char *txt);
 MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool retry, int tab_number);
 
 #ifdef HAVE_PULSE_MESSAGING_API
+std::string card_message_handler_path(const std::string& name);
 std::string card_bluez_message_handler_path(const std::string& name);
 #endif
 

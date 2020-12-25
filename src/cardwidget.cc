@@ -35,6 +35,7 @@ CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     x->get_widget("cardIconImage", iconImage);
     x->get_widget("codecBox", codecBox);
     x->get_widget("codecList", codecList);
+    x->get_widget("profileLockToggleButton", profileLockToggleButton);
 
     profileListStore = Gtk::ListStore::create(profileModel);
     profileList->set_model(profileListStore);
@@ -49,6 +50,12 @@ CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     codecList->pack_start(codecModel.desc);
 
     codecList->signal_changed().connect( sigc::mem_fun(*this, &CardWidget::onCodecChange));
+
+    hasProfileLock = false;
+
+    profileLockToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &CardWidget::onProfileLockToggleButton));
+    profileLockToggleButton->set_sensitive(true);
+    profileLockToggleButton->set_visible(hasProfileLock);
 }
 
 CardWidget* CardWidget::create() {
@@ -96,6 +103,8 @@ void CardWidget::prepareMenu() {
         codecBox->show();
     else
         codecBox->hide();
+
+    profileLockToggleButton->set_visible(hasProfileLock);
 }
 
 void CardWidget::onProfileChange() {
@@ -141,6 +150,34 @@ void CardWidget::onCodecChange() {
 
           if (!(o = pa_context_send_message_to_object(get_context(), card_bluez_message_handler_path(pulse_card_name).c_str(),
               "switch-codec", codec_message.c_str(), NULL, NULL))) {
+              g_debug(_("pa_context_send_message_to_object() failed: %s"), pa_strerror(pa_context_errno(get_context())));
+              return;
+          }
+
+          pa_operation_unref(o);
+        }
+    }
+#endif
+}
+
+void CardWidget::onProfileLockToggleButton() {
+    if (updating)
+        return;
+
+#ifdef HAVE_PULSE_MESSAGING_API
+    Gtk::TreeModel::iterator iter = profileList->get_active();
+    if (iter)
+    {
+        Gtk::TreeModel::Row row = *iter;
+        if (row)
+        {
+          pa_operation* o;
+          Glib::ustring profile = row[profileModel.name];
+
+          bool profileIsLocked = profileLockToggleButton->get_active();
+
+          if (!(o = pa_context_send_message_to_object(get_context(), card_message_handler_path(pulse_card_name).c_str(),
+              "set-profile-sticky", profileIsLocked ? "true" : "false", NULL, NULL))) {
               g_debug(_("pa_context_send_message_to_object() failed: %s"), pa_strerror(pa_context_errno(get_context())));
               return;
           }

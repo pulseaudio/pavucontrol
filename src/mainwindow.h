@@ -59,6 +59,8 @@ public:
     void updateCardCodecs(const std::string& card_name, const std::unordered_map<std::string, std::string>& codecs);
     void setActiveCodec(const std::string& card_name, const std::string& codec);
 
+    void setCardProfileIsSticky(const std::string& card_name, gboolean profile_is_sticky);
+
     void removeCard(uint32_t index);
     void removeSink(uint32_t index);
     void removeSource(uint32_t index);

@@ -81,6 +81,10 @@ static void dec_outstanding(MainWindow *w) {
 
 #ifdef HAVE_PULSE_MESSAGING_API
 
+std::string card_message_handler_path(const std::string& name) {
+    return "/card/" + name;
+}
+
 std::string card_bluez_message_handler_path(const std::string& name) {
     return "/card/" + name + "/bluez";
 }
@@ -201,6 +205,39 @@ static void context_bluetooth_card_active_codec_cb(pa_context *c, int success, c
     g_object_unref(parser);
 }
 
+static void context_card_profile_is_sticky_cb(pa_context *c, int success, char *response, void *userdata) {
+    auto u = std::unique_ptr<WindowAndCardName>(reinterpret_cast<WindowAndCardName*>(userdata));
+
+    if (!success)
+        return;
+
+    gboolean profile_is_sticky;
+    GError *gerror = NULL;
+
+    JsonParser *parser = json_parser_new();
+
+    if (!json_parser_load_from_data(parser, response, strlen(response), &gerror)) {
+        g_debug(_("could not read JSON from get-profile-sticky message response: %s"), gerror->message);
+        g_error_free(gerror);
+        g_object_unref(parser);
+        return;
+    }
+
+    JsonNode *root = json_parser_get_root(parser);
+
+    if (!root || JSON_NODE_TYPE(root) != JSON_NODE_VALUE) {
+        g_debug(_("get-profile-sticky message response is not a JSON value"));
+        g_object_unref(parser);
+        return;
+    }
+
+    profile_is_sticky = json_node_get_boolean(root);
+
+    u->first->setCardProfileIsSticky(u->second, profile_is_sticky);
+
+    g_object_unref(parser);
+}
+
 template<typename U> void send_message(pa_context *c, const char *target, const char *request, pa_context_string_cb_t cb, const U& u)
 {
     auto send_message_userdata = new U(u);
@@ -299,6 +336,14 @@ static void context_message_handlers_cb(pa_context *c, int success, char *respon
 
         /* list-codecs: retrieve list of codecs */
         send_message(c, e->first.c_str(), "list-codecs", context_bluetooth_card_codec_list_cb, *u);
+    }
+
+    /* send requests to card if card message handler is registered */
+    e = message_handler_map.find(card_message_handler_path(u->second));
+
+    if (e != message_handler_map.end()) {
+        /* get-profile-sticky: retrieve active codec name */
+        send_message(c, e->first.c_str(), "get-profile-sticky", context_card_profile_is_sticky_cb, *u);
     }
 }
 #endif

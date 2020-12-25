@@ -45,6 +45,7 @@ public:
     Glib::ustring name;
     std::string pulse_card_name;
     Gtk::Box *codecBox;
+    Gtk::ToggleButton *profileLockToggleButton;
     uint32_t index;
     bool updating;
 
@@ -59,11 +60,14 @@ public:
     std::vector<std::pair<Glib::ustring, Glib::ustring>> codecs;
     Glib::ustring activeCodec;
 
+    bool hasProfileLock;
+
     void prepareMenu();
 
 protected:
   virtual void onProfileChange();
   virtual void onCodecChange();
+  virtual void onProfileLockToggleButton();
 
   /* Tree model columns */
   class ModelColumns : public Gtk::TreeModel::ColumnRecord
