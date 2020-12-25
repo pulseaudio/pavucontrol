@@ -21,6 +21,8 @@
 #ifndef pavucontrol_h
 #define pavucontrol_h
 
+#include <string>
+
 #include <signal.h>
 #include <string.h>
 
@@ -75,4 +77,9 @@ pa_context* get_context(void);
 void show_error(const char *txt);
 
 MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool retry, int tab_number);
+
+#ifdef HAVE_PULSE_MESSAGING_API
+std::string card_bluez_message_handler_path(const std::string& name);
+#endif
+
 #endif

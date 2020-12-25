@@ -56,6 +56,9 @@ fi
 AC_SUBST(PULSE_LIBS)
 AC_SUBST(PULSE_CFLAGS)
 
+AC_CHECK_LIB(pulse, pa_context_send_message_to_object, [HAVE_PULSE_MESSAGING_API=yes], [HAVE_PULSE_MESSAGING_API=no])
+AS_IF([test "x$HAVE_PULSE_MESSAGING_API" = "xyes"], AC_DEFINE([HAVE_PULSE_MESSAGING_API], 1, [Have messaging API.]))
+
 # If using GCC specifiy some additional parameters
 if test "x$GCC" = "xyes" ; then
    CFLAGS="$CFLAGS -pipe -Wall -W -Wno-unused-parameter"

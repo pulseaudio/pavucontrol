@@ -68,7 +68,7 @@ public:
     virtual void executeVolumeUpdate();
     virtual void setBaseVolume(pa_volume_t v);
 
-    std::vector< std::pair<Glib::ustring,Glib::ustring> > ports;
+    std::vector<std::pair<Glib::ustring, Glib::ustring>> ports;
     Glib::ustring activePort;
 
     void prepareMenu();

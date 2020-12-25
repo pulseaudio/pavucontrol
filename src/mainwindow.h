@@ -29,6 +29,8 @@ class MainWindow;
 #  include <pulse/ext-device-restore.h>
 #endif
 
+#include <unordered_map>
+
 class CardWidget;
 class SinkWidget;
 class SourceWidget;
@@ -54,6 +56,8 @@ public:
 #if HAVE_EXT_DEVICE_RESTORE_API
     void updateDeviceInfo(const pa_ext_device_restore_info &info);
 #endif
+    void updateCardCodecs(const std::string& card_name, const std::unordered_map<std::string, std::string>& codecs);
+    void setActiveCodec(const std::string& card_name, const std::string& codec);
 
     void removeCard(uint32_t index);
     void removeSink(uint32_t index);

@@ -33,12 +33,22 @@ CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     x->get_widget("cardNameLabel", nameLabel);
     x->get_widget("profileList", profileList);
     x->get_widget("cardIconImage", iconImage);
+    x->get_widget("codecBox", codecBox);
+    x->get_widget("codecList", codecList);
 
-    treeModel = Gtk::ListStore::create(profileModel);
-    profileList->set_model(treeModel);
+    profileListStore = Gtk::ListStore::create(profileModel);
+    profileList->set_model(profileListStore);
     profileList->pack_start(profileModel.desc);
 
     profileList->signal_changed().connect( sigc::mem_fun(*this, &CardWidget::onProfileChange));
+
+    codecBox->hide();
+
+    codecListStore = Gtk::ListStore::create(codecModel);
+    codecList->set_model(codecListStore);
+    codecList->pack_start(codecModel.desc);
+
+    codecList->signal_changed().connect( sigc::mem_fun(*this, &CardWidget::onCodecChange));
 }
 
 CardWidget* CardWidget::create() {
@@ -51,22 +61,41 @@ CardWidget* CardWidget::create() {
 
 
 void CardWidget::prepareMenu() {
-    int idx = 0;
-    int active_idx = -1;
+    int active_idx;
 
-    treeModel->clear();
+    profileListStore->clear();
+    active_idx = -1;
     /* Fill the ComboBox's Tree Model */
     for (uint32_t i = 0; i < profiles.size(); ++i) {
-        Gtk::TreeModel::Row row = *(treeModel->append());
+        Gtk::TreeModel::Row row = *(profileListStore->append());
         row[profileModel.name] = profiles[i].first;
         row[profileModel.desc] = profiles[i].second;
         if (profiles[i].first == activeProfile)
-          active_idx = idx;
-        idx++;
+          active_idx = i;
     }
 
     if (active_idx >= 0)
         profileList->set_active(active_idx);
+
+    codecListStore->clear();
+    active_idx = -1;
+    /* Fill the ComboBox's Tree Model */
+    for (uint32_t i = 0; i < codecs.size(); ++i) {
+        Gtk::TreeModel::Row row = *(codecListStore->append());
+        row[codecModel.name] = codecs[i].first;
+        row[codecModel.desc] = codecs[i].second;
+        if (codecs[i].first == activeCodec)
+          active_idx = i;
+    }
+
+    if (active_idx >= 0)
+        codecList->set_active(active_idx);
+
+    /* unhide codec box */
+    if (codecs.size())
+        codecBox->show();
+    else
+        codecBox->hide();
 }
 
 void CardWidget::onProfileChange() {
@@ -92,4 +121,32 @@ void CardWidget::onProfileChange() {
           pa_operation_unref(o);
         }
     }
+}
+
+void CardWidget::onCodecChange() {
+    if (updating)
+        return;
+
+#ifdef HAVE_PULSE_MESSAGING_API
+    Gtk::TreeModel::iterator iter = codecList->get_active();
+    if (iter)
+    {
+        Gtk::TreeModel::Row row = *iter;
+        if (row)
+        {
+          pa_operation* o;
+          Glib::ustring codec_id = row[codecModel.name];
+
+          std::string codec_message = "{" + std::string(codec_id) + "}";
+
+          if (!(o = pa_context_send_message_to_object(get_context(), card_bluez_message_handler_path(pulse_card_name).c_str(),
+              "switch-codec", codec_message.c_str(), NULL, NULL))) {
+              show_error(_("pa_context_set_card_profile_by_index() failed"));
+              return;
+          }
+
+          pa_operation_unref(o);
+        }
+    }
+#endif
 }

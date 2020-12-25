@@ -35,6 +35,10 @@
 
 #include "i18n.h"
 
+#if defined(HAVE_PULSE_MESSAGING_API)
+#include <pulse/message-params.h>
+#endif
+
 /* Used for profile sorting */
 struct profile_prio_compare {
     bool operator() (const pa_card_profile_info2& lhs, const pa_card_profile_info2& rhs) const {
@@ -373,6 +377,8 @@ void MainWindow::updateCard(const pa_card_info &info) {
 
     w->updating = true;
 
+    w->pulse_card_name = info.name;
+
     description = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_DESCRIPTION);
     w->name = description ? description : info.name;
     gchar *txt;
@@ -431,7 +437,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
         if (!profileIt->available)
             desc += _(" (unavailable)");
 
-        w->profiles.push_back(std::pair<Glib::ustring,Glib::ustring>(profileIt->name, desc));
+        w->profiles.push_back(std::pair<Glib::ustring, Glib::ustring>(profileIt->name, desc));
     }
 
     w->activeProfile = info.active_profile ? info.active_profile->name : "";
@@ -471,6 +477,51 @@ void MainWindow::updateCard(const pa_card_info &info) {
 
     if (is_new)
         updateDeviceVisibility();
+
+    w->updating = false;
+}
+
+void MainWindow::updateCardCodecs(const std::string& card_name, const std::unordered_map<std::string, std::string>& codecs) {
+    CardWidget *w = NULL;
+
+    for (auto c : cardWidgets) {
+        if (card_name.compare(c.second->pulse_card_name) == 0)
+            w = c.second;
+    }
+
+    if (!w)
+        return;
+
+    w->updating = true;
+
+    w->codecs.clear();
+
+    /* insert profiles */
+    for (auto e : codecs) {
+        w->codecs.push_back(std::pair<Glib::ustring, Glib::ustring>(e.first, e.second));
+    }
+
+    w->prepareMenu();
+
+    w->updating = false;
+}
+
+void MainWindow::setActiveCodec(const std::string& card_name, const std::string& codec) {
+    CardWidget *w = NULL;
+
+    for (auto c : cardWidgets) {
+        if (card_name.compare(c.second->pulse_card_name) == 0)
+            w = c.second;
+    }
+
+    if (!w)
+        return;
+
+    w->updating = true;
+
+    w->activeCodec = codec;
+
+    w->prepareMenu();
 
     w->updating = false;
 }
@@ -525,7 +576,7 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
 
     w->ports.clear();
     for (std::set<pa_sink_port_info>::iterator i = port_priorities.begin(); i != port_priorities.end(); ++i)
-        w->ports.push_back(std::pair<Glib::ustring,Glib::ustring>(i->name, i->description));
+        w->ports.push_back(std::pair<Glib::ustring, Glib::ustring>(i->name, i->description));
 
     w->activePort = info.active_port ? info.active_port->name : "";
 
@@ -692,7 +743,7 @@ void MainWindow::updateSource(const pa_source_info &info) {
 
     w->ports.clear();
     for (std::set<pa_source_port_info>::iterator i = port_priorities.begin(); i != port_priorities.end(); ++i)
-        w->ports.push_back(std::pair<Glib::ustring,Glib::ustring>(i->name, i->description));
+        w->ports.push_back(std::pair<Glib::ustring, Glib::ustring>(i->name, i->description));
 
     w->activePort = info.active_port ? info.active_port->name : "";
 

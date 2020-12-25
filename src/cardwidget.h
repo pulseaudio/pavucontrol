@@ -43,19 +43,27 @@ public:
     Gtk::Menu menu;
     Gtk::Image *iconImage;
     Glib::ustring name;
+    std::string pulse_card_name;
+    Gtk::Box *codecBox;
     uint32_t index;
     bool updating;
 
-    std::vector< std::pair<Glib::ustring,Glib::ustring> > profiles;
+    // each entry in profiles is a pair of profile name and profile description
+    std::vector<std::pair<Glib::ustring, Glib::ustring>> profiles;
     std::map<Glib::ustring, PortInfo> ports;
     Glib::ustring activeProfile;
     bool hasSinks;
     bool hasSources;
 
+    // each entry in codecs is a pair of codec name and codec description
+    std::vector<std::pair<Glib::ustring, Glib::ustring>> codecs;
+    Glib::ustring activeCodec;
+
     void prepareMenu();
 
 protected:
   virtual void onProfileChange();
+  virtual void onCodecChange();
 
   /* Tree model columns */
   class ModelColumns : public Gtk::TreeModel::ColumnRecord
@@ -72,7 +80,12 @@ protected:
   ModelColumns profileModel;
 
   Gtk::ComboBox *profileList;
-  Glib::RefPtr<Gtk::ListStore> treeModel;
+  Glib::RefPtr<Gtk::ListStore> profileListStore;
+
+  ModelColumns codecModel;
+
+  Gtk::ComboBox *codecList;
+  Glib::RefPtr<Gtk::ListStore> codecListStore;
 };
 
 #endif

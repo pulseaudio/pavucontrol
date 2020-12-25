@@ -25,6 +25,9 @@
 #include <pulse/pulseaudio.h>
 #include <pulse/ext-stream-restore.h>
 #include <pulse/ext-device-manager.h>
+#ifdef HAVE_PULSE_MESSAGING_API
+#include <pulse/message-params.h>
+#endif
 
 #include <canberra-gtk.h>
 
@@ -41,6 +44,12 @@
 #include "rolewidget.h"
 #include "mainwindow.h"
 #include "pavuapplication.h"
+
+#include <unordered_map>
+#include <utility>
+#include <memory>
+
+using WindowAndCardName = std::pair<MainWindow*, std::string>;
 
 static pa_context* context = NULL;
 static pa_mainloop_api* api = NULL;
@@ -70,7 +79,145 @@ static void dec_outstanding(MainWindow *w) {
     }
 }
 
-void card_cb(pa_context *, const pa_card_info *i, int eol, void *userdata) {
+#ifdef HAVE_PULSE_MESSAGING_API
+
+std::string card_bluez_message_handler_path(const std::string& name) {
+    return "/card/" + name + "/bluez";
+}
+
+static void context_bluetooth_card_codec_list_cb(pa_context *c, int success, char *response, void *userdata) {
+    auto u = std::unique_ptr<WindowAndCardName>(reinterpret_cast<WindowAndCardName*>(userdata));
+
+    if (!success)
+        return;
+
+    void *state = NULL;
+    char *codec_list;
+    char *handler_struct;
+    int err;
+
+    if (pa_message_params_read_raw(response, &codec_list, &state) <= 0) {
+        show_error(_("list-codecs message response could not be parsed correctly"));
+        return;
+    }
+
+    std::unordered_map<std::string, std::string> codecs;
+
+    state = NULL;
+    while ((err = pa_message_params_read_raw(codec_list, &handler_struct, &state)) > 0) {
+        void *state2 = NULL;
+        const char *path;
+        const char *description;
+
+        if (pa_message_params_read_string(handler_struct, &path, &state2) <= 0) {
+            err = -1;
+            break;
+        }
+        if (pa_message_params_read_string(handler_struct, &description, &state2) <= 0) {
+            err = -1;
+            break;
+        }
+
+        codecs[path] = description;
+    }
+
+    if (err < 0) {
+        show_error(_("list-codecs message response could not be parsed correctly"));
+        codecs.clear();
+        return;
+    }
+
+    u->first->updateCardCodecs(u->second, codecs);
+}
+
+static void context_bluetooth_card_active_codec_cb(pa_context *c, int success, char *response, void *userdata) {
+    auto u = std::unique_ptr<WindowAndCardName>(reinterpret_cast<WindowAndCardName*>(userdata));
+
+    if (!success)
+        return;
+
+    void *state = NULL;
+    const char *name;
+
+    if (pa_message_params_read_string(response, &name, &state) <= 0) {
+        show_error(_("get-codec message response could not be parsed correctly"));
+        return;
+    }
+
+    u->first->setActiveCodec(u->second, name);
+}
+
+template<typename U> void send_message(pa_context *c, const char *target, const char *request, pa_context_string_cb_t cb, const U& u)
+{
+    auto send_message_userdata = new U(u);
+
+    pa_operation *o = pa_context_send_message_to_object(c, target, request, NULL, cb, send_message_userdata);
+
+    if (!o) {
+        delete send_message_userdata;
+        show_error(_("pa_context_send_message_to_object() failed"));
+        return;
+    }
+    pa_operation_unref(o);
+}
+
+static void context_message_handlers_cb(pa_context *c, int success, char *response, void *userdata) {
+    auto u = std::unique_ptr<WindowAndCardName>(reinterpret_cast<WindowAndCardName*>(userdata));
+
+    if (!success)
+        return;
+
+    void *state = NULL;
+    char *handler_list;
+    char *handler_struct;
+    int err;
+
+    if (pa_message_params_read_raw(response, &handler_list, &state) <= 0) {
+        show_error(_("list-handlers message response could not be parsed correctly"));
+        return;
+    }
+
+    std::unordered_map<std::string, std::string> message_handler_map;
+
+    state = NULL;
+    while ((err = pa_message_params_read_raw(handler_list, &handler_struct, &state)) > 0) {
+        void *state2 = NULL;
+        const char *path;
+        const char *description;
+
+        if (pa_message_params_read_string(handler_struct, &path, &state2) <= 0) {
+            err = -1;
+            break;
+        }
+        if (pa_message_params_read_string(handler_struct, &description, &state2) <= 0) {
+            err = -1;
+            break;
+        }
+
+        message_handler_map[path] = description;
+    }
+
+    if (err < 0) {
+        show_error(_("list-handlers message response could not be parsed correctly"));
+        message_handler_map.clear();
+        return;
+    }
+
+    /* only send requests if card bluez message handler is registered */
+    auto e = message_handler_map.find(card_bluez_message_handler_path(u->second));
+
+    if (e != message_handler_map.end()) {
+
+        /* get-codec: retrieve active codec name */
+        send_message(c, e->first.c_str(), "get-codec", context_bluetooth_card_active_codec_cb, *u);
+
+        /* list-codecs: retrieve list of codecs */
+        send_message(c, e->first.c_str(), "list-codecs", context_bluetooth_card_codec_list_cb, *u);
+    }
+}
+#endif
+
+void card_cb(pa_context *c, const pa_card_info *i, int eol, void *userdata) {
     MainWindow *w = static_cast<MainWindow*>(userdata);
 
     if (eol < 0) {
@@ -87,6 +234,11 @@ void card_cb(pa_context *, const pa_card_info *i, int eol, void *userdata) {
     }
 
     w->updateCard(*i);
+
+#ifdef HAVE_PULSE_MESSAGING_API
+    /* initiate requesting bluetooth codec list */
+    send_message(c, "/core", "list-handlers", context_message_handlers_cb, WindowAndCardName(w, i->name));
+#endif
 }
 
 #if HAVE_EXT_DEVICE_RESTORE_API
