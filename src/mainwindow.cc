@@ -1260,18 +1260,18 @@ void MainWindow::removeClient(uint32_t index) {
 }
 
 void MainWindow::removeAllWidgets() {
-    for (std::map<uint32_t, SinkInputWidget*>::iterator it = sinkInputWidgets.begin(); it != sinkInputWidgets.end(); ++it)
-        removeSinkInput(it->first);
-    for (std::map<uint32_t, SourceOutputWidget*>::iterator it = sourceOutputWidgets.begin(); it != sourceOutputWidgets.end(); ++it)
-        removeSourceOutput(it->first);
-    for (std::map<uint32_t, SinkWidget*>::iterator it = sinkWidgets.begin(); it != sinkWidgets.end(); ++it)
-        removeSink(it->first);
-    for (std::map<uint32_t, SourceWidget*>::iterator it = sourceWidgets.begin(); it != sourceWidgets.end(); ++it)
-        removeSource(it->first);
-    for (std::map<uint32_t, CardWidget*>::iterator it = cardWidgets.begin(); it != cardWidgets.end(); ++it)
-       removeCard(it->first);
-    for (std::map<uint32_t, char*>::iterator it = clientNames.begin(); it != clientNames.end(); ++it)
-        removeClient(it->first);
+    while (!sinkInputWidgets.empty())
+        removeSinkInput(sinkInputWidgets.begin()->first);
+    while (!sourceOutputWidgets.empty())
+        removeSourceOutput(sourceOutputWidgets.begin()->first);
+    while (!sinkWidgets.empty())
+        removeSink(sinkWidgets.begin()->first);
+    while (!sourceWidgets.empty())
+        removeSource(sourceWidgets.begin()->first);
+    while (!cardWidgets.empty())
+        removeCard(cardWidgets.begin()->first);
+    while (!clientNames.empty())
+        removeClient(clientNames.begin()->first);
     deleteEventRoleWidget();
 }
 
