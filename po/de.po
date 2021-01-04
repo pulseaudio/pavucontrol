@@ -4,13 +4,14 @@
 # Fabian Affolter <fab@fedoraproject.org>, 2008.
 # Florian Steinel <fsteinel@fedoraproject.org>, 2008
 # Tobias Weise <tobias.weise@web.de>, 2020.
+# Fabian Affolter <mail@fabian-affolter.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-04-18 22:40+0000\n"
-"Last-Translator: Tobias Weise <tobias.weise@web.de>\n"
+"PO-Revision-Date: 2020-12-13 16:35+0000\n"
+"Last-Translator: Fabian Affolter <mail@fabian-affolter.ch>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/de/>\n"
 "Language: de\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.1\n"
+"X-Generator: Weblate 4.3.2\n"
 "X-Poedit-Language: German\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
@@ -83,7 +84,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
@@ -91,7 +92,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
@@ -350,8 +351,8 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
-"Verbindung zu PulseAudio fehlgeschlagen. Erneuter automatischer Versuch in "
-"5s.\n"
+"Verbindung zu PulseAudio fehlgeschlagen. Erneuter automatischer Versuch in 5 "
+"s.\n"
 "\n"
 "Dies ist wahrscheinlich durch eine falsche Konfiguration verursacht.\n"
 "Entweder die PULSE_SERVER Umgebungsvariable/X11 Root Window Eigenschaft\n"
