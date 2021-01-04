@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-13 22:06+0300\n"
+"POT-Creation-Date: 2020-12-08 13:56+0200\n"
 "PO-Revision-Date: 2020-05-21 07:40+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.fedoraproject.org/"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.0.4\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio-lydstyrkekontroll"
 
@@ -230,125 +230,125 @@ msgstr "Lydstrømstittel"
 msgid "direction"
 msgstr "retning"
 
-#: ../src/pavucontrol.cc:79
+#: ../src/pavucontrol.cc:80
 #, fuzzy
 msgid "Card callback failure"
 msgstr "Kunne ikke tilbakekalle kort"
 
-#: ../src/pavucontrol.cc:102
+#: ../src/pavucontrol.cc:103
 msgid "Sink callback failure"
 msgstr "Kunne ikke utføre tilbakekall for sluk"
 
-#: ../src/pavucontrol.cc:126
+#: ../src/pavucontrol.cc:127
 #, fuzzy
 msgid "Source callback failure"
 msgstr "Kunne ikke utføre tilbakekall"
 
-#: ../src/pavucontrol.cc:145
+#: ../src/pavucontrol.cc:146
 msgid "Sink input callback failure"
 msgstr "Kunne ikke utføre tilbakekall for sluksinngang"
 
-#: ../src/pavucontrol.cc:164
+#: ../src/pavucontrol.cc:165
 #, fuzzy
 msgid "Source output callback failure"
 msgstr "Kunne ikke utføre tilbakekall av utgang"
 
-#: ../src/pavucontrol.cc:194
+#: ../src/pavucontrol.cc:195
 #, fuzzy
 msgid "Client callback failure"
 msgstr "Kunne ikke utføre tilbakekall av klient"
 
-#: ../src/pavucontrol.cc:210
+#: ../src/pavucontrol.cc:211
 msgid "Server info callback failure"
 msgstr "Kunne ikke utføre tilbakekall av tjenerinfo"
 
-#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#: ../src/pavucontrol.cc:229 ../src/pavucontrol.cc:526
 #, fuzzy, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr ""
 "Klarte ikke å igangsette programtillegget for lydstrømsgjenoppretting: %s"
 
-#: ../src/pavucontrol.cc:246
+#: ../src/pavucontrol.cc:247
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() mislyktes"
 
-#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
 #, fuzzy, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Klarte ikke å igangsette programtillegget for enhetsgjenoppretting: %s"
 
-#: ../src/pavucontrol.cc:285
+#: ../src/pavucontrol.cc:286
 #, fuzzy
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() mislyktes"
 
-#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
 #, fuzzy, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Klarte ikke å igangsette enhetshåndteringstillegg: %s"
 
-#: ../src/pavucontrol.cc:322
+#: ../src/pavucontrol.cc:323
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() mislyktes"
 
-#: ../src/pavucontrol.cc:339
+#: ../src/pavucontrol.cc:340
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:352
+#: ../src/pavucontrol.cc:353
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:366 ../src/pavucontrol.cc:379
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() mislyktes"
 
-#: ../src/pavucontrol.cc:391
+#: ../src/pavucontrol.cc:392
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() mislyktes"
 
-#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+#: ../src/pavucontrol.cc:402 ../src/pavucontrol.cc:467
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() mislyktes"
 
-#: ../src/pavucontrol.cc:414
+#: ../src/pavucontrol.cc:415
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:457
+#: ../src/pavucontrol.cc:458
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() mislyktes"
 
-#: ../src/pavucontrol.cc:473
+#: ../src/pavucontrol.cc:474
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:480
+#: ../src/pavucontrol.cc:481
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:487
+#: ../src/pavucontrol.cc:488
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:494
+#: ../src/pavucontrol.cc:495
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:501
+#: ../src/pavucontrol.cc:502
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:508
+#: ../src/pavucontrol.cc:509
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+#: ../src/pavucontrol.cc:568 ../src/pavucontrol.cc:619
 #, fuzzy
 msgid "Connection failed, attempting reconnect"
 msgstr "Kunne ikke koble til, prøver igjen…"
 
-#: ../src/pavucontrol.cc:605
+#: ../src/pavucontrol.cc:606
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -429,6 +429,14 @@ msgid ""
 msgstr ""
 "Du må laste inn module-device-manager fra PulseAudio-tjeneren for å endre "
 "navn på enheter."
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr ""
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
+msgstr ""
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -591,25 +599,25 @@ msgstr "pa_context_set_source_port_by_index() mislyktes"
 msgid "Terminate"
 msgstr "Avslutt"
 
-#: ../src/pavuapplication.cc:152
+#: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Velg en spesifikk fane ved innlasting."
 
-#: ../src/pavuapplication.cc:153
+#: ../src/pavuapplication.cc:161
 msgid "number"
 msgstr "nummer"
 
-#: ../src/pavuapplication.cc:158
+#: ../src/pavuapplication.cc:166
 #, fuzzy
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Prøv igjen hvert femte sekund hvis PulseAudio avslutter."
 
-#: ../src/pavuapplication.cc:163
+#: ../src/pavuapplication.cc:171
 #, fuzzy
 msgid "Maximize the window."
 msgstr "Maksimer vinduet."
 
-#: ../src/pavuapplication.cc:168
+#: ../src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Vis versjon."
 

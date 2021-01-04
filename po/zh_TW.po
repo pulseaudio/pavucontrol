@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-13 22:06+0300\n"
+"POT-Creation-Date: 2020-12-08 13:56+0200\n"
 "PO-Revision-Date: 2020-06-27 16:40+0000\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.1.1\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio 音量控制"
 
@@ -230,118 +230,118 @@ msgstr "串流標題"
 msgid "direction"
 msgstr "方向"
 
-#: ../src/pavucontrol.cc:79
+#: ../src/pavucontrol.cc:80
 msgid "Card callback failure"
 msgstr "音效卡回呼失敗"
 
-#: ../src/pavucontrol.cc:102
+#: ../src/pavucontrol.cc:103
 msgid "Sink callback failure"
 msgstr "輸出介面 (sink) 回呼失敗"
 
-#: ../src/pavucontrol.cc:126
+#: ../src/pavucontrol.cc:127
 msgid "Source callback failure"
 msgstr "輸入介面 (source) 回呼失敗"
 
-#: ../src/pavucontrol.cc:145
+#: ../src/pavucontrol.cc:146
 msgid "Sink input callback failure"
 msgstr "輸出介面輸入 (sink input) 回呼失敗"
 
-#: ../src/pavucontrol.cc:164
+#: ../src/pavucontrol.cc:165
 msgid "Source output callback failure"
 msgstr "輸入介面輸出 (source output) 回呼失敗"
 
-#: ../src/pavucontrol.cc:194
+#: ../src/pavucontrol.cc:195
 msgid "Client callback failure"
 msgstr "用戶端回呼失敗"
 
-#: ../src/pavucontrol.cc:210
+#: ../src/pavucontrol.cc:211
 msgid "Server info callback failure"
 msgstr "伺服器資訊回呼失敗"
 
-#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#: ../src/pavucontrol.cc:229 ../src/pavucontrol.cc:526
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "無法初始化 stream_restore 附加元件：%s"
 
-#: ../src/pavucontrol.cc:246
+#: ../src/pavucontrol.cc:247
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() 失敗"
 
-#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "無法初始化裝置還原附加元件：%s"
 
-#: ../src/pavucontrol.cc:285
+#: ../src/pavucontrol.cc:286
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() 失敗"
 
-#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "無法初始化裝置管理員附加元件：%s"
 
-#: ../src/pavucontrol.cc:322
+#: ../src/pavucontrol.cc:323
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() 失敗"
 
-#: ../src/pavucontrol.cc:339
+#: ../src/pavucontrol.cc:340
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() 失敗"
 
-#: ../src/pavucontrol.cc:352
+#: ../src/pavucontrol.cc:353
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() 失敗"
 
-#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:366 ../src/pavucontrol.cc:379
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() 失敗"
 
-#: ../src/pavucontrol.cc:391
+#: ../src/pavucontrol.cc:392
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() 失敗"
 
-#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+#: ../src/pavucontrol.cc:402 ../src/pavucontrol.cc:467
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() 失敗"
 
-#: ../src/pavucontrol.cc:414
+#: ../src/pavucontrol.cc:415
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() 失敗"
 
-#: ../src/pavucontrol.cc:457
+#: ../src/pavucontrol.cc:458
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() 失敗"
 
-#: ../src/pavucontrol.cc:473
+#: ../src/pavucontrol.cc:474
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:480
+#: ../src/pavucontrol.cc:481
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:487
+#: ../src/pavucontrol.cc:488
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:494
+#: ../src/pavucontrol.cc:495
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:501
+#: ../src/pavucontrol.cc:502
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:508
+#: ../src/pavucontrol.cc:509
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() 失敗"
 
-#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+#: ../src/pavucontrol.cc:568 ../src/pavucontrol.cc:619
 msgid "Connection failed, attempting reconnect"
 msgstr "連線失敗，正在嘗試重新連線"
 
-#: ../src/pavucontrol.cc:605
+#: ../src/pavucontrol.cc:606
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -417,6 +417,14 @@ msgid ""
 "rename devices"
 msgstr ""
 "您需要在 PulseAudio 伺服器中載入 module-device-manager 才能重新命名裝置"
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr ""
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
+msgstr ""
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -575,23 +583,23 @@ msgstr "pa_context_set_source_port_by_index() 失敗"
 msgid "Terminate"
 msgstr "終止"
 
-#: ../src/pavuapplication.cc:152
+#: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "在載入時選擇一個特定的標籤頁。"
 
-#: ../src/pavuapplication.cc:153
+#: ../src/pavuapplication.cc:161
 msgid "number"
 msgstr "編號"
 
-#: ../src/pavuapplication.cc:158
+#: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "若 pa 結束則不斷重試 (每 5 秒)。"
 
-#: ../src/pavuapplication.cc:163
+#: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
 msgstr "最大化視窗。"
 
-#: ../src/pavuapplication.cc:168
+#: ../src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "顯示版本。"
 

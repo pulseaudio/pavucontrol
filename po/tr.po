@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-13 22:06+0300\n"
+"POT-Creation-Date: 2020-12-08 13:56+0200\n"
 "PO-Revision-Date: 2020-06-25 17:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.1.1\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio Ses Denetimi"
 
@@ -230,118 +230,118 @@ msgstr "Akış Adı"
 msgid "direction"
 msgstr "yön"
 
-#: ../src/pavucontrol.cc:79
+#: ../src/pavucontrol.cc:80
 msgid "Card callback failure"
 msgstr "Kart geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:102
+#: ../src/pavucontrol.cc:103
 msgid "Sink callback failure"
 msgstr "Sink geri-çağırma hatası"
 
-#: ../src/pavucontrol.cc:126
+#: ../src/pavucontrol.cc:127
 msgid "Source callback failure"
 msgstr "Kaynak geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:145
+#: ../src/pavucontrol.cc:146
 msgid "Sink input callback failure"
 msgstr "Sink girdisi geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:164
+#: ../src/pavucontrol.cc:165
 msgid "Source output callback failure"
 msgstr "Kaynak çıkışı geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:194
+#: ../src/pavucontrol.cc:195
 msgid "Client callback failure"
 msgstr "İstemci geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:210
+#: ../src/pavucontrol.cc:211
 msgid "Server info callback failure"
 msgstr "Sunucu bilgisi geri-çağırma başarısız"
 
-#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#: ../src/pavucontrol.cc:229 ../src/pavucontrol.cc:526
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Akış sıfırlama eklentisini başlatma başarısız: %s"
 
-#: ../src/pavucontrol.cc:246
+#: ../src/pavucontrol.cc:247
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() başarısız"
 
-#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Aygıt sıfırlama eklentisini başlatma başarısız: %s"
 
-#: ../src/pavucontrol.cc:285
+#: ../src/pavucontrol.cc:286
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() başarısız"
 
-#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Aygıt yönetici eklentisini başlatma başarısız: %s"
 
-#: ../src/pavucontrol.cc:322
+#: ../src/pavucontrol.cc:323
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() başarısız"
 
-#: ../src/pavucontrol.cc:339
+#: ../src/pavucontrol.cc:340
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:352
+#: ../src/pavucontrol.cc:353
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:366 ../src/pavucontrol.cc:379
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() başarısız"
 
-#: ../src/pavucontrol.cc:391
+#: ../src/pavucontrol.cc:392
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() başarısız"
 
-#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+#: ../src/pavucontrol.cc:402 ../src/pavucontrol.cc:467
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() başarısız"
 
-#: ../src/pavucontrol.cc:414
+#: ../src/pavucontrol.cc:415
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() başarısız"
 
-#: ../src/pavucontrol.cc:457
+#: ../src/pavucontrol.cc:458
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() başarısız"
 
-#: ../src/pavucontrol.cc:473
+#: ../src/pavucontrol.cc:474
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:480
+#: ../src/pavucontrol.cc:481
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:487
+#: ../src/pavucontrol.cc:488
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:494
+#: ../src/pavucontrol.cc:495
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:501
+#: ../src/pavucontrol.cc:502
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:508
+#: ../src/pavucontrol.cc:509
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() başarısız"
 
-#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+#: ../src/pavucontrol.cc:568 ../src/pavucontrol.cc:619
 msgid "Connection failed, attempting reconnect"
 msgstr "Bağlantı başarısız, yeniden bağlanmaya çalışılıyor"
 
-#: ../src/pavucontrol.cc:605
+#: ../src/pavucontrol.cc:606
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -419,6 +419,14 @@ msgid ""
 msgstr ""
 "Aygıtları yeniden adlandırmak için PulseAudio sunucusuna module-device-"
 "manager yüklemeniz gerekir"
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr ""
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
+msgstr ""
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -578,23 +586,23 @@ msgstr "pa_context_set_source_port_by_index() başarısız"
 msgid "Terminate"
 msgstr "Sonlandır"
 
-#: ../src/pavuapplication.cc:152
+#: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Özel bir yükleme sekmesi seçin."
 
-#: ../src/pavuapplication.cc:153
+#: ../src/pavuapplication.cc:161
 msgid "number"
 msgstr "sayı"
 
-#: ../src/pavuapplication.cc:158
+#: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Eğer pa sonlandırılırsa sürekli yeniden dene (her 5 saniyede bir)."
 
-#: ../src/pavuapplication.cc:163
+#: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
 msgstr "Pencereyi büyüt."
 
-#: ../src/pavuapplication.cc:168
+#: ../src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Sürümü göster."
 

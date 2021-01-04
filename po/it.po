@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-13 22:06+0300\n"
+"POT-Creation-Date: 2020-12-08 13:56+0200\n"
 "PO-Revision-Date: 2020-09-08 10:29+0000\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.2.2\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:590
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
 msgstr "Regolazione del volume PulseAudio"
 
@@ -240,120 +240,120 @@ msgstr "Titolo flusso"
 msgid "direction"
 msgstr "direzione"
 
-#: ../src/pavucontrol.cc:79
+#: ../src/pavucontrol.cc:80
 msgid "Card callback failure"
 msgstr "Callback alla scheda non riuscito"
 
-#: ../src/pavucontrol.cc:102
+#: ../src/pavucontrol.cc:103
 msgid "Sink callback failure"
 msgstr "Callback al sink non riuscito"
 
-#: ../src/pavucontrol.cc:126
+#: ../src/pavucontrol.cc:127
 msgid "Source callback failure"
 msgstr "Callback alla sorgente non riuscito"
 
-#: ../src/pavucontrol.cc:145
+#: ../src/pavucontrol.cc:146
 msgid "Sink input callback failure"
 msgstr "Callback al sink di ingresso non riuscito"
 
-#: ../src/pavucontrol.cc:164
+#: ../src/pavucontrol.cc:165
 msgid "Source output callback failure"
 msgstr "Callback alla sorgente di uscita non riuscito"
 
-#: ../src/pavucontrol.cc:194
+#: ../src/pavucontrol.cc:195
 msgid "Client callback failure"
 msgstr "Callback al client non riuscito"
 
-#: ../src/pavucontrol.cc:210
+#: ../src/pavucontrol.cc:211
 msgid "Server info callback failure"
 msgstr "Callback informazioni server non riuscito"
 
-#: ../src/pavucontrol.cc:228 ../src/pavucontrol.cc:525
+#: ../src/pavucontrol.cc:229 ../src/pavucontrol.cc:526
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Inizializzazione dell'estensione stream_restore non riuscita: %s"
 
-#: ../src/pavucontrol.cc:246
+#: ../src/pavucontrol.cc:247
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() non riuscita"
 
-#: ../src/pavucontrol.cc:264 ../src/pavucontrol.cc:539
+#: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr ""
 "Inizializzazione dell'estensione restore del dispositivo non riuscita: %s"
 
-#: ../src/pavucontrol.cc:285
+#: ../src/pavucontrol.cc:286
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() non riuscita"
 
-#: ../src/pavucontrol.cc:303 ../src/pavucontrol.cc:552
+#: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr ""
 "Inizializzazione dell'estensione di gestione del dispositivo non riuscita: %s"
 
-#: ../src/pavucontrol.cc:322
+#: ../src/pavucontrol.cc:323
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() non riuscita"
 
-#: ../src/pavucontrol.cc:339
+#: ../src/pavucontrol.cc:340
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() non riuscita"
 
-#: ../src/pavucontrol.cc:352
+#: ../src/pavucontrol.cc:353
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() non riuscita"
 
-#: ../src/pavucontrol.cc:365 ../src/pavucontrol.cc:378
+#: ../src/pavucontrol.cc:366 ../src/pavucontrol.cc:379
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() non riuscita"
 
-#: ../src/pavucontrol.cc:391
+#: ../src/pavucontrol.cc:392
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() non riuscita"
 
-#: ../src/pavucontrol.cc:401 ../src/pavucontrol.cc:466
+#: ../src/pavucontrol.cc:402 ../src/pavucontrol.cc:467
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() non riuscita"
 
-#: ../src/pavucontrol.cc:414
+#: ../src/pavucontrol.cc:415
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() non riuscita"
 
-#: ../src/pavucontrol.cc:457
+#: ../src/pavucontrol.cc:458
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() non riuscita"
 
-#: ../src/pavucontrol.cc:473
+#: ../src/pavucontrol.cc:474
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:480
+#: ../src/pavucontrol.cc:481
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:487
+#: ../src/pavucontrol.cc:488
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:494
+#: ../src/pavucontrol.cc:495
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:501
+#: ../src/pavucontrol.cc:502
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:508
+#: ../src/pavucontrol.cc:509
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() non riuscita"
 
-#: ../src/pavucontrol.cc:567 ../src/pavucontrol.cc:618
+#: ../src/pavucontrol.cc:568 ../src/pavucontrol.cc:619
 msgid "Connection failed, attempting reconnect"
 msgstr "Connessione non riuscita, nuovo tentativo"
 
-#: ../src/pavucontrol.cc:605
+#: ../src/pavucontrol.cc:606
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -431,6 +431,14 @@ msgid ""
 msgstr ""
 "È necessario caricare module-device-manager nel server PulseAudio per "
 "rinominare i dispositivi"
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr ""
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
+msgstr ""
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -590,23 +598,23 @@ msgstr "pa_context_set_source_port_by_index() non riuscita"
 msgid "Terminate"
 msgstr "Termina"
 
-#: ../src/pavuapplication.cc:152
+#: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Selezionare una scheda da caricare."
 
-#: ../src/pavuapplication.cc:153
+#: ../src/pavuapplication.cc:161
 msgid "number"
 msgstr "numero"
 
-#: ../src/pavuapplication.cc:158
+#: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Prova per sempre se pa esce (ogni 5 secondi)"
 
-#: ../src/pavuapplication.cc:163
+#: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
 msgstr "Massimizza la finestra"
 
-#: ../src/pavuapplication.cc:168
+#: ../src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Mostra la versione"
 
