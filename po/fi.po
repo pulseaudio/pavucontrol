@@ -6,13 +6,14 @@
 # Tuure Savuoja <tuure+oss@tuuresavuoja.net>, 2018
 # Ammuu5 <ammuu5@tutanota.com>, 2019
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2020.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-03-22 20:38+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2021-01-04 18:36+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/fi/>\n"
 "Language: fi\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.4\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -84,7 +85,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "DTS"
@@ -92,7 +93,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "MPEG"
