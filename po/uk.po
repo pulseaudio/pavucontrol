@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2009, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2009, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-06-25 17:40+0000\n"
+"PO-Revision-Date: 2021-01-31 22:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -33,18 +33,16 @@ msgid "Adjust the volume level"
 msgstr "Скоригуйте рівень гучності"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;Input;"
-"павуконтроль;мікрофон;гучність;приглушення;баланс;гарнітура;звук;мікшер;"
-"аудіо;виведення;введення;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settin"
+"gs;Preferences;павуконтроль;мікрофон;гучність;приглушення;баланс;гарнітура;гу"
+"чномовці;колонки;навушники;звук;мікшер;аудіо;виведення;введення;пристрої;відт"
+"ворення;запис;звуки;звук;система;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -430,11 +428,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Скасувати"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_Гаразд"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
