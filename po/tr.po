@@ -4,13 +4,13 @@
 #
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2008.
 # Gökhan Gökkaya <wirelessanten@gmail.com>, 2019
-# Oğuz Ersen <oguzersen@protonmail.com>, 2020.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-06-25 17:40+0000\n"
+"PO-Revision-Date: 2021-01-27 18:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/tr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -108,7 +108,7 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "<b>Latency offset:</b>"
-msgstr "<b>Gecikme dengelemesi:</b>"
+msgstr "<b>Gecikme uzaklığı:</b>"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "ms"
@@ -410,7 +410,7 @@ msgstr "pa_context_set_port_latency_offset() başarısız"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "Maalesef, cihaz yeniden adlandırılma desteklemiyor."
+msgstr "Maalesef, aygıt yeniden adlandırma desteklenmiyor."
 
 #: ../src/devicewidget.cc:249
 msgid ""
