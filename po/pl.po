@@ -1,13 +1,13 @@
 # Polish translation for pavucontrol.
 # Copyright © 2008-2019 the pavucontrol authors.
 # This file is distributed under the same license as the pavucontrol package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015, 2016, 2018, 2019, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2008, 2009, 2015, 2016, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-06-23 16:51+0000\n"
+"PO-Revision-Date: 2021-01-30 20:28+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/pl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -32,18 +32,16 @@ msgid "Adjust the volume level"
 msgstr "Dostosowanie poziomu głośności"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Mikrofon;Głośność;Oddalenie;Balans;Zestaw słuchawkowy;Headset;"
-"Słuchawki;Głośniki;Dźwięk;Audio;Mikser;Mixer;Wyjście;Wejście;Odtwarzanie;"
-"Nagrywanie;Mono;Stereo;Surround;Dookolny;PCM;S/PDIF;HDMI;DTS;Dolby;Digital;"
+"pavucontrol;Mikrofon;Głośność;Oddalenie;Balans;Zestaw słuchawkowy;Headset;Gło"
+"śniki;Słuchawki;Dźwięk;Audio;Mikser;Mixer;Wyjście;Wejście;Urządzenia;wyjściow"
+"e;wejściowe;Odtwarzanie;Nagrywanie;Dźwięki systemowe;Karta;dźwiękowa;Ustawien"
+"ia;Preferencje;Mono;Stereo;Surround;Przestrzenny;Dookolny;PCM;S/"
+"PDIF;HDMI;DTS;Dolby;Digital;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -424,11 +422,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Anuluj"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
