@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2021-01-04 18:36+0000\n"
+"PO-Revision-Date: 2021-02-05 14:40+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/fi/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -193,7 +193,7 @@ msgstr "Ul_ostulolaitteet"
 
 #: ../src/pavucontrol.glade.h:40
 msgid "<i>No input devices available</i>"
-msgstr "<i>Sisääntulolaitteita ei ole saatavilla</i>"
+msgstr "<i>Sisääntulolaitteita ei saatavilla</i>"
 
 #: ../src/pavucontrol.glade.h:41
 msgid "<b>Sho_w:</b>"
@@ -267,7 +267,7 @@ msgstr "pa_ext_stream_restore_read() epäonnistui"
 #: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr ""
+msgstr "Laite restore-laajennoksen alustus epäonnistui: %s"
 
 #: ../src/pavucontrol.cc:286
 msgid "pa_ext_device_restore_read_sink_formats() failed"
@@ -276,7 +276,7 @@ msgstr "pa_ext_device_restore_read_sink_formats() epäonnistui"
 #: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr ""
+msgstr "Laite manageri laajennoksen alustus epäonnistui: %s"
 
 #: ../src/pavucontrol.cc:323
 msgid "pa_ext_device_manager_read() failed"
