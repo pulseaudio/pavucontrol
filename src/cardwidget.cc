@@ -141,7 +141,7 @@ void CardWidget::onCodecChange() {
 
           if (!(o = pa_context_send_message_to_object(get_context(), card_bluez_message_handler_path(pulse_card_name).c_str(),
               "switch-codec", codec_message.c_str(), NULL, NULL))) {
-              show_error(_("pa_context_set_card_profile_by_index() failed"));
+              g_debug(_("pa_context_send_message_to_object() failed: %s"), pa_strerror(pa_context_errno(get_context())));
               return;
           }
 

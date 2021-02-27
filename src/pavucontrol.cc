@@ -155,7 +155,7 @@ template<typename U> void send_message(pa_context *c, const char *target, const 
 
     if (!o) {
         delete send_message_userdata;
-        show_error(_("pa_context_send_message_to_object() failed"));
+        g_debug(_("pa_context_send_message_to_object() failed: %s"), pa_strerror(pa_context_errno(context)));
         return;
     }
     pa_operation_unref(o);
