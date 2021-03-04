@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Porrumentzio <porrumentzio@riseup.net>, 2020.
+# Porrumentzio <porrumentzio@riseup.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-08 13:56+0200\n"
-"PO-Revision-Date: 2020-09-29 16:29+0000\n"
+"PO-Revision-Date: 2021-03-04 18:01+0000\n"
 "Last-Translator: Porrumentzio <porrumentzio@riseup.net>\n"
 "Language-Team: Basque <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/eu/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
 msgid "PulseAudio Volume Control"
@@ -420,11 +420,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Utzi"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_Ados"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
