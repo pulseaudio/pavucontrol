@@ -26,7 +26,7 @@
 #include <pulse/ext-stream-restore.h>
 #include <pulse/ext-device-manager.h>
 #ifdef HAVE_PULSE_MESSAGING_API
-#include <pulse/message-params.h>
+#include <json-glib/json-glib.h>
 #endif
 
 #include <canberra-gtk.h>
@@ -91,38 +91,70 @@ static void context_bluetooth_card_codec_list_cb(pa_context *c, int success, cha
     if (!success)
         return;
 
-    void *state = NULL;
-    char *codec_list;
-    char *handler_struct;
-    int err;
+    int err = 0;
 
-    if (pa_message_params_read_raw(response, &codec_list, &state) <= 0) {
-        show_error(_("list-codecs message response could not be parsed correctly"));
+    GError *gerror = NULL;
+    JsonParser *parser = json_parser_new();
+
+    if (!json_parser_load_from_data(parser, response, strlen(response), &gerror)) {
+        g_debug(_("could not read JSON from list-codecs message response: %s"), gerror->message);
+        g_error_free(gerror);
+        g_object_unref(parser);
         return;
     }
 
+    JsonNode *root = json_parser_get_root(parser);
+
+    if (!root || JSON_NODE_TYPE(root) != JSON_NODE_ARRAY) {
+        g_debug(_("list-codecs message response is not a JSON array"));
+        g_object_unref(parser);
+        return;
+    }
+
+    JsonArray *array = json_node_get_array(root);
+
     std::unordered_map<std::string, std::string> codecs;
 
-    state = NULL;
-    while ((err = pa_message_params_read_raw(codec_list, &handler_struct, &state)) > 0) {
-        void *state2 = NULL;
+    for (guint i = 0; i < json_array_get_length(array); ++i) {
         const char *path;
         const char *description;
+        JsonNode *v;
 
-        if (pa_message_params_read_string(handler_struct, &path, &state2) <= 0) {
+        JsonObject *object = json_array_get_object_element(array, i);
+        if (!object) {
             err = -1;
             break;
         }
-        if (pa_message_params_read_string(handler_struct, &description, &state2) <= 0) {
+
+        v = json_object_get_member(object, "name");
+        if (!v) {
             err = -1;
             break;
         }
+
+        path = json_node_get_string(v);
+        if (!path) {
+            err = -1;
+            break;
+        }
+
+        v = json_object_get_member(object, "description");
+        if (!v) {
+            err = -1;
+            break;
+        }
+
+        description = json_node_get_string(v);
+        if (!description)
+            description = "";
 
         codecs[path] = description;
     }
 
+    g_object_unref(parser);
+
     if (err < 0) {
-        show_error(_("list-codecs message response could not be parsed correctly"));
+        g_debug(_("list-codecs message response could not be parsed correctly"));
         codecs.clear();
         return;
     }
@@ -136,15 +168,37 @@ static void context_bluetooth_card_active_codec_cb(pa_context *c, int success, c
     if (!success)
         return;
 
-    void *state = NULL;
     const char *name;
+    GError *gerror = NULL;
 
-    if (pa_message_params_read_string(response, &name, &state) <= 0) {
-        show_error(_("get-codec message response could not be parsed correctly"));
+    JsonParser *parser = json_parser_new();
+
+    if (!json_parser_load_from_data(parser, response, strlen(response), &gerror)) {
+        g_debug(_("could not read JSON from get-codec message response: %s"), gerror->message);
+        g_error_free(gerror);
+        g_object_unref(parser);
+        return;
+    }
+
+    JsonNode *root = json_parser_get_root(parser);
+
+    if (!root || JSON_NODE_TYPE(root) != JSON_NODE_VALUE) {
+        g_debug(_("get-codec message response is not a JSON value"));
+        g_object_unref(parser);
+        return;
+    }
+
+    name = json_node_get_string(root);
+
+    if (!name) {
+        g_debug(_("could not get codec name from get-codec message response"));
+        g_object_unref(parser);
         return;
     }
 
     u->first->setActiveCodec(u->second, name);
+
+    g_object_unref(parser);
 }
 
 template<typename U> void send_message(pa_context *c, const char *target, const char *request, pa_context_string_cb_t cb, const U& u)
@@ -167,38 +221,70 @@ static void context_message_handlers_cb(pa_context *c, int success, char *respon
     if (!success)
         return;
 
-    void *state = NULL;
-    char *handler_list;
-    char *handler_struct;
-    int err;
+    int err = 0;
 
-    if (pa_message_params_read_raw(response, &handler_list, &state) <= 0) {
-        show_error(_("list-handlers message response could not be parsed correctly"));
+    GError *gerror = NULL;
+    JsonParser *parser = json_parser_new();
+
+    if (!json_parser_load_from_data(parser, response, strlen(response), &gerror)) {
+        g_debug(_("could not read JSON from list-handlers message response: %s"), gerror->message);
+        g_error_free(gerror);
+        g_object_unref(parser);
         return;
     }
 
+    JsonNode *root = json_parser_get_root(parser);
+
+    if (!root || JSON_NODE_TYPE(root) != JSON_NODE_ARRAY) {
+        g_debug(_("list-handlers message response is not a JSON array"));
+        g_object_unref(parser);
+        return;
+    }
+
+    JsonArray *array = json_node_get_array(root);
+
     std::unordered_map<std::string, std::string> message_handler_map;
 
-    state = NULL;
-    while ((err = pa_message_params_read_raw(handler_list, &handler_struct, &state)) > 0) {
-        void *state2 = NULL;
+    for (guint i = 0; i < json_array_get_length(array); ++i) {
         const char *path;
         const char *description;
+        JsonNode *v;
 
-        if (pa_message_params_read_string(handler_struct, &path, &state2) <= 0) {
+        JsonObject *object = json_array_get_object_element(array, i);
+        if (!object) {
             err = -1;
             break;
         }
-        if (pa_message_params_read_string(handler_struct, &description, &state2) <= 0) {
+
+        v = json_object_get_member(object, "name");
+        if (!v) {
             err = -1;
             break;
         }
+
+        path = json_node_get_string(v);
+        if (!path) {
+            err = -1;
+            break;
+        }
+
+        v = json_object_get_member(object, "description");
+        if (!v) {
+            err = -1;
+            break;
+        }
+
+        description = json_node_get_string(v);
+        if (!description)
+            description = "";
 
         message_handler_map[path] = description;
     }
 
+    g_object_unref(parser);
+
     if (err < 0) {
-        show_error(_("list-handlers message response could not be parsed correctly"));
+        g_debug(_("list-handlers message response could not be parsed correctly"));
         message_handler_map.clear();
         return;
     }

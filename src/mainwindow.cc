@@ -35,10 +35,6 @@
 
 #include "i18n.h"
 
-#if defined(HAVE_PULSE_MESSAGING_API)
-#include <pulse/message-params.h>
-#endif
-
 /* Used for profile sorting */
 struct profile_prio_compare {
     bool operator() (const pa_card_profile_info2& lhs, const pa_card_profile_info2& rhs) const {

@@ -137,7 +137,7 @@ void CardWidget::onCodecChange() {
           pa_operation* o;
           Glib::ustring codec_id = row[codecModel.name];
 
-          std::string codec_message = "{" + std::string(codec_id) + "}";
+          std::string codec_message = "\"" + std::string(codec_id) + "\"";
 
           if (!(o = pa_context_send_message_to_object(get_context(), card_bluez_message_handler_path(pulse_card_name).c_str(),
               "switch-codec", codec_message.c_str(), NULL, NULL))) {
