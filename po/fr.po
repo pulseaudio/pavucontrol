@@ -7,13 +7,13 @@
 # Charles-Antoine Couret <cacouret@wanadoo.fr>, 2009.
 # Thomas Canniot <mrtom@fedoraproject.org>, 2009.
 # Bruno Duyé <brunetton@gmail.com>, 2018.
-# Julien Humbert <julroy67@gmail.com>, 2020.
+# Julien Humbert <julroy67@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2020-06-29 17:40+0000\n"
+"PO-Revision-Date: 2021-05-17 03:02+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
@@ -37,17 +37,14 @@ msgid "Adjust the volume level"
 msgstr "Régler le niveau du volume"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Microphone;Volume;Fondu;Balance;Casque;Audio;Mixeur;Sortie;"
-"Entrée;"
+"pavucontrol;Microphone;Volume;Fondu;Balance;Casque;Haut-"
+"parleurs;Audio;Mixeur;Sortie;Entrée;Appareils;Lecture;Enregistrement;Sons "
+"systèmes;Carte son;Paramètres;Préférences;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -450,11 +447,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Annuler"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
