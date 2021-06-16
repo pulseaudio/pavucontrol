@@ -1,34 +1,38 @@
 # Catalan translations for pavucontrol package.
 # Copyright (C) 2008 Red Hat, Inc.
 # This file is distributed under the same license as the
-#  pavucontrol package.
+# pavucontrol package.
 #
 # Xavier Queralt Mateu <xqueralt@gmail.com>, 2008.
+# Toni Estevez <toni.estevez@gmail.com>, 2021.
 #
 # This file is translated according to the glossary and style guide of
-#   Softcatalà. If you plan to modify this file, please read first the page
-#   of the Catalan translation team for the Fedora project at:
-#   http://www.softcatala.org/projectes/fedora/
-#   and contact the previous translator
+# Softcatalà. If you plan to modify this file, please read first the page
+# of the Catalan translation team for the Fedora project at:
+# http://www.softcatala.org/projectes/fedora/
+# and contact the previous translator
 #
 # Aquest fitxer s'ha de traduir d'acord amb el recull de termes i la guia
-#   d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
-#   us plau la pàgina de catalanització del projecte Fedora a:
-#   http://www.softcatala.org/projectes/fedora/
-#   i contacteu l'anterior traductor/a.
+# d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
+# us plau la pàgina de catalanització del projecte Fedora a:
+# http://www.softcatala.org/projectes/fedora/
+# i contacteu l'anterior traductor/a.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2009-09-12 21:04+0100\n"
-"Last-Translator: Agustí Grau <fletxa@gmail.com>\n"
-"Language-Team: Catalan <fedora@softcatala.net>\n"
+"PO-Revision-Date: 2021-06-11 18:04+0000\n"
+"Last-Translator: Toni Estevez <toni.estevez@gmail.com>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
@@ -40,7 +44,7 @@ msgstr "Control del volum"
 
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
-msgstr "Ajusta el volum"
+msgstr "Ajusta el nivell del volum"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
@@ -48,16 +52,18 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;micròfon;volum;fosa;balanç;auriculars;altaveus;cascs;àudio; "
+"mesclador;sortida;entrada;dispositius;reproducció;gravació;sons de sistema;"
+"tarja de so;configuració;preferències;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
-msgstr "<b>esquerra-davant</b>"
+msgstr "<b>frontal esquerre</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -74,10 +80,8 @@ msgid "<b>Codec:</b>"
 msgstr "<b>Port:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "Dispositiu"
+msgstr "Títol del dispositiu"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Mute audio"
@@ -89,7 +93,7 @@ msgstr "Bloca els canals junts"
 
 #: ../src/pavucontrol.glade.h:10
 msgid "Set as fallback"
-msgstr "Estableix com a predeterminat"
+msgstr "Opció de reserva"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "<b>Port:</b>"
@@ -97,99 +101,87 @@ msgstr "<b>Port:</b>"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Compensació de la latència:</b>"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "Advanced"
-msgstr ""
+msgstr "Opcions avançades"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "All Streams"
-msgstr ""
+msgstr "Totes les transmissions"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Applications"
-msgstr ""
+msgstr "Aplicacions"
 
 #: ../src/pavucontrol.glade.h:23
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Transmissions virtuals"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "Dispositius de s_ortida"
+msgstr "Tots els dispositius de sortida"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Dispositius de s_ortida"
+msgstr "Dispositius de sortida del maquinari"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Dispositius de s_ortida"
+msgstr "Dispositius de sortida virtuals"
 
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "D_ispositius d'entrada"
+msgstr "Tots els dispositius d'entrada"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Tots excepte els monitors"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "D_ispositius d'entrada"
+msgstr "Dispositius d'entrada del maquinari"
 
 #: ../src/pavucontrol.glade.h:30
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "D_ispositius d'entrada"
+msgstr "Dispositius d'entrada virtuals"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Monitors"
-msgstr ""
+msgstr "Monitors"
 
 #: ../src/pavucontrol.glade.h:33
 msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Cap aplicació està reproduïnt àudio actualment</i>"
+msgstr "<i>Cap aplicació està reproduint àudio</i>"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "<b>_Show:</b>"
@@ -201,7 +193,7 @@ msgstr "Re_producció"
 
 #: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Cap aplicació està enregistrant àudio actualment.</i>"
+msgstr "<i>Cap aplicació està enregistrant àudio.</i>"
 
 #: ../src/pavucontrol.glade.h:37
 msgid "_Recording"
@@ -237,7 +229,7 @@ msgstr "<i>No hi han targetes disponibles per a configurar</i>"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
-msgstr ""
+msgstr "Mostra els indicadors de volum"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "_Configuration"
@@ -245,11 +237,11 @@ msgstr "_Configuració"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Canvia el nom del dispositiu a:</b>"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "Stream Title"
-msgstr "Títol del flux"
+msgstr "Títol de la transmissió"
 
 #: ../src/pavucontrol.glade.h:49
 msgid "direction"
@@ -311,28 +303,22 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "Ha fallat pa_ext_stream_restore_read()"
 
 #: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Ha fallat la inicialització de l'extensió stream_restore: %s"
+msgstr "No s'ha pogut inicialitzar l'extensió de restauració del dispositiu: %s"
 
 #: ../src/pavucontrol.cc:438
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "Ha fallat pa_ext_stream_restore_read()"
+msgstr "Ha fallat pa_ext_device_restore_read_sink_formats()"
 
 #: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Ha fallat la inicialització de l'extensió stream_restore: %s"
+msgstr "No s'ha pogut inicialitzar l'extensió del gestor de dispositius: %s"
 
 #: ../src/pavucontrol.cc:475
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "Ha fallat pa_ext_stream_restore_read()"
+msgstr "Ha fallat pa_ext_device_manager_read()"
 
 #: ../src/pavucontrol.cc:492
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -387,10 +373,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "Ha fallat pa_context_get_source_output_info_list()"
 
 #: ../src/pavucontrol.cc:720 ../src/pavucontrol.cc:771
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Ha fallat la connexió"
+msgstr "Ha fallat la connexió, s'està intentant tornar a connectar-se"
 
 #: ../src/pavucontrol.cc:758
 msgid ""
@@ -405,6 +389,17 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Ha fallat la connexió amb PulseAudio. Nou intent automàtic en 5 s\n"
+"\n"
+"En aquest cas és probable que PULSE_SERVER estigui mal configurat en les "
+"propietats de la finestra\n"
+"arrel de l'entorn X11 o que el servidor per defecte estigui mal configurat "
+"en client.conf.\n"
+"Aquesta situació també pot sorgir quan el PulseAudio es bloqueja i deixa "
+"detalls obsolets en la\n"
+"finestra arrel de l'X11. Si aquest és el cas, el PulseAudio hauria de "
+"reiniciar-se automàticament o, si\n"
+"això no està configurat, hauria d'executar start-pulseaudio-x11 manualment."
 
 #: ../src/cardwidget.cc:117
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -413,17 +408,17 @@ msgstr "Ha fallat pa_context_set_card_profile_by_index()"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -431,13 +426,11 @@ msgstr "<small>Silenci</small>"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Min</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>Mín</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Min</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -445,67 +438,65 @@ msgstr "<small><i>Base</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Canvia el nom del dispositiu..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "Ha fallat pa_context_set_sink_port_by_index()"
+msgstr "Ha fallat pa_context_set_port_latency_offset()"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "No s'admet el canvi de nom de dispositius."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Cal carregar module-device-manager al servidor PulseAudio per poder canviar "
+"el nom dispositius"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Cancel·la"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "D'ac_ord"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "Ha fallat pa_ext_stream_restore_write()"
+msgstr "Ha fallat pa_ext_device_manager_write()"
 
 #: ../src/mainwindow.cc:175
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Error en llegir el fitxer de configuració %s: %s"
 
 #: ../src/mainwindow.cc:254
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Error en desar les preferències"
 
 #: ../src/mainwindow.cc:262
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Error en escriure el fitxer de configuració %s"
 
 #: ../src/mainwindow.cc:326
 msgid " (plugged in)"
-msgstr ""
+msgstr " (connectat)"
 
 #: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
-msgstr ""
+msgstr " (no disponible)"
 
 #: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
-msgstr ""
+msgstr " (desconnectat)"
 
 #: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
-msgstr "Ha fallat la lectura del fluxe"
+msgstr "No s'han pogut llegir les dades de la transmissió"
 
 #: ../src/mainwindow.cc:659
 msgid "Peak detect"
@@ -513,17 +504,19 @@ msgstr "Detecta els pics"
 
 #: ../src/mainwindow.cc:660
 msgid "Failed to create monitoring stream"
-msgstr "Ha fallat la creació del fluxe de monitorització"
+msgstr "No s'ha pogut crear la transmissió de monitorització"
 
 #: ../src/mainwindow.cc:675
 msgid "Failed to connect monitoring stream"
-msgstr "Ha fallat la connexió al fluxe de monitorització"
+msgstr "No s'ha pogut connectar a la transmissió de monitorització"
 
 #: ../src/mainwindow.cc:811
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"S'ignora perquè s'ha designat com un esdeveniment i, per tant, el gestiona "
+"el giny d'esdeveniments"
 
 #: ../src/mainwindow.cc:986
 msgid "System Sounds"
@@ -531,7 +524,7 @@ msgstr "Sons del sistema"
 
 #: ../src/mainwindow.cc:1332
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "S'està establint la connexió al PulseAudio. Espereu..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -567,7 +560,7 @@ msgstr "Ha fallat pa_context_set_sink_volume_by_index()"
 
 #: ../src/sinkwidget.cc:110
 msgid "Volume Control Feedback Sound"
-msgstr "Control del volum de la realimentació del so"
+msgstr "Resposta de so del control del volum"
 
 #: ../src/sinkwidget.cc:127
 msgid "pa_context_set_sink_mute_by_index() failed"
@@ -582,10 +575,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "Ha fallat pa_context_set_sink_port_by_index()"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "Ha fallat pa_ext_stream_restore_read()"
+msgstr "Ha fallat pa_ext_device_restore_save_sink_formats()"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -600,16 +591,12 @@ msgid "Unknown input"
 msgstr "Entrada desconeguda"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "Ha fallat pa_context_get_source_output_info_list()"
+msgstr "Ha fallat pa_context_set_source_output_volume()"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "Ha fallat pa_context_get_source_output_info_list()"
+msgstr "Ha fallat pa_context_set_source_output_mute()"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -632,29 +619,28 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "Ha fallat pa_context_set_source_port_by_index()"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "Finalitza la reproducció"
+msgstr "Finalitza"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Selecciona una pestanya específica en carregar."
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "número"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Reintenta repetidament si es tanca el PulseAudio (cada 5 segons)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "Maximitza la finestra."
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "Mostra la versió."
 
 #~ msgid "50%"
 #~ msgstr "50%"
