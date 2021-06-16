@@ -6,13 +6,14 @@
 # Reinout van Schouwen <reinouts@gnome.org>, 2008.
 # R.E. van der Luit <nippur@fedoraproject.org>, 2009.
 # Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2020.
+# Pjotr Vertaalt <pjotrvertaalt@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.nl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2020-07-11 13:27+0000\n"
-"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"PO-Revision-Date: 2021-03-24 08:55+0000\n"
+"Last-Translator: Pjotr Vertaalt <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/nl/>\n"
 "Language: nl\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
@@ -35,17 +36,14 @@ msgid "Adjust the volume level"
 msgstr "Geluidsniveau aanpassen"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Microfoon;Volume;Vervagen;Balans;Koptelefoon;Audio;Mixer;Output;"
-"Input;"
+"pavucontrol;Microfoon;Volume;Vervagen;Balans;Hoofdset;Luidsprekers;Koptelefoo"
+"n;Audio;Mixer;Mengpaneel;Uitvoer;Invoer;Apparaten;Afspelen;Opnemen;Systeemgel"
+"uiden;Geluidskaart;Instellingen;Voorkeuren;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -58,7 +56,7 @@ msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
-msgstr "Kaart Naam"
+msgstr "Kaartnaam"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "<b>Profile:</b>"
@@ -84,7 +82,7 @@ msgstr "Kanalen aan elkaar koppelen"
 
 #: ../src/pavucontrol.glade.h:10
 msgid "Set as fallback"
-msgstr "Stel in als reserve"
+msgstr "Stel in als terugvaloptie"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "<b>Port:</b>"
@@ -116,7 +114,7 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "<b>Latency offset:</b>"
-msgstr "<b>Latentie offset:</b>"
+msgstr "<b>Latentie-offset:</b>"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "ms"
@@ -144,7 +142,7 @@ msgstr "Alle uitvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:25
 msgid "Hardware Output Devices"
-msgstr "Hardware uitvoerapparaten"
+msgstr "Fysieke uitvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:26
 msgid "Virtual Output Devices"
@@ -160,7 +158,7 @@ msgstr "Alles behalve monitoren"
 
 #: ../src/pavucontrol.glade.h:29
 msgid "Hardware Input Devices"
-msgstr "Hardware invoerapparaten"
+msgstr "Fysieke invoerapparaten"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Virtual Input Devices"
@@ -216,7 +214,7 @@ msgstr "I_nvoerapparaten"
 
 #: ../src/pavucontrol.glade.h:44
 msgid "<i>No cards available for configuration</i>"
-msgstr "<i>Geen kaarten beschikbaar om te configureren</i>"
+msgstr "<i>Geen kaarten beschikbaar om in te stellen</i>"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
@@ -232,7 +230,7 @@ msgstr "<b>Apparaatnaam wijzigen in:</b>"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "Stream Title"
-msgstr "Stream-titel"
+msgstr "Stroomtitel"
 
 #: ../src/pavucontrol.glade.h:49
 msgid "direction"
@@ -258,19 +256,19 @@ msgstr ""
 
 #: ../src/pavucontrol.cc:227
 msgid "Card callback failure"
-msgstr "Callback aanroep van kaart mislukt"
+msgstr "Callback-aanroep van kaart mislukt"
 
 #: ../src/pavucontrol.cc:255
 msgid "Sink callback failure"
-msgstr "Callbackaanroep van sink is mislukt"
+msgstr "Callback-aanroep van afvoer is mislukt"
 
 #: ../src/pavucontrol.cc:279
 msgid "Source callback failure"
-msgstr "Callbackaanroep van bron is mislukt"
+msgstr "Callback-aanroep van bron is mislukt"
 
 #: ../src/pavucontrol.cc:298
 msgid "Sink input callback failure"
-msgstr "Invoer-callbackaanroep van sink mislukt"
+msgstr "Invoer-callbackaanroep van afvoer mislukt"
 
 #: ../src/pavucontrol.cc:317
 msgid "Source output callback failure"
@@ -278,7 +276,7 @@ msgstr "Uitvoer-callbackaanroep van bron mislukt"
 
 #: ../src/pavucontrol.cc:347
 msgid "Client callback failure"
-msgstr "Callbackaanroep van client is mislukt"
+msgstr "Callbackaanroep van cliënt is mislukt"
 
 #: ../src/pavucontrol.cc:363
 msgid "Server info callback failure"
@@ -296,7 +294,7 @@ msgstr "pa_ext_stream_restore_read() mislukte"
 #: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Apparaat_restore-uitbreiding initialiseren mislukte: %s"
+msgstr "Kon extensie voor apparaatherstel niet initialiseren: %s"
 
 #: ../src/pavucontrol.cc:438
 msgid "pa_ext_device_restore_read_sink_formats() failed"
@@ -305,7 +303,7 @@ msgstr "pa_ext_device_restore_read_sink_formats() mislukte"
 #: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Apparaat_manager-uitbreiding initialiseren mislukte: %s"
+msgstr "Apparaatbeheer-uitbreiding initialiseren mislukte: %s"
 
 #: ../src/pavucontrol.cc:475
 msgid "pa_ext_device_manager_read() failed"
@@ -365,7 +363,7 @@ msgstr "pa_context_get_source_output_info_list() mislukte"
 
 #: ../src/pavucontrol.cc:720 ../src/pavucontrol.cc:771
 msgid "Connection failed, attempting reconnect"
-msgstr "Verbinding is mislukt, opnieuw verbinden"
+msgstr "Verbinding is mislukt, opnieuw verbinden wordt geprobeerd"
 
 #: ../src/pavucontrol.cc:758
 msgid ""
@@ -383,13 +381,13 @@ msgstr ""
 "Verbinding met PulseAudio is mislukt. Automatisch opnieuw proberen over 5 "
 "seconden\n"
 "\n"
-"In dit geval is dit waarschijnlijk omdat PULSE_SERVER in de Environment / "
-"X11-hoofdvenster eigenschappen\n"
+"In dit geval is dit waarschijnlijk zo omdat PULSE_SERVER in de Environment / "
+"X11-hoofdvenstereigenschappen\n"
 "of standaardserver in client.conf verkeerd is geconfigureerd.\n"
-"Deze situatie kan ook optreden wanneer PulseAudio crashte en verouderde "
+"Deze situatie kan ook optreden wanneer PulseAudio vastliep en verouderde "
 "details in het X11-hoofdvenster achterliet.\n"
 "Als dit het geval is, zou PulseAudio opnieuw automatisch moeten verschijnen, "
-"of als dit niet is geconfigureerd, zou je\n"
+"of als dit niet is geconfigureerd, zou u\n"
 "start-pulseaudio-x11 handmatig moeten uitvoeren."
 
 #: ../src/cardwidget.cc:117
@@ -437,23 +435,23 @@ msgstr "pa_context_set_port_latency_offset() mislukte"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "Sorry, maar apparaat hernoemen wordt niet ondersteund."
+msgstr "Helaas wordt apparaat hernoemen niet ondersteund."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
-"Je moet module-device-manager in de PulseAudio-server laden om apparaten te "
+"U moet module-device-manager in de PulseAudio-server laden om apparaten te "
 "hernoemen"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Annuleren"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_Oké"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -475,7 +473,7 @@ msgstr "Fout bij het schrijven van configuratiebestand %s"
 
 #: ../src/mainwindow.cc:326
 msgid " (plugged in)"
-msgstr " (ingeplugd)"
+msgstr " (aangesloten)"
 
 #: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
@@ -483,11 +481,11 @@ msgstr " (niet beschikbaar)"
 
 #: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
-msgstr " .(stekker uitgetrokken)"
+msgstr " (niet aangesloten)"
 
 #: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
-msgstr "Lezen van data van stream is mislukt"
+msgstr "Lezen van gegevens in stroom is mislukt"
 
 #: ../src/mainwindow.cc:659
 msgid "Peak detect"
@@ -495,19 +493,19 @@ msgstr "Pieken bespeuren"
 
 #: ../src/mainwindow.cc:660
 msgid "Failed to create monitoring stream"
-msgstr "Starten van observatie-stream is mislukt"
+msgstr "Maken van observatiestroom is mislukt"
 
 #: ../src/mainwindow.cc:675
 msgid "Failed to connect monitoring stream"
-msgstr "Verbinden met observatie-stream is mislukt"
+msgstr "Verbinden met observatiestroom is mislukt"
 
 #: ../src/mainwindow.cc:811
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
-"Negeren van sink-invoer omdat deze wordt aangemerkt als een gebeurtenis en "
-"dus wordt afgehandeld door de gebeurteniswidget"
+"Afvoer-invoer wordt genegeerd omdat deze wordt aangemerkt als een "
+"gebeurtenis en dus wordt afgehandeld door de Gebeurteniswidget"
 
 #: ../src/mainwindow.cc:986
 msgid "System Sounds"
@@ -515,7 +513,7 @@ msgstr "Systeemgeluiden"
 
 #: ../src/mainwindow.cc:1332
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr "Verbinding maken met PulseAudio. Wacht alsjeblieft..."
+msgstr "Er wordt verbinding gemaakt met PulseAudio. Ogenblik geduld a.u.b..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -531,7 +529,7 @@ msgstr "Afspelen afbreken"
 
 #: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
-msgstr "Onbekende output"
+msgstr "Onbekende uitvoer"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
@@ -579,7 +577,7 @@ msgstr "Beëindig opnemen"
 
 #: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
-msgstr "Onbekende input"
+msgstr "Onbekende invoer"
 
 #: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
@@ -623,7 +621,7 @@ msgstr "nummer"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "Probeer het voor altijd opnieuw als pa stopt (om de 5 seconden)."
+msgstr "Probeer het eeuwig opnieuw wanneer pa afsluit (om de 5 seconden)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
