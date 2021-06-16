@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-08 13:56+0200\n"
+"POT-Creation-Date: 2021-03-08 16:48+0200\n"
 "PO-Revision-Date: 2021-02-09 16:40+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
@@ -21,11 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:591
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
 msgstr "Volymkontroll för PulseAudio"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:32
 msgid "Volume Control"
 msgstr "Volymkontroll"
 
@@ -39,9 +39,9 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Mikrofon;Volym;Uttoning;Balans;Headset;Högtalare;Hörlurar;Audio;M"
-"ixer;Utmatning;Inmatning;Enheter;Uppspelning;Inspelning;Systemljud;Ljudkort;I"
-"nställningar;"
+"pavucontrol;Mikrofon;Volym;Uttoning;Balans;Headset;Högtalare;Hörlurar;Audio;"
+"Mixer;Utmatning;Inmatning;Enheter;Uppspelning;Inspelning;Systemljud;Ljudkort;"
+"Inställningar;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -61,285 +61,309 @@ msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:6
+#, fuzzy
+#| msgid "<b>Port:</b>"
+msgid "<b>Codec:</b>"
+msgstr "<b>Port:</b>"
+
+#: ../src/pavucontrol.glade.h:7
 msgid "Device Title"
 msgstr "Enhetstitel"
 
-#: ../src/pavucontrol.glade.h:7
+#: ../src/pavucontrol.glade.h:8
 msgid "Mute audio"
 msgstr "Inget ljud"
 
-#: ../src/pavucontrol.glade.h:8
+#: ../src/pavucontrol.glade.h:9
 msgid "Lock channels together"
 msgstr "Lås ihop kanalerna"
 
-#: ../src/pavucontrol.glade.h:9
+#: ../src/pavucontrol.glade.h:10
 msgid "Set as fallback"
 msgstr "Ställ in som reserv"
 
-#: ../src/pavucontrol.glade.h:10
+#: ../src/pavucontrol.glade.h:11
 msgid "<b>Port:</b>"
 msgstr "<b>Port:</b>"
 
-#: ../src/pavucontrol.glade.h:11
+#: ../src/pavucontrol.glade.h:12
 msgid "PCM"
 msgstr "PCM"
 
-#: ../src/pavucontrol.glade.h:12
+#: ../src/pavucontrol.glade.h:13
 msgid "AC-3"
 msgstr "AC-3"
 
-#: ../src/pavucontrol.glade.h:13
+#: ../src/pavucontrol.glade.h:14
 msgid "DTS"
 msgstr "DTS"
 
-#: ../src/pavucontrol.glade.h:14
+#: ../src/pavucontrol.glade.h:15
 msgid "E-AC-3"
 msgstr "E-AC-3"
 
-#: ../src/pavucontrol.glade.h:15
+#: ../src/pavucontrol.glade.h:16
 msgid "MPEG"
 msgstr "MPEG"
 
-#: ../src/pavucontrol.glade.h:16
+#: ../src/pavucontrol.glade.h:17
 msgid "AAC"
 msgstr "AAC"
 
-#: ../src/pavucontrol.glade.h:17
+#: ../src/pavucontrol.glade.h:18
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Latensoffset:</b>"
 
-#: ../src/pavucontrol.glade.h:18
+#: ../src/pavucontrol.glade.h:19
 msgid "ms"
 msgstr "ms"
 
-#: ../src/pavucontrol.glade.h:19
+#: ../src/pavucontrol.glade.h:20
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:21
 msgid "All Streams"
 msgstr "Alla strömmar"
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:22
 msgid "Applications"
 msgstr "Program"
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:23
 msgid "Virtual Streams"
 msgstr "Virtuella strömmar"
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:24
 msgid "All Output Devices"
 msgstr "Alla utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:25
 msgid "Hardware Output Devices"
 msgstr "Hårdvaruutgångsenheter"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:26
 msgid "Virtual Output Devices"
 msgstr "Virtuella utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:27
 msgid "All Input Devices"
 msgstr "Alla ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:28
 msgid "All Except Monitors"
 msgstr "Allt utom övervakare"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:29
 msgid "Hardware Input Devices"
 msgstr "Hårdvaruingångsenheter"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:30
 msgid "Virtual Input Devices"
 msgstr "Virtuella ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:31
 msgid "Monitors"
 msgstr "Övervakare"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:33
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Inget program spelar för närvarande upp något ljud.</i>"
 
-#: ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.glade.h:34
 msgid "<b>_Show:</b>"
 msgstr "<b>_Visa:</b>"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:35
 msgid "_Playback"
 msgstr "U_ppspelning"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Inget program spelar för närvarande in något ljud.</i>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:37
 msgid "_Recording"
 msgstr "I_nspelning"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:38
 msgid "<i>No output devices available</i>"
 msgstr "<i>Inga utgångsenheter tillgängliga</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:39
 msgid "<b>S_how:</b>"
 msgstr "<b>V_isa:</b>"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:40
 msgid "_Output Devices"
 msgstr "_Utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No input devices available</i>"
 msgstr "<i>Inga ingångsenheter tillgängliga</i>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Vis_a:</b>"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:43
 msgid "_Input Devices"
 msgstr "_Ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Inga kort tillgängliga för konfiguration</i>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
 msgstr "Visa volymmätare"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:46
 msgid "_Configuration"
 msgstr "_Konfiguration"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:47
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Byt namn på enhet till:</b>"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:48
 msgid "Stream Title"
 msgstr "Strömtitel"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:49
 msgid "direction"
 msgstr "riktning"
 
-#: ../src/pavucontrol.cc:80
+#: ../src/pavucontrol.cc:100 ../src/pavucontrol.cc:125
+msgid "list-codecs message response could not be parsed correctly"
+msgstr ""
+
+#: ../src/pavucontrol.cc:143
+msgid "get-codec message response could not be parsed correctly"
+msgstr ""
+
+#: ../src/pavucontrol.cc:158 ../src/cardwidget.cc:144
+#, fuzzy, c-format
+#| msgid "pa_context_set_default_source() failed"
+msgid "pa_context_send_message_to_object() failed: %s"
+msgstr "pa_context_set_default_source() misslyckades"
+
+#: ../src/pavucontrol.cc:176 ../src/pavucontrol.cc:201
+msgid "list-handlers message response could not be parsed correctly"
+msgstr ""
+
+#: ../src/pavucontrol.cc:227
 msgid "Card callback failure"
 msgstr "Kortåterkoppling misslyckades"
 
-#: ../src/pavucontrol.cc:103
+#: ../src/pavucontrol.cc:255
 msgid "Sink callback failure"
 msgstr "Fel vid mottagaråterkoppling"
 
-#: ../src/pavucontrol.cc:127
+#: ../src/pavucontrol.cc:279
 msgid "Source callback failure"
 msgstr "Fel vid källåterkoppling"
 
-#: ../src/pavucontrol.cc:146
+#: ../src/pavucontrol.cc:298
 msgid "Sink input callback failure"
 msgstr "Fel vid mottagaringångsåterkoppling"
 
-#: ../src/pavucontrol.cc:165
+#: ../src/pavucontrol.cc:317
 msgid "Source output callback failure"
 msgstr "Fel vid källutgångsåterkoppling"
 
-#: ../src/pavucontrol.cc:195
+#: ../src/pavucontrol.cc:347
 msgid "Client callback failure"
 msgstr "Fel vid klientåterkoppling"
 
-#: ../src/pavucontrol.cc:211
+#: ../src/pavucontrol.cc:363
 msgid "Server info callback failure"
 msgstr "Fel vid serverinformationsåterkoppling"
 
-#: ../src/pavucontrol.cc:229 ../src/pavucontrol.cc:526
+#: ../src/pavucontrol.cc:381 ../src/pavucontrol.cc:678
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Misslyckades med att initiera tillägget stream_restore: %s"
 
-#: ../src/pavucontrol.cc:247
+#: ../src/pavucontrol.cc:399
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() misslyckades"
 
-#: ../src/pavucontrol.cc:265 ../src/pavucontrol.cc:540
+#: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Misslyckades med att initiera tillägget device_restore: %s"
 
-#: ../src/pavucontrol.cc:286
+#: ../src/pavucontrol.cc:438
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() misslyckades"
 
-#: ../src/pavucontrol.cc:304 ../src/pavucontrol.cc:553
+#: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Misslyckades med att initiera tillägget device_manager: %s"
 
-#: ../src/pavucontrol.cc:323
+#: ../src/pavucontrol.cc:475
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() misslyckades"
 
-#: ../src/pavucontrol.cc:340
+#: ../src/pavucontrol.cc:492
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() misslyckades"
 
-#: ../src/pavucontrol.cc:353
+#: ../src/pavucontrol.cc:505
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() misslyckades"
 
-#: ../src/pavucontrol.cc:366 ../src/pavucontrol.cc:379
+#: ../src/pavucontrol.cc:518 ../src/pavucontrol.cc:531
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() misslyckades"
 
-#: ../src/pavucontrol.cc:392
+#: ../src/pavucontrol.cc:544
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() misslyckades"
 
-#: ../src/pavucontrol.cc:402 ../src/pavucontrol.cc:467
+#: ../src/pavucontrol.cc:554 ../src/pavucontrol.cc:619
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() misslyckades"
 
-#: ../src/pavucontrol.cc:415
+#: ../src/pavucontrol.cc:567
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() misslyckades"
 
-#: ../src/pavucontrol.cc:458
+#: ../src/pavucontrol.cc:610
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() misslyckades"
 
-#: ../src/pavucontrol.cc:474
+#: ../src/pavucontrol.cc:626
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:481
+#: ../src/pavucontrol.cc:633
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:488
+#: ../src/pavucontrol.cc:640
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:495
+#: ../src/pavucontrol.cc:647
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:502
+#: ../src/pavucontrol.cc:654
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:509
+#: ../src/pavucontrol.cc:661
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() misslyckades"
 
-#: ../src/pavucontrol.cc:568 ../src/pavucontrol.cc:619
+#: ../src/pavucontrol.cc:720 ../src/pavucontrol.cc:771
 msgid "Connection failed, attempting reconnect"
 msgstr "Anslutning misslyckades, försöker ansluta på nytt"
 
-#: ../src/pavucontrol.cc:606
+#: ../src/pavucontrol.cc:758
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -363,7 +387,7 @@ msgstr ""
 "konfigurerats får du\n"
 "köra start-pulseaudio-x11 manuellt."
 
-#: ../src/cardwidget.cc:88
+#: ../src/cardwidget.cc:117
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() misslyckades"
 
@@ -430,49 +454,49 @@ msgstr "_OK"
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() misslyckades"
 
-#: ../src/mainwindow.cc:171
+#: ../src/mainwindow.cc:175
 #, c-format
 msgid "Error reading config file %s: %s"
 msgstr "Fel vid läsning av konfigurationsfilen %s: %s"
 
-#: ../src/mainwindow.cc:250
+#: ../src/mainwindow.cc:254
 msgid "Error saving preferences"
 msgstr "Fel vid sparande av inställningar"
 
-#: ../src/mainwindow.cc:258
+#: ../src/mainwindow.cc:262
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Fel vid skrivning av konfigurationsfilen %s"
 
-#: ../src/mainwindow.cc:322
+#: ../src/mainwindow.cc:326
 msgid " (plugged in)"
 msgstr " (inpluggad)"
 
-#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:432
+#: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
 msgstr " (ej tillgänglig)"
 
-#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:429
+#: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
 msgstr " (ej inpluggad)"
 
-#: ../src/mainwindow.cc:564
+#: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
 msgstr "Misslyckades med att läsa data från ström"
 
-#: ../src/mainwindow.cc:608
+#: ../src/mainwindow.cc:659
 msgid "Peak detect"
 msgstr "Topp upptäcktes"
 
-#: ../src/mainwindow.cc:609
+#: ../src/mainwindow.cc:660
 msgid "Failed to create monitoring stream"
 msgstr "Misslyckades med att skapa övervakningsström"
 
-#: ../src/mainwindow.cc:624
+#: ../src/mainwindow.cc:675
 msgid "Failed to connect monitoring stream"
 msgstr "Misslyckades med att ansluta övervakningsström"
 
-#: ../src/mainwindow.cc:760
+#: ../src/mainwindow.cc:811
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -480,11 +504,11 @@ msgstr ""
 "Ignorerar mottagaringång för att den angivits som en händelse och därför "
 "hanteras av händelsekomponenten"
 
-#: ../src/mainwindow.cc:935
+#: ../src/mainwindow.cc:986
 msgid "System Sounds"
 msgstr "Systemljud"
 
-#: ../src/mainwindow.cc:1281
+#: ../src/mainwindow.cc:1332
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerar en anslutning till PulseAudio. Vänta…"
 
