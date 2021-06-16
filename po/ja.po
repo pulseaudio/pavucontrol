@@ -5,13 +5,14 @@
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2009.
 # Masato Hashimoto <cabezon.hashimoto@gmail.com>, 2017.
 # Nishide Itaru <goai@protonmail.com>, 2021.
+# Tomohiro KATO <tomop@teamgedoh.net>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
 "PO-Revision-Date: 2021-06-16 05:04+0000\n"
-"Last-Translator: Nishide Itaru <goai@protonmail.com>\n"
+"Last-Translator: Tomohiro KATO <tomop@teamgedoh.net>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ja/>\n"
 "Language: ja\n"
@@ -31,7 +32,7 @@ msgstr "音量調節"
 
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
-msgstr "音量レベルを調整する"
+msgstr "音量レベルの調整"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
@@ -48,10 +49,9 @@ msgid "<b>left-front</b>"
 msgstr "<b>左前方</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>最小</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -125,7 +125,7 @@ msgstr "高度な設定"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "All Streams"
-msgstr ""
+msgstr "全てのストリーム"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Applications"
@@ -165,7 +165,7 @@ msgstr "仮想入力デバイス"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Monitors"
-msgstr ""
+msgstr "モニター"
 
 #: ../src/pavucontrol.glade.h:33
 msgid "<i>No application is currently playing audio.</i>"
@@ -217,7 +217,7 @@ msgstr "<i>設定するカードがありません</i>"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
-msgstr ""
+msgstr "音量メーターを表示"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "_Configuration"
@@ -467,15 +467,15 @@ msgstr "コンフィグファイル \"%s\" の書き込み中にエラーが発�
 
 #: ../src/mainwindow.cc:326
 msgid " (plugged in)"
-msgstr ""
+msgstr " (接続済)"
 
 #: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
-msgstr ""
+msgstr " (使用不可)"
 
 #: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
-msgstr ""
+msgstr " (未接続)"
 
 #: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
