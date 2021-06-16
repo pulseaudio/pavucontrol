@@ -1,15 +1,19 @@
+# Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2009-09-11 08:58-0300\n"
-"Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
-"Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-09 08:02+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.3\n"
 "X-Poedit-Language: Spanish\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
@@ -30,6 +34,9 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;Micrófono;Volumen;Desvanecer;Balance;Auriculares;Altavoces;Cascos"
+";Audio;Mezclador;Salida;Entrada;Dispositivos;Reproduccción;Grabación;Sistema "
+"Sonido;Tarjeta Sonido;Ajustes;Preferencias;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
