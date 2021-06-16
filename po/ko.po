@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2021-03-15 17:01+0000\n"
+"PO-Revision-Date: 2021-04-13 08:02+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
@@ -37,16 +37,18 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound "
+"Card;Settings;Preferences;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>왼쪽-앞</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>최소</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -63,10 +65,8 @@ msgid "<b>Codec:</b>"
 msgstr "<b>포트:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "Device"
 msgid "Device Title"
-msgstr "장치"
+msgstr "장치 제목"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Mute audio"
@@ -86,99 +86,87 @@ msgstr "<b>포트:</b>"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>지연 갈라짐:</b>"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "Advanced"
-msgstr ""
+msgstr "고급"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "All Streams"
-msgstr ""
+msgstr "모든 스티림"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Applications"
-msgstr ""
+msgstr "응용프로그램"
 
 #: ../src/pavucontrol.glade.h:23
 msgid "Virtual Streams"
-msgstr ""
+msgstr "가상 스트림"
 
 #: ../src/pavucontrol.glade.h:24
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "출력 장치(_O)"
+msgstr "모든 출력 장치"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "출력 장치(_O)"
+msgstr "하드웨어 출력 장치"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "출력 장치(_O)"
+msgstr "가상 출력 장치"
 
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "입력 장치(_I)"
+msgstr "모든 입력 장치"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "All Except Monitors"
-msgstr ""
+msgstr "모니터를 제외한 모든 것"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "입력 장치(_I)"
+msgstr "하드웨어 입력 장치"
 
 #: ../src/pavucontrol.glade.h:30
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "입력 장치(_I)"
+msgstr "가상 입력 장치"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Monitors"
-msgstr ""
+msgstr "모니터"
 
 #: ../src/pavucontrol.glade.h:33
 msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>오디오를 재생하는 애플리케이션이 없습니다.</i>"
+msgstr "<i>오디오를 재생하는 응용프로그램이 없습니다.</i>"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "<b>_Show:</b>"
@@ -190,7 +178,7 @@ msgstr "재생(_P)"
 
 #: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>오디오를 녹음하는 애플리케이션이 없습니다.</i>"
+msgstr "<i>오디오를 녹음하는응용프로그램이 없습니다.</i>"
 
 #: ../src/pavucontrol.glade.h:37
 msgid "_Recording"
@@ -226,7 +214,7 @@ msgstr "<i>설정 가능한 카드가 없습니다</i>"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
-msgstr ""
+msgstr "음향 미터 보기"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "_Configuration"
@@ -234,7 +222,7 @@ msgstr "설정(_C)"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>장치 이름 변경:</b>"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "Stream Title"
@@ -300,28 +288,22 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() 실패"
 
 #: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "스트림 복원 확장 시동 실패(_R): %s"
+msgstr "장치 복원 확장을 초기화하지 못했습니다: %s"
 
 #: ../src/pavucontrol.cc:438
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() 실패"
+msgstr "pa_ext_device_restore_read_sink_formats() 실패하였습니다"
 
 #: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "스트림 복원 확장 시동 실패(_R): %s"
+msgstr "장치 관리 확장 초기화에 실패하였습니다: %s"
 
 #: ../src/pavucontrol.cc:475
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "pa_ext_stream_restore_read() 실패"
+msgstr "pa_ext_device_manager_read() 실패"
 
 #: ../src/pavucontrol.cc:492
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -376,10 +358,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() 실패"
 
 #: ../src/pavucontrol.cc:720 ../src/pavucontrol.cc:771
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "연결 실패"
+msgstr "연결 실패, 재연결 시도"
 
 #: ../src/pavucontrol.cc:758
 msgid ""
@@ -394,6 +374,13 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"PulseAudio 연결에 실패하였습니다. 자동으로 5초안에 재시도 합니다\n"
+"\n"
+"이와 같은 경우에 이는 환경/X11 루트 윈도우 특성의 PULSE_SERVER 때문이거나\n"
+"client.conf에 있는 default-server가 잘못 설정되었기 때문입니다.\n"
+"이 상태는 PulseAudio 충돌과 X11 루트 윈도우에서 오래된 상세한 정보를 남겼을 때에도 발생 할 수 있습니다.\n"
+"만약 이와 같은 경우라면, 그러면 PulseAudio는 다시 자동 생성되며\n"
+"또는 이 것이 설정되지 않았다면 수동으로 start-pulseaudio-x11을 실행해야 합니다."
 
 #: ../src/cardwidget.cc:117
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -402,17 +389,17 @@ msgstr "pa_context_set_card_profile_by_index() 실패"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -423,10 +410,8 @@ msgid "<small>Min</small>"
 msgstr "<small>최소</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
-#| msgid "<small>Min</small>"
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>최소</small>"
+msgstr "<small>100% (0 db)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -434,79 +419,75 @@ msgstr "<small><i>베이스</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "장치 이름변경..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() 실패"
+msgstr "pa_context_set_port_latency_offset() 실패"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "죄송합니다, 장치 이름변경이 지원되지 않습니다."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
-msgstr ""
+msgstr "장치 이름 변경에 PulseAudio 서버에서 module-device-manager를 적재해야 합니다"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_취소"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_확인"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() 실패"
+msgstr "pa_ext_device_manager_write() 실패"
 
 #: ../src/mainwindow.cc:175
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "설정 파일 읽기 오류 %s: %s"
 
 #: ../src/mainwindow.cc:254
 msgid "Error saving preferences"
-msgstr ""
+msgstr "환경 설정 저장 오류"
 
 #: ../src/mainwindow.cc:262
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "쓰기 설정 파일 %s 오류"
 
 #: ../src/mainwindow.cc:326
 msgid " (plugged in)"
-msgstr ""
+msgstr " (plugged in)"
 
 #: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
-msgstr ""
+msgstr " (이용 할 수 없는)"
 
 #: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
-msgstr ""
+msgstr " (unplugged)"
 
 #: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
-msgstr "스트림에서 데이터 읽어오기 실패"
+msgstr "스트림에서 자료 읽기에 실패하였습니다"
 
 #: ../src/mainwindow.cc:659
 msgid "Peak detect"
-msgstr "피크 검출"
+msgstr "최대 검출"
 
 #: ../src/mainwindow.cc:660
 msgid "Failed to create monitoring stream"
-msgstr "모니터링 스트림 생성 실패"
+msgstr "모니터링 스트림 생성에 실패하였습니다"
 
 #: ../src/mainwindow.cc:675
 msgid "Failed to connect monitoring stream"
-msgstr "모니터링 스트림 연결 실패"
+msgstr "모니터링 스트림 연결에 실패하였습니다"
 
 #: ../src/mainwindow.cc:811
 msgid ""
@@ -520,7 +501,7 @@ msgstr "시스템 사운드"
 
 #: ../src/mainwindow.cc:1332
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "PulseAudio에 연결이 성립되었습니다. 기다려 주세요..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -571,10 +552,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() 실패"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() 실패"
+msgstr "pa_ext_device_restore_save_sink_formats() 실패"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -589,16 +568,12 @@ msgid "Unknown input"
 msgstr "모르는 입력"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "pa_context_get_source_output_info_list() 실패"
+msgstr "pa_context_set_source_output_volume() 실패"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "pa_context_get_source_output_info_list() 실패"
+msgstr "pa_context_get_source_output_mute() 실패"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -621,29 +596,28 @@ msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() 실패"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "끝내기"
+msgstr "종료되었습니다"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "적재하기에 지정한 탭을 선택합니다."
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "숫자"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "pa가 종료되면 영구히 재시도 합니다(매 5초 마다)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "창을 최대화합니다."
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "버전 보기."
 
 #~ msgid "50%"
 #~ msgstr "50%"
