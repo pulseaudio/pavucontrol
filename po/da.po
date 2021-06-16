@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the pavucontrol package.
 # Kris Thomsen <lakristho@gmail.com>, 2009.
 # scootergrisen, 2019.
-# scootergrisen <scootergrisen@gmail.com>, 2020.
+# scootergrisen <scootergrisen@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2020-06-29 17:40+0000\n"
+"PO-Revision-Date: 2021-05-21 23:09+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/da/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
 msgid "PulseAudio Volume Control"
@@ -33,17 +33,14 @@ msgid "Adjust the volume level"
 msgstr "Justér lydstyrkeniveauet"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Mikrofon;Lydstyrke;Fade;Balance;Headset;Hovedtelefoner;Lyd;Mixer;"
-"Mikser;Output;Input;"
+"pavucontrol;Mikrofon;Lydstyrke;Fade;Balance;Headset;Højttalere;Hovedtelefoner"
+";Lyd;Mixer;Mikser;Output;Input;Enheder;Afspilning;Optagelse;Systemlyde;Lydkor"
+"t;Indstillinger;Præferencer;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -447,11 +444,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Annuller"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
