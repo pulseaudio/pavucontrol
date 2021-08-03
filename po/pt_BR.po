@@ -5,14 +5,14 @@
 # Jyulliano Arruda Ferraro Rocha <jyulliano@gmail.com>, 2008.
 # Igor Pires Soares <igor@projetofedora.org>, 2008,2009.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2020-12-09 20:36+0000\n"
-"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
-"roberto97@gmail.com>\n"
+"PO-Revision-Date: 2021-08-03 16:04+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/pulseaudio/pavucontrol/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.7.2\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 
@@ -42,14 +42,17 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settin"
+"gs;Preferences;microfone;equilíbrio;áudio;saída;entrada;dispositivos;reproduç"
+"ão;gravação;sistemas de som;placa de som;configurações;preferências;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>frontal-esquerdo</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
-#| msgid "<small>Min</small>"
+#, no-c-format
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
@@ -113,7 +116,7 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Compensação de latência:</b>"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "ms"
@@ -125,7 +128,7 @@ msgstr "Avançado"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "All Streams"
-msgstr ""
+msgstr "Todos os fluxos"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "Applications"
@@ -133,23 +136,19 @@ msgstr "Aplicações"
 
 #: ../src/pavucontrol.glade.h:23
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Fluxos virtuais"
 
 #: ../src/pavucontrol.glade.h:24
 msgid "All Output Devices"
 msgstr "Todos os Dispositivos de Saída"
 
 #: ../src/pavucontrol.glade.h:25
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Dispositivos de _saída"
+msgstr "Dispositivos de saída de hardware"
 
 #: ../src/pavucontrol.glade.h:26
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Dispositivos de _saída"
+msgstr "Dispositivos de saída virtuais"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "All Input Devices"
@@ -157,19 +156,15 @@ msgstr "Todos os Dispositivos de Entrada"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Todos exceto monitores"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "Dispositivos de _entrada"
+msgstr "Dispositivos de entrada de hardware"
 
 #: ../src/pavucontrol.glade.h:30
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "Dispositivos de _entrada"
+msgstr "Dispositivos de entrada virtuais"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Monitors"
@@ -225,7 +220,7 @@ msgstr "<i>Nenhuma placa disponível para configuração</i>"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "Show volume meters"
-msgstr ""
+msgstr "Mostrar medidores de volume"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "_Configuration"
@@ -299,20 +294,18 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() falhou"
 
 #: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Falha ao inicializar a extensão stream_restore: %s"
+msgstr "Falha ao inicializar a extensão de restauração de dispositivo: %s"
 
 #: ../src/pavucontrol.cc:438
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() falhou"
 
 #: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Falha ao inicializar a extensão stream_restore: %s"
+msgstr "Falha ao inicializar a extensão de gerência de dispositivo: %s"
 
 #: ../src/pavucontrol.cc:475
 msgid "pa_ext_device_manager_read() failed"
@@ -387,6 +380,16 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"A conexão com o PulseAudio falhou. Nova tentativa automática em 5s\n"
+"\n"
+"Neste caso, é provável que PULSE_SERVER em Environment/X11 Root Window "
+"Properties\n"
+"ou default-server em client.conf estejam configurados incorretamente.\n"
+"Isso também pode acontecer quando o PulseAudio travou e deixou detalhes "
+"travados na X11 Root Window.\n"
+"Se este for o caso, então o PulseAudio deve ser reiniciar automaticamente de "
+"novo ou, se não estiver\n"
+"configurado, você deve executar start-pulseaudio-x11 manualmente."
 
 #: ../src/cardwidget.cc:117
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -440,14 +443,16 @@ msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Você precisa carregar o module-device-manager no servidor PulseAudio para "
+"renomear os dispositivos"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Cancelar"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -469,7 +474,7 @@ msgstr "Erro escrevendo o arquivo de configuração %s"
 
 #: ../src/mainwindow.cc:326
 msgid " (plugged in)"
-msgstr ""
+msgstr " (conectado)"
 
 #: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
 msgid " (unavailable)"
@@ -477,7 +482,7 @@ msgstr " (indisponível)"
 
 #: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
 msgid " (unplugged)"
-msgstr ""
+msgstr " (desconectado)"
 
 #: ../src/mainwindow.cc:615
 msgid "Failed to read data from stream"
@@ -500,6 +505,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Ignorando sink-input por ter sido designado como um evento e, portanto, "
+"tratado pelo widget de evento"
 
 #: ../src/mainwindow.cc:986
 msgid "System Sounds"
@@ -507,7 +514,7 @@ msgstr "Sons do sistema"
 
 #: ../src/mainwindow.cc:1332
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Estabelecendo conexão com o PulseAudio. Por favor, aguarde…"
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -607,7 +614,7 @@ msgstr "Terminar"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Selecione uma aba específica para carregar."
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
@@ -615,7 +622,7 @@ msgstr "número"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Tenta novamente sempre se PulseAudio for encerrado (todo 5 segundos)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
