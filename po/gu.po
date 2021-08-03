@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pulseaudio-volume\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-08 16:48+0200\n"
+"POT-Creation-Date: 2021-07-05 13:51+0300\n"
 "PO-Revision-Date: 2009-09-10 15:41+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:743
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio વોલ્યુમ નિયંત્રણ"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
 msgid "Volume Control"
 msgstr "વોલ્યમ નિયંત્રણ"
 
@@ -52,335 +52,375 @@ msgid "Card Name"
 msgstr "કાર્ડ નામ"
 
 #: ../src/pavucontrol.glade.h:5
+msgid "Lock card to this profile"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>રૂપરેખા:</b>"
 
-#: ../src/pavucontrol.glade.h:6
+#: ../src/pavucontrol.glade.h:7
 #, fuzzy
 #| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
 msgstr "<b>પોર્ટ:</b>"
 
-#: ../src/pavucontrol.glade.h:7
+#: ../src/pavucontrol.glade.h:8
 #, fuzzy
 #| msgid "Device"
 msgid "Device Title"
 msgstr "ઉપકરણ"
 
-#: ../src/pavucontrol.glade.h:8
+#: ../src/pavucontrol.glade.h:9
 msgid "Mute audio"
 msgstr "મૂંગુ ઓડિયો"
 
-#: ../src/pavucontrol.glade.h:9
+#: ../src/pavucontrol.glade.h:10
 msgid "Lock channels together"
 msgstr "ભેગી ચેનલોને તાળુ મારો"
 
-#: ../src/pavucontrol.glade.h:10
+#: ../src/pavucontrol.glade.h:11
 msgid "Set as fallback"
 msgstr "fallback તરીકે સુયોજિત કરો"
 
-#: ../src/pavucontrol.glade.h:11
+#: ../src/pavucontrol.glade.h:12
 msgid "<b>Port:</b>"
 msgstr "<b>પોર્ટ:</b>"
 
-#: ../src/pavucontrol.glade.h:12
+#: ../src/pavucontrol.glade.h:13
 msgid "PCM"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:13
+#: ../src/pavucontrol.glade.h:14
 msgid "AC-3"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:14
+#: ../src/pavucontrol.glade.h:15
 msgid "DTS"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:15
+#: ../src/pavucontrol.glade.h:16
 msgid "E-AC-3"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:16
+#: ../src/pavucontrol.glade.h:17
 msgid "MPEG"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:17
+#: ../src/pavucontrol.glade.h:18
 msgid "AAC"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:18
+#: ../src/pavucontrol.glade.h:19
 msgid "<b>Latency offset:</b>"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:19
+#: ../src/pavucontrol.glade.h:20
 msgid "ms"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:21
 msgid "Advanced"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:22
 msgid "All Streams"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:23
 msgid "Applications"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:24
 msgid "Virtual Streams"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:25
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "All Output Devices"
 msgstr "આઉટપુટ ઉપકરણો (_O)"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:26
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "Hardware Output Devices"
 msgstr "આઉટપુટ ઉપકરણો (_O)"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:27
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "Virtual Output Devices"
 msgstr "આઉટપુટ ઉપકરણો (_O)"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:28
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "All Input Devices"
 msgstr "ઇનપુટ ઉપકરણો (_I)"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:29
 msgid "All Except Monitors"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:30
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "Hardware Input Devices"
 msgstr "ઇનપુટ ઉપકરણો (_I)"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:31
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "Virtual Input Devices"
 msgstr "ઇનપુટ ઉપકરણો (_I)"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:32
 msgid "Monitors"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.glade.h:34
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>કાર્યક્રમ એ હાલમાં ઓડિયોને વગાડતી નથી.</i>"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:35
 msgid "<b>_Show:</b>"
 msgstr "<b>બતાવો (_S):</b>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:36
 msgid "_Playback"
 msgstr "પ્લેબેક (_P)"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:37
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>કાર્યક્રમ એ હાલમાં ઓડિયોને રેકોર્ડ કરતી નથી.</i>"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:38
 msgid "_Recording"
 msgstr "રેકોર્ડ કરી રહ્યા છે (_R)"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No output devices available</i>"
 msgstr "<i>આઉટપુટ ઉપકરણો ઉપલ્બધ નથી</i>"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:40
 msgid "<b>S_how:</b>"
 msgstr "<b>બતાવો (_h):</b>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:41
 msgid "_Output Devices"
 msgstr "આઉટપુટ ઉપકરણો (_O)"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:42
 msgid "<i>No input devices available</i>"
 msgstr "<i>ઇનપુટ ઉપકરણો ઉપલ્બધ નથી</i>"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:43
 msgid "<b>Sho_w:</b>"
 msgstr "<b>બતાવો (_w):</b>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:44
 msgid "_Input Devices"
 msgstr "ઇનપુટ ઉપકરણો (_I)"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:45
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>રૂપરેખાંકન માટે કાર્ડો ઉપલ્બધ નથી</i>"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:46
 msgid "Show volume meters"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:47
 msgid "_Configuration"
 msgstr "રૂપરેખાંકન (_C)"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:48
 msgid "<b>Rename device to:</b>"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:49
 msgid "Stream Title"
 msgstr "સ્ટ્રીમ શિર્ષક"
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:50
 msgid "direction"
 msgstr "દિશા"
 
-#: ../src/pavucontrol.cc:100 ../src/pavucontrol.cc:125
+#: ../src/pavucontrol.cc:104
+#, c-format
+msgid "could not read JSON from list-codecs message response: %s"
+msgstr ""
+
+#: ../src/pavucontrol.cc:113
+msgid "list-codecs message response is not a JSON array"
+msgstr ""
+
+#: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
 msgstr ""
 
-#: ../src/pavucontrol.cc:143
-msgid "get-codec message response could not be parsed correctly"
+#: ../src/pavucontrol.cc:181
+#, c-format
+msgid "could not read JSON from get-codec message response: %s"
 msgstr ""
 
-#: ../src/pavucontrol.cc:158 ../src/cardwidget.cc:144
+#: ../src/pavucontrol.cc:190
+msgid "get-codec message response is not a JSON value"
+msgstr ""
+
+#: ../src/pavucontrol.cc:198
+msgid "could not get codec name from get-codec message response"
+msgstr ""
+
+#: ../src/pavucontrol.cc:220
+#, c-format
+msgid "could not read JSON from get-profile-sticky message response: %s"
+msgstr ""
+
+#: ../src/pavucontrol.cc:229
+msgid "get-profile-sticky message response is not a JSON value"
+msgstr ""
+
+#: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
 #, fuzzy, c-format
 #| msgid "pa_context_set_default_source() failed"
 msgid "pa_context_send_message_to_object() failed: %s"
 msgstr "pa_context_set_default_source() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:176 ../src/pavucontrol.cc:201
+#: ../src/pavucontrol.cc:267
+#, c-format
+msgid "could not read JSON from list-handlers message response: %s"
+msgstr ""
+
+#: ../src/pavucontrol.cc:276
+msgid "list-handlers message response is not a JSON array"
+msgstr ""
+
+#: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
 msgstr ""
 
-#: ../src/pavucontrol.cc:227
+#: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
 msgstr "કાર્ડ કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:255
+#: ../src/pavucontrol.cc:386
 msgid "Sink callback failure"
 msgstr "સિન્ક કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:279
+#: ../src/pavucontrol.cc:410
 msgid "Source callback failure"
 msgstr "સ્ત્રોત કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:298
+#: ../src/pavucontrol.cc:429
 msgid "Sink input callback failure"
 msgstr "સિન્ક ઇનપુટ કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:317
+#: ../src/pavucontrol.cc:448
 msgid "Source output callback failure"
 msgstr "સ્ત્રોત આઉટપુટ કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:347
+#: ../src/pavucontrol.cc:478
 msgid "Client callback failure"
 msgstr "ક્લાઇન્ટ કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:363
+#: ../src/pavucontrol.cc:494
 msgid "Server info callback failure"
 msgstr "સર્વર જાણકારી કોલબેક નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:381 ../src/pavucontrol.cc:678
+#: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "સ્ટ્રીમ પુન:સંગ્રહ એક્સટેન્શનને પ્રારંભ કરવામાં નિષ્ફળ (_r): %s"
 
-#: ../src/pavucontrol.cc:399
+#: ../src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:417 ../src/pavucontrol.cc:692
+#: ../src/pavucontrol.cc:548 ../src/pavucontrol.cc:823
 #, fuzzy, c-format
 #| msgid "Failed to initialize stream_restore extension: %s"
 msgid "Failed to initialize device restore extension: %s"
 msgstr "સ્ટ્રીમ પુન:સંગ્રહ એક્સટેન્શનને પ્રારંભ કરવામાં નિષ્ફળ (_r): %s"
 
-#: ../src/pavucontrol.cc:438
+#: ../src/pavucontrol.cc:569
 #, fuzzy
 #| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_stream_restore_read() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:456 ../src/pavucontrol.cc:705
+#: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
 #, fuzzy, c-format
 #| msgid "Failed to initialize stream_restore extension: %s"
 msgid "Failed to initialize device manager extension: %s"
 msgstr "સ્ટ્રીમ પુન:સંગ્રહ એક્સટેન્શનને પ્રારંભ કરવામાં નિષ્ફળ (_r): %s"
 
-#: ../src/pavucontrol.cc:475
+#: ../src/pavucontrol.cc:606
 #, fuzzy
 #| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_stream_restore_read() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:492
+#: ../src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:505
+#: ../src/pavucontrol.cc:636
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:518 ../src/pavucontrol.cc:531
+#: ../src/pavucontrol.cc:649 ../src/pavucontrol.cc:662
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:544
+#: ../src/pavucontrol.cc:675
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:554 ../src/pavucontrol.cc:619
+#: ../src/pavucontrol.cc:685 ../src/pavucontrol.cc:750
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:567
+#: ../src/pavucontrol.cc:698
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:610
+#: ../src/pavucontrol.cc:741
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:626
+#: ../src/pavucontrol.cc:757
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:633
+#: ../src/pavucontrol.cc:764
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:640
+#: ../src/pavucontrol.cc:771
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:647
+#: ../src/pavucontrol.cc:778
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:654
+#: ../src/pavucontrol.cc:785
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:661
+#: ../src/pavucontrol.cc:792
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:720 ../src/pavucontrol.cc:771
+#: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
 #, fuzzy
 #| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
 msgstr "જોડાણ નિષ્ફળ"
 
-#: ../src/pavucontrol.cc:758
+#: ../src/pavucontrol.cc:889
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -394,7 +434,7 @@ msgid ""
 "run start-pulseaudio-x11 manually."
 msgstr ""
 
-#: ../src/cardwidget.cc:117
+#: ../src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() નિષ્ફળ"
 
@@ -465,59 +505,59 @@ msgstr ""
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_stream_restore_write() નિષ્ફળ"
 
-#: ../src/mainwindow.cc:175
+#: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:254
+#: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr ""
 
-#: ../src/mainwindow.cc:262
+#: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr ""
 
-#: ../src/mainwindow.cc:326
+#: ../src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr ""
 
-#: ../src/mainwindow.cc:330 ../src/mainwindow.cc:438
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
 msgid " (unavailable)"
 msgstr ""
 
-#: ../src/mainwindow.cc:332 ../src/mainwindow.cc:435
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
 msgid " (unplugged)"
 msgstr ""
 
-#: ../src/mainwindow.cc:615
+#: ../src/mainwindow.cc:633
 msgid "Failed to read data from stream"
 msgstr "સ્ટ્રીમમાંથી માહિતી વાંચવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:659
+#: ../src/mainwindow.cc:677
 msgid "Peak detect"
 msgstr "શોધની ટોચ"
 
-#: ../src/mainwindow.cc:660
+#: ../src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
 msgstr "મોનિટરીંગ સ્ટ્રીમને બનાવવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:675
+#: ../src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
 msgstr "મોનિટરીંગ સ્ટ્રીમને જોડવામાં નિષ્ફળ"
 
-#: ../src/mainwindow.cc:811
+#: ../src/mainwindow.cc:829
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:986
+#: ../src/mainwindow.cc:1004
 msgid "System Sounds"
 msgstr "સિસ્ટમ સાઉન્ડો"
 
-#: ../src/mainwindow.cc:1332
+#: ../src/mainwindow.cc:1350
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 
