@@ -39,6 +39,14 @@ MinimalStreamWidget::MinimalStreamWidget(BaseObjectType* cobject) :
     volumeMeterVisible(true) {
 }
 
+MinimalStreamWidget::~MinimalStreamWidget() {
+    if (peak) {
+        pa_stream_disconnect(peak);
+        pa_stream_unref(peak);
+        peak = NULL;
+    }
+}
+
 void MinimalStreamWidget::init() {
     /* Set up the peak meter. This is not done in the constructor, because
      * channelsVBox is initialized by the subclasses, so it's not yet available

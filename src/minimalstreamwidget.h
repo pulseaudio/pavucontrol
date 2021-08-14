@@ -26,6 +26,7 @@
 class MinimalStreamWidget : public Gtk::VBox {
 public:
     MinimalStreamWidget(BaseObjectType* cobject);
+    virtual ~MinimalStreamWidget();
 
     /* Subclass constructors are expected to initialize these variables.
      * MinimalStreamWidget can't initialize these, because the glade object
