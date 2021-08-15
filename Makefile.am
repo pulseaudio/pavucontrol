@@ -20,7 +20,8 @@ EXTRA_DIST = \
 	LICENSE \
 	intltool-merge.in \
 	intltool-update.in \
-	intltool-extract.in
+	intltool-extract.in \
+	po/pavucontrol.pot
 
 SUBDIRS=src doc po
 
