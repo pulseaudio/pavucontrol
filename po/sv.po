@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-08-18 20:07+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2021-08-19 21:04+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/sv/>\n"
 "Language: sv\n"
@@ -244,7 +244,7 @@ msgstr "kunde inte läsa JSON från list-codecs meddelandesvar: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr "list-codecs meddelandesvar är inte en JSON-array"
+msgstr "list-codec-meddelandets svar är inte en JSON-vektor"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
@@ -284,11 +284,11 @@ msgstr "kunde inte läsa JSON från list-handlers meddelandesvar: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr "list-handlers meddelandesvar är inte en JSON-array"
+msgstr "list-handlers-meddelandets svar är inte en JSON-vektor"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr "list-handlers meddelandesvar kunde inte tolkas korrek"
+msgstr "listhandlers-meddelandets svar kunde inte tolkas korrekt"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
