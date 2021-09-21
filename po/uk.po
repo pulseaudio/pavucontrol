@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-01-31 22:40+0000\n"
+"PO-Revision-Date: 2021-08-17 19:04+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -59,17 +59,15 @@ msgstr "Назва карти"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Прив'язати картку до цього профілю"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Профіль:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Порт:</b>"
+msgstr "<b>Кодек:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -242,56 +240,55 @@ msgstr "напрямок"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "не вдалося прочитати JSON з відповіді list-codecs: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "відповідь list-codecs не є масивом JSON"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "не вдалося належним чином обробити відповідь list-codecs"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "не вдалося прочитати JSON з відповіді get-codec: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "відповідь get-codec не є значенням JSON"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "не вдалося отримати назву кодека з відповіді get-codec"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "не вдалося прочитати JSON з відповіді get-profile-sticky: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "відповідь get-profile-sticky не є значенням JSON"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "Спроба виконання pa_context_set_default_source() була невдалою"
+msgstr "Спроба виконати pa_context_send_message_to_object() була невдалою: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "не вдалося прочитати JSON з відповіді list-handlers: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "відповідь list-handlers не є масивом JSON"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "не вдалося належним чином обробити відповідь list-handlers"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
