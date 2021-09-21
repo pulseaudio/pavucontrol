@@ -6,13 +6,14 @@
 # gogo <trebelnik2@gmail.com>, 2017
 # Milo Ivir <mail@milotype.de>, 2020.
 # Tomislav Krznar <tomislav.krznar@gmail.com>, 2020.
+# Gogo Gogsi <linux.hr@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2020-09-27 11:29+0000\n"
-"Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
+"PO-Revision-Date: 2021-09-14 13:05+0000\n"
+"Last-Translator: Gogo Gogsi <linux.hr@protonmail.com>\n"
 "Language-Team: Croatian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/hr/>\n"
 "Language: hr\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -36,17 +37,14 @@ msgid "Adjust the volume level"
 msgstr "Prilagodite razinu glasnoće zvuka"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Mikrofon;Glasnoća zvuka;Utišavanje;Uravnoteženje;Slušalice s "
-"mikrofonom;Zvuk;Mikser;Izlaz;Ulaz;"
+"pavucontrol;Mikrofon;Glasnoća zvuka;Utišavanje;Uravnoteženje;Slušalice s mikr"
+"ofonom;Zvučnici;Slušalice;Zvuk;Mikser;Izlaz;Ulaz;Uređaji;Reprodukcija;Snimanj"
+"e;Sustav;Zvučna kartica;Postavke;Osobitosti;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -63,17 +61,15 @@ msgstr "Naziv kartice"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Zaključaj karticu na ovaj profil"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Ulaz:</b>"
+msgstr "<b>kôdek:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -193,7 +189,7 @@ msgstr "<i>Nijedna aplikacija trenutno ne snima zvuk.</i>"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "_Recording"
-msgstr "_Snimajne"
+msgstr "_Snimanje"
 
 #: ../src/pavucontrol.glade.h:39
 msgid "<i>No output devices available</i>"
@@ -246,56 +242,55 @@ msgstr "usmjerenje"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "nemoguće čitanje JSON iz list-codecs odgovora poruke: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "list-codecs poruka odgovora nije valjano JSON polje"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "list-codecs poruka odgovora ne može se obraditi ispravno"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "nemoguće čitanje JSON iz get-codecs odgovora poruke: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "get-codec poruka odgovora nije JSON vrijednost"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "nemoguće dobivanje naziva kôdeka iz get-codecs odgovora poruke"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "nemoguće čitanje JSON iz get-profile-sticky odgovora poruke: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "get-profile-sticky poruka odgovora nije JSON vrijednost"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() neuspješno"
+msgstr "pa_context_send_message_to_object() neuspješno: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "nemoguće čitanje JSON iz list-handlers odgovora poruke: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "list-handlers poruka odgovora nije JSON polje"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "list-handlers poruka odgovora ne može se obraditi ispravno"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
@@ -489,11 +484,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Odustani"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_U redu"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -663,7 +658,7 @@ msgstr "broj"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "Trajno pokušavaj ako pa prestane raditi (svakih 5 sekundi)."
+msgstr "Ponovo pokušaj unedogled, ako pa odustane (svakih 5 sekundi)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
