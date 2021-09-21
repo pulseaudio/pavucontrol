@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Daniel Muñiz Fontoira <dani@damufo.com>, 2020.
+# Fran Diéguez <frandieguez@gnome.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2020-08-29 08:29+0000\n"
-"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
+"PO-Revision-Date: 2021-09-01 07:04+0000\n"
+"Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/gl/>\n"
 "Language: gl\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.1\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -31,17 +32,14 @@ msgid "Adjust the volume level"
 msgstr "Axustar o nivel de volume"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Micrófono;Volume;Esvaece;Balance;Auriculares;Son;Mesturador;"
-"Produción;Entrada;"
+"pavucontrol;Micrófono;Volume;Esvaece;Balance;Auriculares;Altofalantes;Audio;S"
+"on;Mesturador;Saída;Entrada;Dispositivos;Gravación;Sons do sistema;Tarxeta "
+"de son;Preferencias;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -58,17 +56,15 @@ msgstr "Nome da tarxeta"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Bloquear tarxeta a este perfíl"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Perfil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Porto:</b>"
+msgstr "<b>Códec:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -241,24 +237,24 @@ msgstr "dirección"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "non é posíbel ler o JSON desde a mensaxe de resposta de list-codecs: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "a resposta da mensaxe de list-codecs non é un array JSON"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "non foi posíbel analizar a resposta da mensaxe de list-codecs"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "non foi posíbel ler o JSON desde a resposta da mensaxe de get-codec: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "a mensaxe de resposta de get-codec non é un valor JSON"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
