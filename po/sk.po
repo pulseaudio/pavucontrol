@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-04-20 20:02+0000\n"
 "Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
@@ -535,7 +535,7 @@ msgstr "Nepodarilo sa vytvoriť monitorovací prúd"
 msgid "Failed to connect monitoring stream"
 msgstr "Nepodarilo sa pripojiť monitorovací prúd"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -543,11 +543,11 @@ msgstr ""
 "Ignoruje sa sink-input pretože je navrhnutý ako udalosť a teda spracovaný "
 "widgetom udalosť"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Systémové zvuky"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Vytvára sa pripojenie k PulseAudio, čakajte..."
 

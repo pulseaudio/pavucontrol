@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-05-21 23:09+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/"
@@ -536,7 +536,7 @@ msgstr "Kunne ikke oprette overvågningsstrøm"
 msgid "Failed to connect monitoring stream"
 msgstr "Kunne ikke forbinde overvågningsstrøm"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -544,11 +544,11 @@ msgstr ""
 "Ingorerer sinkinput da den er udpeget som en hændelse og derfor håndteres af "
 "hændelseswidgeten"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Systemlyde"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerer forbindelse til PulseAudio. Vent venligst ..."
 

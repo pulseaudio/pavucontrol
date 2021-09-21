@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sergey Danilov <stiletto@stiletto.name>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -543,17 +543,17 @@ msgstr "Не удается создать поток мониторинга"
 msgid "Failed to connect monitoring stream"
 msgstr "Не удается присоединить поток мониторинга"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Системные звуки"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 

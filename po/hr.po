@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PulseAudio Volume Control\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2020-09-27 11:29+0000\n"
 "Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
 "Language-Team: Croatian <https://translate.fedoraproject.org/projects/"
@@ -541,7 +541,7 @@ msgstr "Neuspješno stvaranje nadgledatelja strujanja"
 msgid "Failed to connect monitoring stream"
 msgstr "Neuspješno povezivanje s nadgledateljem strujanja"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -549,11 +549,11 @@ msgstr ""
 "Zanemarivanje slivnika-ulaza zato jer je označen kao događaj i zato je "
 "rukovan od strane widgeta događaja"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Zvukovi sustava"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Uspostavljanje povezivanja s PulseAudiom. Pričekajte..."
 

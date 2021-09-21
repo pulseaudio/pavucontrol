@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2009-09-10 17:13+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -550,17 +550,17 @@ msgstr "పర్యవేక్షక స్ట్రీమ్ సృష్ట�
 msgid "Failed to connect monitoring stream"
 msgstr "పర్యవేక్షక స్ట్రీమ్ అనుసంధానములో విఫలమైంది"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "సిస్టమ్ శబ్దములు"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr ""
 

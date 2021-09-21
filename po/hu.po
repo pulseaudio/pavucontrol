@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-04-20 20:02+0000\n"
 "Last-Translator: Bendegúz Gyönki <gyonkibendeguz@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
@@ -540,7 +540,7 @@ msgstr "A monitor-adatfolyam létrehozása sikertelen"
 msgid "Failed to connect monitoring stream"
 msgstr "A monitor-adatfolyamhoz kapcsolódás sikertelen"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -548,11 +548,11 @@ msgstr ""
 "A nyelőbemenet figyelmen kívül hagyása, mert eseményként jelölt, és így az "
 "Esemény felületi elem kezeli"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Rendszerhangok"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Kapcsolat felépítése a PulseAudióval. Kis türelmet…"
 

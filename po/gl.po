@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2020-08-29 08:29+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician <https://translate.fedoraproject.org/projects/"
@@ -544,7 +544,7 @@ msgstr "Produciuse un fallo ao crear o fluxo de monitorizamento"
 msgid "Failed to connect monitoring stream"
 msgstr "Produciuse un fallo ao conectar o fluxo de monitorizamento"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -552,11 +552,11 @@ msgstr ""
 "Ignorouse a entrada Sink porque foi designada como un evento e, polo tanto, "
 "é tratada polo evento"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sons do sistema"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Estase a establecer a conexión con PulseAudio, agarde..."
 

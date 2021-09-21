@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-06-11 18:04+0000\n"
 "Last-Translator: Toni Estevez <toni.estevez@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/"
@@ -551,7 +551,7 @@ msgstr "No s'ha pogut crear la transmissió de monitorització"
 msgid "Failed to connect monitoring stream"
 msgstr "No s'ha pogut connectar a la transmissió de monitorització"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -559,11 +559,11 @@ msgstr ""
 "S'ignora perquè s'ha designat com un esdeveniment i, per tant, el gestiona "
 "el giny d'esdeveniments"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sons del sistema"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "S'està establint la connexió al PulseAudio. Espereu..."
 

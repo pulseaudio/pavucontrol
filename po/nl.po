@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-03-24 08:55+0000\n"
 "Last-Translator: Pjotr Vertaalt <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/"
@@ -539,7 +539,7 @@ msgstr "Maken van observatiestroom is mislukt"
 msgid "Failed to connect monitoring stream"
 msgstr "Verbinden met observatiestroom is mislukt"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -547,11 +547,11 @@ msgstr ""
 "Afvoer-invoer wordt genegeerd omdat deze wordt aangemerkt als een "
 "gebeurtenis en dus wordt afgehandeld door de Gebeurteniswidget"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Systeemgeluiden"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Er wordt verbinding gemaakt met PulseAudio. Ogenblik geduld a.u.b..."
 

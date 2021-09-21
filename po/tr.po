@@ -535,7 +535,7 @@ msgstr "Akış izleme oluşturulması başarısız"
 msgid "Failed to connect monitoring stream"
 msgstr "Akış izleme bağlantısı başarısız"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -543,11 +543,11 @@ msgstr ""
 "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi "
 "nedeniyle alıcı girişi yok sayılıyor"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sistem Sesleri"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "PulseAudio ile bağlantı kuruluyor. Lütfen bekleyin..."
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-08-03 16:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -540,7 +540,7 @@ msgstr "Falha ao criar o fluxo de monitoramento"
 msgid "Failed to connect monitoring stream"
 msgstr "Falha ao conectar o fluxo de monitoramento"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -548,11 +548,11 @@ msgstr ""
 "Ignorando sink-input por ter sido designado como um evento e, portanto, "
 "tratado pelo widget de evento"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sons do sistema"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Estabelecendo conexão com o PulseAudio. Por favor, aguarde…"
 

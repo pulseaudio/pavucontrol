@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2021-01-31 22:40+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/"
@@ -533,7 +533,7 @@ msgstr "יצירת תזרים המעקב נכשלה"
 msgid "Failed to connect monitoring stream"
 msgstr "התחברות לתזרים המעקב נכשלה"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -541,11 +541,11 @@ msgstr ""
 "sink-input יזכה להתעלמות כיוון שהוא הוקצה כאירוע ולכן יטופל על ידי וידג׳ט "
 "האירועים"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "צלילי המערכת"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "מתבצע חיבור ל־PulseAudio. נא להמתין…"
 

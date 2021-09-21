@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
 "PO-Revision-Date: 2020-05-21 07:40+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.fedoraproject.org/"
@@ -550,7 +550,7 @@ msgstr "Klarte ikke å opprette avlyttingsenhetsstrøm"
 msgid "Failed to connect monitoring stream"
 msgstr "Klarte ikke å koble til avlyttingsenhetsstrøm"
 
-#: ../src/mainwindow.cc:829
+#: ../src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -558,11 +558,11 @@ msgstr ""
 "Ser bort fra sluk-inndata, fordi det er angitt som en hendelse, og således "
 "håndteres av hendelsesminiprogrammet"
 
-#: ../src/mainwindow.cc:1004
+#: ../src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Systemlyder"
 
-#: ../src/mainwindow.cc:1350
+#: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerer tilkobling til PulseAudio. Vent…"
 
