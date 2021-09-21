@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-05 13:51+0300\n"
-"PO-Revision-Date: 2021-01-27 18:40+0000\n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"PO-Revision-Date: 2021-08-26 16:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/tr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -34,16 +34,16 @@ msgid "Adjust the volume level"
 msgstr "Ses seviyesini ayarla"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Mikrofon;Seviye;Solma;Denge;Kulaklık;Ses;Karıştırıcı;Çıkış;Giriş;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settin"
+"gs;Preferences;Mikrofon;Seviye;Azalma;Denge;Kulaklık;Hoparlör;Ses;Karıştırıcı"
+";Çıkış;Giriş;Aygıtlar;Oynatma;Kaydetme;Sistem Sesleri;Ses "
+"Kartı;Ayarlar;Tercihler;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -60,17 +60,15 @@ msgstr "Kart Adı"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Kartı bu profile kilitle"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Giriş:</b>"
+msgstr "<b>Kod Çözücü:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -243,56 +241,55 @@ msgstr "yön"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "list-codecs mesajı yanıtından JSON okunamadı: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "list-codecs mesajı yanıtı bir JSON dizisi değil"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "list-codecs mesajı yanıtı doğru şekilde ayrıştırılamadı"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "get-codec mesajı yanıtından JSON okunamadı: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "get-codec mesajı yanıtı bir JSON değeri değil"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "get-codec mesajı yanıtından kod çözücü adı alınamadı"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "get-profile-sticky mesajı yanıtından JSON okunamadı: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "get-profile-sticky mesajı yanıtı bir JSON değeri değil"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() başarısız"
+msgstr "pa_context_send_message_to_object() başarısız: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "list-handlers mesajı yanıtından JSON okunamadı: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "list-handlers mesajı yanıtı bir JSON dizisi değil"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "list-handlers mesajı yanıtı doğru şekilde ayrıştırılamadı"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
@@ -300,7 +297,7 @@ msgstr "Kart geri-çağırma başarısız"
 
 #: ../src/pavucontrol.cc:386
 msgid "Sink callback failure"
-msgstr "Sink geri-çağırma hatası"
+msgstr "Alıcı geri çağırma hatası"
 
 #: ../src/pavucontrol.cc:410
 msgid "Source callback failure"
@@ -308,7 +305,7 @@ msgstr "Kaynak geri-çağırma başarısız"
 
 #: ../src/pavucontrol.cc:429
 msgid "Sink input callback failure"
-msgstr "Sink girdisi geri-çağırma başarısız"
+msgstr "Alıcı girişi geri çağırma hatası"
 
 #: ../src/pavucontrol.cc:448
 msgid "Source output callback failure"
@@ -486,11 +483,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_İptal"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_Tamam"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -544,7 +541,7 @@ msgid ""
 "by the Event widget"
 msgstr ""
 "Bir olay olarak atanması ve dolayısıyla olay gereci tarafından işlenmesi "
-"nedeniyle sink-girişi yok sayılıyor"
+"nedeniyle alıcı girişi yok sayılıyor"
 
 #: ../src/mainwindow.cc:1004
 msgid "System Sounds"
