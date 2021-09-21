@@ -1,12 +1,13 @@
 # Emilio Herrera <ehespinosa57@gmail.com>, 2021.
 # Toni Estevez <toni.estevez@gmail.com>, 2021.
+# Daniel Dantur <danidantur@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-05-30 21:02+0000\n"
-"Last-Translator: Toni Estevez <toni.estevez@gmail.com>\n"
+"PO-Revision-Date: 2021-09-20 00:05+0000\n"
+"Last-Translator: Daniel Dantur <danidantur@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/es/>\n"
 "Language: es\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 "X-Poedit-Language: Spanish\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
@@ -54,17 +55,15 @@ msgstr "Nombre de la tarjeta"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Fijar tarjeta a este perfil"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Perfil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Puerto:</b>"
+msgstr "<b>Codec:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -238,55 +237,63 @@ msgstr "dirección"
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
 msgstr ""
+"no se pudo leer JSON proveniente del mensaje de respuesta de list-codecs: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "el mensaje de respuesta de list-codecs no es un array JSON"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "el mensaje de respuesta de list-codecs no se pudo parsear correctamente"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
 msgstr ""
+"no se pudo leer el JSON proveniente del mensaje de respuesta de get-codec: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "el mensaje de respuesta de get-codec no es un valor JSON"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
 msgstr ""
+"no se pudo conseguir el nombre del codec proveniente del mensaje de "
+"respuesta de get-codec"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
 msgstr ""
+"no se pudo leer el JSON proveniente del mensaje de respuesta de get-profile-"
+"sticky: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "el mensaje de respuesta de get-profile-sticky no es un valor JSON"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() falló"
+msgstr "pa_context_send_message_to_object() falló: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
 msgstr ""
+"no se pudo leer JSON proveniente del mensaje de respuesta de list-handlers: "
+"%s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "el mensaje de respuesta de list-handlers no es un array JSON"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
 msgstr ""
+"el mensaje de respuesta de list-handlers no se pudo parsear correctamente"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
