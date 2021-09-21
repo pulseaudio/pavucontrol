@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-08-03 16:04+0000\n"
+"PO-Revision-Date: 2021-09-21 06:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/pulseaudio/pavucontrol/pt_BR/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 
@@ -62,17 +62,15 @@ msgstr "Nome da placa"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Travar placa para este perfil"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Perfil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Porta:</b>"
+msgstr "<b>Codec:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -245,11 +243,11 @@ msgstr "direção"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "não foi possível ler JSON da resposta de mensagem de list-codecs: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "resposta de mensagem de list-codecs não é um vetor JSON"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
