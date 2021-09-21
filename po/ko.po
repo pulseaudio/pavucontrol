@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-04-13 08:02+0000\n"
+"PO-Revision-Date: 2021-08-17 19:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -56,17 +56,15 @@ msgstr "카드 이름"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "이 프로필에서 카드 잠금"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>프로필:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>포트:</b>"
+msgstr "<b>코덱:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -239,56 +237,55 @@ msgstr "디렉션"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "목록-코덱 메시지 응답에서 JSON을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "목록-코덱 메시지 응답은 JSON 배열이 아닙니다"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "목록-코덱 메시지 응답은 정확하게 구문 분석 할 수 없습니다"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "코덱 가져오기(get-codec) 메시지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "코덱 가져오기(get-codec) 메시지 응답은 JSON 값이 아닙니다"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "코덱 가져오기(get-codec) 메시지 응답에서 코덱 이름을 가져 올 수 없습니다"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "프로필 고정(get-profile-sticky) 메시지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "프로필 고정(get-profile-sticky) 메시지 응답은 JSON 값이 아닙니다"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() 실패"
+msgstr "pa_context_send_message_to_object() 실패함: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "목록-처리기 응답에서 JSON 항목을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "항목-처리기 메시지 응답은 JSON 배열이 아닙니다"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "항목-처리기 메시지 응답은 정확하게 구문 분석 할 수 없습니다"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
