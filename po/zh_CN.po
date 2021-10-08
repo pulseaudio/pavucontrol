@@ -4,19 +4,22 @@
 # Simplified Chinese Version of pavucontrol.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# 玉堂白鹤 <yjwork@qq.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2009-04-01 21:43+1000\n"
-"Last-Translator: Leah Liu <lliu@redhat.com>\n"
-"Language-Team: Simplified Chinese <zh@li.org>\n"
+"PO-Revision-Date: 2021-09-25 02:04+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/pulseaudio/pavucontrol/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -90,7 +93,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "DTS"
@@ -98,7 +101,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "MPEG"
@@ -268,10 +271,9 @@ msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() 失败"
+msgstr "pa_context_send_message_to_object(): %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
@@ -466,11 +468,11 @@ msgstr "要重命名设备，你需要在 PulseAudio 服务器中加载 module-d
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "取消(_C)"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "确定(_O)"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -646,7 +648,7 @@ msgstr ""
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "显示版本。"
 
 #~ msgid "AC3"
 #~ msgstr "AC3"
