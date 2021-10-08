@@ -1,0 +1,664 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Remus Satala <remussatala@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"PO-Revision-Date: 2021-10-07 01:20+0000\n"
+"Last-Translator: Remus Satala <remussatala@gmail.com>\n"
+"Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/ro/>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
+
+#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
+msgid "PulseAudio Volume Control"
+msgstr "PulseAudio Control Volume"
+
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+msgid "Volume Control"
+msgstr "Control Volum"
+
+#: ../src/pavucontrol.desktop.in.h:3
+msgid "Adjust the volume level"
+msgstr "Ajustează nivelul volumului"
+
+#: ../src/pavucontrol.desktop.in.h:4
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
+msgstr ""
+"pavucontrol;Microfon;Volum;Estompare;Echilibru;Căști;Difuzoare;Căști;Audio;Mi"
+"xer;Ieșire;Input;Dispozitive;Redare;Înregistrare;Sistem Sunete;Placă de "
+"sunet;Setări;Preferințe;"
+
+#: ../src/pavucontrol.glade.h:1
+msgid "<b>left-front</b>"
+msgstr "<b>stânga-fațăt</b>"
+
+#: ../src/pavucontrol.glade.h:3
+#, no-c-format
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: ../src/pavucontrol.glade.h:4
+msgid "Card Name"
+msgstr "Nume card"
+
+#: ../src/pavucontrol.glade.h:5
+msgid "Lock card to this profile"
+msgstr "Blocați card la acest profil"
+
+#: ../src/pavucontrol.glade.h:6
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
+
+#: ../src/pavucontrol.glade.h:7
+msgid "<b>Codec:</b>"
+msgstr "<b>Codec:</b>"
+
+#: ../src/pavucontrol.glade.h:8
+msgid "Device Title"
+msgstr "Titlul dispozitivului"
+
+#: ../src/pavucontrol.glade.h:9
+msgid "Mute audio"
+msgstr "Dezactivați sunetul"
+
+#: ../src/pavucontrol.glade.h:10
+msgid "Lock channels together"
+msgstr "Blocați canalele împreună"
+
+#: ../src/pavucontrol.glade.h:11
+msgid "Set as fallback"
+msgstr "Setați ca rezervă"
+
+#: ../src/pavucontrol.glade.h:12
+msgid "<b>Port:</b>"
+msgstr "<b>Port:</b>"
+
+#: ../src/pavucontrol.glade.h:13
+msgid "PCM"
+msgstr "PCM"
+
+#: ../src/pavucontrol.glade.h:14
+msgid "AC-3"
+msgstr "AC-3"
+
+#: ../src/pavucontrol.glade.h:15
+msgid "DTS"
+msgstr "DTS"
+
+#: ../src/pavucontrol.glade.h:16
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: ../src/pavucontrol.glade.h:17
+msgid "MPEG"
+msgstr "MPEG"
+
+#: ../src/pavucontrol.glade.h:18
+msgid "AAC"
+msgstr "AAC"
+
+#: ../src/pavucontrol.glade.h:19
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Compensarea latenței:</b>"
+
+#: ../src/pavucontrol.glade.h:20
+msgid "ms"
+msgstr "ms"
+
+#: ../src/pavucontrol.glade.h:21
+msgid "Advanced"
+msgstr "Avansat"
+
+#: ../src/pavucontrol.glade.h:22
+msgid "All Streams"
+msgstr "Toate fluxurile"
+
+#: ../src/pavucontrol.glade.h:23
+msgid "Applications"
+msgstr "Aplicații"
+
+#: ../src/pavucontrol.glade.h:24
+msgid "Virtual Streams"
+msgstr "Fluxuri virtuale"
+
+#: ../src/pavucontrol.glade.h:25
+msgid "All Output Devices"
+msgstr "Toate dispozitivele de ieșire"
+
+#: ../src/pavucontrol.glade.h:26
+msgid "Hardware Output Devices"
+msgstr "Dispozitive hardware de ieșire"
+
+#: ../src/pavucontrol.glade.h:27
+msgid "Virtual Output Devices"
+msgstr "Dispozitive virtuale de ieșire"
+
+#: ../src/pavucontrol.glade.h:28
+msgid "All Input Devices"
+msgstr "Toate dispozitivele de intrare"
+
+#: ../src/pavucontrol.glade.h:29
+msgid "All Except Monitors"
+msgstr "Toate cu excepția monitoarelor"
+
+#: ../src/pavucontrol.glade.h:30
+msgid "Hardware Input Devices"
+msgstr "Dispozitive hardware de intrare"
+
+#: ../src/pavucontrol.glade.h:31
+msgid "Virtual Input Devices"
+msgstr "Dispozitive virtuale de intrare"
+
+#: ../src/pavucontrol.glade.h:32
+msgid "Monitors"
+msgstr "Monitoare"
+
+#: ../src/pavucontrol.glade.h:34
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Nicio aplicație nu redă audio în prezent.</i>"
+
+#: ../src/pavucontrol.glade.h:35
+msgid "<b>_Show:</b>"
+msgstr "<b>_Arată:</b>"
+
+#: ../src/pavucontrol.glade.h:36
+msgid "_Playback"
+msgstr "_Redare"
+
+#: ../src/pavucontrol.glade.h:37
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Nicio aplicație nu înregistrează audio în prezent.</i>"
+
+#: ../src/pavucontrol.glade.h:38
+msgid "_Recording"
+msgstr "_Înregistrare"
+
+#: ../src/pavucontrol.glade.h:39
+msgid "<i>No output devices available</i>"
+msgstr "<i>Nu există dispozitive de ieșire disponibile</i>"
+
+#: ../src/pavucontrol.glade.h:40
+msgid "<b>S_how:</b>"
+msgstr "<b>A_rată:</b>"
+
+#: ../src/pavucontrol.glade.h:41
+msgid "_Output Devices"
+msgstr "_Dispozitive de ieșire"
+
+#: ../src/pavucontrol.glade.h:42
+msgid "<i>No input devices available</i>"
+msgstr "<i>Nu sunt disponibile dispozitive de intrare</i>"
+
+#: ../src/pavucontrol.glade.h:43
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Arat_ă:</b>"
+
+#: ../src/pavucontrol.glade.h:44
+msgid "_Input Devices"
+msgstr "_Dispozitive de intrare"
+
+#: ../src/pavucontrol.glade.h:45
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Nu există carduri disponibile pentru configurare</i>"
+
+#: ../src/pavucontrol.glade.h:46
+msgid "Show volume meters"
+msgstr "Afișează volumetre"
+
+#: ../src/pavucontrol.glade.h:47
+msgid "_Configuration"
+msgstr "_Configurare"
+
+#: ../src/pavucontrol.glade.h:48
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Redenumiți dispozitivul în:</b>"
+
+#: ../src/pavucontrol.glade.h:49
+msgid "Stream Title"
+msgstr "Titlul fluxului"
+
+#: ../src/pavucontrol.glade.h:50
+msgid "direction"
+msgstr "direcţie"
+
+#: ../src/pavucontrol.cc:104
+#, c-format
+msgid "could not read JSON from list-codecs message response: %s"
+msgstr "nu s-a putut citi JSON din răspunsul mesajului list-codecs: %s"
+
+#: ../src/pavucontrol.cc:113
+msgid "list-codecs message response is not a JSON array"
+msgstr "răspunsul la mesajul list-codecs nu este o ordine JSON"
+
+#: ../src/pavucontrol.cc:161
+msgid "list-codecs message response could not be parsed correctly"
+msgstr "răspunsul mesajului list-codecs nu a putut fi analizat corect"
+
+#: ../src/pavucontrol.cc:181
+#, c-format
+msgid "could not read JSON from get-codec message response: %s"
+msgstr "nu s-a putut citi JSON din răspunsul la mesajul get-codec: %s"
+
+#: ../src/pavucontrol.cc:190
+msgid "get-codec message response is not a JSON value"
+msgstr "răspunsul la mesajul get-codec nu este o valoare JSON"
+
+#: ../src/pavucontrol.cc:198
+msgid "could not get codec name from get-codec message response"
+msgstr "nu s-a putut obține numele codecului din răspunsul la mesajul get-codec"
+
+#: ../src/pavucontrol.cc:220
+#, c-format
+msgid "could not read JSON from get-profile-sticky message response: %s"
+msgstr "nu s-a putut citi JSON din răspunsul la mesajul get-profile-sticky: %s"
+
+#: ../src/pavucontrol.cc:229
+msgid "get-profile-sticky message response is not a JSON value"
+msgstr "răspunsul la mesajul get-profile-sticky nu este o valoare JSON"
+
+#: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
+#, c-format
+msgid "pa_context_send_message_to_object() failed: %s"
+msgstr "pa_context_send_message_to_object() a eșuat: %s"
+
+#: ../src/pavucontrol.cc:267
+#, c-format
+msgid "could not read JSON from list-handlers message response: %s"
+msgstr "nu s-a putut citi JSON din răspunsul la mesajul list-handlers: %s"
+
+#: ../src/pavucontrol.cc:276
+msgid "list-handlers message response is not a JSON array"
+msgstr "Răspunsul la mesajele list-handlers nu este o ordine JSON"
+
+#: ../src/pavucontrol.cc:324
+msgid "list-handlers message response could not be parsed correctly"
+msgstr "Răspunsul la mesajele list-handlers nu a putut fi analizat corect"
+
+#: ../src/pavucontrol.cc:358
+msgid "Card callback failure"
+msgstr "Eșec de apel invers a cardului"
+
+#: ../src/pavucontrol.cc:386
+msgid "Sink callback failure"
+msgstr "Eșec de apel invers la chiuvetă"
+
+#: ../src/pavucontrol.cc:410
+msgid "Source callback failure"
+msgstr "Eroare sursă de apel invers"
+
+#: ../src/pavucontrol.cc:429
+msgid "Sink input callback failure"
+msgstr "Eșec de apel invers la intrare chiuvetă"
+
+#: ../src/pavucontrol.cc:448
+msgid "Source output callback failure"
+msgstr "Ieșirea sursei de apel invers a eșuat"
+
+#: ../src/pavucontrol.cc:478
+msgid "Client callback failure"
+msgstr "Eșec de apel invers client"
+
+#: ../src/pavucontrol.cc:494
+msgid "Server info callback failure"
+msgstr "Eșec de apel invers a informației server"
+
+#: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "Eșec de inițializare la extensia stream_restore: %s"
+
+#: ../src/pavucontrol.cc:530
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() a eșuat"
+
+#: ../src/pavucontrol.cc:548 ../src/pavucontrol.cc:823
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "Eșec de inițializare a extensiei de restaurare a dispozitivului: %s"
+
+#: ../src/pavucontrol.cc:569
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() a eșuat"
+
+#: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "Eșec de inițializare a extensiei managerului de dispozitiv: %s"
+
+#: ../src/pavucontrol.cc:606
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() a eșuat"
+
+#: ../src/pavucontrol.cc:623
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() a eșuat"
+
+#: ../src/pavucontrol.cc:636
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() a eșuat"
+
+#: ../src/pavucontrol.cc:649 ../src/pavucontrol.cc:662
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() a eșuat"
+
+#: ../src/pavucontrol.cc:675
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() a eșuat"
+
+#: ../src/pavucontrol.cc:685 ../src/pavucontrol.cc:750
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() a eșuat"
+
+#: ../src/pavucontrol.cc:698
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() a eșuat"
+
+#: ../src/pavucontrol.cc:741
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() a eșuat"
+
+#: ../src/pavucontrol.cc:757
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:764
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:771
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:778
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:785
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:792
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() a eșuat"
+
+#: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
+msgid "Connection failed, attempting reconnect"
+msgstr "Conexiunea a eșuat, încercând să vă reconectați"
+
+#: ../src/pavucontrol.cc:889
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"Conexiunea la PulseAudio a eșuat. Reîncercați automat în 5 secunde\n"
+"\n"
+"În acest caz acest lucru este probabil deoarece PULSE_SERVER în "
+"proprietățile ferestrei rădăcină Environment/X11\n"
+"sau serverul implicit în client.conf este greșit configurat.\n"
+"Această situație poate apărea și atunci când PulseAudio s-a prăbușit și a "
+"lăsat detalii învechite ferestrei rădăcină X11.\n"
+"Dacă acesta este cazul, atunci PulseAudio ar trebui să auto-multiplice din "
+"nou, sau dacă acest lucru nu este configurat ar trebui să\n"
+"ruleze manual start-pulseaudio-x11."
+
+#: ../src/cardwidget.cc:126
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() a eșuat"
+
+#: ../src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
+
+#: ../src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: ../src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Silence</small>"
+msgstr "<small>Liniște</small>"
+
+#: ../src/channelwidget.cc:139
+msgid "<small>Min</small>"
+msgstr "<small>Minim</small>"
+
+#: ../src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
+
+#: ../src/channelwidget.cc:145
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>Bază</i></small>"
+
+#: ../src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "Redenumiți dispozitivul..."
+
+#: ../src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() a eșuat"
+
+#: ../src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "Ne pare rău, dar redenumirea dispozitivului nu este acceptată."
+
+#: ../src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"Trebuie să încărcați module-device-manager în serverul PulseAudio pentru a "
+"redenumi dispozitivele"
+
+#: ../src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr "_Renunță"
+
+#: ../src/devicewidget.cc:263
+msgid "_OK"
+msgstr "_Bine"
+
+#: ../src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() a eșuat"
+
+#: ../src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "Eroare la citirea fișierului de configurare %s: %s"
+
+#: ../src/mainwindow.cc:250
+msgid "Error saving preferences"
+msgstr "Eroare la salvarea preferințelor"
+
+#: ../src/mainwindow.cc:258
+#, c-format
+msgid "Error writing config file %s"
+msgstr "Eroare la scrierea fișierului de configurare %s"
+
+#: ../src/mainwindow.cc:322
+msgid " (plugged in)"
+msgstr " (conectat în)"
+
+#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
+msgid " (unavailable)"
+msgstr " (indisponibil)"
+
+#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
+msgid " (unplugged)"
+msgstr " (deconectat)"
+
+#: ../src/mainwindow.cc:633
+msgid "Failed to read data from stream"
+msgstr "Citirea datelor din flux nu a reușit"
+
+#: ../src/mainwindow.cc:677
+msgid "Peak detect"
+msgstr "Detectare vârf"
+
+#: ../src/mainwindow.cc:678
+msgid "Failed to create monitoring stream"
+msgstr "Nu s-a putut crea fluxul de monitorizare"
+
+#: ../src/mainwindow.cc:693
+msgid "Failed to connect monitoring stream"
+msgstr "Conectarea fluxului de monitorizare nu a reușit"
+
+#: ../src/mainwindow.cc:830
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"Ignorare intrare chiuvetă datorită faptului că a fost desemnată ca eveniment "
+"și astfel gestionată de widgetul Eveniment"
+
+#: ../src/mainwindow.cc:1005
+msgid "System Sounds"
+msgstr "Sunete de sistem"
+
+#: ../src/mainwindow.cc:1351
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "Stabilire conexiune la PulseAudio. Va rugam asteptati..."
+
+#: ../src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() a eșuat"
+
+#: ../src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "pornit"
+
+#: ../src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "Terminați redarea"
+
+#: ../src/sinkinputwidget.cc:78
+msgid "Unknown output"
+msgstr "Ieșire necunoscută"
+
+#: ../src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() a eșuat"
+
+#: ../src/sinkinputwidget.cc:102
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() a eșuat"
+
+#: ../src/sinkinputwidget.cc:112
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() a eșuat"
+
+#: ../src/sinkwidget.cc:95
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() a eșuat"
+
+#: ../src/sinkwidget.cc:110
+msgid "Volume Control Feedback Sound"
+msgstr "Controlul volumului Sunet de feedback"
+
+#: ../src/sinkwidget.cc:127
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() a eșuat"
+
+#: ../src/sinkwidget.cc:141
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() a eșuat"
+
+#: ../src/sinkwidget.cc:161
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() a eșuat"
+
+#: ../src/sinkwidget.cc:203
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() a eșuat"
+
+#: ../src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "de la"
+
+#: ../src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "Terminați înregistrarea"
+
+#: ../src/sourceoutputwidget.cc:83
+msgid "Unknown input"
+msgstr "Intrare necunoscută"
+
+#: ../src/sourceoutputwidget.cc:93
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() a eșuat"
+
+#: ../src/sourceoutputwidget.cc:108
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() a eșuat"
+
+#: ../src/sourceoutputwidget.cc:119
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() a eșuat"
+
+#: ../src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() a eșuat"
+
+#: ../src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() a eșuat"
+
+#: ../src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() a eșuat"
+
+#: ../src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() a eșuat"
+
+#: ../src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Terminare"
+
+#: ../src/pavuapplication.cc:160
+msgid "Select a specific tab on load."
+msgstr "Selectați o filă specifică pentru încărcare."
+
+#: ../src/pavuapplication.cc:161
+msgid "number"
+msgstr "număr"
+
+#: ../src/pavuapplication.cc:166
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr "Încercați din nou dacă pa încetează (la fiecare 5 secunde)."
+
+#: ../src/pavuapplication.cc:171
+msgid "Maximize the window."
+msgstr "Maximizați fereastra."
+
+#: ../src/pavuapplication.cc:176
+msgid "Show version."
+msgstr "Afișare versiune."
