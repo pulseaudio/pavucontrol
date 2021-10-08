@@ -5,13 +5,14 @@
 # Gabor Kelemen <kelemeng@gnome.hu>, 2008, 2009.
 # Balázs Meskó <meskobalazs@mailbox.org>, 2020.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2021.
+# Acs Zoltan <acszoltan111@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-04-20 20:02+0000\n"
-"Last-Translator: Bendegúz Gyönki <gyonkibendeguz@gmail.com>\n"
+"PO-Revision-Date: 2021-10-03 08:05+0000\n"
+"Last-Translator: Acs Zoltan <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/hu/>\n"
 "Language: hu\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -34,17 +35,14 @@ msgid "Adjust the volume level"
 msgstr "Hangerő beállítása"
 
 #: ../src/pavucontrol.desktop.in.h:4
-#, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;mikrofon;hangerő;elhalkulás;egyensúly;headset;fejhallgató;hang;"
-"mixer;keverő;kimenet;bemenet;"
+"pavucontrol;mikrofon;hangerő;elhalkulás;egyensúly;headset;hangszóró;fejhallga"
+"tó;hang;mixer;keverő;kimenet;bemenet;eszközök;lejátszás;felvétel;rendszerhang"
+"ok;hangkártya;beállítások;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -61,21 +59,19 @@ msgstr "Kártya neve"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Kártya zárolása ehhez a profilhoz"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Port:</b>"
+msgstr "<b>Kodek:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
-msgstr "Eszköz címe"
+msgstr "Eszközcím"
 
 #: ../src/pavucontrol.glade.h:9
 msgid "Mute audio"
@@ -87,7 +83,7 @@ msgstr "Csatornák összekapcsolása"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "Set as fallback"
-msgstr "Visszállás beállítása"
+msgstr "Beállítás tartaléknak"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "<b>Port:</b>"
@@ -119,7 +115,7 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "<b>Latency offset:</b>"
-msgstr "<b>Késleltetés eltolása:</b>"
+msgstr "<b>Késleltetés:</b>"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "ms"
@@ -219,11 +215,11 @@ msgstr "B_emeneti eszközök"
 
 #: ../src/pavucontrol.glade.h:45
 msgid "<i>No cards available for configuration</i>"
-msgstr "<i>Nem érhetők el beállítható kártyák</i>"
+msgstr "<i>Nincsenek elérhető kártyák beállításhoz</i>"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "Show volume meters"
-msgstr "Hangerőjelzők megjelenítése"
+msgstr "Hangerőmutatók megjelenítése"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "_Configuration"
@@ -242,17 +238,17 @@ msgid "direction"
 msgstr "irány"
 
 #: ../src/pavucontrol.cc:104
-#, c-format
+#, c-format, fuzzy
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "nem sikerült leolvasni JSON-t a list-codecs üzenetválaszából: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "list-codecs üzenetválasza nem egy JSON tömb"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "Nem sikerült helyesen feldolgozni a list-codecs üzenetválaszát"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
@@ -277,10 +273,9 @@ msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "a pa_context_set_default_source() sikertelen"
+msgstr "a pa_context_send_message_to_object() sikertelen: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
@@ -339,7 +334,7 @@ msgstr "Az eszköz-visszaállítási kiterjesztés előkészítése sikertelen: 
 
 #: ../src/pavucontrol.cc:569
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "A pa_ext_stream_restore_read() sikertelen"
+msgstr "A pa_ext_device_restore_read_sink_formats() sikertelen"
 
 #: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
 #, c-format
@@ -348,7 +343,7 @@ msgstr "Az eszközkezelő kiterjesztés előkészítése sikertelen: %s"
 
 #: ../src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
-msgstr "A pa_ext_stream_restore_read() sikertelen"
+msgstr "A pa_ext_device_manager_read() sikertelen"
 
 #: ../src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -404,7 +399,7 @@ msgstr "a pa_context_get_source_output_info_list() sikertelen"
 
 #: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
 msgid "Connection failed, attempting reconnect"
-msgstr "A kapcsolódás sikertelen, újrakapcsolódás kísérlete"
+msgstr "A kapcsolódás sikertelen, újrakapcsolódás megkísérlése"
 
 #: ../src/pavucontrol.cc:889
 msgid ""
