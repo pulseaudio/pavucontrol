@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-10-21 08:05+0000\n"
+"PO-Revision-Date: 2021-11-21 09:16+0000\n"
 "Last-Translator: . Ovari <ovari123@zoho.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/hu/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.9\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -286,11 +286,11 @@ msgstr "nem sikerült leolvasni a JSON-t a list-handlers üzenetválaszából: %
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr "list-handlers üzenetválasza nem egy JSON tömb"
+msgstr "list-handlers üzenetválasz nem JSON-tömb"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr "Nem sikerült helyesen feldolgozni a list-handlers üzenetválaszát"
+msgstr "list-handlers üzenetválasz nem értelmezhető megfelelően"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
