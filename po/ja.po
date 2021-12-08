@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-06-16 05:04+0000\n"
+"PO-Revision-Date: 2021-12-08 22:16+0000\n"
 "Last-Translator: Tomohiro KATO <tomop@teamgedoh.net>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ja/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -66,10 +66,8 @@ msgid "<b>Profile:</b>"
 msgstr "<b>プロファイル:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>ポート:</b>"
+msgstr "<b>コーデック:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -117,7 +115,7 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>遅延オフセット:</b>"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "ms"
@@ -125,7 +123,7 @@ msgstr "ミリ秒"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Advanced"
-msgstr "高度な設定"
+msgstr "詳細"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "All Streams"
@@ -141,35 +139,35 @@ msgstr "仮想ストリーム"
 
 #: ../src/pavucontrol.glade.h:25
 msgid "All Output Devices"
-msgstr "全ての出力デバイス"
+msgstr "全ての出力装置"
 
 #: ../src/pavucontrol.glade.h:26
 msgid "Hardware Output Devices"
-msgstr "ハードウェア出力デバイス"
+msgstr "ハードウェア出力装置"
 
 #: ../src/pavucontrol.glade.h:27
 msgid "Virtual Output Devices"
-msgstr "仮想出力デバイス"
+msgstr "仮想出力装置"
 
 #: ../src/pavucontrol.glade.h:28
 msgid "All Input Devices"
-msgstr "全ての入力デバイス"
+msgstr "全ての入力装置"
 
 #: ../src/pavucontrol.glade.h:29
 msgid "All Except Monitors"
-msgstr "モニター以外の全て"
+msgstr "モニターを除く全て"
 
 #: ../src/pavucontrol.glade.h:30
 msgid "Hardware Input Devices"
-msgstr "ハードウェア入力デバイス"
+msgstr "ハードウェア入力装置"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "Virtual Input Devices"
-msgstr "仮想入力デバイス"
+msgstr "仮想入力装置"
 
 #: ../src/pavucontrol.glade.h:32
 msgid "Monitors"
-msgstr "モニター"
+msgstr "監視"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "<i>No application is currently playing audio.</i>"
@@ -229,7 +227,7 @@ msgstr "設定(_C)"
 
 #: ../src/pavucontrol.glade.h:48
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>装置の名前を変更:</b>"
 
 #: ../src/pavucontrol.glade.h:49
 msgid "Stream Title"
@@ -242,28 +240,28 @@ msgstr "方向"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "コーデック一覧メッセージ応答から JSON を読み込むことができません: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "コーデック一覧メッセージ応答が JSON 配列ではありません"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "コーデック一覧メッセージ応答を正しく解釈できません"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "コーデック取得メッセージ応答から JSON を読み込むことができません: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "コーデック取得メッセージ応答が JSON 値ではありません"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "コーデック取得メッセージ応答からコーデック名を取得できません"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
@@ -275,10 +273,9 @@ msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() 失敗"
+msgstr "pa_context_send_message_to_object() 失敗: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
@@ -295,31 +292,31 @@ msgstr ""
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
-msgstr "カード回収失敗"
+msgstr "カードコールバック失敗"
 
 #: ../src/pavucontrol.cc:386
 msgid "Sink callback failure"
-msgstr "受信側回収失敗"
+msgstr "受信側コールバック失敗"
 
 #: ../src/pavucontrol.cc:410
 msgid "Source callback failure"
-msgstr "音源回収失敗"
+msgstr "音源コールバック失敗"
 
 #: ../src/pavucontrol.cc:429
 msgid "Sink input callback failure"
-msgstr "受信側入力回収失敗"
+msgstr "受信側入力コールバック失敗"
 
 #: ../src/pavucontrol.cc:448
 msgid "Source output callback failure"
-msgstr "音源出力回収失敗"
+msgstr "音源出力コールバック失敗"
 
 #: ../src/pavucontrol.cc:478
 msgid "Client callback failure"
-msgstr "クライアント回収失敗"
+msgstr "クライアントコールバック失敗"
 
 #: ../src/pavucontrol.cc:494
 msgid "Server info callback failure"
-msgstr "サーバー情報回収失敗"
+msgstr "サーバー情報コールバック失敗"
 
 #: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
 #, c-format
@@ -336,10 +333,8 @@ msgid "Failed to initialize device restore extension: %s"
 msgstr "device restore 拡張の初期化に失敗しました: %s"
 
 #: ../src/pavucontrol.cc:569
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() 失敗"
+msgstr "pa_ext_device_restore_read_sink_formats() 失敗"
 
 #: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
 #, c-format
@@ -347,10 +342,8 @@ msgid "Failed to initialize device manager extension: %s"
 msgstr "device manager 拡張の初期化に失敗しました: %s"
 
 #: ../src/pavucontrol.cc:606
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
-msgstr "pa_ext_stream_restore_read() 失敗"
+msgstr "pa_ext_device_manager_read() 失敗"
 
 #: ../src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
@@ -462,10 +455,8 @@ msgid "Rename Device..."
 msgstr "デバイス名の変更…"
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
-#| msgid "pa_context_set_sink_port_by_index() failed"
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "pa_context_set_sink_port_by_index() 失敗"
+msgstr "pa_context_set_port_latency_offset() 失敗"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
@@ -488,10 +479,8 @@ msgid "_OK"
 msgstr "OK(_O)"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "pa_ext_stream_restore_write() 失敗"
+msgstr "pa_ext_device_manager_write() 失敗"
 
 #: ../src/mainwindow.cc:171
 #, c-format
@@ -500,7 +489,7 @@ msgstr "コンフィグファイル \"%s\" の読み込み中にエラーが発�
 
 #: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr ""
+msgstr "設定の保存中にエラーが発生しました"
 
 #: ../src/mainwindow.cc:258
 #, c-format
@@ -598,10 +587,8 @@ msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() 失敗"
 
 #: ../src/sinkwidget.cc:203
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "pa_ext_stream_restore_read() 失敗"
+msgstr "pa_ext_device_restore_save_sink_formats() 失敗"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
@@ -661,11 +648,11 @@ msgstr ""
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "ウィンドウを最大化します。"
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "バージョンを表示します。"
 
 #~ msgid "50%"
 #~ msgstr "50%"
