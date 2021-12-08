@@ -5,13 +5,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 玉堂白鹤 <yjwork@qq.com>, 2021.
+# Lv Genggeng <lvgenggeng@uniontech.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-09-25 02:04+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"PO-Revision-Date: 2021-12-04 09:16+0000\n"
+"Last-Translator: Lv Genggeng <lvgenggeng@uniontech.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/pulseaudio/pavucontrol/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -38,7 +39,7 @@ msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
-msgstr ""
+msgstr "pavucontrol；麦克风体积褪色均衡头戴式耳机；发言者；耳机；音频搅拌机；输出输入装置；回放；记录；系统声音；声卡；设置；偏好;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -55,17 +56,15 @@ msgstr "声卡名称"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "锁定声卡到这个配置文件"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>配置：</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>端口：</b>"
+msgstr "<b>编码器：</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -238,37 +237,37 @@ msgstr "方向"
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "无法从列表编解码器消息响应中读取JSON： %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "列表编解码器消息响应不是JSON数组"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "无法正确分析列表编解码器消息响应"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "无法从接收编码器消息响应中读取JSON：%s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "接受编码器消息响应不是JSON值"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "不能从接收编码器消息响应中拿到编码器的名称"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "不能从获取配置文件粘性消息响应中读取JSON：%s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "获取配置文件粘性消息响应不是JSON值"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
 #, c-format
@@ -278,15 +277,15 @@ msgstr "pa_context_send_message_to_object(): %s"
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "无法从列表处理程序消息响应中读取JSON：%s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "列表处理程序消息响应不是JSON数组"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "无法正确分析列表处理程序消息响应"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
@@ -412,10 +411,17 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"连接到PulseAudio失败。5秒内自动重试\n"
+"\n"
+"在这种情况下，这可能是因为环境/X11根窗口属性中的PULSE_服务器\n"
+"或client.conf中的默认服务器配置错误。\n"
+"当PulseAudio崩溃并在X11根窗口中留下过时的详细信息时，也会出现这种情况。\n"
+"如果是这种情况，则PulseAudio应再次自动切换，或者如果未配置，则应\n"
+"手动运行start-pulseaudio-x11。"
 
 #: ../src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
-msgstr "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() 失败"
 
 #: ../src/channelwidget.cc:101
 #, c-format
@@ -458,7 +464,7 @@ msgstr "pa_context_set_port_latency_offset() 失败"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "抱歉，不支持设备重命名"
+msgstr "抱歉，不支持设备重命名。"
 
 #: ../src/devicewidget.cc:249
 msgid ""
@@ -468,7 +474,7 @@ msgstr "要重命名设备，你需要在 PulseAudio 服务器中加载 module-d
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr "取消(_C)"
+msgstr "取消（_C）"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
@@ -494,15 +500,15 @@ msgstr "写配置文件 %s 时出错"
 
 #: ../src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr "（已插入）"
+msgstr " （已插入）"
 
 #: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
 msgid " (unavailable)"
-msgstr "（不可用）"
+msgstr " （不可用）"
 
 #: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
 msgid " (unplugged)"
-msgstr "（未插入）"
+msgstr " （未插入）"
 
 #: ../src/mainwindow.cc:633
 msgid "Failed to read data from stream"
@@ -524,7 +530,7 @@ msgstr "无法连接到监视流媒体"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "忽略接收器输入，因为它被指定为事件，因此由事件小部件处理"
 
 #: ../src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -632,23 +638,23 @@ msgstr "结束"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "在加载时选取一个特定的表格。"
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "数字"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "如果音频服务PulseAudio退出，则永远重试（每5秒一次）。"
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "窗口最大化。"
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr "显示版本。"
+msgstr "显示版本号。"
 
 #~ msgid "AC3"
 #~ msgstr "AC3"
