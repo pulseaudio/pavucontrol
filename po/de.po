@@ -5,13 +5,14 @@
 # Florian Steinel <fsteinel@fedoraproject.org>, 2008
 # Tobias Weise <tobias.weise@web.de>, 2020.
 # Fabian Affolter <mail@fabian-affolter.ch>, 2020.
+# Ettore Atalan <atalanttore@googlemail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2020-12-13 16:35+0000\n"
-"Last-Translator: Fabian Affolter <mail@fabian-affolter.ch>\n"
+"PO-Revision-Date: 2021-11-10 20:05+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/de/>\n"
 "Language: de\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.8.1\n"
 "X-Poedit-Language: German\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
@@ -55,18 +56,17 @@ msgid "Card Name"
 msgstr "Soundkarten-Name"
 
 #: ../src/pavucontrol.glade.h:5
+#, fuzzy
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Karte an dieses Profil binden"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
-msgstr "<b>Port:</b>"
+msgstr "<b>Codec:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
@@ -272,10 +272,9 @@ msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() gescheitert"
+msgstr "pa_context_send_message_to_object() fehlgeschlagen: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
@@ -485,11 +484,11 @@ msgstr ""
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "Abbre_chen"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
