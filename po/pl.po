@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-08-16 14:34+0000\n"
+"PO-Revision-Date: 2021-11-12 11:06+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/pl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -292,31 +292,31 @@ msgstr "nie można poprawnie przetworzyć odpowiedzi komunikatu „list-handlers
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
-msgstr "Oddzwonienie karty się nie powiodło"
+msgstr "Wywołanie zwrotne karty się nie powiodło"
 
 #: ../src/pavucontrol.cc:386
 msgid "Sink callback failure"
-msgstr "Oddzwonienie odpływu się nie powiodło"
+msgstr "Wywołanie zwrotne odpływu się nie powiodło"
 
 #: ../src/pavucontrol.cc:410
 msgid "Source callback failure"
-msgstr "Oddzwonienie źródła się nie powiodło"
+msgstr "Wywołanie zwrotne źródła się nie powiodło"
 
 #: ../src/pavucontrol.cc:429
 msgid "Sink input callback failure"
-msgstr "Oddzwonienie odpływu wejścia się nie powiodło"
+msgstr "Wywołanie zwrotne odpływu wejścia się nie powiodło"
 
 #: ../src/pavucontrol.cc:448
 msgid "Source output callback failure"
-msgstr "Oddzwonienie odpływu wyjścia się nie powiodło"
+msgstr "Wywołanie zwrotne odpływu wyjścia się nie powiodło"
 
 #: ../src/pavucontrol.cc:478
 msgid "Client callback failure"
-msgstr "Oddzwonienie klienta się nie powiodło"
+msgstr "Wywołanie zwrotne klienta się nie powiodło"
 
 #: ../src/pavucontrol.cc:494
 msgid "Server info callback failure"
-msgstr "Oddzwonienie informacji serwera się nie powiodło"
+msgstr "Wywołanie zwrotne informacji serwera się nie powiodło"
 
 #: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
 #, c-format
