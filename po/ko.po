@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the pavucontrol package.
 # Jung-Kyu Park <bagjunggyu@gmail.com>, 2018.
 # simmon <simmon@nplob.com>, 2021.
+# Sungjoon Moon <sumoon@seoulsaram.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-08-17 19:04+0000\n"
-"Last-Translator: simmon <simmon@nplob.com>\n"
+"PO-Revision-Date: 2022-01-09 03:16+0000\n"
+"Last-Translator: Sungjoon Moon <sumoon@seoulsaram.org>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
 "Language: ko\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
-msgstr "PulseAudio 크기 조절"
+msgstr "PulseAudio 볼륨 조절"
 
 #: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
 msgid "Volume Control"
@@ -29,7 +30,7 @@ msgstr "볼륨 조절"
 
 #: ../src/pavucontrol.desktop.in.h:3
 msgid "Adjust the volume level"
-msgstr "볼륨 레벨 조절"
+msgstr "볼륨 레벨 조정"
 
 #: ../src/pavucontrol.desktop.in.h:4
 msgid ""
@@ -37,9 +38,8 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
-"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
-"Settings;Preferences;"
+"pavucontrol;마이크;볼륨;페이드;밸런스;헤드셋;스피커;헤드폰;오디오;믹서;출력;입력;장치;재생;녹음;시스템 사운드;사운드 "
+"카드;설정;환경설정;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -56,7 +56,7 @@ msgstr "카드 이름"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr "이 프로필에서 카드 잠금"
+msgstr "이 프로필에 카드 잠금"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
@@ -68,11 +68,11 @@ msgstr "<b>코덱:</b>"
 
 #: ../src/pavucontrol.glade.h:8
 msgid "Device Title"
-msgstr "장치 제목"
+msgstr "장치 이름"
 
 #: ../src/pavucontrol.glade.h:9
 msgid "Mute audio"
-msgstr "오디오 묵음"
+msgstr "음소거"
 
 #: ../src/pavucontrol.glade.h:10
 msgid "Lock channels together"
@@ -80,7 +80,7 @@ msgstr "채널 함께 잠금"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "Set as fallback"
-msgstr "대체용으로 설정"
+msgstr "대체 용으로 설정"
 
 #: ../src/pavucontrol.glade.h:12
 msgid "<b>Port:</b>"
@@ -112,11 +112,11 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "<b>Latency offset:</b>"
-msgstr "<b>지연 갈라짐:</b>"
+msgstr "<b>지연 오프셋:</b>"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "ms"
-msgstr "ms"
+msgstr "밀리초"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "Advanced"
@@ -124,11 +124,11 @@ msgstr "고급"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "All Streams"
-msgstr "모든 스티림"
+msgstr "모든 스트림"
 
 #: ../src/pavucontrol.glade.h:23
 msgid "Applications"
-msgstr "응용프로그램"
+msgstr "응용 프로그램"
 
 #: ../src/pavucontrol.glade.h:24
 msgid "Virtual Streams"
@@ -168,7 +168,7 @@ msgstr "모니터"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>오디오를 재생하는 응용프로그램이 없습니다.</i>"
+msgstr "<i>현재 오디오를 재생하는 응용 프로그램이 없습니다.</i>"
 
 #: ../src/pavucontrol.glade.h:35
 msgid "<b>_Show:</b>"
@@ -180,7 +180,7 @@ msgstr "재생(_P)"
 
 #: ../src/pavucontrol.glade.h:37
 msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>오디오를 녹음하는응용프로그램이 없습니다.</i>"
+msgstr "<i>현재 오디오를 녹음하고 있는 응용 프로그램이 없습니다.</i>"
 
 #: ../src/pavucontrol.glade.h:38
 msgid "_Recording"
@@ -216,7 +216,7 @@ msgstr "<i>설정 가능한 카드가 없습니다</i>"
 
 #: ../src/pavucontrol.glade.h:46
 msgid "Show volume meters"
-msgstr "음향 미터 보기"
+msgstr "볼륨 미터 표시"
 
 #: ../src/pavucontrol.glade.h:47
 msgid "_Configuration"
@@ -228,68 +228,68 @@ msgstr "<b>장치 이름 변경:</b>"
 
 #: ../src/pavucontrol.glade.h:49
 msgid "Stream Title"
-msgstr "스트림 제목"
+msgstr "스트림 이름"
 
 #: ../src/pavucontrol.glade.h:50
 msgid "direction"
-msgstr "디렉션"
+msgstr "방향"
 
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr "목록-코덱 메시지 응답에서 JSON을 읽을 수 없습니다: %s"
+msgstr "list-codecs 메시지 응답에서 JSON을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr "목록-코덱 메시지 응답은 JSON 배열이 아닙니다"
+msgstr "list-codecs 메시지 응답이 JSON 배열이 아닙니다"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr "목록-코덱 메시지 응답은 정확하게 구문 분석 할 수 없습니다"
+msgstr "list-codecs 메시지 응답을 올바르게 구문 분석 할 수 없습니다"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr "코덱 가져오기(get-codec) 메시지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
+msgstr "get-codec 메시지 응답에서 JSON을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr "코덱 가져오기(get-codec) 메시지 응답은 JSON 값이 아닙니다"
+msgstr "get-codec 메시지 응답이 JSON 값이 아닙니다"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr "코덱 가져오기(get-codec) 메시지 응답에서 코덱 이름을 가져 올 수 없습니다"
+msgstr "get-codec 메시지 응답에서 코덱 이름을 가져 올 수 없습니다"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr "프로필 고정(get-profile-sticky) 메시지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
+msgstr "get-profile-sticky 메시지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr "프로필 고정(get-profile-sticky) 메시지 응답은 JSON 값이 아닙니다"
+msgstr "get-profile-sticky 메시지 응답이 JSON 값이 아닙니다"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
 #, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_send_message_to_object() 실패함: %s"
+msgstr "pa_context_send_message_to_object() 실패: %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr "목록-처리기 응답에서 JSON 항목을 읽을 수 없습니다: %s"
+msgstr "list-handlers 메세지 응답에서 JSON 항목을 읽을 수 없습니다: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr "항목-처리기 메시지 응답은 JSON 배열이 아닙니다"
+msgstr "list-handlers 메시지 응답이 JSON 배열이 아닙니다"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr "항목-처리기 메시지 응답은 정확하게 구문 분석 할 수 없습니다"
+msgstr "list-handlers 메시지 응답을 올바르게 구문 분석 할 수 없습니다"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
-msgstr "카드 콜백 실패"
+msgstr "사운드 카드 콜백 실패"
 
 #: ../src/pavucontrol.cc:386
 msgid "Sink callback failure"
@@ -318,7 +318,7 @@ msgstr "서버 정보 콜백 실패"
 #: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "스트림 복원 확장 시동 실패(_R): %s"
+msgstr "stream_restore 확장을 초기화하지 못했습니다: %s"
 
 #: ../src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
@@ -327,16 +327,16 @@ msgstr "pa_ext_stream_restore_read() 실패"
 #: ../src/pavucontrol.cc:548 ../src/pavucontrol.cc:823
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "장치 복원 확장을 초기화하지 못했습니다: %s"
+msgstr "device restore 확장을 초기화하지 못했습니다: %s"
 
 #: ../src/pavucontrol.cc:569
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "pa_ext_device_restore_read_sink_formats() 실패하였습니다"
+msgstr "pa_ext_device_restore_read_sink_formats() 실패"
 
 #: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "장치 관리 확장 초기화에 실패하였습니다: %s"
+msgstr "device manager 확장을 초기화하지 못했습니다: %s"
 
 #: ../src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
@@ -396,7 +396,7 @@ msgstr "pa_context_get_source_output_info_list() 실패"
 
 #: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
 msgid "Connection failed, attempting reconnect"
-msgstr "연결 실패, 재연결 시도"
+msgstr "연결에 실패했습니다,다시 연결 시도합니다"
 
 #: ../src/pavucontrol.cc:889
 msgid ""
@@ -411,15 +411,13 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
-"PulseAudio 연결에 실패하였습니다. 자동으로 5초안에 재시도 합니다\n"
+"PulseAudio에 연결하지 못했습니다. 5초 후에 자동으로 재시도 합니다.\n"
 "\n"
-"이와 같은 경우에 이는 환경/X11 루트 윈도우 특성의 PULSE_SERVER 때문이거나\n"
-"client.conf에 있는 default-server가 잘못 설정되었기 때문입니다.\n"
-"이 상태는 PulseAudio 충돌과 X11 루트 윈도우에서 오래된 상세한 정보를 남겼을 "
-"때에도 발생 할 수 있습니다.\n"
-"만약 이와 같은 경우라면, 그러면 PulseAudio는 다시 자동 생성되며\n"
-"또는 이 것이 설정되지 않았다면 수동으로 start-pulseaudio-x11을 실행해야 합니"
-"다."
+"이 문제의 원인은 환경의 PULSE_SERVER 또는 X11 루트 창 속성 또는\n"
+"client.conf의 default-server가 잘못 설정되었기 때문일 수 있습니다.\n"
+"이는 PulseAudio가 충돌하고 X11 루트 창에 오래된 세부 정보를 남길 때도 발생할 수 있습니다.\n"
+"그렇다면 PulseAudio가 자동으로 다시 시작되어야 하며, \n"
+"그렇지 않을 경우 start-pulseaudio-x11을 수동으로 실행하십시오."
 
 #: ../src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -458,7 +456,7 @@ msgstr "<small><i>베이스</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr "장치 이름변경..."
+msgstr "장치 이름 바꾸기..."
 
 #: ../src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
@@ -466,22 +464,21 @@ msgstr "pa_context_set_port_latency_offset() 실패"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "죄송합니다, 장치 이름변경이 지원되지 않습니다."
+msgstr "죄송합니다, 장치 이름 바꾸기가 지원되지 않습니다."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
-msgstr ""
-"장치 이름 변경에 PulseAudio 서버에서 module-device-manager를 적재해야 합니다"
+msgstr "장치 이름을 바꾸려면 PulseAudio 서버에서 module-device-manager를 로드해야 합니다"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr "_취소"
+msgstr "취소(_C)"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr "_확인"
+msgstr "확인(_O)"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -490,40 +487,40 @@ msgstr "pa_ext_device_manager_write() 실패"
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr "설정 파일 읽기 오류 %s: %s"
+msgstr "구성 파일 %s을(를) 읽는 동안 오류 발생: %s"
 
 #: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr "환경 설정 저장 오류"
+msgstr "환경 설정을 저장하는 중에 오류가 발생했습니다"
 
 #: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr "쓰기 설정 파일 %s 오류"
+msgstr "설정 파일 %s을(를) 쓰는 동안 오류가 발생했습니다"
 
 #: ../src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr " (plugged in)"
+msgstr " (연결됨)"
 
 #: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
 msgid " (unavailable)"
-msgstr " (이용 할 수 없는)"
+msgstr " (사용 불가)"
 
 #: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
 msgid " (unplugged)"
-msgstr " (unplugged)"
+msgstr " (연결되어 있지 않음)"
 
 #: ../src/mainwindow.cc:633
 msgid "Failed to read data from stream"
-msgstr "스트림에서 자료 읽기에 실패하였습니다"
+msgstr "스트림에서 데이터를 읽지 못했습니다"
 
 #: ../src/mainwindow.cc:677
 msgid "Peak detect"
-msgstr "최대 검출"
+msgstr "피크 감지"
 
 #: ../src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
-msgstr "모니터링 스트림 생성에 실패하였습니다"
+msgstr "모니터링 스트림 생성 실패"
 
 #: ../src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
@@ -533,7 +530,7 @@ msgstr "모니터링 스트림 연결에 실패하였습니다"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr "이벤트로 지정되어 이벤트 위젯에 의해 처리되므로 싱크 입력을 무시합니다"
+msgstr "싱크 입력은 이벤트로 지정되어 이벤트 위젯에 의해 처리되기 때문에 무시됩니다"
 
 #: ../src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -541,7 +538,7 @@ msgstr "시스템 사운드"
 
 #: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr "PulseAudio에 연결이 성립되었습니다. 기다려 주세요..."
+msgstr "PulseAudio에 연결하는 중입니다. 잠시만 기다려 주십시오..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -553,11 +550,11 @@ msgstr "켜짐"
 
 #: ../src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
-msgstr "재생 마침"
+msgstr "재생 종료"
 
 #: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
-msgstr "모르는 출력"
+msgstr "알 수 없는 출력"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
@@ -601,11 +598,11 @@ msgstr "에서"
 
 #: ../src/sourceoutputwidget.cc:38
 msgid "Terminate Recording"
-msgstr "녹음 마침"
+msgstr "녹음 종료"
 
 #: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
-msgstr "모르는 입력"
+msgstr "알 수 없는 입력"
 
 #: ../src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
@@ -637,11 +634,11 @@ msgstr "pa_context_set_source_port_by_index() 실패"
 
 #: ../src/streamwidget.cc:52
 msgid "Terminate"
-msgstr "종료되었습니다"
+msgstr "종료"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr "적재하기에 지정한 탭을 선택합니다."
+msgstr "로드할 때 특정 탭을 선택합니다."
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
@@ -649,7 +646,7 @@ msgstr "숫자"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "pa가 종료되면 영구히 재시도 합니다(매 5초 마다)."
+msgstr "pa가 종료되면 계속 재시도 합니다(5초 마다)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
@@ -657,7 +654,7 @@ msgstr "창을 최대화합니다."
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr "버전 보기."
+msgstr "버전을 표시합니다."
 
 #~ msgid "50%"
 #~ msgstr "50%"
