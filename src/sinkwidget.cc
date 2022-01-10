@@ -74,6 +74,28 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
         encodings[i].widget->set_sensitive(true);
     }
 #endif
+    ++i;
+    encodings[i].encoding = PA_ENCODING_INVALID;
+    x->get_widget("encodingFormatTRUEHD", encodings[i].widget);
+    encodings[i].widget->set_sensitive(false);
+#ifdef PA_ENCODING_TRUEHD_IEC61937
+    if (pa_context_get_server_protocol_version(get_context()) >= 33) {
+        encodings[i].encoding = PA_ENCODING_TRUEHD_IEC61937;
+        encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
+        encodings[i].widget->set_sensitive(true);
+    }
+#endif
+    ++i;
+    encodings[i].encoding = PA_ENCODING_INVALID;
+    x->get_widget("encodingFormatDTSHD", encodings[i].widget);
+    encodings[i].widget->set_sensitive(false);
+#ifdef PA_ENCODING_DTSHD_IEC61937
+    if (pa_context_get_server_protocol_version(get_context()) >= 33) {
+        encodings[i].encoding = PA_ENCODING_DTSHD_IEC61937;
+        encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
+        encodings[i].widget->set_sensitive(true);
+    }
+#endif
 #endif
 }
 

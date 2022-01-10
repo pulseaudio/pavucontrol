@@ -27,7 +27,7 @@
 #if HAVE_EXT_DEVICE_RESTORE_API
 #  include <pulse/format.h>
 
-#  define PAVU_NUM_ENCODINGS 6
+#  define PAVU_NUM_ENCODINGS 8
 
 typedef struct {
     pa_encoding encoding;
