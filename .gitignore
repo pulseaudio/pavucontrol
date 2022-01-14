@@ -12,6 +12,7 @@ config.h.in
 config.log
 config.status
 configure
+build
 depcomp
 README
 README.html

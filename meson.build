@@ -1,0 +1,41 @@
+project('pavucontrol', 'cpp',
+        version : '5.0',
+        meson_version : '>= 0.50.0',
+        default_options : [ 'c_std=gnu11', 'cpp_std=c++11' ]
+        )
+
+with_lynx = get_option('lynx')
+
+gtkmm_dep = dependency('gtkmm-3.0', version : '>= 3.0', required : true)
+sigcpp_dep = dependency('sigc++-2.0', required : true)
+canberragtk_dep = dependency('libcanberra-gtk3', version : '>= 0.16', required : true)
+
+libpulse_dep = dependency('libpulse', version : '>= 5.0', required : true)
+libpulsemlglib_dep = dependency('libpulse-mainloop-glib', version : '>= 0.9.16', required : true)
+
+lynx = find_program('lynx', required: with_lynx)
+tidy = find_program('tidy', required: false)
+
+configinc = include_directories('.')
+
+prefix = get_option('prefix')
+datadir = join_paths(prefix, get_option('datadir'))
+docdir = join_paths(datadir, 'doc', 'pavucontrol')
+localedir = join_paths(prefix, get_option('localedir'))
+
+cdata = configuration_data()
+cdata.set('ENABLE_NLS', 1)
+cdata.set_quoted('PACKAGE', 'pavucontrol')
+cdata.set_quoted('PACKAGE_NAME', 'pavucontrol')
+cdata.set_quoted('PACKAGE_STRING', 'pavucontrol')
+cdata.set_quoted('PACKAGE_VERSION', meson.project_version())
+cdata.set_quoted('GETTEXT_PACKAGE', 'pavucontrol')
+cdata.set_quoted('LOCALEDIR', localedir)
+cdata.set_quoted('GLADE_FILE', join_paths(datadir, 'pavucontrol', 'pavucontrol.glade'))
+
+# Now generate config.h from everything above
+configure_file(output : 'config.h', configuration : cdata)
+
+subdir('doc')
+subdir('po')
+subdir('src')

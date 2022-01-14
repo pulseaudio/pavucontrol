@@ -1,0 +1,2 @@
+#!/bin/sh
+lynx --dump $1 | sed 's,file://localhost/.*/doc/README.html,README,'
