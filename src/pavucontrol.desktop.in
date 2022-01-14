@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
-_Name=PulseAudio Volume Control
-_GenericName=Volume Control
-_Comment=Adjust the volume level
+Name=PulseAudio Volume Control
+GenericName=Volume Control
+Comment=Adjust the volume level
 Exec=pavucontrol
 Icon=multimedia-volume-control
 StartupNotify=true

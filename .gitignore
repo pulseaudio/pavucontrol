@@ -4,9 +4,6 @@ ChangeLog
 config.guess
 config.rpath
 config.sub
-intltool-extract.in
-intltool-merge.in
-intltool-update.in
 aclocal.m4
 *.cache
 compile

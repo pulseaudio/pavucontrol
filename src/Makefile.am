@@ -21,8 +21,11 @@ localedir = $(datadir)/locale
 
 bin_PROGRAMS=pavucontrol
 glade_DATA=pavucontrol.glade
+
 desktop_in_files=pavucontrol.desktop.in
 desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
+$(desktop_DATA): $(desktop_in_files)
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 pavucontrol_SOURCES= \
   minimalstreamwidget.h minimalstreamwidget.cc \
@@ -48,5 +51,3 @@ pavucontrol_CXXFLAGS+=-DGLADE_FILE=\"$(gladedir)/pavucontrol.glade\"
 EXTRA_DIST = $(glade_DATA) $(desktop_in_files)
 
 CLEANFILES = $(desktop_DATA)
-
-@INTLTOOL_DESKTOP_RULE@

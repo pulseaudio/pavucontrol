@@ -18,9 +18,6 @@
 EXTRA_DIST = \
 	bootstrap.sh \
 	LICENSE \
-	intltool-merge.in \
-	intltool-update.in \
-	intltool-extract.in \
 	po/pavucontrol.pot
 
 SUBDIRS=src doc po
