@@ -2,19 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the pulseaudio package.
 # Sergey Danilov <stiletto@stiletto.name>, 2009.
-#
+# Sergey A. <sw@atrus.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-12 17:09+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Sergey Danilov <stiletto@stiletto.name>\n"
-"Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
+"PO-Revision-Date: 2022-05-14 16:18+0000\n"
+"Last-Translator: Sergey A. <sw@atrus.ru>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.12.2\n"
 "X-Poedit-Language: Russian\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
@@ -35,15 +39,19 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settin"
+"gs;Preferences;микрофон;звук;наушники;колонки;аудио;звук;воспроизведение;запи"
+"сь;звуковая карта;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
 msgstr "<b>левый-передний</b>"
 
 #: ../src/pavucontrol.glade.h:3
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<small>50%</small>"
-msgstr "<small>Максимум</small>"
+msgstr "<small>50%</small>"
 
 #: ../src/pavucontrol.glade.h:4
 msgid "Card Name"
@@ -51,21 +59,19 @@ msgstr "Имя карты"
 
 #: ../src/pavucontrol.glade.h:5
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Привязать карту к этому профилю"
 
 #: ../src/pavucontrol.glade.h:6
 msgid "<b>Profile:</b>"
 msgstr "<b>Профиль:</b>"
 
 #: ../src/pavucontrol.glade.h:7
-#, fuzzy
 msgid "<b>Codec:</b>"
-msgstr "<b>Профиль:</b>"
+msgstr "<b>Кодек:</b>"
 
 #: ../src/pavucontrol.glade.h:8
-#, fuzzy
 msgid "Device Title"
-msgstr "Устройства В_вода"
+msgstr "Название устройства"
 
 #: ../src/pavucontrol.glade.h:9
 msgid "Mute audio"
@@ -77,112 +83,99 @@ msgstr "Связать громкости каналов"
 
 #: ../src/pavucontrol.glade.h:11
 msgid "Set as fallback"
-msgstr ""
+msgstr "Сделать резервным"
 
 #: ../src/pavucontrol.glade.h:12
-#, fuzzy
 msgid "<b>Port:</b>"
-msgstr "<b>Профиль:</b>"
+msgstr "<b>Порт:</b>"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:17
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
 #: ../src/pavucontrol.glade.h:18
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Смещение задержки:</b>"
 
 #: ../src/pavucontrol.glade.h:22
 msgid "ms"
-msgstr ""
+msgstr "мс"
 
 #: ../src/pavucontrol.glade.h:23
 msgid "Advanced"
-msgstr ""
+msgstr "Дополнительно"
 
 #: ../src/pavucontrol.glade.h:24
 msgid "All Streams"
-msgstr ""
+msgstr "Все потоки"
 
 #: ../src/pavucontrol.glade.h:25
 msgid "Applications"
-msgstr ""
+msgstr "Приложения"
 
 #: ../src/pavucontrol.glade.h:26
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Виртуальные потоки"
 
 #: ../src/pavucontrol.glade.h:27
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "All Output Devices"
-msgstr "Устройства В_ывода"
+msgstr "Все устройства вывода"
 
 #: ../src/pavucontrol.glade.h:28
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Hardware Output Devices"
-msgstr "Устройства В_ывода"
+msgstr "Аппаратные устройства вывода"
 
 #: ../src/pavucontrol.glade.h:29
-#, fuzzy
-#| msgid "_Output Devices"
 msgid "Virtual Output Devices"
-msgstr "Устройства В_ывода"
+msgstr "Виртуальные устройства вывода"
 
 #: ../src/pavucontrol.glade.h:30
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "All Input Devices"
-msgstr "Устройства В_вода"
+msgstr "Все устройства ввода"
 
 #: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Все, кроме мониторов"
 
 #: ../src/pavucontrol.glade.h:32
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Hardware Input Devices"
-msgstr "Устройства В_вода"
+msgstr "Аппаратные устройства ввода"
 
 #: ../src/pavucontrol.glade.h:33
-#, fuzzy
-#| msgid "_Input Devices"
 msgid "Virtual Input Devices"
-msgstr "Устройства В_вода"
+msgstr "Виртуальные устройства ввода"
 
 #: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
-msgstr ""
+msgstr "Мониторы"
 
 #: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
@@ -234,7 +227,7 @@ msgstr "<i>Нет доступных для конфигурации карт.</
 
 #: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
-msgstr ""
+msgstr "Показывать измерители громкости"
 
 #: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
@@ -242,7 +235,7 @@ msgstr "_Конфигурация"
 
 #: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Переименовать устройство в:</b>"
 
 #: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
@@ -250,61 +243,60 @@ msgstr "Название потока"
 
 #: ../src/pavucontrol.glade.h:52
 msgid "direction"
-msgstr ""
+msgstr "направление"
 
 #: ../src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "не удалось прочитать JSON из ответа list-codecs: %s"
 
 #: ../src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "ответ list-codecs не является массивом JSON"
 
 #: ../src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "не удалось правильно обработать ответ list-codecs"
 
 #: ../src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "не удалось прочитать JSON из ответа get-codec: %s"
 
 #: ../src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "ответ get-codec не является значением JSON"
 
 #: ../src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "не удалось получить имя кодека из ответа get-codec"
 
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "не удалось прочитать JSON из ответа get-profile-sticky: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "ответ get-profile-sticky не является значением JSON"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
-#, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "Сбой pa_context_set_default_source()"
+msgstr "Сбой pa_context_set_default_source() : %s"
 
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "не удалось прочитать JSON из ответа list-handlers: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "ответ list-handlers не является массивом JSON"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "не удалось правильно обработать ответ list-handlers"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
@@ -344,26 +336,20 @@ msgid "pa_ext_stream_restore_read() failed"
 msgstr "Сбой pa_ext_stream_restore_read()"
 
 #: ../src/pavucontrol.cc:548 ../src/pavucontrol.cc:823
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Сбой инициализации расширения stream_restore: %s"
+msgstr "Сбой инициализации расширения восстановления устройства: %s"
 
 #: ../src/pavucontrol.cc:569
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr "Сбой pa_ext_stream_restore_read()"
+msgstr "Сбой pa_ext_device_restore_read_sink_formats()"
 
 #: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
-#, fuzzy, c-format
-#| msgid "Failed to initialize stream_restore extension: %s"
+#, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Сбой инициализации расширения stream_restore: %s"
+msgstr "Сбой инициализации расширения управления устройствами: %s"
 
 #: ../src/pavucontrol.cc:606
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_manager_read() failed"
 msgstr "Сбой pa_ext_stream_restore_read()"
 
@@ -420,10 +406,8 @@ msgid "pa_context_get_source_output_info_list() failed"
 msgstr "Сбой pa_context_get_source_output_info_list()"
 
 #: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connection failed, attempting reconnect"
-msgstr "Сбой подключения"
+msgstr "Сбой подключения, попытка повторного подключения"
 
 #: ../src/pavucontrol.cc:889
 msgid ""
@@ -438,6 +422,16 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Не удалось подключиться к PulseAudio. Автоматический повтор через 5 секунд\n"
+"\n"
+"В этом случае вероятная причина заключается в том, что PULSE_SERVER "
+"неправильно настроен в среде или свойствах корневого окна X11\n"
+"или неправильно указан default-server в client.configuration.\n"
+"Эта ситуация также может возникнуть, когда PulseAudio аварийно завершил "
+"работу и оставил устаревшие сведения в корневом окне X11.\n"
+"Если это так, то PulseAudio должен автоматически запускаться снова, или, "
+"если это не настроено, вы должны\n"
+"запустить start-pulseaudio-x11 вручную."
 
 #: ../src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -446,31 +440,29 @@ msgstr "Сбой pa_context_set_card_profile_by_index()"
 #: ../src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (%0.2f дБ)</small>"
 
 #: ../src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgstr "<small>%0.0f%% (-&#8734; дБ)</small>"
 
 #: ../src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: ../src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Тишина</small>"
 
 #: ../src/channelwidget.cc:139
-#, fuzzy
 msgid "<small>Min</small>"
-msgstr "<small>Максимум</small>"
+msgstr "<small>Мин</small>"
 
 #: ../src/channelwidget.cc:141
-#, fuzzy
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>Максимум</small>"
+msgstr "<small>100% (0 дБ)</small>"
 
 #: ../src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
@@ -478,62 +470,61 @@ msgstr "<small><i>База</i></small>"
 
 #: ../src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Переименовать устройство..."
 
 #: ../src/devicewidget.cc:163
-#, fuzzy
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr "Сбой pa_context_set_sink_mute_by_index()"
+msgstr "Произошла ошибка при выполнении pa_context_set_port_latency_offset()"
 
 #: ../src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Извините, но переименование устройств не поддерживается."
 
 #: ../src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Чтобы иметь возможность переименовать устройства, вам следует загрузить "
+"module-device-manager на сервер PulseAudio"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Отмена"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "_OK"
 
 #: ../src/devicewidget.cc:270
-#, fuzzy
-#| msgid "pa_ext_stream_restore_write() failed"
 msgid "pa_ext_device_manager_write() failed"
-msgstr "Сбой pa_ext_stream_restore_write()"
+msgstr "Произошла ошибка при выполнении pa_ext_device_manager_write()"
 
 #: ../src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Ошибка чтения файла конфигурации %s: %s"
 
 #: ../src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Ошибка при сохранении параметров"
 
 #: ../src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Ошибка записи файла конфигурации %s"
 
 #: ../src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr ""
+msgstr " (подключено)"
 
 #: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
 msgid " (unavailable)"
-msgstr ""
+msgstr " (недоступно)"
 
 #: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
 msgid " (unplugged)"
-msgstr ""
+msgstr " (отключено)"
 
 #: ../src/mainwindow.cc:633
 msgid "Failed to read data from stream"
@@ -556,6 +547,8 @@ msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Игнорирование входящего потока, поскольку он обозначен как событие и, таким "
+"образом, обрабатывается виджетом событий"
 
 #: ../src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -563,7 +556,7 @@ msgstr "Системные звуки"
 
 #: ../src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Установка подключения к PulseAudio. Пожалуйста, подождите..."
 
 #: ../src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
@@ -571,16 +564,15 @@ msgstr "Сбой pa_ext_stream_restore_write()"
 
 #: ../src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "вкл."
 
 #: ../src/sinkinputwidget.cc:38
-#, fuzzy
 msgid "Terminate Playback"
-msgstr "П_рервать поток"
+msgstr "Прервать воспроизведение"
 
 #: ../src/sinkinputwidget.cc:78
 msgid "Unknown output"
-msgstr ""
+msgstr "Неизвестное устройство вывода"
 
 #: ../src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
@@ -611,40 +603,33 @@ msgid "pa_context_set_default_sink() failed"
 msgstr "Сбой pa_context_set_default_sink()"
 
 #: ../src/sinkwidget.cc:183
-#, fuzzy
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr "Сбой pa_context_set_sink_mute_by_index()"
+msgstr "Произошла ошибка при выполнении pa_context_set_sink_port_by_index()"
 
 #: ../src/sinkwidget.cc:225
-#, fuzzy
-#| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr "Сбой pa_ext_stream_restore_read()"
+msgstr ""
+"Произошла ошибка при выполнении pa_ext_device_restore_save_sink_formats()"
 
 #: ../src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "от"
 
 #: ../src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "_Запись"
+msgstr "Прервать запись"
 
 #: ../src/sourceoutputwidget.cc:83
 msgid "Unknown input"
-msgstr ""
+msgstr "Неизвестное устройство ввода"
 
 #: ../src/sourceoutputwidget.cc:93
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_volume() failed"
-msgstr "Сбой pa_context_get_source_output_info_list()"
+msgstr "Произошла ошибка при выполнении pa_context_set_source_output_volume()"
 
 #: ../src/sourceoutputwidget.cc:108
-#, fuzzy
-#| msgid "pa_context_get_source_output_info_list() failed"
 msgid "pa_context_set_source_output_mute() failed"
-msgstr "Сбой pa_context_get_source_output_info_list()"
+msgstr "Произошла ошибка при выполнении pa_context_set_source_output_mute()"
 
 #: ../src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
@@ -663,34 +648,32 @@ msgid "pa_context_set_default_source() failed"
 msgstr "Сбой pa_context_set_default_source()"
 
 #: ../src/sourcewidget.cc:97
-#, fuzzy
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr "Сбой pa_context_set_source_mute_by_index()"
+msgstr "Произошла ошибка при выполнении pa_context_set_source_port_by_index()"
 
 #: ../src/streamwidget.cc:52
-#, fuzzy
 msgid "Terminate"
-msgstr "П_рервать поток"
+msgstr "Прервать"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Выбрать определенную вкладку для загрузки."
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "число"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "Повторять без ограничений, если PA завершает работу (каждые 5 секунд)."
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "Максимизировать окно."
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "Показать версию."
 
 #~ msgid "50%"
 #~ msgstr "50%"
