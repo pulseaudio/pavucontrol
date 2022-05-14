@@ -4,13 +4,14 @@
 # Jung-Kyu Park <bagjunggyu@gmail.com>, 2018.
 # simmon <simmon@nplob.com>, 2021.
 # Sungjoon Moon <sumoon@seoulsaram.org>, 2022.
+# Kim InSoo <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-12 17:09+0200\n"
-"PO-Revision-Date: 2022-01-09 03:16+0000\n"
-"Last-Translator: Sungjoon Moon <sumoon@seoulsaram.org>\n"
+"PO-Revision-Date: 2022-02-21 12:16+0000\n"
+"Last-Translator: Kim InSoo <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
 "Language: ko\n"
@@ -112,11 +113,11 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "TrueHD"
-msgstr ""
+msgstr "트루HD"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
