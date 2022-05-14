@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"POT-Creation-Date: 2022-01-12 17:09+0200\n"
 "PO-Revision-Date: 2021-08-25 12:04+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudion äänenvoimakkuuden hallinta"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
 msgid "Volume Control"
 msgstr "Äänenvoimakkuus"
 
@@ -115,126 +115,134 @@ msgid "AAC"
 msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
+msgid "TrueHD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:20
+msgid "DTS-HD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Viiveen poikkeama:</b>"
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:22
 msgid "ms"
 msgstr "ms"
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:23
 msgid "Advanced"
 msgstr "Lisäasetukset"
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:24
 msgid "All Streams"
 msgstr "Kaikki virrat"
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:25
 msgid "Applications"
 msgstr "Sovellukset"
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:26
 msgid "Virtual Streams"
 msgstr "Näennäisvirrat"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:27
 msgid "All Output Devices"
 msgstr "Kaikki ulostulolaitteet"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:28
 msgid "Hardware Output Devices"
 msgstr "Laitteistoulostulolaitteet"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:29
 msgid "Virtual Output Devices"
 msgstr "Näennäisulostulolaitteet"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:30
 msgid "All Input Devices"
 msgstr "Kaikki sisääntulolaitteet"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
 msgstr "Kaikki paitsi tarkkailulaitteet"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:32
 msgid "Hardware Input Devices"
 msgstr "Laitteistosisääntulolaitteet"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:33
 msgid "Virtual Input Devices"
 msgstr "Näennäissisääntulolaitteet"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
 msgstr "Tarkkailulaitteet"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Yksikään sovellus ei tällä hetkellä toista ääntä.</i>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:37
 msgid "<b>_Show:</b>"
 msgstr "<b>_Näytä:</b>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:38
 msgid "_Playback"
 msgstr "_Toisto"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Yksikään sovellus ei tällä hetkellä nauhoita ääntä.</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:40
 msgid "_Recording"
 msgstr "_Nauhoitus"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No output devices available</i>"
 msgstr "<i>Sisääntulolaitteita ei saatavilla</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>S_how:</b>"
 msgstr "<b>N_äytä:</b>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:43
 msgid "_Output Devices"
 msgstr "Ul_ostulolaitteet"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No input devices available</i>"
 msgstr "<i>Sisääntulolaitteita ei saatavilla</i>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:45
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Nä_ytä:</b>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:46
 msgid "_Input Devices"
 msgstr "S_isääntulolaitteet"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:47
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Yhtäkään äänikorttia ei ole käytettävissä</i>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
 msgstr "Näytä äänenvoimakkuusmittarit"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
 msgstr "_Asetukset"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Muuta laitteen nimeksi:</b>"
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
 msgstr "Virran otsikko"
 
-#: ../src/pavucontrol.glade.h:50
+#: ../src/pavucontrol.glade.h:52
 msgid "direction"
 msgstr "suunta"
 
@@ -579,27 +587,27 @@ msgstr "pa_context_set_sink_input_mute() epäonnistui"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() epäonnistui"
 
-#: ../src/sinkwidget.cc:95
+#: ../src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:110
+#: ../src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Äänenvoimakkuuden säädön palauteääni"
 
-#: ../src/sinkwidget.cc:127
+#: ../src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:141
+#: ../src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() epäonnistui"
 
-#: ../src/sinkwidget.cc:161
+#: ../src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() epäonnistui"
 
-#: ../src/sinkwidget.cc:203
+#: ../src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() epäonnistui"
 

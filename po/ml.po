@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol.master-tx.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"POT-Creation-Date: 2022-01-12 17:09+0200\n"
 "PO-Revision-Date: 2009-09-10 15:50+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "PulseAudio Volume Control"
 msgstr "പള്‍സ്ഓഡിയോ ശബ്ദ നിയന്ത്രണം"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
 msgid "Volume Control"
 msgstr "ശബ്ദ നിയന്ത്രണം"
 
@@ -112,138 +112,146 @@ msgid "AAC"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:19
-msgid "<b>Latency offset:</b>"
+msgid "TrueHD"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:20
-msgid "ms"
+msgid "DTS-HD"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:21
-msgid "Advanced"
+msgid "<b>Latency offset:</b>"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:22
-msgid "All Streams"
+msgid "ms"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:23
-msgid "Applications"
+msgid "Advanced"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:24
-msgid "Virtual Streams"
+msgid "All Streams"
 msgstr ""
 
 #: ../src/pavucontrol.glade.h:25
+msgid "Applications"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:26
+msgid "Virtual Streams"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:27
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "All Output Devices"
 msgstr "_ഔട്ട്പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:28
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "Hardware Output Devices"
 msgstr "_ഔട്ട്പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:29
 #, fuzzy
 #| msgid "_Output Devices"
 msgid "Virtual Output Devices"
 msgstr "_ഔട്ട്പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:30
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "All Input Devices"
 msgstr "_ഇന്‍പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:32
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "Hardware Input Devices"
 msgstr "_ഇന്‍പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:33
 #, fuzzy
 #| msgid "_Input Devices"
 msgid "Virtual Input Devices"
 msgstr "_ഇന്‍പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>ഒരു പ്രയോഗവും നിലവില്‍ ഓഡിയോ പ്രവര്‍ത്തിപ്പിക്കുന്നില്ല.</i>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:37
 msgid "<b>_Show:</b>"
 msgstr "<b>_കാണിക്കുക:</b>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:38
 msgid "_Playback"
 msgstr "_പ്ലേബാക്ക്"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>ഒരു പ്രയോഗവും നിലവില്‍ ഓഡിയോ റിക്കോര്‍ഡ് ചെയ്യുന്നില്ല.</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:40
 msgid "_Recording"
 msgstr "_റിക്കോര്‍ഡ് ചെയ്യുന്നു"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No output devices available</i>"
 msgstr "<i>ഔട്ട്പുട്ട് ഡിവൈസുകള്‍ ലഭ്യമല്ല</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>S_how:</b>"
 msgstr "<b>കാ_ണിക്കുക:</b>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:43
 msgid "_Output Devices"
 msgstr "_ഔട്ട്പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No input devices available</i>"
 msgstr "<i>ഇന്‍പുട്ട് ഡിവൈസുകള്‍ ലഭ്യമല്ല</i>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:45
 msgid "<b>Sho_w:</b>"
 msgstr "<b>കാണി_ക്കുക:</b>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:46
 msgid "_Input Devices"
 msgstr "_ഇന്‍പുട്ട് ഡിവൈസുകള്‍"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:47
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>ക്രമീകരിക്കുന്നതിലുള്ള കാര്‍ഡുകള്‍ ലഭ്യമല്ല</i>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
 msgstr "_ക്രമീകരണം"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
 msgstr "സ്ട്രീം തലക്കെട്ട്"
 
-#: ../src/pavucontrol.glade.h:50
+#: ../src/pavucontrol.glade.h:52
 msgid "direction"
 msgstr "ദിശ"
 
@@ -589,27 +597,27 @@ msgstr "pa_context_set_sink_input_mute() പരാജയപ്പെട്ടു
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() പരാജയപ്പെട്ടു"
 
-#: ../src/sinkwidget.cc:95
+#: ../src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() പരാജയപ്പെട്ടു"
 
-#: ../src/sinkwidget.cc:110
+#: ../src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "വോള്യം കണ്ട്രോള്‍ ഫീഡ്ബാക്ക് സൌണ്ട്"
 
-#: ../src/sinkwidget.cc:127
+#: ../src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() പരാജയപ്പെട്ടു"
 
-#: ../src/sinkwidget.cc:141
+#: ../src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() പരാജയപ്പെട്ടു"
 
-#: ../src/sinkwidget.cc:161
+#: ../src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() പരാജയപ്പെട്ടു"
 
-#: ../src/sinkwidget.cc:203
+#: ../src/sinkwidget.cc:225
 #, fuzzy
 #| msgid "pa_ext_stream_restore_read() failed"
 msgid "pa_ext_device_restore_save_sink_formats() failed"

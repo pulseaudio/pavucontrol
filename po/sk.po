@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"POT-Creation-Date: 2022-01-12 17:09+0200\n"
 "PO-Revision-Date: 2021-10-08 01:39+0000\n"
 "Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "PulseAudio Volume Control"
 msgstr "Ovládanie hlasitosti PulseAudio"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
 msgid "Volume Control"
 msgstr "Ovládanie hlasitosti"
 
@@ -112,126 +112,134 @@ msgid "AAC"
 msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
+msgid "TrueHD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:20
+msgid "DTS-HD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Posun latencie:</b>"
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:22
 msgid "ms"
 msgstr "ms"
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:23
 msgid "Advanced"
 msgstr "Rozšírené"
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:24
 msgid "All Streams"
 msgstr "Všetky prúdy"
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:25
 msgid "Applications"
 msgstr "Aplikácie"
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:26
 msgid "Virtual Streams"
 msgstr "Virtuálne prúdy"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:27
 msgid "All Output Devices"
 msgstr "Všetky výstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:28
 msgid "Hardware Output Devices"
 msgstr "Hardvérové výstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:29
 msgid "Virtual Output Devices"
 msgstr "Virtuálne výstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:30
 msgid "All Input Devices"
 msgstr "Všetky vstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
 msgstr "Všetky okrem monitorov"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:32
 msgid "Hardware Input Devices"
 msgstr "Hardvérové vstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:33
 msgid "Virtual Input Devices"
 msgstr "Virtuálne vstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
 msgstr "Monitory"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Žiadna aplikácia momentálne neprehráva zvuk.</i>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:37
 msgid "<b>_Show:</b>"
 msgstr "<b>_Zobraziť:</b>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:38
 msgid "_Playback"
 msgstr "_Prehrávanie"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Žiadna aplikácia momentálne nenahráva zvuk.</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:40
 msgid "_Recording"
 msgstr "_Nahrávanie"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No output devices available</i>"
 msgstr "<i>Nie sú dostupné žiadne výstupné zariadenia</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>S_how:</b>"
 msgstr "<b>_Zobraziť:</b>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:43
 msgid "_Output Devices"
 msgstr "_Výstupné zariadenia"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No input devices available</i>"
 msgstr "<i>Nie sú dostupné žiadne vstupné zariadenia</i>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:45
 msgid "<b>Sho_w:</b>"
 msgstr "<b>_Zobraziť:</b>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:46
 msgid "_Input Devices"
 msgstr "Vstupné zar_iadenia"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:47
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Žiadne karty nie sú dostupné na konfiguráciu</i>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
 msgstr "Zobraziť stupnice hlasitosti"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
 msgstr "_Nastavenie"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Premenovať zariadenie na:</b>"
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
 msgstr "Názov prúdu"
 
-#: ../src/pavucontrol.glade.h:50
+#: ../src/pavucontrol.glade.h:52
 msgid "direction"
 msgstr "smer"
 
@@ -577,27 +585,27 @@ msgstr "pa_context_set_sink_input_mute() zlyhal"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() zlyhal"
 
-#: ../src/sinkwidget.cc:95
+#: ../src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() zlyhal"
 
-#: ../src/sinkwidget.cc:110
+#: ../src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Ovládanie hlasitosti Feedback zvuku"
 
-#: ../src/sinkwidget.cc:127
+#: ../src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() zlyhal"
 
-#: ../src/sinkwidget.cc:141
+#: ../src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() zlyhal"
 
-#: ../src/sinkwidget.cc:161
+#: ../src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() zlyhal"
 
-#: ../src/sinkwidget.cc:203
+#: ../src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() zlyhal"
 

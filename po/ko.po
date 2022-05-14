@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"POT-Creation-Date: 2022-01-12 17:09+0200\n"
 "PO-Revision-Date: 2022-01-09 03:16+0000\n"
 "Last-Translator: Sungjoon Moon <sumoon@seoulsaram.org>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio 볼륨 조절"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
 msgid "Volume Control"
 msgstr "볼륨 조절"
 
@@ -38,8 +38,8 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;마이크;볼륨;페이드;밸런스;헤드셋;스피커;헤드폰;오디오;믹서;출력;입력;장치;재생;녹음;시스템 사운드;사운드 "
-"카드;설정;환경설정;"
+"pavucontrol;마이크;볼륨;페이드;밸런스;헤드셋;스피커;헤드폰;오디오;믹서;출력;"
+"입력;장치;재생;녹음;시스템 사운드;사운드 카드;설정;환경설정;"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -111,126 +111,134 @@ msgid "AAC"
 msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
+msgid "TrueHD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:20
+msgid "DTS-HD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
 msgstr "<b>지연 오프셋:</b>"
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:22
 msgid "ms"
 msgstr "밀리초"
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:23
 msgid "Advanced"
 msgstr "고급"
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:24
 msgid "All Streams"
 msgstr "모든 스트림"
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:25
 msgid "Applications"
 msgstr "응용 프로그램"
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:26
 msgid "Virtual Streams"
 msgstr "가상 스트림"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:27
 msgid "All Output Devices"
 msgstr "모든 출력 장치"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:28
 msgid "Hardware Output Devices"
 msgstr "하드웨어 출력 장치"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:29
 msgid "Virtual Output Devices"
 msgstr "가상 출력 장치"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:30
 msgid "All Input Devices"
 msgstr "모든 입력 장치"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
 msgstr "모니터를 제외한 모든 것"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:32
 msgid "Hardware Input Devices"
 msgstr "하드웨어 입력 장치"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:33
 msgid "Virtual Input Devices"
 msgstr "가상 입력 장치"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
 msgstr "모니터"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>현재 오디오를 재생하는 응용 프로그램이 없습니다.</i>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:37
 msgid "<b>_Show:</b>"
 msgstr "<b>보기(_S):</b>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:38
 msgid "_Playback"
 msgstr "재생(_P)"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>현재 오디오를 녹음하고 있는 응용 프로그램이 없습니다.</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:40
 msgid "_Recording"
 msgstr "녹음(_R)"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No output devices available</i>"
 msgstr "<i>출력 가능한 장치가 없습니다</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>S_how:</b>"
 msgstr "<b>보기(_H):</b>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:43
 msgid "_Output Devices"
 msgstr "출력 장치(_O)"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No input devices available</i>"
 msgstr "<i>입력 가능한 장치가 없습니다</i>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:45
 msgid "<b>Sho_w:</b>"
 msgstr "<b>보기(_W):</b>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:46
 msgid "_Input Devices"
 msgstr "입력 장치(_I)"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:47
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>설정 가능한 카드가 없습니다</i>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
 msgstr "볼륨 미터 표시"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
 msgstr "설정(_C)"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
 msgstr "<b>장치 이름 변경:</b>"
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
 msgstr "스트림 이름"
 
-#: ../src/pavucontrol.glade.h:50
+#: ../src/pavucontrol.glade.h:52
 msgid "direction"
 msgstr "방향"
 
@@ -415,7 +423,8 @@ msgstr ""
 "\n"
 "이 문제의 원인은 환경의 PULSE_SERVER 또는 X11 루트 창 속성 또는\n"
 "client.conf의 default-server가 잘못 설정되었기 때문일 수 있습니다.\n"
-"이는 PulseAudio가 충돌하고 X11 루트 창에 오래된 세부 정보를 남길 때도 발생할 수 있습니다.\n"
+"이는 PulseAudio가 충돌하고 X11 루트 창에 오래된 세부 정보를 남길 때도 발생할 "
+"수 있습니다.\n"
 "그렇다면 PulseAudio가 자동으로 다시 시작되어야 하며, \n"
 "그렇지 않을 경우 start-pulseaudio-x11을 수동으로 실행하십시오."
 
@@ -470,7 +479,9 @@ msgstr "죄송합니다, 장치 이름 바꾸기가 지원되지 않습니다."
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
-msgstr "장치 이름을 바꾸려면 PulseAudio 서버에서 module-device-manager를 로드해야 합니다"
+msgstr ""
+"장치 이름을 바꾸려면 PulseAudio 서버에서 module-device-manager를 로드해야 합"
+"니다"
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
@@ -530,7 +541,8 @@ msgstr "모니터링 스트림 연결에 실패하였습니다"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr "싱크 입력은 이벤트로 지정되어 이벤트 위젯에 의해 처리되기 때문에 무시됩니다"
+msgstr ""
+"싱크 입력은 이벤트로 지정되어 이벤트 위젯에 의해 처리되기 때문에 무시됩니다"
 
 #: ../src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -568,27 +580,27 @@ msgstr "pa_context_set_sink_input_mute() 실패"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() 실패"
 
-#: ../src/sinkwidget.cc:95
+#: ../src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() 실패"
 
-#: ../src/sinkwidget.cc:110
+#: ../src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "볼륨 조절 피드백 사운드"
 
-#: ../src/sinkwidget.cc:127
+#: ../src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() 실패"
 
-#: ../src/sinkwidget.cc:141
+#: ../src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() 실패"
 
-#: ../src/sinkwidget.cc:161
+#: ../src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() 실패"
 
-#: ../src/sinkwidget.cc:203
+#: ../src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() 실패"
 

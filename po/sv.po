@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:55+0300\n"
+"POT-Creation-Date: 2022-01-12 17:09+0200\n"
 "PO-Revision-Date: 2021-08-19 21:04+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "PulseAudio Volume Control"
 msgstr "Volymkontroll för PulseAudio"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:33
+#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
 msgid "Volume Control"
 msgstr "Volymkontroll"
 
@@ -114,126 +114,134 @@ msgid "AAC"
 msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
+msgid "TrueHD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:20
+msgid "DTS-HD"
+msgstr ""
+
+#: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Latensoffset:</b>"
 
-#: ../src/pavucontrol.glade.h:20
+#: ../src/pavucontrol.glade.h:22
 msgid "ms"
 msgstr "ms"
 
-#: ../src/pavucontrol.glade.h:21
+#: ../src/pavucontrol.glade.h:23
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: ../src/pavucontrol.glade.h:22
+#: ../src/pavucontrol.glade.h:24
 msgid "All Streams"
 msgstr "Alla strömmar"
 
-#: ../src/pavucontrol.glade.h:23
+#: ../src/pavucontrol.glade.h:25
 msgid "Applications"
 msgstr "Program"
 
-#: ../src/pavucontrol.glade.h:24
+#: ../src/pavucontrol.glade.h:26
 msgid "Virtual Streams"
 msgstr "Virtuella strömmar"
 
-#: ../src/pavucontrol.glade.h:25
+#: ../src/pavucontrol.glade.h:27
 msgid "All Output Devices"
 msgstr "Alla utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:26
+#: ../src/pavucontrol.glade.h:28
 msgid "Hardware Output Devices"
 msgstr "Hårdvaruutgångsenheter"
 
-#: ../src/pavucontrol.glade.h:27
+#: ../src/pavucontrol.glade.h:29
 msgid "Virtual Output Devices"
 msgstr "Virtuella utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:28
+#: ../src/pavucontrol.glade.h:30
 msgid "All Input Devices"
 msgstr "Alla ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:29
+#: ../src/pavucontrol.glade.h:31
 msgid "All Except Monitors"
 msgstr "Allt utom övervakare"
 
-#: ../src/pavucontrol.glade.h:30
+#: ../src/pavucontrol.glade.h:32
 msgid "Hardware Input Devices"
 msgstr "Hårdvaruingångsenheter"
 
-#: ../src/pavucontrol.glade.h:31
+#: ../src/pavucontrol.glade.h:33
 msgid "Virtual Input Devices"
 msgstr "Virtuella ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:32
+#: ../src/pavucontrol.glade.h:34
 msgid "Monitors"
 msgstr "Övervakare"
 
-#: ../src/pavucontrol.glade.h:34
+#: ../src/pavucontrol.glade.h:36
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Inget program spelar för närvarande upp något ljud.</i>"
 
-#: ../src/pavucontrol.glade.h:35
+#: ../src/pavucontrol.glade.h:37
 msgid "<b>_Show:</b>"
 msgstr "<b>_Visa:</b>"
 
-#: ../src/pavucontrol.glade.h:36
+#: ../src/pavucontrol.glade.h:38
 msgid "_Playback"
 msgstr "U_ppspelning"
 
-#: ../src/pavucontrol.glade.h:37
+#: ../src/pavucontrol.glade.h:39
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Inget program spelar för närvarande in något ljud.</i>"
 
-#: ../src/pavucontrol.glade.h:38
+#: ../src/pavucontrol.glade.h:40
 msgid "_Recording"
 msgstr "I_nspelning"
 
-#: ../src/pavucontrol.glade.h:39
+#: ../src/pavucontrol.glade.h:41
 msgid "<i>No output devices available</i>"
 msgstr "<i>Inga utgångsenheter tillgängliga</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: ../src/pavucontrol.glade.h:42
 msgid "<b>S_how:</b>"
 msgstr "<b>V_isa:</b>"
 
-#: ../src/pavucontrol.glade.h:41
+#: ../src/pavucontrol.glade.h:43
 msgid "_Output Devices"
 msgstr "_Utgångsenheter"
 
-#: ../src/pavucontrol.glade.h:42
+#: ../src/pavucontrol.glade.h:44
 msgid "<i>No input devices available</i>"
 msgstr "<i>Inga ingångsenheter tillgängliga</i>"
 
-#: ../src/pavucontrol.glade.h:43
+#: ../src/pavucontrol.glade.h:45
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Vis_a:</b>"
 
-#: ../src/pavucontrol.glade.h:44
+#: ../src/pavucontrol.glade.h:46
 msgid "_Input Devices"
 msgstr "_Ingångsenheter"
 
-#: ../src/pavucontrol.glade.h:45
+#: ../src/pavucontrol.glade.h:47
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Inga kort tillgängliga för konfiguration</i>"
 
-#: ../src/pavucontrol.glade.h:46
+#: ../src/pavucontrol.glade.h:48
 msgid "Show volume meters"
 msgstr "Visa volymmätare"
 
-#: ../src/pavucontrol.glade.h:47
+#: ../src/pavucontrol.glade.h:49
 msgid "_Configuration"
 msgstr "_Konfiguration"
 
-#: ../src/pavucontrol.glade.h:48
+#: ../src/pavucontrol.glade.h:50
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Byt namn på enhet till:</b>"
 
-#: ../src/pavucontrol.glade.h:49
+#: ../src/pavucontrol.glade.h:51
 msgid "Stream Title"
 msgstr "Strömtitel"
 
-#: ../src/pavucontrol.glade.h:50
+#: ../src/pavucontrol.glade.h:52
 msgid "direction"
 msgstr "riktning"
 
@@ -578,27 +586,27 @@ msgstr "pa_context_set_sink_input_mute() misslyckades"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() misslyckades"
 
-#: ../src/sinkwidget.cc:95
+#: ../src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() misslyckades"
 
-#: ../src/sinkwidget.cc:110
+#: ../src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Återkopplingsljud för volymkontroll"
 
-#: ../src/sinkwidget.cc:127
+#: ../src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() misslyckades"
 
-#: ../src/sinkwidget.cc:141
+#: ../src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() misslyckades"
 
-#: ../src/sinkwidget.cc:161
+#: ../src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() misslyckades"
 
-#: ../src/sinkwidget.cc:203
+#: ../src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() misslyckades"
 
