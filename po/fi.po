@@ -6,13 +6,13 @@
 # Tuure Savuoja <tuure+oss@tuuresavuoja.net>, 2018
 # Ammuu5 <ammuu5@tutanota.com>, 2019
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2020.
-# Jan Kuparinen <copper_fin@hotmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-12 17:09+0200\n"
-"PO-Revision-Date: 2021-08-25 12:04+0000\n"
+"PO-Revision-Date: 2022-04-02 09:16+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/fi/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -116,11 +116,11 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
