@@ -6,13 +6,14 @@
 # Masato Hashimoto <cabezon.hashimoto@gmail.com>, 2017.
 # Nishide Itaru <goai@protonmail.com>, 2021.
 # Tomohiro KATO <tomop@teamgedoh.net>, 2021.
+# Takuro Onoue <kusanaginoturugi@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-15 18:55+0300\n"
-"PO-Revision-Date: 2021-12-08 22:16+0000\n"
-"Last-Translator: Tomohiro KATO <tomop@teamgedoh.net>\n"
+"PO-Revision-Date: 2022-02-20 03:16+0000\n"
+"Last-Translator: Takuro Onoue <kusanaginoturugi@gmail.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ja/>\n"
 "Language: ja\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -266,11 +267,11 @@ msgstr "コーデック取得メッセージ応答からコーデック名を取
 #: ../src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "get-profile-sticky メッセージ応答から JSON を読み取れませんでした: %s"
 
 #: ../src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "get-profile-sticky メッセージ応答が JSON 値ではありません"
 
 #: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
 #, c-format
@@ -280,15 +281,15 @@ msgstr "pa_context_send_message_to_object() 失敗: %s"
 #: ../src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "list-handlers メッセージ応答から JSON を読み込むことができません: %s"
 
 #: ../src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "list-handlers メッセージ応答が JSON 配列ではありません"
 
 #: ../src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "list-handlers メッセージ応答を正しく解釈できません"
 
 #: ../src/pavucontrol.cc:358
 msgid "Card callback failure"
@@ -528,7 +529,7 @@ msgstr "モニタリングストリームへの接続に失敗"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "イベントとして指定され、イベントウィジェットによって処理されるため、sink-input を無視します"
 
 #: ../src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -636,7 +637,7 @@ msgstr "終了"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "ロード時に特定のタブを選択します。"
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
@@ -644,7 +645,7 @@ msgstr "数値"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "pa が終了時、永久に再試行する（5 秒ごと）。"
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
