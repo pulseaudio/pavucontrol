@@ -4,13 +4,13 @@
 #
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2008.
 # Gökhan Gökkaya <wirelessanten@gmail.com>, 2019
-# Oğuz Ersen <oguzersen@protonmail.com>, 2020, 2021.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-12 17:09+0200\n"
-"PO-Revision-Date: 2021-08-26 16:04+0000\n"
+"PO-Revision-Date: 2022-02-21 12:16+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/tr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -116,11 +116,11 @@ msgstr "AAC"
 
 #: ../src/pavucontrol.glade.h:19
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
 #: ../src/pavucontrol.glade.h:20
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
 #: ../src/pavucontrol.glade.h:21
 msgid "<b>Latency offset:</b>"
