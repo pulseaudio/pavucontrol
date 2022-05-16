@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-12 17:09+0200\n"
+"POT-Creation-Date: 2022-05-17 00:01+0300\n"
 "PO-Revision-Date: 2020-05-21 07:40+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.fedoraproject.org/"
@@ -18,23 +18,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.0.4\n"
 
-#: ../src/pavucontrol.desktop.in.h:1 ../src/pavucontrol.cc:874
+#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio-lydstyrkekontroll"
 
-#: ../src/pavucontrol.desktop.in.h:2 ../src/pavucontrol.glade.h:35
+#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
 msgid "Volume Control"
 msgstr "Lydstyrkekontroll"
 
-#: ../src/pavucontrol.desktop.in.h:3
+#: src/pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
 msgstr "Juster lydstyrken"
 
-#: ../src/pavucontrol.desktop.in.h:4
+#: src/pavucontrol.desktop.in:8
 #, fuzzy
-#| msgid ""
-#| "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Audio;Mixer;Output;"
-#| "Input;"
+msgid "multimedia-volume-control"
+msgstr "PulseAudio-lydstyrkekontroll"
+
+#: src/pavucontrol.desktop.in:12
+#, fuzzy
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
@@ -43,384 +45,390 @@ msgstr ""
 "pavucontrol;Mikrofon;Lydstyrke;Uttoning;Balanse;Hodesett;Hodetelefoner;Lyd;"
 "Mikser;Utgang;Inngang;"
 
-#: ../src/pavucontrol.glade.h:1
+#: src/pavucontrol.glade:12
+msgid "window2"
+msgstr ""
+
+#: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
 msgstr "<b>venstre-front</b>"
 
-#: ../src/pavucontrol.glade.h:3
-#, no-c-format
+#: src/pavucontrol.glade:55
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
-#: ../src/pavucontrol.glade.h:4
+#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
+#: src/pavucontrol.glade:1513
+msgid "window1"
+msgstr ""
+
+#: src/pavucontrol.glade:119
 msgid "Card Name"
 msgstr "Lydkortnavn"
 
-#: ../src/pavucontrol.glade.h:5
+#: src/pavucontrol.glade:147
 msgid "Lock card to this profile"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:6
+#: src/pavucontrol.glade:188
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
-#: ../src/pavucontrol.glade.h:7
+#: src/pavucontrol.glade:218
 #, fuzzy
-#| msgid "<b>Port:</b>"
 msgid "<b>Codec:</b>"
 msgstr "<b>Port:</b>"
 
-#: ../src/pavucontrol.glade.h:8
+#: src/pavucontrol.glade:335
 msgid "Device Title"
 msgstr "Enhetstittel"
 
-#: ../src/pavucontrol.glade.h:9
+#: src/pavucontrol.glade:363 src/pavucontrol.glade:1625
 msgid "Mute audio"
 msgstr "Forstum lyd"
 
-#: ../src/pavucontrol.glade.h:10
+#: src/pavucontrol.glade:385 src/pavucontrol.glade:1647
 msgid "Lock channels together"
 msgstr "Lås kanaler sammen"
 
-#: ../src/pavucontrol.glade.h:11
+#: src/pavucontrol.glade:408
 msgid "Set as fallback"
 msgstr "Sett som tilbakefall"
 
-#: ../src/pavucontrol.glade.h:12
+#: src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
 msgstr "<b>Port:</b>"
 
-#: ../src/pavucontrol.glade.h:13
+#: src/pavucontrol.glade:506
 msgid "PCM"
 msgstr "PCM"
 
-#: ../src/pavucontrol.glade.h:14
+#: src/pavucontrol.glade:521
 msgid "AC-3"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:15
+#: src/pavucontrol.glade:534
 msgid "DTS"
 msgstr "DTS"
 
-#: ../src/pavucontrol.glade.h:16
+#: src/pavucontrol.glade:547
 msgid "E-AC-3"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:17
+#: src/pavucontrol.glade:560
 msgid "MPEG"
 msgstr "MPEG"
 
-#: ../src/pavucontrol.glade.h:18
+#: src/pavucontrol.glade:573
 msgid "AAC"
 msgstr "AAC"
 
-#: ../src/pavucontrol.glade.h:19
+#: src/pavucontrol.glade:586
 msgid "TrueHD"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:20
+#: src/pavucontrol.glade:599
 msgid "DTS-HD"
 msgstr ""
 
-#: ../src/pavucontrol.glade.h:21
+#: src/pavucontrol.glade:626
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Latens-forskyvning:</b>"
 
-#: ../src/pavucontrol.glade.h:22
+#: src/pavucontrol.glade:654
 msgid "ms"
 msgstr "ms"
 
-#: ../src/pavucontrol.glade.h:23
+#: src/pavucontrol.glade:676
 msgid "Advanced"
 msgstr "Avansert"
 
-#: ../src/pavucontrol.glade.h:24
+#: src/pavucontrol.glade:716 src/pavucontrol.glade:733
 msgid "All Streams"
 msgstr "Alle lydstrømmer"
 
-#: ../src/pavucontrol.glade.h:25
+#: src/pavucontrol.glade:719 src/pavucontrol.glade:736
 msgid "Applications"
 msgstr "Programmer"
 
-#: ../src/pavucontrol.glade.h:26
+#: src/pavucontrol.glade:722 src/pavucontrol.glade:739
 msgid "Virtual Streams"
 msgstr "Virtuelle lydstrømmer"
 
-#: ../src/pavucontrol.glade.h:27
+#: src/pavucontrol.glade:750
 msgid "All Output Devices"
 msgstr "Alle utgangsenheter"
 
-#: ../src/pavucontrol.glade.h:28
+#: src/pavucontrol.glade:753
 msgid "Hardware Output Devices"
 msgstr "Maskinvareutgangsenheter"
 
-#: ../src/pavucontrol.glade.h:29
+#: src/pavucontrol.glade:756
 msgid "Virtual Output Devices"
 msgstr "Virtuelle utgangsenheter"
 
-#: ../src/pavucontrol.glade.h:30
+#: src/pavucontrol.glade:767
 msgid "All Input Devices"
 msgstr "Alle inngangsenheter"
 
-#: ../src/pavucontrol.glade.h:31
+#: src/pavucontrol.glade:770
 msgid "All Except Monitors"
 msgstr "Alle unntatt avlyttingsenheter"
 
-#: ../src/pavucontrol.glade.h:32
+#: src/pavucontrol.glade:773
 msgid "Hardware Input Devices"
 msgstr "Maskinvareinngangsenheter"
 
-#: ../src/pavucontrol.glade.h:33
+#: src/pavucontrol.glade:776
 msgid "Virtual Input Devices"
 msgstr "Virtuelle inngangsenheter"
 
-#: ../src/pavucontrol.glade.h:34
+#: src/pavucontrol.glade:779
 msgid "Monitors"
 msgstr "Avlyttingsenheter"
 
-#: ../src/pavucontrol.glade.h:36
+#: src/pavucontrol.glade:828
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Ingen programmer spiller lyd.</i>"
 
-#: ../src/pavucontrol.glade.h:37
+#: src/pavucontrol.glade:876 src/pavucontrol.glade:1000
 msgid "<b>_Show:</b>"
 msgstr "<b>_Vis:</b>"
 
-#: ../src/pavucontrol.glade.h:38
+#: src/pavucontrol.glade:920
 msgid "_Playback"
 msgstr "_Avspilling"
 
-#: ../src/pavucontrol.glade.h:39
+#: src/pavucontrol.glade:952
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Ingen programmer tar opp lyd.</i>"
 
-#: ../src/pavucontrol.glade.h:40
+#: src/pavucontrol.glade:1047
 msgid "_Recording"
 msgstr "_Opptak"
 
-#: ../src/pavucontrol.glade.h:41
+#: src/pavucontrol.glade:1080
 msgid "<i>No output devices available</i>"
 msgstr "<i>Ingen utdataenheter tilgjengelige</i>"
 
-#: ../src/pavucontrol.glade.h:42
+#: src/pavucontrol.glade:1128
 msgid "<b>S_how:</b>"
 msgstr "<b>V_is:</b>"
 
-#: ../src/pavucontrol.glade.h:43
+#: src/pavucontrol.glade:1176
 msgid "_Output Devices"
 msgstr "_Utgangsenheter"
 
-#: ../src/pavucontrol.glade.h:44
+#: src/pavucontrol.glade:1210
 msgid "<i>No input devices available</i>"
 msgstr "<i>Ingen inngangsenheter tilgjengelige</i>"
 
-#: ../src/pavucontrol.glade.h:45
+#: src/pavucontrol.glade:1258
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Vi_s:</b>"
 
-#: ../src/pavucontrol.glade.h:46
+#: src/pavucontrol.glade:1306
 msgid "_Input Devices"
 msgstr "_Inngangsenheter"
 
-#: ../src/pavucontrol.glade.h:47
+#: src/pavucontrol.glade:1343
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Ingen lydkort tilgjengelige for oppsett.</i>"
 
-#: ../src/pavucontrol.glade.h:48
+#: src/pavucontrol.glade:1376
 #, fuzzy
 msgid "Show volume meters"
 msgstr "Vis lydstyrkemetre"
 
-#: ../src/pavucontrol.glade.h:49
+#: src/pavucontrol.glade:1416
 msgid "_Configuration"
 msgstr "_Oppsett"
 
-#: ../src/pavucontrol.glade.h:50
+#: src/pavucontrol.glade:1481
 #, fuzzy
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Endre navn på enhet til:</b>"
 
-#: ../src/pavucontrol.glade.h:51
+#: src/pavucontrol.glade:1570
 msgid "Stream Title"
 msgstr "Lydstrømstittel"
 
-#: ../src/pavucontrol.glade.h:52
+#: src/pavucontrol.glade:1586
 msgid "direction"
 msgstr "retning"
 
-#: ../src/pavucontrol.cc:104
+#: src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
 msgstr ""
 
-#: ../src/pavucontrol.cc:113
+#: src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
 msgstr ""
 
-#: ../src/pavucontrol.cc:161
+#: src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
 msgstr ""
 
-#: ../src/pavucontrol.cc:181
+#: src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
 msgstr ""
 
-#: ../src/pavucontrol.cc:190
+#: src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
 msgstr ""
 
-#: ../src/pavucontrol.cc:198
+#: src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
 msgstr ""
 
-#: ../src/pavucontrol.cc:220
+#: src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
 msgstr ""
 
-#: ../src/pavucontrol.cc:229
+#: src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
-#: ../src/pavucontrol.cc:249 ../src/cardwidget.cc:153 ../src/cardwidget.cc:181
+#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
 #, fuzzy, c-format
-#| msgid "pa_context_set_default_source() failed"
 msgid "pa_context_send_message_to_object() failed: %s"
 msgstr "pa_context_set_default_source() mislyktes"
 
-#: ../src/pavucontrol.cc:267
+#: src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
 msgstr ""
 
-#: ../src/pavucontrol.cc:276
+#: src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
 msgstr ""
 
-#: ../src/pavucontrol.cc:324
+#: src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
 msgstr ""
 
-#: ../src/pavucontrol.cc:358
+#: src/pavucontrol.cc:358
 #, fuzzy
 msgid "Card callback failure"
 msgstr "Kunne ikke tilbakekalle kort"
 
-#: ../src/pavucontrol.cc:386
+#: src/pavucontrol.cc:386
 msgid "Sink callback failure"
 msgstr "Kunne ikke utføre tilbakekall for sluk"
 
-#: ../src/pavucontrol.cc:410
+#: src/pavucontrol.cc:410
 #, fuzzy
 msgid "Source callback failure"
 msgstr "Kunne ikke utføre tilbakekall"
 
-#: ../src/pavucontrol.cc:429
+#: src/pavucontrol.cc:429
 msgid "Sink input callback failure"
 msgstr "Kunne ikke utføre tilbakekall for sluksinngang"
 
-#: ../src/pavucontrol.cc:448
+#: src/pavucontrol.cc:448
 #, fuzzy
 msgid "Source output callback failure"
 msgstr "Kunne ikke utføre tilbakekall av utgang"
 
-#: ../src/pavucontrol.cc:478
+#: src/pavucontrol.cc:478
 #, fuzzy
 msgid "Client callback failure"
 msgstr "Kunne ikke utføre tilbakekall av klient"
 
-#: ../src/pavucontrol.cc:494
+#: src/pavucontrol.cc:494
 msgid "Server info callback failure"
 msgstr "Kunne ikke utføre tilbakekall av tjenerinfo"
 
-#: ../src/pavucontrol.cc:512 ../src/pavucontrol.cc:809
+#: src/pavucontrol.cc:512 src/pavucontrol.cc:809
 #, fuzzy, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr ""
 "Klarte ikke å igangsette programtillegget for lydstrømsgjenoppretting: %s"
 
-#: ../src/pavucontrol.cc:530
+#: src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() mislyktes"
 
-#: ../src/pavucontrol.cc:548 ../src/pavucontrol.cc:823
+#: src/pavucontrol.cc:548 src/pavucontrol.cc:823
 #, fuzzy, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Klarte ikke å igangsette programtillegget for enhetsgjenoppretting: %s"
 
-#: ../src/pavucontrol.cc:569
+#: src/pavucontrol.cc:569
 #, fuzzy
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() mislyktes"
 
-#: ../src/pavucontrol.cc:587 ../src/pavucontrol.cc:836
+#: src/pavucontrol.cc:587 src/pavucontrol.cc:836
 #, fuzzy, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Klarte ikke å igangsette enhetshåndteringstillegg: %s"
 
-#: ../src/pavucontrol.cc:606
+#: src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() mislyktes"
 
-#: ../src/pavucontrol.cc:623
+#: src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:636
+#: src/pavucontrol.cc:636
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:649 ../src/pavucontrol.cc:662
+#: src/pavucontrol.cc:649 src/pavucontrol.cc:662
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() mislyktes"
 
-#: ../src/pavucontrol.cc:675
+#: src/pavucontrol.cc:675
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() mislyktes"
 
-#: ../src/pavucontrol.cc:685 ../src/pavucontrol.cc:750
+#: src/pavucontrol.cc:685 src/pavucontrol.cc:750
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() mislyktes"
 
-#: ../src/pavucontrol.cc:698
+#: src/pavucontrol.cc:698
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() mislyktes"
 
-#: ../src/pavucontrol.cc:741
+#: src/pavucontrol.cc:741
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() mislyktes"
 
-#: ../src/pavucontrol.cc:757
+#: src/pavucontrol.cc:757
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:764
+#: src/pavucontrol.cc:764
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:771
+#: src/pavucontrol.cc:771
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:778
+#: src/pavucontrol.cc:778
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:785
+#: src/pavucontrol.cc:785
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:792
+#: src/pavucontrol.cc:792
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() mislyktes"
 
-#: ../src/pavucontrol.cc:851 ../src/pavucontrol.cc:902
+#: src/pavucontrol.cc:851 src/pavucontrol.cc:902
 #, fuzzy
 msgid "Connection failed, attempting reconnect"
 msgstr "Kunne ikke koble til, prøver igjen…"
 
-#: ../src/pavucontrol.cc:889
+#: src/pavucontrol.cc:889
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -443,57 +451,57 @@ msgstr ""
 "ikke er satt opp kan du kjøre\n"
 "\"start-pulseaudio-x11\" manuelt."
 
-#: ../src/cardwidget.cc:126
+#: src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() mislyktes"
 
-#: ../src/channelwidget.cc:101
+#: src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
 msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
-#: ../src/channelwidget.cc:103
+#: src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
 msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
-#: ../src/channelwidget.cc:106
+#: src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
 msgstr "%0.0f%%"
 
-#: ../src/channelwidget.cc:139
+#: src/channelwidget.cc:139
 msgid "<small>Silence</small>"
 msgstr "<small>Stillhet</small>"
 
-#: ../src/channelwidget.cc:139
+#: src/channelwidget.cc:139
 msgid "<small>Min</small>"
 msgstr "<small>Minimum</small>"
 
-#: ../src/channelwidget.cc:141
+#: src/channelwidget.cc:141
 msgid "<small>100% (0 dB)</small>"
 msgstr "<small>100% (0 dB)</small>"
 
-#: ../src/channelwidget.cc:145
+#: src/channelwidget.cc:145
 #, fuzzy
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Grunn-nivå</i></small>"
 
-#: ../src/devicewidget.cc:59
+#: src/devicewidget.cc:59
 #, fuzzy
 msgid "Rename Device..."
 msgstr "Endre navn på enhet…"
 
-#: ../src/devicewidget.cc:163
+#: src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() mislyktes"
 
-#: ../src/devicewidget.cc:244
+#: src/devicewidget.cc:244
 #, fuzzy
 msgid "Sorry, but device renaming is not supported."
 msgstr "Enhetsnavnebytte støttes ikke."
 
-#: ../src/devicewidget.cc:249
+#: src/devicewidget.cc:249
 #, fuzzy
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
@@ -502,63 +510,63 @@ msgstr ""
 "Du må laste inn module-device-manager fra PulseAudio-tjeneren for å endre "
 "navn på enheter."
 
-#: ../src/devicewidget.cc:262
+#: src/devicewidget.cc:262
 msgid "_Cancel"
 msgstr ""
 
-#: ../src/devicewidget.cc:263
+#: src/devicewidget.cc:263
 msgid "_OK"
 msgstr ""
 
-#: ../src/devicewidget.cc:270
+#: src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() mislyktes"
 
-#: ../src/mainwindow.cc:171
+#: src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
 msgstr "Kunne ikke lese oppsettsfil %s: %s"
 
-#: ../src/mainwindow.cc:250
+#: src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Klarte ikke å lagre innstillinger"
 
-#: ../src/mainwindow.cc:258
+#: src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Klarte ikke å skrive oppsettsfil %s"
 
-#: ../src/mainwindow.cc:322
+#: src/mainwindow.cc:322
 #, fuzzy
 msgid " (plugged in)"
 msgstr " (innplugget)"
 
-#: ../src/mainwindow.cc:326 ../src/mainwindow.cc:434
+#: src/mainwindow.cc:326 src/mainwindow.cc:434
 msgid " (unavailable)"
 msgstr " (utilgjengelig)"
 
-#: ../src/mainwindow.cc:328 ../src/mainwindow.cc:431
+#: src/mainwindow.cc:328 src/mainwindow.cc:431
 msgid " (unplugged)"
 msgstr " (frakoblet)"
 
-#: ../src/mainwindow.cc:633
+#: src/mainwindow.cc:633
 #, fuzzy
 msgid "Failed to read data from stream"
 msgstr "Klarte ikke å lese data fra lydstrøm"
 
-#: ../src/mainwindow.cc:677
+#: src/mainwindow.cc:677
 msgid "Peak detect"
 msgstr "Oppdag topper"
 
-#: ../src/mainwindow.cc:678
+#: src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
 msgstr "Klarte ikke å opprette avlyttingsenhetsstrøm"
 
-#: ../src/mainwindow.cc:693
+#: src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
 msgstr "Klarte ikke å koble til avlyttingsenhetsstrøm"
 
-#: ../src/mainwindow.cc:830
+#: src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -566,130 +574,130 @@ msgstr ""
 "Ser bort fra sluk-inndata, fordi det er angitt som en hendelse, og således "
 "håndteres av hendelsesminiprogrammet"
 
-#: ../src/mainwindow.cc:1005
+#: src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Systemlyder"
 
-#: ../src/mainwindow.cc:1351
+#: src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Etablerer tilkobling til PulseAudio. Vent…"
 
-#: ../src/rolewidget.cc:72
+#: src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() mislyktes"
 
-#: ../src/sinkinputwidget.cc:35
+#: src/sinkinputwidget.cc:35
 #, fuzzy
 msgid "on"
 msgstr "påslått"
 
-#: ../src/sinkinputwidget.cc:38
+#: src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
 msgstr "Avslutt avspilling"
 
-#: ../src/sinkinputwidget.cc:78
+#: src/sinkinputwidget.cc:78
 msgid "Unknown output"
 msgstr "Ukjent utgang"
 
-#: ../src/sinkinputwidget.cc:87
+#: src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
 msgstr "pa_context_set_sink_input_volume() mislyktes"
 
-#: ../src/sinkinputwidget.cc:102
+#: src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
 msgstr "pa_context_set_sink_input_mute() mislyktes"
 
-#: ../src/sinkinputwidget.cc:112
+#: src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() mislyktes"
 
-#: ../src/sinkwidget.cc:117
+#: src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() mislyktes"
 
-#: ../src/sinkwidget.cc:132
+#: src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Tilbakemeldingslyd for lydstyrkekontroll"
 
-#: ../src/sinkwidget.cc:149
+#: src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() mislyktes"
 
-#: ../src/sinkwidget.cc:163
+#: src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() mislyktes"
 
-#: ../src/sinkwidget.cc:183
+#: src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() mislyktes"
 
-#: ../src/sinkwidget.cc:225
+#: src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() mislyktes"
 
-#: ../src/sourceoutputwidget.cc:35
+#: src/sourceoutputwidget.cc:35
 msgid "from"
 msgstr "fra"
 
-#: ../src/sourceoutputwidget.cc:38
+#: src/sourceoutputwidget.cc:38
 msgid "Terminate Recording"
 msgstr "Avslutt opptak"
 
-#: ../src/sourceoutputwidget.cc:83
+#: src/sourceoutputwidget.cc:83
 msgid "Unknown input"
 msgstr "Ukjent inngang"
 
-#: ../src/sourceoutputwidget.cc:93
+#: src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
 msgstr "pa_context_set_source_output_volume() mislyktes"
 
-#: ../src/sourceoutputwidget.cc:108
+#: src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
 msgstr "pa_context_set_source_output_mute() mislyktes"
 
-#: ../src/sourceoutputwidget.cc:119
+#: src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
 msgstr "pa_context_kill_source_output() mislyktes"
 
-#: ../src/sourcewidget.cc:46
+#: src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
 msgstr "pa_context_set_source_volume_by_index() mislyktes"
 
-#: ../src/sourcewidget.cc:61
+#: src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
 msgstr "pa_context_set_source_mute_by_index() mislyktes"
 
-#: ../src/sourcewidget.cc:75
+#: src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
 msgstr "pa_context_set_default_source() mislyktes"
 
-#: ../src/sourcewidget.cc:97
+#: src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() mislyktes"
 
-#: ../src/streamwidget.cc:52
+#: src/streamwidget.cc:52
 msgid "Terminate"
 msgstr "Avslutt"
 
-#: ../src/pavuapplication.cc:160
+#: src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Velg en spesifikk fane ved innlasting."
 
-#: ../src/pavuapplication.cc:161
+#: src/pavuapplication.cc:161
 msgid "number"
 msgstr "nummer"
 
-#: ../src/pavuapplication.cc:166
+#: src/pavuapplication.cc:166
 #, fuzzy
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Prøv igjen hvert femte sekund hvis PulseAudio avslutter."
 
-#: ../src/pavuapplication.cc:171
+#: src/pavuapplication.cc:171
 #, fuzzy
 msgid "Maximize the window."
 msgstr "Maksimer vinduet."
 
-#: ../src/pavuapplication.cc:176
+#: src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Vis versjon."
 
