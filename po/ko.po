@@ -5,13 +5,14 @@
 # simmon <simmon@nplob.com>, 2021.
 # Sungjoon Moon <sumoon@seoulsaram.org>, 2022.
 # Kim InSoo <simmon@nplob.com>, 2022.
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2022-02-21 12:16+0000\n"
-"Last-Translator: Kim InSoo <simmon@nplob.com>\n"
+"PO-Revision-Date: 2022-05-20 00:18+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
 "Language: ko\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -34,9 +35,8 @@ msgid "Adjust the volume level"
 msgstr "볼륨 레벨 조정"
 
 #: src/pavucontrol.desktop.in:8
-#, fuzzy
 msgid "multimedia-volume-control"
-msgstr "PulseAudio 볼륨 조절"
+msgstr "멀티미디어-볼륨-조절"
 
 #: src/pavucontrol.desktop.in:12
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/pavucontrol.glade:12
 msgid "window2"
-msgstr ""
+msgstr "창2"
 
 #: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
@@ -62,7 +62,7 @@ msgstr "<small>50%</small>"
 #: src/pavucontrol.glade:74 src/pavucontrol.glade:279
 #: src/pavucontrol.glade:1513
 msgid "window1"
-msgstr ""
+msgstr "창1"
 
 #: src/pavucontrol.glade:119
 msgid "Card Name"
@@ -126,7 +126,7 @@ msgstr "AAC"
 
 #: src/pavucontrol.glade:586
 msgid "TrueHD"
-msgstr "트루HD"
+msgstr "돌비 트루HD"
 
 #: src/pavucontrol.glade:599
 msgid "DTS-HD"
