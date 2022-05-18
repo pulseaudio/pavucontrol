@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2022-02-20 11:56+0000\n"
+"PO-Revision-Date: 2022-05-18 16:22+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/pl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -32,9 +32,8 @@ msgid "Adjust the volume level"
 msgstr "Dostosowanie poziomu głośności"
 
 #: src/pavucontrol.desktop.in:8
-#, fuzzy
 msgid "multimedia-volume-control"
-msgstr "Sterowanie głośnością PulseAudio"
+msgstr "multimedia-volume-control"
 
 #: src/pavucontrol.desktop.in:12
 msgid ""
@@ -50,7 +49,7 @@ msgstr ""
 
 #: src/pavucontrol.glade:12
 msgid "window2"
-msgstr ""
+msgstr "okno 2"
 
 #: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
@@ -63,7 +62,7 @@ msgstr "<small>50%</small>"
 #: src/pavucontrol.glade:74 src/pavucontrol.glade:279
 #: src/pavucontrol.glade:1513
 msgid "window1"
-msgstr ""
+msgstr "okno 1"
 
 #: src/pavucontrol.glade:119
 msgid "Card Name"
