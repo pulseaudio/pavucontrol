@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2022-05-14 16:18+0000\n"
+"PO-Revision-Date: 2022-05-20 00:18+0000\n"
 "Last-Translator: Sergey A. <sw@atrus.ru>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ru/>\n"
@@ -34,9 +34,8 @@ msgid "Adjust the volume level"
 msgstr "Настройка уровня громкости"
 
 #: src/pavucontrol.desktop.in:8
-#, fuzzy
 msgid "multimedia-volume-control"
-msgstr "Регулятор громкости PulseAudio"
+msgstr "multimedia-volume-control"
 
 #: src/pavucontrol.desktop.in:12
 msgid ""
@@ -51,7 +50,7 @@ msgstr ""
 
 #: src/pavucontrol.glade:12
 msgid "window2"
-msgstr ""
+msgstr "окно2"
 
 #: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
@@ -64,7 +63,7 @@ msgstr "<small>50%</small>"
 #: src/pavucontrol.glade:74 src/pavucontrol.glade:279
 #: src/pavucontrol.glade:1513
 msgid "window1"
-msgstr ""
+msgstr "окно1"
 
 #: src/pavucontrol.glade:119
 msgid "Card Name"
