@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2022-02-21 12:16+0000\n"
+"PO-Revision-Date: 2022-05-20 00:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
@@ -33,9 +33,8 @@ msgid "Adjust the volume level"
 msgstr "Скоригуйте рівень гучності"
 
 #: src/pavucontrol.desktop.in:8
-#, fuzzy
 msgid "multimedia-volume-control"
-msgstr "Керування гучністю PulseAudio"
+msgstr "multimedia-volume-control"
 
 #: src/pavucontrol.desktop.in:12
 msgid ""
@@ -51,7 +50,7 @@ msgstr ""
 
 #: src/pavucontrol.glade:12
 msgid "window2"
-msgstr ""
+msgstr "Вікно2"
 
 #: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
@@ -64,7 +63,7 @@ msgstr "<small>50%</small>"
 #: src/pavucontrol.glade:74 src/pavucontrol.glade:279
 #: src/pavucontrol.glade:1513
 msgid "window1"
-msgstr ""
+msgstr "Вікно1"
 
 #: src/pavucontrol.glade:119
 msgid "Card Name"
