@@ -6,13 +6,14 @@
 # Sungjoon Moon <sumoon@seoulsaram.org>, 2022.
 # Kim InSoo <simmon@nplob.com>, 2022.
 # 김인수 <simmon@nplob.com>, 2022.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2022-05-20 00:18+0000\n"
-"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"PO-Revision-Date: 2022-06-12 14:19+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ko/>\n"
 "Language: ko\n"
@@ -24,19 +25,19 @@ msgstr ""
 
 #: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
-msgstr "PulseAudio 볼륨 조절"
+msgstr "PulseAudio 음량 조절"
 
 #: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
 msgid "Volume Control"
-msgstr "볼륨 조절"
+msgstr "음량 조절"
 
 #: src/pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
-msgstr "볼륨 레벨 조정"
+msgstr "음량 레벨 조정"
 
 #: src/pavucontrol.desktop.in:8
 msgid "multimedia-volume-control"
-msgstr "멀티미디어-볼륨-조절"
+msgstr "multimedia-volume-control"
 
 #: src/pavucontrol.desktop.in:12
 msgid ""
@@ -44,8 +45,10 @@ msgid ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;마이크;볼륨;페이드;밸런스;헤드셋;스피커;헤드폰;오디오;믹서;출력;"
-"입력;장치;재생;녹음;시스템 사운드;사운드 카드;설정;환경설정;"
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;Settin"
+"gs;Preferences;마이크;음량;볼륨;페이드;밸런스;헤드셋;스피커;헤드폰;오디오;믹"
+"서;출력;입력;장치;재생;녹음;시스템 사운드;사운드 카드;설정;환경설정;"
 
 #: src/pavucontrol.glade:12
 msgid "window2"
@@ -70,7 +73,7 @@ msgstr "카드 이름"
 
 #: src/pavucontrol.glade:147
 msgid "Lock card to this profile"
-msgstr "이 프로필에 카드 잠금"
+msgstr "이 프로필에 카드 고정"
 
 #: src/pavucontrol.glade:188
 msgid "<b>Profile:</b>"
@@ -90,7 +93,7 @@ msgstr "음소거"
 
 #: src/pavucontrol.glade:385 src/pavucontrol.glade:1647
 msgid "Lock channels together"
-msgstr "채널 함께 잠금"
+msgstr "채널 함께 고정"
 
 #: src/pavucontrol.glade:408
 msgid "Set as fallback"
@@ -174,7 +177,7 @@ msgstr "모든 입력 장치"
 
 #: src/pavucontrol.glade:770
 msgid "All Except Monitors"
-msgstr "모니터를 제외한 모든 것"
+msgstr "모니터를 제외한 모든 장치"
 
 #: src/pavucontrol.glade:773
 msgid "Hardware Input Devices"
@@ -238,7 +241,7 @@ msgstr "<i>설정 가능한 카드가 없습니다</i>"
 
 #: src/pavucontrol.glade:1376
 msgid "Show volume meters"
-msgstr "볼륨 미터 표시"
+msgstr "음량계 표시"
 
 #: src/pavucontrol.glade:1416
 msgid "_Configuration"
@@ -436,11 +439,11 @@ msgstr ""
 "PulseAudio에 연결하지 못했습니다. 5초 후에 자동으로 재시도 합니다.\n"
 "\n"
 "이 문제의 원인은 환경의 PULSE_SERVER 또는 X11 루트 창 속성 또는\n"
-"client.conf의 default-server가 잘못 설정되었기 때문일 수 있습니다.\n"
-"이는 PulseAudio가 충돌하고 X11 루트 창에 오래된 세부 정보를 남길 때도 발생할 "
-"수 있습니다.\n"
-"그렇다면 PulseAudio가 자동으로 다시 시작되어야 하며, \n"
-"그렇지 않을 경우 start-pulseaudio-x11을 수동으로 실행하십시오."
+"client.conf의 default-server를 잘못 설정했기 때문일 수 있습니다.\n"
+"이는 PulseAudio가 갑작스럽게 끝나고 X11 루트 창에 오래된 세부 정보를 남길 "
+"때도 발생할 수 있습니다.\n"
+"그렇다 하더라도 PulseAudio는 자동으로 다시 시작해야합니다.\n"
+"자동 재시작 설정을 하지 않았다면 start-pulseaudio-x11을 직접 실행하십시오."
 
 #: src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -487,15 +490,14 @@ msgstr "pa_context_set_port_latency_offset() 실패"
 
 #: src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "죄송합니다, 장치 이름 바꾸기가 지원되지 않습니다."
+msgstr "죄송합니다, 장치 이름 바꾸기를 지원하지 않습니다."
 
 #: src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
-msgstr ""
-"장치 이름을 바꾸려면 PulseAudio 서버에서 module-device-manager를 로드해야 합"
-"니다"
+msgstr "장치 이름을 바꾸려면 PulseAudio 서버에서 module-device-manager를 불러와야 "
+"합니다"
 
 #: src/devicewidget.cc:262
 msgid "_Cancel"
@@ -512,16 +514,16 @@ msgstr "pa_ext_device_manager_write() 실패"
 #: src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr "구성 파일 %s을(를) 읽는 동안 오류 발생: %s"
+msgstr "%s 설정 파일을 읽는 동안 오류 발생: %s"
 
 #: src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr "환경 설정을 저장하는 중에 오류가 발생했습니다"
+msgstr "기본 설정 저장 중 오류"
 
 #: src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr "설정 파일 %s을(를) 쓰는 동안 오류가 발생했습니다"
+msgstr "%s 설정 파일을 쓰는 동안 오류"
 
 #: src/mainwindow.cc:322
 msgid " (plugged in)"
@@ -533,7 +535,7 @@ msgstr " (사용 불가)"
 
 #: src/mainwindow.cc:328 src/mainwindow.cc:431
 msgid " (unplugged)"
-msgstr " (연결되어 있지 않음)"
+msgstr " (연결 빠짐)"
 
 #: src/mainwindow.cc:633
 msgid "Failed to read data from stream"
@@ -555,8 +557,7 @@ msgstr "모니터링 스트림 연결에 실패하였습니다"
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
-"싱크 입력은 이벤트로 지정되어 이벤트 위젯에 의해 처리되기 때문에 무시됩니다"
+msgstr "싱크 입력은 이벤트로 지정되어 이벤트 위젯에서 처리하기 때문에 무시됩니다"
 
 #: src/mainwindow.cc:1005
 msgid "System Sounds"
@@ -664,7 +665,7 @@ msgstr "종료"
 
 #: src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr "로드할 때 특정 탭을 선택합니다."
+msgstr "불러올 때 지정 탭을 선택합니다."
 
 #: src/pavuapplication.cc:161
 msgid "number"
@@ -672,7 +673,7 @@ msgstr "숫자"
 
 #: src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr "pa가 종료되면 계속 재시도 합니다(5초 마다)."
+msgstr "pa를 빠져나가면 계속 재시도 합니다(5초 마다)."
 
 #: src/pavuapplication.cc:171
 msgid "Maximize the window."
