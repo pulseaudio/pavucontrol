@@ -6,13 +6,14 @@
 # Tobias Weise <tobias.weise@web.de>, 2020.
 # Fabian Affolter <mail@fabian-affolter.ch>, 2020.
 # Ettore Atalan <atalanttore@googlemail.com>, 2021.
+# Joachim Philipp <joachim.philipp@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 00:01+0300\n"
-"PO-Revision-Date: 2021-11-10 20:05+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2022-07-22 08:19+0000\n"
+"Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/de/>\n"
 "Language: de\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.13\n"
 "X-Poedit-Language: German\n"
 
 #: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
@@ -127,7 +128,7 @@ msgstr "AAC"
 
 #: src/pavucontrol.glade:586
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
 #: src/pavucontrol.glade:599
 msgid "DTS-HD"
