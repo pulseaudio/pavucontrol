@@ -666,7 +666,7 @@ pa_stream* MainWindow::createMonitorStreamForSource(uint32_t source_idx, uint32_
 
     ss.channels = 1;
     ss.format = PA_SAMPLE_FLOAT32;
-    ss.rate = 25;
+    ss.rate = PEAKS_RATE;
 
     memset(&attr, 0, sizeof(attr));
     attr.fragsize = sizeof(float);

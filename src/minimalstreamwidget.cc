@@ -61,7 +61,7 @@ void MinimalStreamWidget::init() {
     peakProgressBar.hide();
 }
 
-#define DECAY_STEP .04
+#define DECAY_STEP (1.0 / PEAKS_RATE)
 
 void MinimalStreamWidget::updatePeak(double v) {
 

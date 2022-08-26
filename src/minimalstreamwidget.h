@@ -23,6 +23,8 @@
 
 #include "pavucontrol.h"
 
+#define PEAKS_RATE 144
+
 class MinimalStreamWidget : public Gtk::VBox {
 public:
     MinimalStreamWidget(BaseObjectType* cobject);
