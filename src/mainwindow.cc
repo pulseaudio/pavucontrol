@@ -274,7 +274,7 @@ finish:
     }
 }
 
-static void set_icon_name_fallback(Gtk::Image *i, const char *name, Gtk::IconSize size) {
+static void set_icon_name_default(Gtk::Image *i, const char *name, Gtk::IconSize size) {
     Glib::RefPtr<Gtk::IconTheme> theme;
     Glib::RefPtr<Gdk::Pixbuf> pixbuf;
     gint width = 24, height = 24;
@@ -382,7 +382,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_fallback(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
 
     w->hasSinks = w->hasSources = false;
     profile_priorities.clear();
@@ -580,7 +580,7 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_fallback(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -748,7 +748,7 @@ void MainWindow::updateSource(const pa_source_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_fallback(w->iconImage, icon ? icon : "audio-input-microphone", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-input-microphone", Gtk::ICON_SIZE_SMALL_TOOLBAR);
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -817,7 +817,7 @@ void MainWindow::setIconFromProplist(Gtk::Image *icon, pa_proplist *l, const cha
 
 finish:
 
-    set_icon_name_fallback(icon, t, Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(icon, t, Gtk::ICON_SIZE_SMALL_TOOLBAR);
 }
 
 void MainWindow::updateSinkInput(const pa_sink_input_info &info) {
