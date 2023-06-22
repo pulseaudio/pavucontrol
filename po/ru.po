@@ -94,8 +94,8 @@ msgid "Lock channels together"
 msgstr "Связать громкости каналов"
 
 #: src/pavucontrol.glade:408
-msgid "Set as fallback"
-msgstr "Сделать резервным"
+msgid "Set as default"
+msgstr "Установить по умолчанию"
 
 #: src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
