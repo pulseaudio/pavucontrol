@@ -84,7 +84,8 @@ ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Bu
 
     volumeScale->set_range((double)PA_VOLUME_MUTED, (double)PA_VOLUME_UI_MAX);
     volumeScale->set_value((double)PA_VOLUME_NORM);
-    volumeScale->set_increments(((double)PA_VOLUME_NORM)/100.0, ((double)PA_VOLUME_NORM)/20.0);
+    auto increment = get_percentage_step_increment();
+    volumeScale->set_increments(increment, increment);
     setBaseVolume(PA_VOLUME_NORM);
 
     volumeScale->signal_value_changed().connect(sigc::mem_fun(*this, &ChannelWidget::onVolumeScaleValueChanged));
