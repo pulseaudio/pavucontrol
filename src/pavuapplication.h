@@ -24,6 +24,8 @@
 #include "pavucontrol.h"
 #include "mainwindow.h"
 
+int get_percentage_step_increment();
+
 class PavuApplication : public Gtk::Application {
 public:
     PavuApplication();
@@ -36,6 +38,7 @@ public:
     bool maximize;
     gint32 tab;
     bool version;
+    gint32 step_increment;
 
     static PavuApplication& get_instance();
 

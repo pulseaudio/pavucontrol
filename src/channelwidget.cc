@@ -23,9 +23,18 @@
 #endif
 
 #include "channelwidget.h"
+#include "pavuapplication.h"
 #include "minimalstreamwidget.h"
 
 #include "i18n.h"
+
+/**
+ * convert the step increment configured by the user to slider units
+ */
+int get_percentage_step_increment() {
+    gint32 user_si = PavuApplication::get_instance().step_increment;
+    return (int)(user_si == 0 ? (int)PA_VOLUME_NORM / 100 : user_si * (int)PA_VOLUME_NORM / 100);
+}
 
 /*** ChannelWidget ***/
 
@@ -38,7 +47,7 @@ bool ChannelWidget::handleKeyEvent(GdkEventKey* event) {
         return false;
     if (minimalStreamWidget->updating)
         return false;
-    int offset = (int) PA_VOLUME_NORM / 100;
+    int offset = get_percentage_step_increment();
     int volume = (int) volumeScale->get_value();
     int nextVolume;
     /**
