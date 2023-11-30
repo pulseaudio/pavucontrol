@@ -28,14 +28,14 @@
 
 /*** CardWidget ***/
 CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
-    Gtk::VBox(cobject) {
+    Gtk::Box(cobject) {
 
-    x->get_widget("cardNameLabel", nameLabel);
-    x->get_widget("profileList", profileList);
-    x->get_widget("cardIconImage", iconImage);
-    x->get_widget("codecBox", codecBox);
-    x->get_widget("codecList", codecList);
-    x->get_widget("profileLockToggleButton", profileLockToggleButton);
+    nameLabel = x->get_widget<Gtk::Label>("cardNameLabel");
+    profileList = x->get_widget<Gtk::ComboBox>("profileList");
+    iconImage = x->get_widget<Gtk::Image>("cardIconImage");
+    codecBox = x->get_widget<Gtk::Box>("codecBox");
+    codecList = x->get_widget<Gtk::ComboBox>("codecList");
+    profileLockToggleButton = x->get_widget<Gtk::ToggleButton>("profileLockToggleButton");
 
     profileListStore = Gtk::ListStore::create(profileModel);
     profileList->set_model(profileListStore);
@@ -61,7 +61,7 @@ CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 CardWidget* CardWidget::create() {
     CardWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "cardWidget");
-    x->get_widget_derived("cardWidget", w);
+    w = Gtk::Builder::get_widget_derived<CardWidget>(x, "cardWidget");
     w->reference();
     return w;
 }
@@ -123,7 +123,7 @@ void CardWidget::onProfileChange() {
           Glib::ustring profile = row[profileModel.name];
 
           if (!(o = pa_context_set_card_profile_by_index(get_context(), index, profile.c_str(), NULL, NULL))) {
-              show_error(_("pa_context_set_card_profile_by_index() failed"));
+              show_error(this, _("pa_context_set_card_profile_by_index() failed"));
               return;
           }
 

@@ -43,7 +43,7 @@ public:
     virtual void executeVolumeUpdate();
     virtual void onMuteToggleButton();
 #endif
-    virtual void onKill();
+    virtual void onKill(const Glib::VariantBase& parameter);
     virtual void onDeviceComboBoxChanged();
 
 private:

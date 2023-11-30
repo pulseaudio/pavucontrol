@@ -57,7 +57,7 @@ public:
     virtual void onLockToggleButton();
     virtual void onDefaultToggleButton();
     virtual void setDefault(bool isDefault);
-    virtual bool onContextTriggerEvent(GdkEventButton*);
+    virtual void onContextTriggerEvent(gint n_press, gdouble x, gdouble y);
     virtual void setLatencyOffset(int64_t offset);
     void onOffsetChange();
 
@@ -73,7 +73,7 @@ public:
 
     void prepareMenu();
 
-    void renamePopup();
+    void openRenamePopup(const Glib::VariantBase& parameter);
 
 protected:
     MainWindow *mpMainWindow;
@@ -85,8 +85,7 @@ protected:
 
     virtual void onPortChange() = 0;
 
-    Gtk::Menu contextMenu;
-    Gtk::MenuItem rename;
+    Gtk::PopoverMenu contextMenu;
 
     /* Tree model columns */
     class ModelColumns : public Gtk::TreeModel::ColumnRecord
@@ -103,7 +102,7 @@ protected:
     ModelColumns portModel;
 
     Gtk::Expander *advancedOptions;
-    Gtk::HBox *portSelect, *offsetSelect;
+    Gtk::Box *portSelect, *offsetSelect;
     Gtk::ComboBox *portList;
     Glib::RefPtr<Gtk::ListStore> treeModel;
     Glib::RefPtr<Gtk::Adjustment> offsetAdjustment;
@@ -114,7 +113,15 @@ protected:
 
 private:
     Glib::ustring mDeviceType;
+};
 
+class RenameWindow : public Gtk::ApplicationWindow {
+public:
+    RenameWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x, const gchar* name, const gchar* key);
+    Gtk::Entry* renameText;
+    const gchar* deviceKey;
+private:
+    void renamePopup(const Glib::VariantBase& parameter);
 };
 
 #endif

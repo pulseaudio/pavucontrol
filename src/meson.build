@@ -33,8 +33,8 @@ executable('pavucontrol',
 install_data('pavucontrol.glade')
 
 desktop_file = i18n.merge_file(
-  input : 'pavucontrol.desktop.in',
-  output : 'pavucontrol.desktop',
+  input : 'org.pulseaudio.pavucontrol.desktop.in',
+  output : 'org.pulseaudio.pavucontrol.desktop',
   po_dir : po_dir,
   type : 'desktop',
   install : true,

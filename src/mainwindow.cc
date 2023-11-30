@@ -76,30 +76,26 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     canRenameDevices(false),
     m_connected(false),
     m_config_filename(NULL) {
+    ca_context_create (&canberraContext);
+    ca_context_set_driver(canberraContext, "pulse");
 
-    x->get_widget("cardsVBox", cardsVBox);
-    x->get_widget("streamsVBox", streamsVBox);
-    x->get_widget("recsVBox", recsVBox);
-    x->get_widget("sinksVBox", sinksVBox);
-    x->get_widget("sourcesVBox", sourcesVBox);
-    x->get_widget("noCardsLabel", noCardsLabel);
-    x->get_widget("noStreamsLabel", noStreamsLabel);
-    x->get_widget("noRecsLabel", noRecsLabel);
-    x->get_widget("noSinksLabel", noSinksLabel);
-    x->get_widget("noSourcesLabel", noSourcesLabel);
-    x->get_widget("connectingLabel", connectingLabel);
-    x->get_widget("sinkInputTypeComboBox", sinkInputTypeComboBox);
-    x->get_widget("sourceOutputTypeComboBox", sourceOutputTypeComboBox);
-    x->get_widget("sinkTypeComboBox", sinkTypeComboBox);
-    x->get_widget("sourceTypeComboBox", sourceTypeComboBox);
-    x->get_widget("notebook", notebook);
-    x->get_widget("showVolumeMetersCheckButton", showVolumeMetersCheckButton);
-
-    sourcesVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ sourcesVBox->queue_draw(); });
-    cardsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ cardsVBox->queue_draw(); });
-    streamsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ streamsVBox->queue_draw(); });
-    recsVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ recsVBox->queue_draw(); });
-    sinksVBox->signal_size_allocate().connect([this](Gdk::Rectangle _unused){ sinksVBox->queue_draw(); });
+    cardsVBox = x->get_widget<Gtk::Box>("cardsVBox");
+    streamsVBox = x->get_widget<Gtk::Box>("streamsVBox");
+    recsVBox = x->get_widget<Gtk::Box>("recsVBox");
+    sinksVBox = x->get_widget<Gtk::Box>("sinksVBox");
+    sourcesVBox = x->get_widget<Gtk::Box>("sourcesVBox");
+    noCardsLabel = x->get_widget<Gtk::Label>("noCardsLabel");
+    noStreamsLabel = x->get_widget<Gtk::Label>("noStreamsLabel");
+    noRecsLabel = x->get_widget<Gtk::Label>("noRecsLabel");
+    noSinksLabel = x->get_widget<Gtk::Label>("noSinksLabel");
+    noSourcesLabel = x->get_widget<Gtk::Label>("noSourcesLabel");
+    connectingLabel = x->get_widget<Gtk::Label>("connectingLabel");
+    sinkInputTypeComboBox = x->get_widget<Gtk::ComboBox>("sinkInputTypeComboBox");
+    sourceOutputTypeComboBox = x->get_widget<Gtk::ComboBox>("sourceOutputTypeComboBox");
+    sinkTypeComboBox = x->get_widget<Gtk::ComboBox>("sinkTypeComboBox");
+    sourceTypeComboBox = x->get_widget<Gtk::ComboBox>("sourceTypeComboBox");
+    notebook = x->get_widget<Gtk::Notebook>("notebook");
+    showVolumeMetersCheckButton = x->get_widget<Gtk::CheckButton>("showVolumeMetersCheckButton");
 
     sinkInputTypeComboBox->set_active((int) showSinkInputType);
     sourceOutputTypeComboBox->set_active((int) showSourceOutputType);
@@ -112,6 +108,9 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     sourceTypeComboBox->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onSourceTypeComboBoxChanged));
     showVolumeMetersCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onShowVolumeMetersCheckButtonToggled));
 
+    auto event_controller_key = Gtk::EventControllerKey::create();
+    event_controller_key->signal_key_pressed().connect(sigc::mem_fun(*this, &MainWindow::on_key_press_event), false);
+    this->add_controller(event_controller_key);
 
     GKeyFile* config = g_key_file_new();
     g_assert(config);
@@ -134,7 +133,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
         int default_width, default_height;
         get_default_size(default_width, default_height);
         if (width >= default_width && height >= default_height)
-            resize(width, height);
+            set_default_size(width, height);
 
         int sinkInputTypeSelection = g_key_file_get_integer(config, "window", "sinkInputType", &err);
         if (err == NULL)
@@ -187,7 +186,7 @@ MainWindow* MainWindow::create(bool maximize) {
     x->add_from_file(GLADE_FILE, "liststore3");
     x->add_from_file(GLADE_FILE, "liststore4");
     x->add_from_file(GLADE_FILE, "mainWindow");
-    x->get_widget_derived("mainWindow", w);
+    w = Gtk::Builder::get_widget_derived<MainWindow>(x, "mainWindow");
     w->get_style_context()->add_class("pavucontrol-window");
     if (w && maximize)
         w->maximize();
@@ -197,26 +196,26 @@ MainWindow* MainWindow::create(bool maximize) {
 void MainWindow::on_realize() {
     Gtk::Window::on_realize();
 
-    get_window()->set_cursor(Gdk::Cursor::create(Gdk::WATCH));
+    set_cursor(Gdk::Cursor::create("wait"));
 }
 
-bool MainWindow::on_key_press_event(GdkEventKey* event) {
+bool MainWindow::on_key_press_event(guint keyval, guint keycode, Gdk::ModifierType state) {
 
-    if (event->state & GDK_CONTROL_MASK) {
-        switch (event->keyval) {
+    if ((state & Gdk::ModifierType::CONTROL_MASK) == Gdk::ModifierType::CONTROL_MASK) {
+        switch (keyval) {
             case GDK_KEY_KP_1:
             case GDK_KEY_KP_2:
             case GDK_KEY_KP_3:
             case GDK_KEY_KP_4:
             case GDK_KEY_KP_5:
-                notebook->set_current_page(event->keyval - GDK_KEY_KP_1);
+                notebook->set_current_page(keyval - GDK_KEY_KP_1);
                 return true;
             case GDK_KEY_1:
             case GDK_KEY_2:
             case GDK_KEY_3:
             case GDK_KEY_4:
             case GDK_KEY_5:
-                notebook->set_current_page(event->keyval - GDK_KEY_1);
+                notebook->set_current_page(keyval - GDK_KEY_1);
                 return true;
             case GDK_KEY_W:
             case GDK_KEY_Q:
@@ -226,7 +225,7 @@ bool MainWindow::on_key_press_event(GdkEventKey* event) {
                 return true;
         }
     }
-    return Gtk::Window::on_key_press_event(event);
+    return false;
 }
 
 MainWindow::~MainWindow() {
@@ -234,7 +233,7 @@ MainWindow::~MainWindow() {
     g_assert(config);
 
     int width, height;
-    get_size(width, height);
+    get_default_size(width, height);
     g_key_file_set_integer(config, "window", "width", width);
     g_key_file_set_integer(config, "window", "height", height);
     g_key_file_set_integer(config, "window", "sinkInputType", sinkInputTypeComboBox->get_active_row_number());
@@ -247,7 +246,7 @@ MainWindow::~MainWindow() {
     GError *err = NULL;
     gchar *filedata = g_key_file_to_data(config, &filelen, &err);
     if (err) {
-        show_error(_("Error saving preferences"));
+        show_error(this, _("Error saving preferences"));
         g_error_free(err);
         goto finish;
     }
@@ -256,7 +255,7 @@ MainWindow::~MainWindow() {
     g_free(filedata);
     if (err) {
         gchar* msg = g_strconcat(_("Error writing config file %s"), m_config_filename, NULL);
-        show_error(msg);
+        show_error(this, msg);
         g_free(msg);
         g_error_free(err);
         goto finish;
@@ -274,34 +273,20 @@ finish:
     }
 }
 
-static void set_icon_name_default(Gtk::Image *i, const char *name, Gtk::IconSize size) {
+static void set_icon_name_default(Gtk::Image *i, const char *name) {
+    /* We emulate the behavior of the GTK_ICON_LOOKUP_GENERIC_FALLBACK flag from Gtk3 */
     Glib::RefPtr<Gtk::IconTheme> theme;
-    Glib::RefPtr<Gdk::Pixbuf> pixbuf;
-    gint width = 24, height = 24;
-
-    Gtk::IconSize::lookup(size, width, height);
-    theme = Gtk::IconTheme::get_default();
-
-    try {
-        pixbuf = theme->load_icon(name, width, Gtk::ICON_LOOKUP_GENERIC_FALLBACK | Gtk::ICON_LOOKUP_FORCE_SIZE);
-    } catch (Glib::Error &e) {
-        /* Ignore errors. */
-    }
-
-    if (!pixbuf) {
-        try {
-            pixbuf = Gdk::Pixbuf::create_from_file(name);
-        } catch (Glib::FileError &e) {
-            /* Ignore errors. */
-        } catch (Gdk::PixbufError &e) {
-            /* Ignore errors. */
+    theme = Gtk::IconTheme::get_for_display(Gdk::Display::get_default());
+    std::string iconName(name);
+    while (!theme->has_icon(iconName.c_str())) {
+        size_t lastDashIndex = iconName.find_last_of("-");
+        if (lastDashIndex == std::string::npos) {
+            iconName = "gtk-missing-image";
+            break;
         }
+        iconName = iconName.substr(0,lastDashIndex);
     }
-
-    if (pixbuf) {
-        pixbuf = pixbuf->scale_simple(width, height, Gdk::INTERP_BILINEAR);
-        i->set(pixbuf);
-    }
+    i->set_from_icon_name(iconName.c_str());
 }
 
 static void updatePorts(DeviceWidget *w, std::map<Glib::ustring, PortInfo> &ports) {
@@ -365,7 +350,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
         w = cardWidgets[info.index];
     else {
         cardWidgets[info.index] = w = CardWidget::create();
-        cardsVBox->pack_start(*w, false, false, 0);
+        cardsVBox->append(*w);
         w->unreference();
         w->index = info.index;
         is_new = true;
@@ -382,7 +367,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-card");
 
     w->hasSinks = w->hasSources = false;
     profile_priorities.clear();
@@ -556,7 +541,7 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
     else {
         sinkWidgets[info.index] = w = SinkWidget::create(this);
         w->setChannelMap(info.channel_map, !!(info.flags & PA_SINK_DECIBEL_VOLUME));
-        sinksVBox->pack_start(*w, false, false, 0);
+        sinksVBox->append(*w);
         w->unreference();
         w->index = info.index;
         w->monitor_index = info.monitor_source;
@@ -580,7 +565,7 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-card", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-card");
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -630,7 +615,7 @@ static void read_callback(pa_stream *s, size_t length, void *userdata) {
     double v;
 
     if (pa_stream_peek(s, &data, &length) < 0) {
-        show_error(_("Failed to read data from stream"));
+        show_error(w, _("Failed to read data from stream"));
         return;
     }
 
@@ -675,7 +660,7 @@ pa_stream* MainWindow::createMonitorStreamForSource(uint32_t source_idx, uint32_
     snprintf(t, sizeof(t), "%u", source_idx);
 
     if (!(s = pa_stream_new(get_context(), _("Peak detect"), &ss, NULL))) {
-        show_error(_("Failed to create monitoring stream"));
+        show_error(this, _("Failed to create monitoring stream"));
         return NULL;
     }
 
@@ -690,7 +675,7 @@ pa_stream* MainWindow::createMonitorStreamForSource(uint32_t source_idx, uint32_
                                  (!showVolumeMetersCheckButton->get_active() ? PA_STREAM_START_CORKED : PA_STREAM_NOFLAGS));
 
     if (pa_stream_connect_record(s, t, &attr, flags) < 0) {
-        show_error(_("Failed to connect monitoring stream"));
+        show_error(this, _("Failed to connect monitoring stream"));
         pa_stream_unref(s);
         return NULL;
     }
@@ -722,7 +707,7 @@ void MainWindow::updateSource(const pa_source_info &info) {
     else {
         sourceWidgets[info.index] = w = SourceWidget::create(this);
         w->setChannelMap(info.channel_map, !!(info.flags & PA_SOURCE_DECIBEL_VOLUME));
-        sourcesVBox->pack_start(*w, false, false, 0);
+        sourcesVBox->append(*w);
         w->unreference();
         w->index = info.index;
         is_new = true;
@@ -748,7 +733,7 @@ void MainWindow::updateSource(const pa_source_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-input-microphone", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(w->iconImage, icon ? icon : "audio-input-microphone");
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -817,7 +802,7 @@ void MainWindow::setIconFromProplist(Gtk::Image *icon, pa_proplist *l, const cha
 
 finish:
 
-    set_icon_name_default(icon, t, Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    set_icon_name_default(icon, t);
 }
 
 void MainWindow::updateSinkInput(const pa_sink_input_info &info) {
@@ -840,7 +825,7 @@ void MainWindow::updateSinkInput(const pa_sink_input_info &info) {
     } else {
         sinkInputWidgets[info.index] = w = SinkInputWidget::create(this);
         w->setChannelMap(info.channel_map, true);
-        streamsVBox->pack_start(*w, false, false, 0);
+        streamsVBox->append(*w);
         w->unreference();
         w->index = info.index;
         w->clientIndex = info.client;
@@ -899,7 +884,7 @@ void MainWindow::updateSourceOutput(const pa_source_output_info &info) {
 #if HAVE_SOURCE_OUTPUT_VOLUMES
         w->setChannelMap(info.channel_map, true);
 #endif
-        recsVBox->pack_start(*w, false, false, 0);
+        recsVBox->append(*w);
         w->unreference();
         w->index = info.index;
         w->clientIndex = info.client;
@@ -996,7 +981,7 @@ bool MainWindow::createEventRoleWidget() {
     };
 
     eventRoleWidget = RoleWidget::create();
-    streamsVBox->pack_start(*eventRoleWidget, false, false, 0);
+    streamsVBox->append(*eventRoleWidget);
     eventRoleWidget->unreference();
     eventRoleWidget->role = "sink-input-by-media-role:event";
     eventRoleWidget->setChannelMap(cm, true);
@@ -1004,7 +989,7 @@ bool MainWindow::createEventRoleWidget() {
     eventRoleWidget->boldNameLabel->set_text("");
     eventRoleWidget->nameLabel->set_label(_("System Sounds"));
 
-    eventRoleWidget->iconImage->set_from_icon_name("multimedia-volume-control", Gtk::ICON_SIZE_SMALL_TOOLBAR);
+    eventRoleWidget->iconImage->set_from_icon_name("multimedia-volume-control");
 
     eventRoleWidget->device = "";
 
@@ -1292,7 +1277,7 @@ void MainWindow::removeSink(uint32_t index) {
     if (!sinkWidgets.count(index))
         return;
 
-    delete sinkWidgets[index];
+    sinksVBox->remove(*sinkWidgets[index]);
     sinkWidgets.erase(index);
     updateDeviceVisibility();
 }
@@ -1301,7 +1286,7 @@ void MainWindow::removeSource(uint32_t index) {
     if (!sourceWidgets.count(index))
         return;
 
-    delete sourceWidgets[index];
+    sourcesVBox->remove(*sourceWidgets[index]);
     sourceWidgets.erase(index);
     updateDeviceVisibility();
 }
@@ -1310,7 +1295,7 @@ void MainWindow::removeSinkInput(uint32_t index) {
     if (!sinkInputWidgets.count(index))
         return;
 
-    delete sinkInputWidgets[index];
+    streamsVBox->remove(*sinkInputWidgets[index]);
     sinkInputWidgets.erase(index);
     updateDeviceVisibility();
 }
@@ -1319,7 +1304,7 @@ void MainWindow::removeSourceOutput(uint32_t index) {
     if (!sourceOutputWidgets.count(index))
         return;
 
-    delete sourceOutputWidgets[index];
+    recsVBox->remove(*sourceOutputWidgets[index]);
     sourceOutputWidgets.erase(index);
     updateDeviceVisibility();
 }

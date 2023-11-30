@@ -25,7 +25,7 @@
 
 class MinimalStreamWidget;
 
-class ChannelWidget : public Gtk::EventBox {
+class ChannelWidget : public Gtk::Widget {
 public:
     ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
 
@@ -53,6 +53,7 @@ public:
     virtual void setBaseVolume(pa_volume_t);
 
 private:
+    pa_volume_t currentVolume;
     static ChannelWidget *createOne(MinimalStreamWidget *owner, int channelIndex, pa_channel_position channelPosition,
                                     bool can_decibel);
 };

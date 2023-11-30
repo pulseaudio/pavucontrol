@@ -25,7 +25,7 @@
 
 #define PEAKS_RATE 144
 
-class MinimalStreamWidget : public Gtk::VBox {
+class MinimalStreamWidget : public Gtk::Box {
 public:
     MinimalStreamWidget(BaseObjectType* cobject);
     virtual ~MinimalStreamWidget();
@@ -33,7 +33,7 @@ public:
     /* Subclass constructors are expected to initialize these variables.
      * MinimalStreamWidget can't initialize these, because the glade object
      * id's depend on the subclass type. */
-    Gtk::VBox *channelsVBox;
+    Gtk::Box *channelsVBox;
     Gtk::Label *nameLabel, *boldNameLabel;
     Gtk::Image *iconImage;
 

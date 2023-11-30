@@ -33,7 +33,7 @@ SourceWidget::SourceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
 SourceWidget* SourceWidget::create(MainWindow* mainWindow) {
     SourceWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "deviceWidget");
-    x->get_widget_derived("deviceWidget", w);
+    w = Gtk::Builder::get_widget_derived<SourceWidget>(x, "deviceWidget");
     w->init(mainWindow, "source");
     w->reference();
     return w;
@@ -43,7 +43,7 @@ void SourceWidget::executeVolumeUpdate() {
     pa_operation* o;
 
     if (!(o = pa_context_set_source_volume_by_index(get_context(), index, &volume, NULL, NULL))) {
-        show_error(_("pa_context_set_source_volume_by_index() failed"));
+        show_error(this, _("pa_context_set_source_volume_by_index() failed"));
         return;
     }
 
@@ -58,7 +58,7 @@ void SourceWidget::onMuteToggleButton() {
 
     pa_operation* o;
     if (!(o = pa_context_set_source_mute_by_index(get_context(), index, muteToggleButton->get_active(), NULL, NULL))) {
-        show_error(_("pa_context_set_source_mute_by_index() failed"));
+        show_error(this, _("pa_context_set_source_mute_by_index() failed"));
         return;
     }
 
@@ -72,7 +72,7 @@ void SourceWidget::onDefaultToggleButton() {
         return;
 
     if (!(o = pa_context_set_default_source(get_context(), name.c_str(), NULL, NULL))) {
-        show_error(_("pa_context_set_default_source() failed"));
+        show_error(this, _("pa_context_set_default_source() failed"));
         return;
     }
     pa_operation_unref(o);
@@ -94,7 +94,7 @@ void SourceWidget::onPortChange() {
       Glib::ustring port = row[portModel.name];
 
       if (!(o = pa_context_set_source_port_by_index(get_context(), index, port.c_str(), NULL, NULL))) {
-        show_error(_("pa_context_set_source_port_by_index() failed"));
+        show_error(this, _("pa_context_set_source_port_by_index() failed"));
         return;
       }
 

@@ -35,13 +35,13 @@ SinkInputWidget::SinkInputWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk
     directionLabel->set_label(txt = g_markup_printf_escaped("<i>%s</i>", _("on")));
     g_free(txt);
 
-    terminate.set_label(_("Terminate Playback"));
+    addKillMenu(_("Terminate Playback"));
 }
 
 SinkInputWidget* SinkInputWidget::create(MainWindow* mainWindow) {
     SinkInputWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "streamWidget");
-    x->get_widget_derived("streamWidget", w);
+    w = Gtk::Builder::get_widget_derived<SinkInputWidget>(x, "streamWidget");
     w->init(mainWindow);
     w->reference();
 
@@ -84,7 +84,7 @@ void SinkInputWidget::executeVolumeUpdate() {
     pa_operation* o;
 
     if (!(o = pa_context_set_sink_input_volume(get_context(), index, &volume, NULL, NULL))) {
-        show_error(_("pa_context_set_sink_input_volume() failed"));
+        show_error(this, _("pa_context_set_sink_input_volume() failed"));
         return;
     }
 
@@ -99,17 +99,17 @@ void SinkInputWidget::onMuteToggleButton() {
 
     pa_operation* o;
     if (!(o = pa_context_set_sink_input_mute(get_context(), index, muteToggleButton->get_active(), NULL, NULL))) {
-        show_error(_("pa_context_set_sink_input_mute() failed"));
+        show_error(this, _("pa_context_set_sink_input_mute() failed"));
         return;
     }
 
     pa_operation_unref(o);
 }
 
-void SinkInputWidget::onKill() {
+void SinkInputWidget::onKill(const Glib::VariantBase& parameter) {
     pa_operation* o;
     if (!(o = pa_context_kill_sink_input(get_context(), index, NULL, NULL))) {
-        show_error(_("pa_context_kill_sink_input() failed"));
+        show_error(this, _("pa_context_kill_sink_input() failed"));
         return;
     }
 

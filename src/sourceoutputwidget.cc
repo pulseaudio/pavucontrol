@@ -35,7 +35,7 @@ SourceOutputWidget::SourceOutputWidget(BaseObjectType* cobject, const Glib::RefP
     directionLabel->set_label(txt = g_markup_printf_escaped("<i>%s</i>", _("from")));
     g_free(txt);
 
-    terminate.set_label(_("Terminate Recording"));
+    addKillMenu(_("Terminate Recording"));
 
 #if !HAVE_SOURCE_OUTPUT_VOLUMES
     /* Source Outputs do not have volume controls in versions of PA < 1.0 */
@@ -47,7 +47,7 @@ SourceOutputWidget::SourceOutputWidget(BaseObjectType* cobject, const Glib::RefP
 SourceOutputWidget* SourceOutputWidget::create(MainWindow* mainWindow) {
     SourceOutputWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "streamWidget");
-    x->get_widget_derived("streamWidget", w);
+    w = Gtk::Builder::get_widget_derived<SourceOutputWidget>(x, "streamWidget");
     w->init(mainWindow);
     w->reference();
     return w;
@@ -90,7 +90,7 @@ void SourceOutputWidget::executeVolumeUpdate() {
     pa_operation* o;
 
     if (!(o = pa_context_set_source_output_volume(get_context(), index, &volume, NULL, NULL))) {
-        show_error(_("pa_context_set_source_output_volume() failed"));
+        show_error(this, _("pa_context_set_source_output_volume() failed"));
         return;
     }
 
@@ -105,7 +105,7 @@ void SourceOutputWidget::onMuteToggleButton() {
 
     pa_operation* o;
     if (!(o = pa_context_set_source_output_mute(get_context(), index, muteToggleButton->get_active(), NULL, NULL))) {
-        show_error(_("pa_context_set_source_output_mute() failed"));
+        show_error(this, _("pa_context_set_source_output_mute() failed"));
         return;
     }
 
@@ -113,10 +113,10 @@ void SourceOutputWidget::onMuteToggleButton() {
 }
 #endif
 
-void SourceOutputWidget::onKill() {
+void SourceOutputWidget::onKill(const Glib::VariantBase& parameter) {
     pa_operation* o;
     if (!(o = pa_context_kill_source_output(get_context(), index, NULL, NULL))) {
-        show_error(_("pa_context_kill_source_output() failed"));
+        show_error(this, _("pa_context_kill_source_output() failed"));
         return;
     }
 

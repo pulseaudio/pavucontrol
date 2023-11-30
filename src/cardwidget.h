@@ -34,13 +34,12 @@ public:
       std::vector<Glib::ustring> profiles;
 };
 
-class CardWidget : public Gtk::VBox {
+class CardWidget : public Gtk::Box {
 public:
     CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
     static CardWidget* create();
 
     Gtk::Label *nameLabel;
-    Gtk::Menu menu;
     Gtk::Image *iconImage;
     Glib::ustring name;
     std::string pulse_card_name;

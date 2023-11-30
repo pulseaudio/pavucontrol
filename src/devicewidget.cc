@@ -37,29 +37,45 @@ DeviceWidget::DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     mDigital(false) {
 
     /* MinimalStreamWidget member variables. */
-    x->get_widget("deviceChannelsVBox", channelsVBox);
-    x->get_widget("deviceNameLabel", nameLabel);
-    x->get_widget("deviceBoldNameLabel", boldNameLabel);
-    x->get_widget("deviceIconImage", iconImage);
+    channelsVBox = x->get_widget<Gtk::Box>("deviceChannelsVBox");
+    nameLabel = x->get_widget<Gtk::Label>("deviceNameLabel");
+    boldNameLabel = x->get_widget<Gtk::Label>("deviceBoldNameLabel");
+    iconImage= x->get_widget<Gtk::Image>("deviceIconImage");
 
-    x->get_widget("deviceLockToggleButton", lockToggleButton);
-    x->get_widget("deviceMuteToggleButton", muteToggleButton);
-    x->get_widget("defaultToggleButton", defaultToggleButton);
-    x->get_widget("portSelect", portSelect);
-    x->get_widget("portList", portList);
-    x->get_widget("advancedOptions", advancedOptions);
-    x->get_widget("offsetSelect", offsetSelect);
-    x->get_widget("offsetButton", offsetButton);
+    lockToggleButton = x->get_widget<Gtk::ToggleButton>("deviceLockToggleButton");
+    muteToggleButton = x->get_widget<Gtk::ToggleButton>("deviceMuteToggleButton");
+    defaultToggleButton= x->get_widget<Gtk::ToggleButton>("defaultToggleButton");
+    portSelect = x->get_widget<Gtk::Box>("portSelect");
+    portList = x->get_widget<Gtk::ComboBox>("portList");
+    advancedOptions = x->get_widget<Gtk::Expander>("advancedOptions");
+    offsetSelect = x->get_widget<Gtk::Box>("offsetSelect");
+    offsetButton = x->get_widget<Gtk::SpinButton>("offsetButton");
 
-    this->signal_button_press_event().connect(sigc::mem_fun(*this, &DeviceWidget::onContextTriggerEvent));
     muteToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &DeviceWidget::onMuteToggleButton));
     lockToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &DeviceWidget::onLockToggleButton));
     defaultToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &DeviceWidget::onDefaultToggleButton));
 
-    rename.set_label(_("Rename Device..."));
-    rename.signal_activate().connect(sigc::mem_fun(*this, &DeviceWidget::renamePopup));
-    contextMenu.append(rename);
-    contextMenu.show_all();
+    auto gesture = Gtk::GestureClick::create();
+    gesture->set_button(3);
+    gesture->set_exclusive(true);
+    gesture->signal_pressed().connect(sigc::mem_fun(*this, &DeviceWidget::onContextTriggerEvent));
+    this->add_controller(gesture);
+
+    const std::string actionName = "rename", groupName="devicewidget";
+    auto action = Gio::SimpleAction::create(actionName);
+    action->set_enabled(true);
+    action->signal_activate().connect(sigc::mem_fun(*this, &DeviceWidget::openRenamePopup));
+
+    auto group = Gio::SimpleActionGroup::create();
+    group->add_action(action);
+
+    insert_action_group(groupName, group);
+
+    auto menuModel = Gio::Menu::create();
+    menuModel->append(_("Rename Device..."), groupName + "." + actionName);
+    contextMenu.set_menu_model(menuModel);
+    contextMenu.set_parent(*this);
+
 
     treeModel = Gtk::ListStore::create(portModel);
     portList->set_model(treeModel);
@@ -88,7 +104,7 @@ void DeviceWidget::setChannelMap(const pa_channel_map &m, bool can_decibel) {
 
     for (int i = 0; i < m.channels; i++) {
         ChannelWidget *cw = channelWidgets[i];
-        channelsVBox->pack_start(*cw, false, false, 0);
+        channelsVBox->prepend(*cw);
         cw->unreference();
     }
 
@@ -160,7 +176,7 @@ void DeviceWidget::onOffsetChange() {
 
     if (!(o = pa_context_set_port_latency_offset(get_context(),
             card_name.c_str(), activePort.c_str(), offset, NULL, NULL))) {
-        show_error(_("pa_context_set_port_latency_offset() failed"));
+        show_error(this, _("pa_context_set_port_latency_offset() failed"));
         return;
     }
     pa_operation_unref(o);
@@ -225,55 +241,64 @@ void DeviceWidget::prepareMenu() {
     updateAdvancedOptionsVisibility();
 }
 
-bool DeviceWidget::onContextTriggerEvent(GdkEventButton* event) {
-    if (GDK_BUTTON_PRESS == event->type && 3 == event->button) {
-        contextMenu.popup_at_pointer((GdkEvent*)event);
-        return true;
-    }
 
-    return false;
+void DeviceWidget::onContextTriggerEvent(gint n_press, gdouble x, gdouble y) {
+    if (n_press == 1) {
+        contextMenu.set_pointing_to(Gdk::Rectangle {(int) x, (int) y, 0 , 0});
+        contextMenu.popup();
+    }
 }
 
-void DeviceWidget::renamePopup() {
+void DeviceWidget::openRenamePopup(const Glib::VariantBase& parameter) {
     if (updating)
         return;
 
     if (!mpMainWindow->canRenameDevices) {
-        Gtk::MessageDialog dialog(
-            *mpMainWindow,
-            _("Sorry, but device renaming is not supported."),
-            false,
-            Gtk::MESSAGE_WARNING,
-            Gtk::BUTTONS_OK,
-            true);
-        dialog.set_secondary_text(_("You need to load module-device-manager in the PulseAudio server in order to rename devices"));
-        dialog.run();
+        auto dialog = Gtk::AlertDialog::create(_("Sorry, but device renaming is not supported."));
+        dialog->set_modal(true);
+        dialog->set_detail(_("You need to load module-device-manager in the PulseAudio server in order to rename devices"));
+        dialog->show(*mpMainWindow);
         return;
     }
 
-    Gtk::Dialog* dialog;
-    Gtk::Entry* renameText;
-
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "renameDialog");
-    x->get_widget("renameDialog", dialog);
-    x->get_widget("renameText", renameText);
+    gchar *key = g_markup_printf_escaped("%s:%s", mDeviceType.c_str(), name.c_str());
+    RenameWindow* renameDialog = Gtk::Builder::get_widget_derived<RenameWindow>(x, "renameDialog", description.c_str(), key);
+    renameDialog->set_transient_for(*mpMainWindow);
 
-    renameText->set_text(description);
-    dialog->add_button(_("_Cancel"), Gtk::RESPONSE_CANCEL);
-    dialog->add_button(_("_OK"), Gtk::RESPONSE_OK);
-    dialog->set_default_response(Gtk::RESPONSE_OK);
-    if (Gtk::RESPONSE_OK == dialog->run()) {
-        pa_operation* o;
-        gchar *key = g_markup_printf_escaped("%s:%s", mDeviceType.c_str(), name.c_str());
+    renameDialog->present();
+}
 
-        if (!(o = pa_ext_device_manager_set_device_description(get_context(), key, renameText->get_text().c_str(), NULL, NULL))) {
-            show_error(_("pa_ext_device_manager_write() failed"));
-            return;
-        }
-        pa_operation_unref(o);
-        g_free(key);
+RenameWindow::RenameWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x, const gchar* name, const gchar* key) :
+    Gtk::ApplicationWindow(cobject),
+    deviceKey(key){
+
+    renameText = x->get_widget<Gtk::Entry>("renameText");
+    renameText->set_text(name);
+
+    Gtk::Button* renameButton = x->get_widget<Gtk::Button>("renameButton");
+    set_default_widget(*renameButton);
+
+    auto renameAction = Gio::SimpleAction::create("rename");
+    renameAction->set_enabled(true);
+    renameAction->signal_activate().connect(sigc::mem_fun(*this, &RenameWindow::renamePopup));
+
+    add_action(renameAction);
+}
+
+
+
+void RenameWindow::renamePopup(const Glib::VariantBase& parameter){
+    pa_operation* o;
+    auto name = renameText->get_text();
+
+    if (!(o = pa_ext_device_manager_set_device_description(get_context(), deviceKey, name.c_str(), NULL, NULL))) {
+        show_error(this, _("pa_ext_device_manager_write() failed"));
+        return;
     }
-    delete dialog;
+    pa_operation_unref(o);
+    g_free((char*)deviceKey);
+    delete this;
 }
 
 void DeviceWidget::updateAdvancedOptionsVisibility() {

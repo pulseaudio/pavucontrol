@@ -34,25 +34,19 @@ StreamWidget::StreamWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
     mpMainWindow(NULL) {
 
     /* MinimalStreamWidget member variables. */
-    x->get_widget("streamChannelsVBox", channelsVBox);
-    x->get_widget("streamNameLabel", nameLabel);
-    x->get_widget("streamBoldNameLabel", boldNameLabel);
-    x->get_widget("streamIconImage", iconImage);
+    channelsVBox = x->get_widget<Gtk::Box>("streamChannelsVBox");
+    nameLabel = x->get_widget<Gtk::Label>("streamNameLabel");
+    boldNameLabel = x->get_widget<Gtk::Label>("streamBoldNameLabel");
+    iconImage = x->get_widget<Gtk::Image>("streamIconImage");
 
-    x->get_widget("streamLockToggleButton", lockToggleButton);
-    x->get_widget("streamMuteToggleButton", muteToggleButton);
-    x->get_widget("directionLabel", directionLabel);
-    x->get_widget("deviceComboBox", deviceComboBox);
+    lockToggleButton = x->get_widget<Gtk::ToggleButton>("streamLockToggleButton");
+    muteToggleButton = x->get_widget<Gtk::ToggleButton>("streamMuteToggleButton");
+    directionLabel = x->get_widget<Gtk::Label>("directionLabel");
+    deviceComboBox = x->get_widget<Gtk::ComboBoxText>("deviceComboBox");
 
-    this->signal_button_press_event().connect(sigc::mem_fun(*this, &StreamWidget::onContextTriggerEvent));
     muteToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &StreamWidget::onMuteToggleButton));
     lockToggleButton->signal_clicked().connect(sigc::mem_fun(*this, &StreamWidget::onLockToggleButton));
     deviceComboBox->signal_changed().connect(sigc::mem_fun(*this, &StreamWidget::onDeviceComboBoxChanged));
-
-    terminate.set_label(_("Terminate"));
-    terminate.signal_activate().connect(sigc::mem_fun(*this, &StreamWidget::onKill));
-    contextMenu.append(terminate);
-    contextMenu.show_all();
 
     for (unsigned i = 0; i < PA_CHANNELS_MAX; i++)
         channelWidgets[i] = NULL;
@@ -64,12 +58,35 @@ void StreamWidget::init(MainWindow* mainWindow) {
     MinimalStreamWidget::init();
 }
 
-bool StreamWidget::onContextTriggerEvent(GdkEventButton* event) {
-    if (GDK_BUTTON_PRESS == event->type && 3 == event->button) {
-        contextMenu.popup_at_pointer((GdkEvent*)event);
-        return true;
+void StreamWidget::addKillMenu(const char* killLabel) {
+    auto gesture = Gtk::GestureClick::create();
+    gesture->set_button(3);
+    gesture->set_exclusive(true);
+    gesture->signal_pressed().connect(sigc::mem_fun(*this, &StreamWidget::onContextTriggerEvent));
+    this->add_controller(gesture);
+
+    const std::string actionName = "kill", groupName="streamwidget";
+    auto action = Gio::SimpleAction::create(actionName);
+    action->set_enabled(true);
+    action->signal_activate().connect(sigc::mem_fun(*this, &StreamWidget::onKill));
+
+    auto group = Gio::SimpleActionGroup::create();
+    group->add_action(action);
+
+    insert_action_group(groupName, group);
+
+    auto menuModel = Gio::Menu::create();
+    menuModel->append(killLabel, groupName + "." + actionName);
+    contextMenu.set_menu_model(menuModel);
+    contextMenu.set_parent(*this);
+}
+
+
+void StreamWidget::onContextTriggerEvent(gint n_press, gdouble x, gdouble y) {
+    if (n_press == 1) {
+        contextMenu.set_pointing_to(Gdk::Rectangle {(int) x, (int) y, 0 , 0});
+        contextMenu.popup();
     }
-    return false;
 }
 
 void StreamWidget::setChannelMap(const pa_channel_map &m, bool can_decibel) {
@@ -79,7 +96,7 @@ void StreamWidget::setChannelMap(const pa_channel_map &m, bool can_decibel) {
 
     for (int i = 0; i < m.channels; i++) {
         ChannelWidget *cw = channelWidgets[i];
-        channelsVBox->pack_start(*cw, false, false, 0);
+        channelsVBox->prepend(*cw);
         cw->unreference();
     }
 
@@ -144,7 +161,7 @@ bool StreamWidget::timeoutEvent() {
 void StreamWidget::executeVolumeUpdate() {
 }
 
-void StreamWidget::onKill() {
+void StreamWidget::onKill(const Glib::VariantBase& parameter) {
 }
 
 void StreamWidget::onDeviceComboBoxChanged() {

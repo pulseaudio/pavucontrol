@@ -29,6 +29,7 @@
 #include <libintl.h>
 
 #include <gtkmm.h>
+#include <gtkmm/buildable.h>
 
 #include <pulse/pulseaudio.h>
 #include <pulse/glib-mainloop.h>
@@ -74,7 +75,7 @@ enum SourceType {
 #include "mainwindow.h"
 
 pa_context* get_context(void);
-void show_error(const char *txt);
+void show_error(Gtk::Widget *w, const char *txt);
 
 MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool retry, int tab_number);
 

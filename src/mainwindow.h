@@ -29,6 +29,8 @@ class MainWindow;
 #  include <pulse/ext-device-restore.h>
 #endif
 
+#include <canberra.h>
+
 #include <unordered_map>
 
 class CardWidget;
@@ -76,7 +78,7 @@ public:
     void setConnectingMessage(const char *string = NULL);
 
     Gtk::Notebook *notebook;
-    Gtk::VBox *streamsVBox, *recsVBox, *sinksVBox, *sourcesVBox, *cardsVBox;
+    Gtk::Box *streamsVBox, *recsVBox, *sinksVBox, *sourcesVBox, *cardsVBox;
     Gtk::Label *noStreamsLabel, *noRecsLabel, *noSinksLabel, *noSourcesLabel, *noCardsLabel, *connectingLabel;
     Gtk::ComboBox *sinkInputTypeComboBox, *sourceOutputTypeComboBox, *sinkTypeComboBox, *sourceTypeComboBox;
     Gtk::CheckButton *showVolumeMetersCheckButton;
@@ -116,9 +118,11 @@ public:
 
     bool canRenameDevices;
 
+    ca_context *canberraContext;
+
 protected:
     virtual void on_realize();
-    virtual bool on_key_press_event(GdkEventKey* event);
+    virtual bool on_key_press_event(guint keyval, guint keycode, Gdk::ModifierType state);
 
 private:
     gboolean m_connected;

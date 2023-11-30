@@ -53,21 +53,21 @@ public:
 
     virtual void onMuteToggleButton();
     virtual void onLockToggleButton();
-    virtual bool onContextTriggerEvent(GdkEventButton*);
+    virtual void onContextTriggerEvent(gint n_press, gdouble x, gdouble y);
 
     sigc::connection timeoutConnection;
 
     bool timeoutEvent();
 
     virtual void executeVolumeUpdate();
-    virtual void onKill();
+    virtual void onKill(const Glib::VariantBase& parameter);
     virtual void onDeviceComboBoxChanged();
 
 protected:
     MainWindow* mpMainWindow;
 
-    Gtk::Menu contextMenu;
-    Gtk::MenuItem terminate;
+    Gtk::PopoverMenu contextMenu;
+    void addKillMenu(const char* killLabel);
 };
 
 #endif

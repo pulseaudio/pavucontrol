@@ -1,16 +1,16 @@
 project('pavucontrol', 'cpp',
         version : '5.0',
         meson_version : '>= 0.50.0',
-        default_options : [ 'c_std=gnu11', 'cpp_std=c++11' ]
+        default_options : [ 'c_std=gnu11', 'cpp_std=c++17' ]
         )
 
 with_lynx = get_option('lynx')
 
 cpp = meson.get_compiler('cpp')
 
-gtkmm_dep = dependency('gtkmm-3.0', version : '>= 3.0', required : true)
+gtkmm_dep = dependency('gtkmm-4.0', version : '>= 4.0', required : true)
 sigcpp_dep = dependency('sigc++-2.0', required : true)
-canberragtk_dep = dependency('libcanberra-gtk3', version : '>= 0.16', required : true)
+canberragtk_dep = dependency('libcanberra', version : '>= 0.16', required : true)
 
 libpulse_dep = dependency('libpulse', version : '>= 5.0', required : true)
 libpulsemlglib_dep = dependency('libpulse-mainloop-glib', version : '>= 0.9.16', required : true)

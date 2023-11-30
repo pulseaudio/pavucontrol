@@ -30,14 +30,14 @@
 /*** ChannelWidget ***/
 
 ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
-    Gtk::EventBox(cobject),
+    Gtk::Widget(cobject),
     can_decibel(false),
     volumeScaleEnabled(true),
     last(false) {
 
-    x->get_widget("channelLabel", channelLabel);
-    x->get_widget("volumeLabel", volumeLabel);
-    x->get_widget("volumeScale", volumeScale);
+    channelLabel = x->get_widget<Gtk::Label>("channelLabel");
+    volumeLabel = x->get_widget<Gtk::Label>("volumeLabel");
+    volumeScale = x->get_widget<Gtk::Scale>("volumeScale");
 
     volumeScale->set_range((double)PA_VOLUME_MUTED, (double)PA_VOLUME_UI_MAX);
     volumeScale->set_value((double)PA_VOLUME_NORM);
@@ -52,7 +52,7 @@ ChannelWidget* ChannelWidget::createOne(MinimalStreamWidget *owner, int channelI
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create();
     x->add_from_file(GLADE_FILE, "adjustment1");
     x->add_from_file(GLADE_FILE, "channelWidget");
-    x->get_widget_derived("channelWidget", w);
+    w = Gtk::Builder::get_widget_derived<ChannelWidget>(x, "channelWidget");
     w->reference();
 
     w->channel = channelIndex;
@@ -75,8 +75,8 @@ void ChannelWidget::create(MinimalStreamWidget *owner, const pa_channel_map &m, 
         Gtk::Requisition minimumSize;
         Gtk::Requisition naturalSize;
         widgets[i]->channelLabel->get_preferred_size(minimumSize, naturalSize);
-        if (naturalSize.width > maxLabelWidth)
-            maxLabelWidth = naturalSize.width;
+        if (naturalSize.get_width() > maxLabelWidth)
+            maxLabelWidth = naturalSize.get_width();
     }
 
     widgets[m.channels - 1]->last = true;
@@ -108,6 +108,7 @@ void ChannelWidget::setVolume(pa_volume_t volume) {
 
     volumeScaleEnabled = false;
     volumeScale->set_value(volume > PA_VOLUME_UI_MAX ? PA_VOLUME_UI_MAX : volume);
+    currentVolume = volumeScale->get_value();
     volumeScaleEnabled = true;
 }
 
@@ -120,11 +121,12 @@ void ChannelWidget::onVolumeScaleValueChanged() {
         return;
 
     pa_volume_t volume = (pa_volume_t) volumeScale->get_value();
-    minimalStreamWidget->updateChannelVolume(channel, volume);
+    if (volume != currentVolume)
+        minimalStreamWidget->updateChannelVolume(channel, volume);
 }
 
 void ChannelWidget::set_sensitive(bool enabled) {
-    Gtk::EventBox::set_sensitive(enabled);
+    Gtk::Widget::set_sensitive(enabled);
 
     channelLabel->set_sensitive(enabled);
     volumeLabel->set_sensitive(enabled);

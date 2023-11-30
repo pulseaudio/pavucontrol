@@ -24,7 +24,7 @@
 
 #include "sinkwidget.h"
 
-#include <canberra-gtk.h>
+#include <canberra.h>
 #if HAVE_EXT_DEVICE_RESTORE_API
 #  include <pulse/format.h>
 #  include <pulse/ext-device-restore.h>
@@ -37,35 +37,35 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 #if HAVE_EXT_DEVICE_RESTORE_API
     uint8_t i = 0;
 
-    x->get_widget("encodingSelect", encodingSelect);
+    encodingSelect = x->get_widget<Gtk::Grid>("encodingSelect");
 
     encodings[i].encoding = PA_ENCODING_PCM;
-    x->get_widget("encodingFormatPCM", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatPCM");
     encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
 
     ++i;
     encodings[i].encoding = PA_ENCODING_AC3_IEC61937;
-    x->get_widget("encodingFormatAC3", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatAC3");
     encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
 
     ++i;
     encodings[i].encoding = PA_ENCODING_EAC3_IEC61937;
-    x->get_widget("encodingFormatEAC3", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatEAC3");
     encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
 
     ++i;
     encodings[i].encoding = PA_ENCODING_MPEG_IEC61937;
-    x->get_widget("encodingFormatMPEG", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatMPEG");
     encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
 
     ++i;
     encodings[i].encoding = PA_ENCODING_DTS_IEC61937;
-    x->get_widget("encodingFormatDTS", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatDTS");
     encodings[i].widget->signal_toggled().connect(sigc::mem_fun(*this, &SinkWidget::onEncodingsChange));
 
     ++i;
     encodings[i].encoding = PA_ENCODING_INVALID;
-    x->get_widget("encodingFormatAAC", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatAAC");
     encodings[i].widget->set_sensitive(false);
 #ifdef PA_ENCODING_MPEG2_AAC_IEC61937
     if (pa_context_get_server_protocol_version(get_context()) >= 28) {
@@ -76,7 +76,7 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 #endif
     ++i;
     encodings[i].encoding = PA_ENCODING_INVALID;
-    x->get_widget("encodingFormatTRUEHD", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatTRUEHD");
     encodings[i].widget->set_sensitive(false);
 #ifdef PA_ENCODING_TRUEHD_IEC61937
     if (pa_context_get_server_protocol_version(get_context()) >= 33) {
@@ -87,7 +87,7 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 #endif
     ++i;
     encodings[i].encoding = PA_ENCODING_INVALID;
-    x->get_widget("encodingFormatDTSHD", encodings[i].widget);
+    encodings[i].widget = x->get_widget<Gtk::CheckButton>("encodingFormatDTSHD");
     encodings[i].widget->set_sensitive(false);
 #ifdef PA_ENCODING_DTSHD_IEC61937
     if (pa_context_get_server_protocol_version(get_context()) >= 33) {
@@ -102,7 +102,7 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 SinkWidget* SinkWidget::create(MainWindow* mainWindow) {
     SinkWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "deviceWidget");
-    x->get_widget_derived("deviceWidget", w);
+    w = Gtk::Builder::get_widget_derived<SinkWidget>(x, "deviceWidget");
     w->init(mainWindow, "sink");
     w->reference();
     return w;
@@ -114,28 +114,29 @@ void SinkWidget::executeVolumeUpdate() {
     int playing = 0;
 
     if (!(o = pa_context_set_sink_volume_by_index(get_context(), index, &volume, NULL, NULL))) {
-        show_error(_("pa_context_set_sink_volume_by_index() failed"));
+        show_error(this, _("pa_context_set_sink_volume_by_index() failed"));
         return;
     }
 
     pa_operation_unref(o);
 
-    ca_context_playing(ca_gtk_context_get(), 2, &playing);
+    snprintf(dev, sizeof(dev), "%lu", (unsigned long) index);
+
+    ca_context_playing(mpMainWindow->canberraContext, 2, &playing);
     if (playing)
         return;
 
-    snprintf(dev, sizeof(dev), "%lu", (unsigned long) index);
-    ca_context_change_device(ca_gtk_context_get(), dev);
+    ca_context_change_device(mpMainWindow->canberraContext, dev);
 
-    ca_gtk_play_for_widget(GTK_WIDGET(gobj()),
-                           2,
-                           CA_PROP_EVENT_DESCRIPTION, _("Volume Control Feedback Sound"),
-                           CA_PROP_EVENT_ID, "audio-volume-change",
-                           CA_PROP_CANBERRA_CACHE_CONTROL, "permanent",
-                           CA_PROP_CANBERRA_ENABLE, "1",
-                           NULL);
+    ca_context_play(mpMainWindow->canberraContext,
+                     2,
+                     CA_PROP_EVENT_DESCRIPTION, _("Volume Control Feedback Sound"),
+                     CA_PROP_EVENT_ID, "audio-volume-change",
+                     CA_PROP_CANBERRA_CACHE_CONTROL, "permanent",
+                     CA_PROP_CANBERRA_ENABLE, "1",
+                     NULL);
 
-    ca_context_change_device(ca_gtk_context_get(), NULL);
+    ca_context_change_device(mpMainWindow->canberraContext, NULL);
 }
 
 void SinkWidget::onMuteToggleButton() {
@@ -146,7 +147,7 @@ void SinkWidget::onMuteToggleButton() {
 
     pa_operation* o;
     if (!(o = pa_context_set_sink_mute_by_index(get_context(), index, muteToggleButton->get_active(), NULL, NULL))) {
-        show_error(_("pa_context_set_sink_mute_by_index() failed"));
+        show_error(this, _("pa_context_set_sink_mute_by_index() failed"));
         return;
     }
 
@@ -160,7 +161,7 @@ void SinkWidget::onDefaultToggleButton() {
         return;
 
     if (!(o = pa_context_set_default_sink(get_context(), name.c_str(), NULL, NULL))) {
-        show_error(_("pa_context_set_default_sink() failed"));
+        show_error(this, _("pa_context_set_default_sink() failed"));
         return;
     }
     pa_operation_unref(o);
@@ -180,7 +181,7 @@ void SinkWidget::onPortChange() {
             Glib::ustring port = row[portModel.name];
 
             if (!(o = pa_context_set_sink_port_by_index(get_context(), index, port.c_str(), NULL, NULL))) {
-                show_error(_("pa_context_set_sink_port_by_index() failed"));
+                show_error(this, _("pa_context_set_sink_port_by_index() failed"));
                 return;
             }
 
@@ -222,7 +223,7 @@ void SinkWidget::onEncodingsChange() {
     }
 
     if (!(o = pa_ext_device_restore_save_formats(get_context(), PA_DEVICE_TYPE_SINK, index, n_formats, formats, NULL, NULL))) {
-        show_error(_("pa_ext_device_restore_save_sink_formats() failed"));
+        show_error(this, _("pa_ext_device_restore_save_sink_formats() failed"));
         free(formats);
         return;
     }

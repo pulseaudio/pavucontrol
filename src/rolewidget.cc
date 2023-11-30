@@ -39,13 +39,9 @@ RoleWidget::RoleWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 RoleWidget* RoleWidget::create() {
     RoleWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "streamWidget");
-    x->get_widget_derived("streamWidget", w);
+    w = Gtk::Builder::get_widget_derived<RoleWidget>(x, "streamWidget");
     w->reference();
     return w;
-}
-
-bool RoleWidget::onContextTriggerEvent(GdkEventButton*) {
-    return false;
 }
 
 void RoleWidget::onMuteToggleButton() {
@@ -69,7 +65,7 @@ void RoleWidget::executeVolumeUpdate() {
 
     pa_operation* o;
     if (!(o = pa_ext_stream_restore_write(get_context(), PA_UPDATE_REPLACE, &info, 1, TRUE, NULL, NULL))) {
-        show_error(_("pa_ext_stream_restore_write() failed"));
+        show_error(this, _("pa_ext_stream_restore_write() failed"));
         return;
     }
 

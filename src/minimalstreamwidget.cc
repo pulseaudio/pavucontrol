@@ -26,7 +26,7 @@
 
 /*** MinimalStreamWidget ***/
 MinimalStreamWidget::MinimalStreamWidget(BaseObjectType* cobject) :
-    Gtk::VBox(cobject),
+    Gtk::Box(cobject),
     channelsVBox(NULL),
     nameLabel(NULL),
     boldNameLabel(NULL),
@@ -53,7 +53,7 @@ void MinimalStreamWidget::init() {
      * in the constructor. */
 
     peakProgressBar.set_size_request(-1, 10);
-    channelsVBox->pack_end(peakProgressBar, false, false);
+    channelsVBox->append(peakProgressBar);
 
     /* XXX: Why is the peak meter hidden by default? Maybe the idea is that if
      * setting up the monitoring stream fails for whatever reason, then we
@@ -64,20 +64,19 @@ void MinimalStreamWidget::init() {
 #define DECAY_STEP (1.0 / PEAKS_RATE)
 
 void MinimalStreamWidget::updatePeak(double v) {
-
     if (lastPeak >= DECAY_STEP)
         if (v < lastPeak - DECAY_STEP)
             v = lastPeak - DECAY_STEP;
 
     lastPeak = v;
 
-    if (v >= 0) {
-        peakProgressBar.set_sensitive(TRUE);
-        peakProgressBar.set_fraction(v);
-    } else {
-        peakProgressBar.set_sensitive(FALSE);
-        peakProgressBar.set_fraction(0);
-    }
+      if (v >= 0) {
+          peakProgressBar.set_sensitive(TRUE);
+          peakProgressBar.set_fraction(v);
+      } else {
+          peakProgressBar.set_sensitive(FALSE);
+          peakProgressBar.set_fraction(0);
+      }
 
     enableVolumeMeter();
 }

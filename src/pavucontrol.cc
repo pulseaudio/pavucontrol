@@ -29,8 +29,6 @@
 #include <json-glib/json-glib.h>
 #endif
 
-#include <canberra-gtk.h>
-
 #include "pavucontrol.h"
 #include "i18n.h"
 #include "minimalstreamwidget.h"
@@ -58,15 +56,27 @@ static int tab_number = 0;
 static bool retry = false;
 static int reconnect_timeout = 1;
 
-void show_error(const char *txt) {
+void show_error_finish (const Glib::RefPtr<Gio::AsyncResult>& result) {
+    PavuApplication::get_instance().quit();
+}
+
+void show_error(Gtk::Widget* widget, const char *txt) {
+    Gtk::Root *root = widget->get_root();
     char buf[256];
 
     snprintf(buf, sizeof(buf), "%s: %s", txt, pa_strerror(pa_context_errno(context)));
 
-    Gtk::MessageDialog dialog(buf, false, Gtk::MESSAGE_ERROR, Gtk::BUTTONS_CLOSE, true);
-    dialog.run();
-
-    PavuApplication::get_instance().quit();
+    auto dialog = Gtk::AlertDialog::create(buf);
+    dialog->set_modal(true);
+    if (GTK_IS_WINDOW(root->gobj())) {
+        GtkWindow* w = (GtkWindow*) root->gobj();
+        Gtk::Window* window = Glib::wrap(w);
+        window->present();
+        dialog->choose(*window, sigc::ptr_fun(show_error_finish));
+    }
+    else {
+        dialog->choose(sigc::ptr_fun(show_error_finish));
+    }
 }
 
 static void dec_outstanding(MainWindow *w) {
@@ -74,7 +84,7 @@ static void dec_outstanding(MainWindow *w) {
         return;
 
     if (--n_outstanding <= 0) {
-        w->get_window()->set_cursor();
+        w->set_cursor(Gdk::Cursor::create("default"));;
         w->setConnectionState(true);
     }
 }
@@ -355,7 +365,7 @@ void card_cb(pa_context *c, const pa_card_info *i, int eol, void *userdata) {
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Card callback failure"));
+        show_error(w, _("Card callback failure"));
         return;
     }
 
@@ -383,7 +393,7 @@ void sink_cb(pa_context *c, const pa_sink_info *i, int eol, void *userdata) {
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Sink callback failure"));
+        show_error(w, _("Sink callback failure"));
         return;
     }
 
@@ -407,7 +417,7 @@ void source_cb(pa_context *, const pa_source_info *i, int eol, void *userdata) {
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Source callback failure"));
+        show_error(w, _("Source callback failure"));
         return;
     }
 
@@ -426,7 +436,7 @@ void sink_input_cb(pa_context *, const pa_sink_input_info *i, int eol, void *use
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Sink input callback failure"));
+        show_error(w, _("Sink input callback failure"));
         return;
     }
 
@@ -445,7 +455,7 @@ void source_output_cb(pa_context *, const pa_source_output_info *i, int eol, voi
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Source output callback failure"));
+        show_error(w, _("Source output callback failure"));
         return;
     }
 
@@ -475,7 +485,7 @@ void client_cb(pa_context *, const pa_client_info *i, int eol, void *userdata) {
         if (pa_context_errno(context) == PA_ERR_NOENTITY)
             return;
 
-        show_error(_("Client callback failure"));
+        show_error(w, _("Client callback failure"));
         return;
     }
 
@@ -491,7 +501,7 @@ void server_info_cb(pa_context *, const pa_server_info *i, void *userdata) {
     MainWindow *w = static_cast<MainWindow*>(userdata);
 
     if (!i) {
-        show_error(_("Server info callback failure"));
+        show_error(w, _("Server info callback failure"));
         return;
     }
 
@@ -527,7 +537,7 @@ static void ext_stream_restore_subscribe_cb(pa_context *c, void *userdata) {
     pa_operation *o;
 
     if (!(o = pa_ext_stream_restore_read(c, ext_stream_restore_read_cb, w))) {
-        show_error(_("pa_ext_stream_restore_read() failed"));
+        show_error(w, _("pa_ext_stream_restore_read() failed"));
         return;
     }
 
@@ -566,7 +576,7 @@ static void ext_device_restore_subscribe_cb(pa_context *c, pa_device_type_t type
         return;
 
     if (!(o = pa_ext_device_restore_read_formats(c, type, idx, ext_device_restore_read_cb, w))) {
-        show_error(_("pa_ext_device_restore_read_sink_formats() failed"));
+        show_error(w, _("pa_ext_device_restore_read_sink_formats() failed"));
         return;
     }
 
@@ -603,7 +613,7 @@ static void ext_device_manager_subscribe_cb(pa_context *c, void *userdata) {
     pa_operation *o;
 
     if (!(o = pa_ext_device_manager_read(c, ext_device_manager_read_cb, w))) {
-        show_error(_("pa_ext_device_manager_read() failed"));
+        show_error(w, _("pa_ext_device_manager_read() failed"));
         return;
     }
 
@@ -620,7 +630,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_sink_info_by_index(c, index, sink_cb, w))) {
-                    show_error(_("pa_context_get_sink_info_by_index() failed"));
+                    show_error(w, _("pa_context_get_sink_info_by_index() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -633,7 +643,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_source_info_by_index(c, index, source_cb, w))) {
-                    show_error(_("pa_context_get_source_info_by_index() failed"));
+                    show_error(w, _("pa_context_get_source_info_by_index() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -646,7 +656,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_sink_input_info(c, index, sink_input_cb, w))) {
-                    show_error(_("pa_context_get_sink_input_info() failed"));
+                    show_error(w, _("pa_context_get_sink_input_info() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -659,7 +669,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_source_output_info(c, index, source_output_cb, w))) {
-                    show_error(_("pa_context_get_sink_input_info() failed"));
+                    show_error(w, _("pa_context_get_sink_input_info() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -672,7 +682,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_client_info(c, index, client_cb, w))) {
-                    show_error(_("pa_context_get_client_info() failed"));
+                    show_error(w, _("pa_context_get_client_info() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -682,7 +692,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
         case PA_SUBSCRIPTION_EVENT_SERVER: {
                 pa_operation *o;
                 if (!(o = pa_context_get_server_info(c, server_info_cb, w))) {
-                    show_error(_("pa_context_get_server_info() failed"));
+                    show_error(w, _("pa_context_get_server_info() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -695,7 +705,7 @@ void subscribe_cb(pa_context *c, pa_subscription_event_type_t t, uint32_t index,
             else {
                 pa_operation *o;
                 if (!(o = pa_context_get_card_info_by_index(c, index, card_cb, w))) {
-                    show_error(_("pa_context_get_card_info_by_index() failed"));
+                    show_error(w, _("pa_context_get_card_info_by_index() failed"));
                     return;
                 }
                 pa_operation_unref(o);
@@ -738,7 +748,7 @@ void context_state_callback(pa_context *c, void *userdata) {
                                             PA_SUBSCRIPTION_MASK_CLIENT|
                                             PA_SUBSCRIPTION_MASK_SERVER|
                                             PA_SUBSCRIPTION_MASK_CARD), NULL, NULL))) {
-                show_error(_("pa_context_subscribe() failed"));
+                show_error(w, _("pa_context_subscribe() failed"));
                 return;
             }
             pa_operation_unref(o);
@@ -747,49 +757,49 @@ void context_state_callback(pa_context *c, void *userdata) {
             n_outstanding = 0;
 
             if (!(o = pa_context_get_server_info(c, server_info_cb, w))) {
-                show_error(_("pa_context_get_server_info() failed"));
+                show_error(w, _("pa_context_get_server_info() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_client_info_list(c, client_cb, w))) {
-                show_error(_("pa_context_client_info_list() failed"));
+                show_error(w, _("pa_context_client_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_card_info_list(c, card_cb, w))) {
-                show_error(_("pa_context_get_card_info_list() failed"));
+                show_error(w, _("pa_context_get_card_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_sink_info_list(c, sink_cb, w))) {
-                show_error(_("pa_context_get_sink_info_list() failed"));
+                show_error(w, _("pa_context_get_sink_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_source_info_list(c, source_cb, w))) {
-                show_error(_("pa_context_get_source_info_list() failed"));
+                show_error(w, _("pa_context_get_source_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_sink_input_info_list(c, sink_input_cb, w))) {
-                show_error(_("pa_context_get_sink_input_info_list() failed"));
+                show_error(w, _("pa_context_get_sink_input_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
             n_outstanding++;
 
             if (!(o = pa_context_get_source_output_info_list(c, source_output_cb, w))) {
-                show_error(_("pa_context_get_source_output_info_list() failed"));
+                show_error(w, _("pa_context_get_source_output_info_list() failed"));
                 return;
             }
             pa_operation_unref(o);
@@ -915,8 +925,6 @@ MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool _ret
 
     tab_number = _tab_number;
     retry = _retry;
-
-    ca_context_set_driver(ca_gtk_context_get(), "pulse");
 
     mainWindow = MainWindow::create(maximize);
 

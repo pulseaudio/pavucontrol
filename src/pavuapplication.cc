@@ -24,8 +24,6 @@
 
 #include "i18n.h"
 
-#include <canberra-gtk.h>
-
 #include "pavuapplication.h"
 #include "pavucontrol.h"
 #include "mainwindow.h"
@@ -39,7 +37,7 @@ PavuApplication::get_instance()
 }
 
 PavuApplication::PavuApplication() :
-    Gtk::Application("org.pulseaudio.pavucontrol", Gio::ApplicationFlags::APPLICATION_HANDLES_COMMAND_LINE),
+    Gtk::Application("org.pulseaudio.pavucontrol", Gio::Application::Flags::HANDLES_COMMAND_LINE),
     mainWindow(NULL),
     retry(false),
     maximize(false),
@@ -59,9 +57,8 @@ MainWindow* PavuApplication::create_window()
 
     MainWindow* pavucontrol_window = pavucontrol_get_window(m, maximize, retry, tab);
 
-    pavucontrol_window->signal_hide().connect(
-                     sigc::bind<Gtk::Window*>(sigc::mem_fun(*this,
-                     &PavuApplication::on_hide_window), pavucontrol_window));
+    pavucontrol_window->signal_close_request().connect(sigc::mem_fun(*this,
+                     &PavuApplication::on_close_window), true);
 
     return pavucontrol_window;
 }
@@ -94,9 +91,9 @@ void PavuApplication::on_activate()
  * exiting : when the last registered window of Gtk::Application is closed,
  * the application's run() function returns.
  */
-void PavuApplication::on_hide_window(Gtk::Window* window)
+bool PavuApplication::on_close_window()
 {
-    delete window;
+    delete mainWindow;
     mainWindow = NULL;
 
     if (get_context()) {
@@ -104,6 +101,7 @@ void PavuApplication::on_hide_window(Gtk::Window* window)
     }
     pa_glib_mainloop_free(m);
     m = NULL;
+    return true;
 }
 
 template <typename T_ArgType>
@@ -155,23 +153,23 @@ int main(int argc, char *argv[]) {
 
     /* Add command-line options */
     globalInstance.add_main_option_entry(
-        Gio::Application::OptionType::OPTION_TYPE_INT,
+        Gio::Application::OptionType::INT,
         "tab", 't',
         _("Select a specific tab on load."),
         _("number"));
 
     globalInstance.add_main_option_entry(
-        Gio::Application::OptionType::OPTION_TYPE_BOOL,
+        Gio::Application::OptionType::BOOL,
         "retry", 'r',
         _("Retry forever if pa quits (every 5 seconds)."));
 
     globalInstance.add_main_option_entry(
-        Gio::Application::OptionType::OPTION_TYPE_BOOL,
+        Gio::Application::OptionType::BOOL,
         "maximize", 'm',
         _("Maximize the window."));
 
     globalInstance.add_main_option_entry(
-        Gio::Application::OptionType::OPTION_TYPE_BOOL,
+        Gio::Application::OptionType::BOOL,
         "version", 'v',
         _("Show version."));
 
