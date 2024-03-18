@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Endless OS Foundation LLC-->
+<component type="desktop-application">
+  <id>org.pulseaudio.pavucontrol</id>
+  <translation type="gettext">pavucontrol</translation>
+  <launchable type="desktop-id">pavucontrol.desktop</launchable>
+  <name>Volume Control</name>
+  <summary>Adjust device and app volumes</summary>
+  <developer_name>The PulseAudio Developers</developer_name>
+  <developer id="org.pulseaudio">
+    <name>The PulseAudio Developers</name>
+  </developer>
+  <description>
+    <p>PulseAudio Volume Control (pavucontrol) is a volume control tool (“mixer”) for the PulseAudio sound server. In contrast to classic mixer tools, this one allows you to control both the volume of hardware devices and of each playback stream separately.</p>
+  </description>
+  <provides>
+    <id>pavucontrol.desktop</id>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The “Playback” tab</caption>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-playback.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The “Recording” tab</caption>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-record.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The “Output” tab</caption>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-output.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The “Input” tab</caption>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-input.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The “Configuration” tab</caption>
+      <image type="source" width="1600" height="900">https://freedesktop.org/software/pulseaudio/pavucontrol/screenshots/pavucontrol-config.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="5.0" date="2021-08-15"/>
+    <release version="4.0" date="2019-03-05">
+      <description>
+        <ul>
+          <li>There can now be only one pavucontrol window open at a time. Trying to start pavucontrol for a second time brings the first window to foreground.</li>
+          <li>Added a "Show volume meters" checkbox to the Configuration tab. Disabling the volume meters reduces CPU use.</li>
+          <li>Improve the use of space (remove useless margins and paddings).</li>
+          <li>Use a more appropriate icon for the channel lock button.</li>
+          <li>Better channel label layout, prevents volume sliders from getting unaligned.</li>
+          <li>Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay devices that often have higher latency than 2 seconds (this is not that useful on newer PulseAudio versions, though, because the latency is reported much more accurately than before).</li>
+          <li>New --version command line option.</li>
+          <li>New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, Lithuanian, Valencian.</li>
+          <li>Updated translations: Finnish, French, German, Italian, Japanese, Polish, Swedish.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1"/>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <url type="homepage">https://freedesktop.org/software/pulseaudio/pavucontrol/</url>
+  <url type="bugtracker">https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues</url>
+  <update_contact>https://gitlab.freedesktop.org/pulseaudio/pavucontrol/issues/new</update_contact>
+</component>

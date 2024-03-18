@@ -1,3 +1,4 @@
+src/org.pulseaudio.pavucontrol.appdata.xml.in
 src/pavucontrol.desktop.in
 src/pavucontrol.glade
 src/pavucontrol.cc

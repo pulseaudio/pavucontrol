@@ -18,6 +18,7 @@
 desktopdir = $(datadir)/applications
 gladedir = $(pkgdatadir)
 localedir = $(datadir)/locale
+metainfodir = $(datadir)/metainfo
 
 bin_PROGRAMS=pavucontrol
 glade_DATA=pavucontrol.glade
@@ -26,6 +27,11 @@ desktop_in_files=pavucontrol.desktop.in
 desktop_DATA=$(desktop_in_files:.desktop.in=.desktop)
 $(desktop_DATA): $(desktop_in_files)
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+
+metainfo_in_files=org.pulseaudio.pavucontrol.metainfo.xml.in
+metainfo_DATA=$(metainfo_in_files:.metainfo.xml.in=.metainfo.xml)
+$(metainfo_DATA): $(metainfo_in_files)
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 pavucontrol_SOURCES= \
   minimalstreamwidget.h minimalstreamwidget.cc \

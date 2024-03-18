@@ -40,3 +40,12 @@ desktop_file = i18n.merge_file(
   install : true,
   install_dir : join_paths(datadir, 'applications'),
 )
+
+appdata_file = i18n.merge_file(
+  input : 'org.pulseaudio.pavucontrol.metainfo.xml.in',
+  output : 'org.pulseaudio.pavucontrol.metainfo.xml',
+  po_dir : po_dir,
+  type : 'xml',
+  install : true,
+  install_dir : datadir / 'metainfo',
+)
