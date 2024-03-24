@@ -23,11 +23,54 @@
 #endif
 
 #include "channelwidget.h"
+#include "pavuapplication.h"
 #include "minimalstreamwidget.h"
 
 #include "i18n.h"
 
+/**
+ * convert the step increment configured by the user to slider units
+ */
+int get_percentage_step_increment() {
+    gint32 user_si = PavuApplication::get_instance().step_increment;
+    return (int)(user_si == 0 ? (int)PA_VOLUME_NORM / 100 : user_si * (int)PA_VOLUME_NORM / 100);
+}
+
 /*** ChannelWidget ***/
+
+/**
+ * this is a specific key press handle which fixes left/right arrow keys behaviour.
+ * with this, left key decreases volume, right key increases volume
+ */
+bool ChannelWidget::handleKeyEvent(GdkEventKey* event) {
+    if (!volumeScaleEnabled)
+        return false;
+    if (minimalStreamWidget->updating)
+        return false;
+    int offset = get_percentage_step_increment();
+    int volume = (int) volumeScale->get_value();
+    int nextVolume;
+    /**
+     * handle lower/upper bounds + PA_VOLUME_NORM volume proximity
+     */
+    if (event->keyval == GDK_KEY_Up || event->keyval == GDK_KEY_Right) {
+        nextVolume = volume + offset;
+        volume = (volume < PA_VOLUME_NORM && nextVolume >= PA_VOLUME_NORM) ?
+                    PA_VOLUME_NORM :
+                    (nextVolume >= PA_VOLUME_UI_MAX )?
+                    PA_VOLUME_UI_MAX :
+                    volume + offset;
+    } else if (event->keyval == GDK_KEY_Down || event->keyval == GDK_KEY_Left) {
+        nextVolume = volume - offset;
+        volume = (volume > PA_VOLUME_NORM && nextVolume <= PA_VOLUME_NORM) ?
+                    PA_VOLUME_NORM :
+                    (nextVolume <= (int)PA_VOLUME_MUTED) ?
+                    (int)PA_VOLUME_MUTED :
+                    volume - offset;
+    }
+    minimalStreamWidget->updateChannelVolume(channel, volume);
+    return true;
+}
 
 ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x) :
     Gtk::EventBox(cobject),
@@ -41,10 +84,12 @@ ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Bu
 
     volumeScale->set_range((double)PA_VOLUME_MUTED, (double)PA_VOLUME_UI_MAX);
     volumeScale->set_value((double)PA_VOLUME_NORM);
-    volumeScale->set_increments(((double)PA_VOLUME_NORM)/100.0, ((double)PA_VOLUME_NORM)/20.0);
+    auto increment = get_percentage_step_increment();
+    volumeScale->set_increments(increment, increment);
     setBaseVolume(PA_VOLUME_NORM);
 
     volumeScale->signal_value_changed().connect(sigc::mem_fun(*this, &ChannelWidget::onVolumeScaleValueChanged));
+    volumeScale->signal_key_press_event().connect(sigc::mem_fun(*this, &ChannelWidget::handleKeyEvent), false);
 }
 
 ChannelWidget* ChannelWidget::createOne(MinimalStreamWidget *owner, int channelIndex, pa_channel_position channelPosition, bool can_decibel) {

@@ -44,6 +44,7 @@ public:
     MinimalStreamWidget *minimalStreamWidget;
 
     void onVolumeScaleValueChanged();
+    bool handleKeyEvent(GdkEventKey* event);
 
     bool can_decibel;
     bool volumeScaleEnabled;
