@@ -76,9 +76,10 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     canRenameDevices(false),
     m_connected(false),
     m_config_filename(NULL) {
+#ifdef HAVE_LIBCANBERRA
     ca_context_create(&canberraContext);
     ca_context_set_driver(canberraContext, "pulse");
-
+#endif
     cardsVBox = x->get_widget<Gtk::Box>("cardsVBox");
     streamsVBox = x->get_widget<Gtk::Box>("streamsVBox");
     recsVBox = x->get_widget<Gtk::Box>("recsVBox");
@@ -271,8 +272,9 @@ finish:
         g_free(i->second);
         clientNames.erase(i);
     }
-
+#ifdef HAVE_LIBCANBERRA
     ca_context_destroy(canberraContext);
+#endif
 }
 
 static void set_icon_name_default(Gtk::Image *i, const char *name) {

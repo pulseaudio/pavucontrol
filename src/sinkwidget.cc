@@ -24,7 +24,10 @@
 
 #include "sinkwidget.h"
 
+#ifdef HAVE_LIBCANBERRA
 #include <canberra.h>
+#endif
+
 #if HAVE_EXT_DEVICE_RESTORE_API
 #  include <pulse/format.h>
 #  include <pulse/ext-device-restore.h>
@@ -111,7 +114,6 @@ SinkWidget* SinkWidget::create(MainWindow* mainWindow) {
 void SinkWidget::executeVolumeUpdate() {
     pa_operation* o;
     char dev[64];
-    int playing = 0;
 
     if (!(o = pa_context_set_sink_volume_by_index(get_context(), index, &volume, NULL, NULL))) {
         show_error(this, _("pa_context_set_sink_volume_by_index() failed"));
@@ -122,6 +124,8 @@ void SinkWidget::executeVolumeUpdate() {
 
     snprintf(dev, sizeof(dev), "%lu", (unsigned long) index);
 
+#ifdef HAVE_LIBCANBERRA
+    int playing = 0;
     ca_context_playing(mpMainWindow->canberraContext, 2, &playing);
     if (playing)
         return;
@@ -137,6 +141,7 @@ void SinkWidget::executeVolumeUpdate() {
                      NULL);
 
     ca_context_change_device(mpMainWindow->canberraContext, NULL);
+#endif
 }
 
 void SinkWidget::onMuteToggleButton() {

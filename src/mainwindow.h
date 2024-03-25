@@ -29,7 +29,9 @@ class MainWindow;
 #  include <pulse/ext-device-restore.h>
 #endif
 
+#ifdef HAVE_LIBCANBERRA
 #include <canberra.h>
+#endif
 
 #include <unordered_map>
 
@@ -118,7 +120,9 @@ public:
 
     bool canRenameDevices;
 
+#ifdef HAVE_LIBCANBERRA
     ca_context *canberraContext;
+#endif
 
 protected:
     virtual void on_realize();

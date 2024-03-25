@@ -10,7 +10,7 @@ cpp = meson.get_compiler('cpp')
 
 gtkmm_dep = dependency('gtkmm-4.0', version : '>= 4.0', required : true)
 sigcpp_dep = dependency('sigc++-2.0', required : true)
-canberragtk_dep = dependency('libcanberra', version : '>= 0.16', required : true)
+canberragtk_dep = dependency('libcanberra', version : '>= 0.16', required : false)
 
 libpulse_dep = dependency('libpulse', version : '>= 5.0', required : true)
 libpulsemlglib_dep = dependency('libpulse-mainloop-glib', version : '>= 0.9.16', required : true)
@@ -40,6 +40,8 @@ cdata.set_quoted('PACKAGE_VERSION', meson.project_version())
 cdata.set_quoted('GETTEXT_PACKAGE', 'pavucontrol')
 cdata.set_quoted('LOCALEDIR', localedir)
 cdata.set_quoted('GLADE_FILE', join_paths(datadir, 'pavucontrol', 'pavucontrol.glade'))
+
+cdata.set('HAVE_LIBCANBERRA', canberragtk_dep.found())
 
 # Now generate config.h from everything above
 configure_file(output : 'config.h', configuration : cdata)
