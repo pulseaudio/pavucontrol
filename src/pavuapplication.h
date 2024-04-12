@@ -21,7 +21,6 @@
 #ifndef pavuapplication_h
 #define pavuapplication_h
 
-#include "pavucontrol.h"
 #include "mainwindow.h"
 
 class PavuApplication : public Gtk::Application {

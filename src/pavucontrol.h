@@ -23,9 +23,6 @@
 
 #include <string>
 
-#include <signal.h>
-#include <string.h>
-
 #include <libintl.h>
 
 #include <gtkmm.h>

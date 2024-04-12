@@ -21,8 +21,6 @@
 #ifndef devicewidget_h
 #define devicewidget_h
 
-#include "pavucontrol.h"
-
 #include "minimalstreamwidget.h"
 
 class MainWindow;

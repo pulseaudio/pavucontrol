@@ -21,7 +21,8 @@
 #ifndef minimalstreamwidget_h
 #define minimalstreamwidget_h
 
-#include "pavucontrol.h"
+#include <gtkmm.h>
+#include <pulse/pulseaudio.h>
 
 #define PEAKS_RATE 144
 
@@ -55,7 +56,7 @@ public:
 protected:
     /* Subclasses must call this after the constructor to finalize the initial
      * layout. */
-    virtual void init();
+    void init();
 
 private :
     bool volumeMeterVisible;
