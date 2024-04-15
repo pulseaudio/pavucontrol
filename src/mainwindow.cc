@@ -271,6 +271,8 @@ finish:
         g_free(i->second);
         clientNames.erase(i);
     }
+
+    ca_context_destroy(canberraContext);
 }
 
 static void set_icon_name_default(Gtk::Image *i, const char *name) {
