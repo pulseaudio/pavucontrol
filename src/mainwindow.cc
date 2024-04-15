@@ -76,7 +76,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     canRenameDevices(false),
     m_connected(false),
     m_config_filename(NULL) {
-    ca_context_create (&canberraContext);
+    ca_context_create(&canberraContext);
     ca_context_set_driver(canberraContext, "pulse");
 
     cardsVBox = x->get_widget<Gtk::Box>("cardsVBox");
@@ -286,7 +286,7 @@ static void set_icon_name_default(Gtk::Image *i, const char *name) {
             iconName = "gtk-missing-image";
             break;
         }
-        iconName = iconName.substr(0,lastDashIndex);
+        iconName = iconName.substr(0, lastDashIndex);
     }
     i->set_from_icon_name(iconName.c_str());
 }

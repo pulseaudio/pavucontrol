@@ -67,8 +67,7 @@ void show_error(Gtk::Widget* widget, const char *txt) {
         Gtk::Window* window = Glib::wrap(w);
         window->present();
         dialog->choose(*window, sigc::ptr_fun(show_error_finish));
-    }
-    else {
+    } else {
         dialog->choose(sigc::ptr_fun(show_error_finish));
     }
 }

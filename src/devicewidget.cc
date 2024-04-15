@@ -271,7 +271,7 @@ void DeviceWidget::openRenamePopup(const Glib::VariantBase& parameter) {
 
 RenameWindow::RenameWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x, const gchar* name, const gchar* key) :
     Gtk::ApplicationWindow(cobject),
-    deviceKey(key){
+    deviceKey(key) {
 
     renameText = x->get_widget<Gtk::Entry>("renameText");
     renameText->set_text(name);
