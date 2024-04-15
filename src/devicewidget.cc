@@ -281,14 +281,12 @@ RenameWindow::RenameWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
 
     auto renameAction = Gio::SimpleAction::create("rename");
     renameAction->set_enabled(true);
-    renameAction->signal_activate().connect(sigc::mem_fun(*this, &RenameWindow::renamePopup));
+    renameAction->signal_activate().connect(sigc::mem_fun(*this, &RenameWindow::doRename));
 
     add_action(renameAction);
 }
 
-
-
-void RenameWindow::renamePopup(const Glib::VariantBase& parameter){
+void RenameWindow::doRename(const Glib::VariantBase& parameter) {
     pa_operation* o;
     auto name = renameText->get_text();
 

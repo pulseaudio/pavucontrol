@@ -119,7 +119,7 @@ public:
     Gtk::Entry* renameText;
     const gchar* deviceKey;
 private:
-    void renamePopup(const Glib::VariantBase& parameter);
+    void doRename(const Glib::VariantBase& parameter);
 };
 
 #endif
