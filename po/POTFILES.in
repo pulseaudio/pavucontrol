@@ -1,6 +1,11 @@
 src/org.pulseaudio.pavucontrol.appdata.xml.in
 src/pavucontrol.desktop.in
-src/pavucontrol.glade
+src/mainwindow.ui
+src/cardwidget.ui
+src/channelwidget.ui
+src/renamedialog.ui
+src/streamwidget.ui
+src/devicewidget.ui
 src/pavucontrol.cc
 src/cardwidget.cc
 src/channelwidget.cc

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="channelWidget">
+    <property name="spacing">6</property>
+    <child>
+      <object class="GtkLabel" id="channelLabel">
+        <property name="halign">center</property>
+        <property name="label" translatable="1">&lt;b&gt;left-front&lt;/b&gt;</property>
+        <property name="use_markup">1</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkScale" id="volumeScale">
+        <property name="hexpand">1</property>
+        <property name="focusable">1</property>
+        <property name="adjustment">
+            <object class="GtkAdjustment">
+              <property name="upper">100</property>
+              <property name="step_increment">5</property>
+            </object>
+        </property>
+        <property name="digits">0</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="volumeLabel">
+        <property name="halign">center</property>
+        <property name="margin_start">8</property>
+        <property name="margin_end">8</property>
+        <property name="label" translatable="1">&lt;small&gt;50%&lt;/small&gt;</property>
+        <property name="use_markup">1</property>
+        <property name="justify">right</property>
+        <property name="width_chars">12</property>
+        <property name="xalign">1</property>
+        <property name="yalign">0</property>
+      </object>
+    </child>
+  </object>
+</interface>

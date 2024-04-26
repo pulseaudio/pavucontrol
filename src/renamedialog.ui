@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkApplicationWindow" id="renameDialog">
+    <property name="modal">1</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <property name="margin-start">5</property>
+        <property name="margin-top">5</property>
+        <property name="margin-end">5</property>
+        <property name="margin-bottom">5</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="vexpand">1</property>
+            <property name="label" translatable="1">&lt;b&gt;Rename device to:&lt;/b&gt;</property>
+            <property name="use_markup">1</property>
+            <property name="xalign">0</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="renameText">
+            <property name="vexpand">1</property>
+            <property name="focusable">1</property>
+            <property name="invisible_char">●</property>
+            <property name="activates_default">1</property>
+            <property name="width_chars">60</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="baseline_position">bottom</property>
+            <property name="halign">GTK_ALIGN_END</property>
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="1">_Cancel</property>
+                <property name="use_underline">1</property>
+                <property name="focusable">1</property>
+                <property name="action_name">window.close</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="renameButton">
+                <property name="label" translatable="1">_Ok</property>
+                <property name="use_underline">1</property>
+                <property name="focusable">1</property>
+                <property name="action_name">win.rename</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

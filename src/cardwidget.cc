@@ -60,7 +60,7 @@ CardWidget::CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 
 CardWidget* CardWidget::create() {
     CardWidget* w;
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "cardWidget");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/cardwidget.ui", "cardWidget");
     w = Gtk::Builder::get_widget_derived<CardWidget>(x, "cardWidget");
     w->reference();
     return w;

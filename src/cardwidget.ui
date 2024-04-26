@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="cardWidget">
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkBox">
+        <property name="valign">center</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <property name="margin-start">12</property>
+        <property name="margin-top">12</property>
+        <property name="margin-end">12</property>
+        <property name="margin-bottom">12</property>
+        <child>
+          <object class="GtkBox">
+            <property name="valign">center</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkImage" id="cardIconImage">
+                <property name="icon_name">gtk-missing-image</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="hexpand">1</property>
+                <child>
+                  <object class="GtkLabel" id="cardNameLabel">
+                    <property name="hexpand">1</property>
+                    <property name="label" translatable="1">Card Name</property>
+                    <property name="use_markup">1</property>
+                    <property name="ellipsize">middle</property>
+                    <property name="xalign">0</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">3</property>
+                <child>
+                  <object class="GtkToggleButton" id="profileLockToggleButton">
+                    <property name="halign">center</property>
+                    <property name="focusable">1</property>
+                    <property name="tooltip_text" translatable="1">Lock card to this profile</property>
+                    <property name="has-frame">0</property>
+                    <property name="active">1</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="icon_name">changes-prevent</property>
+                        <property name="icon_size">normal</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="valign">center</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label" translatable="1">&lt;b&gt;Profile:&lt;/b&gt;</property>
+                <property name="use_markup">1</property>
+                <property name="xalign">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="profileList">
+                <property name="hexpand">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="codecBox">
+                <property name="halign">center</property>
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="1">&lt;b&gt;Codec:&lt;/b&gt;</property>
+                    <property name="use_markup">1</property>
+                    <property name="xalign">0</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="codecList">
+                    <property name="hexpand">1</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparator">
+        <property name="valign">center</property>
+      </object>
+    </child>
+  </object>
+</interface>

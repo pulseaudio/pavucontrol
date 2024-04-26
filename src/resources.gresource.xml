@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/org/pulseaudio/pavucontrol/ui">
-    <file preprocess="xml-stripblanks" compressed="true">pavucontrol.glade</file>
+    <file preprocess="xml-stripblanks" compressed="true">mainwindow.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">cardwidget.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">channelwidget.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">renamedialog.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">streamwidget.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">devicewidget.ui</file>
   </gresource>
 </gresources>

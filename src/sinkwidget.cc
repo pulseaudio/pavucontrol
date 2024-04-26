@@ -104,7 +104,7 @@ SinkWidget::SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 
 SinkWidget* SinkWidget::create(MainWindow* mainWindow) {
     SinkWidget* w;
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "deviceWidget");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/devicewidget.ui", "deviceWidget");
     w = Gtk::Builder::get_widget_derived<SinkWidget>(x, "deviceWidget");
     w->init(mainWindow, "sink");
     w->reference();

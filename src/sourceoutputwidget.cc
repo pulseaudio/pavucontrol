@@ -46,7 +46,7 @@ SourceOutputWidget::SourceOutputWidget(BaseObjectType* cobject, const Glib::RefP
 
 SourceOutputWidget* SourceOutputWidget::create(MainWindow* mainWindow) {
     SourceOutputWidget* w;
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "streamWidget");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/streamwidget.ui", "streamWidget");
     w = Gtk::Builder::get_widget_derived<SourceOutputWidget>(x, "streamWidget");
     w->init(mainWindow);
     w->reference();
