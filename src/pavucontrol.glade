@@ -58,7 +58,7 @@
       <object class="GtkBox" id="cardWidget">
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox" id="vbox7">
+          <object class="GtkBox">
             <property name="valign">center</property>
             <property name="orientation">vertical</property>
             <property name="spacing">6</property>
@@ -67,7 +67,7 @@
             <property name="margin-end">12</property>
             <property name="margin-bottom">12</property>
             <child>
-              <object class="GtkBox" id="hbox9">
+              <object class="GtkBox">
                 <property name="valign">center</property>
                 <property name="spacing">6</property>
                 <child>
@@ -76,7 +76,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox11">
+                  <object class="GtkBox">
                     <property name="hexpand">1</property>
                     <child>
                       <object class="GtkLabel" id="cardNameLabel">
@@ -90,7 +90,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox14">
+                  <object class="GtkBox">
                     <property name="spacing">3</property>
                     <child>
                       <object class="GtkToggleButton" id="profileLockToggleButton">
@@ -100,7 +100,7 @@
                         <property name="has-frame">0</property>
                         <property name="active">1</property>
                         <child>
-                          <object class="GtkImage" id="image4">
+                          <object class="GtkImage">
                             <property name="icon_name">changes-prevent</property>
                             <property name="icon_size">normal</property>
                           </object>
@@ -112,11 +112,11 @@
               </object>
             </child>
             <child>
-              <object class="GtkBox" id="hbox1">
+              <object class="GtkBox">
                 <property name="valign">center</property>
                 <property name="spacing">6</property>
                 <child>
-                  <object class="GtkLabel" id="label1">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">&lt;b&gt;Profile:&lt;/b&gt;</property>
                     <property name="use_markup">1</property>
                     <property name="xalign">0</property>
@@ -132,7 +132,7 @@
                     <property name="halign">center</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkLabel" id="label51">
+                      <object class="GtkLabel">
                         <property name="label" translatable="1">&lt;b&gt;Codec:&lt;/b&gt;</property>
                         <property name="use_markup">1</property>
                         <property name="xalign">0</property>
@@ -150,7 +150,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkSeparator" id="hseparator5">
+          <object class="GtkSeparator">
             <property name="valign">center</property>
           </object>
         </child>
@@ -167,7 +167,7 @@
       <object class="GtkBox" id="deviceWidget">
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox" id="vbox26">
+          <object class="GtkBox">
             <property name="valign">center</property>
             <property name="orientation">vertical</property>
             <property name="spacing">6</property>
@@ -176,7 +176,7 @@
             <property name="margin-end">12</property>
             <property name="margin-bottom">12</property>
             <child>
-              <object class="GtkBox" id="hbox2">
+              <object class="GtkBox">
                 <property name="valign">center</property>
                 <property name="spacing">6</property>
                 <child>
@@ -185,7 +185,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox12">
+                  <object class="GtkBox">
                     <property name="hexpand">1</property>
                     <child>
                       <object class="GtkLabel" id="deviceBoldNameLabel">
@@ -203,7 +203,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox10">
+                  <object class="GtkBox">
                     <property name="spacing">3</property>
                     <child>
                       <object class="GtkToggleButton" id="deviceMuteToggleButton">
@@ -212,7 +212,7 @@
                         <property name="tooltip_text" translatable="1">Mute audio</property>
                         <property name="has-frame">0</property>
                         <child>
-                          <object class="GtkImage" id="image20">
+                          <object class="GtkImage">
                             <property name="icon_name">audio-volume-muted</property>
                             <property name="icon_size">normal</property>
                           </object>
@@ -227,7 +227,7 @@
                         <property name="has-frame">0</property>
                         <property name="active">1</property>
                         <child>
-                          <object class="GtkImage" id="image18">
+                          <object class="GtkImage">
                             <property name="icon_name">changes-prevent</property>
                             <property name="icon_size">normal</property>
                           </object>
@@ -240,7 +240,7 @@
                         <property name="focusable">1</property>
                         <property name="tooltip_text" translatable="1">Set as default</property>
                         <child>
-                          <object class="GtkImage" id="image2">
+                          <object class="GtkImage">
                             <property name="icon_name">emblem-default</property>
                           </object>
                         </child>
@@ -255,7 +255,7 @@
                 <property name="valign">center</property>
                 <property name="spacing">6</property>
                 <child>
-                  <object class="GtkLabel" id="label2">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">&lt;b&gt;Port:&lt;/b&gt;</property>
                     <property name="use_markup">1</property>
                     <property name="xalign">0</property>
@@ -287,7 +287,7 @@
                 <property name="visible">0</property>
                 <property name="focusable">1</property>
                 <child>
-                  <object class="GtkBox" id="vbox1">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkGrid" id="encodingSelect">
@@ -384,7 +384,7 @@
                         <property name="valign">center</property>
                         <property name="spacing">6</property>
                         <child>
-                          <object class="GtkLabel" id="label3">
+                          <object class="GtkLabel">
                             <property name="label" translatable="1">&lt;b&gt;Latency offset:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
                             <property name="xalign">0</property>
@@ -397,7 +397,7 @@
                           </object>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="label4">
+                          <object class="GtkLabel">
                             <property name="label" translatable="1">ms</property>
                             <property name="use_markup">1</property>
                           </object>
@@ -416,7 +416,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkSeparator" id="hseparator2">
+          <object class="GtkSeparator">
             <property name="valign">center</property>
           </object>
         </child>
@@ -502,7 +502,7 @@
       <placeholder/>
     </child>
     <property name="child">
-      <object class="GtkBox" id="vbox20">
+      <object class="GtkBox">
         <property name="orientation">vertical</property>
         <property name="spacing">12</property>
         <child>
@@ -514,14 +514,14 @@
             <child>
               <object class="GtkNotebookPage">
                 <property name="child">
-                  <object class="GtkBox" id="vbox32">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow5">
+                      <object class="GtkScrolledWindow">
                         <property name="vexpand">1</property>
                         <property name="focusable">1</property>
                         <property name="child">
-                          <object class="GtkViewport" id="viewport1">
+                          <object class="GtkViewport">
                             <property name="child">
                               <object class="GtkBox" id="streamsVBox">
                                 <property name="orientation">vertical</property>
@@ -540,12 +540,12 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparator" id="hseparator1">
+                      <object class="GtkSeparator">
                         <property name="valign">center</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox5">
+                      <object class="GtkBox">
                         <property name="spacing">6</property>
                         <property name="margin-top">12</property>
                         <property name="margin-bottom">12</property>
@@ -553,7 +553,7 @@
                         <property name="margin-end">12</property>
                         <property name="valign">center</property>
                         <child>
-                          <object class="GtkLabel" id="label5">
+                          <object class="GtkLabel">
                             <property name="hexpand">1</property>
                             <property name="label" translatable="1">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
@@ -566,7 +566,7 @@
                             <property name="hexpand">1</property>
                             <property name="model">liststore1</property>
                             <child>
-                              <object class="GtkCellRendererText" id="cellrenderertext1"/>
+                              <object class="GtkCellRendererText"/>
                               <attributes>
                                 <attribute name="text">0</attribute>
                               </attributes>
@@ -578,7 +578,7 @@
                   </object>
                 </property>
                 <property name="tab">
-                  <object class="GtkLabel" id="label34">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">_Playback</property>
                     <property name="use_underline">1</property>
                   </object>
@@ -588,14 +588,14 @@
             <child>
               <object class="GtkNotebookPage">
                 <property name="child">
-                  <object class="GtkBox" id="vbox2">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow2">
+                      <object class="GtkScrolledWindow">
                         <property name="vexpand">1</property>
                         <property name="focusable">1</property>
                         <property name="child">
-                          <object class="GtkViewport" id="viewport5">
+                          <object class="GtkViewport">
                             <property name="child">
                               <object class="GtkBox" id="recsVBox">
                                 <property name="orientation">vertical</property>
@@ -614,12 +614,12 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparator" id="hseparator3">
+                      <object class="GtkSeparator">
                         <property name="valign">center</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox7">
+                      <object class="GtkBox">
                         <property name="spacing">6</property>
                         <property name="margin-top">12</property>
                         <property name="margin-bottom">12</property>
@@ -627,7 +627,7 @@
                         <property name="margin-end">12</property>
                         <property name="valign">center</property>
                         <child>
-                          <object class="GtkLabel" id="label8">
+                          <object class="GtkLabel">
                             <property name="hexpand">1</property>
                             <property name="label" translatable="1">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
@@ -640,7 +640,7 @@
                             <property name="hexpand">1</property>
                             <property name="model">liststore2</property>
                             <child>
-                              <object class="GtkCellRendererText" id="cellrenderertext2"/>
+                              <object class="GtkCellRendererText"/>
                               <attributes>
                                 <attribute name="text">0</attribute>
                               </attributes>
@@ -652,7 +652,7 @@
                   </object>
                 </property>
                 <property name="tab">
-                  <object class="GtkLabel" id="label6">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">_Recording</property>
                     <property name="use_underline">1</property>
                   </object>
@@ -662,14 +662,14 @@
             <child>
               <object class="GtkNotebookPage">
                 <property name="child">
-                  <object class="GtkBox" id="vbox30">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow8">
+                      <object class="GtkScrolledWindow">
                         <property name="vexpand">1</property>
                         <property name="focusable">1</property>
                         <property name="child">
-                          <object class="GtkViewport" id="viewport4">
+                          <object class="GtkViewport">
                             <property name="child">
                               <object class="GtkBox" id="sinksVBox">
                                 <property name="orientation">vertical</property>
@@ -688,12 +688,12 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparator" id="hseparator4">
+                      <object class="GtkSeparator">
                         <property name="valign">center</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox3">
+                      <object class="GtkBox">
                         <property name="spacing">6</property>
                         <property name="margin-top">12</property>
                         <property name="margin-bottom">12</property>
@@ -701,7 +701,7 @@
                         <property name="margin-end">12</property>
                         <property name="valign">center</property>
                         <child>
-                          <object class="GtkLabel" id="label4826">
+                          <object class="GtkLabel">
                             <property name="hexpand">1</property>
                             <property name="label" translatable="1">&lt;b&gt;S_how:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
@@ -715,7 +715,7 @@
                             <property name="hexpand">1</property>
                             <property name="model">liststore3</property>
                             <child>
-                              <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                              <object class="GtkCellRendererText"/>
                               <attributes>
                                 <attribute name="text">0</attribute>
                               </attributes>
@@ -727,7 +727,7 @@
                   </object>
                 </property>
                 <property name="tab">
-                  <object class="GtkLabel" id="label4711">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">_Output Devices</property>
                     <property name="use_underline">1</property>
                   </object>
@@ -737,14 +737,14 @@
             <child>
               <object class="GtkNotebookPage">
                 <property name="child">
-                  <object class="GtkBox" id="vbox31">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow7">
+                      <object class="GtkScrolledWindow">
                         <property name="vexpand">1</property>
                         <property name="focusable">1</property>
                         <property name="child">
-                          <object class="GtkViewport" id="viewport3">
+                          <object class="GtkViewport">
                             <property name="child">
                               <object class="GtkBox" id="sourcesVBox">
                                 <property name="orientation">vertical</property>
@@ -763,12 +763,12 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparator" id="hseparator6">
+                      <object class="GtkSeparator">
                         <property name="valign">center</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox4">
+                      <object class="GtkBox">
                         <property name="spacing">6</property>
                         <property name="margin-top">12</property>
                         <property name="margin-bottom">12</property>
@@ -776,7 +776,7 @@
                         <property name="margin-end">12</property>
                         <property name="valign">center</property>
                         <child>
-                          <object class="GtkLabel" id="label4827">
+                          <object class="GtkLabel">
                             <property name="hexpand">1</property>
                             <property name="label" translatable="1">&lt;b&gt;Sho_w:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
@@ -790,7 +790,7 @@
                             <property name="hexpand">1</property>
                             <property name="model">liststore4</property>
                             <child>
-                              <object class="GtkCellRendererText" id="cellrenderertext4"/>
+                              <object class="GtkCellRendererText"/>
                               <attributes>
                                 <attribute name="text">0</attribute>
                               </attributes>
@@ -802,7 +802,7 @@
                   </object>
                 </property>
                 <property name="tab">
-                  <object class="GtkLabel" id="label4717">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">_Input Devices</property>
                     <property name="use_underline">1</property>
                   </object>
@@ -812,16 +812,16 @@
             <child>
               <object class="GtkNotebookPage">
                 <property name="child">
-                  <object class="GtkBox" id="vbox3">
+                  <object class="GtkBox">
                     <property name="orientation">vertical</property>
                     <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow1">
+                      <object class="GtkScrolledWindow">
                         <property name="vexpand">1</property>
                         <property name="focusable">1</property>
                         <property name="child">
-                          <object class="GtkViewport" id="viewport2">
+                          <object class="GtkViewport">
                             <property name="child">
-                              <object class="GtkBox" id="vbox4">
+                              <object class="GtkBox">
                                 <property name="orientation">vertical</property>
                                 <child>
                                   <object class="GtkBox" id="cardsVBox">
@@ -838,11 +838,11 @@
                                   </object>
                                 </child>
                                 <child>
-                                  <object class="GtkBox" id="vbox5">
+                                  <object class="GtkBox">
                                     <property name="orientation">vertical</property>
                                     <property name="vexpand-set">1</property>
                                     <child>
-                                      <object class="GtkSeparator" id="hseparator7"/>
+                                      <object class="GtkSeparator"/>
                                     </child>
                                     <child>
                                       <object class="GtkCheckButton" id="showVolumeMetersCheckButton">
@@ -862,7 +862,7 @@
                   </object>
                 </property>
                 <property name="tab">
-                  <object class="GtkLabel" id="label7">
+                  <object class="GtkLabel">
                     <property name="label" translatable="1">_Configuration</property>
                     <property name="use_underline">1</property>
                   </object>
@@ -885,7 +885,7 @@
   <object class="GtkApplicationWindow" id="renameDialog">
     <property name="modal">1</property>
     <child>
-      <object class="GtkBox" id="dialog-vbox1">
+      <object class="GtkBox">
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <property name="margin-start">5</property>
@@ -893,7 +893,7 @@
         <property name="margin-end">5</property>
         <property name="margin-bottom">5</property>
         <child>
-          <object class="GtkLabel" id="label9">
+          <object class="GtkLabel">
             <property name="vexpand">1</property>
             <property name="label" translatable="1">&lt;b&gt;Rename device to:&lt;/b&gt;</property>
             <property name="use_markup">1</property>
@@ -910,7 +910,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkBox" id="dialog-action_area1">
+          <object class="GtkBox">
             <property name="baseline_position">bottom</property>
             <property name="halign">GTK_ALIGN_END</property>
             <property name="homogeneous">1</property>
@@ -945,7 +945,7 @@
       <object class="GtkBox" id="streamWidget">
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox" id="vbox6">
+          <object class="GtkBox">
             <property name="valign">center</property>
             <property name="orientation">vertical</property>
             <property name="spacing">6</property>
@@ -954,7 +954,7 @@
             <property name="margin-end">12</property>
             <property name="margin-bottom">12</property>
             <child>
-              <object class="GtkBox" id="hbox6">
+              <object class="GtkBox">
                 <property name="valign">center</property>
                 <property name="spacing">6</property>
                 <child>
@@ -963,7 +963,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox8">
+                  <object class="GtkBox">
                     <property name="hexpand">1</property>
                     <property name="spacing">2</property>
                     <child>
@@ -997,7 +997,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="GtkBox" id="hbox13">
+                  <object class="GtkBox">
                     <property name="spacing">3</property>
                     <child>
                       <object class="GtkToggleButton" id="streamMuteToggleButton">
@@ -1006,7 +1006,7 @@
                         <property name="tooltip_text" translatable="1">Mute audio</property>
                         <property name="has-frame">0</property>
                         <child>
-                          <object class="GtkImage" id="image1">
+                          <object class="GtkImage">
                             <property name="icon_name">audio-volume-muted</property>
                             <property name="icon_size">normal</property>
                           </object>
@@ -1021,7 +1021,7 @@
                         <property name="has-frame">0</property>
                         <property name="active">1</property>
                         <child>
-                          <object class="GtkImage" id="image3">
+                          <object class="GtkImage">
                             <property name="icon_name">changes-prevent</property>
                             <property name="icon_size">normal</property>
                           </object>
@@ -1048,7 +1048,7 @@
           </object>
         </child>
         <child>
-          <object class="GtkSeparator" id="hseparator8">
+          <object class="GtkSeparator">
             <property name="valign">center</property>
           </object>
         </child>

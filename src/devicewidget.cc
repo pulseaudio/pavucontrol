@@ -261,7 +261,7 @@ void DeviceWidget::openRenamePopup(const Glib::VariantBase& parameter) {
         return;
     }
 
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "renameDialog");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "renameDialog");
     gchar *key = g_markup_printf_escaped("%s:%s", mDeviceType.c_str(), name.c_str());
     RenameWindow* renameDialog = Gtk::Builder::get_widget_derived<RenameWindow>(x, "renameDialog", description.c_str(), key);
     renameDialog->set_transient_for(*mpMainWindow);

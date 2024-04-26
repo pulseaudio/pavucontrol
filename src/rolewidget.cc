@@ -38,7 +38,7 @@ RoleWidget::RoleWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 
 RoleWidget* RoleWidget::create() {
     RoleWidget* w;
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "streamWidget");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "streamWidget");
     w = Gtk::Builder::get_widget_derived<RoleWidget>(x, "streamWidget");
     w->reference();
     return w;

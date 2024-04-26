@@ -32,7 +32,7 @@ SourceWidget::SourceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Buil
 
 SourceWidget* SourceWidget::create(MainWindow* mainWindow) {
     SourceWidget* w;
-    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_file(GLADE_FILE, "deviceWidget");
+    Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "deviceWidget");
     w = Gtk::Builder::get_widget_derived<SourceWidget>(x, "deviceWidget");
     w->init(mainWindow, "source");
     w->reference();

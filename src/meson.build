@@ -1,3 +1,10 @@
+gnome = import('gnome')
+resources = gnome.compile_resources('resources',
+  'resources.gresource.xml',
+  source_dir: '.',
+  c_name: 'resources'
+)
+
 pavucontrol_sources = [
   'cardwidget.cc',
   'channelwidget.cc',
@@ -12,6 +19,7 @@ pavucontrol_sources = [
   'sourceoutputwidget.cc',
   'sourcewidget.cc',
   'streamwidget.cc',
+  resources
 ]
 
 pavucontrol_deps = [gtkmm_dep, sigcpp_dep, canberragtk_dep, libpulse_dep, libpulsemlglib_dep]
@@ -29,8 +37,6 @@ executable('pavucontrol',
   include_directories : configinc,
   dependencies : pavucontrol_deps,
 )
-
-install_data('pavucontrol.glade')
 
 desktop_file = i18n.merge_file(
   input : 'org.pulseaudio.pavucontrol.desktop.in',

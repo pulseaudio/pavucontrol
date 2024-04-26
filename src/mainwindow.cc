@@ -182,11 +182,11 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
 MainWindow* MainWindow::create(bool maximize) {
     MainWindow* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create();
-    x->add_from_file(GLADE_FILE, "liststore1");
-    x->add_from_file(GLADE_FILE, "liststore2");
-    x->add_from_file(GLADE_FILE, "liststore3");
-    x->add_from_file(GLADE_FILE, "liststore4");
-    x->add_from_file(GLADE_FILE, "mainWindow");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "liststore1");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "liststore2");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "liststore3");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "liststore4");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "mainWindow");
     w = Gtk::Builder::get_widget_derived<MainWindow>(x, "mainWindow");
     w->get_style_context()->add_class("pavucontrol-window");
     if (w && maximize)

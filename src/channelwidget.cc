@@ -50,8 +50,8 @@ ChannelWidget::ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Bu
 ChannelWidget* ChannelWidget::createOne(MinimalStreamWidget *owner, int channelIndex, pa_channel_position channelPosition, bool can_decibel) {
     ChannelWidget* w;
     Glib::RefPtr<Gtk::Builder> x = Gtk::Builder::create();
-    x->add_from_file(GLADE_FILE, "adjustment1");
-    x->add_from_file(GLADE_FILE, "channelWidget");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "adjustment1");
+    x->add_from_resource("/org/pulseaudio/pavucontrol/ui/pavucontrol.glade", "channelWidget");
     w = Gtk::Builder::get_widget_derived<ChannelWidget>(x, "channelWidget");
     w->reference();
 

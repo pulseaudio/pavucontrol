@@ -39,7 +39,6 @@ cdata.set_quoted('PACKAGE_STRING', 'pavucontrol')
 cdata.set_quoted('PACKAGE_VERSION', meson.project_version())
 cdata.set_quoted('GETTEXT_PACKAGE', 'pavucontrol')
 cdata.set_quoted('LOCALEDIR', localedir)
-cdata.set_quoted('GLADE_FILE', join_paths(datadir, 'pavucontrol', 'pavucontrol.glade'))
 
 cdata.set('HAVE_LIBCANBERRA', canberragtk_dep.found())
 
