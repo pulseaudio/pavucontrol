@@ -3,7 +3,7 @@
 <component type="desktop-application">
   <id>org.pulseaudio.pavucontrol</id>
   <translation type="gettext">pavucontrol</translation>
-  <launchable type="desktop-id">pavucontrol.desktop</launchable>
+  <launchable type="desktop-id">org.pulseaudio.pavucontrol.desktop</launchable>
   <name>Volume Control</name>
   <summary>Adjust device and app volumes</summary>
   <developer_name>The PulseAudio Developers</developer_name>
