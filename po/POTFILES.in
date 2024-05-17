@@ -1,5 +1,5 @@
-src/org.pulseaudio.pavucontrol.appdata.xml.in
-src/pavucontrol.desktop.in
+src/org.pulseaudio.pavucontrol.metainfo.xml.in
+src/org.pulseaudio.pavucontrol.desktop.in
 src/mainwindow.ui
 src/cardwidget.ui
 src/channelwidget.ui
