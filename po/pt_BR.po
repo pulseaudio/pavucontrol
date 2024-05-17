@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-17 00:01+0300\n"
+"POT-Creation-Date: 2024-05-16 22:27-0400\n"
 "PO-Revision-Date: 2021-09-21 06:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -24,24 +24,132 @@ msgstr ""
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 
-#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
-msgid "PulseAudio Volume Control"
-msgstr "Controle de volume do PulseAudio"
-
-#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
+#: src/org.pulseaudio.pavucontrol.desktop.in:5
 msgid "Volume Control"
 msgstr "Controle de volume"
 
-#: src/pavucontrol.desktop.in:6
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
+msgid "Adjust device and app volumes"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
+msgid "The PulseAudio Developers"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
+msgid ""
+"PulseAudio Volume Control (pavucontrol) is a volume control tool (“mixer”) "
+"for the PulseAudio sound server. In contrast to classic mixer tools, this "
+"one allows you to control both the volume of hardware devices and of each "
+"playback stream separately."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
+msgid "The “Playback” tab"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
+msgid "The “Recording” tab"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
+msgid "The “Output” tab"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
+msgid "The “Input” tab"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
+#, fuzzy
+msgid "The “Configuration” tab"
+msgstr "_Configuração"
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
+msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
+msgid ""
+"Support for locking card profiles (new in PulseAudio 15.0). Locking a "
+"profile prevents PulseAudio from automatically switching away from that "
+"profile on plug/unplug events."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+msgid ""
+"New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
+"Norwegian Bokmål, Sinhala, Slovenian"
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+msgid ""
+"Updated translations: Catalan, Chinese (Simplified), Chinese (Traditional), "
+"Croatian, Danish, Dutch, Finnish, French, German, Hungarian, Italian, "
+"Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
+"Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:55
+msgid ""
+"There can now be only one pavucontrol window open at a time. Trying to start "
+"pavucontrol for a second time brings the first window to foreground."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:56
+msgid ""
+"Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
+"the volume meters reduces CPU use."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:57
+msgid "Improve the use of space (remove useless margins and paddings)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:58
+msgid "Use a more appropriate icon for the channel lock button."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:59
+msgid ""
+"Better channel label layout, prevents volume sliders from getting unaligned."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+msgid ""
+"Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay "
+"devices that often have higher latency than 2 seconds (this is not that "
+"useful on newer PulseAudio versions, though, because the latency is reported "
+"much more accurately than before)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
+msgid "New --version command line option."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
+msgid ""
+"New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
+"Lithuanian, Valencian."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
+msgid ""
+"Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
+"Swedish."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
+msgid "PulseAudio Volume Control"
+msgstr "Controle de volume do PulseAudio"
+
+#: src/org.pulseaudio.pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
 msgstr "Ajuste o nível do volume"
 
-#: src/pavucontrol.desktop.in:8
-#, fuzzy
-msgid "multimedia-volume-control"
-msgstr "Controle de volume do PulseAudio"
-
-#: src/pavucontrol.desktop.in:12
+#: src/org.pulseaudio.pavucontrol.desktop.in:12
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
@@ -52,380 +160,215 @@ msgstr ""
 "Settings;Preferences;microfone;equilíbrio;áudio;saída;entrada;dispositivos;"
 "reprodução;gravação;sistemas de som;placa de som;configurações;preferências;"
 
-#: src/pavucontrol.glade:12
-msgid "window2"
-msgstr ""
-
-#: src/pavucontrol.glade:25
-msgid "<b>left-front</b>"
-msgstr "<b>frontal-esquerdo</b>"
-
-#: src/pavucontrol.glade:55
-msgid "<small>50%</small>"
-msgstr "<small>50%</small>"
-
-#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
-#: src/pavucontrol.glade:1513
-msgid "window1"
-msgstr ""
-
-#: src/pavucontrol.glade:119
-msgid "Card Name"
-msgstr "Nome da placa"
-
-#: src/pavucontrol.glade:147
-msgid "Lock card to this profile"
-msgstr "Travar placa para este perfil"
-
-#: src/pavucontrol.glade:188
-msgid "<b>Profile:</b>"
-msgstr "<b>Perfil:</b>"
-
-#: src/pavucontrol.glade:218
-msgid "<b>Codec:</b>"
-msgstr "<b>Codec:</b>"
-
-#: src/pavucontrol.glade:335
-msgid "Device Title"
-msgstr "Título do Dispositivo"
-
-#: src/pavucontrol.glade:363 src/pavucontrol.glade:1625
-msgid "Mute audio"
-msgstr "Sem áudio"
-
-#: src/pavucontrol.glade:385 src/pavucontrol.glade:1647
-msgid "Lock channels together"
-msgstr "Travar canais juntos"
-
-#: src/pavucontrol.glade:408
-msgid "Set as fallback"
-msgstr "Definir como secundário"
-
-#: src/pavucontrol.glade:446
-msgid "<b>Port:</b>"
-msgstr "<b>Porta:</b>"
-
-#: src/pavucontrol.glade:506
-msgid "PCM"
-msgstr "PCM"
-
-#: src/pavucontrol.glade:521
-msgid "AC-3"
-msgstr "AC-3"
-
-#: src/pavucontrol.glade:534
-msgid "DTS"
-msgstr "DTS"
-
-#: src/pavucontrol.glade:547
-msgid "E-AC-3"
-msgstr "E-AC-3"
-
-#: src/pavucontrol.glade:560
-msgid "MPEG"
-msgstr "MPEG"
-
-#: src/pavucontrol.glade:573
-msgid "AAC"
-msgstr "AAC"
-
-#: src/pavucontrol.glade:586
-msgid "TrueHD"
-msgstr ""
-
-#: src/pavucontrol.glade:599
-msgid "DTS-HD"
-msgstr ""
-
-#: src/pavucontrol.glade:626
-msgid "<b>Latency offset:</b>"
-msgstr "<b>Compensação de latência:</b>"
-
-#: src/pavucontrol.glade:654
-msgid "ms"
-msgstr "ms"
-
-#: src/pavucontrol.glade:676
-msgid "Advanced"
-msgstr "Avançado"
-
-#: src/pavucontrol.glade:716 src/pavucontrol.glade:733
+#: src/mainwindow.ui:82 src/mainwindow.ui:173
 msgid "All Streams"
 msgstr "Todos os fluxos"
 
-#: src/pavucontrol.glade:719 src/pavucontrol.glade:736
+#: src/mainwindow.ui:85 src/mainwindow.ui:176
 msgid "Applications"
 msgstr "Aplicações"
 
-#: src/pavucontrol.glade:722 src/pavucontrol.glade:739
+#: src/mainwindow.ui:88 src/mainwindow.ui:179
 msgid "Virtual Streams"
 msgstr "Fluxos virtuais"
 
-#: src/pavucontrol.glade:750
+#: src/mainwindow.ui:265
 msgid "All Output Devices"
 msgstr "Todos os Dispositivos de Saída"
 
-#: src/pavucontrol.glade:753
+#: src/mainwindow.ui:268
 msgid "Hardware Output Devices"
 msgstr "Dispositivos de saída de hardware"
 
-#: src/pavucontrol.glade:756
+#: src/mainwindow.ui:271
 msgid "Virtual Output Devices"
 msgstr "Dispositivos de saída virtuais"
 
-#: src/pavucontrol.glade:767
+#: src/mainwindow.ui:357
 msgid "All Input Devices"
 msgstr "Todos os Dispositivos de Entrada"
 
-#: src/pavucontrol.glade:770
+#: src/mainwindow.ui:360
 msgid "All Except Monitors"
 msgstr "Todos exceto monitores"
 
-#: src/pavucontrol.glade:773
+#: src/mainwindow.ui:363
 msgid "Hardware Input Devices"
 msgstr "Dispositivos de entrada de hardware"
 
-#: src/pavucontrol.glade:776
+#: src/mainwindow.ui:366
 msgid "Virtual Input Devices"
 msgstr "Dispositivos de entrada virtuais"
 
-#: src/pavucontrol.glade:779
+#: src/mainwindow.ui:369
 msgid "Monitors"
 msgstr "Monitores"
 
-#: src/pavucontrol.glade:828
-msgid "<i>No application is currently playing audio.</i>"
-msgstr "<i>Nenhum aplicativo está reproduzindo áudio no momento.</i>"
-
-#: src/pavucontrol.glade:876 src/pavucontrol.glade:1000
-msgid "<b>_Show:</b>"
-msgstr "<b>_Mostrar:</b>"
-
-#: src/pavucontrol.glade:920
-msgid "_Playback"
-msgstr "_Reprodução"
-
-#: src/pavucontrol.glade:952
-msgid "<i>No application is currently recording audio.</i>"
-msgstr "<i>Nenhum aplicativo está gravando áudio no momento.</i>"
-
-#: src/pavucontrol.glade:1047
-msgid "_Recording"
-msgstr "_Gravando"
-
-#: src/pavucontrol.glade:1080
-msgid "<i>No output devices available</i>"
-msgstr "<i>Nenhum dispositivo de saída disponível</i>"
-
-#: src/pavucontrol.glade:1128
-msgid "<b>S_how:</b>"
-msgstr "<b>M_ostrar:</b>"
-
-#: src/pavucontrol.glade:1176
-msgid "_Output Devices"
-msgstr "Dispositivos de _saída"
-
-#: src/pavucontrol.glade:1210
-msgid "<i>No input devices available</i>"
-msgstr "<i>Nenhum dispositivo de entrada disponível</i>"
-
-#: src/pavucontrol.glade:1258
-msgid "<b>Sho_w:</b>"
-msgstr "<b>Mos_trar:</b>"
-
-#: src/pavucontrol.glade:1306
-msgid "_Input Devices"
-msgstr "Dispositivos de _entrada"
-
-#: src/pavucontrol.glade:1343
-msgid "<i>No cards available for configuration</i>"
-msgstr "<i>Nenhuma placa disponível para configuração</i>"
-
-#: src/pavucontrol.glade:1376
-msgid "Show volume meters"
-msgstr "Mostrar medidores de volume"
-
-#: src/pavucontrol.glade:1416
-msgid "_Configuration"
-msgstr "_Configuração"
-
-#: src/pavucontrol.glade:1481
-msgid "<b>Rename device to:</b>"
-msgstr "<b>Renomear dispositivo para:</b>"
-
-#: src/pavucontrol.glade:1570
-msgid "Stream Title"
-msgstr "Título do fluxo"
-
-#: src/pavucontrol.glade:1586
-msgid "direction"
-msgstr "direção"
-
-#: src/pavucontrol.cc:104
+#: src/pavucontrol.cc:107
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
 msgstr "não foi possível ler JSON da resposta de mensagem de list-codecs: %s"
 
-#: src/pavucontrol.cc:113
+#: src/pavucontrol.cc:116
 msgid "list-codecs message response is not a JSON array"
 msgstr "resposta de mensagem de list-codecs não é um vetor JSON"
 
-#: src/pavucontrol.cc:161
+#: src/pavucontrol.cc:164
 msgid "list-codecs message response could not be parsed correctly"
 msgstr ""
 
-#: src/pavucontrol.cc:181
+#: src/pavucontrol.cc:184
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
 msgstr ""
 
-#: src/pavucontrol.cc:190
+#: src/pavucontrol.cc:193
 msgid "get-codec message response is not a JSON value"
 msgstr ""
 
-#: src/pavucontrol.cc:198
+#: src/pavucontrol.cc:201
 msgid "could not get codec name from get-codec message response"
 msgstr ""
 
-#: src/pavucontrol.cc:220
+#: src/pavucontrol.cc:223
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
 msgstr ""
 
-#: src/pavucontrol.cc:229
+#: src/pavucontrol.cc:232
 msgid "get-profile-sticky message response is not a JSON value"
 msgstr ""
 
-#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
+#: src/pavucontrol.cc:252 src/cardwidget.cc:153 src/cardwidget.cc:181
 #, fuzzy, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
 msgstr "pa_context_set_default_source() falhou"
 
-#: src/pavucontrol.cc:267
+#: src/pavucontrol.cc:270
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
 msgstr ""
 
-#: src/pavucontrol.cc:276
+#: src/pavucontrol.cc:279
 msgid "list-handlers message response is not a JSON array"
 msgstr ""
 
-#: src/pavucontrol.cc:324
+#: src/pavucontrol.cc:327
 msgid "list-handlers message response could not be parsed correctly"
 msgstr ""
 
-#: src/pavucontrol.cc:358
+#: src/pavucontrol.cc:361
 msgid "Card callback failure"
 msgstr "Falha na chamada de retorno da placa"
 
-#: src/pavucontrol.cc:386
+#: src/pavucontrol.cc:389
 msgid "Sink callback failure"
 msgstr "Falha no destino da chamada de retorno"
 
-#: src/pavucontrol.cc:410
+#: src/pavucontrol.cc:413
 msgid "Source callback failure"
 msgstr "Chamada da fonte de retorno falhou"
 
-#: src/pavucontrol.cc:429
+#: src/pavucontrol.cc:432
 msgid "Sink input callback failure"
 msgstr "Falha no destino da entrada das chamadas de retorno"
 
-#: src/pavucontrol.cc:448
+#: src/pavucontrol.cc:451
 msgid "Source output callback failure"
 msgstr "Falha na chamada de retorno da saída da fonte"
 
-#: src/pavucontrol.cc:478
+#: src/pavucontrol.cc:481
 msgid "Client callback failure"
 msgstr "Falha na chamada de retorno do cliente"
 
-#: src/pavucontrol.cc:494
+#: src/pavucontrol.cc:497
 msgid "Server info callback failure"
 msgstr "Falha na chamada de retorno das informações do servidor"
 
-#: src/pavucontrol.cc:512 src/pavucontrol.cc:809
+#: src/pavucontrol.cc:515 src/pavucontrol.cc:812
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Falha ao inicializar a extensão stream_restore: %s"
 
-#: src/pavucontrol.cc:530
+#: src/pavucontrol.cc:533
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() falhou"
 
-#: src/pavucontrol.cc:548 src/pavucontrol.cc:823
+#: src/pavucontrol.cc:551 src/pavucontrol.cc:826
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Falha ao inicializar a extensão de restauração de dispositivo: %s"
 
-#: src/pavucontrol.cc:569
+#: src/pavucontrol.cc:572
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() falhou"
 
-#: src/pavucontrol.cc:587 src/pavucontrol.cc:836
+#: src/pavucontrol.cc:590 src/pavucontrol.cc:839
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Falha ao inicializar a extensão de gerência de dispositivo: %s"
 
-#: src/pavucontrol.cc:606
+#: src/pavucontrol.cc:609
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() falhou"
 
-#: src/pavucontrol.cc:623
+#: src/pavucontrol.cc:626
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() falhou"
 
-#: src/pavucontrol.cc:636
+#: src/pavucontrol.cc:639
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() falhou"
 
-#: src/pavucontrol.cc:649 src/pavucontrol.cc:662
+#: src/pavucontrol.cc:652 src/pavucontrol.cc:665
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() falhou"
 
-#: src/pavucontrol.cc:675
+#: src/pavucontrol.cc:678
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() falhou"
 
-#: src/pavucontrol.cc:685 src/pavucontrol.cc:750
+#: src/pavucontrol.cc:688 src/pavucontrol.cc:753
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() falhou"
 
-#: src/pavucontrol.cc:698
+#: src/pavucontrol.cc:701
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() falhou"
 
-#: src/pavucontrol.cc:741
+#: src/pavucontrol.cc:744
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() falhou"
 
-#: src/pavucontrol.cc:757
+#: src/pavucontrol.cc:760
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() falhou"
 
-#: src/pavucontrol.cc:764
+#: src/pavucontrol.cc:767
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() falhou"
 
-#: src/pavucontrol.cc:771
+#: src/pavucontrol.cc:774
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() falhou"
 
-#: src/pavucontrol.cc:778
+#: src/pavucontrol.cc:781
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() falhou"
 
-#: src/pavucontrol.cc:785
+#: src/pavucontrol.cc:788
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() falhou"
 
-#: src/pavucontrol.cc:792
+#: src/pavucontrol.cc:795
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() falhou"
 
-#: src/pavucontrol.cc:851 src/pavucontrol.cc:902
+#: src/pavucontrol.cc:854 src/pavucontrol.cc:905
 msgid "Connection failed, attempting reconnect"
 msgstr "Falha na conexão, tentando reconectar"
 
-#: src/pavucontrol.cc:889
+#: src/pavucontrol.cc:892
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -453,17 +396,17 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() falhou"
 
-#: src/channelwidget.cc:101
+#: src/channelwidget.cc:99
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
 msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
-#: src/channelwidget.cc:103
+#: src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
 msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
-#: src/channelwidget.cc:106
+#: src/channelwidget.cc:104
 #, c-format
 msgid "%0.0f%%"
 msgstr "%0.0f%%"
@@ -484,19 +427,19 @@ msgstr "<small>100% (0 dB)</small>"
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Básico</i></small>"
 
-#: src/devicewidget.cc:59
+#: src/devicewidget.cc:75
 msgid "Rename Device..."
 msgstr "Renomear Dispositivo..."
 
-#: src/devicewidget.cc:163
+#: src/devicewidget.cc:179
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() falhou"
 
-#: src/devicewidget.cc:244
+#: src/devicewidget.cc:257
 msgid "Sorry, but device renaming is not supported."
 msgstr "Desculpe, mas a renomeação de dispositivo não é suportada."
 
-#: src/devicewidget.cc:249
+#: src/devicewidget.cc:259
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -504,15 +447,7 @@ msgstr ""
 "Você precisa carregar o module-device-manager no servidor PulseAudio para "
 "renomear os dispositivos"
 
-#: src/devicewidget.cc:262
-msgid "_Cancel"
-msgstr "_Cancelar"
-
-#: src/devicewidget.cc:263
-msgid "_OK"
-msgstr "_OK"
-
-#: src/devicewidget.cc:270
+#: src/devicewidget.cc:294
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() falhou"
 
@@ -521,44 +456,44 @@ msgstr "pa_ext_device_manager_write() falhou"
 msgid "Error reading config file %s: %s"
 msgstr "Erro lendo o arquivo de configuração %s: %s"
 
-#: src/mainwindow.cc:250
+#: src/mainwindow.cc:245
 msgid "Error saving preferences"
 msgstr "Erro salvando as preferências"
 
-#: src/mainwindow.cc:258
+#: src/mainwindow.cc:253
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Erro escrevendo o arquivo de configuração %s"
 
-#: src/mainwindow.cc:322
+#: src/mainwindow.cc:306
 msgid " (plugged in)"
 msgstr " (conectado)"
 
-#: src/mainwindow.cc:326 src/mainwindow.cc:434
+#: src/mainwindow.cc:310 src/mainwindow.cc:418
 msgid " (unavailable)"
 msgstr " (indisponível)"
 
-#: src/mainwindow.cc:328 src/mainwindow.cc:431
+#: src/mainwindow.cc:312 src/mainwindow.cc:415
 msgid " (unplugged)"
 msgstr " (desconectado)"
 
-#: src/mainwindow.cc:633
+#: src/mainwindow.cc:617
 msgid "Failed to read data from stream"
 msgstr "Falha ao ler dados procedentes do fluxo"
 
-#: src/mainwindow.cc:677
+#: src/mainwindow.cc:661
 msgid "Peak detect"
 msgstr "Detectar pico"
 
-#: src/mainwindow.cc:678
+#: src/mainwindow.cc:662
 msgid "Failed to create monitoring stream"
 msgstr "Falha ao criar o fluxo de monitoramento"
 
-#: src/mainwindow.cc:693
+#: src/mainwindow.cc:677
 msgid "Failed to connect monitoring stream"
 msgstr "Falha ao conectar o fluxo de monitoramento"
 
-#: src/mainwindow.cc:830
+#: src/mainwindow.cc:814
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -566,15 +501,15 @@ msgstr ""
 "Ignorando sink-input por ter sido designado como um evento e, portanto, "
 "tratado pelo widget de evento"
 
-#: src/mainwindow.cc:1005
+#: src/mainwindow.cc:989
 msgid "System Sounds"
 msgstr "Sons do sistema"
 
-#: src/mainwindow.cc:1351
+#: src/mainwindow.cc:1335
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Estabelecendo conexão com o PulseAudio. Por favor, aguarde…"
 
-#: src/rolewidget.cc:72
+#: src/rolewidget.cc:68
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() falhou"
 
@@ -602,27 +537,27 @@ msgstr "pa_context_set_sink_input_mute() falhou"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() falhou"
 
-#: src/sinkwidget.cc:117
+#: src/sinkwidget.cc:119
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() falhou"
 
-#: src/sinkwidget.cc:132
+#: src/sinkwidget.cc:137
 msgid "Volume Control Feedback Sound"
 msgstr "Controle do volume do som de retorno"
 
-#: src/sinkwidget.cc:149
+#: src/sinkwidget.cc:155
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() falhou"
 
-#: src/sinkwidget.cc:163
+#: src/sinkwidget.cc:169
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() falhou"
 
-#: src/sinkwidget.cc:183
+#: src/sinkwidget.cc:189
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() falhou"
 
-#: src/sinkwidget.cc:225
+#: src/sinkwidget.cc:231
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() falhou"
 
@@ -666,29 +601,146 @@ msgstr "pa_context_set_default_source() falhou"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() falhou"
 
-#: src/streamwidget.cc:52
-msgid "Terminate"
-msgstr "Terminar"
-
-#: src/pavuapplication.cc:160
+#: src/pavuapplication.cc:158
 msgid "Select a specific tab on load."
 msgstr "Selecione uma aba específica para carregar."
 
-#: src/pavuapplication.cc:161
+#: src/pavuapplication.cc:159
 msgid "number"
 msgstr "número"
 
-#: src/pavuapplication.cc:166
+#: src/pavuapplication.cc:164
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Tenta novamente sempre se PulseAudio for encerrado (todo 5 segundos)."
 
-#: src/pavuapplication.cc:171
+#: src/pavuapplication.cc:169
 msgid "Maximize the window."
 msgstr "Maximiza a janela."
 
-#: src/pavuapplication.cc:176
+#: src/pavuapplication.cc:174
 msgid "Show version."
 msgstr "Mostra a versão."
+
+#, fuzzy
+#~ msgid "multimedia-volume-control"
+#~ msgstr "Controle de volume do PulseAudio"
+
+#~ msgid "<b>left-front</b>"
+#~ msgstr "<b>frontal-esquerdo</b>"
+
+#~ msgid "<small>50%</small>"
+#~ msgstr "<small>50%</small>"
+
+#~ msgid "Card Name"
+#~ msgstr "Nome da placa"
+
+#~ msgid "Lock card to this profile"
+#~ msgstr "Travar placa para este perfil"
+
+#~ msgid "<b>Profile:</b>"
+#~ msgstr "<b>Perfil:</b>"
+
+#~ msgid "<b>Codec:</b>"
+#~ msgstr "<b>Codec:</b>"
+
+#~ msgid "Device Title"
+#~ msgstr "Título do Dispositivo"
+
+#~ msgid "Mute audio"
+#~ msgstr "Sem áudio"
+
+#~ msgid "Lock channels together"
+#~ msgstr "Travar canais juntos"
+
+#~ msgid "Set as fallback"
+#~ msgstr "Definir como secundário"
+
+#~ msgid "<b>Port:</b>"
+#~ msgstr "<b>Porta:</b>"
+
+#~ msgid "PCM"
+#~ msgstr "PCM"
+
+#~ msgid "AC-3"
+#~ msgstr "AC-3"
+
+#~ msgid "DTS"
+#~ msgstr "DTS"
+
+#~ msgid "E-AC-3"
+#~ msgstr "E-AC-3"
+
+#~ msgid "MPEG"
+#~ msgstr "MPEG"
+
+#~ msgid "AAC"
+#~ msgstr "AAC"
+
+#~ msgid "<b>Latency offset:</b>"
+#~ msgstr "<b>Compensação de latência:</b>"
+
+#~ msgid "ms"
+#~ msgstr "ms"
+
+#~ msgid "Advanced"
+#~ msgstr "Avançado"
+
+#~ msgid "<i>No application is currently playing audio.</i>"
+#~ msgstr "<i>Nenhum aplicativo está reproduzindo áudio no momento.</i>"
+
+#~ msgid "<b>_Show:</b>"
+#~ msgstr "<b>_Mostrar:</b>"
+
+#~ msgid "_Playback"
+#~ msgstr "_Reprodução"
+
+#~ msgid "<i>No application is currently recording audio.</i>"
+#~ msgstr "<i>Nenhum aplicativo está gravando áudio no momento.</i>"
+
+#~ msgid "_Recording"
+#~ msgstr "_Gravando"
+
+#~ msgid "<i>No output devices available</i>"
+#~ msgstr "<i>Nenhum dispositivo de saída disponível</i>"
+
+#~ msgid "<b>S_how:</b>"
+#~ msgstr "<b>M_ostrar:</b>"
+
+#~ msgid "_Output Devices"
+#~ msgstr "Dispositivos de _saída"
+
+#~ msgid "<i>No input devices available</i>"
+#~ msgstr "<i>Nenhum dispositivo de entrada disponível</i>"
+
+#~ msgid "<b>Sho_w:</b>"
+#~ msgstr "<b>Mos_trar:</b>"
+
+#~ msgid "_Input Devices"
+#~ msgstr "Dispositivos de _entrada"
+
+#~ msgid "<i>No cards available for configuration</i>"
+#~ msgstr "<i>Nenhuma placa disponível para configuração</i>"
+
+#~ msgid "Show volume meters"
+#~ msgstr "Mostrar medidores de volume"
+
+#~ msgid "<b>Rename device to:</b>"
+#~ msgstr "<b>Renomear dispositivo para:</b>"
+
+#~ msgid "Stream Title"
+#~ msgstr "Título do fluxo"
+
+#~ msgid "direction"
+#~ msgstr "direção"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancelar"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "Terminate"
+#~ msgstr "Terminar"
 
 #~ msgid "50%"
 #~ msgstr "50%"
