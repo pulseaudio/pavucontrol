@@ -272,19 +272,27 @@ finish:
 #endif
 }
 
-static void set_icon_name_default(Gtk::Image *i, const char *name) {
+static void set_icon_name_default(Gtk::Image *i, const char *name, const char *fallback) {
     /* We emulate the behavior of the GTK_ICON_LOOKUP_GENERIC_FALLBACK flag from Gtk3 */
     Glib::RefPtr<Gtk::IconTheme> theme;
     theme = Gtk::IconTheme::get_for_display(Gdk::Display::get_default());
-    std::string iconName(name);
+    std::string iconName(name ? name : fallback);
+
     while (!theme->has_icon(iconName.c_str())) {
+        /* Fallback to a symbolic icon, if it exists */
+        if (theme->has_icon((iconName + "-symbolic").c_str())) {
+            iconName = iconName + "-symbolic";
+            break;
+        }
+
         size_t lastDashIndex = iconName.find_last_of("-");
         if (lastDashIndex == std::string::npos) {
-            iconName = "gtk-missing-image";
+            iconName = fallback;
             break;
         }
         iconName = iconName.substr(0, lastDashIndex);
     }
+
     i->set_from_icon_name(iconName.c_str());
 }
 
@@ -366,7 +374,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-card");
+    set_icon_name_default(w->iconImage, icon, "audio-card");
 
     w->hasSinks = w->hasSources = false;
     profile_priorities.clear();
@@ -564,7 +572,7 @@ bool MainWindow::updateSink(const pa_sink_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-card");
+    set_icon_name_default(w->iconImage, icon, "audio-card");
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -732,7 +740,7 @@ void MainWindow::updateSource(const pa_source_info &info) {
     g_free(txt);
 
     icon = pa_proplist_gets(info.proplist, PA_PROP_DEVICE_ICON_NAME);
-    set_icon_name_default(w->iconImage, icon ? icon : "audio-input-microphone");
+    set_icon_name_default(w->iconImage, icon, "audio-input-microphone");
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -797,11 +805,8 @@ void MainWindow::setIconFromProplist(Gtk::Image *icon, pa_proplist *l, const cha
         }
     }
 
-    t = def;
-
 finish:
-
-    set_icon_name_default(icon, t);
+    set_icon_name_default(icon, t, def);
 }
 
 void MainWindow::updateSinkInput(const pa_sink_input_info &info) {
@@ -854,7 +859,7 @@ void MainWindow::updateSinkInput(const pa_sink_input_info &info) {
 
     w->nameLabel->set_tooltip_text(info.name);
 
-    setIconFromProplist(w->iconImage, info.proplist, "audio-card");
+    setIconFromProplist(w->iconImage, info.proplist, "application-x-executable");
 
     w->setVolume(info.volume);
     w->muteToggleButton->set_active(info.mute);
@@ -910,7 +915,7 @@ void MainWindow::updateSourceOutput(const pa_source_output_info &info) {
 
     w->nameLabel->set_tooltip_text(info.name);
 
-    setIconFromProplist(w->iconImage, info.proplist, "audio-input-microphone");
+    setIconFromProplist(w->iconImage, info.proplist, "application-x-executable");
 
 #if HAVE_SOURCE_OUTPUT_VOLUMES
     w->setVolume(info.volume);
