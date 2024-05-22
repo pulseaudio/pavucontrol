@@ -39,6 +39,22 @@ General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
+<div class="news-date">Tue May 21 2024: </div>
+<p class="news-text">
+<a href="@PACKAGE_URL@pavucontrol-6.0.tar.xz">Version 6.0</a> released.
+Changes:</p>
+<ul>
+<li>Migrate from Gtk 3 to 4.</li>
+<li>Embed UI resources in executable.</li>
+<li>Rename "Set as fallback" to "Default" for better legibility.</li>
+<li>Support 144 Hz monitors with level bars.</li>
+<li>App icons will fallback to generic rather than missing image,
+and this will be more common with Gtk 4.</li>
+<li>Lots of translation updates.</li>
+<li>Drop autotools build in favour of meson.</li>
+<li>Make libcanberra dependency optional.</li>
+</ul>
+
 <div class="news-date">Sun Aug 15 2021: </div>
 <p class="news-text">
 <a href="@PACKAGE_URL@pavucontrol-5.0.tar.xz">Version 5.0</a> released.
