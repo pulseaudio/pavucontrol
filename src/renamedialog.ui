@@ -13,7 +13,7 @@
         <child>
           <object class="GtkLabel">
             <property name="vexpand">1</property>
-            <property name="label" translatable="1">&lt;b&gt;Rename device to:&lt;/b&gt;</property>
+            <property name="label" translatable="yes">&lt;b&gt;Rename device to:&lt;/b&gt;</property>
             <property name="use_markup">1</property>
             <property name="xalign">0</property>
           </object>
@@ -34,7 +34,7 @@
             <property name="homogeneous">1</property>
             <child>
               <object class="GtkButton">
-                <property name="label" translatable="1">_Cancel</property>
+                <property name="label" translatable="yes">_Cancel</property>
                 <property name="use_underline">1</property>
                 <property name="focusable">1</property>
                 <property name="action_name">window.close</property>
@@ -42,7 +42,7 @@
             </child>
             <child>
               <object class="GtkButton" id="renameButton">
-                <property name="label" translatable="1">_Ok</property>
+                <property name="label" translatable="yes">_Ok</property>
                 <property name="use_underline">1</property>
                 <property name="focusable">1</property>
                 <property name="action_name">win.rename</property>

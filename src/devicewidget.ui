@@ -30,7 +30,7 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="deviceNameLabel">
-                    <property name="label" translatable="1">Device Title</property>
+                    <property name="label" translatable="yes">Device Title</property>
                     <property name="use_markup">1</property>
                     <property name="ellipsize">end</property>
                     <property name="xalign">0</property>
@@ -45,7 +45,7 @@
                   <object class="GtkToggleButton" id="deviceMuteToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Mute audio</property>
+                    <property name="tooltip_text" translatable="yes">Mute audio</property>
                     <property name="has-frame">0</property>
                     <child>
                       <object class="GtkImage">
@@ -59,7 +59,7 @@
                   <object class="GtkToggleButton" id="deviceLockToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Lock channels together</property>
+                    <property name="tooltip_text" translatable="yes">Lock channels together</property>
                     <property name="has-frame">0</property>
                     <property name="active">1</property>
                     <child>
@@ -74,7 +74,7 @@
                   <object class="GtkToggleButton" id="defaultToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Set as default</property>
+                    <property name="tooltip_text" translatable="yes">Set as default</property>
                     <child>
                       <object class="GtkImage">
                         <property name="icon_name">emblem-default</property>
@@ -92,7 +92,7 @@
             <property name="spacing">6</property>
             <child>
               <object class="GtkLabel">
-                <property name="label" translatable="1">&lt;b&gt;Port:&lt;/b&gt;</property>
+                <property name="label" translatable="yes">&lt;b&gt;Port:&lt;/b&gt;</property>
                 <property name="use_markup">1</property>
                 <property name="xalign">0</property>
               </object>
@@ -133,7 +133,7 @@
                     <property name="column_homogeneous">1</property>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatPCM">
-                        <property name="label" translatable="1">PCM</property>
+                        <property name="label" translatable="yes">PCM</property>
                         <property name="sensitive">0</property>
                         <property name="focusable">1</property>
                         <property name="active">1</property>
@@ -145,7 +145,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatAC3">
-                        <property name="label" translatable="1">AC-3</property>
+                        <property name="label" translatable="yes">AC-3</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">1</property>
@@ -155,7 +155,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatDTS">
-                        <property name="label" translatable="1">DTS</property>
+                        <property name="label" translatable="yes">DTS</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">2</property>
@@ -165,7 +165,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatEAC3">
-                        <property name="label" translatable="1">E-AC-3</property>
+                        <property name="label" translatable="yes">E-AC-3</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">0</property>
@@ -175,7 +175,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatMPEG">
-                        <property name="label" translatable="1">MPEG</property>
+                        <property name="label" translatable="yes">MPEG</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">1</property>
@@ -185,7 +185,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatAAC">
-                        <property name="label" translatable="1">AAC</property>
+                        <property name="label" translatable="yes">AAC</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">2</property>
@@ -195,7 +195,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatTRUEHD">
-                        <property name="label" translatable="1">TrueHD</property>
+                        <property name="label" translatable="yes">TrueHD</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">0</property>
@@ -205,7 +205,7 @@
                     </child>
                     <child>
                       <object class="GtkCheckButton" id="encodingFormatDTSHD">
-                        <property name="label" translatable="1">DTS-HD</property>
+                        <property name="label" translatable="yes">DTS-HD</property>
                         <property name="focusable">1</property>
                         <layout>
                           <property name="column">1</property>
@@ -221,7 +221,7 @@
                     <property name="spacing">6</property>
                     <child>
                       <object class="GtkLabel">
-                        <property name="label" translatable="1">&lt;b&gt;Latency offset:&lt;/b&gt;</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Latency offset:&lt;/b&gt;</property>
                         <property name="use_markup">1</property>
                         <property name="xalign">0</property>
                       </object>
@@ -234,7 +234,7 @@
                     </child>
                     <child>
                       <object class="GtkLabel">
-                        <property name="label" translatable="1">ms</property>
+                        <property name="label" translatable="yes">ms</property>
                         <property name="use_markup">1</property>
                       </object>
                     </child>
@@ -244,7 +244,7 @@
             </child>
             <child type="label">
               <object class="GtkLabel" id="advancedLabel">
-                <property name="label" translatable="1">Advanced</property>
+                <property name="label" translatable="yes">Advanced</property>
               </object>
             </child>
           </object>

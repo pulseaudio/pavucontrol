@@ -2,7 +2,7 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <object class="GtkWindow" id="mainWindow">
-    <property name="title" translatable="1">Volume Control</property>
+    <property name="title" translatable="yes">Volume Control</property>
     <property name="default_width">500</property>
     <property name="default_height">400</property>
     <property name="icon_name">multimedia-volume-control</property>
@@ -37,7 +37,7 @@
                                   <object class="GtkLabel" id="noStreamsLabel">
                                     <property name="vexpand">1</property>
                                     <property name="sensitive">0</property>
-                                    <property name="label" translatable="1">&lt;i&gt;No application is currently playing audio.&lt;/i&gt;</property>
+                                    <property name="label" translatable="yes">&lt;i&gt;No application is currently playing audio.&lt;/i&gt;</property>
                                     <property name="use_markup">1</property>
                                   </object>
                                 </child>
@@ -63,7 +63,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="hexpand">1</property>
-                            <property name="label" translatable="1">&lt;b&gt;_Show:&lt;/b&gt;</property>
+                            <property name="label" translatable="yes">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
                             <property name="use_underline">1</property>
                             <property name="xalign">1</property>
@@ -104,7 +104,7 @@
                 </property>
                 <property name="tab">
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">_Playback</property>
+                    <property name="label" translatable="yes">_Playback</property>
                     <property name="use_underline">1</property>
                   </object>
                 </property>
@@ -128,7 +128,7 @@
                                   <object class="GtkLabel" id="noRecsLabel">
                                     <property name="vexpand">1</property>
                                     <property name="sensitive">0</property>
-                                    <property name="label" translatable="1">&lt;i&gt;No application is currently recording audio.&lt;/i&gt;</property>
+                                    <property name="label" translatable="yes">&lt;i&gt;No application is currently recording audio.&lt;/i&gt;</property>
                                     <property name="use_markup">1</property>
                                   </object>
                                 </child>
@@ -154,7 +154,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="hexpand">1</property>
-                            <property name="label" translatable="1">&lt;b&gt;_Show:&lt;/b&gt;</property>
+                            <property name="label" translatable="yes">&lt;b&gt;_Show:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
                             <property name="use_underline">1</property>
                             <property name="xalign">1</property>
@@ -195,7 +195,7 @@
                 </property>
                 <property name="tab">
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">_Recording</property>
+                    <property name="label" translatable="yes">_Recording</property>
                     <property name="use_underline">1</property>
                   </object>
                 </property>
@@ -219,7 +219,7 @@
                                   <object class="GtkLabel" id="noSinksLabel">
                                     <property name="vexpand">1</property>
                                     <property name="sensitive">0</property>
-                                    <property name="label" translatable="1">&lt;i&gt;No output devices available&lt;/i&gt;</property>
+                                    <property name="label" translatable="yes">&lt;i&gt;No output devices available&lt;/i&gt;</property>
                                     <property name="use_markup">1</property>
                                   </object>
                                 </child>
@@ -245,7 +245,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="hexpand">1</property>
-                            <property name="label" translatable="1">&lt;b&gt;S_how:&lt;/b&gt;</property>
+                            <property name="label" translatable="yes">&lt;b&gt;S_how:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
                             <property name="use_underline">1</property>
                             <property name="mnemonic_widget">sinkTypeComboBox</property>
@@ -287,7 +287,7 @@
                 </property>
                 <property name="tab">
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">_Output Devices</property>
+                    <property name="label" translatable="yes">_Output Devices</property>
                     <property name="use_underline">1</property>
                   </object>
                 </property>
@@ -311,7 +311,7 @@
                                   <object class="GtkLabel" id="noSourcesLabel">
                                     <property name="vexpand">1</property>
                                     <property name="sensitive">0</property>
-                                    <property name="label" translatable="1">&lt;i&gt;No input devices available&lt;/i&gt;</property>
+                                    <property name="label" translatable="yes">&lt;i&gt;No input devices available&lt;/i&gt;</property>
                                     <property name="use_markup">1</property>
                                   </object>
                                 </child>
@@ -337,7 +337,7 @@
                         <child>
                           <object class="GtkLabel">
                             <property name="hexpand">1</property>
-                            <property name="label" translatable="1">&lt;b&gt;Sho_w:&lt;/b&gt;</property>
+                            <property name="label" translatable="yes">&lt;b&gt;Sho_w:&lt;/b&gt;</property>
                             <property name="use_markup">1</property>
                             <property name="use_underline">1</property>
                             <property name="mnemonic_widget">sourceTypeComboBox</property>
@@ -385,7 +385,7 @@
                 </property>
                 <property name="tab">
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">_Input Devices</property>
+                    <property name="label" translatable="yes">_Input Devices</property>
                     <property name="use_underline">1</property>
                   </object>
                 </property>
@@ -413,7 +413,7 @@
                                       <object class="GtkLabel" id="noCardsLabel">
                                         <property name="vexpand">1</property>
                                         <property name="sensitive">0</property>
-                                        <property name="label" translatable="1">&lt;i&gt;No cards available for configuration&lt;/i&gt;</property>
+                                        <property name="label" translatable="yes">&lt;i&gt;No cards available for configuration&lt;/i&gt;</property>
                                         <property name="use_markup">1</property>
                                       </object>
                                     </child>
@@ -428,7 +428,7 @@
                                     </child>
                                     <child>
                                       <object class="GtkCheckButton" id="showVolumeMetersCheckButton">
-                                        <property name="label" translatable="1">Show volume meters</property>
+                                        <property name="label" translatable="yes">Show volume meters</property>
                                         <property name="focusable">1</property>
                                         <property name="active">1</property>
                                       </object>
@@ -445,7 +445,7 @@
                 </property>
                 <property name="tab">
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">_Configuration</property>
+                    <property name="label" translatable="yes">_Configuration</property>
                     <property name="use_underline">1</property>
                   </object>
                 </property>

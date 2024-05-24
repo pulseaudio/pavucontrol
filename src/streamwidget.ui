@@ -31,7 +31,7 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="streamNameLabel">
-                    <property name="label" translatable="1">Stream Title</property>
+                    <property name="label" translatable="yes">Stream Title</property>
                     <property name="use_markup">1</property>
                     <property name="ellipsize">end</property>
                     <property name="xalign">0</property>
@@ -41,7 +41,7 @@
                   <object class="GtkLabel" id="directionLabel">
                     <property name="margin_start">4</property>
                     <property name="margin_end">4</property>
-                    <property name="label" translatable="1">direction</property>
+                    <property name="label" translatable="yes">direction</property>
                     <property name="use_markup">1</property>
                     <property name="xalign">0</property>
                   </object>
@@ -61,7 +61,7 @@
                   <object class="GtkToggleButton" id="streamMuteToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Mute audio</property>
+                    <property name="tooltip_text" translatable="yes">Mute audio</property>
                     <property name="has-frame">0</property>
                     <child>
                       <object class="GtkImage">
@@ -75,7 +75,7 @@
                   <object class="GtkToggleButton" id="streamLockToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Lock channels together</property>
+                    <property name="tooltip_text" translatable="yes">Lock channels together</property>
                     <property name="has-frame">0</property>
                     <property name="active">1</property>
                     <child>

@@ -6,7 +6,7 @@
     <child>
       <object class="GtkLabel" id="channelLabel">
         <property name="halign">center</property>
-        <property name="label" translatable="1">&lt;b&gt;left-front&lt;/b&gt;</property>
+        <property name="label" translatable="yes">&lt;b&gt;left-front&lt;/b&gt;</property>
         <property name="use_markup">1</property>
         <property name="xalign">1</property>
         <property name="yalign">0</property>
@@ -30,7 +30,7 @@
         <property name="halign">center</property>
         <property name="margin_start">8</property>
         <property name="margin_end">8</property>
-        <property name="label" translatable="1">&lt;small&gt;50%&lt;/small&gt;</property>
+        <property name="label" translatable="yes">&lt;small&gt;50%&lt;/small&gt;</property>
         <property name="use_markup">1</property>
         <property name="justify">right</property>
         <property name="width_chars">12</property>

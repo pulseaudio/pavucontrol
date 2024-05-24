@@ -27,7 +27,7 @@
                 <child>
                   <object class="GtkLabel" id="cardNameLabel">
                     <property name="hexpand">1</property>
-                    <property name="label" translatable="1">Card Name</property>
+                    <property name="label" translatable="yes">Card Name</property>
                     <property name="use_markup">1</property>
                     <property name="ellipsize">middle</property>
                     <property name="xalign">0</property>
@@ -42,7 +42,7 @@
                   <object class="GtkToggleButton" id="profileLockToggleButton">
                     <property name="halign">center</property>
                     <property name="focusable">1</property>
-                    <property name="tooltip_text" translatable="1">Lock card to this profile</property>
+                    <property name="tooltip_text" translatable="yes">Lock card to this profile</property>
                     <property name="has-frame">0</property>
                     <property name="active">1</property>
                     <child>
@@ -63,7 +63,7 @@
             <property name="spacing">6</property>
             <child>
               <object class="GtkLabel">
-                <property name="label" translatable="1">&lt;b&gt;Profile:&lt;/b&gt;</property>
+                <property name="label" translatable="yes">&lt;b&gt;Profile:&lt;/b&gt;</property>
                 <property name="use_markup">1</property>
                 <property name="xalign">0</property>
               </object>
@@ -79,7 +79,7 @@
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkLabel">
-                    <property name="label" translatable="1">&lt;b&gt;Codec:&lt;/b&gt;</property>
+                    <property name="label" translatable="yes">&lt;b&gt;Codec:&lt;/b&gt;</property>
                     <property name="use_markup">1</property>
                     <property name="xalign">0</property>
                   </object>
