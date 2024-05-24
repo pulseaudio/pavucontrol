@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 22:27-0400\n"
+"POT-Creation-Date: 2024-05-24 17:04-0400\n"
 "PO-Revision-Date: 2022-02-20 03:16+0000\n"
 "Last-Translator: Takuro Onoue <kusanaginoturugi@gmail.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Generator: Weblate 4.10.1\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
-#: src/org.pulseaudio.pavucontrol.desktop.in:5
+#: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
 msgid "Volume Control"
 msgstr "音量調節"
 
@@ -67,23 +67,57 @@ msgid "The “Configuration” tab"
 msgstr "設定(_C)"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
-msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgid "Migrate from Gtk 3 to 4."
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
+msgid "Embed UI resources in executable."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+msgid "Support 144 Hz monitors with level bars."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
+msgid ""
+"App icons will fallback to generic rather than missing image, and this will "
+"be more common with Gtk 4."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
+msgid "Lots of translation updates."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
+msgid "Drop autotools build in favour of meson."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
+msgid "Make libcanberra dependency optional."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
 "Support for locking card profiles (new in PulseAudio 15.0). Locking a "
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
 "Updated translations: Catalan, Chinese (Simplified), Chinese (Traditional), "
 "Croatian, Danish, Dutch, Finnish, French, German, Hungarian, Italian, "
@@ -91,32 +125,32 @@ msgid ""
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:55
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:56
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:57
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:58
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:59
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
 "Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay "
 "devices that often have higher latency than 2 seconds (this is not that "
@@ -124,17 +158,17 @@ msgid ""
 "much more accurately than before)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
@@ -158,6 +192,14 @@ msgstr ""
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 
+#: src/mainwindow.ui:40
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>現在音声を再生しているアプリケーションはありません。</i>"
+
+#: src/mainwindow.ui:66 src/mainwindow.ui:157
+msgid "<b>_Show:</b>"
+msgstr "<b>表示(_S):</b>"
+
 #: src/mainwindow.ui:82 src/mainwindow.ui:173
 msgid "All Streams"
 msgstr "全てのストリーム"
@@ -170,6 +212,26 @@ msgstr "アプリケーション"
 msgid "Virtual Streams"
 msgstr "仮想ストリーム"
 
+#: src/mainwindow.ui:107
+msgid "_Playback"
+msgstr "再生(_P)"
+
+#: src/mainwindow.ui:131
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>現在録音しているアプリケーションはありません。</i>"
+
+#: src/mainwindow.ui:198
+msgid "_Recording"
+msgstr "録音(_R)"
+
+#: src/mainwindow.ui:222
+msgid "<i>No output devices available</i>"
+msgstr "<i>出力デバイスがありません</i>"
+
+#: src/mainwindow.ui:248
+msgid "<b>S_how:</b>"
+msgstr "<b>表示(_H):</b>"
+
 #: src/mainwindow.ui:265
 msgid "All Output Devices"
 msgstr "全ての出力装置"
@@ -181,6 +243,18 @@ msgstr "ハードウェア出力装置"
 #: src/mainwindow.ui:271
 msgid "Virtual Output Devices"
 msgstr "仮想出力装置"
+
+#: src/mainwindow.ui:290
+msgid "_Output Devices"
+msgstr "出力デバイス(_O)"
+
+#: src/mainwindow.ui:314
+msgid "<i>No input devices available</i>"
+msgstr "<i>入力デバイスがありません</i>"
+
+#: src/mainwindow.ui:340
+msgid "<b>Sho_w:</b>"
+msgstr "<b>表示(_W):</b>"
 
 #: src/mainwindow.ui:357
 msgid "All Input Devices"
@@ -201,6 +275,133 @@ msgstr "仮想入力装置"
 #: src/mainwindow.ui:369
 msgid "Monitors"
 msgstr "監視"
+
+#: src/mainwindow.ui:388
+msgid "_Input Devices"
+msgstr "入力デバイス(_I)"
+
+#: src/mainwindow.ui:416
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>設定するカードがありません</i>"
+
+#: src/mainwindow.ui:431
+msgid "Show volume meters"
+msgstr "音量メーターを表示"
+
+#: src/mainwindow.ui:448
+#, fuzzy
+msgid "_Configuration"
+msgstr "設定(_C)"
+
+#: src/cardwidget.ui:30
+msgid "Card Name"
+msgstr "カード名"
+
+#: src/cardwidget.ui:45
+msgid "Lock card to this profile"
+msgstr ""
+
+#: src/cardwidget.ui:66
+msgid "<b>Profile:</b>"
+msgstr "<b>プロファイル:</b>"
+
+#: src/cardwidget.ui:82
+msgid "<b>Codec:</b>"
+msgstr "<b>コーデック:</b>"
+
+#: src/channelwidget.ui:9
+msgid "<b>left-front</b>"
+msgstr "<b>左前方</b>"
+
+#: src/channelwidget.ui:33
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: src/renamedialog.ui:16
+msgid "<b>Rename device to:</b>"
+msgstr "<b>装置の名前を変更:</b>"
+
+#: src/renamedialog.ui:37
+msgid "_Cancel"
+msgstr "取り消し (_C)"
+
+#: src/renamedialog.ui:45
+#, fuzzy
+msgid "_Ok"
+msgstr "OK(_O)"
+
+#: src/streamwidget.ui:34
+msgid "Stream Title"
+msgstr "ストリームのタイトル"
+
+#: src/streamwidget.ui:44
+msgid "direction"
+msgstr "方向"
+
+#: src/streamwidget.ui:64 src/devicewidget.ui:48
+msgid "Mute audio"
+msgstr "消音"
+
+#: src/streamwidget.ui:78 src/devicewidget.ui:62
+msgid "Lock channels together"
+msgstr "チャネルを同時にロック"
+
+#: src/devicewidget.ui:33
+msgid "Device Title"
+msgstr "デバイス名"
+
+#: src/devicewidget.ui:77
+#, fuzzy
+msgid "Set as default"
+msgstr "代替として設定"
+
+#: src/devicewidget.ui:95
+msgid "<b>Port:</b>"
+msgstr "<b>ポート:</b>"
+
+#: src/devicewidget.ui:136
+msgid "PCM"
+msgstr "PCM"
+
+#: src/devicewidget.ui:148
+msgid "AC-3"
+msgstr "AC-3"
+
+#: src/devicewidget.ui:158
+msgid "DTS"
+msgstr "DTS"
+
+#: src/devicewidget.ui:168
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: src/devicewidget.ui:178
+msgid "MPEG"
+msgstr "MPEG"
+
+#: src/devicewidget.ui:188
+msgid "AAC"
+msgstr "AAC"
+
+#: src/devicewidget.ui:198
+msgid "TrueHD"
+msgstr ""
+
+#: src/devicewidget.ui:208
+msgid "DTS-HD"
+msgstr ""
+
+#: src/devicewidget.ui:224
+msgid "<b>Latency offset:</b>"
+msgstr "<b>遅延オフセット:</b>"
+
+#: src/devicewidget.ui:237
+msgid "ms"
+msgstr "ミリ秒"
+
+#: src/devicewidget.ui:247
+msgid "Advanced"
+msgstr "詳細"
 
 #: src/pavucontrol.cc:107
 #, c-format
@@ -453,35 +654,35 @@ msgstr "設定の保存中にエラーが発生しました"
 msgid "Error writing config file %s"
 msgstr "コンフィグファイル \"%s\" の書き込み中にエラーが発生しました"
 
-#: src/mainwindow.cc:306
+#: src/mainwindow.cc:314
 msgid " (plugged in)"
 msgstr " (接続済)"
 
-#: src/mainwindow.cc:310 src/mainwindow.cc:418
+#: src/mainwindow.cc:318 src/mainwindow.cc:426
 msgid " (unavailable)"
 msgstr " (使用不可)"
 
-#: src/mainwindow.cc:312 src/mainwindow.cc:415
+#: src/mainwindow.cc:320 src/mainwindow.cc:423
 msgid " (unplugged)"
 msgstr " (未接続)"
 
-#: src/mainwindow.cc:617
+#: src/mainwindow.cc:625
 msgid "Failed to read data from stream"
 msgstr "ストリームからのデータの読み込みに失敗"
 
-#: src/mainwindow.cc:661
+#: src/mainwindow.cc:669
 msgid "Peak detect"
 msgstr "ピーク検出"
 
-#: src/mainwindow.cc:662
+#: src/mainwindow.cc:670
 msgid "Failed to create monitoring stream"
 msgstr "モニタリングストリームの生成に失敗"
 
-#: src/mainwindow.cc:677
+#: src/mainwindow.cc:685
 msgid "Failed to connect monitoring stream"
 msgstr "モニタリングストリームへの接続に失敗"
 
-#: src/mainwindow.cc:814
+#: src/mainwindow.cc:819
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -489,11 +690,11 @@ msgstr ""
 "イベントとして指定され、イベントウィジェットによって処理されるため、sink-"
 "input を無視します"
 
-#: src/mainwindow.cc:989
+#: src/mainwindow.cc:994
 msgid "System Sounds"
 msgstr "システム音"
 
-#: src/mainwindow.cc:1335
+#: src/mainwindow.cc:1340
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "PulseAudioとの接続を確立しています。お待ちください…"
 
@@ -612,117 +813,6 @@ msgstr "バージョンを表示します。"
 #, fuzzy
 #~ msgid "multimedia-volume-control"
 #~ msgstr "PulseAudio 音量調節"
-
-#~ msgid "<b>left-front</b>"
-#~ msgstr "<b>左前方</b>"
-
-#~ msgid "<small>50%</small>"
-#~ msgstr "<small>50%</small>"
-
-#~ msgid "Card Name"
-#~ msgstr "カード名"
-
-#~ msgid "<b>Profile:</b>"
-#~ msgstr "<b>プロファイル:</b>"
-
-#~ msgid "<b>Codec:</b>"
-#~ msgstr "<b>コーデック:</b>"
-
-#~ msgid "Device Title"
-#~ msgstr "デバイス名"
-
-#~ msgid "Mute audio"
-#~ msgstr "消音"
-
-#~ msgid "Lock channels together"
-#~ msgstr "チャネルを同時にロック"
-
-#~ msgid "Set as fallback"
-#~ msgstr "代替として設定"
-
-#~ msgid "<b>Port:</b>"
-#~ msgstr "<b>ポート:</b>"
-
-#~ msgid "PCM"
-#~ msgstr "PCM"
-
-#~ msgid "AC-3"
-#~ msgstr "AC-3"
-
-#~ msgid "DTS"
-#~ msgstr "DTS"
-
-#~ msgid "E-AC-3"
-#~ msgstr "E-AC-3"
-
-#~ msgid "MPEG"
-#~ msgstr "MPEG"
-
-#~ msgid "AAC"
-#~ msgstr "AAC"
-
-#~ msgid "<b>Latency offset:</b>"
-#~ msgstr "<b>遅延オフセット:</b>"
-
-#~ msgid "ms"
-#~ msgstr "ミリ秒"
-
-#~ msgid "Advanced"
-#~ msgstr "詳細"
-
-#~ msgid "<i>No application is currently playing audio.</i>"
-#~ msgstr "<i>現在音声を再生しているアプリケーションはありません。</i>"
-
-#~ msgid "<b>_Show:</b>"
-#~ msgstr "<b>表示(_S):</b>"
-
-#~ msgid "_Playback"
-#~ msgstr "再生(_P)"
-
-#~ msgid "<i>No application is currently recording audio.</i>"
-#~ msgstr "<i>現在録音しているアプリケーションはありません。</i>"
-
-#~ msgid "_Recording"
-#~ msgstr "録音(_R)"
-
-#~ msgid "<i>No output devices available</i>"
-#~ msgstr "<i>出力デバイスがありません</i>"
-
-#~ msgid "<b>S_how:</b>"
-#~ msgstr "<b>表示(_H):</b>"
-
-#~ msgid "_Output Devices"
-#~ msgstr "出力デバイス(_O)"
-
-#~ msgid "<i>No input devices available</i>"
-#~ msgstr "<i>入力デバイスがありません</i>"
-
-#~ msgid "<b>Sho_w:</b>"
-#~ msgstr "<b>表示(_W):</b>"
-
-#~ msgid "_Input Devices"
-#~ msgstr "入力デバイス(_I)"
-
-#~ msgid "<i>No cards available for configuration</i>"
-#~ msgstr "<i>設定するカードがありません</i>"
-
-#~ msgid "Show volume meters"
-#~ msgstr "音量メーターを表示"
-
-#~ msgid "<b>Rename device to:</b>"
-#~ msgstr "<b>装置の名前を変更:</b>"
-
-#~ msgid "Stream Title"
-#~ msgstr "ストリームのタイトル"
-
-#~ msgid "direction"
-#~ msgstr "方向"
-
-#~ msgid "_Cancel"
-#~ msgstr "取り消し (_C)"
-
-#~ msgid "_OK"
-#~ msgstr "OK(_O)"
 
 #~ msgid "Terminate"
 #~ msgstr "終了"

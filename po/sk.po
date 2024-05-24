@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 22:27-0400\n"
+"POT-Creation-Date: 2024-05-24 17:04-0400\n"
 "PO-Revision-Date: 2021-10-08 01:39+0000\n"
 "Last-Translator: Ondrej Sulek <feonsu@gmail.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
-#: src/org.pulseaudio.pavucontrol.desktop.in:5
+#: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
 msgid "Volume Control"
 msgstr "Ovládanie hlasitosti"
 
@@ -64,23 +64,57 @@ msgid "The “Configuration” tab"
 msgstr "_Nastavenie"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
-msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgid "Migrate from Gtk 3 to 4."
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
+msgid "Embed UI resources in executable."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+msgid "Support 144 Hz monitors with level bars."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
+msgid ""
+"App icons will fallback to generic rather than missing image, and this will "
+"be more common with Gtk 4."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
+msgid "Lots of translation updates."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
+msgid "Drop autotools build in favour of meson."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
+msgid "Make libcanberra dependency optional."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
 "Support for locking card profiles (new in PulseAudio 15.0). Locking a "
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
 "Updated translations: Catalan, Chinese (Simplified), Chinese (Traditional), "
 "Croatian, Danish, Dutch, Finnish, French, German, Hungarian, Italian, "
@@ -88,32 +122,32 @@ msgid ""
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:55
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:56
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:57
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:58
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:59
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
 "Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay "
 "devices that often have higher latency than 2 seconds (this is not that "
@@ -121,17 +155,17 @@ msgid ""
 "much more accurately than before)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
@@ -155,6 +189,14 @@ msgstr ""
 "Reproduktory;Zvuk;Zmiešavač;Výstup;Vstup; Zariadenia;Prehrávanie;Nahrávanie;"
 "Systémové zvuky;Zvuková karta;Nastavenia;Predvoľby;"
 
+#: src/mainwindow.ui:40
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Žiadna aplikácia momentálne neprehráva zvuk.</i>"
+
+#: src/mainwindow.ui:66 src/mainwindow.ui:157
+msgid "<b>_Show:</b>"
+msgstr "<b>_Zobraziť:</b>"
+
 #: src/mainwindow.ui:82 src/mainwindow.ui:173
 msgid "All Streams"
 msgstr "Všetky prúdy"
@@ -167,6 +209,26 @@ msgstr "Aplikácie"
 msgid "Virtual Streams"
 msgstr "Virtuálne prúdy"
 
+#: src/mainwindow.ui:107
+msgid "_Playback"
+msgstr "_Prehrávanie"
+
+#: src/mainwindow.ui:131
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Žiadna aplikácia momentálne nenahráva zvuk.</i>"
+
+#: src/mainwindow.ui:198
+msgid "_Recording"
+msgstr "_Nahrávanie"
+
+#: src/mainwindow.ui:222
+msgid "<i>No output devices available</i>"
+msgstr "<i>Nie sú dostupné žiadne výstupné zariadenia</i>"
+
+#: src/mainwindow.ui:248
+msgid "<b>S_how:</b>"
+msgstr "<b>_Zobraziť:</b>"
+
 #: src/mainwindow.ui:265
 msgid "All Output Devices"
 msgstr "Všetky výstupné zariadenia"
@@ -178,6 +240,18 @@ msgstr "Hardvérové výstupné zariadenia"
 #: src/mainwindow.ui:271
 msgid "Virtual Output Devices"
 msgstr "Virtuálne výstupné zariadenia"
+
+#: src/mainwindow.ui:290
+msgid "_Output Devices"
+msgstr "_Výstupné zariadenia"
+
+#: src/mainwindow.ui:314
+msgid "<i>No input devices available</i>"
+msgstr "<i>Nie sú dostupné žiadne vstupné zariadenia</i>"
+
+#: src/mainwindow.ui:340
+msgid "<b>Sho_w:</b>"
+msgstr "<b>_Zobraziť:</b>"
 
 #: src/mainwindow.ui:357
 msgid "All Input Devices"
@@ -198,6 +272,133 @@ msgstr "Virtuálne vstupné zariadenia"
 #: src/mainwindow.ui:369
 msgid "Monitors"
 msgstr "Monitory"
+
+#: src/mainwindow.ui:388
+msgid "_Input Devices"
+msgstr "Vstupné zar_iadenia"
+
+#: src/mainwindow.ui:416
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Žiadne karty nie sú dostupné na konfiguráciu</i>"
+
+#: src/mainwindow.ui:431
+msgid "Show volume meters"
+msgstr "Zobraziť stupnice hlasitosti"
+
+#: src/mainwindow.ui:448
+#, fuzzy
+msgid "_Configuration"
+msgstr "_Nastavenie"
+
+#: src/cardwidget.ui:30
+msgid "Card Name"
+msgstr "Názov karty"
+
+#: src/cardwidget.ui:45
+msgid "Lock card to this profile"
+msgstr "Zamknúť kartu do tohto profilu"
+
+#: src/cardwidget.ui:66
+msgid "<b>Profile:</b>"
+msgstr "<b>Profil:</b>"
+
+#: src/cardwidget.ui:82
+msgid "<b>Codec:</b>"
+msgstr "<b>Kodek:</b>"
+
+#: src/channelwidget.ui:9
+msgid "<b>left-front</b>"
+msgstr "<b>ľavý-predný</b>"
+
+#: src/channelwidget.ui:33
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: src/renamedialog.ui:16
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Premenovať zariadenie na:</b>"
+
+#: src/renamedialog.ui:37
+msgid "_Cancel"
+msgstr "_Zrušiť"
+
+#: src/renamedialog.ui:45
+#, fuzzy
+msgid "_Ok"
+msgstr "_OK"
+
+#: src/streamwidget.ui:34
+msgid "Stream Title"
+msgstr "Názov prúdu"
+
+#: src/streamwidget.ui:44
+msgid "direction"
+msgstr "smer"
+
+#: src/streamwidget.ui:64 src/devicewidget.ui:48
+msgid "Mute audio"
+msgstr "Stlmiť zvuk"
+
+#: src/streamwidget.ui:78 src/devicewidget.ui:62
+msgid "Lock channels together"
+msgstr "Zamknúť kanály dohromady"
+
+#: src/devicewidget.ui:33
+msgid "Device Title"
+msgstr "Názov zariadenia"
+
+#: src/devicewidget.ui:77
+#, fuzzy
+msgid "Set as default"
+msgstr "Nastaviť ako záložné"
+
+#: src/devicewidget.ui:95
+msgid "<b>Port:</b>"
+msgstr "<b>Port:</b>"
+
+#: src/devicewidget.ui:136
+msgid "PCM"
+msgstr "PCM"
+
+#: src/devicewidget.ui:148
+msgid "AC-3"
+msgstr "AC-3"
+
+#: src/devicewidget.ui:158
+msgid "DTS"
+msgstr "DTS"
+
+#: src/devicewidget.ui:168
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: src/devicewidget.ui:178
+msgid "MPEG"
+msgstr "MPEG"
+
+#: src/devicewidget.ui:188
+msgid "AAC"
+msgstr "AAC"
+
+#: src/devicewidget.ui:198
+msgid "TrueHD"
+msgstr ""
+
+#: src/devicewidget.ui:208
+msgid "DTS-HD"
+msgstr ""
+
+#: src/devicewidget.ui:224
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Posun latencie:</b>"
+
+#: src/devicewidget.ui:237
+msgid "ms"
+msgstr "ms"
+
+#: src/devicewidget.ui:247
+msgid "Advanced"
+msgstr "Rozšírené"
 
 #: src/pavucontrol.cc:107
 #, c-format
@@ -460,35 +661,35 @@ msgstr "Chyba pri ukladaní predvolieb"
 msgid "Error writing config file %s"
 msgstr "Chyba pri zapisovaní konfiguračného súboru %s"
 
-#: src/mainwindow.cc:306
+#: src/mainwindow.cc:314
 msgid " (plugged in)"
 msgstr " (pripojené)"
 
-#: src/mainwindow.cc:310 src/mainwindow.cc:418
+#: src/mainwindow.cc:318 src/mainwindow.cc:426
 msgid " (unavailable)"
 msgstr " (nedostupné)"
 
-#: src/mainwindow.cc:312 src/mainwindow.cc:415
+#: src/mainwindow.cc:320 src/mainwindow.cc:423
 msgid " (unplugged)"
 msgstr " (odpojené)"
 
-#: src/mainwindow.cc:617
+#: src/mainwindow.cc:625
 msgid "Failed to read data from stream"
 msgstr "Nepodarilo sa prečítať dáta z prúdu"
 
-#: src/mainwindow.cc:661
+#: src/mainwindow.cc:669
 msgid "Peak detect"
 msgstr "Detekcia vrcholov"
 
-#: src/mainwindow.cc:662
+#: src/mainwindow.cc:670
 msgid "Failed to create monitoring stream"
 msgstr "Nepodarilo sa vytvoriť monitorovací prúd"
 
-#: src/mainwindow.cc:677
+#: src/mainwindow.cc:685
 msgid "Failed to connect monitoring stream"
 msgstr "Nepodarilo sa pripojiť monitorovací prúd"
 
-#: src/mainwindow.cc:814
+#: src/mainwindow.cc:819
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -496,11 +697,11 @@ msgstr ""
 "Ignoruje sa sink-input pretože je navrhnutý ako udalosť a teda spracovaný "
 "widgetom udalosť"
 
-#: src/mainwindow.cc:989
+#: src/mainwindow.cc:994
 msgid "System Sounds"
 msgstr "Systémové zvuky"
 
-#: src/mainwindow.cc:1335
+#: src/mainwindow.cc:1340
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Vytvára sa pripojenie k PulseAudio, čakajte..."
 
@@ -619,120 +820,6 @@ msgstr "Zobraziť verziu."
 #, fuzzy
 #~ msgid "multimedia-volume-control"
 #~ msgstr "Ovládanie hlasitosti PulseAudio"
-
-#~ msgid "<b>left-front</b>"
-#~ msgstr "<b>ľavý-predný</b>"
-
-#~ msgid "<small>50%</small>"
-#~ msgstr "<small>50%</small>"
-
-#~ msgid "Card Name"
-#~ msgstr "Názov karty"
-
-#~ msgid "Lock card to this profile"
-#~ msgstr "Zamknúť kartu do tohto profilu"
-
-#~ msgid "<b>Profile:</b>"
-#~ msgstr "<b>Profil:</b>"
-
-#~ msgid "<b>Codec:</b>"
-#~ msgstr "<b>Kodek:</b>"
-
-#~ msgid "Device Title"
-#~ msgstr "Názov zariadenia"
-
-#~ msgid "Mute audio"
-#~ msgstr "Stlmiť zvuk"
-
-#~ msgid "Lock channels together"
-#~ msgstr "Zamknúť kanály dohromady"
-
-#~ msgid "Set as fallback"
-#~ msgstr "Nastaviť ako záložné"
-
-#~ msgid "<b>Port:</b>"
-#~ msgstr "<b>Port:</b>"
-
-#~ msgid "PCM"
-#~ msgstr "PCM"
-
-#~ msgid "AC-3"
-#~ msgstr "AC-3"
-
-#~ msgid "DTS"
-#~ msgstr "DTS"
-
-#~ msgid "E-AC-3"
-#~ msgstr "E-AC-3"
-
-#~ msgid "MPEG"
-#~ msgstr "MPEG"
-
-#~ msgid "AAC"
-#~ msgstr "AAC"
-
-#~ msgid "<b>Latency offset:</b>"
-#~ msgstr "<b>Posun latencie:</b>"
-
-#~ msgid "ms"
-#~ msgstr "ms"
-
-#~ msgid "Advanced"
-#~ msgstr "Rozšírené"
-
-#~ msgid "<i>No application is currently playing audio.</i>"
-#~ msgstr "<i>Žiadna aplikácia momentálne neprehráva zvuk.</i>"
-
-#~ msgid "<b>_Show:</b>"
-#~ msgstr "<b>_Zobraziť:</b>"
-
-#~ msgid "_Playback"
-#~ msgstr "_Prehrávanie"
-
-#~ msgid "<i>No application is currently recording audio.</i>"
-#~ msgstr "<i>Žiadna aplikácia momentálne nenahráva zvuk.</i>"
-
-#~ msgid "_Recording"
-#~ msgstr "_Nahrávanie"
-
-#~ msgid "<i>No output devices available</i>"
-#~ msgstr "<i>Nie sú dostupné žiadne výstupné zariadenia</i>"
-
-#~ msgid "<b>S_how:</b>"
-#~ msgstr "<b>_Zobraziť:</b>"
-
-#~ msgid "_Output Devices"
-#~ msgstr "_Výstupné zariadenia"
-
-#~ msgid "<i>No input devices available</i>"
-#~ msgstr "<i>Nie sú dostupné žiadne vstupné zariadenia</i>"
-
-#~ msgid "<b>Sho_w:</b>"
-#~ msgstr "<b>_Zobraziť:</b>"
-
-#~ msgid "_Input Devices"
-#~ msgstr "Vstupné zar_iadenia"
-
-#~ msgid "<i>No cards available for configuration</i>"
-#~ msgstr "<i>Žiadne karty nie sú dostupné na konfiguráciu</i>"
-
-#~ msgid "Show volume meters"
-#~ msgstr "Zobraziť stupnice hlasitosti"
-
-#~ msgid "<b>Rename device to:</b>"
-#~ msgstr "<b>Premenovať zariadenie na:</b>"
-
-#~ msgid "Stream Title"
-#~ msgstr "Názov prúdu"
-
-#~ msgid "direction"
-#~ msgstr "smer"
-
-#~ msgid "_Cancel"
-#~ msgstr "_Zrušiť"
-
-#~ msgid "_OK"
-#~ msgstr "_OK"
 
 #~ msgid "Terminate"
 #~ msgstr "Ukončiť"

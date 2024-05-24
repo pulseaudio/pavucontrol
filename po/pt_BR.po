@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 22:27-0400\n"
+"POT-Creation-Date: 2024-05-24 17:04-0400\n"
 "PO-Revision-Date: 2021-09-21 06:04+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -25,7 +25,7 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
-#: src/org.pulseaudio.pavucontrol.desktop.in:5
+#: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
 msgid "Volume Control"
 msgstr "Controle de volume"
 
@@ -68,23 +68,57 @@ msgid "The “Configuration” tab"
 msgstr "_Configuração"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
-msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgid "Migrate from Gtk 3 to 4."
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
+msgid "Embed UI resources in executable."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+msgid "Support 144 Hz monitors with level bars."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
+msgid ""
+"App icons will fallback to generic rather than missing image, and this will "
+"be more common with Gtk 4."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
+msgid "Lots of translation updates."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
+msgid "Drop autotools build in favour of meson."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
+msgid "Make libcanberra dependency optional."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
 "Support for locking card profiles (new in PulseAudio 15.0). Locking a "
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
 "Updated translations: Catalan, Chinese (Simplified), Chinese (Traditional), "
 "Croatian, Danish, Dutch, Finnish, French, German, Hungarian, Italian, "
@@ -92,32 +126,32 @@ msgid ""
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:55
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:56
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:57
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:58
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:59
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
 "Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay "
 "devices that often have higher latency than 2 seconds (this is not that "
@@ -125,17 +159,17 @@ msgid ""
 "much more accurately than before)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
@@ -160,6 +194,14 @@ msgstr ""
 "Settings;Preferences;microfone;equilíbrio;áudio;saída;entrada;dispositivos;"
 "reprodução;gravação;sistemas de som;placa de som;configurações;preferências;"
 
+#: src/mainwindow.ui:40
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Nenhum aplicativo está reproduzindo áudio no momento.</i>"
+
+#: src/mainwindow.ui:66 src/mainwindow.ui:157
+msgid "<b>_Show:</b>"
+msgstr "<b>_Mostrar:</b>"
+
 #: src/mainwindow.ui:82 src/mainwindow.ui:173
 msgid "All Streams"
 msgstr "Todos os fluxos"
@@ -172,6 +214,26 @@ msgstr "Aplicações"
 msgid "Virtual Streams"
 msgstr "Fluxos virtuais"
 
+#: src/mainwindow.ui:107
+msgid "_Playback"
+msgstr "_Reprodução"
+
+#: src/mainwindow.ui:131
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Nenhum aplicativo está gravando áudio no momento.</i>"
+
+#: src/mainwindow.ui:198
+msgid "_Recording"
+msgstr "_Gravando"
+
+#: src/mainwindow.ui:222
+msgid "<i>No output devices available</i>"
+msgstr "<i>Nenhum dispositivo de saída disponível</i>"
+
+#: src/mainwindow.ui:248
+msgid "<b>S_how:</b>"
+msgstr "<b>M_ostrar:</b>"
+
 #: src/mainwindow.ui:265
 msgid "All Output Devices"
 msgstr "Todos os Dispositivos de Saída"
@@ -183,6 +245,18 @@ msgstr "Dispositivos de saída de hardware"
 #: src/mainwindow.ui:271
 msgid "Virtual Output Devices"
 msgstr "Dispositivos de saída virtuais"
+
+#: src/mainwindow.ui:290
+msgid "_Output Devices"
+msgstr "Dispositivos de _saída"
+
+#: src/mainwindow.ui:314
+msgid "<i>No input devices available</i>"
+msgstr "<i>Nenhum dispositivo de entrada disponível</i>"
+
+#: src/mainwindow.ui:340
+msgid "<b>Sho_w:</b>"
+msgstr "<b>Mos_trar:</b>"
 
 #: src/mainwindow.ui:357
 msgid "All Input Devices"
@@ -203,6 +277,133 @@ msgstr "Dispositivos de entrada virtuais"
 #: src/mainwindow.ui:369
 msgid "Monitors"
 msgstr "Monitores"
+
+#: src/mainwindow.ui:388
+msgid "_Input Devices"
+msgstr "Dispositivos de _entrada"
+
+#: src/mainwindow.ui:416
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Nenhuma placa disponível para configuração</i>"
+
+#: src/mainwindow.ui:431
+msgid "Show volume meters"
+msgstr "Mostrar medidores de volume"
+
+#: src/mainwindow.ui:448
+#, fuzzy
+msgid "_Configuration"
+msgstr "_Configuração"
+
+#: src/cardwidget.ui:30
+msgid "Card Name"
+msgstr "Nome da placa"
+
+#: src/cardwidget.ui:45
+msgid "Lock card to this profile"
+msgstr "Travar placa para este perfil"
+
+#: src/cardwidget.ui:66
+msgid "<b>Profile:</b>"
+msgstr "<b>Perfil:</b>"
+
+#: src/cardwidget.ui:82
+msgid "<b>Codec:</b>"
+msgstr "<b>Codec:</b>"
+
+#: src/channelwidget.ui:9
+msgid "<b>left-front</b>"
+msgstr "<b>frontal-esquerdo</b>"
+
+#: src/channelwidget.ui:33
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: src/renamedialog.ui:16
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Renomear dispositivo para:</b>"
+
+#: src/renamedialog.ui:37
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: src/renamedialog.ui:45
+#, fuzzy
+msgid "_Ok"
+msgstr "_OK"
+
+#: src/streamwidget.ui:34
+msgid "Stream Title"
+msgstr "Título do fluxo"
+
+#: src/streamwidget.ui:44
+msgid "direction"
+msgstr "direção"
+
+#: src/streamwidget.ui:64 src/devicewidget.ui:48
+msgid "Mute audio"
+msgstr "Sem áudio"
+
+#: src/streamwidget.ui:78 src/devicewidget.ui:62
+msgid "Lock channels together"
+msgstr "Travar canais juntos"
+
+#: src/devicewidget.ui:33
+msgid "Device Title"
+msgstr "Título do Dispositivo"
+
+#: src/devicewidget.ui:77
+#, fuzzy
+msgid "Set as default"
+msgstr "Definir como secundário"
+
+#: src/devicewidget.ui:95
+msgid "<b>Port:</b>"
+msgstr "<b>Porta:</b>"
+
+#: src/devicewidget.ui:136
+msgid "PCM"
+msgstr "PCM"
+
+#: src/devicewidget.ui:148
+msgid "AC-3"
+msgstr "AC-3"
+
+#: src/devicewidget.ui:158
+msgid "DTS"
+msgstr "DTS"
+
+#: src/devicewidget.ui:168
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: src/devicewidget.ui:178
+msgid "MPEG"
+msgstr "MPEG"
+
+#: src/devicewidget.ui:188
+msgid "AAC"
+msgstr "AAC"
+
+#: src/devicewidget.ui:198
+msgid "TrueHD"
+msgstr ""
+
+#: src/devicewidget.ui:208
+msgid "DTS-HD"
+msgstr ""
+
+#: src/devicewidget.ui:224
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Compensação de latência:</b>"
+
+#: src/devicewidget.ui:237
+msgid "ms"
+msgstr "ms"
+
+#: src/devicewidget.ui:247
+msgid "Advanced"
+msgstr "Avançado"
 
 #: src/pavucontrol.cc:107
 #, c-format
@@ -465,35 +666,35 @@ msgstr "Erro salvando as preferências"
 msgid "Error writing config file %s"
 msgstr "Erro escrevendo o arquivo de configuração %s"
 
-#: src/mainwindow.cc:306
+#: src/mainwindow.cc:314
 msgid " (plugged in)"
 msgstr " (conectado)"
 
-#: src/mainwindow.cc:310 src/mainwindow.cc:418
+#: src/mainwindow.cc:318 src/mainwindow.cc:426
 msgid " (unavailable)"
 msgstr " (indisponível)"
 
-#: src/mainwindow.cc:312 src/mainwindow.cc:415
+#: src/mainwindow.cc:320 src/mainwindow.cc:423
 msgid " (unplugged)"
 msgstr " (desconectado)"
 
-#: src/mainwindow.cc:617
+#: src/mainwindow.cc:625
 msgid "Failed to read data from stream"
 msgstr "Falha ao ler dados procedentes do fluxo"
 
-#: src/mainwindow.cc:661
+#: src/mainwindow.cc:669
 msgid "Peak detect"
 msgstr "Detectar pico"
 
-#: src/mainwindow.cc:662
+#: src/mainwindow.cc:670
 msgid "Failed to create monitoring stream"
 msgstr "Falha ao criar o fluxo de monitoramento"
 
-#: src/mainwindow.cc:677
+#: src/mainwindow.cc:685
 msgid "Failed to connect monitoring stream"
 msgstr "Falha ao conectar o fluxo de monitoramento"
 
-#: src/mainwindow.cc:814
+#: src/mainwindow.cc:819
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -501,11 +702,11 @@ msgstr ""
 "Ignorando sink-input por ter sido designado como um evento e, portanto, "
 "tratado pelo widget de evento"
 
-#: src/mainwindow.cc:989
+#: src/mainwindow.cc:994
 msgid "System Sounds"
 msgstr "Sons do sistema"
 
-#: src/mainwindow.cc:1335
+#: src/mainwindow.cc:1340
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Estabelecendo conexão com o PulseAudio. Por favor, aguarde…"
 
@@ -624,120 +825,6 @@ msgstr "Mostra a versão."
 #, fuzzy
 #~ msgid "multimedia-volume-control"
 #~ msgstr "Controle de volume do PulseAudio"
-
-#~ msgid "<b>left-front</b>"
-#~ msgstr "<b>frontal-esquerdo</b>"
-
-#~ msgid "<small>50%</small>"
-#~ msgstr "<small>50%</small>"
-
-#~ msgid "Card Name"
-#~ msgstr "Nome da placa"
-
-#~ msgid "Lock card to this profile"
-#~ msgstr "Travar placa para este perfil"
-
-#~ msgid "<b>Profile:</b>"
-#~ msgstr "<b>Perfil:</b>"
-
-#~ msgid "<b>Codec:</b>"
-#~ msgstr "<b>Codec:</b>"
-
-#~ msgid "Device Title"
-#~ msgstr "Título do Dispositivo"
-
-#~ msgid "Mute audio"
-#~ msgstr "Sem áudio"
-
-#~ msgid "Lock channels together"
-#~ msgstr "Travar canais juntos"
-
-#~ msgid "Set as fallback"
-#~ msgstr "Definir como secundário"
-
-#~ msgid "<b>Port:</b>"
-#~ msgstr "<b>Porta:</b>"
-
-#~ msgid "PCM"
-#~ msgstr "PCM"
-
-#~ msgid "AC-3"
-#~ msgstr "AC-3"
-
-#~ msgid "DTS"
-#~ msgstr "DTS"
-
-#~ msgid "E-AC-3"
-#~ msgstr "E-AC-3"
-
-#~ msgid "MPEG"
-#~ msgstr "MPEG"
-
-#~ msgid "AAC"
-#~ msgstr "AAC"
-
-#~ msgid "<b>Latency offset:</b>"
-#~ msgstr "<b>Compensação de latência:</b>"
-
-#~ msgid "ms"
-#~ msgstr "ms"
-
-#~ msgid "Advanced"
-#~ msgstr "Avançado"
-
-#~ msgid "<i>No application is currently playing audio.</i>"
-#~ msgstr "<i>Nenhum aplicativo está reproduzindo áudio no momento.</i>"
-
-#~ msgid "<b>_Show:</b>"
-#~ msgstr "<b>_Mostrar:</b>"
-
-#~ msgid "_Playback"
-#~ msgstr "_Reprodução"
-
-#~ msgid "<i>No application is currently recording audio.</i>"
-#~ msgstr "<i>Nenhum aplicativo está gravando áudio no momento.</i>"
-
-#~ msgid "_Recording"
-#~ msgstr "_Gravando"
-
-#~ msgid "<i>No output devices available</i>"
-#~ msgstr "<i>Nenhum dispositivo de saída disponível</i>"
-
-#~ msgid "<b>S_how:</b>"
-#~ msgstr "<b>M_ostrar:</b>"
-
-#~ msgid "_Output Devices"
-#~ msgstr "Dispositivos de _saída"
-
-#~ msgid "<i>No input devices available</i>"
-#~ msgstr "<i>Nenhum dispositivo de entrada disponível</i>"
-
-#~ msgid "<b>Sho_w:</b>"
-#~ msgstr "<b>Mos_trar:</b>"
-
-#~ msgid "_Input Devices"
-#~ msgstr "Dispositivos de _entrada"
-
-#~ msgid "<i>No cards available for configuration</i>"
-#~ msgstr "<i>Nenhuma placa disponível para configuração</i>"
-
-#~ msgid "Show volume meters"
-#~ msgstr "Mostrar medidores de volume"
-
-#~ msgid "<b>Rename device to:</b>"
-#~ msgstr "<b>Renomear dispositivo para:</b>"
-
-#~ msgid "Stream Title"
-#~ msgstr "Título do fluxo"
-
-#~ msgid "direction"
-#~ msgstr "direção"
-
-#~ msgid "_Cancel"
-#~ msgstr "_Cancelar"
-
-#~ msgid "_OK"
-#~ msgstr "_OK"
 
 #~ msgid "Terminate"
 #~ msgstr "Terminar"

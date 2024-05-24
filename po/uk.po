@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-16 22:27-0400\n"
+"POT-Creation-Date: 2024-05-24 17:04-0400\n"
 "PO-Revision-Date: 2022-05-20 00:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.12.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
-#: src/org.pulseaudio.pavucontrol.desktop.in:5
+#: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
 msgid "Volume Control"
 msgstr "Керування гучністю"
 
@@ -64,23 +64,57 @@ msgid "The “Configuration” tab"
 msgstr "_Налаштування"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
-msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgid "Migrate from Gtk 3 to 4."
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
+msgid "Embed UI resources in executable."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+msgid "Support 144 Hz monitors with level bars."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
+msgid ""
+"App icons will fallback to generic rather than missing image, and this will "
+"be more common with Gtk 4."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
+msgid "Lots of translation updates."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
+msgid "Drop autotools build in favour of meson."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
+msgid "Make libcanberra dependency optional."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
+msgstr ""
+
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
 "Support for locking card profiles (new in PulseAudio 15.0). Locking a "
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
 "Updated translations: Catalan, Chinese (Simplified), Chinese (Traditional), "
 "Croatian, Danish, Dutch, Finnish, French, German, Hungarian, Italian, "
@@ -88,32 +122,32 @@ msgid ""
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:55
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:56
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:57
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:58
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:59
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
 "Maximum latency offset increased from 2 to 5 seconds to accommodate AirPlay "
 "devices that often have higher latency than 2 seconds (this is not that "
@@ -121,17 +155,17 @@ msgid ""
 "much more accurately than before)."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
 
-#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
+#: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
@@ -157,6 +191,14 @@ msgstr ""
 "гарнітура;гучномовці;колонки;навушники;звук;мікшер;аудіо;виведення;введення;"
 "пристрої;відтворення;запис;звуки;звук;система;"
 
+#: src/mainwindow.ui:40
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>Жодна з програм не відтворює звукових даних.</i>"
+
+#: src/mainwindow.ui:66 src/mainwindow.ui:157
+msgid "<b>_Show:</b>"
+msgstr "<b>Пок_азати:</b>"
+
 #: src/mainwindow.ui:82 src/mainwindow.ui:173
 msgid "All Streams"
 msgstr "Усі потоки"
@@ -169,6 +211,26 @@ msgstr "Програми"
 msgid "Virtual Streams"
 msgstr "Віртуальні потоки"
 
+#: src/mainwindow.ui:107
+msgid "_Playback"
+msgstr "В_ідтворення"
+
+#: src/mainwindow.ui:131
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>Жодна з програм не виконує запису звукових даних.</i>"
+
+#: src/mainwindow.ui:198
+msgid "_Recording"
+msgstr "_Запис"
+
+#: src/mainwindow.ui:222
+msgid "<i>No output devices available</i>"
+msgstr "<i>Пристроїв відтворення звукових даних не знайдено</i>"
+
+#: src/mainwindow.ui:248
+msgid "<b>S_how:</b>"
+msgstr "<b>П_оказати:</b>"
+
 #: src/mainwindow.ui:265
 msgid "All Output Devices"
 msgstr "Усі пристрої відтворення"
@@ -180,6 +242,18 @@ msgstr "Апаратні пристрої відтворення"
 #: src/mainwindow.ui:271
 msgid "Virtual Output Devices"
 msgstr "Віртуальні пристрої відтворення"
+
+#: src/mainwindow.ui:290
+msgid "_Output Devices"
+msgstr "Пристрої _відтворення"
+
+#: src/mainwindow.ui:314
+msgid "<i>No input devices available</i>"
+msgstr "<i>Пристроїв отримання звукових даних не знайдено</i>"
+
+#: src/mainwindow.ui:340
+msgid "<b>Sho_w:</b>"
+msgstr "<b>По_казати:</b>"
 
 #: src/mainwindow.ui:357
 msgid "All Input Devices"
@@ -200,6 +274,133 @@ msgstr "Віртуальні пристрої отримання"
 #: src/mainwindow.ui:369
 msgid "Monitors"
 msgstr "Монітори"
+
+#: src/mainwindow.ui:388
+msgid "_Input Devices"
+msgstr "Пристрої _отримання"
+
+#: src/mainwindow.ui:416
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>Карток для налаштування не знайдено</i>"
+
+#: src/mainwindow.ui:431
+msgid "Show volume meters"
+msgstr "Показати вимірювачі гучності"
+
+#: src/mainwindow.ui:448
+#, fuzzy
+msgid "_Configuration"
+msgstr "_Налаштування"
+
+#: src/cardwidget.ui:30
+msgid "Card Name"
+msgstr "Назва карти"
+
+#: src/cardwidget.ui:45
+msgid "Lock card to this profile"
+msgstr "Прив'язати картку до цього профілю"
+
+#: src/cardwidget.ui:66
+msgid "<b>Profile:</b>"
+msgstr "<b>Профіль:</b>"
+
+#: src/cardwidget.ui:82
+msgid "<b>Codec:</b>"
+msgstr "<b>Кодек:</b>"
+
+#: src/channelwidget.ui:9
+msgid "<b>left-front</b>"
+msgstr "<b>лівий передній</b>"
+
+#: src/channelwidget.ui:33
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: src/renamedialog.ui:16
+msgid "<b>Rename device to:</b>"
+msgstr "<b>Назва перейменованого пристрою:</b>"
+
+#: src/renamedialog.ui:37
+msgid "_Cancel"
+msgstr "_Скасувати"
+
+#: src/renamedialog.ui:45
+#, fuzzy
+msgid "_Ok"
+msgstr "_Гаразд"
+
+#: src/streamwidget.ui:34
+msgid "Stream Title"
+msgstr "Назва потоку"
+
+#: src/streamwidget.ui:44
+msgid "direction"
+msgstr "напрямок"
+
+#: src/streamwidget.ui:64 src/devicewidget.ui:48
+msgid "Mute audio"
+msgstr "Вимкнути звук"
+
+#: src/streamwidget.ui:78 src/devicewidget.ui:62
+msgid "Lock channels together"
+msgstr "Пов’язати всі канали"
+
+#: src/devicewidget.ui:33
+msgid "Device Title"
+msgstr "Назва пристрою"
+
+#: src/devicewidget.ui:77
+#, fuzzy
+msgid "Set as default"
+msgstr "Зробити резервним"
+
+#: src/devicewidget.ui:95
+msgid "<b>Port:</b>"
+msgstr "<b>Порт:</b>"
+
+#: src/devicewidget.ui:136
+msgid "PCM"
+msgstr "PCM"
+
+#: src/devicewidget.ui:148
+msgid "AC-3"
+msgstr "AC-3"
+
+#: src/devicewidget.ui:158
+msgid "DTS"
+msgstr "DTS"
+
+#: src/devicewidget.ui:168
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: src/devicewidget.ui:178
+msgid "MPEG"
+msgstr "MPEG"
+
+#: src/devicewidget.ui:188
+msgid "AAC"
+msgstr "AAC"
+
+#: src/devicewidget.ui:198
+msgid "TrueHD"
+msgstr "TrueHD"
+
+#: src/devicewidget.ui:208
+msgid "DTS-HD"
+msgstr "DTS-HD"
+
+#: src/devicewidget.ui:224
+msgid "<b>Latency offset:</b>"
+msgstr "<b>Зсув латентності:</b>"
+
+#: src/devicewidget.ui:237
+msgid "ms"
+msgstr "мс"
+
+#: src/devicewidget.ui:247
+msgid "Advanced"
+msgstr "Додатково"
 
 #: src/pavucontrol.cc:107
 #, c-format
@@ -469,35 +670,35 @@ msgstr "Помилка під час спроби зберегти налашт�
 msgid "Error writing config file %s"
 msgstr "Помилка під час спроби записати файл налаштувань %s"
 
-#: src/mainwindow.cc:306
+#: src/mainwindow.cc:314
 msgid " (plugged in)"
 msgstr " (з'єднано)"
 
-#: src/mainwindow.cc:310 src/mainwindow.cc:418
+#: src/mainwindow.cc:318 src/mainwindow.cc:426
 msgid " (unavailable)"
 msgstr " (недоступний)"
 
-#: src/mainwindow.cc:312 src/mainwindow.cc:415
+#: src/mainwindow.cc:320 src/mainwindow.cc:423
 msgid " (unplugged)"
 msgstr " (від'єднано)"
 
-#: src/mainwindow.cc:617
+#: src/mainwindow.cc:625
 msgid "Failed to read data from stream"
 msgstr "Спроба читання даних з потоку була невдалою"
 
-#: src/mainwindow.cc:661
+#: src/mainwindow.cc:669
 msgid "Peak detect"
 msgstr "Визначення максимумів"
 
-#: src/mainwindow.cc:662
+#: src/mainwindow.cc:670
 msgid "Failed to create monitoring stream"
 msgstr "Не вдалося створити потік для спостереження"
 
-#: src/mainwindow.cc:677
+#: src/mainwindow.cc:685
 msgid "Failed to connect monitoring stream"
 msgstr "Не вдалося з’єднатися з потоком для спостереження"
 
-#: src/mainwindow.cc:814
+#: src/mainwindow.cc:819
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -505,11 +706,11 @@ msgstr ""
 "Ігноруємо вхідний потік, оскільки його позначено як подію, тому його обробку "
 "здійснює віджет подій"
 
-#: src/mainwindow.cc:989
+#: src/mainwindow.cc:994
 msgid "System Sounds"
 msgstr "Системні звуки"
 
-#: src/mainwindow.cc:1335
+#: src/mainwindow.cc:1340
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Встановлюємо з'єднання із PulseAudio. Будь ласка, зачекайте…"
 
@@ -632,128 +833,8 @@ msgstr "Вивести дані щодо версії."
 #~ msgid "window2"
 #~ msgstr "Вікно2"
 
-#~ msgid "<b>left-front</b>"
-#~ msgstr "<b>лівий передній</b>"
-
-#~ msgid "<small>50%</small>"
-#~ msgstr "<small>50%</small>"
-
 #~ msgid "window1"
 #~ msgstr "Вікно1"
-
-#~ msgid "Card Name"
-#~ msgstr "Назва карти"
-
-#~ msgid "Lock card to this profile"
-#~ msgstr "Прив'язати картку до цього профілю"
-
-#~ msgid "<b>Profile:</b>"
-#~ msgstr "<b>Профіль:</b>"
-
-#~ msgid "<b>Codec:</b>"
-#~ msgstr "<b>Кодек:</b>"
-
-#~ msgid "Device Title"
-#~ msgstr "Назва пристрою"
-
-#~ msgid "Mute audio"
-#~ msgstr "Вимкнути звук"
-
-#~ msgid "Lock channels together"
-#~ msgstr "Пов’язати всі канали"
-
-#~ msgid "Set as fallback"
-#~ msgstr "Зробити резервним"
-
-#~ msgid "<b>Port:</b>"
-#~ msgstr "<b>Порт:</b>"
-
-#~ msgid "PCM"
-#~ msgstr "PCM"
-
-#~ msgid "AC-3"
-#~ msgstr "AC-3"
-
-#~ msgid "DTS"
-#~ msgstr "DTS"
-
-#~ msgid "E-AC-3"
-#~ msgstr "E-AC-3"
-
-#~ msgid "MPEG"
-#~ msgstr "MPEG"
-
-#~ msgid "AAC"
-#~ msgstr "AAC"
-
-#~ msgid "TrueHD"
-#~ msgstr "TrueHD"
-
-#~ msgid "DTS-HD"
-#~ msgstr "DTS-HD"
-
-#~ msgid "<b>Latency offset:</b>"
-#~ msgstr "<b>Зсув латентності:</b>"
-
-#~ msgid "ms"
-#~ msgstr "мс"
-
-#~ msgid "Advanced"
-#~ msgstr "Додатково"
-
-#~ msgid "<i>No application is currently playing audio.</i>"
-#~ msgstr "<i>Жодна з програм не відтворює звукових даних.</i>"
-
-#~ msgid "<b>_Show:</b>"
-#~ msgstr "<b>Пок_азати:</b>"
-
-#~ msgid "_Playback"
-#~ msgstr "В_ідтворення"
-
-#~ msgid "<i>No application is currently recording audio.</i>"
-#~ msgstr "<i>Жодна з програм не виконує запису звукових даних.</i>"
-
-#~ msgid "_Recording"
-#~ msgstr "_Запис"
-
-#~ msgid "<i>No output devices available</i>"
-#~ msgstr "<i>Пристроїв відтворення звукових даних не знайдено</i>"
-
-#~ msgid "<b>S_how:</b>"
-#~ msgstr "<b>П_оказати:</b>"
-
-#~ msgid "_Output Devices"
-#~ msgstr "Пристрої _відтворення"
-
-#~ msgid "<i>No input devices available</i>"
-#~ msgstr "<i>Пристроїв отримання звукових даних не знайдено</i>"
-
-#~ msgid "<b>Sho_w:</b>"
-#~ msgstr "<b>По_казати:</b>"
-
-#~ msgid "_Input Devices"
-#~ msgstr "Пристрої _отримання"
-
-#~ msgid "<i>No cards available for configuration</i>"
-#~ msgstr "<i>Карток для налаштування не знайдено</i>"
-
-#~ msgid "Show volume meters"
-#~ msgstr "Показати вимірювачі гучності"
-
-#~ msgid "<b>Rename device to:</b>"
-#~ msgstr "<b>Назва перейменованого пристрою:</b>"
-
-#~ msgid "Stream Title"
-#~ msgstr "Назва потоку"
-
-#~ msgid "direction"
-#~ msgstr "напрямок"
-
-#~ msgid "_Cancel"
-#~ msgstr "_Скасувати"
-
-#~ msgid "_OK"
-#~ msgstr "_Гаразд"
 
 #~ msgid "Terminate"
 #~ msgstr "Перервати"
