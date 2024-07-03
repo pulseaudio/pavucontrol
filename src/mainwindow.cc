@@ -1272,7 +1272,7 @@ void MainWindow::removeCard(uint32_t index) {
     if (!cardWidgets.count(index))
         return;
 
-    delete cardWidgets[index];
+    cardsVBox->remove(*cardWidgets[index]);
     cardWidgets.erase(index);
     updateDeviceVisibility();
 }
