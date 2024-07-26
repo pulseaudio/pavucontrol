@@ -60,22 +60,28 @@
         <child>
           <object class="GtkBox">
             <property name="valign">center</property>
-            <property name="spacing">6</property>
+            <property name="spacing">12</property>
             <child>
-              <object class="GtkLabel">
-                <property name="label" translatable="yes">&lt;b&gt;Profile:&lt;/b&gt;</property>
-                <property name="use_markup">1</property>
-                <property name="xalign">0</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkComboBox" id="profileList">
-                <property name="hexpand">1</property>
+              <object class="GtkBox" id="profileBox">
+                <property name="halign">fill</property>
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label" translatable="yes">&lt;b&gt;Profile:&lt;/b&gt;</property>
+                    <property name="use_markup">1</property>
+                    <property name="xalign">0</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="profileList">
+                    <property name="hexpand">1</property>
+                  </object>
+                </child>
               </object>
             </child>
             <child>
               <object class="GtkBox" id="codecBox">
-                <property name="halign">center</property>
+                <property name="halign">fill</property>
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkLabel">
