@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2022-05-20 00:18+0000\n"
+"PO-Revision-Date: 2024-08-02 12:07+0200\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/sv/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
@@ -29,12 +29,12 @@ msgstr "Volymkontroll"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Justera enhets- och appvolymer"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "PulseAudio utvecklare"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -46,24 +46,23 @@ msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "Fliken \"Uppspelning\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "Fliken \"Inspelning\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "Fliken \"Utgångsenheter\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "Fliken \"Ingångsenheter\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
-#, fuzzy
 msgid "The “Configuration” tab"
-msgstr "_Konfiguration"
+msgstr "Fliken \"Konfiguration\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
@@ -179,7 +178,7 @@ msgstr "Volymkontroll för PulseAudio"
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
-msgstr "Justera volymnivån"
+msgstr "Justera volymnivå"
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:12
 msgid ""
@@ -352,7 +351,7 @@ msgstr "Enhetstitel"
 #: src/devicewidget.ui:77
 #, fuzzy
 msgid "Set as default"
-msgstr "Ställ in som reserv"
+msgstr "Ange som standard"
 
 #: src/devicewidget.ui:95
 msgid "<b>Port:</b>"
@@ -681,7 +680,7 @@ msgstr "Misslyckades med att läsa data från ström"
 
 #: src/mainwindow.cc:669
 msgid "Peak detect"
-msgstr "Topp upptäcktes"
+msgstr "Topp upptäckt"
 
 #: src/mainwindow.cc:670
 msgid "Failed to create monitoring stream"
@@ -765,7 +764,7 @@ msgstr "från"
 
 #: src/sourceoutputwidget.cc:38
 msgid "Terminate Recording"
-msgstr "Terminera inspelning"
+msgstr "Avbryt inspelning"
 
 #: src/sourceoutputwidget.cc:83
 msgid "Unknown input"
@@ -801,7 +800,7 @@ msgstr "pa_context_set_source_port_by_index() misslyckades"
 
 #: src/pavuapplication.cc:158
 msgid "Select a specific tab on load."
-msgstr "Välj en viss flik vid inläsning."
+msgstr "Välj en specifik flik vid inläsning."
 
 #: src/pavuapplication.cc:159
 msgid "number"
