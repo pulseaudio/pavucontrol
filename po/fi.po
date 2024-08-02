@@ -846,12 +846,12 @@ msgstr "Lopeta toisto"
 
 #: src/pavucontrol.glade:12
 msgid "window2"
-msgstr ""
+msgstr "ikkuna2"
 
 #: src/pavucontrol.glade:74 src/pavucontrol.glade:279
 #: src/pavucontrol.glade:1513
 msgid "window1"
-msgstr ""
+msgstr "ikkuna1"
 
 #: src/pavucontrol.glade:408
 msgid "Set as fallback"
