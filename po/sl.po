@@ -21,6 +21,7 @@ msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
+#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
 msgid "Volume Control"
 msgstr "Nastavitev glasnosti"
 
@@ -171,178 +172,183 @@ msgid ""
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
+#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
-msgstr "Nastavitev glasnost PulseAudio"
+msgstr "Nastavitev glasnosti PulseAudio"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:6
+#: src/org.pulseaudio.pavucontrol.desktop.in:6 src/pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
 msgstr "Nastavi glasnost"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:12
-#, fuzzy
+#: src/pavucontrol.desktop.in:12
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
-"pavucontrol;mikrofon;glasnost;pojemanje;ravnovesje;slušalke;zvok;mešalnik;"
-"izhod;vhod;"
+"pavucontrol;mikrofon;glasnost;pojemanje;ravnovesje;slušalke;zvočniki;zvočnik;"
+"zvok;avdio;mešalnik;izhod;vhod;naprave;predvajanje;snemanje;posnetek;"
+"sistemski zvoki;zvočna kartica;nastavitve;lastnosti;prilagodi;prilagajanje;"
 
-#: src/mainwindow.ui:40
+#: src/mainwindow.ui:40 src/pavucontrol.glade:828
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Programi trenutno ne predvajajo zvoka.</i>"
 
-#: src/mainwindow.ui:66 src/mainwindow.ui:157
+#: src/mainwindow.ui:66 src/mainwindow.ui:157 src/pavucontrol.glade:876
+#: src/pavucontrol.glade:1000
 msgid "<b>_Show:</b>"
 msgstr "<b>Prik_aži:</b>"
 
-#: src/mainwindow.ui:82 src/mainwindow.ui:173
+#: src/mainwindow.ui:82 src/mainwindow.ui:173 src/pavucontrol.glade:716
+#: src/pavucontrol.glade:733
 msgid "All Streams"
 msgstr "Vsi pretoki"
 
-#: src/mainwindow.ui:85 src/mainwindow.ui:176
+#: src/mainwindow.ui:85 src/mainwindow.ui:176 src/pavucontrol.glade:719
+#: src/pavucontrol.glade:736
 msgid "Applications"
 msgstr "Programi"
 
-#: src/mainwindow.ui:88 src/mainwindow.ui:179
+#: src/mainwindow.ui:88 src/mainwindow.ui:179 src/pavucontrol.glade:722
+#: src/pavucontrol.glade:739
 msgid "Virtual Streams"
 msgstr "Navidezni pretoki"
 
-#: src/mainwindow.ui:107
+#: src/mainwindow.ui:107 src/pavucontrol.glade:920
 msgid "_Playback"
 msgstr "_Predvajanje"
 
-#: src/mainwindow.ui:131
+#: src/mainwindow.ui:131 src/pavucontrol.glade:952
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Programi trenutno ne snemajo zvoka.</i>"
 
-#: src/mainwindow.ui:198
+#: src/mainwindow.ui:198 src/pavucontrol.glade:1047
 msgid "_Recording"
 msgstr "_Snemanje"
 
-#: src/mainwindow.ui:222
+#: src/mainwindow.ui:222 src/pavucontrol.glade:1080
 msgid "<i>No output devices available</i>"
 msgstr "<i>Ni izhodnih naprav</i>"
 
-#: src/mainwindow.ui:248
+#: src/mainwindow.ui:248 src/pavucontrol.glade:1128
 msgid "<b>S_how:</b>"
 msgstr "<b>Pri_kaži:</b>"
 
-#: src/mainwindow.ui:265
+#: src/mainwindow.ui:265 src/pavucontrol.glade:750
 msgid "All Output Devices"
 msgstr "Vse izhodne naprave"
 
-#: src/mainwindow.ui:268
+#: src/mainwindow.ui:268 src/pavucontrol.glade:753
 msgid "Hardware Output Devices"
 msgstr "Strojne izhodne naprave"
 
-#: src/mainwindow.ui:271
+#: src/mainwindow.ui:271 src/pavucontrol.glade:756
 msgid "Virtual Output Devices"
 msgstr "Navidezne izhodne naprave"
 
-#: src/mainwindow.ui:290
+#: src/mainwindow.ui:290 src/pavucontrol.glade:1176
 msgid "_Output Devices"
 msgstr "_Izhodne naprave"
 
-#: src/mainwindow.ui:314
+#: src/mainwindow.ui:314 src/pavucontrol.glade:1210
 msgid "<i>No input devices available</i>"
 msgstr "<i>Ni vhodnih naprav</i>"
 
-#: src/mainwindow.ui:340
+#: src/mainwindow.ui:340 src/pavucontrol.glade:1258
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Prika_ži:</b>"
 
-#: src/mainwindow.ui:357
+#: src/mainwindow.ui:357 src/pavucontrol.glade:767
 msgid "All Input Devices"
 msgstr "Vse vhodne naprave"
 
-#: src/mainwindow.ui:360
+#: src/mainwindow.ui:360 src/pavucontrol.glade:770
 msgid "All Except Monitors"
 msgstr "Vsi razen zvočni nadzorniki"
 
-#: src/mainwindow.ui:363
+#: src/mainwindow.ui:363 src/pavucontrol.glade:773
 msgid "Hardware Input Devices"
 msgstr "Strojne vhodne naprave"
 
-#: src/mainwindow.ui:366
+#: src/mainwindow.ui:366 src/pavucontrol.glade:776
 msgid "Virtual Input Devices"
 msgstr "Navidezne vhodne naprave"
 
-#: src/mainwindow.ui:369
+#: src/mainwindow.ui:369 src/pavucontrol.glade:779
 msgid "Monitors"
 msgstr "Zvočni nadzorniki"
 
-#: src/mainwindow.ui:388
+#: src/mainwindow.ui:388 src/pavucontrol.glade:1306
 msgid "_Input Devices"
 msgstr "_Vhodne naprave"
 
-#: src/mainwindow.ui:416
+#: src/mainwindow.ui:416 src/pavucontrol.glade:1343
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Ni kartic, primernih za nastavitev</i>"
 
-#: src/mainwindow.ui:431
+#: src/mainwindow.ui:431 src/pavucontrol.glade:1376
 msgid "Show volume meters"
 msgstr "Prikaži merilnike glasnosti"
 
-#: src/mainwindow.ui:448
-#, fuzzy
+#: src/pavucontrol.glade:1416
 msgid "_Configuration"
 msgstr "_Nastavitve"
 
-#: src/cardwidget.ui:30
+#: src/cardwidget.ui:30 src/pavucontrol.glade:119
 msgid "Card Name"
 msgstr "Ime kartice"
 
-#: src/cardwidget.ui:45
+#: src/pavucontrol.glade:147
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Zakleni kartico k temu profilu"
 
-#: src/cardwidget.ui:66
+#: src/cardwidget.ui:66 src/pavucontrol.glade:188
 msgid "<b>Profile:</b>"
 msgstr "<b>Profil:</b>"
 
-#: src/cardwidget.ui:82
-#, fuzzy
+#: src/pavucontrol.glade:218
 msgid "<b>Codec:</b>"
-msgstr "<b>Vrata:</b>"
+msgstr "<b>Kodek:</b>"
 
-#: src/channelwidget.ui:9
+#: src/channelwidget.ui:9 src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
 msgstr "<b>levo-spredaj</b>"
 
-#: src/channelwidget.ui:33
+#: src/channelwidget.ui:33 src/pavucontrol.glade:55
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
-#: src/renamedialog.ui:16
+#: src/renamedialog.ui:16 src/pavucontrol.glade:1481
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Preimenuj napravo na:</b>"
 
-#: src/renamedialog.ui:37
+#: src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "Pre_kliči"
 
 #: src/renamedialog.ui:45
 msgid "_Ok"
 msgstr ""
 
-#: src/streamwidget.ui:34
+#: src/streamwidget.ui:34 src/pavucontrol.glade:1570
 msgid "Stream Title"
 msgstr "Naslov pretoka"
 
-#: src/streamwidget.ui:44
+#: src/streamwidget.ui:44 src/pavucontrol.glade:1586
 msgid "direction"
 msgstr "smer"
 
-#: src/streamwidget.ui:64 src/devicewidget.ui:48
+#: src/streamwidget.ui:64 src/devicewidget.ui:48 src/pavucontrol.glade:363
+#: src/pavucontrol.glade:1625
 msgid "Mute audio"
 msgstr "Utišaj zvok"
 
-#: src/streamwidget.ui:78 src/devicewidget.ui:62
+#: src/streamwidget.ui:78 src/devicewidget.ui:62 src/pavucontrol.glade:385
+#: src/pavucontrol.glade:1647
 msgid "Lock channels together"
 msgstr "Skupaj zakleni kanala"
 
-#: src/devicewidget.ui:33
+#: src/devicewidget.ui:33 src/pavucontrol.glade:335
 msgid "Device Title"
 msgstr "Ime naprave"
 
@@ -351,219 +357,225 @@ msgstr "Ime naprave"
 msgid "Set as default"
 msgstr "Nastavi kot zasilni"
 
-#: src/devicewidget.ui:95
+#: src/devicewidget.ui:95 src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
 msgstr "<b>Vrata:</b>"
 
-#: src/devicewidget.ui:136
+#: src/devicewidget.ui:136 src/pavucontrol.glade:506
 msgid "PCM"
 msgstr "PCM"
 
-#: src/devicewidget.ui:148
+#: src/pavucontrol.glade:521
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
-#: src/devicewidget.ui:158
+#: src/devicewidget.ui:158 src/pavucontrol.glade:534
 msgid "DTS"
 msgstr "DTS"
 
-#: src/devicewidget.ui:168
+#: src/pavucontrol.glade:547
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
-#: src/devicewidget.ui:178
+#: src/devicewidget.ui:178 src/pavucontrol.glade:560
 msgid "MPEG"
 msgstr "MPEG"
 
-#: src/devicewidget.ui:188
+#: src/devicewidget.ui:188 src/pavucontrol.glade:573
 msgid "AAC"
 msgstr "AAC"
 
-#: src/devicewidget.ui:198
+#: src/pavucontrol.glade:586
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
-#: src/devicewidget.ui:208
+#: src/pavucontrol.glade:599
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
-#: src/devicewidget.ui:224
+#: src/devicewidget.ui:224 src/pavucontrol.glade:626
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Odmik latence:</b>"
 
-#: src/devicewidget.ui:237
+#: src/devicewidget.ui:237 src/pavucontrol.glade:654
 msgid "ms"
 msgstr "ms"
 
-#: src/devicewidget.ui:247
+#: src/devicewidget.ui:247 src/pavucontrol.glade:676
 msgid "Advanced"
 msgstr "Napredno"
 
-#: src/pavucontrol.cc:107
+#: src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "iz odziva sporočila list-codecs ni možno brati JSON: %s"
 
-#: src/pavucontrol.cc:116
+#: src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "odziv sporočila list-codecs ni polje JSON"
 
-#: src/pavucontrol.cc:164
+#: src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "sporočila odziva list-codecs ni možno pravilno razčleniti"
 
-#: src/pavucontrol.cc:184
+#: src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "ni možno brati JSON iz sporočilo odziva get-codec: %s"
 
-#: src/pavucontrol.cc:193
+#: src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "sporočilo odziva get-codec ni vrednost JSON"
 
-#: src/pavucontrol.cc:201
+#: src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "imena kodeka ni možno pridobiti iz sporočila odziva get-codec"
 
-#: src/pavucontrol.cc:223
+#: src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "JSON ni možno brati iz sporočila odziva get-profile-sticky: %s"
 
-#: src/pavucontrol.cc:232
+#: src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "sporočilo odziva get-profile-sticky ni vrednost JSON"
 
-#: src/pavucontrol.cc:252 src/cardwidget.cc:153 src/cardwidget.cc:181
-#, fuzzy, c-format
+#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() spodletel"
+msgstr "pa_context_send_message_to_object() je spodletel: %s"
 
-#: src/pavucontrol.cc:270
+#: src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "JSON ni možno brati iz sporočila odziva list-handlers: %s"
 
-#: src/pavucontrol.cc:279
+#: src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "sporočilo odziva list-handlers ni polje JSON"
 
-#: src/pavucontrol.cc:327
+#: src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "sporočila odziva list-handlers ni možno pravilno razčleniti"
 
-#: src/pavucontrol.cc:361
+#: src/pavucontrol.cc:361 src/pavucontrol.cc:358
 msgid "Card callback failure"
-msgstr "Card callback failure"
+msgstr "Povratni klic kartice je spodletel"
 
 #: src/pavucontrol.cc:389
 msgid "Sink callback failure"
 msgstr "Sink callback failure"
 
-#: src/pavucontrol.cc:413
+#: src/pavucontrol.cc:413 src/pavucontrol.cc:410
 msgid "Source callback failure"
-msgstr "Source callback failure"
+msgstr "Povratni klic vira je spodletel"
 
 #: src/pavucontrol.cc:432
 msgid "Sink input callback failure"
 msgstr "Sink input callback failure"
 
-#: src/pavucontrol.cc:451
+#: src/pavucontrol.cc:451 src/pavucontrol.cc:448
 msgid "Source output callback failure"
-msgstr "Source output callback failure"
+msgstr "Povratni klic izhoda vira je spodletel"
 
-#: src/pavucontrol.cc:481
+#: src/pavucontrol.cc:481 src/pavucontrol.cc:478
 msgid "Client callback failure"
-msgstr "Client callback failure"
+msgstr "Povratni klic odjemalca je spodletel"
 
-#: src/pavucontrol.cc:497
+#: src/pavucontrol.cc:497 src/pavucontrol.cc:494
 msgid "Server info callback failure"
-msgstr "Server info callback failure"
+msgstr "Povratni klic podatkov strežnika je spodletel"
 
-#: src/pavucontrol.cc:515 src/pavucontrol.cc:812
+#: src/pavucontrol.cc:515 src/pavucontrol.cc:812 src/pavucontrol.cc:512
+#: src/pavucontrol.cc:809
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr "Failed to initialize stream_restore extension: %s"
+msgstr "Inicializacija razširitve stream_restore je spodletela: %s"
 
-#: src/pavucontrol.cc:533
+#: src/pavucontrol.cc:533 src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() spodletel"
 
-#: src/pavucontrol.cc:551 src/pavucontrol.cc:826
+#: src/pavucontrol.cc:551 src/pavucontrol.cc:826 src/pavucontrol.cc:548
+#: src/pavucontrol.cc:823
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr "Failed to initialize device restore extension: %s"
+msgstr "Inicializacija razširitve obnovitve naprave je spodletela: %s"
 
-#: src/pavucontrol.cc:572
+#: src/pavucontrol.cc:572 src/pavucontrol.cc:569
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() spodletel"
 
-#: src/pavucontrol.cc:590 src/pavucontrol.cc:839
+#: src/pavucontrol.cc:590 src/pavucontrol.cc:839 src/pavucontrol.cc:587
+#: src/pavucontrol.cc:836
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr "Failed to initialize device manager extension: %s"
+msgstr "Inicializacija razširitve upravitelja naprave je spodletela: %s"
 
-#: src/pavucontrol.cc:609
+#: src/pavucontrol.cc:609 src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() spodletel"
 
-#: src/pavucontrol.cc:626
+#: src/pavucontrol.cc:626 src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() spodletel"
 
-#: src/pavucontrol.cc:639
+#: src/pavucontrol.cc:639 src/pavucontrol.cc:636
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() spodletel"
 
-#: src/pavucontrol.cc:652 src/pavucontrol.cc:665
+#: src/pavucontrol.cc:652 src/pavucontrol.cc:665 src/pavucontrol.cc:649
+#: src/pavucontrol.cc:662
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() spodletel"
 
-#: src/pavucontrol.cc:678
+#: src/pavucontrol.cc:678 src/pavucontrol.cc:675
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() spodletel"
 
-#: src/pavucontrol.cc:688 src/pavucontrol.cc:753
+#: src/pavucontrol.cc:688 src/pavucontrol.cc:753 src/pavucontrol.cc:685
+#: src/pavucontrol.cc:750
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() spodletel"
 
-#: src/pavucontrol.cc:701
+#: src/pavucontrol.cc:701 src/pavucontrol.cc:698
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() spodletel"
 
-#: src/pavucontrol.cc:744
+#: src/pavucontrol.cc:744 src/pavucontrol.cc:741
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() spodletel"
 
-#: src/pavucontrol.cc:760
+#: src/pavucontrol.cc:760 src/pavucontrol.cc:757
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() spodletel"
 
-#: src/pavucontrol.cc:767
+#: src/pavucontrol.cc:767 src/pavucontrol.cc:764
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() spodletel"
 
-#: src/pavucontrol.cc:774
+#: src/pavucontrol.cc:774 src/pavucontrol.cc:771
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() spodletel"
 
-#: src/pavucontrol.cc:781
+#: src/pavucontrol.cc:781 src/pavucontrol.cc:778
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() spodletel"
 
-#: src/pavucontrol.cc:788
+#: src/pavucontrol.cc:788 src/pavucontrol.cc:785
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() spodletel"
 
-#: src/pavucontrol.cc:795
+#: src/pavucontrol.cc:795 src/pavucontrol.cc:792
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() spodletel"
 
-#: src/pavucontrol.cc:854 src/pavucontrol.cc:905
+#: src/pavucontrol.cc:854 src/pavucontrol.cc:905 src/pavucontrol.cc:851
+#: src/pavucontrol.cc:902
 msgid "Connection failed, attempting reconnect"
 msgstr "Povezava spodletela, poskušam znova"
 
-#: src/pavucontrol.cc:892
+#: src/pavucontrol.cc:892 src/pavucontrol.cc:889
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -593,17 +605,17 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() spodletel"
 
-#: src/channelwidget.cc:99
+#: src/channelwidget.cc:99 src/channelwidget.cc:101
 #, c-format
 msgid "<small>%0.0f%% (%0.2f dB)</small>"
 msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
-#: src/channelwidget.cc:101
+#: src/channelwidget.cc:101 src/channelwidget.cc:103
 #, c-format
 msgid "<small>%0.0f%% (-&#8734; dB)</small>"
 msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
 
-#: src/channelwidget.cc:104
+#: src/channelwidget.cc:104 src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
 msgstr "%0.0f%%"
@@ -624,19 +636,19 @@ msgstr "<small>100% (0 dB)</small>"
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Osnova</i></small>"
 
-#: src/devicewidget.cc:75
+#: src/devicewidget.cc:75 src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr "Preimenuj napravo..."
+msgstr "Preimenuj napravo ..."
 
-#: src/devicewidget.cc:179
+#: src/devicewidget.cc:179 src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() spodletel"
 
-#: src/devicewidget.cc:257
+#: src/devicewidget.cc:257 src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr "Oprostite, a preimenovanje naprav ni podprto."
+msgstr "Preimenovanje naprav žal ni podprto."
 
-#: src/devicewidget.cc:259
+#: src/devicewidget.cc:259 src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -644,7 +656,7 @@ msgstr ""
 "Za preimenovanje naprav morate naložiti modul module-devices-manager v "
 "nastavitvah strežnika PulseAudio"
 
-#: src/devicewidget.cc:294
+#: src/devicewidget.cc:294 src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() spodletel"
 
@@ -653,58 +665,60 @@ msgstr "pa_ext_device_manager_write() spodletel"
 msgid "Error reading config file %s: %s"
 msgstr "Napaka pri branju nastavitvene datoteke %s: %s"
 
-#: src/mainwindow.cc:245
+#: src/mainwindow.cc:245 src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Napaka pri shranjevanju nastavitev"
 
-#: src/mainwindow.cc:253
+#: src/mainwindow.cc:253 src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Napaka pri pisanju nastavitvene datoteke %s"
 
-#: src/mainwindow.cc:314
+#: src/mainwindow.cc:314 src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (vtaknjen)"
 
-#: src/mainwindow.cc:318 src/mainwindow.cc:426
+#: src/mainwindow.cc:318 src/mainwindow.cc:426 src/mainwindow.cc:326
+#: src/mainwindow.cc:434
 msgid " (unavailable)"
 msgstr " (ni na voljo)"
 
-#: src/mainwindow.cc:320 src/mainwindow.cc:423
+#: src/mainwindow.cc:320 src/mainwindow.cc:423 src/mainwindow.cc:328
+#: src/mainwindow.cc:431
 msgid " (unplugged)"
 msgstr " (iztaknjen)"
 
-#: src/mainwindow.cc:625
+#: src/mainwindow.cc:625 src/mainwindow.cc:633
 msgid "Failed to read data from stream"
-msgstr "Failed to read data from stream"
+msgstr "Branje podatkov iz toka je spodletelo"
 
-#: src/mainwindow.cc:669
+#: src/mainwindow.cc:669 src/mainwindow.cc:677
 msgid "Peak detect"
 msgstr "Zaznava vrhov"
 
-#: src/mainwindow.cc:670
+#: src/mainwindow.cc:670 src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
-msgstr "Failed to create monitoring stream"
+msgstr "Ustvarjanje nadzornega toka je spodletelo"
 
-#: src/mainwindow.cc:685
+#: src/mainwindow.cc:685 src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
-msgstr "Failed to connect monitoring stream"
+msgstr "Povezava z nadzornim tokom je spodletela"
 
-#: src/mainwindow.cc:819
+#: src/mainwindow.cc:819 src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr "Vhod sink-input je bil prezrt, saj je obravnavan v gradniku Dogodek"
 
-#: src/mainwindow.cc:994
+#: src/mainwindow.cc:994 src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sistemski zvoki"
 
-#: src/mainwindow.cc:1340
+#: src/mainwindow.cc:1340 src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Vzpostavljam povezavo s storitvijo PulseAudio. Prosimo, počakajte..."
 
-#: src/rolewidget.cc:68
+#: src/rolewidget.cc:68 src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() spodletel"
 
@@ -732,27 +746,27 @@ msgstr "pa_context_set_sink_input_mute() spodletel"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() spodletel"
 
-#: src/sinkwidget.cc:119
+#: src/sinkwidget.cc:119 src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() spodletel"
 
-#: src/sinkwidget.cc:137
+#: src/sinkwidget.cc:137 src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Glasnost povratne zanke"
 
-#: src/sinkwidget.cc:155
+#: src/sinkwidget.cc:155 src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() spodletel"
 
-#: src/sinkwidget.cc:169
+#: src/sinkwidget.cc:169 src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() spodletel"
 
-#: src/sinkwidget.cc:189
+#: src/sinkwidget.cc:189 src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() spodletel"
 
-#: src/sinkwidget.cc:231
+#: src/sinkwidget.cc:231 src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() spodletel"
 
@@ -796,29 +810,47 @@ msgstr "pa_context_set_default_source() spodletel"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() spodletel"
 
-#: src/pavuapplication.cc:158
+#: src/pavuapplication.cc:158 src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Izberite zavihek ob nalaganju."
 
-#: src/pavuapplication.cc:159
+#: src/pavuapplication.cc:159 src/pavuapplication.cc:161
 msgid "number"
 msgstr "številka"
 
-#: src/pavuapplication.cc:164
+#: src/pavuapplication.cc:164 src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Ponavljaj v neskončnost, če se PA zapre (vsakih 5 sekund)."
 
-#: src/pavuapplication.cc:169
+#: src/pavuapplication.cc:169 src/pavuapplication.cc:171
 msgid "Maximize the window."
 msgstr "Razpni okno."
 
-#: src/pavuapplication.cc:174
+#: src/pavuapplication.cc:174 src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Prikaži različico."
 
-#, fuzzy
-#~ msgid "multimedia-volume-control"
-#~ msgstr "Nastavitev glasnost PulseAudio"
+#: src/pavucontrol.desktop.in:8
+msgid "multimedia-volume-control"
+msgstr "večpredstavnost-glasnost-nadzor"
 
-#~ msgid "Terminate"
-#~ msgstr "Zaustavi"
+#: src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Zaustavi"
+
+#: src/pavucontrol.glade:12
+msgid "window2"
+msgstr "okno2"
+
+#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
+#: src/pavucontrol.glade:1513
+msgid "window1"
+msgstr "okno1"
+
+#: src/pavucontrol.glade:408
+msgid "Set as fallback"
+msgstr "Nastavi kot zasilni"
+
+#: src/devicewidget.cc:263
+msgid "_OK"
+msgstr "V _redu"
