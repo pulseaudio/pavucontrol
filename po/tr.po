@@ -5,13 +5,13 @@
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2008.
 # Gökhan Gökkaya <wirelessanten@gmail.com>, 2019
 # Oğuz Ersen <oguzersen@protonmail.com>, 2020, 2021, 2022.
-# Oğuz Ersen <oguz@ersen.moe>, 2022.
+# Oğuz Ersen <oguz@ersen.moe>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: git trunk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2022-05-20 00:18+0000\n"
+"PO-Revision-Date: 2024-08-01 04:41+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/tr/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
@@ -29,12 +29,12 @@ msgstr "Ses Denetimi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Aygıt ve uygulama ses seviyelerini ayarlayın"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "PulseAudio Geliştiricileri"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -43,65 +43,73 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"PulseAudio Ses Denetimi (pavucontrol) PulseAudio ses sunucusu için bir ses "
+"denetim aracıdır (“ karıştırıcı”). Geleneksel karıştırıcı araçlarının "
+"aksine, bu araç hem donanım aygıtlarının hem de her oynatım akışının ses "
+"seviyesini ayrı ayrı denetlemenize olanak tanır."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "“Oynatım” sekmesi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "“Kayıt” sekmesi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "“Çıkış” sekmesi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "“Giriş” sekmesi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
-#, fuzzy
 msgid "The “Configuration” tab"
-msgstr "_Yapılandırma"
+msgstr "“Yapılandırma” sekmesi"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Gtk 3'ten 4'e geçildi."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Kullanıcı arayüzü kaynakları program dosyasına gömüldü."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"\"Yedek olarak ayarla\" daha iyi okunabilirlik için \"Öntanımlı\" olarak "
+"yeniden adlandırıldı."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
-msgstr ""
+msgstr "Seviye çubuklarına sahip 144 Hz ekranlar için destek eklendi."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
 msgid ""
 "App icons will fallback to generic rather than missing image, and this will "
 "be more common with Gtk 4."
 msgstr ""
+"Uygulama simgeleri eksik görsel yerine genel görseli kullanacak ve bu durum "
+"Gtk 4 ile daha yaygın hale gelecek."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Birçok çeviri güncellemesi."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Autotools derleme araçları yerine meson kullanıldı."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "libcanberra bağımlılığı isteğe bağlı oldu."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
 msgstr ""
+"Bluetooth kod çözücülerini değiştirme desteği (PulseAudio 15.0'da yeni)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -109,12 +117,17 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Kart profillerini kilitleme desteği (PulseAudio 15.0'da yeni). Bir profilin "
+"kilitlenmesi, PulseAudio'nun tak/çıkar olaylarında otomatik olarak o profili "
+"değiştirmesini engeller."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Yeni çeviriler: Asturca, Baskça, Belarusça, Galiçyaca, İbranice, Kazakça, "
+"Bokmål Norveççe, Sinhala, Slovence"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -123,31 +136,44 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Güncellenen çeviriler: Katalanca, Çince (Basitleştirilmiş), Çince "
+"(Geleneksel), Hırvatça, Danca, Felemenkçe, Fince, Fransızca, Almanca, "
+"Macarca, İtalyanca, Japonca, Korece, Litvanyaca, Nynorsk Norveççe, Lehçe, "
+"Portekizce, Portekizce (Brezilya), Slovakça, İspanyolca, İsveççe, Türkçe, "
+"Ukraynaca."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"Artık aynı anda yalnızca bir pavucontrol penceresi açık olabilir. "
+"Pavucontrol'ü ikinci kez başlatmaya çalışmak ilk pencereyi ön plana getirir."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"Yapılandırma sekmesine \"Ses ölçeri göster\" onay kutusu eklendi. Ses "
+"ölçerin devre dışı bırakılması CPU kullanımını azaltır."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
+"Alan kullanımı iyileştirildi (gereksiz kenar boşlukları ve dolguları "
+"kaldırıldı)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Kanal kilitleme düğmesi için daha uygun bir simge kullanıldı."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Ses seviyesi kaydırıcılarının hizasının bozulmasını önleyen daha iyi kanal "
+"etiketi düzeni."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -156,22 +182,31 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Azami gecikme uzaklığı, genellikle 2 saniyeden daha yüksek gecikme süresine "
+"sahip AirPlay aygıtlarına uyum sağlamak için 2 saniyeden 5 saniyeye "
+"çıkarıldı (ancak bu, daha yeni PulseAudio sürümlerinde o kadar kullanışlı "
+"değildir, çünkü gecikme süresi eskisinden çok daha doğru bir şekilde "
+"bildirilir)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Yeni --version komut satırı seçeneği."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Yeni çeviriler: Çince (Tayvan), Hırvatça, Korece, Nynorsk Norveççe, "
+"Litvanyaca, Valensiyaca."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Güncellenen çeviriler: Fince, Fransızca, Almanca, İtalyanca, Japonca, Lehçe, "
+"İsveççe."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
 msgid "PulseAudio Volume Control"
@@ -326,7 +361,6 @@ msgid "_Cancel"
 msgstr "_İptal"
 
 #: src/renamedialog.ui:45
-#, fuzzy
 msgid "_Ok"
 msgstr "_Tamam"
 
@@ -351,9 +385,8 @@ msgid "Device Title"
 msgstr "Aygıt Başlığı"
 
 #: src/devicewidget.ui:77
-#, fuzzy
 msgid "Set as default"
-msgstr "Geri uyumlu olarak ayarla"
+msgstr "Öntanımlı olarak ayarla"
 
 #: src/devicewidget.ui:95
 msgid "<b>Port:</b>"
