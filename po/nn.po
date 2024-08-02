@@ -666,7 +666,7 @@ msgid ""
 "rename devices"
 msgstr ""
 "Du må lasta modulen «module-device-manager» på PulseAudio-tenaren for å "
-"kunna endra namn på einingar"
+"kunna endra namn på einingar."
 
 #: src/devicewidget.cc:294
 msgid "pa_ext_device_manager_write() failed"
