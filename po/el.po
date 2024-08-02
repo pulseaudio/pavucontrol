@@ -2,34 +2,37 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Dimitris Glezos <dimitris@glezos.com>, 2008.
+# Giannis Antypas <gianni.antypas@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2008-10-06 16:20+0200\n"
-"Last-Translator: nikosCharonitakis <nikosx@gmail.com>\n"
-"Language-Team: Greek <fedora-trans-el@redhat.com>\n"
+"PO-Revision-Date: 2024-08-02 10:41+0000\n"
+"Last-Translator: Giannis Antypas <gianni.antypas@gmail.com>\n"
+"Language-Team: Greek <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KAider 0.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
+#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
 msgid "Volume Control"
 msgstr "Έλεγχος έντασης ήχου"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Ρύθμιση εντάσεων συσκευής και εφαρμογών"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "Οι προγραμματιστές του PulseAudio"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -38,64 +41,74 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"Ο ελεγκτής έντασης PulseAudio (pavucontrol) είναι ένα εργαλείο ελέγχου "
+"έντασης («μείκτης») για το διακομιστή ήχου PulseAudio. Σε αντίθεση με τα "
+"κλασικά εργαλεία μείκτη, αυτό εδώ σας επιτρέπει να ελέγχετε τόσο την ένταση "
+"των συσκευών υλισμικού όσο και κάθε ροή αναπαραγωγής χωριστά."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "Η καρτέλα «Αναπαραγωγή»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "Η καρτέλα «Εγγραφή»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "Η καρτέλα «Έξοδος»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "Η καρτέλα «Είσοδος»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
 msgid "The “Configuration” tab"
-msgstr ""
+msgstr "Η καρτέλα «Διαμόρφωση»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Μετεγκατάσταση από Gtk 3 σε 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Ενσωμάτωση πόρων διεπαφής χρήστη στο εκτελέσιμο."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"Μετονομασία του «Ορισμός ως εναλλακτική» σε «Προεπιλογή» για καλύτερη "
+"αναγνωσιμότητα."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
-msgstr ""
+msgstr "Υποστήριξη μόνιτορ 144 Hz με μπάρες επιπέδου."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
 msgid ""
 "App icons will fallback to generic rather than missing image, and this will "
 "be more common with Gtk 4."
 msgstr ""
+"Τα εικονίδια εφαρμογών θα μεταπέσουν σε γενικής χρήσης παρά σε απουσία "
+"εικόνας, και αυτό θα είναι πιο κοινότυπο με το Gtk 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Αρκετές ενημερώσεις μετάφρασης."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Απόρριψη δομής autotools υπέρ του meson."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "Να γίνει προαιρετική η εξάρτηση libcanberra."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
 msgstr ""
+"Υποστήριξη για εναλλαγή αλγόριθμων κωδικοποίησης Bluetooth (νέο στο "
+"PulseAudio 15.0)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -103,12 +116,17 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Υποστήριξη για κλείδωμα προφίλ κάρτας (νέο στο PulseAudio 15.0). Το κλείδωμα "
+"ενός προφίλ αποτρέπει το PulseAudio από την αυτόματη αλλαγή εκείνου του "
+"προφίλ κατά τα συμβάντα σύνδεσης/αποσύνδεσης."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Νέες μεταφράσεις: Αστουριανά, Βασκικά, Λευκορωσικά, Γαλικικά, Εβραϊκά, "
+"Καζακικά, Νορβηγικά Μποκμάλ, Σιναλεζικά, Σλοβενικά"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -117,31 +135,44 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Ενημερώσεις μεταφράσεων: Καταλανικά, Κινεζικά (απλοποιημένα), Κινεζικά "
+"(παραδοσιακά), Κροατικά, Δανικά, Ολλανδικά, Φινλανδικά, Γαλλικά, Γερμανικά, "
+"Ουγγρικά, Ιταλικά, Ιαπωνικά, Κορεατικά, Λιθουανικά, Νορβηγικά Νινόρσκ, "
+"Πολωνικά, Πορτογαλικά, Πορτογαλικά (Βραζιλία), Σλοβακικά, Ισπανικά, "
+"Σουηδικά, Τουρκικά, Ουκρανικά."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"Μπορεί να υπάρχει μόνο ένα ανοικτό παράθυρο pavucontrol τη φορά. Η απόπειρα "
+"να εκκινήσετε το pavucontrol για δεύτερη φορά φέρνει το πρώτο παράθυρο στο "
+"προσκήνιο."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"Προστέθηκε ένα πλαίσιο ελέγχου «Εμφάνιση μετρητών έντασης» στην καρτέλα "
+"Διαμόρφωσης. Η απενεργοποίηση των μετρητών έντασης μειώνει τη χρήση CPU."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
+"Βελτίωση της χρήσης του χώρου (αφαίρεση περιττών περιθωρίων και γεμισμάτων)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Χρήση πιο κατάλληλου εικονιδίου για το κουμπί κλειδώματος καναλιών."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Καλύτερη διάταξη ετικέτας καναλιών, αποτρέπει τη μη ευθυγράμμιση των "
+"ρυθμιστικών έντασης."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -150,423 +181,432 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Η μέγιστη μετατόπιση υστέρησης αυξήθηκε από 2 σε 5 δευτερόλεπτα για να "
+"προσαρμοστεί σε συσκευές AirPlay οι οποίες έχουν υστέρηση μεγαλύτερη από 2 "
+"δευτερόλεπτα (αυτό δεν είναι τόσο χρήσιμο σε νεότερες εκδόσεις PulseAudio, "
+"όμως, επειδή η υστέρηση αναφέρεται με πολύ μεγαλύτερη ακρίβεια από πριν)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Νέα επιλογή γραμμής εντολών --version."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Νέες μεταφράσεις: Κινεζικά (Ταϊβάν), Κροατικά, Κορεατικά, Νορβηγικά Νινόρσκ, "
+"Λιθουανικά, Βαλενθιανικά."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Ενημερώσεις μεταφράσεων: Φινλανδικά, Γαλλικά, Γερμανικά, Ιταλικά, Ιαπωνικά, "
+"Πολωνικά, Σουηδικά."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
+#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
 msgstr "Έλεγχος έντασης ήχου PulseAudio"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:6
+#: src/org.pulseaudio.pavucontrol.desktop.in:6 src/pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
 msgstr "Ρύθμιση επιπέδου έντασης"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:12
+#: src/pavucontrol.desktop.in:12
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;Μικρόφωνο;Ένταση;Εξασθένιση;Ισορροπία;Σετ ακουστικών;Ηχεία;"
+"Ακουστικά;Ήχος;Μείκτης;Έξοδος;Είσοδος;Συσκευές;Αναπαραγωγή;Εγγραφή;'Ηχοι "
+"συστήματος;Κάρτα ήχου;Ρυθμίσεις;Προτιμήσεις;"
 
-#: src/mainwindow.ui:40
+#: src/pavucontrol.glade:828
 msgid "<i>No application is currently playing audio.</i>"
-msgstr ""
+msgstr "<i>Καμία εφαρμογή δεν αναπαράγει ήχο αυτή τη στιγμή.</i>"
 
-#: src/mainwindow.ui:66 src/mainwindow.ui:157
+#: src/mainwindow.ui:66 src/mainwindow.ui:157 src/pavucontrol.glade:876
+#: src/pavucontrol.glade:1000
 msgid "<b>_Show:</b>"
 msgstr "<b>Ε_μφάνιση:</b>"
 
-#: src/mainwindow.ui:82 src/mainwindow.ui:173
+#: src/pavucontrol.glade:716 src/pavucontrol.glade:733
 msgid "All Streams"
-msgstr ""
+msgstr "Όλες οι ροές"
 
-#: src/mainwindow.ui:85 src/mainwindow.ui:176
+#: src/pavucontrol.glade:719 src/pavucontrol.glade:736
 msgid "Applications"
-msgstr ""
+msgstr "Εφαρμογές"
 
-#: src/mainwindow.ui:88 src/mainwindow.ui:179
+#: src/pavucontrol.glade:722 src/pavucontrol.glade:739
 msgid "Virtual Streams"
-msgstr ""
+msgstr "Εικονικές ροές"
 
-#: src/mainwindow.ui:107
+#: src/mainwindow.ui:107 src/pavucontrol.glade:920
 msgid "_Playback"
 msgstr "_Αναπαραγωγή"
 
-#: src/mainwindow.ui:131
+#: src/pavucontrol.glade:952
 msgid "<i>No application is currently recording audio.</i>"
-msgstr ""
+msgstr "<i>Καμία εφαρμογή δεν εγγράφει ήχο αυτή τη στιγμή.</i>"
 
-#: src/mainwindow.ui:198
+#: src/mainwindow.ui:198 src/pavucontrol.glade:1047
 msgid "_Recording"
 msgstr "Εγγρα_φή"
 
-#: src/mainwindow.ui:222
+#: src/mainwindow.ui:222 src/pavucontrol.glade:1080
 msgid "<i>No output devices available</i>"
 msgstr "<i>Δεν υπάρχουν διαθέσιμες συσκευές εξόδου</i>"
 
-#: src/mainwindow.ui:248
+#: src/mainwindow.ui:248 src/pavucontrol.glade:1128
 msgid "<b>S_how:</b>"
 msgstr "<b>Εμφά_νιση:</b>"
 
-#: src/mainwindow.ui:265
-#, fuzzy
+#: src/pavucontrol.glade:750
 msgid "All Output Devices"
-msgstr "Συσκευές εξό_δου"
+msgstr "Όλες οι συσκευές εξόδου"
 
-#: src/mainwindow.ui:268
-#, fuzzy
+#: src/pavucontrol.glade:753
 msgid "Hardware Output Devices"
-msgstr "Συσκευές εξό_δου"
+msgstr "Συσκευές εξόδου υλισμικού"
 
-#: src/mainwindow.ui:271
-#, fuzzy
+#: src/pavucontrol.glade:756
 msgid "Virtual Output Devices"
-msgstr "Συσκευές εξό_δου"
+msgstr "Εικονικές συσκευές εξόδου"
 
-#: src/mainwindow.ui:290
+#: src/mainwindow.ui:290 src/pavucontrol.glade:1176
 msgid "_Output Devices"
 msgstr "Συσκευές εξό_δου"
 
-#: src/mainwindow.ui:314
+#: src/mainwindow.ui:314 src/pavucontrol.glade:1210
 msgid "<i>No input devices available</i>"
 msgstr "<i>Δεν υπάρχουν διαθέσιμες συσκευές εισόδου</i>"
 
-#: src/mainwindow.ui:340
+#: src/mainwindow.ui:340 src/pavucontrol.glade:1258
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Εμ_φάνιση:</b>"
 
-#: src/mainwindow.ui:357
-#, fuzzy
+#: src/pavucontrol.glade:767
 msgid "All Input Devices"
-msgstr "Συσκευές _εισόδου"
+msgstr "Όλες οι συσκευές εισόδου"
 
-#: src/mainwindow.ui:360
+#: src/pavucontrol.glade:770
 msgid "All Except Monitors"
-msgstr ""
+msgstr "Όλα πλην μόνιτορ"
 
-#: src/mainwindow.ui:363
-#, fuzzy
+#: src/pavucontrol.glade:773
 msgid "Hardware Input Devices"
-msgstr "Συσκευές _εισόδου"
+msgstr "Συσκευές εισόδου υλισμικού"
 
-#: src/mainwindow.ui:366
-#, fuzzy
+#: src/pavucontrol.glade:776
 msgid "Virtual Input Devices"
-msgstr "Συσκευές _εισόδου"
+msgstr "Εικονικές συσκευές εισόδου"
 
-#: src/mainwindow.ui:369
+#: src/pavucontrol.glade:779
 msgid "Monitors"
-msgstr ""
+msgstr "Μόνιτορ"
 
-#: src/mainwindow.ui:388
+#: src/mainwindow.ui:388 src/pavucontrol.glade:1306
 msgid "_Input Devices"
 msgstr "Συσκευές _εισόδου"
 
-#: src/mainwindow.ui:416
+#: src/pavucontrol.glade:1343
 msgid "<i>No cards available for configuration</i>"
-msgstr ""
+msgstr "<i>Δεν υπάρχουν κάρτες διαθέσιμες προς διαμόρφωση</i>"
 
-#: src/mainwindow.ui:431
+#: src/pavucontrol.glade:1376
 msgid "Show volume meters"
-msgstr ""
+msgstr "Εμφάνιση μετρητών έντασης"
 
-#: src/mainwindow.ui:448
+#: src/pavucontrol.glade:1416
 msgid "_Configuration"
-msgstr ""
+msgstr "_Διαμόρφωση"
 
-#: src/cardwidget.ui:30
+#: src/pavucontrol.glade:119
 msgid "Card Name"
-msgstr ""
+msgstr "Όνομα κάρτας"
 
-#: src/cardwidget.ui:45
+#: src/pavucontrol.glade:147
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Κλείδωμα κάρτας σε αυτό το προφίλ"
 
-#: src/cardwidget.ui:66
-#, fuzzy
+#: src/pavucontrol.glade:188
 msgid "<b>Profile:</b>"
-msgstr "<b>Εμφά_νιση:</b>"
+msgstr "<b>Προφίλ:</b>"
 
-#: src/cardwidget.ui:82
-#, fuzzy
+#: src/pavucontrol.glade:218
 msgid "<b>Codec:</b>"
-msgstr "<b>Εμφά_νιση:</b>"
+msgstr "<b>Αλγόριθμος κωδικοποίησης:</b>"
 
-#: src/channelwidget.ui:9
-#, fuzzy
+#: src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
-msgstr "<b>Εμφά_νιση:</b>"
+msgstr "<b>αριστερά-μπροστά</b>"
 
-#: src/channelwidget.ui:33
+#: src/pavucontrol.glade:55
 msgid "<small>50%</small>"
-msgstr ""
+msgstr "<small>50%</small>"
 
-#: src/renamedialog.ui:16
+#: src/pavucontrol.glade:1481
 msgid "<b>Rename device to:</b>"
-msgstr ""
+msgstr "<b>Μετονομασία συσκευής σε:</b>"
 
-#: src/renamedialog.ui:37
+#: src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Ακύρωση"
 
 #: src/renamedialog.ui:45
 msgid "_Ok"
-msgstr ""
+msgstr "_Εντάξει"
 
-#: src/streamwidget.ui:34
+#: src/pavucontrol.glade:1570
 msgid "Stream Title"
-msgstr ""
+msgstr "Τίτλος ροής"
 
-#: src/streamwidget.ui:44
+#: src/pavucontrol.glade:1586
 msgid "direction"
-msgstr ""
+msgstr "διεύθυνση"
 
-#: src/streamwidget.ui:64 src/devicewidget.ui:48
+#: src/pavucontrol.glade:363 src/pavucontrol.glade:1625
 msgid "Mute audio"
-msgstr ""
+msgstr "Σίγαση ήχου"
 
-#: src/streamwidget.ui:78 src/devicewidget.ui:62
+#: src/streamwidget.ui:78 src/devicewidget.ui:62 src/pavucontrol.glade:385
+#: src/pavucontrol.glade:1647
 msgid "Lock channels together"
 msgstr "Κλείδωμα των καναλιών μαζί"
 
-#: src/devicewidget.ui:33
-#, fuzzy
+#: src/pavucontrol.glade:335
 msgid "Device Title"
-msgstr "Συσκευές _εισόδου"
+msgstr "Τίτλος συσκευής"
 
 #: src/devicewidget.ui:77
 msgid "Set as default"
-msgstr ""
+msgstr "Ορισμός ως προεπιλογή"
 
-#: src/devicewidget.ui:95
-#, fuzzy
+#: src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
-msgstr "<b>Εμφά_νιση:</b>"
+msgstr "<b>Θύρα:</b>"
 
-#: src/devicewidget.ui:136
+#: src/pavucontrol.glade:506
 msgid "PCM"
-msgstr ""
+msgstr "PCM"
 
-#: src/devicewidget.ui:148
+#: src/pavucontrol.glade:521
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
-#: src/devicewidget.ui:158
+#: src/pavucontrol.glade:534
 msgid "DTS"
-msgstr ""
+msgstr "DTS"
 
-#: src/devicewidget.ui:168
+#: src/pavucontrol.glade:547
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
-#: src/devicewidget.ui:178
+#: src/pavucontrol.glade:560
 msgid "MPEG"
-msgstr ""
+msgstr "MPEG"
 
-#: src/devicewidget.ui:188
+#: src/pavucontrol.glade:573
 msgid "AAC"
-msgstr ""
+msgstr "AAC"
 
-#: src/devicewidget.ui:198
+#: src/pavucontrol.glade:586
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
-#: src/devicewidget.ui:208
+#: src/pavucontrol.glade:599
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
-#: src/devicewidget.ui:224
+#: src/pavucontrol.glade:626
 msgid "<b>Latency offset:</b>"
-msgstr ""
+msgstr "<b>Μετατόπιση υστέρησης:</b>"
 
-#: src/devicewidget.ui:237
+#: src/pavucontrol.glade:654
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
-#: src/devicewidget.ui:247
+#: src/pavucontrol.glade:676
 msgid "Advanced"
-msgstr ""
+msgstr "Προχωρημένο"
 
-#: src/pavucontrol.cc:107
+#: src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
 msgstr ""
+"αδυναμία ανάγνωσης του JSON από την απόκριση του μηνύματος list-codecs: %s"
 
-#: src/pavucontrol.cc:116
+#: src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "η απόκριση του μηνύματος list-codecs δεν είναι μια διάταξη JSON"
 
-#: src/pavucontrol.cc:164
+#: src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "αδυναμία ορθής ανάλυσης της απόκρισης του μηνύματος list-codecs"
 
-#: src/pavucontrol.cc:184
+#: src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
 msgstr ""
+"αδυναμία ανάγνωσης του JSON από την απόκριση του μηνύματος get-codec: %s"
 
-#: src/pavucontrol.cc:193
+#: src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "η απόκριση του μηνύματος get-codec δεν είναι τιμή JSON"
 
-#: src/pavucontrol.cc:201
+#: src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
 msgstr ""
+"αδυναμία απόκτησης ονόματος αλγορίθμου κωδικοποίησης από την απόκριση του "
+"μηνύματος get-codec"
 
-#: src/pavucontrol.cc:223
+#: src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
 msgstr ""
+"αδυναμία ανάγνωσης του JSON από την απόκριση του μηνύματος get-profile-"
+"sticky: %s"
 
-#: src/pavucontrol.cc:232
+#: src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "η απόκριση του μηνύματος get-profile-sticky δεν είναι τιμή JSON"
 
-#: src/pavucontrol.cc:252 src/cardwidget.cc:153 src/cardwidget.cc:181
+#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
 #, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr ""
+msgstr "Αποτυχία του pa_context_send_message_to_object() : %s"
 
-#: src/pavucontrol.cc:270
+#: src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
 msgstr ""
+"αδυναμία ανάγνωσης του JSON από την απόκριση του μηνύματος list-handlers: %s"
 
-#: src/pavucontrol.cc:279
+#: src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "Η απόκριση του μηνύματος list-handlers δεν είναι μια διάταξη JSON"
 
-#: src/pavucontrol.cc:327
+#: src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "δε μπόρεσε να αναλυθεί σωστά η απόκριση του μηνύματος list-handlers"
 
-#: src/pavucontrol.cc:361
+#: src/pavucontrol.cc:358
 msgid "Card callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης κάρτας"
 
-#: src/pavucontrol.cc:389
+#: src/pavucontrol.cc:386
 msgid "Sink callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης συλλέκτη"
 
-#: src/pavucontrol.cc:413
+#: src/pavucontrol.cc:410
 msgid "Source callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης πηγής"
 
-#: src/pavucontrol.cc:432
+#: src/pavucontrol.cc:429
 msgid "Sink input callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης συλλέκτη εισόδου"
 
-#: src/pavucontrol.cc:451
+#: src/pavucontrol.cc:448
 msgid "Source output callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης εξόδου πηγής"
 
-#: src/pavucontrol.cc:481
+#: src/pavucontrol.cc:478
 msgid "Client callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης πελάτη"
 
-#: src/pavucontrol.cc:497
+#: src/pavucontrol.cc:494
 msgid "Server info callback failure"
-msgstr ""
+msgstr "Αποτυχία ανάκλησης πληροφοριών διακομιστή"
 
-#: src/pavucontrol.cc:515 src/pavucontrol.cc:812
+#: src/pavucontrol.cc:512 src/pavucontrol.cc:809
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
-msgstr ""
+msgstr "Αποτυχία αρχικοποίησης επέκτασης επαναφοράς_ροής: %s"
 
-#: src/pavucontrol.cc:533
+#: src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_stream_restore_read()"
 
-#: src/pavucontrol.cc:551 src/pavucontrol.cc:826
+#: src/pavucontrol.cc:548 src/pavucontrol.cc:823
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
-msgstr ""
+msgstr "Αποτυχία αρχικοποίησης επέκτασης επαναφοράς συσκευών: %s"
 
-#: src/pavucontrol.cc:572
+#: src/pavucontrol.cc:569
 msgid "pa_ext_device_restore_read_sink_formats() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_device_restore_read_sink_formats()"
 
-#: src/pavucontrol.cc:590 src/pavucontrol.cc:839
+#: src/pavucontrol.cc:587 src/pavucontrol.cc:836
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
-msgstr ""
+msgstr "Αποτυχία αρχικοποίησης επέκτασης διαχειριστή συσκευών: %s"
 
-#: src/pavucontrol.cc:609
+#: src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_device_manager_read()"
 
-#: src/pavucontrol.cc:626
+#: src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_sink_info_by_index()"
 
-#: src/pavucontrol.cc:639
+#: src/pavucontrol.cc:636
 msgid "pa_context_get_source_info_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_source_info_by_index()"
 
-#: src/pavucontrol.cc:652 src/pavucontrol.cc:665
+#: src/pavucontrol.cc:649 src/pavucontrol.cc:662
 msgid "pa_context_get_sink_input_info() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_sink_input_info()"
 
-#: src/pavucontrol.cc:678
+#: src/pavucontrol.cc:675
 msgid "pa_context_get_client_info() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_client_info()"
 
-#: src/pavucontrol.cc:688 src/pavucontrol.cc:753
+#: src/pavucontrol.cc:685 src/pavucontrol.cc:750
 msgid "pa_context_get_server_info() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_server_info()"
 
-#: src/pavucontrol.cc:701
+#: src/pavucontrol.cc:698
 msgid "pa_context_get_card_info_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_card_info_by_index()"
 
-#: src/pavucontrol.cc:744
+#: src/pavucontrol.cc:741
 msgid "pa_context_subscribe() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_subscribe()"
 
-#: src/pavucontrol.cc:760
+#: src/pavucontrol.cc:757
 msgid "pa_context_client_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_client_info_list()"
 
-#: src/pavucontrol.cc:767
+#: src/pavucontrol.cc:764
 msgid "pa_context_get_card_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_card_info_list()"
 
-#: src/pavucontrol.cc:774
+#: src/pavucontrol.cc:771
 msgid "pa_context_get_sink_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_sink_info_list()"
 
-#: src/pavucontrol.cc:781
+#: src/pavucontrol.cc:778
 msgid "pa_context_get_source_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_source_info_list()"
 
-#: src/pavucontrol.cc:788
+#: src/pavucontrol.cc:785
 msgid "pa_context_get_sink_input_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_sink_input_info_list()"
 
-#: src/pavucontrol.cc:795
+#: src/pavucontrol.cc:792
 msgid "pa_context_get_source_output_info_list() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_get_source_output_info_list()"
 
-#: src/pavucontrol.cc:854 src/pavucontrol.cc:905
-#, fuzzy
+#: src/pavucontrol.cc:851 src/pavucontrol.cc:902
 msgid "Connection failed, attempting reconnect"
-msgstr "Αποτυχία σύνδεσης"
+msgstr "Αποτυχία σύνδεσης, επιχειρείται επανασύνδεση"
 
-#: src/pavucontrol.cc:892
+#: src/pavucontrol.cc:889
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -579,241 +619,271 @@ msgid ""
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
 msgstr ""
+"Αποτυχία σύνδεσης στο PulseAudio. Αυτόματη νέα προσπάθεια σε 5δ\n"
+"\n"
+"Αυτό μάλλον συμβαίνει σε αυτή την περίπτωση επειδή ο PULSE_SERVER στις "
+"Ιδιότητες Ριζικού Παραθύρου X11 /Environment\n"
+"ή ο προεπιλεγμένος διακομιστής στο client.conf έχει σφάλμα διαμόρφωσης.\n"
+"Αυτή η κατάσταση μπορεί επίσης να προκύψει όταν έχει καταρρεύσει το "
+"PulseAudio και έχει αφήσει μη ενημερωμένα στοιχεία στο Ριζικό Παράθυρο X11.\n"
+"Αν συμβαίνει αυτό, τότε το PulseAudio θα πρέπει να αυτοαναπαραχθεί εκ νέου, "
+"ή αν δεν είναι διαμορφωμένο θα πρέπει εσείς\n"
+"να εκτελέσετε χειροκίνητα το start-pulseaudio-x11."
 
 #: src/cardwidget.cc:126
 msgid "pa_context_set_card_profile_by_index() failed"
-msgstr ""
-
-#: src/channelwidget.cc:99
-#, c-format
-msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_card_profile_by_index()"
 
 #: src/channelwidget.cc:101
 #, c-format
-msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr ""
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
-#: src/channelwidget.cc:104
+#: src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: src/channelwidget.cc:139
 msgid "<small>Silence</small>"
-msgstr ""
+msgstr "<small>Αθόρυβο</small>"
 
 #: src/channelwidget.cc:139
 msgid "<small>Min</small>"
-msgstr ""
+msgstr "<small>Ελάχιστο</small>"
 
 #: src/channelwidget.cc:141
 msgid "<small>100% (0 dB)</small>"
-msgstr ""
+msgstr "<small>100% (0 dB)</small>"
 
 #: src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
-msgstr ""
+msgstr "<small><i>Βάση</i></small>"
 
-#: src/devicewidget.cc:75
+#: src/devicewidget.cc:59
 msgid "Rename Device..."
-msgstr ""
+msgstr "Μετονομασία συσκευής..."
 
-#: src/devicewidget.cc:179
+#: src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_port_latency_offset()"
 
-#: src/devicewidget.cc:257
+#: src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
-msgstr ""
+msgstr "Συγνώμη, αλλά δεν υποστηρίζεται η μετονομασία συσκευής."
 
-#: src/devicewidget.cc:259
+#: src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
 msgstr ""
+"Χρειάζεται να φορτώσετε το module-device-manager στο διακομιστή PulseAudio "
+"προκειμένου να μετονομάσετε συσκευές"
 
-#: src/devicewidget.cc:294
+#: src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_device_manager_write()"
 
 #: src/mainwindow.cc:171
 #, c-format
 msgid "Error reading config file %s: %s"
-msgstr ""
+msgstr "Σφάλμα ανάγνωσης αρχείου config %s: %s"
 
-#: src/mainwindow.cc:245
+#: src/mainwindow.cc:250
 msgid "Error saving preferences"
-msgstr ""
+msgstr "Σφάλμα αποθήκευσης προτιμήσεων"
 
-#: src/mainwindow.cc:253
+#: src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
-msgstr ""
+msgstr "Σφάλμα εγγραφής αρχείου config %s"
 
-#: src/mainwindow.cc:314
+#: src/mainwindow.cc:322
 msgid " (plugged in)"
-msgstr ""
+msgstr " (συνδεδεμένο)"
 
-#: src/mainwindow.cc:318 src/mainwindow.cc:426
+#: src/mainwindow.cc:326 src/mainwindow.cc:434
 msgid " (unavailable)"
-msgstr ""
+msgstr " (μη διαθέσιμο)"
 
-#: src/mainwindow.cc:320 src/mainwindow.cc:423
+#: src/mainwindow.cc:328 src/mainwindow.cc:431
 msgid " (unplugged)"
-msgstr ""
+msgstr " (αποσυνδεδεμένο)"
 
-#: src/mainwindow.cc:625
+#: src/mainwindow.cc:633
 msgid "Failed to read data from stream"
-msgstr ""
+msgstr "Αποτυχία ανάγνωσης δεδομένων από τη ροή"
 
-#: src/mainwindow.cc:669
+#: src/mainwindow.cc:677
 msgid "Peak detect"
-msgstr ""
+msgstr "Ανίχνευση κορυφής"
 
-#: src/mainwindow.cc:670
+#: src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
-msgstr ""
+msgstr "Αποτυχία δημιουργίας ροής παρακολούθησης"
 
-#: src/mainwindow.cc:685
+#: src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
-msgstr ""
+msgstr "Αποτυχία σύνδεσης ροής παρακολούθησης"
 
-#: src/mainwindow.cc:819
+#: src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
 msgstr ""
+"Αγνόηση του sink-input λόγω του ότι ορίζεται ως συμβάν και ως εκ τούτου "
+"διαχειρίζεται από τη μικροεφαρμογή Συμβάντων"
 
-#: src/mainwindow.cc:994
+#: src/mainwindow.cc:994 src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Ήχοι συστήματος"
 
-#: src/mainwindow.cc:1340
+#: src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
-msgstr ""
+msgstr "Πραγματοποιείται σύνδεση με το PulseAudio. Παρακαλούμε περιμένετε..."
 
-#: src/rolewidget.cc:68
+#: src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_stream_restore_write()"
 
 #: src/sinkinputwidget.cc:35
 msgid "on"
-msgstr ""
+msgstr "ενεργό"
 
 #: src/sinkinputwidget.cc:38
 msgid "Terminate Playback"
-msgstr ""
+msgstr "Τερματισμός αναπαραγωγής"
 
 #: src/sinkinputwidget.cc:78
 msgid "Unknown output"
-msgstr ""
+msgstr "Άγνωστη έξοδος"
 
 #: src/sinkinputwidget.cc:87
 msgid "pa_context_set_sink_input_volume() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_sink_input_volume()"
 
 #: src/sinkinputwidget.cc:102
 msgid "pa_context_set_sink_input_mute() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_sink_input_mute()"
 
 #: src/sinkinputwidget.cc:112
 msgid "pa_context_kill_sink_input() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_kill_sink_input()"
 
-#: src/sinkwidget.cc:119
+#: src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_sink_volume_by_index()"
 
-#: src/sinkwidget.cc:137
-#, fuzzy
+#: src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
-msgstr "Έλεγχος έντασης ήχου"
+msgstr "Ήχος ανάδρασης ελεγκτή έντασης"
 
-#: src/sinkwidget.cc:155
+#: src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_sink_mute_by_index()"
 
-#: src/sinkwidget.cc:169
+#: src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_default_sink()"
 
-#: src/sinkwidget.cc:189
+#: src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_sink_port_by_index()"
 
-#: src/sinkwidget.cc:231
+#: src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_ext_device_restore_save_sink_formats()"
 
 #: src/sourceoutputwidget.cc:35
 msgid "from"
-msgstr ""
+msgstr "από"
 
 #: src/sourceoutputwidget.cc:38
-#, fuzzy
 msgid "Terminate Recording"
-msgstr "Εγγρα_φή"
+msgstr "Τερματισμός εγγραφής"
 
 #: src/sourceoutputwidget.cc:83
 msgid "Unknown input"
-msgstr ""
+msgstr "Άγνωστη είσοδος"
 
 #: src/sourceoutputwidget.cc:93
 msgid "pa_context_set_source_output_volume() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_source_output_volume()"
 
 #: src/sourceoutputwidget.cc:108
 msgid "pa_context_set_source_output_mute() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_source_output_mute()"
 
 #: src/sourceoutputwidget.cc:119
 msgid "pa_context_kill_source_output() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_kill_source_output()"
 
 #: src/sourcewidget.cc:46
 msgid "pa_context_set_source_volume_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_source_volume_by_index()"
 
 #: src/sourcewidget.cc:61
 msgid "pa_context_set_source_mute_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_source_mute_by_index()"
 
 #: src/sourcewidget.cc:75
 msgid "pa_context_set_default_source() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_default_source()"
 
 #: src/sourcewidget.cc:97
 msgid "pa_context_set_source_port_by_index() failed"
-msgstr ""
+msgstr "Αποτυχία του pa_context_set_source_port_by_index()"
 
-#: src/pavuapplication.cc:158
+#: src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "Επιλέξτε μια συγκεκριμένη καρτέλα κατά τη φόρτωση."
 
-#: src/pavuapplication.cc:159
+#: src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "αριθμός"
 
-#: src/pavuapplication.cc:164
+#: src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr ""
+"Εκ νέου προσπάθεια στο διηνεκές επί διακοπής του pa (ανά 5 δευτερόλεπτα)."
 
-#: src/pavuapplication.cc:169
+#: src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "Μεγιστοποίηση του παραθύρου."
 
-#: src/pavuapplication.cc:174
+#: src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "Εμφάνιση έκδοσης."
 
-#, fuzzy
-#~ msgid "multimedia-volume-control"
-#~ msgstr "Έλεγχος έντασης ήχου PulseAudio"
+#: src/pavucontrol.desktop.in:8
+msgid "multimedia-volume-control"
+msgstr "Έλεγχος έντασης ήχου πολυμέσων"
 
-#, fuzzy
-#~ msgid "Terminate"
-#~ msgstr "Εγγρα_φή"
+#: src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Τερματισμός"
+
+#: src/pavucontrol.glade:12
+msgid "window2"
+msgstr "παράθυρο2"
+
+#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
+#: src/pavucontrol.glade:1513
+msgid "window1"
+msgstr "παράθυρο1"
+
+#: src/pavucontrol.glade:408
+msgid "Set as fallback"
+msgstr "Ορισμός ως εναλλακτική"
+
+#: src/devicewidget.cc:263
+msgid "_OK"
+msgstr "_Εντάξει"
 
 #~ msgid "50%"
 #~ msgstr "50%"
