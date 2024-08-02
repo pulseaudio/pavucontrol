@@ -21,6 +21,7 @@ msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
+#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
 msgid "Volume Control"
 msgstr "Garsio reguliavimas"
 
@@ -171,175 +172,185 @@ msgid ""
 msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
+#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
 msgid "PulseAudio Volume Control"
 msgstr "PulseAudio garsio reguliavimas"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:6
+#: src/org.pulseaudio.pavucontrol.desktop.in:6 src/pavucontrol.desktop.in:6
 msgid "Adjust the volume level"
 msgstr "Reguliuoti garsio lygį"
 
-#: src/org.pulseaudio.pavucontrol.desktop.in:12
+#: src/pavucontrol.desktop.in:12
 msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
 msgstr ""
+"pavucontrol;mikrofonas;garsis;garsumas;išnykimas;balansas;ausinės su "
+"mikrofonu;garsiakalbiai;garsiakalbis;ausinės;garsas;audio;maišytuvas;"
+"maišiklis;išvestis;išvedimas;įvestis;įvedimas;įrenginiai;atkūrimas;grojimas;"
+"įrašas;įrašymas;įrašinėjimas;sistemos garsai;garso plokštė;nuostatos;"
+"nustatymai;parametrai;"
 
-#: src/mainwindow.ui:40
+#: src/mainwindow.ui:40 src/pavucontrol.glade:828
 msgid "<i>No application is currently playing audio.</i>"
 msgstr "<i>Šiuo metu jokia programa neatkuria garso.</i>"
 
-#: src/mainwindow.ui:66 src/mainwindow.ui:157
+#: src/mainwindow.ui:66 src/mainwindow.ui:157 src/pavucontrol.glade:876
+#: src/pavucontrol.glade:1000
 msgid "<b>_Show:</b>"
 msgstr "<b>_Rodyti:</b>"
 
-#: src/mainwindow.ui:82 src/mainwindow.ui:173
+#: src/mainwindow.ui:82 src/mainwindow.ui:173 src/pavucontrol.glade:716
+#: src/pavucontrol.glade:733
 msgid "All Streams"
 msgstr "Visi srautai"
 
-#: src/mainwindow.ui:85 src/mainwindow.ui:176
+#: src/mainwindow.ui:85 src/mainwindow.ui:176 src/pavucontrol.glade:719
+#: src/pavucontrol.glade:736
 msgid "Applications"
 msgstr "Programos"
 
-#: src/mainwindow.ui:88 src/mainwindow.ui:179
+#: src/mainwindow.ui:88 src/mainwindow.ui:179 src/pavucontrol.glade:722
+#: src/pavucontrol.glade:739
 msgid "Virtual Streams"
 msgstr "Virtualūs srautai"
 
-#: src/mainwindow.ui:107
+#: src/mainwindow.ui:107 src/pavucontrol.glade:920
 msgid "_Playback"
 msgstr "_Atkūrimas"
 
-#: src/mainwindow.ui:131
+#: src/mainwindow.ui:131 src/pavucontrol.glade:952
 msgid "<i>No application is currently recording audio.</i>"
 msgstr "<i>Šiuo metu jokia programa neįrašo garso.</i>"
 
-#: src/mainwindow.ui:198
+#: src/mainwindow.ui:198 src/pavucontrol.glade:1047
 msgid "_Recording"
 msgstr "Į_rašymas"
 
-#: src/mainwindow.ui:222
+#: src/mainwindow.ui:222 src/pavucontrol.glade:1080
 msgid "<i>No output devices available</i>"
 msgstr "<i>Nėra prieinamų išvesties įrenginių</i>"
 
-#: src/mainwindow.ui:248
+#: src/mainwindow.ui:248 src/pavucontrol.glade:1128
 msgid "<b>S_how:</b>"
 msgstr "<b>R_odyti:</b>"
 
-#: src/mainwindow.ui:265
+#: src/mainwindow.ui:265 src/pavucontrol.glade:750
 msgid "All Output Devices"
 msgstr "Visi išvesties įrenginiai"
 
-#: src/mainwindow.ui:268
+#: src/mainwindow.ui:268 src/pavucontrol.glade:753
 msgid "Hardware Output Devices"
 msgstr "Aparatinės įrangos išvesties įrenginiai"
 
-#: src/mainwindow.ui:271
+#: src/mainwindow.ui:271 src/pavucontrol.glade:756
 msgid "Virtual Output Devices"
 msgstr "Virtualūs išvesties įrenginiai"
 
-#: src/mainwindow.ui:290
+#: src/mainwindow.ui:290 src/pavucontrol.glade:1176
 msgid "_Output Devices"
 msgstr "Iš_vesties įrenginiai"
 
-#: src/mainwindow.ui:314
+#: src/mainwindow.ui:314 src/pavucontrol.glade:1210
 msgid "<i>No input devices available</i>"
 msgstr "<i>Nėra prieinamų įvesties įrenginių</i>"
 
-#: src/mainwindow.ui:340
+#: src/mainwindow.ui:340 src/pavucontrol.glade:1258
 msgid "<b>Sho_w:</b>"
 msgstr "<b>Rod_yti:</b>"
 
-#: src/mainwindow.ui:357
+#: src/mainwindow.ui:357 src/pavucontrol.glade:767
 msgid "All Input Devices"
 msgstr "Visi įvesties įrenginiai"
 
-#: src/mainwindow.ui:360
+#: src/mainwindow.ui:360 src/pavucontrol.glade:770
 msgid "All Except Monitors"
 msgstr "Visi, išskyrus monitorius"
 
-#: src/mainwindow.ui:363
+#: src/mainwindow.ui:363 src/pavucontrol.glade:773
 msgid "Hardware Input Devices"
 msgstr "Aparatinės įrangos įvesties įrenginiai"
 
-#: src/mainwindow.ui:366
+#: src/mainwindow.ui:366 src/pavucontrol.glade:776
 msgid "Virtual Input Devices"
 msgstr "Virtualūs įvesties įrenginiai"
 
-#: src/mainwindow.ui:369
+#: src/mainwindow.ui:369 src/pavucontrol.glade:779
 msgid "Monitors"
 msgstr "Monitoriai"
 
-#: src/mainwindow.ui:388
+#: src/mainwindow.ui:388 src/pavucontrol.glade:1306
 msgid "_Input Devices"
 msgstr "Įvest_ies įrenginiai"
 
-#: src/mainwindow.ui:416
+#: src/mainwindow.ui:416 src/pavucontrol.glade:1343
 msgid "<i>No cards available for configuration</i>"
 msgstr "<i>Nėra konfigūracijai prieinamų plokščių</i>"
 
-#: src/mainwindow.ui:431
+#: src/mainwindow.ui:431 src/pavucontrol.glade:1376
 msgid "Show volume meters"
 msgstr "Rodyti garsio matuoklius"
 
-#: src/mainwindow.ui:448
-#, fuzzy
+#: src/pavucontrol.glade:1416
 msgid "_Configuration"
 msgstr "_Konfigūracija"
 
-#: src/cardwidget.ui:30
+#: src/cardwidget.ui:30 src/pavucontrol.glade:119
 msgid "Card Name"
 msgstr "Plokštės pavadinimas"
 
-#: src/cardwidget.ui:45
+#: src/pavucontrol.glade:147
 msgid "Lock card to this profile"
-msgstr ""
+msgstr "Prirakinti šią plokštę prie šio profilio"
 
-#: src/cardwidget.ui:66
+#: src/cardwidget.ui:66 src/pavucontrol.glade:188
 msgid "<b>Profile:</b>"
 msgstr "<b>Profilis:</b>"
 
-#: src/cardwidget.ui:82
-#, fuzzy
+#: src/pavucontrol.glade:218
 msgid "<b>Codec:</b>"
-msgstr "<b>Prievadas:</b>"
+msgstr "<b>Kodekas:</b>"
 
-#: src/channelwidget.ui:9
+#: src/channelwidget.ui:9 src/pavucontrol.glade:25
 msgid "<b>left-front</b>"
 msgstr "<b>kairioji priekinė</b>"
 
-#: src/channelwidget.ui:33
+#: src/channelwidget.ui:33 src/pavucontrol.glade:55
 msgid "<small>50%</small>"
 msgstr "<small>50%</small>"
 
-#: src/renamedialog.ui:16
+#: src/renamedialog.ui:16 src/pavucontrol.glade:1481
 msgid "<b>Rename device to:</b>"
 msgstr "<b>Pervadinti įrenginį į:</b>"
 
-#: src/renamedialog.ui:37
+#: src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "_Atsisakyti"
 
 #: src/renamedialog.ui:45
 msgid "_Ok"
 msgstr ""
 
-#: src/streamwidget.ui:34
+#: src/streamwidget.ui:34 src/pavucontrol.glade:1570
 msgid "Stream Title"
 msgstr "Srauto pavadinimas"
 
-#: src/streamwidget.ui:44
+#: src/streamwidget.ui:44 src/pavucontrol.glade:1586
 msgid "direction"
 msgstr "kryptis"
 
-#: src/streamwidget.ui:64 src/devicewidget.ui:48
+#: src/streamwidget.ui:64 src/devicewidget.ui:48 src/pavucontrol.glade:363
+#: src/pavucontrol.glade:1625
 msgid "Mute audio"
 msgstr "Nutildyti garsą"
 
-#: src/streamwidget.ui:78 src/devicewidget.ui:62
+#: src/streamwidget.ui:78 src/devicewidget.ui:62 src/pavucontrol.glade:385
+#: src/pavucontrol.glade:1647
 msgid "Lock channels together"
 msgstr "Užrakinti kanalus kartu"
 
-#: src/devicewidget.ui:33
+#: src/devicewidget.ui:33 src/pavucontrol.glade:335
 msgid "Device Title"
 msgstr "Įrenginio pavadinimas"
 
@@ -348,219 +359,225 @@ msgstr "Įrenginio pavadinimas"
 msgid "Set as default"
 msgstr "Nustatyti kaip atsarginį"
 
-#: src/devicewidget.ui:95
+#: src/devicewidget.ui:95 src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
 msgstr "<b>Prievadas:</b>"
 
-#: src/devicewidget.ui:136
+#: src/devicewidget.ui:136 src/pavucontrol.glade:506
 msgid "PCM"
 msgstr "PCM"
 
-#: src/devicewidget.ui:148
+#: src/pavucontrol.glade:521
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
-#: src/devicewidget.ui:158
+#: src/devicewidget.ui:158 src/pavucontrol.glade:534
 msgid "DTS"
 msgstr "DTS"
 
-#: src/devicewidget.ui:168
+#: src/pavucontrol.glade:547
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
-#: src/devicewidget.ui:178
+#: src/devicewidget.ui:178 src/pavucontrol.glade:560
 msgid "MPEG"
 msgstr "MPEG"
 
-#: src/devicewidget.ui:188
+#: src/devicewidget.ui:188 src/pavucontrol.glade:573
 msgid "AAC"
 msgstr "AAC"
 
-#: src/devicewidget.ui:198
+#: src/pavucontrol.glade:586
 msgid "TrueHD"
-msgstr ""
+msgstr "TrueHD"
 
-#: src/devicewidget.ui:208
+#: src/pavucontrol.glade:599
 msgid "DTS-HD"
-msgstr ""
+msgstr "DTS-HD"
 
-#: src/devicewidget.ui:224
+#: src/devicewidget.ui:224 src/pavucontrol.glade:626
 msgid "<b>Latency offset:</b>"
 msgstr "<b>Delsos poslinkis:</b>"
 
-#: src/devicewidget.ui:237
+#: src/devicewidget.ui:237 src/pavucontrol.glade:654
 msgid "ms"
 msgstr "ms"
 
-#: src/devicewidget.ui:247
+#: src/devicewidget.ui:247 src/pavucontrol.glade:676
 msgid "Advanced"
 msgstr "Išplėstiniai"
 
-#: src/pavucontrol.cc:107
+#: src/pavucontrol.cc:104
 #, c-format
 msgid "could not read JSON from list-codecs message response: %s"
-msgstr ""
+msgstr "nepavyko perskaityti JSON iš list-codecs pranešimo atsako: %s"
 
-#: src/pavucontrol.cc:116
+#: src/pavucontrol.cc:113
 msgid "list-codecs message response is not a JSON array"
-msgstr ""
+msgstr "list-codecs pranešimo atsakas nėra JSON masyvas"
 
-#: src/pavucontrol.cc:164
+#: src/pavucontrol.cc:161
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "nepavyko teisingai išnagrinėti list-codecs pranešimo atsako"
 
-#: src/pavucontrol.cc:184
+#: src/pavucontrol.cc:181
 #, c-format
 msgid "could not read JSON from get-codec message response: %s"
-msgstr ""
+msgstr "nepavyko perskaityti JSON iš get-codec pranešimo atsako: %s"
 
-#: src/pavucontrol.cc:193
+#: src/pavucontrol.cc:190
 msgid "get-codec message response is not a JSON value"
-msgstr ""
+msgstr "get-codec pranešimo atsakas nėra JSON reikšmė"
 
-#: src/pavucontrol.cc:201
+#: src/pavucontrol.cc:198
 msgid "could not get codec name from get-codec message response"
-msgstr ""
+msgstr "iš get-codec pranešimo atsako nepavyko gauti kodeko pavadinimo"
 
-#: src/pavucontrol.cc:223
+#: src/pavucontrol.cc:220
 #, c-format
 msgid "could not read JSON from get-profile-sticky message response: %s"
-msgstr ""
+msgstr "nepavyko perskaityti JSON iš get-profile-sticky pranešimo atsako: %s"
 
-#: src/pavucontrol.cc:232
+#: src/pavucontrol.cc:229
 msgid "get-profile-sticky message response is not a JSON value"
-msgstr ""
+msgstr "get-profile-sticky pranešimo atsakas nėra JSON reikšmė"
 
-#: src/pavucontrol.cc:252 src/cardwidget.cc:153 src/cardwidget.cc:181
-#, fuzzy, c-format
+#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
+#, c-format
 msgid "pa_context_send_message_to_object() failed: %s"
-msgstr "pa_context_set_default_source() patyrė nesėkmę"
+msgstr "pa_context_send_message_to_object() patyrė nesėkmę: %s"
 
-#: src/pavucontrol.cc:270
+#: src/pavucontrol.cc:267
 #, c-format
 msgid "could not read JSON from list-handlers message response: %s"
-msgstr ""
+msgstr "nepavyko perskaityti JSON iš list-handlers pranešimo atsako: %s"
 
-#: src/pavucontrol.cc:279
+#: src/pavucontrol.cc:276
 msgid "list-handlers message response is not a JSON array"
-msgstr ""
+msgstr "list-handlers pranešimo atsakas nėra JSON masyvas"
 
-#: src/pavucontrol.cc:327
+#: src/pavucontrol.cc:324
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "nepavyko teisingai išnagrinėti list-handlers pranešimo atsako"
 
-#: src/pavucontrol.cc:361
+#: src/pavucontrol.cc:361 src/pavucontrol.cc:358
 msgid "Card callback failure"
 msgstr "Plokštės atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:389
+#: src/pavucontrol.cc:389 src/pavucontrol.cc:386
 msgid "Sink callback failure"
 msgstr "Rinktuvo atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:413
+#: src/pavucontrol.cc:413 src/pavucontrol.cc:410
 msgid "Source callback failure"
 msgstr "Šaltinio atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:432
+#: src/pavucontrol.cc:432 src/pavucontrol.cc:429
 msgid "Sink input callback failure"
 msgstr "Rinktuvo įvesties atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:451
+#: src/pavucontrol.cc:451 src/pavucontrol.cc:448
 msgid "Source output callback failure"
 msgstr "Šaltinio išvesties atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:481
+#: src/pavucontrol.cc:481 src/pavucontrol.cc:478
 msgid "Client callback failure"
 msgstr "Kliento atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:497
+#: src/pavucontrol.cc:497 src/pavucontrol.cc:494
 msgid "Server info callback failure"
 msgstr "Serverio informacijos atgalinės iškvietos nesėkmė"
 
-#: src/pavucontrol.cc:515 src/pavucontrol.cc:812
+#: src/pavucontrol.cc:515 src/pavucontrol.cc:812 src/pavucontrol.cc:512
+#: src/pavucontrol.cc:809
 #, c-format
 msgid "Failed to initialize stream_restore extension: %s"
 msgstr "Nepavyko inicijuoti stream_restore plėtinio: %s"
 
-#: src/pavucontrol.cc:533
+#: src/pavucontrol.cc:533 src/pavucontrol.cc:530
 msgid "pa_ext_stream_restore_read() failed"
 msgstr "pa_ext_stream_restore_read() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:551 src/pavucontrol.cc:826
+#: src/pavucontrol.cc:551 src/pavucontrol.cc:826 src/pavucontrol.cc:548
+#: src/pavucontrol.cc:823
 #, c-format
 msgid "Failed to initialize device restore extension: %s"
 msgstr "Nepavyko inicijuoti įrenginio atkūrimo plėtinio: %s"
 
-#: src/pavucontrol.cc:572
+#: src/pavucontrol.cc:572 src/pavucontrol.cc:569
 msgid "pa_ext_device_restore_read_sink_formats() failed"
 msgstr "pa_ext_device_restore_read_sink_formats() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:590 src/pavucontrol.cc:839
+#: src/pavucontrol.cc:590 src/pavucontrol.cc:839 src/pavucontrol.cc:587
+#: src/pavucontrol.cc:836
 #, c-format
 msgid "Failed to initialize device manager extension: %s"
 msgstr "Nepavyko inicijuoti įrenginių tvarkytuvės plėtinio: %s"
 
-#: src/pavucontrol.cc:609
+#: src/pavucontrol.cc:609 src/pavucontrol.cc:606
 msgid "pa_ext_device_manager_read() failed"
 msgstr "pa_ext_device_manager_read() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:626
+#: src/pavucontrol.cc:626 src/pavucontrol.cc:623
 msgid "pa_context_get_sink_info_by_index() failed"
 msgstr "pa_context_get_sink_info_by_index() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:639
+#: src/pavucontrol.cc:639 src/pavucontrol.cc:636
 msgid "pa_context_get_source_info_by_index() failed"
 msgstr "pa_context_get_source_info_by_index() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:652 src/pavucontrol.cc:665
+#: src/pavucontrol.cc:652 src/pavucontrol.cc:665 src/pavucontrol.cc:649
+#: src/pavucontrol.cc:662
 msgid "pa_context_get_sink_input_info() failed"
 msgstr "pa_context_get_sink_input_info() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:678
+#: src/pavucontrol.cc:678 src/pavucontrol.cc:675
 msgid "pa_context_get_client_info() failed"
 msgstr "pa_context_get_client_info() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:688 src/pavucontrol.cc:753
+#: src/pavucontrol.cc:688 src/pavucontrol.cc:753 src/pavucontrol.cc:685
+#: src/pavucontrol.cc:750
 msgid "pa_context_get_server_info() failed"
 msgstr "pa_context_get_server_info() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:701
+#: src/pavucontrol.cc:701 src/pavucontrol.cc:698
 msgid "pa_context_get_card_info_by_index() failed"
 msgstr "pa_context_get_card_info_by_index() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:744
+#: src/pavucontrol.cc:744 src/pavucontrol.cc:741
 msgid "pa_context_subscribe() failed"
 msgstr "pa_context_subscribe() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:760
+#: src/pavucontrol.cc:760 src/pavucontrol.cc:757
 msgid "pa_context_client_info_list() failed"
 msgstr "pa_context_client_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:767
+#: src/pavucontrol.cc:767 src/pavucontrol.cc:764
 msgid "pa_context_get_card_info_list() failed"
 msgstr "pa_context_get_card_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:774
+#: src/pavucontrol.cc:774 src/pavucontrol.cc:771
 msgid "pa_context_get_sink_info_list() failed"
 msgstr "pa_context_get_sink_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:781
+#: src/pavucontrol.cc:781 src/pavucontrol.cc:778
 msgid "pa_context_get_source_info_list() failed"
 msgstr "pa_context_get_source_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:788
+#: src/pavucontrol.cc:788 src/pavucontrol.cc:785
 msgid "pa_context_get_sink_input_info_list() failed"
 msgstr "pa_context_get_sink_input_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:795
+#: src/pavucontrol.cc:795 src/pavucontrol.cc:792
 msgid "pa_context_get_source_output_info_list() failed"
 msgstr "pa_context_get_source_output_info_list() patyrė nesėkmę"
 
-#: src/pavucontrol.cc:854 src/pavucontrol.cc:905
+#: src/pavucontrol.cc:854 src/pavucontrol.cc:905 src/pavucontrol.cc:851
+#: src/pavucontrol.cc:902
 msgid "Connection failed, attempting reconnect"
 msgstr "Susijungimas nepavyko, bandoma jungtis iš naujo"
 
-#: src/pavucontrol.cc:892
+#: src/pavucontrol.cc:892 src/pavucontrol.cc:889
 msgid ""
 "Connection to PulseAudio failed. Automatic retry in 5s\n"
 "\n"
@@ -590,20 +607,20 @@ msgstr ""
 msgid "pa_context_set_card_profile_by_index() failed"
 msgstr "pa_context_set_card_profile_by_index() patyrė nesėkmę"
 
-#: src/channelwidget.cc:99
-#, fuzzy, c-format
-msgid "<small>%0.0f%% (%0.2f dB)</small>"
-msgstr "<small>100% (0dB)</small>"
-
 #: src/channelwidget.cc:101
-#, fuzzy, c-format
-msgid "<small>%0.0f%% (-&#8734; dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f dB)</small>"
 
-#: src/channelwidget.cc:104
+#: src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; dB)</small>"
+
+#: src/channelwidget.cc:106
 #, c-format
 msgid "%0.0f%%"
-msgstr ""
+msgstr "%0.0f%%"
 
 #: src/channelwidget.cc:139
 msgid "<small>Silence</small>"
@@ -614,27 +631,26 @@ msgid "<small>Min</small>"
 msgstr "<small>Min.</small>"
 
 #: src/channelwidget.cc:141
-#, fuzzy
 msgid "<small>100% (0 dB)</small>"
-msgstr "<small>100% (0dB)</small>"
+msgstr "<small>100% (0 dB)</small>"
 
 #: src/channelwidget.cc:145
 msgid "<small><i>Base</i></small>"
 msgstr "<small><i>Pagrindas</i></small>"
 
-#: src/devicewidget.cc:75
+#: src/devicewidget.cc:75 src/devicewidget.cc:59
 msgid "Rename Device..."
 msgstr "Pervadinti įrenginį..."
 
-#: src/devicewidget.cc:179
+#: src/devicewidget.cc:179 src/devicewidget.cc:163
 msgid "pa_context_set_port_latency_offset() failed"
 msgstr "pa_context_set_port_latency_offset() patyrė nesėkmę"
 
-#: src/devicewidget.cc:257
+#: src/devicewidget.cc:257 src/devicewidget.cc:244
 msgid "Sorry, but device renaming is not supported."
 msgstr "Atleiskite, tačiau įrenginių pervadinimas yra nepalaikomas."
 
-#: src/devicewidget.cc:259
+#: src/devicewidget.cc:259 src/devicewidget.cc:249
 msgid ""
 "You need to load module-device-manager in the PulseAudio server in order to "
 "rename devices"
@@ -642,7 +658,7 @@ msgstr ""
 "Norėdami pervadinti įrenginius, turite PulseAudio serveryje įkelti module-"
 "device-manager"
 
-#: src/devicewidget.cc:294
+#: src/devicewidget.cc:294 src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
 msgstr "pa_ext_device_manager_write() patyrė nesėkmę"
 
@@ -651,44 +667,46 @@ msgstr "pa_ext_device_manager_write() patyrė nesėkmę"
 msgid "Error reading config file %s: %s"
 msgstr "Klaida skaitant konfigūracijos failą %s: %s"
 
-#: src/mainwindow.cc:245
+#: src/mainwindow.cc:245 src/mainwindow.cc:250
 msgid "Error saving preferences"
 msgstr "Klaida įrašant nuostatas"
 
-#: src/mainwindow.cc:253
+#: src/mainwindow.cc:253 src/mainwindow.cc:258
 #, c-format
 msgid "Error writing config file %s"
 msgstr "Klaida rašant konfigūracijos failą %s"
 
-#: src/mainwindow.cc:314
+#: src/mainwindow.cc:314 src/mainwindow.cc:322
 msgid " (plugged in)"
 msgstr " (prijungta)"
 
-#: src/mainwindow.cc:318 src/mainwindow.cc:426
+#: src/mainwindow.cc:318 src/mainwindow.cc:426 src/mainwindow.cc:326
+#: src/mainwindow.cc:434
 msgid " (unavailable)"
 msgstr " (neprieinama)"
 
-#: src/mainwindow.cc:320 src/mainwindow.cc:423
+#: src/mainwindow.cc:320 src/mainwindow.cc:423 src/mainwindow.cc:328
+#: src/mainwindow.cc:431
 msgid " (unplugged)"
 msgstr " (neprijungta)"
 
-#: src/mainwindow.cc:625
+#: src/mainwindow.cc:625 src/mainwindow.cc:633
 msgid "Failed to read data from stream"
 msgstr "Nepavyko perskaityti duomenų iš srauto"
 
-#: src/mainwindow.cc:669
+#: src/mainwindow.cc:669 src/mainwindow.cc:677
 msgid "Peak detect"
 msgstr "Maksimumų aptikimas"
 
-#: src/mainwindow.cc:670
+#: src/mainwindow.cc:670 src/mainwindow.cc:678
 msgid "Failed to create monitoring stream"
 msgstr "Nepavyko sukurti monitorinio srauto"
 
-#: src/mainwindow.cc:685
+#: src/mainwindow.cc:685 src/mainwindow.cc:693
 msgid "Failed to connect monitoring stream"
 msgstr "Nepavyko prijungti monitorinio srauto"
 
-#: src/mainwindow.cc:819
+#: src/mainwindow.cc:819 src/mainwindow.cc:830
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
@@ -696,15 +714,15 @@ msgstr ""
 "Rinktuvo įvesties nepaisoma, kadangi ji pažymėta kaip įvykis ir todėl "
 "apdorojama įvykių valdiklio"
 
-#: src/mainwindow.cc:994
+#: src/mainwindow.cc:994 src/mainwindow.cc:1005
 msgid "System Sounds"
 msgstr "Sistemos garsai"
 
-#: src/mainwindow.cc:1340
+#: src/mainwindow.cc:1340 src/mainwindow.cc:1351
 msgid "Establishing connection to PulseAudio. Please wait..."
 msgstr "Užmezgiamas ryšys su PulseAudio. Palaukite..."
 
-#: src/rolewidget.cc:68
+#: src/rolewidget.cc:68 src/rolewidget.cc:72
 msgid "pa_ext_stream_restore_write() failed"
 msgstr "pa_ext_stream_restore_write() patyrė nesėkmę"
 
@@ -732,27 +750,27 @@ msgstr "pa_context_set_sink_input_mute() patyrė nesėkmę"
 msgid "pa_context_kill_sink_input() failed"
 msgstr "pa_context_kill_sink_input() patyrė nesėkmę"
 
-#: src/sinkwidget.cc:119
+#: src/sinkwidget.cc:119 src/sinkwidget.cc:117
 msgid "pa_context_set_sink_volume_by_index() failed"
 msgstr "pa_context_set_sink_volume_by_index() patyrė nesėkmę"
 
-#: src/sinkwidget.cc:137
+#: src/sinkwidget.cc:137 src/sinkwidget.cc:132
 msgid "Volume Control Feedback Sound"
 msgstr "Garsio reguliavimo atsakomasis garsas"
 
-#: src/sinkwidget.cc:155
+#: src/sinkwidget.cc:155 src/sinkwidget.cc:149
 msgid "pa_context_set_sink_mute_by_index() failed"
 msgstr "pa_context_set_sink_mute_by_index() patyrė nesėkmę"
 
-#: src/sinkwidget.cc:169
+#: src/sinkwidget.cc:169 src/sinkwidget.cc:163
 msgid "pa_context_set_default_sink() failed"
 msgstr "pa_context_set_default_sink() patyrė nesėkmę"
 
-#: src/sinkwidget.cc:189
+#: src/sinkwidget.cc:189 src/sinkwidget.cc:183
 msgid "pa_context_set_sink_port_by_index() failed"
 msgstr "pa_context_set_sink_port_by_index() patyrė nesėkmę"
 
-#: src/sinkwidget.cc:231
+#: src/sinkwidget.cc:231 src/sinkwidget.cc:225
 msgid "pa_ext_device_restore_save_sink_formats() failed"
 msgstr "pa_ext_device_restore_save_sink_formats() patyrė nesėkmę"
 
@@ -796,32 +814,50 @@ msgstr "pa_context_set_default_source() patyrė nesėkmę"
 msgid "pa_context_set_source_port_by_index() failed"
 msgstr "pa_context_set_source_port_by_index() patyrė nesėkmę"
 
-#: src/pavuapplication.cc:158
+#: src/pavuapplication.cc:158 src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
 msgstr "Įkėlimo metu pasirinkti tam tikrą kortelę."
 
-#: src/pavuapplication.cc:159
+#: src/pavuapplication.cc:159 src/pavuapplication.cc:161
 msgid "number"
 msgstr "numeris"
 
-#: src/pavuapplication.cc:164
+#: src/pavuapplication.cc:164 src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
 msgstr "Be galo bandyti dar kartą, jei pa išeina (kas 5 sekundes)."
 
-#: src/pavuapplication.cc:169
+#: src/pavuapplication.cc:169 src/pavuapplication.cc:171
 msgid "Maximize the window."
 msgstr "Išskleisti langą."
 
-#: src/pavuapplication.cc:174
+#: src/pavuapplication.cc:174 src/pavuapplication.cc:176
 msgid "Show version."
 msgstr "Rodyti versiją."
 
-#, fuzzy
-#~ msgid "multimedia-volume-control"
-#~ msgstr "PulseAudio garsio reguliavimas"
+#: src/pavucontrol.desktop.in:8
+msgid "multimedia-volume-control"
+msgstr "multimedia-volume-control"
 
-#~ msgid "Terminate"
-#~ msgstr "Nutraukti"
+#: src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "Nutraukti"
+
+#: src/pavucontrol.glade:12
+msgid "window2"
+msgstr "langas2"
+
+#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
+#: src/pavucontrol.glade:1513
+msgid "window1"
+msgstr "langas1"
+
+#: src/pavucontrol.glade:408
+msgid "Set as fallback"
+msgstr "Nustatyti kaip atsarginį"
+
+#: src/devicewidget.cc:263
+msgid "_OK"
+msgstr "_Gerai"
 
 #~ msgid "AC3"
 #~ msgstr "AC3"
