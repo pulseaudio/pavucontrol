@@ -4,13 +4,15 @@
 # Sergey Danilov <stiletto@stiletto.name>, 2009.
 # Sergey A. <sw@atrus.ru>, 2022.
 # "Sergey A." <sw@atrus.ru>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
 "PO-Revision-Date: 2024-08-01 04:41+0000\n"
-"Last-Translator: \"Sergey A.\" <sw@atrus.ru>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ru/>\n"
 "Language: ru\n"

@@ -24,12 +24,12 @@ msgstr "Lydstyrkekontroll"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Juster lydstyrke for einingar og program"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "PulseAudio-utviklarane"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -38,65 +38,71 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"PulseAudio Volume Control (pavucontrol) er ein lydstyrke­kontroll («miksar») "
+"for lydtenaren PulseAudio. I motsetning til tradisjonelle mikse­verktøy lèt "
+"denne deg styra lydstyrken til maskinvare­einingar og avspelings­straumar kvar "
+"for seg."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "Fana “Avspeling”"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "Fana «Opptak»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "Fana «Uteiningar»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "Fana «Inneiningar»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
-#, fuzzy
 msgid "The “Configuration” tab"
-msgstr "_Oppsett"
+msgstr "Fana «Oppsett»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Migrert frå GTK 3 til 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Bygd inn UI-ressursane i programfila."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"Endra «Bruk som reserve» til «Bruk som standard», som er lettare å forstå."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
-msgstr ""
+msgstr "Støtte for 144 Hz avlyttings­einingar med nivåstolpar."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
 msgid ""
 "App icons will fallback to generic rather than missing image, and this will "
 "be more common with Gtk 4."
 msgstr ""
+"Programikona fell no tilbake på eit generelt ikon i staden for «manglar»-"
+"ikonet. Dette vert meir vanleg med Gtk 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Mange oppdaterte omsetjingar."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Gått vekk ifrå autotools og til meson."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "Gjort libcanberra om til ikkje-obligatorisk avhengnad."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
-msgstr ""
+msgstr "Støtte for byte av Bluetooth-kodek (nytt i PulseAudio 15.0)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -104,12 +110,17 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Støtte for låsing av kortprofilar (nytt i PulseAudio 15.0). Låsing av ein "
+"profil hindrar at PulseAudio byter vekk frå profilen ved tilkoplings/-"
+"fråkoplingshendingar."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Nye omsetjingar: asturleonesisk, baskisk, belarusisk, galisisk, hebraisk, "
+"kasakhisk, norsk (bokmål), singalesisk, slovensk."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -118,31 +129,41 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Oppdaterte omsetjingar: dansk, finsk, fransk, italiensk, japansk, katalansk, "
+"kinesisk (forenkla), kinesisk (tradisjonell), koreansk, kroatisk, litauisk, "
+"nederlandsk, norsk (nynorsk), polsk, portugisisk, Brasil-portugisisk, tysk, "
+"slovakisk, spansk, svensk, tyrkisk, ukrainsk, ungarsk."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"No kan berre eit pavucontrol-vindauge vera ope samtidig. Prøver du å starta "
+"pavucontrol på nytt, vert vindauget lagt i framgrunnen."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"Lagt til avkryssingsboksen «Vis lydstyrke-målarar» på oppsettfana. Slår du "
+"av målarane, reduserer dette CPU-bruken."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
-msgstr ""
+msgstr "Forbetra plassbruk (fjerna unødvendig margar og anna luft)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Betre ikon for «lås kanalane saman»-knappane."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Betre visuell plassering av kanalnamna, som sørgjer for at lydstyrke-"
+"målarane alltid står på linje."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -151,22 +172,30 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Maksgrensa for latentstid-tillegg er auka frå 2 til 5 sekund. Dette er for å "
+"støtta AirPlay-einingar, som ofte har lengre enn 2 sekunds latenstid. (Men "
+"merk at funksjonen ikkje er så nyttig med nye PulseAudio-versjonar, då "
+"latenstida der vert rapportert mykje meir nøyaktig.)"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Ny kommandolinje­val «--version»."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Nye omsetjingar: kinesisk (Taiwan), kroatisk, koreansk, norsk (nynorsk), "
+"litauisk, valenciansk."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Oppdaterte omsetjingar: finsk, fransk, italiensk, japansk, polsk, svensk, "
+"tysk."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
 msgid "PulseAudio Volume Control"
@@ -284,7 +313,6 @@ msgid "Show volume meters"
 msgstr "Vis lydstyrke-målarar"
 
 #: src/mainwindow.ui:448
-#, fuzzy
 msgid "_Configuration"
 msgstr "_Oppsett"
 
@@ -321,7 +349,6 @@ msgid "_Cancel"
 msgstr "_Avbryt"
 
 #: src/renamedialog.ui:45
-#, fuzzy
 msgid "_Ok"
 msgstr "_OK"
 
@@ -346,9 +373,8 @@ msgid "Device Title"
 msgstr "Einingstittel"
 
 #: src/devicewidget.ui:77
-#, fuzzy
 msgid "Set as default"
-msgstr "Bruk som reserve"
+msgstr "Bruk som standard"
 
 #: src/devicewidget.ui:95
 msgid "<b>Port:</b>"

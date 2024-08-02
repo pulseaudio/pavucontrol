@@ -6,6 +6,7 @@
 # Göran Uddeborg <goeran@uddeborg.se>, 2020, 2021.
 # Allan Nordhøy <epost@anotheragency.no>, 2020.
 # Luna Jernberg <bittin@reimu.nl>, 2021, 2022.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
@@ -287,7 +288,6 @@ msgid "Show volume meters"
 msgstr "Visa volymmätare"
 
 #: src/mainwindow.ui:448
-#, fuzzy
 msgid "_Configuration"
 msgstr "_Konfiguration"
 
