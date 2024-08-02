@@ -5,7 +5,7 @@
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
 # Göran Uddeborg <goeran@uddeborg.se>, 2020, 2021.
 # Allan Nordhøy <epost@anotheragency.no>, 2020.
-# Luna Jernberg <bittin@reimu.nl>, 2021, 2022.
+# Luna Jernberg <bittin@reimu.nl>, 2021, 2022, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
@@ -44,6 +44,10 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"PulseAudio Volymkontroll (pavucontrol) är ett volymkontrollsverktyg (\"mixer"
+"\") för PulseAudio-ljudservern. I motsats till klassiska mixerverktyg låter "
+"det här dig styra både volymen på hårdvaruenheter och för varje "
+"uppspelningsström separat."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
@@ -67,41 +71,44 @@ msgstr "Fliken \"Konfiguration\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Migrerade från Gtk 3 till 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Bäddade in UI-resurser i körbar fil."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"Bytte namn på \"Ange som reserv\" till \"Standard\" för bättre läsbarhet."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
-msgstr ""
+msgstr "Stöd för 144 Hz monitorer med nivåstänger."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
 msgid ""
 "App icons will fallback to generic rather than missing image, and this will "
 "be more common with Gtk 4."
 msgstr ""
+"App ikoner kommer att kommer att falla tillbaka till generisk snarare än "
+"saknad bild, och detta kommer att vara vanligare med Gtk 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Flera översättningar uppdateringar."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Släpp autotools bygge till förmån för meson."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "Gjorde libcanberra beroende valfritt."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
-msgstr ""
+msgstr "Stöd för att ändra Bluetooth-kodekar (nytt i PulseAudio 15.0)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -109,12 +116,17 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Stöd för att låsa kortsprofiler (nytt i PulseAudio 15.0). Låsning av en "
+"profil förhindrar att PulseAudio automatiskt växlar bort från den profilen "
+"vid koppla in/koppla ur-händelser."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Nya översättningar: asturiska, baskiska, vitryska, galiciska, hebreiska, "
+"kazakiska, norska bokmål, singalesiska, slovenska"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -123,31 +135,44 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Uppdaterade översättningar: katalanska, kinesiska (förenklad), kinesiska "
+"(traditionell), kroatiska, danska, holländska, finska, franska, tyska, "
+"ungerska, italienska, japanska, koreanska, litauiska, norska nynorsk, "
+"polska, portugisiska, portugisiska (Brasilien), slovakiska, spanska, "
+"svenska, turkiska, ukrainska."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"Det kan nu bara finnas ett pavucontrol fönster öppet åt gången. Om du "
+"försöker starta pavucontrol en andra gång kommer det första fönstret att "
+"flyttas till förgrunden."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"La till en \"Visa volymmätare\" kryssruta till fliken Konfiguration. Att "
+"inaktivera volymmätarna minskar CPU-användningen."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
 msgstr ""
+"Förbättrade användningen av utrymme (tar bort onödiga marginaler och "
+"utfyllnad)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Använder en mer passande ikon för kanallåsknappen."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Bättre kanal etikettlayout, förhindrar att volymreglagen blir ojusterade."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -156,22 +181,30 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Maximal latensförskjutning ökade från 2 till 5 sekunder för att passa "
+"AirPlay enheter som ofta har högre latens än 2 sekunder (detta är dock inte "
+"så användbart på nyare PulseAudio versioner, eftersom latensen rapporteras "
+"mycket mer exakt än tidigare)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Nytt --version kommandoradsalternativ."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Nya översättningar: kinesiska (Taiwan), kroatiska, koreanska, norska "
+"nynorsk, litauiska, valencianska."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Uppdaterade översättningar: finska, franska, tyska, italienska, japanska, "
+"polska, svenska."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
 msgid "PulseAudio Volume Control"
@@ -324,9 +357,8 @@ msgid "_Cancel"
 msgstr "_Avbryt"
 
 #: src/renamedialog.ui:45
-#, fuzzy
 msgid "_Ok"
-msgstr "_OK"
+msgstr "_Ok"
 
 #: src/streamwidget.ui:34
 msgid "Stream Title"
@@ -349,7 +381,6 @@ msgid "Device Title"
 msgstr "Enhetstitel"
 
 #: src/devicewidget.ui:77
-#, fuzzy
 msgid "Set as default"
 msgstr "Ange som standard"
 
