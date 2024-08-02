@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the pulseaudio package.
 # Sergey Danilov <stiletto@stiletto.name>, 2009.
 # Sergey A. <sw@atrus.ru>, 2022.
+# "Sergey A." <sw@atrus.ru>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2022-05-20 00:18+0000\n"
-"Last-Translator: Sergey A. <sw@atrus.ru>\n"
+"PO-Revision-Date: 2024-08-01 04:41+0000\n"
+"Last-Translator: \"Sergey A.\" <sw@atrus.ru>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ru/>\n"
 "Language: ru\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Poedit-Language: Russian\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
@@ -28,12 +29,12 @@ msgstr "Громкость"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Регулировка громкости звука устройства и приложений"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "Разработчики PulseAudio"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -42,39 +43,44 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"PulseAudio Volume Control (pavucontrol) — это инструмент регулировки "
+"громкости («микшер») для звукового сервера PulseAudio. В отличие от "
+"классических микшеров, этот инструмент позволяет управлять как громкостью "
+"аппаратных устройств, так и каждого потока воспроизведения отдельно."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "Вкладка «Воспроизведение»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "Вкладка «Запись»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "Вкладка «Вывод»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "Вкладка «Ввод»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
-#, fuzzy
 msgid "The “Configuration” tab"
-msgstr "_Конфигурация"
+msgstr "Вкладка «Конфигурация»"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Миграция с Gtk 3 на 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Ресурсы пользовательского интерфейса встроены в исполняемый файл."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"Для лучшей читаемости вариант «Установить как резервный вариант» "
+"переименован на «По умолчанию»."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
@@ -88,19 +94,21 @@ msgstr ""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Обновление множества переводов."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Используется meson вместо autotools."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "Зависимость от libcanberra сделана необязательной."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
 msgstr ""
+"Поддержка переключения кодеков Bluetooth (новая возможность в PulseAudio "
+"15.0)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -114,6 +122,8 @@ msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Новые переводы: астурийский, баскский, белорусский, галисийский, иврит, "
+"казахский, норвежский букмол, сингальский, словенский"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -122,31 +132,42 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Обновлены переводы: каталанский, китайский (упрощенный), китайский "
+"(традиционный), хорватский, датский, голландский, финский, французский, "
+"немецкий, венгерский, итальянский, японский, корейский, литовский, нюнорск "
+"(новонорвежский), польский, португальский, португальский (Бразилия), "
+"словацкий, испанский, шведский, турецкий, украинский."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"Теперь одновременно может быть открыто только одно окно pavucontrol. Попытка "
+"запустить pavucontrol во второй раз выводит первое окно на передний план."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"На вкладку конфигурации добавлен флажок «Показывать измерители громкости». "
+"Отключение этого параметра снижает загрузку процессора."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
-msgstr ""
+msgstr "Улучшено использование пространства (удалены ненужные поля и отступы)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Использует более подходящий значок для кнопки блокировки канала."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Улучшенное расположение меток каналов предотвращающее смещение ползунков "
+"громкости."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -155,22 +176,30 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Максимальное смещение задержки увеличено с 2 до 5 секунд, чтобы "
+"соответствовать устройствам AirPlay, у которых задержка часто превышает 2 "
+"секунды (однако в новых версиях PulseAudio это не так полезно, поскольку "
+"данные о задержке отображаются гораздо точнее, чем раньше)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Новый параметр командной строки «--version»."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Новые переводы: китайский (Тайвань), хорватский, корейский, нюнорск "
+"(новонорвежский), литовский, валенсийский."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Обновлены переводы: финский, французский, немецкий, итальянский, японский, "
+"польский, шведский."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
 msgid "PulseAudio Volume Control"
@@ -288,7 +317,6 @@ msgid "Show volume meters"
 msgstr "Показывать измерители громкости"
 
 #: src/mainwindow.ui:448
-#, fuzzy
 msgid "_Configuration"
 msgstr "_Конфигурация"
 
@@ -325,7 +353,6 @@ msgid "_Cancel"
 msgstr "_Отмена"
 
 #: src/renamedialog.ui:45
-#, fuzzy
 msgid "_Ok"
 msgstr "_OK"
 
