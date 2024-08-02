@@ -6,13 +6,15 @@
 # Göran Uddeborg <goeran@uddeborg.se>, 2020, 2021.
 # Allan Nordhøy <epost@anotheragency.no>, 2020.
 # Luna Jernberg <bittin@reimu.nl>, 2021, 2022.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pavucontrol\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2022-05-20 00:18+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2024-08-01 04:41+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/sv/>\n"
 "Language: sv\n"
@@ -20,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
@@ -288,7 +290,6 @@ msgid "Show volume meters"
 msgstr "Visa volymmätare"
 
 #: src/mainwindow.ui:448
-#, fuzzy
 msgid "_Configuration"
 msgstr "_Konfiguration"
 
