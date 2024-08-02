@@ -1,0 +1,683 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pavucontrol package.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: pavucontrol\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-17 00:01+0300\n"
+"PO-Revision-Date: 2023-06-18 05:20+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
+"pulseaudio/pavucontrol/ka/>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.1\n"
+
+#: src/pavucontrol.desktop.in:4 src/pavucontrol.cc:874
+msgid "PulseAudio Volume Control"
+msgstr "PulseAudio-ის ხმის კონტროლი"
+
+#: src/pavucontrol.desktop.in:5 src/pavucontrol.glade:785
+msgid "Volume Control"
+msgstr "ხმის კონტროლი"
+
+#: src/pavucontrol.desktop.in:6
+msgid "Adjust the volume level"
+msgstr "ხმის დონის მორგება"
+
+#: src/pavucontrol.desktop.in:8
+msgid "multimedia-volume-control"
+msgstr "მულტიმედია-ხმის-კონტროლი"
+
+#: src/pavucontrol.desktop.in:12
+msgid ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
+"Settings;Preferences;"
+msgstr ""
+"pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
+"Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound "
+"Card;Settings;Preferences;ხმა;მიკროფონი;ჩაწერა;დინამიკები;"
+
+#: src/pavucontrol.glade:12
+msgid "window2"
+msgstr "ფანჯარა2"
+
+#: src/pavucontrol.glade:25
+msgid "<b>left-front</b>"
+msgstr "<b>წინა-მარცხენა</b>"
+
+#: src/pavucontrol.glade:55
+msgid "<small>50%</small>"
+msgstr "<small>50%</small>"
+
+#: src/pavucontrol.glade:74 src/pavucontrol.glade:279
+#: src/pavucontrol.glade:1513
+msgid "window1"
+msgstr "ფანჯარა1"
+
+#: src/pavucontrol.glade:119
+msgid "Card Name"
+msgstr "ბარათის სახელი"
+
+#: src/pavucontrol.glade:147
+msgid "Lock card to this profile"
+msgstr "ბარათის ამ პროფილზე ჩაკეტვა"
+
+#: src/pavucontrol.glade:188
+msgid "<b>Profile:</b>"
+msgstr "<b>პროფილი:</b>"
+
+#: src/pavucontrol.glade:218
+msgid "<b>Codec:</b>"
+msgstr "<b>კოდეკი:</b>"
+
+#: src/pavucontrol.glade:335
+msgid "Device Title"
+msgstr "მოწყობილობის სათაური"
+
+#: src/pavucontrol.glade:363 src/pavucontrol.glade:1625
+msgid "Mute audio"
+msgstr "ხმის დადუმება"
+
+#: src/pavucontrol.glade:385 src/pavucontrol.glade:1647
+msgid "Lock channels together"
+msgstr "არხების ერთად ჩაკეტვა"
+
+#: src/pavucontrol.glade:408
+msgid "Set as fallback"
+msgstr "გადართვა შეცდომის შემთხვევაში"
+
+#: src/pavucontrol.glade:446
+msgid "<b>Port:</b>"
+msgstr "<b>პორტი:</b>"
+
+#: src/pavucontrol.glade:506
+msgid "PCM"
+msgstr "PCM"
+
+#: src/pavucontrol.glade:521
+msgid "AC-3"
+msgstr "AC-3"
+
+#: src/pavucontrol.glade:534
+msgid "DTS"
+msgstr "DTS"
+
+#: src/pavucontrol.glade:547
+msgid "E-AC-3"
+msgstr "E-AC-3"
+
+#: src/pavucontrol.glade:560
+msgid "MPEG"
+msgstr "MPEG"
+
+#: src/pavucontrol.glade:573
+msgid "AAC"
+msgstr "AAC"
+
+#: src/pavucontrol.glade:586
+msgid "TrueHD"
+msgstr "TrueHD"
+
+#: src/pavucontrol.glade:599
+msgid "DTS-HD"
+msgstr "DTS-HD"
+
+#: src/pavucontrol.glade:626
+msgid "<b>Latency offset:</b>"
+msgstr "<b>დაყოვნების წანაცვლება:</b>"
+
+#: src/pavucontrol.glade:654
+msgid "ms"
+msgstr "მწმ"
+
+#: src/pavucontrol.glade:676
+msgid "Advanced"
+msgstr "დამატებით"
+
+#: src/pavucontrol.glade:716 src/pavucontrol.glade:733
+msgid "All Streams"
+msgstr "ყველა ნაკადი"
+
+#: src/pavucontrol.glade:719 src/pavucontrol.glade:736
+msgid "Applications"
+msgstr "აპლიკაციები"
+
+#: src/pavucontrol.glade:722 src/pavucontrol.glade:739
+msgid "Virtual Streams"
+msgstr "ვირტუალური ნაკადები"
+
+#: src/pavucontrol.glade:750
+msgid "All Output Devices"
+msgstr "ყველა გამოტანის მოწყობილობა"
+
+#: src/pavucontrol.glade:753
+msgid "Hardware Output Devices"
+msgstr "აპარატურული გამოტანის მოწყობილობები"
+
+#: src/pavucontrol.glade:756
+msgid "Virtual Output Devices"
+msgstr "ვირტუალური გამოტანის მოწყობილობები"
+
+#: src/pavucontrol.glade:767
+msgid "All Input Devices"
+msgstr "ყველა შეტანის მოწყობილობა"
+
+#: src/pavucontrol.glade:770
+msgid "All Except Monitors"
+msgstr "ყველა, მონიტორის გარდა"
+
+#: src/pavucontrol.glade:773
+msgid "Hardware Input Devices"
+msgstr "აპარატურული შეტანის მოწყობილობები"
+
+#: src/pavucontrol.glade:776
+msgid "Virtual Input Devices"
+msgstr "ვირტუალური"
+
+#: src/pavucontrol.glade:779
+msgid "Monitors"
+msgstr "მონიტორინგი"
+
+#: src/pavucontrol.glade:828
+msgid "<i>No application is currently playing audio.</i>"
+msgstr "<i>ამჟამად აუდიოს არც ერთი აპლიკაცია არ უკრავს.</i>"
+
+#: src/pavucontrol.glade:876 src/pavucontrol.glade:1000
+msgid "<b>_Show:</b>"
+msgstr "<b>_ჩვენება:</b>"
+
+#: src/pavucontrol.glade:920
+msgid "_Playback"
+msgstr "_დაკვრა"
+
+#: src/pavucontrol.glade:952
+msgid "<i>No application is currently recording audio.</i>"
+msgstr "<i>ამჟამად აუდიოს არც ერთ აპლიკაცია არ იწერს.</i>"
+
+#: src/pavucontrol.glade:1047
+msgid "_Recording"
+msgstr "_ჩაწერა"
+
+#: src/pavucontrol.glade:1080
+msgid "<i>No output devices available</i>"
+msgstr "<i>გამოსატანი მოწყობილობების გარეშე</i>"
+
+#: src/pavucontrol.glade:1128
+msgid "<b>S_how:</b>"
+msgstr "<b>_ჩვენება:</b>"
+
+#: src/pavucontrol.glade:1176
+msgid "_Output Devices"
+msgstr "_გამოტანის მოწყობილობები"
+
+#: src/pavucontrol.glade:1210
+msgid "<i>No input devices available</i>"
+msgstr "<i>შეტანის მოწყობილობების გარეშე</i>"
+
+#: src/pavucontrol.glade:1258
+msgid "<b>Sho_w:</b>"
+msgstr "<b>ჩვენება:</b>"
+
+#: src/pavucontrol.glade:1306
+msgid "_Input Devices"
+msgstr "_შემომტანი მოწყობილობები"
+
+#: src/pavucontrol.glade:1343
+msgid "<i>No cards available for configuration</i>"
+msgstr "<i>მოსარგები ბარათების გარეშე</i>"
+
+#: src/pavucontrol.glade:1376
+msgid "Show volume meters"
+msgstr "ხმის კონტროლის ჩვენება"
+
+#: src/pavucontrol.glade:1416
+msgid "_Configuration"
+msgstr "_მორგება"
+
+#: src/pavucontrol.glade:1481
+msgid "<b>Rename device to:</b>"
+msgstr "<b>მოწყობილობის გადარქმევა:</b>"
+
+#: src/pavucontrol.glade:1570
+msgid "Stream Title"
+msgstr "ნაკადის სათაური"
+
+#: src/pavucontrol.glade:1586
+msgid "direction"
+msgstr "მიმართულება"
+
+#: src/pavucontrol.cc:104
+#, c-format
+msgid "could not read JSON from list-codecs message response: %s"
+msgstr "list-codecs შეტყობინების პასუხიდან JSON-ის წაკითხვა შეუძლებელია: %s"
+
+#: src/pavucontrol.cc:113
+msgid "list-codecs message response is not a JSON array"
+msgstr "list-codecs შეტყობინების პასუხი JSON მასივს არ წარმოადგენს"
+
+#: src/pavucontrol.cc:161
+msgid "list-codecs message response could not be parsed correctly"
+msgstr "list-codecs შეტყობინების პასუხის სწორად დამუშავება შეუძლებელია"
+
+#: src/pavucontrol.cc:181
+#, c-format
+msgid "could not read JSON from get-codec message response: %s"
+msgstr "get-codec შეტყობინების პასუხიდან JSON-ის წაკითხვა შეუძლებელია: %s"
+
+#: src/pavucontrol.cc:190
+msgid "get-codec message response is not a JSON value"
+msgstr "get-codec შეტყობინების პასუხი JSON მნიშვნელობას არ წარმოადგენს"
+
+#: src/pavucontrol.cc:198
+msgid "could not get codec name from get-codec message response"
+msgstr "get-codec შეტყობინების პასუხიდან კოდეკის სახელის მიღება შეუძლებელია"
+
+#: src/pavucontrol.cc:220
+#, c-format
+msgid "could not read JSON from get-profile-sticky message response: %s"
+msgstr ""
+"get-profle-sticky შეტყობინების პასუხიდან JSON-ის წაკითხვა შეუძლებელია: %s"
+
+#: src/pavucontrol.cc:229
+msgid "get-profile-sticky message response is not a JSON value"
+msgstr "get-profile-sticky შეტყობინების პასუხი JSON მნიშვნელობას არ წარმოადგენს"
+
+#: src/pavucontrol.cc:249 src/cardwidget.cc:153 src/cardwidget.cc:181
+#, c-format
+msgid "pa_context_send_message_to_object() failed: %s"
+msgstr "pa_context_send_message_to_object() -ის შეცდომა: %s"
+
+#: src/pavucontrol.cc:267
+#, c-format
+msgid "could not read JSON from list-handlers message response: %s"
+msgstr "list-handlers შეტყობინების პასუხიდან JSON-ის წაკითხვა შეუძლებელია: %s"
+
+#: src/pavucontrol.cc:276
+msgid "list-handlers message response is not a JSON array"
+msgstr "list-handlers შეტყობინების პასუხი JSON მასივს არ წარმოადგენს"
+
+#: src/pavucontrol.cc:324
+msgid "list-handlers message response could not be parsed correctly"
+msgstr "list-handlers შეტყობინების პასუხის სწორად დამუშავება შეუძლებელია"
+
+#: src/pavucontrol.cc:358
+msgid "Card callback failure"
+msgstr "ბარათის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:386
+msgid "Sink callback failure"
+msgstr "Sink-ის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:410
+msgid "Source callback failure"
+msgstr "წყაროს უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:429
+msgid "Sink input callback failure"
+msgstr "Sink-ის შეყვანის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:448
+msgid "Source output callback failure"
+msgstr "წყაროს გამოტანის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:478
+msgid "Client callback failure"
+msgstr "კლიენტის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:494
+msgid "Server info callback failure"
+msgstr "სერვერის ინფორამციის უკუგამოძახების შეცდომა"
+
+#: src/pavucontrol.cc:512 src/pavucontrol.cc:809
+#, c-format
+msgid "Failed to initialize stream_restore extension: %s"
+msgstr "შეცდომა stream_restore გაფართოების ინიცალიზაციისას: %s"
+
+#: src/pavucontrol.cc:530
+msgid "pa_ext_stream_restore_read() failed"
+msgstr "pa_ext_stream_restore_read() -ის შეცდომა"
+
+#: src/pavucontrol.cc:548 src/pavucontrol.cc:823
+#, c-format
+msgid "Failed to initialize device restore extension: %s"
+msgstr "შეცდომა მოწყობილობების აღდგენის გაფართოების ინიციალიზაციისას: %s"
+
+#: src/pavucontrol.cc:569
+msgid "pa_ext_device_restore_read_sink_formats() failed"
+msgstr "pa_ext_device_restore_read_sink_formats() -ის შეცდომა"
+
+#: src/pavucontrol.cc:587 src/pavucontrol.cc:836
+#, c-format
+msgid "Failed to initialize device manager extension: %s"
+msgstr "შეცდომა მოწყობილობების მმართველის გაფართოების ინიციალიზაციისას: %s"
+
+#: src/pavucontrol.cc:606
+msgid "pa_ext_device_manager_read() failed"
+msgstr "pa_ext_device_manager_read() -ის შეცდომა"
+
+#: src/pavucontrol.cc:623
+msgid "pa_context_get_sink_info_by_index() failed"
+msgstr "pa_context_get_sink_info_by_index() -ის შეცდომა"
+
+#: src/pavucontrol.cc:636
+msgid "pa_context_get_source_info_by_index() failed"
+msgstr "pa_context_get_source_info_by_index() -ის შეცდომა"
+
+#: src/pavucontrol.cc:649 src/pavucontrol.cc:662
+msgid "pa_context_get_sink_input_info() failed"
+msgstr "pa_context_get_sink_input_info() -ის შეცდომა"
+
+#: src/pavucontrol.cc:675
+msgid "pa_context_get_client_info() failed"
+msgstr "pa_context_get_client_info() -ის შეცდომა"
+
+#: src/pavucontrol.cc:685 src/pavucontrol.cc:750
+msgid "pa_context_get_server_info() failed"
+msgstr "pa_context_get_server_info() -ის შეცდომა"
+
+#: src/pavucontrol.cc:698
+msgid "pa_context_get_card_info_by_index() failed"
+msgstr "pa_context_get_card_info_by_index() -ის შეცდომა"
+
+#: src/pavucontrol.cc:741
+msgid "pa_context_subscribe() failed"
+msgstr "pa_context_subscribe() -ის შეცდომა"
+
+#: src/pavucontrol.cc:757
+msgid "pa_context_client_info_list() failed"
+msgstr "pa_context_client_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:764
+msgid "pa_context_get_card_info_list() failed"
+msgstr "pa_context_get_card_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:771
+msgid "pa_context_get_sink_info_list() failed"
+msgstr "pa_context_get_sink_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:778
+msgid "pa_context_get_source_info_list() failed"
+msgstr "pa_context_get_source_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:785
+msgid "pa_context_get_sink_input_info_list() failed"
+msgstr "pa_context_get_sink_input_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:792
+msgid "pa_context_get_source_output_info_list() failed"
+msgstr "pa_context_get_source_output_info_list() -ის შეცდომა"
+
+#: src/pavucontrol.cc:851 src/pavucontrol.cc:902
+msgid "Connection failed, attempting reconnect"
+msgstr "კავშირის შეცდომა. თავიდან ვცდი მიერთებას"
+
+#: src/pavucontrol.cc:889
+msgid ""
+"Connection to PulseAudio failed. Automatic retry in 5s\n"
+"\n"
+"In this case this is likely because PULSE_SERVER in the Environment/X11 Root "
+"Window Properties\n"
+"or default-server in client.conf is misconfigured.\n"
+"This situation can also arise when PulseAudio crashed and left stale details "
+"in the X11 Root Window.\n"
+"If this is the case, then PulseAudio should autospawn again, or if this is "
+"not configured you should\n"
+"run start-pulseaudio-x11 manually."
+msgstr ""
+"PulseAudio-სთან მიერთების შეცდომა. ავტომატური თავიდან ცდა 5 წამში\n"
+"\n"
+"ეს ხდება, როცა PULSE_SERVER გარემოში/X11-ის საწყისი ფანჯრის თვისებებში,\n"
+"ან default-server client.conf-ში წესების დაცვით არაა მორგებული.\n"
+"ასევე, როცა PulseAudio-მა მუშაობა ავარიულად დაამთავრა და X11-ის საწყის "
+"ფანჯარაში არასწორი დეტალები დატოვა.\n"
+"თუ ეს მოხდა, PulseAudio თავიდან თვითონ გაეშვება, ან, თუ ეს \n"
+"მითითებული არ გაქვთ, start-pulseaud-x11 ხელით უნდა გაუშვათ."
+
+#: src/cardwidget.cc:126
+msgid "pa_context_set_card_profile_by_index() failed"
+msgstr "pa_context_set_card_profile_by_index() -ის შეცდომა"
+
+#: src/channelwidget.cc:101
+#, c-format
+msgid "<small>%0.0f%% (%0.2f dB)</small>"
+msgstr "<small>%0.0f%% (%0.2f დბ)</small>"
+
+#: src/channelwidget.cc:103
+#, c-format
+msgid "<small>%0.0f%% (-&#8734; dB)</small>"
+msgstr "<small>%0.0f%% (-&#8734; დბ)</small>"
+
+#: src/channelwidget.cc:106
+#, c-format
+msgid "%0.0f%%"
+msgstr "%0.0f%%"
+
+#: src/channelwidget.cc:139
+msgid "<small>Silence</small>"
+msgstr "<small>სიჩუმე</small>"
+
+#: src/channelwidget.cc:139
+msgid "<small>Min</small>"
+msgstr "<small>მინ</small>"
+
+#: src/channelwidget.cc:141
+msgid "<small>100% (0 dB)</small>"
+msgstr "<small>100% (0 დბ)</small>"
+
+#: src/channelwidget.cc:145
+msgid "<small><i>Base</i></small>"
+msgstr "<small><i>ბაზა</i></small>"
+
+#: src/devicewidget.cc:59
+msgid "Rename Device..."
+msgstr "მოწყობილობის სახელის გადარქმევა..."
+
+#: src/devicewidget.cc:163
+msgid "pa_context_set_port_latency_offset() failed"
+msgstr "pa_context_set_port_latency_offset() -ის შეცდომა"
+
+#: src/devicewidget.cc:244
+msgid "Sorry, but device renaming is not supported."
+msgstr "უკაცრავად, მაგრამ მოწყობილობის გადარქმევა მხარდაუჭერელია."
+
+#: src/devicewidget.cc:249
+msgid ""
+"You need to load module-device-manager in the PulseAudio server in order to "
+"rename devices"
+msgstr ""
+"მოწყობილობის სახელის გადასარქმევად PulseAudio სერვერში module-device-manager "
+"გაფართოების ჩატვირთვაა საჭირო"
+
+#: src/devicewidget.cc:262
+msgid "_Cancel"
+msgstr "_გაუქმება"
+
+#: src/devicewidget.cc:263
+msgid "_OK"
+msgstr "_დიახ"
+
+#: src/devicewidget.cc:270
+msgid "pa_ext_device_manager_write() failed"
+msgstr "pa_ext_device_manager_write() -ის შეცდომა"
+
+#: src/mainwindow.cc:171
+#, c-format
+msgid "Error reading config file %s: %s"
+msgstr "კონფიგურაციის ფაილის (%s) წაკითხვის შეცდომა: %s"
+
+#: src/mainwindow.cc:250
+msgid "Error saving preferences"
+msgstr "პარამეტრების შენახვის შეცდომა"
+
+#: src/mainwindow.cc:258
+#, c-format
+msgid "Error writing config file %s"
+msgstr "კონფიგურაცის ფაილის (%s) ჩაწერის შეცდომა"
+
+#: src/mainwindow.cc:322
+msgid " (plugged in)"
+msgstr " (შეერთებულია)"
+
+#: src/mainwindow.cc:326 src/mainwindow.cc:434
+msgid " (unavailable)"
+msgstr " (მიუწვდომელია)"
+
+#: src/mainwindow.cc:328 src/mainwindow.cc:431
+msgid " (unplugged)"
+msgstr " (გამოერთებულია)"
+
+#: src/mainwindow.cc:633
+msgid "Failed to read data from stream"
+msgstr "ნაკადიდან მონაცემების წაკითხვის შეცდომა"
+
+#: src/mainwindow.cc:677
+msgid "Peak detect"
+msgstr "პიკების დადგენა"
+
+#: src/mainwindow.cc:678
+msgid "Failed to create monitoring stream"
+msgstr "მონიტორინგის ნაკადის შექმნის შეცდომა"
+
+#: src/mainwindow.cc:693
+msgid "Failed to connect monitoring stream"
+msgstr "მონიტორინგის ნაკადთან მიერთების შეცდომა"
+
+#: src/mainwindow.cc:830
+msgid ""
+"Ignoring sink-input due to it being designated as an event and thus handled "
+"by the Event widget"
+msgstr ""
+"\"sink-input\" იგნორირებული იქნება, რადგან ის შეიქმნა, როგორც მოვლენა და "
+"შესაბამისად, მოვლენის ვიჯეტის მიერ უნდა იქნეს დამუშავებული"
+
+#: src/mainwindow.cc:1005
+msgid "System Sounds"
+msgstr "სისტემური ხმები"
+
+#: src/mainwindow.cc:1351
+msgid "Establishing connection to PulseAudio. Please wait..."
+msgstr "PulseAudio-სთან მიერთება. მოითმინეთ..."
+
+#: src/rolewidget.cc:72
+msgid "pa_ext_stream_restore_write() failed"
+msgstr "pa_ext_stream_restore_write() -ის შეცდომა"
+
+#: src/sinkinputwidget.cc:35
+msgid "on"
+msgstr "ჩართული"
+
+#: src/sinkinputwidget.cc:38
+msgid "Terminate Playback"
+msgstr "დაკვრის შეწყვეტა"
+
+#: src/sinkinputwidget.cc:78
+msgid "Unknown output"
+msgstr "უცნობი გამოტანა"
+
+#: src/sinkinputwidget.cc:87
+msgid "pa_context_set_sink_input_volume() failed"
+msgstr "pa_context_set_sink_input_volume() -ის შეცდომა"
+
+#: src/sinkinputwidget.cc:102
+msgid "pa_context_set_sink_input_mute() failed"
+msgstr "pa_context_set_sink_input_mute() -ის შეცდომა"
+
+#: src/sinkinputwidget.cc:112
+msgid "pa_context_kill_sink_input() failed"
+msgstr "pa_context_kill_sink_input() -ის შეცდომა"
+
+#: src/sinkwidget.cc:117
+msgid "pa_context_set_sink_volume_by_index() failed"
+msgstr "pa_context_set_sink_volume_by_index() -ის შეცდომა"
+
+#: src/sinkwidget.cc:132
+msgid "Volume Control Feedback Sound"
+msgstr "ხმის კონტროლის საპასუხო ხმა"
+
+#: src/sinkwidget.cc:149
+msgid "pa_context_set_sink_mute_by_index() failed"
+msgstr "pa_context_set_sink_mute_by_index() -ის შეცდომა"
+
+#: src/sinkwidget.cc:163
+msgid "pa_context_set_default_sink() failed"
+msgstr "pa_context_set_default_sink() -ის შეცდომა"
+
+#: src/sinkwidget.cc:183
+msgid "pa_context_set_sink_port_by_index() failed"
+msgstr "pa_context_set_sink_port_by_index() -ის შეცდომა"
+
+#: src/sinkwidget.cc:225
+msgid "pa_ext_device_restore_save_sink_formats() failed"
+msgstr "pa_ext_device_restore_save_sink_formats() -ის შეცდომა"
+
+#: src/sourceoutputwidget.cc:35
+msgid "from"
+msgstr "ვისგან"
+
+#: src/sourceoutputwidget.cc:38
+msgid "Terminate Recording"
+msgstr "ჩაწერის შეწყვეტა"
+
+#: src/sourceoutputwidget.cc:83
+msgid "Unknown input"
+msgstr "უცნობი შეყვანა"
+
+#: src/sourceoutputwidget.cc:93
+msgid "pa_context_set_source_output_volume() failed"
+msgstr "pa_context_set_source_output_volume() -ის შეცდომა"
+
+#: src/sourceoutputwidget.cc:108
+msgid "pa_context_set_source_output_mute() failed"
+msgstr "pa_context_set_source_output_mute() -ის შეცდომა"
+
+#: src/sourceoutputwidget.cc:119
+msgid "pa_context_kill_source_output() failed"
+msgstr "pa_context_kill_source_output() -ის შეცდომა"
+
+#: src/sourcewidget.cc:46
+msgid "pa_context_set_source_volume_by_index() failed"
+msgstr "pa_context_set_source_volume_by_index() -ის შეცდომა"
+
+#: src/sourcewidget.cc:61
+msgid "pa_context_set_source_mute_by_index() failed"
+msgstr "pa_context_set_source_mute_by_index() -ის შეცდომა"
+
+#: src/sourcewidget.cc:75
+msgid "pa_context_set_default_source() failed"
+msgstr "pa_context_set_default_source() -ის შეცდომა"
+
+#: src/sourcewidget.cc:97
+msgid "pa_context_set_source_port_by_index() failed"
+msgstr "pa_context_set_source_port_by_index() -ის შეცდომა"
+
+#: src/streamwidget.cc:52
+msgid "Terminate"
+msgstr "შეწყვეტა"
+
+#: src/pavuapplication.cc:160
+msgid "Select a specific tab on load."
+msgstr "ჩატვირთვისას მითითებული ჩანართის არჩევა."
+
+#: src/pavuapplication.cc:161
+msgid "number"
+msgstr "ნომერი"
+
+#: src/pavuapplication.cc:166
+msgid "Retry forever if pa quits (every 5 seconds)."
+msgstr ""
+"PA-ს გამორთულობის შემთხვევაში დაკავშირების სამუდამოდ ცდა (ყოველ 5 წამში)."
+
+#: src/pavuapplication.cc:171
+msgid "Maximize the window."
+msgstr "ფანჯრის გადიდება."
+
+#: src/pavuapplication.cc:176
+msgid "Show version."
+msgstr "ვერსიის ჩვენება."
