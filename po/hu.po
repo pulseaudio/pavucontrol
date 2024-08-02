@@ -364,7 +364,7 @@ msgstr "Beállítás tartaléknak"
 
 #: src/devicewidget.ui:95 src/pavucontrol.glade:446
 msgid "<b>Port:</b>"
-msgstr "<b>Kikötő:</b>"
+msgstr "<b>Port:</b>"
 
 #: src/devicewidget.ui:136 src/pavucontrol.glade:506
 msgid "PCM"
@@ -664,7 +664,7 @@ msgstr ""
 
 #: src/devicewidget.cc:294 src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
-msgstr "a pa_ext_stream_restore_write() sikertelen"
+msgstr "a pa_ext_device_manager_write() sikertelen"
 
 #: src/mainwindow.cc:171
 #, c-format
@@ -840,7 +840,7 @@ msgstr "Verzió megjelenítése."
 
 #: src/pavucontrol.desktop.in:8
 msgid "multimedia-volume-control"
-msgstr "PulseAudio hangerőszabályzó"
+msgstr "multimedia-volume-control"
 
 #: src/streamwidget.cc:52
 msgid "Terminate"
