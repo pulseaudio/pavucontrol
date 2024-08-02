@@ -39,6 +39,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="6.1" date="2024-08-01">
+      <description>
+        <ul>
+          <li>Fix translations not being correctly picked up.</li>
+          <li>Fix bug where cards don't go away when unplugged.</li>
+          <li>Fix app naming in desktop file (Volume Control).</li>
+          <li>Fix Bluetooth codec selection alignment.</li>
+          <li>Update Swedish translation.</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0" date="2024-05-21">
       <description>
         <ul>

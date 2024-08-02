@@ -39,6 +39,18 @@ General Public License for more details.</p>
 
 <h2><a name="news">News</a></h2>
 
+<div class="news-date">Fri Aug 01 2024: </div>
+<p class="news-text">
+<a href="@PACKAGE_URL@pavucontrol-6.1.tar.xz">Version 6.1</a> released.
+Changes:</p>
+<ul>
+<li>Fix translations not being correctly picked up.</li>
+<li>Fix bug where cards don't go away when unplugged.</li>
+<li>Fix app naming in desktop file (Volume Control).</li>
+<li>Fix Bluetooth codec selection alignment.</li>
+<li>Update Swedish translation.</li>
+</ul>
+
 <div class="news-date">Tue May 21 2024: </div>
 <p class="news-text">
 <a href="@PACKAGE_URL@pavucontrol-6.0.tar.xz">Version 6.0</a> released.
