@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Nejc Bertoncelj <nbert@siol.net>, 2020.
+# Martin Srebotnjak <miles@filmsi.net>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2020-06-16 20:16+0000\n"
-"Last-Translator: Nejc Bertoncelj <nbert@siol.net>\n"
+"PO-Revision-Date: 2024-08-04 19:39+0000\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/sl/>\n"
 "Language: sl\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:7
 #: src/org.pulseaudio.pavucontrol.desktop.in:5 src/mainwindow.ui:5
@@ -26,12 +27,12 @@ msgstr "Nastavitev glasnosti"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:8
 msgid "Adjust device and app volumes"
-msgstr ""
+msgstr "Prilagodite glasnost naprave in programa"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:9
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:11
 msgid "The PulseAudio Developers"
-msgstr ""
+msgstr "Razvijalci PulseAudio"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:14
 msgid ""
@@ -40,65 +41,72 @@ msgid ""
 "one allows you to control both the volume of hardware devices and of each "
 "playback stream separately."
 msgstr ""
+"Nadzor glasnosti Pulse Audio (pavucontrol, angl. PulseAudio Volume Control) "
+"je orodje za nadzor glasnosti (\"mešalnik\") za zvokovni strežnik "
+"PulseAudio. Za razliko od klasičnih orodij za mešanje to omogoča nadzor tako "
+"glasnosti strojnih naprav kot tudi vsakega toka predvajanja posebej."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:21
 msgid "The “Playback” tab"
-msgstr ""
+msgstr "Zavihek \"Predvajanje\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:25
 msgid "The “Recording” tab"
-msgstr ""
+msgstr "Zavihek \"Snemanje\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:29
 msgid "The “Output” tab"
-msgstr ""
+msgstr "Zavihek \"Izhod\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:33
 msgid "The “Input” tab"
-msgstr ""
+msgstr "Zavihek \"Vhod\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:37
-#, fuzzy
 msgid "The “Configuration” tab"
-msgstr "_Nastavitve"
+msgstr "Zavihek \"Nastavitve\""
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:45
 msgid "Migrate from Gtk 3 to 4."
-msgstr ""
+msgstr "Migracija iz Gtk 3 na 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:46
 msgid "Embed UI resources in executable."
-msgstr ""
+msgstr "Vdelani viri vmesnika v izvršljivi datoteki programa."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:47
 msgid "Rename \"Set as fallback\" to \"Default\" for better legibility."
 msgstr ""
+"Preimenovano \"Nastavi kot obnovitveno\" v \"privzeto\", za boljšo "
+"berljivost."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:48
 msgid "Support 144 Hz monitors with level bars."
-msgstr ""
+msgstr "Podpora za 144 Hz zaslone z stolpci glasnosti."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:49
 msgid ""
 "App icons will fallback to generic rather than missing image, and this will "
 "be more common with Gtk 4."
 msgstr ""
+"Ikone programa se povrnejo v splošne namesto manjkajoče slike, kar bo "
+"pogosteje v rabi z Gtk 4."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:51
 msgid "Lots of translation updates."
-msgstr ""
+msgstr "Veliko posodobitev prevodov."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:52
 msgid "Drop autotools build in favour of meson."
-msgstr ""
+msgstr "Opuščena gradnja autotools, namesto tega uporabljen meson."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:53
 msgid "Make libcanberra dependency optional."
-msgstr ""
+msgstr "Odvisnost libcanberra je neobvezna."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:60
 msgid "Support for switching Bluetooth codecs (new in PulseAudio 15.0)."
-msgstr ""
+msgstr "Podpora za preklapljanje kodekov Bluetooth (novo v PulseAudio 15.0)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:61
 msgid ""
@@ -106,12 +114,17 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Podpora za zaklep profilov kartic (novo v PulseAudio 15.0). Zaklep profila "
+"prepreči, da bi PulseAudio samodejno preklopil s tega profila ob dogodkih "
+"vklopa/izklopa naprav."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
 "New translations: Asturian, Basque, Belarusian, Galician, Hebrew, Kazakh, "
 "Norwegian Bokmål, Sinhala, Slovenian"
 msgstr ""
+"Novi prevodi: asturijski, baskovski, beloruski, galicijski, hebrejski, "
+"kazaški, norveški Bokmal, sinhalski, slovenski"
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:63
 msgid ""
@@ -120,31 +133,42 @@ msgid ""
 "Japanese, Korean, Lithuanian, Norwegian Nynorsk, Polish, Portugese, "
 "Portugese (Brazil), Slovak, Spanish, Swedish, Turkish, Ukrainian."
 msgstr ""
+"Posodobljeni prevodi: katalonski, kitajski (poenostavljeni), kitajski "
+"(tradicionalni), hrvaški, danski, nizozemski, finski, francoski, nemški, "
+"madžarski, italijanski, japonski, korejski, litvanski, norveški Nynorsk, "
+"poljski, portugalski, portugalski (Brazilija), slovaški, španski, švedski, "
+"turški, ukrajinski."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:70
 msgid ""
 "There can now be only one pavucontrol window open at a time. Trying to start "
 "pavucontrol for a second time brings the first window to foreground."
 msgstr ""
+"Zdaj je lahko naenkrat odprto le eno okno pavucontrol. Poskusi še drugega "
+"zagona pavucontrol postavi prvo okno v ospredje."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:71
 msgid ""
 "Added a \"Show volume meters\" checkbox to the Configuration tab. Disabling "
 "the volume meters reduces CPU use."
 msgstr ""
+"Dodano potrditveno polje \"Pokaži merilnike glasnosti\" v zavihku "
+"Nastavitev. Onemogočanje merilnikov glasnosti zmanjša rabo CPE."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:72
 msgid "Improve the use of space (remove useless margins and paddings)."
-msgstr ""
+msgstr "Izboljšana raba prostora (odstranjeni odvečni robovi in blazinjenja)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:73
 msgid "Use a more appropriate icon for the channel lock button."
-msgstr ""
+msgstr "Uporabljena primernejša ikona za gumb zaklepa kanala."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:74
 msgid ""
 "Better channel label layout, prevents volume sliders from getting unaligned."
 msgstr ""
+"Boljša postavitev oznak kanalov, preprečuje, da so drsniki glasnosti "
+"neporavnani."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:75
 msgid ""
@@ -153,22 +177,29 @@ msgid ""
 "useful on newer PulseAudio versions, though, because the latency is reported "
 "much more accurately than before)."
 msgstr ""
+"Največji zamik latence je povečan iz 2 do 5 s za naprave AirPlay, ki imajo "
+"pogosto večjo latenco od 2 s (to ni preveč uporabno z novimi različicami "
+"PulseAudio, ker se o latenci poroča veliko natančneje kot poprej)."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:76
 msgid "New --version command line option."
-msgstr ""
+msgstr "Nova možnost ukazne vrstice --version."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:77
 msgid ""
 "New translations: Chinese (Taiwan), Croatian, Korean, Norwegian Nynorsk, "
 "Lithuanian, Valencian."
 msgstr ""
+"Novi prevodi: kitajski (Tajvan), hrvaški, korejski, norveški Nynors, "
+"litovski, valencijski."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:78
 msgid ""
 "Updated translations: Finnish, French, German, Italian, Japanese, Polish, "
 "Swedish."
 msgstr ""
+"Posodobljeni prevodi: finski, francoski, nemški, italijanski, japonski, "
+"poljski, švedski."
 
 #: src/org.pulseaudio.pavucontrol.desktop.in:4 src/pavucontrol.cc:877
 msgid "PulseAudio Volume Control"
@@ -322,7 +353,7 @@ msgstr "Pre_kliči"
 
 #: src/renamedialog.ui:45
 msgid "_Ok"
-msgstr ""
+msgstr "V _redu"
 
 #: src/streamwidget.ui:34
 msgid "Stream Title"
@@ -345,9 +376,8 @@ msgid "Device Title"
 msgstr "Ime naprave"
 
 #: src/devicewidget.ui:77
-#, fuzzy
 msgid "Set as default"
-msgstr "Nastavi kot zasilni"
+msgstr "Nastavi kot privzeto"
 
 #: src/devicewidget.ui:95
 msgid "<b>Port:</b>"
@@ -456,7 +486,7 @@ msgstr "Povratni klic kartice je spodletel"
 
 #: src/pavucontrol.cc:389
 msgid "Sink callback failure"
-msgstr "Sink callback failure"
+msgstr "Neuspeli povratni klic ponora"
 
 #: src/pavucontrol.cc:413
 msgid "Source callback failure"
@@ -464,7 +494,7 @@ msgstr "Povratni klic vira je spodletel"
 
 #: src/pavucontrol.cc:432
 msgid "Sink input callback failure"
-msgstr "Sink input callback failure"
+msgstr "Neuspeli povratni klic vhoda ponora"
 
 #: src/pavucontrol.cc:451
 msgid "Source output callback failure"
