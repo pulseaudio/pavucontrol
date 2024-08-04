@@ -5,14 +5,14 @@
 # Sergey A. <sw@atrus.ru>, 2022.
 # "Sergey A." <sw@atrus.ru>, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# "Sergey A." <Ser82-png@yandex.ru>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pulseaudio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-24 17:04-0400\n"
-"PO-Revision-Date: 2024-08-01 04:41+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-08-04 19:39+0000\n"
+"Last-Translator: \"Sergey A.\" <Ser82-png@yandex.ru>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/"
 "pulseaudio/pavucontrol/ru/>\n"
 "Language: ru\n"
@@ -118,6 +118,9 @@ msgid ""
 "profile prevents PulseAudio from automatically switching away from that "
 "profile on plug/unplug events."
 msgstr ""
+"Поддержка блокировки профилей карт (новая возможность в PulseAudio 15.0). "
+"Блокировка профиля не позволяет PulseAudio автоматически переключаться с "
+"этого профиля во время событий подключения/отключения."
 
 #: src/org.pulseaudio.pavucontrol.metainfo.xml.in:62
 msgid ""
