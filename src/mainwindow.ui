@@ -433,6 +433,13 @@
                                         <property name="active">1</property>
                                       </object>
                                     </child>
+                                    <child>
+                                      <object class="GtkCheckButton" id="hideUnavailableCardProfilesCheckButton">
+                                        <property name="label" translatable="yes">Hide unavailable card profiles</property>
+                                        <property name="focusable">1</property>
+                                        <property name="active">0</property>
+                                      </object>
+                                    </child>
                                   </object>
                                 </child>
                               </object>

@@ -97,6 +97,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     sourceTypeComboBox = x->get_widget<Gtk::ComboBox>("sourceTypeComboBox");
     notebook = x->get_widget<Gtk::Notebook>("notebook");
     showVolumeMetersCheckButton = x->get_widget<Gtk::CheckButton>("showVolumeMetersCheckButton");
+    hideUnavailableCardProfilesCheckButton = x->get_widget<Gtk::CheckButton>("hideUnavailableCardProfilesCheckButton");
 
     sinkInputTypeComboBox->set_active((int) showSinkInputType);
     sourceOutputTypeComboBox->set_active((int) showSourceOutputType);
@@ -108,6 +109,7 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
     sinkTypeComboBox->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onSinkTypeComboBoxChanged));
     sourceTypeComboBox->signal_changed().connect(sigc::mem_fun(*this, &MainWindow::onSourceTypeComboBoxChanged));
     showVolumeMetersCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onShowVolumeMetersCheckButtonToggled));
+    hideUnavailableCardProfilesCheckButton->signal_toggled().connect(sigc::mem_fun(*this, &MainWindow::onHideUnavailableCardProfilesCheckButtonToggled));
 
     auto event_controller_key = Gtk::EventControllerKey::create();
     event_controller_key->signal_key_pressed().connect(sigc::mem_fun(*this, &MainWindow::on_key_press_event), false);
@@ -129,6 +131,9 @@ MainWindow::MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>
          * volume meters. */
         if (g_key_file_has_key(config, "window", "showVolumeMeters", NULL)) {
             showVolumeMetersCheckButton->set_active(g_key_file_get_boolean(config, "window", "showVolumeMeters", NULL));
+        }
+        if (g_key_file_has_key(config, "window", "hideUnavailableCardProfiles", NULL)) {
+            hideUnavailableCardProfilesCheckButton->set_active(g_key_file_get_boolean(config, "window", "hideUnavailableCardProfiles", NULL));
         }
 
         int default_width, default_height;
@@ -237,6 +242,7 @@ MainWindow::~MainWindow() {
     g_key_file_set_integer(config, "window", "sinkType", sinkTypeComboBox->get_active_row_number());
     g_key_file_set_integer(config, "window", "sourceType", sourceTypeComboBox->get_active_row_number());
     g_key_file_set_integer(config, "window", "showVolumeMeters", showVolumeMetersCheckButton->get_active());
+    g_key_file_set_integer(config, "window", "hideUnavailableCardProfiles", hideUnavailableCardProfilesCheckButton->get_active());
 
     gsize filelen;
     GError *err = NULL;
@@ -360,6 +366,8 @@ void MainWindow::updateCard(const pa_card_info &info) {
         cardsVBox->append(*w);
         w->unreference();
         w->index = info.index;
+        w->hideUnavailableProfiles = hideUnavailableCardProfilesCheckButton->get_active();
+        w->prepareMenu();
         is_new = true;
     }
 
@@ -426,6 +434,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
             desc += _(" (unavailable)");
 
         w->profiles.push_back(std::pair<Glib::ustring, Glib::ustring>(profileIt->name, desc));
+        w->availableProfiles[profileIt->name] = hasOther && profileIt->available;
     }
 
     w->activeProfile = info.active_profile ? info.active_profile->name : "";
@@ -1420,5 +1429,16 @@ void MainWindow::onShowVolumeMetersCheckButtonToggled() {
                 pa_operation_unref(o);
         }
         sw->setVolumeMeterVisible(state);
+    }
+}
+
+
+void MainWindow::onHideUnavailableCardProfilesCheckButtonToggled() {
+    bool state = hideUnavailableCardProfilesCheckButton->get_active();
+
+    for (std::map<uint32_t, CardWidget*>::iterator it = cardWidgets.begin() ; it != cardWidgets.end(); it++) {
+        CardWidget *cw = it->second;
+        cw->hideUnavailableProfiles = state;
+        cw->prepareMenu();
     }
 }

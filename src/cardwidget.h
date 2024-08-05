@@ -50,6 +50,7 @@ public:
 
     // each entry in profiles is a pair of profile name and profile description
     std::vector<std::pair<Glib::ustring, Glib::ustring>> profiles;
+    std::map<Glib::ustring, bool> availableProfiles;
     std::map<Glib::ustring, PortInfo> ports;
     Glib::ustring activeProfile;
     bool hasSinks;
@@ -60,6 +61,7 @@ public:
     Glib::ustring activeCodec;
 
     bool hasProfileLock;
+    bool hideUnavailableProfiles;
 
     void prepareMenu();
 
