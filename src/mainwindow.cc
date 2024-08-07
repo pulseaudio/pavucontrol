@@ -410,7 +410,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
 
     w->profiles.clear();
     for (std::set<pa_card_profile_info2>::iterator profileIt = profile_priorities.begin(); profileIt != profile_priorities.end(); ++profileIt) {
-        bool hasNo = false, hasOther = false;
+        bool hasNo = false, hasOther = false, available = true;
         std::map<Glib::ustring, PortInfo>::iterator portIt;
         Glib::ustring desc = profileIt->description;
 
@@ -427,14 +427,18 @@ void MainWindow::updateCard(const pa_card_info &info) {
                 break;
             }
         }
-        if (hasNo && !hasOther)
+        if (hasNo && !hasOther) {
             desc += _(" (unplugged)");
+            available = false;
+        }
 
-        if (!profileIt->available)
+        if (!profileIt->available) {
             desc += _(" (unavailable)");
+            available = false;
+        }
 
         w->profiles.push_back(std::pair<Glib::ustring, Glib::ustring>(profileIt->name, desc));
-        w->availableProfiles[profileIt->name] = hasOther && profileIt->available;
+        w->availableProfiles[profileIt->name] = available;
     }
 
     w->activeProfile = info.active_profile ? info.active_profile->name : "";
