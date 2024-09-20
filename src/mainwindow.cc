@@ -441,7 +441,7 @@ void MainWindow::updateCard(const pa_card_info &info) {
         w->availableProfiles[profileIt->name] = available;
     }
 
-    w->activeProfile = info.active_profile ? info.active_profile->name : "";
+    w->activeProfile = info.active_profile2 ? info.active_profile2->name : "";
 
     /* Because the port info for sinks and sources is discontinued we need
      * to update the port info for them here. */
