@@ -55,3 +55,16 @@ appdata_file = i18n.merge_file(
   install : true,
   install_dir : datadir / 'metainfo',
 )
+
+# TODO: use the Devel version on beta builds?
+icon_filename = 'org.pulseaudio.pavucontrol.svg'
+install_data(
+  icon_filename,
+  install_dir: datadir / 'icons' / 'hicolor' / 'scalable' / 'apps'
+)
+
+icon_filename = 'org.pulseaudio.pavucontrol-symbolic.svg'
+install_data(
+  icon_filename,
+  install_dir: datadir / 'icons' / 'hicolor' / 'symbolic' / 'apps'
+)
