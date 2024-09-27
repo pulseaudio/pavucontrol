@@ -73,19 +73,25 @@ void CardWidget::prepareMenu() {
 
     profileListStore->clear();
     active_idx = -1;
+
     /* Fill the ComboBox's Tree Model */
-    for (uint32_t i = 0; i < profiles.size(); ++i) {
+    for (uint32_t i = 0, idx = 0; i < profiles.size(); ++i) {
         if (hideUnavailableProfiles && !availableProfiles[profiles[i].first])
             continue;
 
         Gtk::TreeModel::Row row = *(profileListStore->append());
         row[profileModel.name] = profiles[i].first;
         row[profileModel.desc] = profiles[i].second;
+
         if (profiles[i].first == activeProfile)
-          active_idx = i;
+          active_idx = idx;
+
+        /* Track the index in the list store, as we might have few entries than
+         * all the profiles if unavailable profiles are hidden. */
+        idx++;
     }
 
-    if (active_idx >= 0)
+    if (profiles.size())
         profileList->set_active(active_idx);
 
     codecListStore->clear();
