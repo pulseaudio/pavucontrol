@@ -1,5 +1,5 @@
 option('lynx',
-       type : 'boolean', value : true,
+       type : 'feature', value : 'auto',
        description : 'Enable building of the README text file for installation')
 option('audio-feedback',
        type : 'feature', value: 'auto',

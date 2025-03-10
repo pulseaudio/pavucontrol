@@ -4,8 +4,6 @@ project('pavucontrol', 'cpp',
         default_options : [ 'c_std=gnu11', 'cpp_std=c++17' ]
         )
 
-with_lynx = get_option('lynx')
-
 cpp = meson.get_compiler('cpp')
 
 gtkmm_dep = dependency('gtkmm-4.0', version : '>= 4.0', required : true)
@@ -21,7 +19,7 @@ have_pulse_messaging_api = cpp.has_function('pa_context_send_message_to_object',
 
 json_glib_dep = dependency('json-glib-1.0', required : have_pulse_messaging_api)
 
-lynx = find_program('lynx', required: with_lynx)
+lynx = find_program('lynx', required: get_option('lynx'))
 tidy = find_program('tidy', required: false)
 
 configinc = include_directories('.')

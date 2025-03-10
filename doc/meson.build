@@ -15,7 +15,7 @@ if tidy.found()
   test('XHTML documentation uses correct mark-up', tidy, args: ['-e', readme_html])
 endif
 
-if with_lynx
+if lynx.found()
   custom_target(
     'README',
     input: readme_html,
