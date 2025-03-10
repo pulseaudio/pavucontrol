@@ -1,3 +1,6 @@
 option('lynx',
        type : 'boolean', value : true,
        description : 'Enable building of the README text file for installation')
+option('audio-feedback',
+       type : 'feature', value: 'auto',
+       description : 'Play a sound when you change the volume of a sink')

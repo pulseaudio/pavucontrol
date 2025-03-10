@@ -10,7 +10,7 @@ cpp = meson.get_compiler('cpp')
 
 gtkmm_dep = dependency('gtkmm-4.0', version : '>= 4.0', required : true)
 sigcpp_dep = dependency('sigc++-3.0', required : true)
-canberragtk_dep = dependency('libcanberra', version : '>= 0.16', required : false)
+canberragtk_dep = dependency('libcanberra', version : '>= 0.16', required : get_option('audio-feedback'))
 
 libpulse_dep = dependency('libpulse', version : '>= 5.0', required : true)
 libpulsemlglib_dep = dependency('libpulse-mainloop-glib', version : '>= 0.9.16', required : true)
