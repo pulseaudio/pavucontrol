@@ -712,7 +712,7 @@ void MainWindow::createMonitorStreamForSinkInput(SinkInputWidget* w, uint32_t si
         w->peak = NULL;
     }
 
-    w->peak = createMonitorStreamForSource(sinkWidgets[sink_idx]->monitor_index, w->index);
+    w->peak = createMonitorStreamForSource(sinkWidgets[sink_idx]->monitor_index, w->index, true);
 }
 
 void MainWindow::updateSource(const pa_source_info &info) {
