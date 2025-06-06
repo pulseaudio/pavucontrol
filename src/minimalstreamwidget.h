@@ -25,6 +25,7 @@
 #include <pulse/pulseaudio.h>
 
 #define PEAKS_RATE 144
+#define DECAY_STEP (1.0 / PEAKS_RATE)
 
 class MinimalStreamWidget : public Gtk::Box {
 public:
@@ -50,17 +51,22 @@ public:
 
     bool volumeMeterEnabled;
     void enableVolumeMeter();
-    void updatePeak(double v);
+    void updatePeak(double v, double decayStep = DECAY_STEP);
     void setVolumeMeterVisible(bool v);
+
+    void decayToZero();
+    void stopDecay();
 
 protected:
     /* Subclasses must call this after the constructor to finalize the initial
      * layout. */
     void init();
+    bool decayOnTick(const Glib::RefPtr<Gdk::FrameClock>& frame_clock);
 
 private :
     bool volumeMeterVisible;
-
+    guint decayTickId;
+    gint64 decayLastFrameTime;
 };
 
 #endif

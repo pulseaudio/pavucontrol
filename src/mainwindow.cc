@@ -626,7 +626,7 @@ static void suspended_callback(pa_stream *s, void *userdata) {
     MainWindow *w = static_cast<MainWindow*>(userdata);
 
     if (pa_stream_is_suspended(s))
-        w->updateVolumeMeter(pa_stream_get_device_index(s), PA_INVALID_INDEX, -1);
+        w->updateVolumeMeter(pa_stream_get_device_index(s), pa_stream_get_monitor_stream(s), -1);
 }
 
 static void read_callback(pa_stream *s, size_t length, void *userdata) {
@@ -1091,13 +1091,15 @@ void MainWindow::updateDeviceInfo(const pa_ext_device_restore_info &info) {
 
 
 void MainWindow::updateVolumeMeter(uint32_t source_index, uint32_t sink_input_idx, double v) {
+    MinimalStreamWidget *sw = NULL;
 
     if (sink_input_idx != PA_INVALID_INDEX) {
         SinkInputWidget *w;
 
         if (sinkInputWidgets.count(sink_input_idx)) {
             w = sinkInputWidgets[sink_input_idx];
-            w->updatePeak(v);
+            sw = static_cast<MinimalStreamWidget*>(w);
+            goto done;
         }
 
     } else {
@@ -1105,22 +1107,38 @@ void MainWindow::updateVolumeMeter(uint32_t source_index, uint32_t sink_input_id
         for (std::map<uint32_t, SinkWidget*>::iterator i = sinkWidgets.begin(); i != sinkWidgets.end(); ++i) {
             SinkWidget* w = i->second;
 
-            if (w->monitor_index == source_index)
-                w->updatePeak(v);
+            if (w->monitor_index == source_index) {
+                sw = static_cast<MinimalStreamWidget*>(w);
+                goto done;
+            }
         }
 
         for (std::map<uint32_t, SourceWidget*>::iterator i = sourceWidgets.begin(); i != sourceWidgets.end(); ++i) {
             SourceWidget* w = i->second;
 
-            if (w->index == source_index)
-                w->updatePeak(v);
+            if (w->index == source_index) {
+                sw = static_cast<MinimalStreamWidget*>(w);
+                goto done;
+            }
         }
 
         for (std::map<uint32_t, SourceOutputWidget*>::iterator i = sourceOutputWidgets.begin(); i != sourceOutputWidgets.end(); ++i) {
             SourceOutputWidget* w = i->second;
 
-            if (w->sourceIndex() == source_index)
-                w->updatePeak(v);
+            if (w->sourceIndex() == source_index) {
+                sw = static_cast<MinimalStreamWidget*>(w);
+                goto done;
+            }
+        }
+    }
+
+done:
+    if (sw) {
+        if (v == -1) {
+            sw->decayToZero();
+        } else {
+            sw->stopDecay();
+            sw->updatePeak(v);
         }
     }
 }
