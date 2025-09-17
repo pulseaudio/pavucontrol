@@ -356,7 +356,7 @@ void MainWindow::selectTab(int tab_number) {
 void MainWindow::updateCard(const pa_card_info &info) {
     CardWidget *w;
     bool is_new = false;
-    const char *description, *icon;
+    const char *description, *icon, *port_device_name;
     std::set<pa_card_profile_info2,profile_prio_compare> profile_priorities;
 
     if (cardWidgets.count(info.index))
@@ -396,6 +396,12 @@ void MainWindow::updateCard(const pa_card_info &info) {
     for (uint32_t i = 0; i < info.n_ports; ++i) {
         PortInfo p;
 
+        port_device_name = pa_proplist_gets(info.ports[i]->proplist, PA_PROP_DEVICE_PRODUCT_NAME);
+        // device.product.name is not guaranteed to exist on a port
+        if (port_device_name != nullptr) {
+            p.port_device_name = std::string(port_device_name);
+        }
+
         p.name = info.ports[i]->name;
         p.description = info.ports[i]->description;
         p.priority = info.ports[i]->priority;
@@ -420,6 +426,10 @@ void MainWindow::updateCard(const pa_card_info &info) {
             if (std::find(port.profiles.begin(), port.profiles.end(), profileIt->name) == port.profiles.end())
                 continue;
 
+            // If port has a device name, add it to the description
+            if (!port.port_device_name.empty()) {
+                desc += " [" + std::string(port.port_device_name) + "]";
+            }
             if (port.available == PA_PORT_AVAILABLE_NO)
                 hasNo = true;
             else {

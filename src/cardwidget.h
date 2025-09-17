@@ -26,6 +26,7 @@
 class PortInfo {
   public:
     Glib::ustring name;
+    Glib::ustring port_device_name;
     Glib::ustring description;
     uint32_t priority;
     int available;
