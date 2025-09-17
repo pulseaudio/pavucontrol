@@ -28,22 +28,18 @@
 #include <gtkmm.h>
 #include <gtkmm/buildable.h>
 
-#include <pulse/pulseaudio.h>
 #include <pulse/glib-mainloop.h>
+#include <pulse/pulseaudio.h>
 
 /* Can be removed when PulseAudio 0.9.23 or newer is required */
 #ifndef PA_VOLUME_UI_MAX
-# define PA_VOLUME_UI_MAX (pa_sw_volume_from_dB(+11.0))
+#define PA_VOLUME_UI_MAX (pa_sw_volume_from_dB(+11.0))
 #endif
 
-#define HAVE_SOURCE_OUTPUT_VOLUMES PA_CHECK_VERSION(0,99,0)
-#define HAVE_EXT_DEVICE_RESTORE_API PA_CHECK_VERSION(0,99,0)
+#define HAVE_SOURCE_OUTPUT_VOLUMES PA_CHECK_VERSION(0, 99, 0)
+#define HAVE_EXT_DEVICE_RESTORE_API PA_CHECK_VERSION(0, 99, 0)
 
-enum SinkInputType {
-    SINK_INPUT_ALL,
-    SINK_INPUT_CLIENT,
-    SINK_INPUT_VIRTUAL
-};
+enum SinkInputType { SINK_INPUT_ALL, SINK_INPUT_CLIENT, SINK_INPUT_VIRTUAL };
 
 enum SinkType {
     SINK_ALL,
@@ -67,14 +63,15 @@ enum SourceType {
 
 #include "mainwindow.h"
 
-pa_context* get_context(void);
+pa_context *get_context(void);
 void show_error(Gtk::Widget *w, const char *txt);
 
-MainWindow* pavucontrol_get_window(pa_glib_mainloop *m, bool maximize, bool retry, int tab_number);
+MainWindow *pavucontrol_get_window(pa_glib_mainloop *m, bool maximize,
+                                   bool retry, int tab_number);
 
 #ifdef HAVE_PULSE_MESSAGING_API
-std::string card_message_handler_path(const std::string& name);
-std::string card_bluez_message_handler_path(const std::string& name);
+std::string card_message_handler_path(const std::string &name);
+std::string card_bluez_message_handler_path(const std::string &name);
 #endif
 
 #endif

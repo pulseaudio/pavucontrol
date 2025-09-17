@@ -26,9 +26,9 @@
 #include "streamwidget.h"
 
 class RoleWidget : public StreamWidget {
-public:
-    RoleWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static RoleWidget* create();
+  public:
+    RoleWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    static RoleWidget *create();
 
     Glib::ustring role;
     Glib::ustring device;

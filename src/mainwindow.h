@@ -26,7 +26,7 @@ class MainWindow;
 #include "pavucontrol.h"
 #include <pulse/ext-stream-restore.h>
 #if HAVE_EXT_DEVICE_RESTORE_API
-#  include <pulse/ext-device-restore.h>
+#include <pulse/ext-device-restore.h>
 #endif
 
 #ifdef HAVE_LIBCANBERRA
@@ -43,9 +43,9 @@ class SourceOutputWidget;
 class RoleWidget;
 
 class MainWindow : public Gtk::Window {
-public:
-    MainWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static MainWindow* create(bool maximize);
+  public:
+    MainWindow(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    static MainWindow *create(bool maximize);
     virtual ~MainWindow();
 
     void updateCard(const pa_card_info &info);
@@ -55,15 +55,19 @@ public:
     void updateSourceOutput(const pa_source_output_info &info);
     void updateClient(const pa_client_info &info);
     void updateServer(const pa_server_info &info);
-    void updateVolumeMeter(uint32_t source_index, uint32_t sink_input_index, double v);
+    void updateVolumeMeter(uint32_t source_index, uint32_t sink_input_index,
+                           double v);
     void updateRole(const pa_ext_stream_restore_info &info);
 #if HAVE_EXT_DEVICE_RESTORE_API
     void updateDeviceInfo(const pa_ext_device_restore_info &info);
 #endif
-    void updateCardCodecs(const std::string& card_name, const std::unordered_map<std::string, std::string>& codecs);
-    void setActiveCodec(const std::string& card_name, const std::string& codec);
+    void updateCardCodecs(
+        const std::string &card_name,
+        const std::unordered_map<std::string, std::string> &codecs);
+    void setActiveCodec(const std::string &card_name, const std::string &codec);
 
-    void setCardProfileIsSticky(const std::string& card_name, gboolean profile_is_sticky);
+    void setCardProfileIsSticky(const std::string &card_name,
+                                gboolean profile_is_sticky);
 
     void removeCard(uint32_t index);
     void removeSink(uint32_t index);
@@ -81,16 +85,19 @@ public:
 
     Gtk::Notebook *notebook;
     Gtk::Box *streamsVBox, *recsVBox, *sinksVBox, *sourcesVBox, *cardsVBox;
-    Gtk::Label *noStreamsLabel, *noRecsLabel, *noSinksLabel, *noSourcesLabel, *noCardsLabel, *connectingLabel;
-    Gtk::ComboBox *sinkInputTypeComboBox, *sourceOutputTypeComboBox, *sinkTypeComboBox, *sourceTypeComboBox;
-    Gtk::CheckButton *showVolumeMetersCheckButton, *hideUnavailableCardProfilesCheckButton;
+    Gtk::Label *noStreamsLabel, *noRecsLabel, *noSinksLabel, *noSourcesLabel,
+        *noCardsLabel, *connectingLabel;
+    Gtk::ComboBox *sinkInputTypeComboBox, *sourceOutputTypeComboBox,
+        *sinkTypeComboBox, *sourceTypeComboBox;
+    Gtk::CheckButton *showVolumeMetersCheckButton,
+        *hideUnavailableCardProfilesCheckButton;
 
-    std::map<uint32_t, CardWidget*> cardWidgets;
-    std::map<uint32_t, SinkWidget*> sinkWidgets;
-    std::map<uint32_t, SourceWidget*> sourceWidgets;
-    std::map<uint32_t, SinkInputWidget*> sinkInputWidgets;
-    std::map<uint32_t, SourceOutputWidget*> sourceOutputWidgets;
-    std::map<uint32_t, char*> clientNames;
+    std::map<uint32_t, CardWidget *> cardWidgets;
+    std::map<uint32_t, SinkWidget *> sinkWidgets;
+    std::map<uint32_t, SourceWidget *> sourceWidgets;
+    std::map<uint32_t, SinkInputWidget *> sinkInputWidgets;
+    std::map<uint32_t, SourceOutputWidget *> sourceOutputWidgets;
+    std::map<uint32_t, char *> clientNames;
 
     SinkInputType showSinkInputType;
     SinkType showSinkType;
@@ -107,10 +114,12 @@ public:
     void setConnectionState(gboolean connected);
     void updateDeviceVisibility();
     void reallyUpdateDeviceVisibility();
-    pa_stream* createMonitorStreamForSource(uint32_t source_idx, uint32_t stream_idx, bool suspend);
-    void createMonitorStreamForSinkInput(SinkInputWidget* w, uint32_t sink_idx);
+    pa_stream *createMonitorStreamForSource(uint32_t source_idx,
+                                            uint32_t stream_idx, bool suspend);
+    void createMonitorStreamForSinkInput(SinkInputWidget *w, uint32_t sink_idx);
 
-    void setIconFromProplist(Gtk::Image *icon, pa_proplist *l, const char *name);
+    void setIconFromProplist(Gtk::Image *icon, pa_proplist *l,
+                             const char *name);
 
     RoleWidget *eventRoleWidget;
 
@@ -125,14 +134,14 @@ public:
     ca_context *canberraContext;
 #endif
 
-protected:
+  protected:
     virtual void on_realize();
-    virtual bool on_key_press_event(guint keyval, guint keycode, Gdk::ModifierType state);
+    virtual bool on_key_press_event(guint keyval, guint keycode,
+                                    Gdk::ModifierType state);
 
-private:
+  private:
     gboolean m_connected;
-    gchar* m_config_filename;
+    gchar *m_config_filename;
 };
-
 
 #endif

@@ -24,20 +24,20 @@
 #include "pavucontrol.h"
 
 class PortInfo {
-public:
-      Glib::ustring name;
-      Glib::ustring description;
-      uint32_t priority;
-      int available;
-      int direction;
-      int64_t latency_offset;
-      std::vector<Glib::ustring> profiles;
+  public:
+    Glib::ustring name;
+    Glib::ustring description;
+    uint32_t priority;
+    int available;
+    int direction;
+    int64_t latency_offset;
+    std::vector<Glib::ustring> profiles;
 };
 
 class CardWidget : public Gtk::Box {
-public:
-    CardWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static CardWidget* create();
+  public:
+    CardWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    static CardWidget *create();
 
     Gtk::Label *nameLabel;
     Gtk::Image *iconImage;
@@ -65,32 +65,32 @@ public:
 
     void prepareMenu();
 
-protected:
-  virtual void onProfileChange();
-  virtual void onCodecChange();
-  virtual void onProfileLockToggleButton();
+  protected:
+    virtual void onProfileChange();
+    virtual void onCodecChange();
+    virtual void onProfileLockToggleButton();
 
-  /* Tree model columns */
-  class ModelColumns : public Gtk::TreeModel::ColumnRecord
-  {
-  public:
+    /* Tree model columns */
+    class ModelColumns : public Gtk::TreeModel::ColumnRecord {
+      public:
+        ModelColumns() {
+            add(name);
+            add(desc);
+        }
 
-    ModelColumns()
-    { add(name); add(desc); }
+        Gtk::TreeModelColumn<Glib::ustring> name;
+        Gtk::TreeModelColumn<Glib::ustring> desc;
+    };
 
-    Gtk::TreeModelColumn<Glib::ustring> name;
-    Gtk::TreeModelColumn<Glib::ustring> desc;
-  };
+    ModelColumns profileModel;
 
-  ModelColumns profileModel;
+    Gtk::ComboBox *profileList;
+    Glib::RefPtr<Gtk::ListStore> profileListStore;
 
-  Gtk::ComboBox *profileList;
-  Glib::RefPtr<Gtk::ListStore> profileListStore;
+    ModelColumns codecModel;
 
-  ModelColumns codecModel;
-
-  Gtk::ComboBox *codecList;
-  Glib::RefPtr<Gtk::ListStore> codecListStore;
+    Gtk::ComboBox *codecList;
+    Glib::RefPtr<Gtk::ListStore> codecListStore;
 };
 
 #endif

@@ -26,9 +26,9 @@
 #include "devicewidget.h"
 
 class SourceWidget : public DeviceWidget {
-public:
-    SourceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static SourceWidget* create(MainWindow* mainWindow);
+  public:
+    SourceWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    static SourceWidget *create(MainWindow *mainWindow);
 
     SourceType type;
     bool can_decibel;
@@ -37,7 +37,7 @@ public:
     virtual void executeVolumeUpdate();
     virtual void onDefaultToggleButton();
 
-protected:
+  protected:
     virtual void onPortChange();
 };
 

@@ -28,9 +28,10 @@
 class MainWindow;
 
 class SourceOutputWidget : public StreamWidget {
-public:
-    SourceOutputWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static SourceOutputWidget* create(MainWindow* mainWindow);
+  public:
+    SourceOutputWidget(BaseObjectType *cobject,
+                       const Glib::RefPtr<Gtk::Builder> &x);
+    static SourceOutputWidget *create(MainWindow *mainWindow);
     ~SourceOutputWidget(void);
 
     SourceOutputType type;
@@ -43,10 +44,10 @@ public:
     virtual void executeVolumeUpdate();
     virtual void onMuteToggleButton();
 #endif
-    virtual void onKill(const Glib::VariantBase& parameter);
+    virtual void onKill(const Glib::VariantBase &parameter);
     virtual void onDeviceComboBoxChanged();
 
-private:
+  private:
     uint32_t mSourceIndex;
 };
 

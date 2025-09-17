@@ -26,12 +26,13 @@
 class MinimalStreamWidget;
 
 class ChannelWidget : public Gtk::Widget {
-public:
-    ChannelWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
+  public:
+    ChannelWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
 
     /* This creates multiple ChannelWidgets based on the given channel map. The
      * widgets are stored in the caller-provided array. */
-    static void create(MinimalStreamWidget *owner, const pa_channel_map &m, bool can_decibel,
+    static void create(MinimalStreamWidget *owner, const pa_channel_map &m,
+                       bool can_decibel,
                        ChannelWidget *widgets[PA_CHANNELS_MAX]);
 
     void setVolume(pa_volume_t volume);
@@ -52,9 +53,11 @@ public:
     virtual void set_sensitive(bool enabled);
     virtual void setBaseVolume(pa_volume_t);
 
-private:
+  private:
     pa_volume_t currentVolume;
-    static ChannelWidget *createOne(MinimalStreamWidget *owner, int channelIndex, pa_channel_position channelPosition,
+    static ChannelWidget *createOne(MinimalStreamWidget *owner,
+                                    int channelIndex,
+                                    pa_channel_position channelPosition,
                                     bool can_decibel);
 };
 

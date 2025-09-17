@@ -24,7 +24,7 @@
 #include "mainwindow.h"
 
 class PavuApplication : public Gtk::Application {
-public:
+  public:
     PavuApplication();
 
     /* Main window */
@@ -36,18 +36,17 @@ public:
     gint32 tab;
     bool version;
 
-    static PavuApplication& get_instance();
+    static PavuApplication &get_instance();
 
-protected:
+  protected:
     // Override default signal handlers:
     void on_activate() override;
 
-private:
-    MainWindow* create_window();
+  private:
+    MainWindow *create_window();
     bool on_close_window();
 
     pa_glib_mainloop *m;
 };
-
 
 #endif

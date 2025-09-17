@@ -21,13 +21,13 @@
 #ifndef sinkwidget_h
 #define sinkwidget_h
 
-#include "pavucontrol.h"
 #include "devicewidget.h"
+#include "pavucontrol.h"
 
 #if HAVE_EXT_DEVICE_RESTORE_API
-#  include <pulse/format.h>
+#include <pulse/format.h>
 
-#  define PAVU_NUM_ENCODINGS 8
+#define PAVU_NUM_ENCODINGS 8
 
 typedef struct {
     pa_encoding encoding;
@@ -36,9 +36,9 @@ typedef struct {
 #endif
 
 class SinkWidget : public DeviceWidget {
-public:
-    SinkWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    static SinkWidget* create(MainWindow* mainWindow);
+  public:
+    SinkWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    static SinkWidget *create(MainWindow *mainWindow);
 
     SinkType type;
     uint32_t monitor_index;
@@ -54,7 +54,7 @@ public:
     virtual void onDefaultToggleButton();
     void setDigital(bool);
 
-protected:
+  protected:
     virtual void onPortChange();
     virtual void onEncodingsChange();
 };

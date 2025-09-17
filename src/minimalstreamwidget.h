@@ -28,8 +28,8 @@
 #define DECAY_STEP (1.0 / PEAKS_RATE)
 
 class MinimalStreamWidget : public Gtk::Box {
-public:
-    MinimalStreamWidget(BaseObjectType* cobject);
+  public:
+    MinimalStreamWidget(BaseObjectType *cobject);
     virtual ~MinimalStreamWidget();
 
     /* Subclass constructors are expected to initialize these variables.
@@ -57,13 +57,13 @@ public:
     void decayToZero();
     void stopDecay();
 
-protected:
+  protected:
     /* Subclasses must call this after the constructor to finalize the initial
      * layout. */
     void init();
-    bool decayOnTick(const Glib::RefPtr<Gdk::FrameClock>& frame_clock);
+    bool decayOnTick(const Glib::RefPtr<Gdk::FrameClock> &frame_clock);
 
-private :
+  private:
     bool volumeMeterVisible;
     guint decayTickId;
     gint64 decayLastFrameTime;

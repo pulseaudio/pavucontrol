@@ -27,9 +27,9 @@ class MainWindow;
 class ChannelWidget;
 
 class DeviceWidget : public MinimalStreamWidget {
-public:
-    DeviceWidget(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x);
-    void init(MainWindow* mainWindow, Glib::ustring);
+  public:
+    DeviceWidget(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x);
+    void init(MainWindow *mainWindow, Glib::ustring);
 
     void setChannelMap(const pa_channel_map &m, bool can_decibel);
     void setVolume(const pa_cvolume &volume, bool force = false);
@@ -41,7 +41,8 @@ public:
     Glib::ustring description;
     uint32_t index, card_index;
 
-    Gtk::ToggleButton *lockToggleButton, *muteToggleButton, *defaultToggleButton;
+    Gtk::ToggleButton *lockToggleButton, *muteToggleButton,
+        *defaultToggleButton;
     Gtk::SpinButton *offsetButton;
 
     bool offsetButtonEnabled;
@@ -71,9 +72,9 @@ public:
 
     void prepareMenu();
 
-    void openRenamePopup(const Glib::VariantBase& parameter);
+    void openRenamePopup(const Glib::VariantBase &parameter);
 
-protected:
+  protected:
     MainWindow *mpMainWindow;
 
     /* Shows or hides the advanced options expander depending on whether it's
@@ -86,12 +87,12 @@ protected:
     Gtk::PopoverMenu contextMenu;
 
     /* Tree model columns */
-    class ModelColumns : public Gtk::TreeModel::ColumnRecord
-    {
+    class ModelColumns : public Gtk::TreeModel::ColumnRecord {
       public:
-
-        ModelColumns()
-        { add(name); add(desc); }
+        ModelColumns() {
+            add(name);
+            add(desc);
+        }
 
         Gtk::TreeModelColumn<Glib::ustring> name;
         Gtk::TreeModelColumn<Glib::ustring> desc;
@@ -109,17 +110,19 @@ protected:
      * support format configuration). */
     bool mDigital;
 
-private:
+  private:
     Glib::ustring mDeviceType;
 };
 
 class RenameWindow : public Gtk::ApplicationWindow {
-public:
-    RenameWindow(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& x, const gchar* name, const gchar* key);
-    Gtk::Entry* renameText;
-    const gchar* deviceKey;
-private:
-    void doRename(const Glib::VariantBase& parameter);
+  public:
+    RenameWindow(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder> &x,
+                 const gchar *name, const gchar *key);
+    Gtk::Entry *renameText;
+    const gchar *deviceKey;
+
+  private:
+    void doRename(const Glib::VariantBase &parameter);
 };
 
 #endif
