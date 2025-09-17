@@ -222,11 +222,15 @@ most Linux distributions.</p>
 
 <h2><a name="installation">Installation</a></h2>
 
-<p>As this package is made with the GNU autotools you should run
-<tt>./configure</tt> inside the distribution directory for configuring
-the source tree. After that you should run <tt>make</tt> for
-compilation and <tt>make install</tt> (as root) for installation of
-<tt>pavucontrol</tt>.</p>
+<p>The easiest way to get <tt>pavucontrol</tt> is from <a href="https://flathub.org/en/apps/org.pulseaudio.pavucontrol">Flathub</a>, or through your distribution's package manager.</p>
+
+<p>For building and running the code locally (assuming you have all the required dependencies available), clone the git repository or unpack the source tarball, and inside the source directory:</p>
+
+<ul>
+    <li><tt>meson setup build</tt></li>
+    <li><tt>ninja -C build</tt></li>
+    <li><tt>./build/src/pavucontrol</tt></li>
+</ul>
 
 <h2><a name="download">Download</a></h2>
 
