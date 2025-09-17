@@ -1,5 +1,5 @@
 project('pavucontrol', 'cpp',
-        version : '6.1',
+        version : '6.2',
         meson_version : '>= 0.50.0',
         default_options : [ 'c_std=gnu11', 'cpp_std=c++17' ]
         )
