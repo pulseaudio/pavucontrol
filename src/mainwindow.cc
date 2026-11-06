@@ -1047,7 +1047,7 @@ bool MainWindow::createEventRoleWidget() {
 void MainWindow::deleteEventRoleWidget() {
 
     if (eventRoleWidget)
-        delete eventRoleWidget;
+        streamsVBox->remove(*eventRoleWidget);
 
     eventRoleWidget = NULL;
 }
